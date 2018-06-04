@@ -13,7 +13,7 @@
 ## Creation: 
 
 ### Step 1:
-Open your "Project_Name.xcodeproj" file from finder or Xcode recent items.
+Open your **Project_Name.xcodeproj** file from finder or Xcode recent items.
 Select main project_name & in general check for any errors or warnings if any.
 
 ### Step 2: 
@@ -26,7 +26,7 @@ Automatic Signing:
 [image]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/automatic_Signing.png "Automatic Signing Kautilya"
 
 
-If you select manual version do add the appropriate profiles & distribution certificates to the Apple Keychain.
+If you select manual version do add the appropriate profiles & distribution certificates to the Apple **Keychain**.
 Always choose allow for Keychain / Xcode as everytime you build apps to run on physical devices aside from simulator.
 
 Manual Signing: 
@@ -38,7 +38,7 @@ iOS requires you to run signed code, you cannot run unsign code unless you're by
 
 
 ### Step 3: 
-Select "Generic iOS Device" in select device screen.
+Select **Generic iOS Device** in select device screen.
 
 Select Generic iOS Device: 
 ![alt text][image3]
@@ -75,7 +75,7 @@ Archive progress succeeded:
 
 ### Step 4: 
 
-Use Xcode menu bar Window -> Organizer
+Use Xcode menu bar **Window** -> **Organizer**
 
 
 Window Organizer: 
@@ -90,21 +90,21 @@ Export Organizer:
 
 [image9]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_organizer.png "export_organizer Kautilya"
 
-A new window will pop up & select the option "Development" & press Next.
+A new window will pop up & select the option **Development** & press **Next**.
 
 Organizer Development: 
 ![alt text][image10]
 
 [image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
 
-Choose the following options as depicted in the screenshot & press Next.
+Choose the following options as depicted in the screenshot & press **Next**.
 
 Organizer Development Options: 
 ![alt text][image10]
 
 [image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
 
-Choose the following options as depicted in the screenshot & press Next.
+Choose the following options as depicted in the screenshot & press **Next**.
 
 Organizer Development Certificate: 
 
