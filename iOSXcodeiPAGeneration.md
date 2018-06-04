@@ -19,6 +19,7 @@ Select main project_name & in general check for any errors or warnings if any.
 ### Step 2: 
 Check the App Bundle Identifier to match your Apple developer provisioning profiles or certificates.
 If you select "Automatically manage signing" it is way easy for you.
+
 Automatic Signing: 
 ![alt text][image]
 
@@ -27,6 +28,7 @@ Automatic Signing:
 
 If you select manual version do add the appropriate profiles & distribution certificates to the Apple Keychain.
 Always choose allow for Keychain / Xcode as everytime you build apps to run on physical devices aside from simulator.
+
 Manual Signing: 
 ![alt text][image2]
 
@@ -93,17 +95,40 @@ Organizer Development:
 
 [image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
 
-Choose the following options as depicted in the screenshot.
+Choose the following options as depicted in the screenshot & press Next.
 Organizer Development Options: 
 ![alt text][image10]
 
 [image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
 
+Choose the following options as depicted in the screenshot & press Next.
+
+Organizer Development Certificate: 
+![alt text][image11]
+
+[image11]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_certificate.png "organizer_development_certificate Kautilya"
 
 
 ### Step 5: 
+Export from Xcode to Finder
+
+Choose the Export button
+
+Organizer iPA Success: 
+![alt text][image12]
+[image12]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_ipa_success.png "organizer_ipa_success Kautilya"
+
+Select the location for iPA export in finder.
+
+Export finder: 
+![alt text][image13]
+[image13]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_finder.png "export_finder Kautilya"
 
 
 
+### Step 6:
+## Profit ???
 
 
+## Author : Kautilya Save  @SensehacK
+#### [GitHub](https://github.com/SensehacK) 
