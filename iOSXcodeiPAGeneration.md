@@ -28,9 +28,9 @@ Reference Image:
 If you select manual version do add the appropriate profiles & distribution certificates to the Apple Keychain.
 Always choose allow for Keychain / Xcode as everytime you build apps to run on physical devices aside from simulator.
 Reference Image: 
-![alt text][image]
+![alt text][image2]
 
-[image]: iOSDocumentation/iOSiPAAssets/manual_Signing.png "Manual Signing Kautilya"
+[image2]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/manual_Signing.png "Manual Signing Kautilya"
 
 iOS requires you to run signed code, you cannot run unsign code unless you're bypassing the installation methods or have a jailbroken device.
 
@@ -38,20 +38,33 @@ iOS requires you to run signed code, you cannot run unsign code unless you're by
 ### Step 3: 
 Select "Generic iOS Device" in select device screen.
 Reference Image: 
-![alt text][image]
+![alt text][image3]
 
-[image]: iOSDocumentation/iOSiPAAssets/select_Generic_iOS_Device.png "select_Generic_iOS_Device Kautilya"
+[image3]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/select_Generic_iOS_Device.png "select_Generic_iOS_Device Kautilya"
 
 After you have selected your Xcode should show up like this.
 
 
 Reference Image: 
-![alt text][image]
+![alt text][image4]
 
-[image]: iOSDocumentation/iOSiPAAssets/selected_generic_device.png "selected generic device Kautilya"
+[image4]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/selected_generic_device.png "selected generic device Kautilya"
+
+
+Archiving Button & progress 
+Reference Image: 
+![alt text][image5]
+
+[image5]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "selected generic device Kautilya"
+
+Reference Image: 
+![alt text][image6]
+
+[image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/product_archive.png "selected generic device Kautilya"
+
+
 
 
 ### Step 4: 
-
 
 ### Step 5: 
