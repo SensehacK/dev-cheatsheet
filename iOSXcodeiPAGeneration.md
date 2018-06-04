@@ -55,12 +55,12 @@ Archiving Button & progress
 Reference Image: 
 ![alt text][image5]
 
-[image5]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "selected generic device Kautilya"
+[image5]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/product_archive.png "selected generic device Kautilya"
 
 Reference Image: 
 ![alt text][image6]
 
-[image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/product_archive.png "selected generic device Kautilya"
+[image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "selected generic device Kautilya"
 
 
 
