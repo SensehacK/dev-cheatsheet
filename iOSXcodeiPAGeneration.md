@@ -22,7 +22,7 @@ If you select "Automatically manage signing" it is way easy for you.
 Reference Image: 
 ![alt text][image]
 
-[image]: iOSDocumentation/iOSiPAAssets/automatic_Signing.png "Automatic Signing Kautilya"
+[image]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/automatic_Signing.png "Automatic Signing Kautilya"
 
 
 If you select manual version do add the appropriate profiles & distribution certificates to the Apple Keychain.
