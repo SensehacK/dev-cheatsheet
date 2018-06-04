@@ -47,6 +47,7 @@ Select Generic iOS Device:
 
 
 After you have selected your Xcode should show up like this.
+
 Selected generic device: 
 ![alt text][image4]
 
@@ -54,12 +55,13 @@ Selected generic device:
 
 
 Archiving Button & progress 
+
 Product archive: 
 ![alt text][image5]
 
 [image5]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/product_archive.png "product_archive Kautilya"
 
-Archive progress: 
+Archive progress started:   
 ![alt text][image6]
 
 [image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "archive_progress Kautilya"
@@ -96,6 +98,7 @@ Organizer Development:
 [image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
 
 Choose the following options as depicted in the screenshot & press Next.
+
 Organizer Development Options: 
 ![alt text][image10]
 
@@ -104,6 +107,7 @@ Organizer Development Options:
 Choose the following options as depicted in the screenshot & press Next.
 
 Organizer Development Certificate: 
+
 ![alt text][image11]
 
 [image11]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_certificate.png "organizer_development_certificate Kautilya"
@@ -115,13 +119,17 @@ Export from Xcode to Finder
 Choose the Export button
 
 Organizer iPA Success: 
+
 ![alt text][image12]
+
 [image12]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_ipa_success.png "organizer_ipa_success Kautilya"
 
 Select the location for iPA export in finder.
 
 Export finder: 
+
 ![alt text][image13]
+
 [image13]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_finder.png "export_finder Kautilya"
 
 
@@ -130,5 +138,5 @@ Export finder:
 ## Profit ???
 
 
-## Author : Kautilya Save  @SensehacK
+## Author : Kautilya Save 
 #### [GitHub](https://github.com/SensehacK) 
