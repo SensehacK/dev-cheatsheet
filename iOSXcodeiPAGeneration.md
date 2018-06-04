@@ -93,16 +93,16 @@ Export Organizer:
 A new window will pop up & select the option **Development** & press **Next**.
 
 Organizer Development: 
-![alt text][image10]
+![alt text][image10.a]
 
-[image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
+[image10.a]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
 
 Choose the following options as depicted in the screenshot & press **Next**.
 
 Organizer Development Options: 
-![alt text][image10]
+![alt text][image10.b]
 
-[image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
+[image10.b]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
 
 Choose the following options as depicted in the screenshot & press **Next**.
 
