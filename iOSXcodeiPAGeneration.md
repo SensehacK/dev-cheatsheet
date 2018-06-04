@@ -37,14 +37,14 @@ iOS requires you to run signed code, you cannot run unsign code unless you're by
 
 ### Step 3: 
 Select "Generic iOS Device" in select device screen.
+
 Select Generic iOS Device: 
 ![alt text][image3]
 
 [image3]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/select_Generic_iOS_Device.png "select_Generic_iOS_Device Kautilya"
 
+
 After you have selected your Xcode should show up like this.
-
-
 Selected generic device: 
 ![alt text][image4]
 
@@ -62,9 +62,48 @@ Archive progress:
 
 [image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "archive_progress Kautilya"
 
+Archive progress succeeded: 
+![alt text][image7]
+
+[image7]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_successful.png "archive_progress succeeded Kautilya"
 
 
 
 ### Step 4: 
 
+Use Xcode menu bar Window -> Organizer
+
+
+Window Organizer: 
+![alt text][image8]
+
+[image8]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/window_organizer.png "window_organizer Kautilya"
+
+After that new window will pop up & then select export button at the right sidebar.
+
+Export Organizer: 
+![alt text][image9]
+
+[image9]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_organizer.png "export_organizer Kautilya"
+
+A new window will pop up & select the option "Development" & press Next.
+
+Organizer Development: 
+![alt text][image10]
+
+[image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
+
+Choose the following options as depicted in the screenshot.
+Organizer Development Options: 
+![alt text][image10]
+
+[image10]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
+
+
+
 ### Step 5: 
+
+
+
+
+
