@@ -49,6 +49,7 @@ Select Generic iOS Device:
 After you have selected your Xcode should show up like this.
 
 Selected generic device: 
+
 ![alt text][image4]
 
 [image4]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/selected_generic_device.png "selected generic device Kautilya"
@@ -57,16 +58,19 @@ Selected generic device:
 Archiving Button & progress 
 
 Product archive: 
+
 ![alt text][image5]
 
 [image5]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/product_archive.png "product_archive Kautilya"
 
 Archive progress started:   
+
 ![alt text][image6]
 
 [image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "archive_progress Kautilya"
 
 Archive progress succeeded: 
+
 ![alt text][image7]
 
 [image7]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_successful.png "archive_progress succeeded Kautilya"
@@ -79,6 +83,7 @@ Use Xcode menu bar **Window** -> **Organizer**
 
 
 Window Organizer: 
+
 ![alt text][image8]
 
 [image8]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/window_organizer.png "window_organizer Kautilya"
@@ -86,6 +91,8 @@ Window Organizer:
 After that new window will pop up & then select export button at the right sidebar.
 
 Export Organizer: 
+
+
 ![alt text][image9]
 
 [image9]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_organizer.png "export_organizer Kautilya"
@@ -93,6 +100,7 @@ Export Organizer:
 A new window will pop up & select the option **Development** & press **Next**.
 
 Organizer Development: 
+
 ![alt text][image10.a]
 
 [image10.a]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
@@ -100,6 +108,7 @@ Organizer Development:
 Choose the following options as depicted in the screenshot & press **Next**.
 
 Organizer Development Options: 
+
 ![alt text][image10.b]
 
 [image10.b]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
@@ -115,8 +124,7 @@ Organizer Development Certificate:
 
 ### Step 5: 
 Export from Xcode to Finder
-
-Choose the Export button
+Choose the **Export** button from Organizer window.
 
 Organizer iPA Success: 
 
@@ -124,7 +132,7 @@ Organizer iPA Success:
 
 [image12]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_ipa_success.png "organizer_ipa_success Kautilya"
 
-Select the location for iPA export in finder.
+Select the location for iPA export in finder & click **Export** button .
 
 Export finder: 
 
@@ -132,7 +140,7 @@ Export finder:
 
 [image13]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_finder.png "export_finder Kautilya"
 
-
+Navigate to that folder & copy that iPA file to your desired application.
 
 ### Step 6:
 
