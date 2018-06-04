@@ -125,7 +125,7 @@ Choose the following options as depicted in the screenshot & press **Next**.
 Export from Xcode to Finder
 Choose the **Export** button from Organizer window.
 
-####Organizer iPA Success: 
+#### Organizer iPA Success: 
 
 ![alt text][image12]
 
