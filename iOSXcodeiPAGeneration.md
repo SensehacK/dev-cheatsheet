@@ -20,16 +20,16 @@ Select main project_name & in general check for any errors or warnings if any.
 Check the App Bundle Identifier to match your Apple developer provisioning profiles or certificates.
 If you select "Automatically manage signing" it is way easy for you.
 
-Automatic Signing: 
+#### Automatic Signing: 
 ![alt text][image]
 
 [image]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/automatic_Signing.png "Automatic Signing Kautilya"
 
-
+#### You could download the project via this link [Dicey App Source Code](https://github.com/SensehacK/Dicey) 
 If you select manual version do add the appropriate profiles & distribution certificates to the Apple **Keychain**.
 Always choose allow for Keychain / Xcode as everytime you build apps to run on physical devices aside from simulator.
 
-Manual Signing: 
+#### Manual Signing: 
 ![alt text][image2]
 
 [image2]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/manual_Signing.png "Manual Signing Kautilya"
@@ -40,7 +40,7 @@ iOS requires you to run signed code, you cannot run unsign code unless you're by
 ### Step 3: 
 Select **Generic iOS Device** in select device screen.
 
-Select Generic iOS Device: 
+#### Select Generic iOS Device: 
 ![alt text][image3]
 
 [image3]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/select_Generic_iOS_Device.png "select_Generic_iOS_Device Kautilya"
@@ -48,7 +48,7 @@ Select Generic iOS Device:
 
 After you have selected your Xcode should show up like this.
 
-Selected generic device: 
+#### Selected generic device: 
 
 ![alt text][image4]
 
@@ -57,19 +57,19 @@ Selected generic device:
 
 Archiving Button & progress 
 
-Product archive: 
+#### Product archive: 
 
 ![alt text][image5]
 
 [image5]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/product_archive.png "product_archive Kautilya"
 
-Archive progress started:   
+#### Archive progress started:   
 
 ![alt text][image6]
 
 [image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "archive_progress Kautilya"
 
-Archive progress succeeded: 
+#### Archive progress succeeded: 
 
 ![alt text][image7]
 
@@ -82,7 +82,7 @@ Archive progress succeeded:
 Use Xcode menu bar **Window** -> **Organizer**
 
 
-Window Organizer: 
+#### Window Organizer: 
 
 ![alt text][image8]
 
@@ -90,8 +90,7 @@ Window Organizer:
 
 After that new window will pop up & then select export button at the right sidebar.
 
-Export Organizer: 
-
+#### Export Organizer: 
 
 ![alt text][image9]
 
@@ -99,7 +98,7 @@ Export Organizer:
 
 A new window will pop up & select the option **Development** & press **Next**.
 
-Organizer Development: 
+#### Organizer Development: 
 
 ![alt text][image10.a]
 
@@ -107,7 +106,7 @@ Organizer Development:
 
 Choose the following options as depicted in the screenshot & press **Next**.
 
-Organizer Development Options: 
+#### Organizer Development Options: 
 
 ![alt text][image10.b]
 
@@ -115,7 +114,7 @@ Organizer Development Options:
 
 Choose the following options as depicted in the screenshot & press **Next**.
 
-Organizer Development Certificate: 
+#### Organizer Development Certificate: 
 
 ![alt text][image11]
 
@@ -126,7 +125,7 @@ Organizer Development Certificate:
 Export from Xcode to Finder
 Choose the **Export** button from Organizer window.
 
-Organizer iPA Success: 
+####Organizer iPA Success: 
 
 ![alt text][image12]
 
@@ -134,7 +133,7 @@ Organizer iPA Success:
 
 Select the location for iPA export in finder & click **Export** button .
 
-Export finder: 
+#### Export finder: 
 
 ![alt text][image13]
 
