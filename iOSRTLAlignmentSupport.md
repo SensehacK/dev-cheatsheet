@@ -1,19 +1,19 @@
-# Reusable component for Text Alignment.
+# Reusable component for Text Alignment
 
-## Prerequisites: 
+## Prerequisites
 
 * Xcode IDE
-* Mac OS 
+* Mac OS
 * iTunes
 * iOS Device
 
+## Creation
 
-## Creation: 
+### Step 1
 
-### Step 1:
 Use the singleton class file where it is imported everywhere in the project. For my example, I have "Utility.m" in objective C.
 
-#### Utility class : 
+#### Utility class
 
 `code()`
 
@@ -28,12 +28,12 @@ Use the singleton class file where it is imported everywhere in the project. For
 }
 ```
 
-### Step 2:
+### Step 2
+
 Create a different class which handles all of your data parameters from restful services in middleware or back end services.
 Use the API json data to persist the data throughout the application or maybe store it in constant variable.
 
-#### Translation Dashboard Class : 
-
+#### Translation Dashboard Class
 
 `code()`
 
@@ -53,5 +53,3 @@ Use the API json data to persist the data throughout the application or maybe st
 
 @end
 ```
-
-
