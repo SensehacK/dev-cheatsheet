@@ -28,7 +28,13 @@ Use the API json data to persist the data throughout the application or maybe st
 
 #### Translation Dashboard Class : 
 
-#pragma mark - AppLanguageInfo
+
+`code()`
+
+    Markup :  `code()`
+
+```objective-c.
+    #pragma mark - AppLanguageInfo
 @interface TranslationInfo : NSObject
 
 @property (nonatomic, retain) NSString *language;
@@ -40,3 +46,6 @@ Use the API json data to persist the data throughout the application or maybe st
 
 
 @end
+```
+
+
