@@ -15,6 +15,10 @@ Use the singleton class file where it is imported everywhere in the project. For
 
 #### Utility class : 
 
+`code()`
+
+    Markup :  `code()`
+
 //**AR
 //Moving generic method here to use Singleton feature
 //This is just calling TranslationDashboard method
