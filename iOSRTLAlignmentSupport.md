@@ -19,12 +19,14 @@ Use the singleton class file where it is imported everywhere in the project. For
 
     Markup :  `code()`
 
+```objective-c.
 //**AR
 //Moving generic method here to use Singleton feature
 //This is just calling TranslationDashboard method
 -(NSInteger)getAlignment{
     return [[TranslationDashboard sharedManager] getAlignment];
 }
+```
 
 ### Step 2:
 Create a different class which handles all of your data parameters from restful services in middleware or back end services.
