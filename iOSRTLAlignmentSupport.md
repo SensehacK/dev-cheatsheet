@@ -30,6 +30,18 @@ Use the singleton class file where it is imported everywhere in the project. For
 
 ### Step 2
 
+Invoke the class once to get the data from the server in the app life cycle.
+
+#### Business Logic class
+
+```objective-c.
+//**AR
+    [translationDashboard appAlignment];
+//AR
+```
+
+### Step 3
+
 Create a different class which handles all of your data parameters from restful services in middleware or back end services.
 Use the API json data to persist the data throughout the application or maybe store it in constant variable.
 
