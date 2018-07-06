@@ -124,10 +124,12 @@ Main method called for getting the latest Text Alignment preference for the part
 
 ### Step 7
 
+Method called for getting the Text Alignment preference from translation class method variables to check whether it is "RTL" or "LTR" abbreviation for the same is "Right To Left" & vice versa.
+
 ```objective-c.
 //**AR
-//Based on the aligment parameter from getTranslation WS
-//alignment for textfields and labels will be decided.
+//Based on the alignment parameter from getTranslation WS
+//alignment for text fields and labels will be decided.
 -(NSInteger)appAlignment{
     TranslationInfo *translationInfo;
     NSInteger alignment = NSTextAlignmentLeft;
@@ -141,3 +143,33 @@ Main method called for getting the latest Text Alignment preference for the part
     return _finalAlignment;
 }
 ```
+
+NSTextAlignment can also accept variables in Integers :
+
+* NSTextAlignmentLeft:0
+
+* NSTextAlignmentCenter : 1
+
+* NSTextAlignmentRight : 2
+
+### Step 8
+
+## Profit ???
+
+## Implementation
+
+This 1 line code determines the current user alignment based of from our web service call from server saved in singleton class so that we don’t need to import the function everywhere. Just use single instance “sharedUtil” for class “Utility” which is imported by default to track user variables parameters used dynamically.
+
+```objective-c.
+//^ARK
+    textView.textAlignment=[[Utility sharedUtil] getAlignment];
+//^ARK
+```
+
+## Contribution
+
+Feel free to fork this project & raise a pull request to add more relevant information regarding development tools used in iOS ecosystem.
+
+## Author : Kautilya Save
+
+#### [GitHub](https://github.com/SensehacK) 
