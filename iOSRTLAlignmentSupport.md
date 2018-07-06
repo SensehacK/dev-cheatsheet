@@ -36,7 +36,7 @@ Invoke the class once to fetch the data from the server in the app life cycle.
 
 ```objective-c.
 //**AR
-    [translationDashboard appAlignment];
+    [renderDashboard appAlignment];
 //AR
 ```
 
@@ -58,7 +58,7 @@ Use the API json data to persist the data throughout the application or maybe st
 @property (nonatomic, retain) NSString *language;
 @property (nonatomic, retain) NSString *country;
 @property (nonatomic, retain) NSBundle *bundle;
-@property (nonatomic, retain) NSString *locale;
+@property (nonatomic, retain) NSString *localization;
 @property (nonatomic) NSInteger finalAlignment;
 @property (nonatomic, retain) NSString *appAlignmentText;
 
@@ -68,17 +68,17 @@ Use the API json data to persist the data throughout the application or maybe st
 
 ### Step 4
 
-Save the locale information currently used by the app or returned in response by service, use the same class used in Step 3.
+Save the localization information currently used by the app or returned in response by service, use the same class used in Step 3.
 
 #### RTLTranslate  Class
 
 ```objective-c.
--(void)saveLocaleDataToUserDefaults:(NSDictionary *)localeInfo {
+-(void)saveLocalizationDataToUserDefaults:(NSDictionary *)localizationInfo {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setValue:[localeInfo valueForKey:@"locale"] forKey:@"locale"];
-    [userDefaults setValue:[localeInfo valueForKey:@"country"] forKey:@"country"];
-    [userDefaults setValue:[localeInfo valueForKey:@"language"] forKey:@"language"];
-    [userDefaults setValue:[localeInfo valueForKey:@"textAlignment"] forKey:@"textAlignment"];
+    [userDefaults setValue:[localizationInfo valueForKey:@"localization"] forKey:@"localization"];
+    [userDefaults setValue:[localizationInfo valueForKey:@"country"] forKey:@"country"];
+    [userDefaults setValue:[localizationInfo valueForKey:@"language"] forKey:@"language"];
+    [userDefaults setValue:[localizationInfo valueForKey:@"textAlignment"] forKey:@"textAlignment"];
     [userDefaults synchronize];
 }
 ```
@@ -86,14 +86,14 @@ Save the locale information currently used by the app or returned in response by
 ```objective-c.
 -(RTLTranslateInfo *)fetchDefaultDeviceRTLTranslateInfo
 {
-    RTLTranslateInfo *translationInfo = [RTLTranslateInfo new];
-    translationInfo.language = [RTLTranslateDashboard fetchCurrentLanguage];
-    translationInfo.country = [RTLTranslateDashboard fetchCurrentCountry];
-    translationInfo.locale = [RTLTranslateDashboard fetchCurrentLocale];
-    translationInfo.appAlignmentText = [RTLTranslateDashboard fetchAppAlignment];
+    RTLTranslateInfo *renderInfo = [RTLTranslateInfo new];
+    renderInfo.language = [RTLTranslateDashboard fetchCurrentLanguage];
+    renderInfo.country = [RTLTranslateDashboard fetchCurrentCountry];
+    renderInfo.localization = [RTLTranslateDashboard fetchCurrentLocalization];
+    renderInfo.appAlignmentText = [RTLTranslateDashboard fetchAppAlignment];
     //[self setAppLanguageWithDefaultRTLTranslateDashboardInfo];
 
-    return translationInfo;
+    return renderInfo;
 }
 ```
 
@@ -124,17 +124,17 @@ Main method called for fetchting the latest Text Alignment preference for the pa
 
 ### Step 7
 
-Method called for fetchting the Text Alignment preference from translation class method variables to check whether it is "RTL" or "LTR" abbreviation for the same is "Right To Left" & vice versa.
+Method called for fetchting the Text Alignment preference from render class method variables to check whether it is "RTL" or "LTR" abbreviation for the same is "Right To Left" & vice versa.
 
 ```objective-c.
 //**AR
 //Based on the alignment parameter from fetchRTLTranslate WS
 //alignment for text fields and labels will be decided.
 -(NSInteger)appAlignment{
-    RTLTranslateInfo *translationInfo;
+    RTLTranslateInfo *renderInfo;
     NSInteger alignment = NSTextAlignmentLeft;
-    translationInfo = [self fetchDefaultDeviceRTLTranslateInfo];
-    if ([translationInfo.appAlignmentText isEqualToString:@"RTL"]) {
+    renderInfo = [self fetchDefaultDeviceRTLTranslateInfo];
+    if ([renderInfo.appAlignmentText isEqualToString:@"RTL"]) {
         alignment = NSTextAlignmentRight;
     }
     _finalAlignment = alignment;
