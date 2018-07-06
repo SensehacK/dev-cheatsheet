@@ -158,7 +158,8 @@ NSTextAlignment can also accept variables in Integers :
 
 ## Implementation
 
-This 1 line code determines the current user alignment based of from our web service call from server saved in singleton class so that we don’t need to import the function everywhere. Just use single instance “sharedUtil” for class “Utility” which is imported by default to track user variables parameters used dynamically.
+This 1 line code determines the current user alignment based of from our web service call from server saved in singleton class so that we don’t need to import the function everywhere.
+Just use single instance “sharedUtil” for class “Utility” which is imported by default to track user variables parameters used dynamically.
 
 ```objective-c.
 //^ARK
@@ -168,8 +169,8 @@ This 1 line code determines the current user alignment based of from our web ser
 
 ## Contribution
 
-Feel free to fork this project & raise a pull request to add more relevant information regarding development tools used in iOS ecosystem.
+> Feel free to fork this project & raise a pull request to add more relevant information regarding development tools used in iOS ecosystem.
 
 ## Author : Kautilya Save
 
-#### [GitHub](https://github.com/SensehacK) 
+### [GitHub](https://github.com/SensehacK)
