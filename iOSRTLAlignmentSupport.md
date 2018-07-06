@@ -22,15 +22,15 @@ Use the singleton class file where it is imported everywhere in the project. For
 ```objective-c.
 //**AR
 //Moving generic method here to use Singleton feature
-//This is just calling TranslationDashboard method
--(NSInteger)getAlignment{
-    return [[TranslationDashboard sharedManager] getAlignment];
+//This is just calling RTLTranslateDashboard method
+-(NSInteger)fetchAlignment{
+    return [[RTLTranslateDashboard sharedManager] fetchAlignment];
 }
 ```
 
 ### Step 2
 
-Invoke the class once to get the data from the server in the app life cycle.
+Invoke the class once to fetch the data from the server in the app life cycle.
 
 #### Business Logic class
 
@@ -45,7 +45,7 @@ Invoke the class once to get the data from the server in the app life cycle.
 Create a different class which handles all of your data parameters from restful services in middleware or back end services.
 Use the API json data to persist the data throughout the application or maybe store it in constant variable.
 
-#### Translation Dashboard Class
+#### RTLTranslate Dashboard Class
 
 `code()`
 
@@ -53,7 +53,7 @@ Use the API json data to persist the data throughout the application or maybe st
 
 ```objective-c.
     #pragma mark - AppLanguageInfo
-@interface TranslationInfo : NSObject
+@interface RTLTranslateInfo : NSObject
 
 @property (nonatomic, retain) NSString *language;
 @property (nonatomic, retain) NSString *country;
@@ -70,7 +70,7 @@ Use the API json data to persist the data throughout the application or maybe st
 
 Save the locale information currently used by the app or returned in response by service, use the same class used in Step 3.
 
-#### Translation  Class
+#### RTLTranslate  Class
 
 ```objective-c.
 -(void)saveLocaleDataToUserDefaults:(NSDictionary *)localeInfo {
@@ -84,14 +84,14 @@ Save the locale information currently used by the app or returned in response by
 ```
 
 ```objective-c.
--(TranslationInfo *)getDefaultDeviceTranslationInfo
+-(RTLTranslateInfo *)fetchDefaultDeviceRTLTranslateInfo
 {
-    TranslationInfo *translationInfo = [TranslationInfo new];
-    translationInfo.language = [TranslationDashboard getCurrentLanguage];
-    translationInfo.country = [TranslationDashboard getCurrentCountry];
-    translationInfo.locale = [TranslationDashboard getCurrentLocale];
-    translationInfo.appAlignmentText = [TranslationDashboard getAppAlignment];
-    //[self setAppLanguageWithDefaultTranslationDashboardInfo];
+    RTLTranslateInfo *translationInfo = [RTLTranslateInfo new];
+    translationInfo.language = [RTLTranslateDashboard fetchCurrentLanguage];
+    translationInfo.country = [RTLTranslateDashboard fetchCurrentCountry];
+    translationInfo.locale = [RTLTranslateDashboard fetchCurrentLocale];
+    translationInfo.appAlignmentText = [RTLTranslateDashboard fetchAppAlignment];
+    //[self setAppLanguageWithDefaultRTLTranslateDashboardInfo];
 
     return translationInfo;
 }
@@ -101,9 +101,9 @@ Save the locale information currently used by the app or returned in response by
 
 ```objective-c.
 //**AR
-// changed function name from "getAlignment" >> "getFinalAlignment" so that swift/objC compiler or runtime executor will be able to differentiate it easily.
+// changed function name from "fetchAlignment" >> "fetchFinalAlignment" so that swift/objC compiler or runtime executor will be able to differentiate it easily.
 // Also less ambiguous overall. ARK
--(NSInteger)getFinalAlignment
+-(NSInteger)fetchFinalAlignment
 {
     return _finalAlignment;
 }
@@ -111,10 +111,10 @@ Save the locale information currently used by the app or returned in response by
 
 ### Step 6
 
-Main method called for getting the latest Text Alignment preference for the particular user.
+Main method called for fetchting the latest Text Alignment preference for the particular user.
 
 ```objective-c.
-+(NSString *)getAppAlignment{
++(NSString *)fetchAppAlignment{
     NSString *finalAlignment;
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     finalAlignment = [userDefaults valueForKey:@"textAlignment"];
@@ -124,16 +124,16 @@ Main method called for getting the latest Text Alignment preference for the part
 
 ### Step 7
 
-Method called for getting the Text Alignment preference from translation class method variables to check whether it is "RTL" or "LTR" abbreviation for the same is "Right To Left" & vice versa.
+Method called for fetchting the Text Alignment preference from translation class method variables to check whether it is "RTL" or "LTR" abbreviation for the same is "Right To Left" & vice versa.
 
 ```objective-c.
 //**AR
-//Based on the alignment parameter from getTranslation WS
+//Based on the alignment parameter from fetchRTLTranslate WS
 //alignment for text fields and labels will be decided.
 -(NSInteger)appAlignment{
-    TranslationInfo *translationInfo;
+    RTLTranslateInfo *translationInfo;
     NSInteger alignment = NSTextAlignmentLeft;
-    translationInfo = [self getDefaultDeviceTranslationInfo];
+    translationInfo = [self fetchDefaultDeviceRTLTranslateInfo];
     if ([translationInfo.appAlignmentText isEqualToString:@"RTL"]) {
         alignment = NSTextAlignmentRight;
     }
@@ -163,7 +163,7 @@ Just use single instance “sharedUtil” for class “Utility” which is impor
 
 ```objective-c.
 //^ARK
-    textView.textAlignment=[[Utility sharedUtil] getAlignment];
+    textView.textAlignment=[[Utility sharedUtil] fetchAlignment];
 //^ARK
 ```
 
