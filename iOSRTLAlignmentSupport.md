@@ -82,3 +82,30 @@ Save the locale information currently used by the app or returned in response by
     [userDefaults synchronize];
 }
 ```
+
+```objective-c.
+-(TranslationInfo *)getDefaultDeviceTranslationInfo
+{
+    TranslationInfo *translationInfo = [TranslationInfo new];
+    translationInfo.language = [TranslationDashboard getCurrentLanguage];
+    translationInfo.country = [TranslationDashboard getCurrentCountry];
+    translationInfo.locale = [TranslationDashboard getCurrentLocale];
+    translationInfo.appAlignmentText = [TranslationDashboard getAppAlignment];
+    //[self setAppLanguageWithDefaultTranslationDashboardInfo];
+    
+    return translationInfo;
+}
+```
+
+### Step 5
+
+```objective-c.
+//**AR
+// changed function name from "getAlignment" >> "getFinalAlignment" so that swift/objC compiler or runtime executor will be able to differientiate it easily.
+// Also less ambiguous overall. ARK
+-(NSInteger)getFinalAlignment
+{
+    return _finalAlignment;
+}
+```
+
