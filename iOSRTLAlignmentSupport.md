@@ -68,9 +68,9 @@ Use the API json data to persist the data throughout the application or maybe st
 
 ### Step 4
 
-Save the locale information currently used by the app or returned in response by service
+Save the locale information currently used by the app or returned in response by service, use the same class used in Step 3.
 
-#### Translation Dashboard Class
+#### Translation  Class
 
 ```objective-c.
 -(void)saveLocaleDataToUserDefaults:(NSDictionary *)localeInfo {
@@ -92,7 +92,7 @@ Save the locale information currently used by the app or returned in response by
     translationInfo.locale = [TranslationDashboard getCurrentLocale];
     translationInfo.appAlignmentText = [TranslationDashboard getAppAlignment];
     //[self setAppLanguageWithDefaultTranslationDashboardInfo];
-    
+
     return translationInfo;
 }
 ```
@@ -101,7 +101,7 @@ Save the locale information currently used by the app or returned in response by
 
 ```objective-c.
 //**AR
-// changed function name from "getAlignment" >> "getFinalAlignment" so that swift/objC compiler or runtime executor will be able to differientiate it easily.
+// changed function name from "getAlignment" >> "getFinalAlignment" so that swift/objC compiler or runtime executor will be able to differentiate it easily.
 // Also less ambiguous overall. ARK
 -(NSInteger)getFinalAlignment
 {
@@ -110,6 +110,7 @@ Save the locale information currently used by the app or returned in response by
 ```
 
 ### Step 6
+
 Main method called for getting the latest Text Alignment preference for the particular user.
 
 ```objective-c.
@@ -118,5 +119,25 @@ Main method called for getting the latest Text Alignment preference for the part
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     finalAlignment = [userDefaults valueForKey:@"textAlignment"];
     return finalAlignment;
+}
+```
+
+### Step 7
+
+```objective-c.
+//**AR
+//Based on the aligment parameter from getTranslation WS
+//alignment for textfields and labels will be decided.
+-(NSInteger)appAlignment{
+    TranslationInfo *translationInfo;
+    NSInteger alignment = NSTextAlignmentLeft;
+    translationInfo = [self getDefaultDeviceTranslationInfo];
+    if ([translationInfo.appAlignmentText isEqualToString:@"RTL"]) {
+        alignment = NSTextAlignmentRight;
+    }
+    _finalAlignment = alignment;
+    //Dev environment to simulate RTL ? 2 : 0
+//    _finalAlignment = 2;
+    return _finalAlignment;
 }
 ```
