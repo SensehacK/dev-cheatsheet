@@ -109,3 +109,14 @@ Save the locale information currently used by the app or returned in response by
 }
 ```
 
+### Step 6
+Main method called for getting the latest Text Alignment preference for the particular user.
+
+```objective-c.
++(NSString *)getAppAlignment{
+    NSString *finalAlignment;
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    finalAlignment = [userDefaults valueForKey:@"textAlignment"];
+    return finalAlignment;
+}
+```
