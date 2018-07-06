@@ -65,3 +65,20 @@ Use the API json data to persist the data throughout the application or maybe st
 
 @end
 ```
+
+### Step 4
+
+Save the locale information currently used by the app or returned in response by service
+
+#### Translation Dashboard Class
+
+```objective-c.
+-(void)saveLocaleDataToUserDefaults:(NSDictionary *)localeInfo {
+    NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
+    [userDefaults setValue:[localeInfo valueForKey:@"locale"] forKey:@"locale"];
+    [userDefaults setValue:[localeInfo valueForKey:@"country"] forKey:@"country"];
+    [userDefaults setValue:[localeInfo valueForKey:@"language"] forKey:@"language"];
+    [userDefaults setValue:[localeInfo valueForKey:@"textAlignment"] forKey:@"textAlignment"];
+    [userDefaults synchronize];
+}
+```
