@@ -127,7 +127,7 @@ Choose the **Export** button from Organizer window.
 
 ![alt text][image12]
 
-[image12]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_ipa_success.png "organizer_ipa_success Kautilya"
+[image12]: iOSiPAAssets/organizer_ipa_success.png "organizer_ipa_success Kautilya"
 
 Select the location for iPA export in finder & click **Export** button .
 
