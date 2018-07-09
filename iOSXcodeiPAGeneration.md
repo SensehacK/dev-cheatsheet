@@ -23,7 +23,7 @@ If you select "Automatically manage signing" it is way easy for you.
 
 ![alt text][image]
 
-[image]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/automatic_Signing.png "Automatic Signing Kautilya"
+[image]: iOSiPAAssets/automatic_Signing.png "Automatic Signing Kautilya"
 
 #### You could download the project via this link [Dicey App Source Code](https://github.com/SensehacK/Dicey)
 
@@ -34,7 +34,7 @@ Always choose allow for Keychain / Xcode as everytime you build apps to run on p
 
 ![alt text][image2]
 
-[image2]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/manual_Signing.png "Manual Signing Kautilya"
+[image2]: iOSiPAAssets/manual_Signing.png "Manual Signing Kautilya"
 
 iOS requires you to run signed code, you cannot run unsign code unless you're bypassing the installation methods or have a jailbroken device.
 
@@ -46,7 +46,7 @@ Select **Generic iOS Device** in select device screen.
 
 ![alt text][image3]
 
-[image3]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/select_Generic_iOS_Device.png "select_Generic_iOS_Device Kautilya"
+[image3]: iOSiPAAssets/select_Generic_iOS_Device.png "select_Generic_iOS_Device Kautilya"
 
 After you have selected your Xcode should show up like this.
 
@@ -54,7 +54,7 @@ After you have selected your Xcode should show up like this.
 
 ![alt text][image4]
 
-[image4]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/selected_generic_device.png "selected generic device Kautilya"
+[image4]: iOSiPAAssets/selected_generic_device.png "selected generic device Kautilya"
 
 Archiving Button & progress
 
@@ -62,19 +62,19 @@ Archiving Button & progress
 
 ![alt text][image5]
 
-[image5]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/product_archive.png "product_archive Kautilya"
+[image5]: iOSiPAAssets/product_archive.png "product_archive Kautilya"
 
 #### Archive progress started
 
 ![alt text][image6]
 
-[image6]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_progress.png "archive_progress Kautilya"
+[image6]: iOSiPAAssets/archive_progress.png "archive_progress Kautilya"
 
 #### Archive progress succeeded
 
 ![alt text][image7]
 
-[image7]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/archive_successful.png "archive_progress succeeded Kautilya"
+[image7]: iOSiPAAssets/archive_successful.png "archive_progress succeeded Kautilya"
 
 ### Step 4
 
@@ -84,7 +84,7 @@ Use Xcode menu bar **Window** -> **Organizer**
 
 ![alt text][image8]
 
-[image8]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/window_organizer.png "window_organizer Kautilya"
+[image8]: iOSiPAAssets/window_organizer.png "window_organizer Kautilya"
 
 After that new window will pop up & then select export button at the right sidebar.
 
@@ -92,7 +92,7 @@ After that new window will pop up & then select export button at the right sideb
 
 ![alt text][image9]
 
-[image9]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_organizer.png "export_organizer Kautilya"
+[image9]: iOSiPAAssets/export_organizer.png "export_organizer Kautilya"
 
 A new window will pop up & select the option **Development** & press **Next**.
 
@@ -100,7 +100,7 @@ A new window will pop up & select the option **Development** & press **Next**.
 
 ![alt text][image10.a]
 
-[image10.a]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
+[image10.a]: iOSiPAAssets/organizer_development.png "organizer_development Kautilya"
 
 Choose the following options as depicted in the screenshot & press **Next**.
 
@@ -108,7 +108,7 @@ Choose the following options as depicted in the screenshot & press **Next**.
 
 ![alt text][image10.b]
 
-[image10.b]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
+[image10.b]: iOSiPAAssets/organizer_development_options.png "organizer_development_options Kautilya"
 
 Choose the following options as depicted in the screenshot & press **Next**.
 
@@ -116,7 +116,7 @@ Choose the following options as depicted in the screenshot & press **Next**.
 
 ![alt text][image11]
 
-[image11]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/organizer_development_certificate.png "organizer_development_certificate Kautilya"
+[image11]: iOSiPAAssets/organizer_development_certificate.png "organizer_development_certificate Kautilya"
 
 ### Step 5
 
@@ -135,7 +135,7 @@ Select the location for iPA export in finder & click **Export** button .
 
 ![alt text][image13]
 
-[image13]: https://github.com/SensehacK/iOSDocumentation/blob/master/iOSiPAAssets/export_finder.png "export_finder Kautilya"
+[image13]: iOSiPAAssets/export_finder.png "export_finder Kautilya"
 
 Navigate to that folder & copy that iPA file to your desired application.
 
