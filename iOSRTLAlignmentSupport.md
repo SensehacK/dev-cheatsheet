@@ -171,6 +171,6 @@ Just use single instance “sharedUtil” for class “Utility” which is impor
 
 > Feel free to fork this project & raise a pull request to add more relevant information regarding development tools used in iOS ecosystem.
 
-## Author : Kautilya Save
+## Author : [Kautilya Save](https://kautilya.design/)
 
 ### [GitHub](https://github.com/SensehacK)

@@ -145,6 +145,6 @@ Navigate to that folder & copy that iPA file to your desired application.
 
 :grin:
 
-## Author : Kautilya Save
+## Author : [Kautilya Save](https://kautilya.design/)
 
 ### [GitHub](https://github.com/SensehacK)
