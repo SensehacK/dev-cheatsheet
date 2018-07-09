@@ -6,9 +6,9 @@ Here you can find various documentation related to iOS development which can hel
 
 ## Documentation Links
 
-Xcode iPA Generation Link: [iOS Xcode iPA Generation](https://github.com/SensehacK/iOSDocumentation/blob/master/iOSXcodeiPAGeneration.md)
+Xcode iPA Generation Link: [iOS Xcode iPA Generation](iOSXcodeiPAGeneration.md)
 
-iOS Natural Alignment Support Link: [iOS Natural Alignment Support](https://github.com/SensehacK/iOSDocumentation/blob/master/iOSRTLAlignmentSupport.md)
+iOS Natural Alignment Support Link: [iOS Natural Alignment Support](iOSRTLAlignmentSupport.md)
 
 ## Contribution
 
