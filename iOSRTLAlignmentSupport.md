@@ -111,7 +111,7 @@ Save the localization information currently used by the app or returned in respo
 
 ### Step 6
 
-Main method called for fetchting the latest Text Alignment preference for the particular user.
+Main method called for fetching the latest Text Alignment preference for the particular user.
 
 ```objective-c.
 +(NSString *)fetchAppAlignment{
@@ -124,7 +124,7 @@ Main method called for fetchting the latest Text Alignment preference for the pa
 
 ### Step 7
 
-Method called for fetchting the Text Alignment preference from render class method variables to check whether it is "RTL" or "LTR" abbreviation for the same is "Right To Left" & vice versa.
+Method called for fetching the Text Alignment preference from render class method variables to check whether it is "RTL" or "LTR" abbreviation for the same is "Right To Left" & vice versa.
 
 ```objective-c.
 //**AR
