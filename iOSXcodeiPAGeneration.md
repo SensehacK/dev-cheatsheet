@@ -28,7 +28,7 @@ If you select "Automatically manage signing" it is way easy for you.
 #### You could download the project via this link [Dicey App Source Code](https://github.com/SensehacK/Dicey)
 
 If you select manual version do add the appropriate profiles & distribution certificates to the Apple **Keychain**.
-Always choose allow for Keychain / Xcode as everytime you build apps to run on physical devices aside from simulator.
+Always choose allow for Keychain / Xcode as every time you build apps to run on physical devices aside from simulator.
 
 #### Manual Signing
 
@@ -141,7 +141,7 @@ Navigate to that folder & copy that iPA file to your desired application.
 
 ### Step 6
 
-## Profit ??
+## Profit ???
 
 :grin:
 
