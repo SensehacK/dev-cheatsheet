@@ -32,9 +32,9 @@ When your iOS device gets displayed you can select **Window** -> **Devices and S
 
 #### Wireless Deploy Location
 
-![alt text][image]
+![alt text][image2]
 
-[image]: iOSiPAAssets/wirelessDeployMenuOption.png "Wireless Deploy Menu Kautilya"
+[image2]: iOSiPAAssets/wirelessDeployMenuOption.png "Wireless Deploy Menu Kautilya"
 
 ### Step 3
 
@@ -43,9 +43,9 @@ That's it, no more messing with wires, unless you want to charge your iOS device
 
 #### App Devices Window
 
-![alt text][image]
+![alt text][image3]
 
-[image]: iOSiPAAssets/wirelessDeployDevicesWindow.png "Wireless Deploy Window Kautilya"
+[image3]: iOSiPAAssets/wirelessDeployDevicesWindow.png "Wireless Deploy Window Kautilya"
 
 ### Step 4
 
@@ -55,9 +55,9 @@ Note: For wireless deployment to work, both the workstation and iOS device shoul
 
 #### Devices list Success
 
-![alt text][image]
+![alt text][image4]
 
-[image]: iOSiPAAssets/wirelessDeployDevicesSuccess.png "Wireless Deploy Devices Success Kautilya"
+[image4]: iOSiPAAssets/wirelessDeployDevicesSuccess.png "Wireless Deploy Devices Success Kautilya"
 
 ### Step 5
 
