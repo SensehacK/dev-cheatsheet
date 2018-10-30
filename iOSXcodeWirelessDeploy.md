@@ -1,4 +1,4 @@
-# Xcode iOS iPA Package Generation
+# Xcode iOS Xcode Wireless Deploy
 
 When we are working with Xcode for app development we usually tether our iOS devices to the Mac for deploying apps but Xcode 9 introduces Wireless Deployment - Debugging and this 5 minute guide will help you in setting that up. Switch to wireless.
 
