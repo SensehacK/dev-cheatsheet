@@ -36,7 +36,7 @@ Always choose allow for Keychain / Xcode as every time you build apps to run on 
 
 [image2]: iOSiPAAssets/manual_Signing.png "Manual Signing Kautilya"
 
-iOS requires you to run signed code, you cannot run unsign code unless you're bypassing the installation methods or have a jailbroken device.
+iOS requires you to run signed code, you cannot run un sign code unless you're bypassing the installation methods or have a jailbroken device.
 
 ### Step 3
 
