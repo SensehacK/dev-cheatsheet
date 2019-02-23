@@ -10,7 +10,9 @@ Xcode iPA Generation Link: [iOS Xcode iPA Generation](iOSXcodeiPAGeneration.md)
 
 iOS Natural Alignment Support Link: [iOS Natural Alignment Support](iOSRTLAlignmentSupport.md)
 
-iOS Xcode Wireless Deploy Link: [iOS Wireless Deployment](iOSXcodeWirelessDeploy.md) 
+iOS Xcode Wireless Deploy Link: [iOS Wireless Deployment](iOSXcodeWirelessDeploy.md)
+
+Travis CI Learn Timeline: [Travis CI Learn Timeline](Travis_CI_Timeline.md)
 
 ## Contribution
 
