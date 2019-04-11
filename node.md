@@ -96,6 +96,10 @@ if issues with sass for rebuilding x64 environment. :
 
 ### Plugins
 
+First, you should list your plugins:
+
+> \$ cordova plugin list
+
 Actual code for ionic:serveStatic.
 
 > \$ "ionic:serveStatic": "export TARGET=static && ionic serve",
@@ -109,6 +113,14 @@ For adding plugin path locally.
 > \$ ionic cordova plugin add /Users/kautilya/Downloads/com.kns.gx.mobile.knsrpc
 > \$ ionic cordova plugin add /Users/kautilya/Downloads/com.kns.us.mobile.toolkit
 > \$ ionic cordova plugin add /Users/kautilya/Downloads/com.kns.gx.mobile.knsmtc
+
+With this result, you can simply do:
+
+> \$ cordova plugin remove <PLUGIN_NAME>
+
+For example:
+
+> \$ cordova plugin remove org.apache.cordova.media
 
 ### Plugin phonegap push issue
 
