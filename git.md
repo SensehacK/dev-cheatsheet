@@ -1,5 +1,14 @@
 # Git Commands
 
+Various Git commands handy cheatsheet.
+
+## List Git Config
+
+List outs all of the git config settings for the particular user.
+> git config --list
+
+## Email Git config
+
 Setting your email address for every repository on your computer
 Open Terminal.
 Set an email address in Git. You can use your GitHub-provided no-reply email address or any email address.
@@ -18,9 +27,20 @@ Change the current working directory to the local repository where you want to c
 Set an email address in Git. You can use your GitHub-provided no-reply email address or any email address.
 git config user.email "email@example.com"
 
-Confirm that you have set the email address correctly in Git:
-git config user.email
+### Verify the Git Config
+
+To know the username, type:
+
+> git config user.name
+
+To know the email, type:
+
+> git config user.email
 email@example.com
+
+Confirm that you have set the email address correctly in Git:
+
+### Option 1: Enter Git commands
 
 Add the email address to your GitHub account by setting your commit email address on GitHub, so that your commits are attributed to you and appear in your contributions graph.
 
@@ -29,11 +49,13 @@ Add the email address to your GitHub account by setting your commit email addres
 
 > \$ git config user.email kautilyasave@gmail.com
 
-Option 2: Edit config file directly
+### Option 2: Edit config file directly
 
 Your other option is to edit the repo config file directly. With a default Git clone, it's usually the .git/config file in your repo's root folder. Just open that file in an editor and starting adding your settings, or invoke an editor for it at the command line using git config --edit.
 
-git stash
+## Git Stash Commands
+
+Git stash commands comes in handy when needed to pull other branches & the other branch codebase has conflicts with your own branch. This stash utility saves a local copy of your working branch & pulls the new branch & then you can override your local branch with the incoming branch.
 
 > \$ git stash
 > \$ git pull --rebase
