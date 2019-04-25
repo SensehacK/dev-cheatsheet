@@ -29,6 +29,14 @@ Changes all the ownership for folders
 
 > \$ sudo chown -R `whoami'
 
+Specific folder ownership
+// User: defines just user
+// $USER:$USER has user group also.
+
+> sudo chown -R user: ~/.virtualenvs
+> sudo chown $USER:$USER /usr/local/bin/youtube-dl
+
+
 ## Terminal commands
 
 Will actually reset the terminal, which wont be shown after scrolling with command ‘clear’
@@ -109,12 +117,6 @@ To use the application:
 1. Clone the project
 2. Run npm install
 3. Run npm start
-
-## Youtube Dl
-
-To Download video
-
-> \$ youtube-dl https://www.youtube.com/watch?v=yVpbFMhOAwE
 
 ## Bash Script
 
