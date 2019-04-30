@@ -60,3 +60,23 @@ Git stash commands comes in handy when needed to pull other branches & the other
 > \$ git stash
 > \$ git pull --rebase
 > \$ git stash apply
+
+
+## Git Branch Commands
+
+If you want to switch to different branch from your current local uncommitted branch you could follow these steps overall.
+
+Step 1 : Local_Branch_Name (Local Changes) Considering you want to save or forward these changes to your new branch.
+
+Step 2 : Create your newly created branch with base as of updated master or develop.
+
+Step 3 : Run Git stash command to save your workflow.
+> \$ git stash
+> \$ git checkout branch_name
+
+Step 4 : After switching to new branch via Git CLI or Git GUI just run Stash Apply command for overwriting your changes to new branch.
+
+> \$ git stash apply
+
+## Git Rebase Commands
+
