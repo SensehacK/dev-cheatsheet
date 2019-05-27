@@ -79,4 +79,3 @@ Step 4 : After switching to new branch via Git CLI or Git GUI just run Stash App
 > \$ git stash apply
 
 ## Git Rebase Commands
-
