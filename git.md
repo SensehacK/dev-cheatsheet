@@ -61,7 +61,6 @@ Git stash commands comes in handy when needed to pull other branches & the other
 > \$ git pull --rebase
 > \$ git stash apply
 
-
 ## Git Branch Commands
 
 If you want to switch to different branch from your current local uncommitted branch you could follow these steps overall.

@@ -3,6 +3,7 @@
 This markdown file list downs all the commands for Mac OS for setting up with some configuration & statistics via Terminal.
 
 ## Enable Hidden files
+
 The Quickest Way to Show/Hide Hidden Files
 Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:
 CMD + SHIFT + .

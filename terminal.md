@@ -36,7 +36,6 @@ Specific folder ownership
 > sudo chown -R user: ~/.virtualenvs
 > sudo chown $USER:$USER /usr/local/bin/youtube-dl
 
-
 ## Terminal commands
 
 Will actually reset the terminal, which wont be shown after scrolling with command ‘clear’
@@ -117,3 +116,50 @@ Always filter these keywords with
 I have wished for a "complete list". I used to have a filter program compiled that would escape every "special character" that I could think of.
 
 A good start: ! ? $ % $ # & \* ( ) blank tab | ' ; " < > \ ~ ` [ ] { }
+
+## Deletion
+
+Source : https://askubuntu.com/questions/60228/how-to-remove-all-files-from-a-directory/60229
+
+To remove the folder with all its contents(including all interior folders):
+
+> rm -rf /path/to/directory
+
+To remove all the contents of the folder(including all interior folders) but not the folder itself:
+
+> rm -rf /path/to/directory/*
+
+or
+
+> rm -rf /path/to/directory/{*,.*}
+
+if you want to make sure that hidden files/directories are also removed.
+
+To remove all the "files" from inside a folder(not removing interior folders):
+
+> rm -f /path/to/directory/{*,.*}
+
+Warning: if you have spaces in your path, make sure to always use quotes.
+
+> rm -rf /path/to the/directory/*
+
+is equivalent to 2 separate rm -rf calls:
+
+> rm -rf /path/to
+> rm -rf the/directory/*
+
+To avoid this issue, you can use 'single-quotes'(does not expand shell variables) or "double-quotes"(expands shell variables):
+
+> rm -rf "/path/to the/directory/"*
+
+Where:
+
+rm - stands for "remove"
+-f - stands for "force" which is helpful when you don't want to be asked/prompted if you want to remove an archive, for example.
+-r - stands for "recursive" which means that you want to go recursively down every folder and remove everything.
+
+## Secure Delete
+
+Use rm with flag -P for overwriting the file so that it won't be recovered easily. Still it doesn't guarantee files being securely deleted.
+
+> rm -P "filename.filextension"
