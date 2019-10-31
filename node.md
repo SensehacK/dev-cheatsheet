@@ -28,6 +28,22 @@ And then in any new shell just use the installed version:
 nvm use node
 Or you can just run it:
 
+## Change Node
+
+List all of the node runtime installed locally
+
+> \$ nvm ls
+
+Use specific node version , end the numbers with the major version.
+
+> \$ nvm use 10
+
+You can set the default Node.js version by using alias:
+Anyone is fine.
+
+> \$ nvm alias default system
+> \$ nvm alias default v9.3.0
+
 ## Version Check
 
 nvm run node --version
