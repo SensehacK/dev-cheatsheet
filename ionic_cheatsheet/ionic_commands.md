@@ -24,6 +24,7 @@ Command used to utilize given starter template for ionic.
 
 ```terminal
 ionic start ionic2-basics blank
+ionic start ionic-appName tabs
 ```
 
 ### Development Environment
