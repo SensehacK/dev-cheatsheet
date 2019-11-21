@@ -1,5 +1,8 @@
 # Creating new Data Service in IONIC
 
+## Create CLI command for generating the service
+>  ionic g service services/service_name
+
 Let's start with creating a new file named 'data.service.ts'
 ```typescript
 import { Injectable } from '@angular/core';

@@ -1,8 +1,5 @@
-# Build for IOS Xcode project
+# Ionic Issues
 
-Command for Xcode build Cordova
-
-> ionic cordova build ios
 
 ## Issues
 
@@ -71,3 +68,8 @@ Also if still doesn't fix your issue, you could switch to Tab "Capabilities"
 Scroll down towards "Keychain Sharing"
 
 > keychainGroup: com.Xxx.de.mobility.KeychainAccessGrp
+
+
+### Authored by : [Kautilya Save](https://sensehack.github.io/)
+
+### [GitHub](https://github.com/SensehacK)
