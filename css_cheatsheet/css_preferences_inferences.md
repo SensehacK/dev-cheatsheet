@@ -1,6 +1,8 @@
-CSS Preferences Precedence
+# CSS Journey
 
 
+
+## Elements Preferences Precedence
 
 So I’ll make this quick
 

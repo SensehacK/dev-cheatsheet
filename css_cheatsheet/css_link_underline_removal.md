@@ -1,12 +1,8 @@
 
-
+# CSS Override Defaults
 
 
 ## Remove underline in links with CSS 
-
-
-
-
 
 
 [Source](https://stackoverflow.com/questions/2789703/remove-stubborn-underline-from-link)
@@ -21,4 +17,5 @@ Try this:
 }
 
 ```
+
 

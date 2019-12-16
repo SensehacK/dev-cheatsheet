@@ -26,13 +26,13 @@ CSS precedence
 Hardware: Macbook Pro 13’ 2015 : Core i5 , 128GB SSD
 OS: Mac OS Mojave 10.14.6
 IDE: Xcode 11.2.1
-VS Code latest patch
+VS Code Stable / Insiders
 Browsers: Firefox Nightly /Dev /Main
 Safari /Technical Preview
 Microsoft Egde Dev ( Chromium )
 Writer: iA Writer
 Version Management: Github
-Task Manager: Things by Cultured Code
+Task Manager: [Things](https://culturedcode.com/things/) by Cultured Code
 Terminal : iTerm
 
 
