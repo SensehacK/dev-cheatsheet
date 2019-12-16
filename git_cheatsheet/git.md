@@ -78,3 +78,28 @@ Step 4 : After switching to new branch via Git CLI or Git GUI just run Stash App
 > \$ git stash apply
 
 ## Git Rebase Commands
+
+
+
+## Git Remove Commits
+
+Multiple options if we haven’t pushed the code to origin server.
+
+Option 1 : 
+Undo commit and keep all files staged
+> git reset --soft HEAD~;
+
+
+Option 2 : 
+Undo commit and unstage all files
+
+> git reset HEAD~;
+or 
+> git reset --mixed HEAD~;
+
+
+Option 3 : 
+Undo the commit and completely remove all changes
+> git reset --hard HEAD~;
+
+[Source](https://bytefreaks.net/programming-2/how-to-undo-a-git-commit-that-was-not-pushed) 
