@@ -1,12 +1,23 @@
-# IONIC Cheatsheet
+# Sensehack Cheatsheet
+
+## Intro
+
+This is just personal documentation or cheatsheet with personal examples for easy reference in future projects.
+
+As sometimes, we would have limited internet access or restrictive data download policies. Personal Git documentation for specific programming languages, libraries & frameworks help a lot to quickly absorb the problem statement and work swiftly :P
 
 ## Content
 
-It includes differences in ion-v3 vs ion-v4
+Development Hell and most of CLI inputs used with bit of documentation so I’m not totally dependent on my Firefox Browser or my One Note / iA Writer App for accessing my documents on different terminal.
+I can just git clone this repository and boom we are up to date with my personal wiki or documentation.
 
-Different issues I have faced.
+Content would include :
 
-Some depreciations.
+- Different issues I have faced.
+- Boilerplate Code
+- Depreciations or obsolete commands or codeflow
+- Timeline of features
+- Easy syntax
 
 ## Projects
 
@@ -14,18 +25,39 @@ Currently I have 2 repositories for learning of my IONIC Angular development wit
 
 ## Documentation Links
 
+WIP
 Few documentation I'm currently working on
 
-Ionic Learn Timeline: [Ionic Learn Timeline](ionic_Learn.md)
+Best Coding practices : [Coding practices](README.md)
+Swift Learn Timeline: [Swift Learn Timeline](README.md)
+Ionic Learn Timeline: [Ionic Learn Timeline](README.md)
+React Learn Timeline: [React Learn Timeline](README.md)
+Angular Learn Timeline: [Angular Learn Timeline](README.md)
+Javascript Learn Timeline: [Javascript Learn Timeline](README.md)
+Html Learn Timeline: [HTML Learn Timeline](README.md)
 
-Ionic Create New Page: [Ionic Create New Page](ionic_create_new_page.md)
 
-Ionic Commands: [Ionic Commands](ionic_commands.md)
+## Tools
 
-Ionic Data Service: [Ionic Data Service](ionic_data_service.md)
+Hardware: Macbook Pro 13’ 2015 : Core i5 , 128GB SSD
 
-Ionic Deprecation: [Ionic Deprecation](ionic_deprecations.md)
+OS: Mac OS Mojave 10.14.6
 
-### Authored by : [Kautilya Save](https://kautilya.design)
+IDE: Xcode 11.2.1
+VS Code latest patch
+
+Browsers: Firefox Nightly /Dev /Main
+Safari /Technical Preview
+Microsoft Edge Dev ( Chromium )
+
+Writer: iA Writer
+
+Version Management: Github
+
+Task Manager: Things by Cultured Code
+
+Terminal : iTerm
+
+### Authored by : [Kautilya Save](https://sensehack.github.io/)
 
 ### [GitHub](https://github.com/SensehacK)
