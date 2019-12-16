@@ -52,3 +52,24 @@ Command for building app with production flag
 
 
 
+## WebApp Build
+
+
+Make prod build using the following command to create a www directory.
+
+> ionic build --prod
+
+The ‘www’ folder would contain parsed or compiled typescript converted code into minimized javascript for small builds and easy parsing for browsers.
+
+
+Also edit the ‘index.html’ file for referencing the whole web app to root directory.
+
+
+> <base> tag to <base href="." />
+
+
+## Deploy Firebase
+
+> ionic build —prod —release
+
+To make the release build for minimizing the build file.

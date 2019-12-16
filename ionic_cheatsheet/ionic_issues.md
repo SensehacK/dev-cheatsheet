@@ -70,6 +70,27 @@ Scroll down towards "Keychain Sharing"
 > keychainGroup: com.Xxx.de.mobility.KeychainAccessGrp
 
 
+### Shared Keychain Entitlement
+
+
+If you get blank screen at launch with ionic app.
+As for me I just executed the command 
+
+> ionic cordova platform add ios
+
+But forgot the build command
+
+> ionic cordova build ios
+
+
+
+```logs
+
+ERROR: Start Page at 'www/index.html' was not found.
+2019-12-10 22:09:35.171363-0500 MyApp[2706:762104] ERROR Internal navigation rejected - <allow-navigation> not set for url='about:blank'
+```
+
+
 ### Authored by : [Kautilya Save](https://sensehack.github.io/)
 
 ### [GitHub](https://github.com/SensehacK)

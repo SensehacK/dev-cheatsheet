@@ -21,6 +21,7 @@ Few of my used commands just including it in the documentation so that it would 
 ### Starter Template
 
 Command used to utilize given starter template for ionic.
+Create new project via Ionic CLI.
 
 ```terminal
 ionic start ionic2-basics blank
