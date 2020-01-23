@@ -38,7 +38,7 @@ ionic serve
 
 ### Ionic Page generation
 
-Command used to generate pages internally in ionic directory. It creates the boilerplate code necessary for running the basic webapp cum ionic wrapper app.
+Command used to generate pages internally in ionic directory. It creates the boilerplate code necessary for running the basic web-app cum ionic wrapper app.
 
 ```terminal
 ionic generate page shop

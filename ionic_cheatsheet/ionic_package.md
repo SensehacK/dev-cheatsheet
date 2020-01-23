@@ -12,11 +12,15 @@ I would add more to this documentation depending on whether I get time to work o
 
 ## DevApp
 
-Make build using 
+Make build using Dev App dependency.
 
+First add cordova prepare as it would give build errors for DevApps as their assets or dependencies are still not loaded yet.
+
+> ionic cordova prepare
+
+Ionic serve for ip address usage on Devapp
 > ionic serve -c
 > ionic serve —devapp
-
 
 
 Add IP address manually if the app isn’t showing up on the Ionic DevApp.
