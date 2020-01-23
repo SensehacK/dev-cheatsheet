@@ -9,7 +9,7 @@ As sometimes, we would have limited internet access or restrictive data download
 
 ## Tools
 
-Hardware: Macbook Pro 13’ 2015 : Core i5 , 128GB SSD
+Hardware: MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
 OS: Mac OS Mojave 10.14.6
 IDE: Xcode 11.2.1
 VS Code latest patch

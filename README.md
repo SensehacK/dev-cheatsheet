@@ -15,7 +15,7 @@ Content would include :
 
 - Different issues I have faced.
 - Boilerplate Code
-- Depreciations or obsolete commands or codeflow
+- Depreciations or obsolete commands or code flow
 - Timeline of features
 - Easy syntax
 
@@ -28,18 +28,27 @@ Currently I have 2 repositories for learning of my IONIC Angular development wit
 WIP
 Few documentation I'm currently working on
 
-Best Coding practices : [Coding practices](README.md)
-Swift Learn Timeline: [Swift Learn Timeline](README.md)
-Ionic Learn Timeline: [Ionic Learn Timeline](README.md)
-React Learn Timeline: [React Learn Timeline](README.md)
-Angular Learn Timeline: [Angular Learn Timeline](README.md)
-Javascript Learn Timeline: [Javascript Learn Timeline](README.md)
-Html Learn Timeline: [HTML Learn Timeline](README.md)
+iOS Documentation: [iOS Documentation](iOS_documentation/README.md)
 
+Ionic Learn Timeline: [Ionic Learn Timeline](ionic_cheatsheet/README.md)
+
+Best Coding practices : [Coding practices](README.md)
+
+Swift Learn Timeline: [Swift Learn Timeline](README.md)
+
+Git Learn Timeline: [Git Learn Timeline](git_cheatsheet/git.md)
+
+React Learn Timeline: [React Learn Timeline](README.md)
+
+Angular Learn Timeline: [Angular Learn Timeline](README.md)
+
+Javascript Learn Timeline: [Javascript Learn Timeline](README.md)
+
+Html Learn Timeline: [HTML Learn Timeline](html_cheatsheet/README.md)
 
 ## Tools
 
-Hardware: Macbook Pro 13’ 2015 : Core i5 , 128GB SSD
+Hardware: MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
 
 OS: Mac OS Mojave 10.14.6
 

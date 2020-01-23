@@ -5,6 +5,7 @@ Various Git commands handy cheatsheet.
 ## List Git Config
 
 List outs all of the git config settings for the particular user.
+
 > git config --list
 
 ## Email Git config
@@ -36,7 +37,7 @@ To know the username, type:
 To know the email, type:
 
 > git config user.email
-email@example.com
+> email@example.com
 
 Confirm that you have set the email address correctly in Git:
 
@@ -70,6 +71,7 @@ Step 1 : Local_Branch_Name (Local Changes) Considering you want to save or forwa
 Step 2 : Create your newly created branch with base as of updated master or develop.
 
 Step 3 : Run Git stash command to save your workflow.
+
 > \$ git stash
 > \$ git checkout branch_name
 
@@ -79,27 +81,25 @@ Step 4 : After switching to new branch via Git CLI or Git GUI just run Stash App
 
 ## Git Rebase Commands
 
-
-
 ## Git Remove Commits
 
 Multiple options if we haven’t pushed the code to origin server.
 
-Option 1 : 
+Option 1 :
 Undo commit and keep all files staged
+
 > git reset --soft HEAD~;
 
-
-Option 2 : 
-Undo commit and unstage all files
+Option 2 :
+Undo commit and un-stage all files
 
 > git reset HEAD~;
-or 
+> or
 > git reset --mixed HEAD~;
 
-
-Option 3 : 
+Option 3 :
 Undo the commit and completely remove all changes
+
 > git reset --hard HEAD~;
 
-[Source](https://bytefreaks.net/programming-2/how-to-undo-a-git-commit-that-was-not-pushed) 
+[Source](https://bytefreaks.net/programming-2/how-to-undo-a-git-commit-that-was-not-pushed)

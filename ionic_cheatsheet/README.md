@@ -13,8 +13,6 @@ Some depreciations.
 Currently I have 2 repositories for learning of my IONIC Angular development with Cordova for building Hybrid Apps.
 
 
-
-
 ## Documentation Links
 
 Few documentation I'm currently working on
@@ -32,7 +30,7 @@ Ionic Deprecation: [Ionic Deprecation](ionic_deprecations.md)
 
 ## Tools
 
-Hardware: Macbook Pro 13’ 2015 : Core i5 , 128GB SSD
+Hardware: MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
 OS: Mac OS Mojave 10.14.6
 IDE: Xcode 11.2.1
 VS Code latest patch

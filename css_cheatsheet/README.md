@@ -23,7 +23,7 @@ CSS precedence
 
 ## Tools
 
-Hardware: Macbook Pro 13’ 2015 : Core i5 , 128GB SSD
+Hardware: MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
 OS: Mac OS Mojave 10.14.6
 IDE: Xcode 11.2.1
 VS Code Stable / Insiders
