@@ -56,3 +56,11 @@ To disable checks globally run in Terminal:
 To re-enable Gatekeeper simply run the following command in the Terminal app
 
 > sudo spctl --master-enable
+
+
+### Host DNS Restart
+
+This command will restart the DNS of the system if you have made changes to Mac “etc/hosts” file.
+> sudo killall -HUP mDNSResponder
+
+Works in Mac OS Mojave 10.14.6
