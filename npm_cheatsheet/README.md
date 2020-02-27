@@ -29,3 +29,31 @@ Eg. Last time I had issue with NPM scripts not working which is mentioned just b
 > npm run build --verbose
 Saved me some problem while debugging what actually caused the problem with my environment.
 
+
+## NPX
+
+For installing nom packages not globally and just temporarily to quickly run the program without the hassle of maintaining the packages in global directory and also avoid bloating the global packages.
+
+> npx cowsay Hello Moooo!
+
+
+## System Address Not Found Error
+
+While running command for turning json data directly into local web server using npm this error was thrown.
+Package json-server
+> json-server --port 3001 https://raw.githubusercontent.com/typicode/jsonplaceholder/master/data.json
+
+```
+Some error occurred Error: getaddrinfo ENOTFOUND localhost
+    at GetAddrInfoReqWrap.onlookup [as oncomplete] (dns.js:60:26) {
+  errno: 'ENOTFOUND',
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'localhost'
+  ```
+  
+  This was solved by 2 things mostly.
+  Turns out my hosts file under “etc/hosts” was not “hosts” instead it was just “host” missing the ’s
+  Also I restarted my DNS service on Mac which didn’t throw this error again while running the command.
+
+
