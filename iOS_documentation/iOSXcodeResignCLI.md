@@ -10,10 +10,10 @@
 
 ## Creation
 
-## Many times we would have different teams to handle app resigning from different build configuration.
+## Many times we would have different teams to handle app bundle signing from different build configuration.
 
 
-It's really easy to do from the command line. I had a gist of a script for doing this. It has now been incorporated into the ipa_sign script in https://github.com/RichardBronosky/ota-tools which I use daily. If you have any questions about using these tools, don't hesitate to ask.
+It's really easy to do from the command line. I had a gist of a script for doing this. It has now been incorporated into the ipa_sign script in [link](https://github.com/RichardBronosky/ota-tools) which I use daily. If you have any questions about using these tools, don't hesitate to ask.
 
 The heart of it is this:
 
