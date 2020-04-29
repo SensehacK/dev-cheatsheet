@@ -15,3 +15,26 @@
 ## Test Command
 
 ```xcodebuild -scheme iOSTravisCI -workspace iOSTravisCI.xcworkspace/ test```
+
+
+## Health Sense Project
+
+```YAML
+xcodebuild -scheme HealthSense -workspace HealthSense.xcworkspace/ -allowProvisioningUpdates build
+
+xcodebuild -scheme HealthSense -workspace HealthSense.xcworkspace/ build
+
+
+
+
+Working Xcode Build locally
+xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+
+
+xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSenseCI -sdk universal -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
+
+
+
+xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
+
+```

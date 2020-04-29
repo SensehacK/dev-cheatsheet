@@ -1,6 +1,8 @@
-# Xcode Auto Increment
+# Xcode Script Error
 
 
+
+## Build Script of incrementing App version on every archive of iOS app.
 
 /Users/SensehacK/Library/Developer/Xcode/DerivedData/HealthSense-fzvhcuvdyregkmagmxlvzrwlevdw/Build/Intermediates.noindex/HealthSense.build/Debug-iphonesimulator/HealthSense.build/Script-FB6DA847244E8ACB0086A030.sh: line 4: File Doesn't Exist, Will Create: /Users/SensehacK/Documents/GitHub/Capstone_Team4/src/iOS/HealthSense/Config/HealthSense/Config/Info.plist + 1: syntax error: invalid arithmetic operator (error token is "'t Exist, Will Create: /Users/SensehacK/Documents/GitHub/Capstone_Team4/src/iOS/HealthSense/Config/HealthSense/Config/Info.plist + 1")
 \

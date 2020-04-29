@@ -10,6 +10,8 @@
 * Ftp server
 
 ## Creation
+This article is just a template of iOS Xcode IPA generation, I haven’t really got time to sit down and document my process last time I had chance to deploy an iPA directly to ad-hoc organization. I would love to work on this cheatsheet again when I get Apple developer account which allows me to create provisioning profiles and sign iPAs for Ad-hoc distribution.
+Though I could maybe just utilize my freemium apple developer account, may need to deep dive on that one.
 
 ### Step 1
 
