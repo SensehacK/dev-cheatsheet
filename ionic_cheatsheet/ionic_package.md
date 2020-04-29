@@ -77,3 +77,23 @@ Also edit the ‘index.html’ file for referencing the whole web app to root di
 > ionic build —prod —release
 
 To make the release build for minimizing the build file.
+
+
+## Deploy Github Pages
+
+Navigate to the project folder
+> cd project_repo/project-root-folder
+
+Install the plugin in the project folder
+> npm i angular-cli-ghpages --save
+
+Building the production build of Angular Ionic which creates “www” folder
+> ionic build --prod -- --base-href https://sensehack.github.io/masters-comp-science/
+
+Running plugin to create new branch “gh-pages” on git and upload to remote origin server
+> npx angular-cli-ghpages --dir=www
+
+Visit the repo settings and select the newly created or modified branch “gh-pages” as the source for Github Pages.
+
+[SO Link](https://stackoverflow.com/questions/53036381/how-to-deploy-ionic-4-app-to-github-pages)
+
