@@ -5,13 +5,13 @@
 
 Thank you for the helpful guide/tutorial. I couldn't remember all those commands. So I think it would be useful to sum it up for others here again: 
 > git remote -v         
-1.)  git remote add <RemoteName> <RemoteURL>       
+1.) git remote add <RemoteName> <RemoteURL>       
 2.) git fetch <RemoteName>       
 3.) check to see whether remote is available with 
 git remote -v
 4.) Create a new branch wit
  git checkout -b <NewBranchName> <Branch(RemoteName)/master>     
-5.) move all the files into a subdirectory so there aren't any conflicts with names (git mv)  and commit that (git commit -m "moved")     
+5.) move all the files into a subdirectory so there aren't any conflicts with names (git mv)  and commit that (git commit -m "moved") - (No need to also move the hidden .git folder in the subdirectory)     
  6.) git checkout master   
  7.) git merge <NewBranchName> --allow-unrelated-histories     7.) cleanup everything with: git remote rm <RemoteName>      git branch -d <NewBranchName>   
  8.) check to see whether everything is correct with: git remote -v     git branch -a -v     git status   
