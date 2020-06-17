@@ -1,7 +1,7 @@
 # Git Delete
 
 
- ## Last local commit 
+## Last local commit 
  
 If you have committed some files and still not pushed to cloud git server you can still hard reset the head to remove that commit and history too.
 

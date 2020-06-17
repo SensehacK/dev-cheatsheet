@@ -1,4 +1,4 @@
-# GitIgnore
+# Git Ignore
 
 
 
