@@ -15,7 +15,7 @@ Content would include :
 
 - Different issues I have faced.
 - Boilerplate Code
-- Depreciations or obsolete commands or code flow
+- Deprecated or obsolete commands or code flow
 - Timeline of features
 - Easy syntax
 
