@@ -1,0 +1,22 @@
+# Pi Hole
+
+
+
+## Installation
+
+I’m using ubuntu as my base machine to install PiHole on old pc hardware with Wifi card enabled.
+
+
+## Config
+
+
+web ui: http://192.168.1.89/admin
+
+DNS: http://192.168.1.89
+
+
+Blocklist
+
+
+Regex
+
