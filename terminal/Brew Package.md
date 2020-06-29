@@ -4,8 +4,6 @@
 
 ### Tree package
 
-
-
 Listing all of the folder and files in the present directory.
 
 
