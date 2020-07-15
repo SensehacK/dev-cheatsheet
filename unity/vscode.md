@@ -7,7 +7,7 @@
 
 ## Quirks
 
-Sometimes the autocomplete, references, Go To Defintion doesnt work. 
+Sometimes the autocomplete, references, Go To Definition doesnt work. 
 
 You may need to restart the omnisharp extension, or check to analyse the project again.
 
