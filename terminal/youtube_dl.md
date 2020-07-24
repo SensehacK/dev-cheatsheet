@@ -42,3 +42,36 @@ Specific folder ownership
 // $USER:$USER has user group also.
 > sudo chown -R user: ~/.virtualenvs
 > sudo chown $USER:$USER /usr/local/bin/youtube-dl
+
+
+
+## Playlist
+
+
+If you hit any errors while downloading a big playlist, you can just ignore the errors and move forward with the execution.
+Use -i to ignore errors
+
+> youtube-dl -i "https://www.youtube.com/playlist?list=PLMBTl5yXyrGQ68Ny1mXCAaSwbjpcVwm49"
+
+P.S “VideoGameDunkey’s Greatest hits url.
+
+
+Start from certain number.
+
+> youtube-dl --help, contains:
+
+Video Selection:
+  --playlist-start NUMBER          Playlist video to start at (default is 1)
+  --playlist-end NUMBER            Playlist video to end at (default is last)
+  --playlist-items ITEM_SPEC       Playlist video items to download. Specify
+                                   indices of the videos in the playlist
+  Thus, the option --playlist-start NUMBER should help you to start the playlist in the middle, specified by NUMBER.
+
+[Source StackOverflow](https://stackoverflow.com/questions/44610370/how-to-use-youtube-dl-script-to-download-starting-from-some-index-in-a-playlist)
+
+I have total 135 videos in my playlist. I have successfully downloaded 38 of them. So I manually used this command.
+
+> youtube-dl --playlist-start 39 -u uname@gmail.com -p mypassword https://www.udemy.com/learn-ethical-hacking-from-scratch/learn/v4/content
+
+
+Its downloading my remaining 97 videos.
