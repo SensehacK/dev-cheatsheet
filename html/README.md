@@ -11,7 +11,7 @@ IDE: Xcode 11.2.1
 VS Code latest patch
 Browsers: Firefox Nightly /Dev /Main
 Safari /Technical Preview
-Microsoft Egde Dev ( Chromium )
+Microsoft Edge Dev ( Chromium )
 Writer: iA Writer
 Version Management: Github
 Task Manager: Things by Cultured Code
