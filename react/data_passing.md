@@ -28,16 +28,16 @@ Just normal function callback would be
 
 ```javascript
 Class Counter {
-	render() {
+ render() {
     return (
-	    <div>
-			key={counter.id}
-			onIncrement={this.props.onIncrement}
-			onDelete={this.props.onDelete}
-			counter={counter}
-		</div>
-		);
-	}
+     <div>
+   key={counter.id}
+   onIncrement={this.props.onIncrement}
+   onDelete={this.props.onDelete}
+   counter={counter}
+  </div>
+  );
+ }
 }
 
 ```
@@ -46,11 +46,11 @@ Class Counter {
 
 ```javascript
 Class CounterChildClass {
-	render() {
-		return (
-		 onClick={() => this.props.onIncrement(this.props.counter)}
-		 );
-	 }
+ render() {
+  return (
+   onClick={() => this.props.onIncrement(this.props.counter)}
+   );
+  }
  }
 ```
 

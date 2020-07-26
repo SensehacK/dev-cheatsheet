@@ -1,10 +1,8 @@
 # React Native Issues
 
-
-
 ## Build Errors
 
-### Cannot Generate C 
+### Cannot Generate C
 
 Source of error and solving problem
 [Stack Overflow](https://stackoverflow.com/questions/48928498/configure-error-c-compiler-cannot-create-executables-react-native#comment85298270_49032986)
