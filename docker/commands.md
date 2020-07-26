@@ -1,11 +1,6 @@
 # Docker Commands
 
-
-
-
 ## Deleting images
-
-
 
 Source : [Link](https://techoverflow.net/2013/10/22/docker-remove-all-images-and-containers/)
 Problem:
@@ -32,10 +27,7 @@ Background information:
 You can see the containers on your computer using
 
     docker container ls
-    
-    
+
 When we tell docker to show us all images currently listed on the computer:
-    
+
     docker image ls -a
-    
-    

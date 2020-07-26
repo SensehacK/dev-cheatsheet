@@ -4,7 +4,7 @@ Beginners code flow with Node JS
 
 ## Dev Instance
 
-https://vast-reef-06229.herokuapp.com/
+<https://vast-reef-06229.herokuapp.com/>
 
 ## Setup
 
@@ -111,7 +111,7 @@ To post users in MySql database
 
 [http://localhost:3000/form.html](http://localhost:3000/form.html)
 GUI form to submit new users.
-https://vast-reef-06229.herokuapp.com/form.html
+<https://vast-reef-06229.herokuapp.com/form.html>
 
 ## Tools
 
@@ -135,4 +135,5 @@ Task Manager: Things by Cultured Code
 Terminal : iTerm
 
 ### Authored by : [Kautilya Save]
+
 ### [GitHub](https://github.com/SensehacK)
