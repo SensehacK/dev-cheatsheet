@@ -1,8 +1,8 @@
-## Youtube Dl
+# YouTube Download
 
 To Download video
 
-> \$ youtube-dl https://www.youtube.com/watch?v=yVpbFMhOAwE
+> \$ youtube-dl <https://www.youtube.com/watch?v=yVpbFMhOAwE>
 
 ## Basic guide for better quality
 
@@ -25,13 +25,13 @@ Run with -F to see available formats:
 18          mp4       640x360
 22          mp4       1280x720    (best)
 
-notice that youtube-dl has labeled the last option 1280x720 as the 'best' quality and that's what it will download by default, but that the line starting with 137 is actually higher quality 1920x1080. Youtube has separated the video and audio streams for the lines labeled DASH so we also need to pick the highest quality audio which in this case is the line starting with 141. Then we run youtube-dl again this time specifying the audio and video:
+notice that youtube-dl has labeled the last option 1280x720 as the 'best' quality and that's what it will download by default, but that the line starting with 137 is actually higher quality 1920x1080. YouTube has separated the video and audio streams for the lines labeled DASH so we also need to pick the highest quality audio which in this case is the line starting with 141. Then we run youtube-dl again this time specifying the audio and video:
 
 > youtube-dl -f 137+141 https://www.youtube.com/watch\?v\=-pxRXP3w-sQ
 
 and it will download the 1080p video and auto-merge it with the highest-quality audio. It should also auto-deleted the separate downloaded parts. This method is a little extra work, but will get you the best results.
 
-## Updating Youtube
+## Updating YouTube
 
 Update Youtube-dl
 
@@ -43,10 +43,7 @@ Specific folder ownership
 > sudo chown -R user: ~/.virtualenvs
 > sudo chown $USER:$USER /usr/local/bin/youtube-dl
 
-
-
 ## Playlist
-
 
 If you hit any errors while downloading a big playlist, you can just ignore the errors and move forward with the execution.
 Use -i to ignore errors
@@ -54,7 +51,6 @@ Use -i to ignore errors
 > youtube-dl -i "https://www.youtube.com/playlist?list=PLMBTl5yXyrGQ68Ny1mXCAaSwbjpcVwm49"
 
 P.S “VideoGameDunkey’s Greatest hits url.
-
 
 Start from certain number.
 
@@ -71,7 +67,6 @@ Video Selection:
 
 I have total 135 videos in my playlist. I have successfully downloaded 38 of them. So I manually used this command.
 
-> youtube-dl --playlist-start 39 -u uname@gmail.com -p mypassword https://www.udemy.com/learn-ethical-hacking-from-scratch/learn/v4/content
-
+> youtube-dl --playlist-start 39 -u uname@gmail.com -p mypassword <https://www.udemy.com/learn-ethical-hacking-from-scratch/learn/v4/content>
 
 Its downloading my remaining 97 videos.

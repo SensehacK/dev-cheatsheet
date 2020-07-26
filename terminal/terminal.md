@@ -162,4 +162,4 @@ rm - stands for "remove"
 
 Use rm with flag -P for overwriting the file so that it won't be recovered easily. Still it doesn't guarantee files being securely deleted.
 
-> rm -P "filename.filextension"
+> rm -P "filename.fileExtension"
