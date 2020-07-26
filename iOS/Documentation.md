@@ -6,30 +6,27 @@ Also it is more future proof in terms of less work ahead if you wanted to make t
 
 ## Headers
 
+// MARK:
 
-// MARK: 
-
-// TODO: 
-
+// TODO:
 
 ## Auto Completion
 
 If you really like auto completion for your own internal methods, this is the way to do it.
-Also you can ``command + click`` on your function initializer with parameters in order to directly generate documentation stubs for you. 
+Also you can ``command + click`` on your function initializer with parameters in order to directly generate documentation stubs for you.
 Or you can manually enter them with appropriate parameters and back slashes.
-
 
 ```swift
 
-	/// This is the initializer to invoke the web request class.
-    /// - Parameters:
-    ///   - fullName: Provide full name in string format
-    ///   - email: Provide email in string format
-    ///   - password: Provide password in string format
-    init(fullName: String, email: String, password: String) {
-        self.fullName = fullName
-        self.email = email
-        self.password = password
-    }
+  /// This is the initializer to invoke the web request class.
+  /// - Parameters:
+  ///   - fullName: Provide full name in string format
+  ///   - email: Provide email in string format
+  ///   - password: Provide password in string format
+  init(fullName: String, email: String, password: String) {
+  self.fullName = fullName
+  self.email = email
+  self.password = password
+}
 
 ```
