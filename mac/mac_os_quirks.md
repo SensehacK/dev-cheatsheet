@@ -1,8 +1,7 @@
 # Mac OS Quirks
 
-
-
 ## Audio Service
+
 Sometimes macOS doesn’t detect my audio device like “AirPods Pro” or Google Mini speaker.
 Even when manually switching the audio output doesn’t fix it.
 Restarting fixes it but that is very cumbersome.

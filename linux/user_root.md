@@ -1,15 +1,14 @@
 # I am Root
 
-
 ## Basics
 
 There is normal user and then there is super user (root) which has administrative access over the O.S ecosystem.  
 Normal circumstances don't require a person to be logged in as admin/root so by default most of the linux distros will have normal user profile.
   
-  
 Still sometimes you need to gain root user permission in order to perform elevated commands which modifies the system in some way in the background.
 
 We can reach that elevated user permission by two methods
+
 - Temporary root user
 - Root shell user
 
@@ -32,14 +31,11 @@ Just type in shell and enter
 
 Enter the root credentials and if you don't have any just refer to this [link](https://vitux.com/how-to-become-root-user-in-ubuntu-command-line-using-su-and-sudo/)  which explains how to reset your user credentials of any user.
   
-
-You can verify which user you're currently logged in via the command 
+You can verify which user you're currently logged in via the command
 
 > whoami
 
 which will return the user logged in.  
-  
-
   
 Linux WSL on Windows is great so far.  
 

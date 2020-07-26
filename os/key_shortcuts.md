@@ -1,6 +1,5 @@
 # Keyboard Shortcuts
 
-
 ## Mac
 
 "Command + I" - Show info
@@ -9,13 +8,11 @@
 
 "Command + Shift + T" - Reopen close Tab.
 
-
 ## Windows
 
 "F5" - Refresh
 
 "F11" - Full screen Mode
-
 
 ## Firefox
 

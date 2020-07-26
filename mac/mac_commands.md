@@ -51,12 +51,11 @@ To disable checks globally run in Terminal:
 
 > sudo spctl --master-disable
 
-### Renable
+### Re enable
 
 To re-enable Gatekeeper simply run the following command in the Terminal app
 
 > sudo spctl --master-enable
-
 
 ### Host DNS Restart
 
