@@ -1,7 +1,5 @@
 # CSS Journey
 
-
-
 ## Elements Preferences Precedence
 
 So I’ll make this quick
@@ -11,8 +9,6 @@ But we can override it using !important keyword on specific element in CSS selec
 
 But we may don’t need to even use !important keyword if we add the most important / ranked CSS at the last import, it would automatically get the Last IN imported CSS over the First CSS imports defined.
 
-
-
 ```typescript
 
 // CSS
@@ -20,8 +16,8 @@ import "bootstrap/dist/css/bootstrap.css"; // CSS 1st
 import './css/App.css'; // CSS 2nd
 
 
-	return () {
-		<section>
+ return () {
+  <section>
           <Main />
           <Nav />
     </section>

@@ -1,10 +1,8 @@
 # Angular ReadME
 
-
 This is just personal documentation or cheatsheet with personal examples for easy reference in future projects.
 
-As sometimes, we would have limited internet access or restrictive data download policies. Personal Git documentation for specific programming languages, libraries & frameworks help a lot to quickly absorb the problem statement and work swiftly :P 
-
+As sometimes, we would have limited internet access or restrictive data download policies. Personal Git documentation for specific programming languages, libraries & frameworks help a lot to quickly absorb the problem statement and work swiftly :P
 
 ## Tools
 
@@ -14,7 +12,7 @@ IDE: Xcode 11.2.1
 VS Code latest patch
 Browsers: Firefox Nightly /Dev /Main
 Safari /Technical Preview
-Microsoft Egde Dev ( Chromium )
+Microsoft Edge Dev ( Chromium )
 Writer: iA Writer
 Version Management: Github
 Task Manager: Things by Cultured Code

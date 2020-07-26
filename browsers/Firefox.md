@@ -1,17 +1,12 @@
 # Firefox
 
-
-
 ## Config overloading
 
-
-
-## Extensions 
+## Extensions
 
 uBlock Origin
 Dark Reader
-One Note 
-
+One Note
 
 ## Shortcuts
 
