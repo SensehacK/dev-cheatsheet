@@ -1,8 +1,6 @@
 # Input Field
 
-
 ## Validation
-
 
 Check for empty string
 
@@ -13,11 +11,10 @@ Equals with another input field text
 ```csharp
 if (EmailAddress.text != ConfirmEmailAddress.text)
 {
-	EmailAddress.placeholder.color = Color.red;
-	ConfirmEmailAddress.placeholder.color = Color.red;
+ EmailAddress.placeholder.color = Color.red;
+ ConfirmEmailAddress.placeholder.color = Color.red;
 }
 ```
-
 
 ## Input type
 

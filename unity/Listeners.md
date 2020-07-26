@@ -1,18 +1,15 @@
 # Listeners
 
-
 ## Button listeners
 
 ### Add Listener
 
 Adding a listener is straight forward
+
 ```C#
 textButtonObj.onClick.AddListener(delegate { checkCheckmarkButton(Timing12To3PMCheckmark); });
 
 ```
-
-
-
 
 ### Remove listener
 
