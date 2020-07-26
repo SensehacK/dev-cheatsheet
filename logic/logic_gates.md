@@ -1,17 +1,15 @@
 # Logic Gates
 
-
 Normal logic behind the gates.
 
-OR 
+## OR
 
-AND
+## AND
 
-XOR
+## XOR
 
-NAND
-
+## NAND
 
 /logic_gates.png
 
-Image Source: https://study.com/academy/lesson/nand-nor-xor-logic-gates.html
+Image Source: <https://study.com/academy/lesson/nand-nor-xor-logic-gates.html>

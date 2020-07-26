@@ -1,7 +1,5 @@
 # Javascript String Manipulation
 
-
-
 ### Contains
 
 Check whether the variable has specific substring with includes keyword.
