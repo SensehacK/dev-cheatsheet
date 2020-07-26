@@ -1,8 +1,6 @@
 # Default
 
-
 ## Browser
-
 
 ## Search
 

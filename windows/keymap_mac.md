@@ -1,6 +1,5 @@
 # Keymap
 
-
 ## Switch Alt - Ctrl
 
 Install the app "SharpKeys" for overwriting the Registry Editor in Windows 10.
@@ -26,4 +25,3 @@ After installation, just create a new Autohotkey script and add the following co
 > LControl & Tab::AltTab  
 
 If you need to download that script FYI [link](https://github.com/SensehacK/sense-setup) in windows folder.
-

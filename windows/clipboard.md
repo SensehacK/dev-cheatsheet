@@ -1,6 +1,5 @@
 # Clipboard
 
-
-## Software 
+## Software
 
 Utilize the app called Ditto & assign hot key "Ctrl + C" as would transpile to "Alt + C" due to mac key bindings swap.
