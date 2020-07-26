@@ -1,6 +1,5 @@
 # Swift Closures
 
-
 ## Intro
 
 Closures are just a short hand version of functions in a function as a parameter passing around.
