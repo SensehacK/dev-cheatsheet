@@ -2,14 +2,15 @@
 
 Various Git commands handy cheatsheet.
 
-
 ## Git Stash Commands
 
 Git stash commands comes in handy when needed to pull other branches & the other branch codebase has conflicts with your own branch. This stash utility saves a local copy of your working branch & pulls the new branch & then you can override your local branch with the incoming branch.
 
+```shell
 > \$ git stash
 > \$ git pull --rebase
 > \$ git stash apply
+```
 
 ## Git Branch Commands
 
@@ -21,8 +22,10 @@ Step 2 : Create your newly created branch with base as of updated master or deve
 
 Step 3 : Run Git stash command to save your workflow.
 
+```shell
 > \$ git stash
 > \$ git checkout branch_name
+```
 
 Step 4 : After switching to new branch via Git CLI or Git GUI just run Stash Apply command for overwriting your changes to new branch.
 
@@ -42,9 +45,11 @@ Undo commit and keep all files staged
 Option 2 :
 Undo commit and un-stage all files
 
+```shell
 > git reset HEAD~;
-> or
+OR
 > git reset --mixed HEAD~;
+```
 
 Option 3 :
 Undo the commit and completely remove all changes

@@ -1,7 +1,6 @@
 # Git Config
 
-
- ## List Git Config
+## List Git Config
 
 List outs all of the git config settings for the particular user.
 
@@ -44,10 +43,11 @@ Confirm that you have set the email address correctly in Git:
 
 Add the email address to your GitHub account by setting your commit email address on GitHub, so that your commits are attributed to you and appear in your contributions graph.
 
+```shell
 > \$ git config user.email kautilya.n.save@kns.com
 > \$ git config user.email kautilya.save@kns.com
-
 > \$ git config user.email kautilyasave@gmail.com
+```
 
 ### Option 2: Edit config file directly
 

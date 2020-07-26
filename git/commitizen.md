@@ -1,6 +1,4 @@
-Git Commitizen
-
-
+# Git Commitizen
 
 ## Install Globally
 
@@ -22,4 +20,3 @@ Or you can open .czrc file and use
 >{ "path": "cz-conventional-changelog" }
 
 [Git commitment Repo ](https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly)
-

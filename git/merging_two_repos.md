@@ -5,46 +5,76 @@
 Thank you for the helpful guide/tutorial. I couldn't remember all those commands. So I think it would be useful to sum it up for others here.
 
 1. Check remote origins for main repository
-	> git remote -v
 
-	> git remote add <RemoteName> <RemoteURL>
+```shell
+git remote -v
+git remote add <RemoteName> <RemoteURL>
+```
 
-2. Fetching the newly added second repo to our main repo file location.
-	> git fetch <RemoteName>
+2. Fetching the newly added second repo to our main repo file location
+
+```shell
+git fetch <RemoteName>
+```
 
 3. Check to see whether remote is available with
-	> git remote -v
+
+```shell
+git remote -v
+```
 
 4. Create a new branch with
-	> git checkout -b <NewBranchName> <Branch(RemoteName)/master>
 
-5. Move all the files into a subdirectory so there aren't any conflicts with names (git mv) and commit the files.(No need to also move the hidden .git folder in the subdirectory)
-	> git commit -m "moved"
+```shell
+git checkout -b <NewBranchName> <Branch(RemoteName)/master>
+```
 
-6. If you get any Merge issues like “Un tracked working tree files would be overwritten by merge” You could git  stash your branch and merge commit and then git stash apply so that you won’t have any merge conflicts or else you could just commit the files and solve merge conflicts using VSCode / Vim.
-	> git stash
+5. Move all the files into a subdirectory so there aren't any conflicts with names (git mv) and commit the files.
+(No need to also move the hidden .git folder in the subdirectory)
 
-	> git stash apply
+```shell
+git commit -m "moved"
+```
+
+6. If you get any Merge issues like **“Un tracked working tree files would be overwritten by merge”**
+You could git stash your branch and merge commit and then git stash apply so that you won’t have any merge conflicts or else you could just commit the files and solve merge conflicts using VSCode / Vim.
+
+```shell
+git stash
+git stash apply
+```
 
 7. Checkout the master branch
-	> git checkout master
+
+```shell
+git checkout master
+```
 
 8. Merge newly created branch of another repo into the main repo master branch using
-	> git merge <NewBranchName> --allow-unrelated-histories
+
+```shell
+git merge <NewBranchName> --allow-unrelated-histories
+```
 
 9. Cleanup everything by removing remote and branch
-	> git remote rm <RemoteName>
 
-	> git branch -d <NewBranchName>
+```shell
+git remote rm <RemoteName>
+git branch -d <NewBranchName
+```
 
 10. Check to see whether everything is correct with
-	> git remote -v
 
-	> git branch -a -v
-
-	> git status
+```shell
+git remote -v
+git branch -a -v
+git status
+```
 
 11. Push all of these local changes to remote origin
-	> git push
 
- One more Guide [Link](https://thoughts.t37.net/merging-2-different-git-repositories-without-losing-your-history-de7a06bba804)
+```shell
+git push
+```
+
+One more Guide [Link](https://thoughts.t37.net/merging-2-different-git-repositories-without-losing-your-history-de7a06bba804)
