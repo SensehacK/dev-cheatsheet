@@ -24,5 +24,8 @@ let vc1 = storyB.instantiateViewController(withIdentifier: "FirstOnboardingVC")
 let vc2 = storyB.instantiateViewController(withIdentifier: "SecondOnboardingVC")
 ```
 
-In which we create storyB as an UIStoryboard object. We then try to invoke instance methods of storyB with child view controllers of “WelcomeScreen” storyboard which are “FirstOnboardingVC" "SecondOnboardingVC"
+In which we create storyB as an UIStoryboard object. We then try to invoke instance methods of storyB with child view controllers of “WelcomeScreen” storyboard which are
 
+- “FirstOnboardingVC"
+
+- "SecondOnboardingVC"

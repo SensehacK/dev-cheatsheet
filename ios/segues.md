@@ -2,7 +2,12 @@
 
 ## Creation
 
+<<<<<<< Updated upstream:ios/segues.md
 Segues can be created programmatically and Storyboard You can name your segue with an identifier so that it would be easier to differentiate which segue has been instantiated in “prepareForSegue” segue life cycle method.
+=======
+Segues can be created programmatically and Storyboard
+You can name your segue with an identifier so that it would be easier to differentiate which segue has been instantiated in “prepareForSegue” segue life cycle method.
+>>>>>>> Stashed changes:iOS/segues.md
 
 ## Modally
 
@@ -14,7 +19,11 @@ iOS 13 brings in the new method of adding the default card presentation. So it d
 
 ### With Identifier
 
+<<<<<<< Updated upstream:ios/segues.md
 ```swift
+=======
+```Swift
+>>>>>>> Stashed changes:iOS/segues.md
 let onboardStoryboard = UIStoryboard(name: "CustomViewController", bundle: nil)
 let viewC = onboardStoryboard.instantiateViewController(identifier: "CustomViewController")
 viewC.modalPresentationStyle = .fullScreen
@@ -52,9 +61,10 @@ if segue.identifier == "SummaryChildSegue" {
         } }
 ```
 
-> destVC.titleLabel.text = "Kautilya 3" This outrights crashes as titleLable still hasn't been invoked in Child VC
->
-> destVC.titleLabel?.text = "Kautilya 2" This doesn't crash as it looks for an optional value and it doesn't find it so text assignment is not done
+> destVC.titleLabel.text  = "Kautilya 3"
+This outright crashes as titleLabel still hasn't been invoked in Child VC
+> destVC.titleLabel?.text = "Kautilya 2"
+This doesn't crash as it looks for an optional value and it doesn't find it so text assignment is not done
 
 Child View Controller
 
@@ -67,6 +77,5 @@ class SummaryChildVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         titleLabel.text = titleObj ?? "Summary"
-        }    }
+  } }
 ```
-

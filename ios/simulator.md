@@ -21,4 +21,3 @@ API won’t work on simulator for opening email client with method called `-canO
 Health data continuous workout randomized data could be accessible for testing the app.
 
 Health app doesn’t fully synced my data to the iOS simulator. Or maybe I was missing some iCloud sync settings. I did turned on Health explicitly on “Settings” app of the simulator.
-

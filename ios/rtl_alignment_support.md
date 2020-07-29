@@ -155,7 +155,7 @@ NSTextAlignment can also accept variables in Integers :
 
 ### Step 8
 
-## Profit ???
+## Profit ```???```
 
 ## Implementation
 
@@ -174,4 +174,3 @@ This 1 line code determines the current user alignment based of from our web ser
 ## Author : [Kautilya Save](https://kautilya.design/)
 
 ### [GitHub](https://github.com/SensehacK)
-
