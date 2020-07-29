@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Sensehack](README.md)
+* [Sensehack Developer Journal](README.md)
 * [ios](ios/README.md)
   * [Extensions](ios/extensions.md)
   * [xcode](ios/xcode/README.md)

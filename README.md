@@ -1,4 +1,4 @@
-# Sensehack
+# Sensehack Developer Journal
 
 ## Intro
 
