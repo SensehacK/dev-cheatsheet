@@ -44,4 +44,3 @@ Some error occurred Error: getaddrinfo ENOTFOUND localhost
 ```
 
 This was solved by 2 things mostly. Turns out my hosts file under “etc/hosts” was not “hosts” instead it was just “host” missing the ’s Also I restarted my DNS service on Mac which didn’t throw this error again while running the command.
-
