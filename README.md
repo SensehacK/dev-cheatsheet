@@ -1,4 +1,4 @@
-# Sensehack Developer Journal
+# Sensehack Journey
 
 ## Intro
 

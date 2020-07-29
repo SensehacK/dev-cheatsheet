@@ -1,4 +1,4 @@
-# Github
+# github
 
 ## Intro
 

@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Sensehack Developer Journal](README.md)
+* [Sensehack Journey](README.md)
 * [ios](ios/README.md)
   * [Extensions](ios/extensions.md)
   * [xcode](ios/xcode/README.md)
@@ -138,7 +138,7 @@
   * [Terminal commands for NPM / Node / Angular / ionic](node/node.md)
 * [workflow](best_coding_practices/README.md)
   * [Best Coding Practices](best_coding_practices/best-coding-practices.md)
-* [Github](.github/README.md)
+* [github](.github/README.md)
   * [ISSUE\_TEMPLATE](.github/issue_template/README.md)
     * [feature\_request](.github/issue_template/feature_request.md)
 
