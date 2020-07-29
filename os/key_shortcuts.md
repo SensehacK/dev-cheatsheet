@@ -25,4 +25,3 @@
 "Command + Shift + F" - FullScreen
 
 "Command + B" - Bookmarks
-

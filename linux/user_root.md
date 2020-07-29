@@ -41,4 +41,3 @@ Linux WSL on Windows is great so far.
 As long as I have linux subsystem running on windows natively, I won't be missing macOS for development purposes aside from native iOS app development. I do miss the apps ecosystem like "Things", "Fantastical", "iTerm2" and "Spark".
 
 Also I'm loving the Windows Terminal which I'll make the default shell of Linux Ubuntu. [Link](https://superuser.com/questions/1456511/is-there-a-way-to-change-the-default-shell-in-windows-terminal)
-

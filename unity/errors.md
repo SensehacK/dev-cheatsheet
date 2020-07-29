@@ -82,4 +82,3 @@ public class SafetyPlanPersonalized : MonoBehaviour
 // Important Note:
 
 In order the child class to be used with Instance variable, the calling parent class should also set its instance variable to this \(currently instance\)
-

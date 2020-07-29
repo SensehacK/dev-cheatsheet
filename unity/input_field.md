@@ -21,4 +21,3 @@ if (EmailAddress.text != ConfirmEmailAddress.text)
 You can specify which input type should be for the input field in the attribute inspector in Unity application.
 
 [Source](https://docs.unity3d.com/560/Documentation/Manual/script-InputField.html)
-
