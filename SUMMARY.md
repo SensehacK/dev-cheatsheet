@@ -1,7 +1,7 @@
 # Table of contents
 
-* [Sensehack Cheatsheet](README.md)
-* [.github](.github/README.md)
+* [Sensehack](README.md)
+* [Sensehack Cheatsheet](.github/README.md)
   * [ISSUE\_TEMPLATE](.github/issue_template/README.md)
     * [feature\_request](.github/issue_template/feature_request.md)
 * [ios](ios/README.md)
