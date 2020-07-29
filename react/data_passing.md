@@ -8,7 +8,7 @@ We would document the property parameters passing via different sources like par
 
 ### Props Parent to child variables
 
-```html
+```markup
 <Counters
   counters="{this.state.counters}"
   onReset="{this.resetCounters}"
@@ -19,8 +19,7 @@ We would document the property parameters passing via different sources like par
 
 Counters, OnReset.. are the props variables to pass data from Parent to child
 
-In Counters component, if they want to pass back data from child “Counters” to Parent “App”
-they would use Method of “Props Child to Parent”
+In Counters component, if they want to pass back data from child “Counters” to Parent “App” they would use Method of “Props Child to Parent”
 
 ### Props Child to Parent passing parameters
 
@@ -39,7 +38,6 @@ Class Counter {
   );
  }
 }
-
 ```
 
 #### This is when passing data Parameter from child to Parent props or method
@@ -54,10 +52,9 @@ Class CounterChildClass {
  }
 ```
 
-Context : ‘onIncrement’ defined in Class “Counter” so calling onIncrement method from CounterChildClass to Counter Class for passing data to parent function.
-Expression would add
+Context : ‘onIncrement’ defined in Class “Counter” so calling onIncrement method from CounterChildClass to Counter Class for passing data to parent function. Expression would add
 
-> { () => this.props.methodName(variableOrParameterData)}
+> { \(\) =&gt; this.props.methodName\(variableOrParameterData\)}
 
 ### Object De structuring
 
@@ -94,3 +91,4 @@ const counters = this.state.counters.filter(c => c.id !== counterID);
 Replace with Shorthand
 > this.setState({ counters });
 ```
+

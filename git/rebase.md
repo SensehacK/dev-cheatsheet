@@ -1,2 +1,2 @@
-# Git Rebase 
+# Git Rebase
 

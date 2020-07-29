@@ -19,11 +19,11 @@ alignItems: 'center',
 
 ## JustifyContent
 
-It justifies the content in vertical space | and you can have different values to the css variable/element.
-I always work with
+It justifies the content in vertical space \| and you can have different values to the css variable/element. I always work with
 
 > justifyContent: 'center',
 
 ## TextAlign
 
 One of my favorite things to work on, arranging text according to my preference, usually use it to center the text of a custom button in HTML, CSS use case scenarios.
+

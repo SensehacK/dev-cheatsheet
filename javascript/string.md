@@ -1,6 +1,6 @@
 # Javascript String Manipulation
 
-### Contains
+## Contains
 
 Check whether the variable has specific substring with includes keyword.
 
@@ -12,3 +12,4 @@ console.log(string.includes(substring));
 ```
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes)
+

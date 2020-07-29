@@ -1,10 +1,8 @@
-# Ternary 
-
+# Ternary
 
 ## Conditional
 
 True false situation checker.
-
 
 ## Toggle states
 
@@ -28,7 +26,8 @@ True false situation checker.
             contentDidChange()
         }
     }
-    
+
     // MARK: - Calling the func from enum
     content.toggle()
 ```
+

@@ -37,3 +37,4 @@ You can view your previous stash stored on that repository using this command.
 You can delete the git stash history of a local repository, by running this command
 
 > git stash drop
+

@@ -4,13 +4,13 @@
 
 For installing IONIC CLI Framework via NPM
 
-```terminal
+```text
 npm install -g ionic
 ```
 
 For installing ionic angular via NPM
 
-```terminal
+```text
 npm install ionic-angular
 ```
 
@@ -20,10 +20,9 @@ Few of my used commands just including it in the documentation so that it would 
 
 ### Starter Template
 
-Command used to utilize given starter template for ionic.
-Create new project via Ionic CLI.
+Command used to utilize given starter template for ionic. Create new project via Ionic CLI.
 
-```terminal
+```text
 ionic start ionic2-basics blank
 ionic start ionic-appName tabs
 ```
@@ -32,7 +31,7 @@ ionic start ionic-appName tabs
 
 Command used to build the project & run it in browser with development environment setup.
 
-```terminal
+```text
 ionic serve
 ```
 
@@ -40,16 +39,17 @@ ionic serve
 
 Command used to generate pages internally in ionic directory. It creates the boilerplate code necessary for running the basic web-app cum ionic wrapper app.
 
-```terminal
+```text
 ionic generate page shop
 ```
 
 Command used to generate pages in sub directory internally
 
-```terminal
+```text
 ionic g c users/admin
 ```
 
 ### Authored by : [Kautilya Save](https://kautilya.design)
 
 ### [GitHub](https://github.com/SensehacK)
+

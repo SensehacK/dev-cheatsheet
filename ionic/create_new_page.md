@@ -4,7 +4,7 @@ When not using command, in ionic 4 you would have to define your new route so th
 
 Eg. If we create folder with 3 files namely
 
-```structure
+```text
 buyout.html
 buyout.module.ts
 buyout.ts
@@ -54,8 +54,7 @@ const routes: Routes = [
 export class BuyoutPageModule { }
 ```
 
+## Authored by : [Kautilya Save](https://kautilya.design)
 
+## [GitHub](https://github.com/SensehacK)
 
-### Authored by : [Kautilya Save](https://kautilya.design)
-
-### [GitHub](https://github.com/SensehacK)

@@ -14,9 +14,11 @@ Install your preferred commitizen adapter globally, for example cz-conventional-
 
 Create a .czrc file in your home directory, with path referring to the preferred, globally installed, commitizen adapter
 
-> echo '{ "path": "cz-conventional-changelog" }' > ~/.czrc
+> echo '{ "path": "cz-conventional-changelog" }' &gt; ~/.czrc
 
 Or you can open .czrc file and use
->{ "path": "cz-conventional-changelog" }
+
+> { "path": "cz-conventional-changelog" }
 
 [Git commitment Repo ](https://github.com/commitizen/cz-cli#making-your-repo-commitizen-friendly)
+

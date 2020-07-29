@@ -4,13 +4,11 @@ This markdown file list downs all the commands for Mac OS for setting up with so
 
 ## Enable Hidden files
 
-The Quickest Way to Show/Hide Hidden Files
-Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut:
-CMD + SHIFT + .
+The Quickest Way to Show/Hide Hidden Files Since the release of macOS Sierra, when in Finder, it is now possible to use the shortcut: CMD + SHIFT + .
 
 Enable hidden files on Mac OS
 
-> \$ defaults write com.apple.finder AppleShowAllFiles YES
+> $ defaults write com.apple.finder AppleShowAllFiles YES
 
 ## Understanding your mac statistics
 
@@ -36,18 +34,15 @@ Method 2 :
 
 ## Disable Mac OS Mojave Gatekeeper
 
-It a simple fix and here is how we fix it:
-Open the Terminal app from the /Applications/Utilities/ folder and then enter the following command syntax:
+It a simple fix and here is how we fix it: Open the Terminal app from the /Applications/Utilities/ folder and then enter the following command syntax:
 
 ### Disable
 
-Option I
-For a certain application run in Terminal:
+Option I For a certain application run in Terminal:
 
 > sudo xattr -rd com.apple.quarantine /Applications/LockedApp.app
 
-Option II
-To disable checks globally run in Terminal:
+Option II To disable checks globally run in Terminal:
 
 > sudo spctl --master-disable
 
@@ -60,6 +55,8 @@ To re-enable Gatekeeper simply run the following command in the Terminal app
 ### Host DNS Restart
 
 This command will restart the DNS of the system if you have made changes to Mac “etc/hosts” file.
+
 > sudo killall -HUP mDNSResponder
 
 Works in Mac OS Mojave 10.14.6
+

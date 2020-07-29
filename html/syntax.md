@@ -1,13 +1,10 @@
 # HTML Syntax
 
+## URL Linking
 
-### URL Linking
+Anchor Tag with href for linking normal URLs. More parameters for link behavior. [MDN link](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target)
 
-Anchor Tag with href for linking normal URLs.
-More parameters for link behavior.
-[MDN link](https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/target)
-
-```
+```text
 <a href= “https://developer.mozilla.org“ target="_blank"> link_name </a>
 Open in new Window 
 > target = “_blank”

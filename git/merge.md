@@ -1,16 +1,12 @@
 # Git Merge
 
-
-
 ## Squash And Merge
-
-
 
 [SO Link](https://stackoverflow.com/questions/5308816/how-to-use-git-merge-squash)
 
 Say your bug fix branch is called bugfix and you want to merge it into master:
 
-```script
+```text
 git checkout master
 git merge --squash bugfix
 git commit
@@ -33,3 +29,4 @@ Takes all the commits from the bugfix branch and merges it with your current bra
 Creates a single commit from the merged changes.
 
 Omitting the -m parameter lets you modify a draft commit message containing every message from your squashed commits before finalizing your commit.
+

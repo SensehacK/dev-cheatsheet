@@ -4,13 +4,13 @@
 
 Use this command to create a new project without quotes in command.
 
-> react-native init “project_name”
+> react-native init “project\_name”
 
 ## Running the React App
 
 ### Environment setup
 
-(Environment Setup) [https://reactnative.dev/docs/environment-setup]
+\(Environment Setup\) \[[https://reactnative.dev/docs/environment-setup](https://reactnative.dev/docs/environment-setup)\]
 
 ### Install dependency
 
@@ -44,7 +44,7 @@ Android development guide
 
 ### PATH
 
-Add the following lines to your $HOME/.bash_profile or $HOME/.bashrc config file:
+Add the following lines to your $HOME/.bash\_profile or $HOME/.bashrc config file:
 
 ```bash
 export ANDROID_HOME=$HOME/Library/Android/sdk
@@ -60,9 +60,7 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 ### Run Application
 
-> npm run android
-> npx react-native start
-> npx react-native run-android
+> npm run android npx react-native start npx react-native run-android
 
 ### Grade Permission
 
@@ -76,4 +74,5 @@ The chmod command sets the permissions of files or directories
 
 ### To run Emulator from command Prompt
 
-> emulator -avd Android_pixel
+> emulator -avd Android\_pixel
+

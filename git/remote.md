@@ -22,6 +22,7 @@ Check Git Remote urls on CLI
 
 Changing remote origin git urls.
 
-> git remote set-url origin https://github.com/SensehacK/repo_name
+> git remote set-url origin [https://github.com/SensehacK/repo\_name](https://github.com/SensehacK/repo_name)
 
 [github remote url](https://help.github.com/en/github/using-git/changing-a-remotes-url)
+

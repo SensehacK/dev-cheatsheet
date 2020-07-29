@@ -23,4 +23,5 @@ console.log(array1.reduce(reducer, 5));
 
 ### Filter function
 
-### Find function 
+### Find function
+

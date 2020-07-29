@@ -10,6 +10,7 @@ Normal logic behind the gates.
 
 ## NAND
 
-/logic_gates.png
+/logic\_gates.png
 
-Image Source: <https://study.com/academy/lesson/nand-nor-xor-logic-gates.html>
+Image Source: [https://study.com/academy/lesson/nand-nor-xor-logic-gates.html](https://study.com/academy/lesson/nand-nor-xor-logic-gates.html)
+

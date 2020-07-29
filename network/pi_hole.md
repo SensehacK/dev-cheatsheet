@@ -6,10 +6,11 @@ I’m using ubuntu as my base machine to install PiHole on old pc hardware with 
 
 ## Config
 
-web ui: <http://192.168.1.89/admin>
+web ui: [http://192.168.1.89/admin](http://192.168.1.89/admin)
 
-DNS: <http://192.168.1.89>
+DNS: [http://192.168.1.89](http://192.168.1.89)
 
 Blocklist
 
 Regex
+

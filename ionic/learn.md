@@ -12,10 +12,9 @@ You have to use Angular Routing tool for navigating the web pages in ionic.
 
 ### Navigate Button Not appearing
 
-Navigation stack doesn't have the button being displayed.
-Use this code in ```<ion-toolbar>```
+Navigation stack doesn't have the button being displayed. Use this code in `<ion-toolbar>`
 
-```html
+```markup
 <ion-buttons slot="start">
 <ion-back-button defaultHref="home"></ion-back-button>
 </ion-buttons>
@@ -25,7 +24,7 @@ Use this code in ```<ion-toolbar>```
 
 Most of the folders have moved to "app" parent directory.
 
-```directory
+```text
      V3                 V4
 /src/pages ->      /src/app/pages
 /src/models ->     /src/app/models
@@ -41,7 +40,6 @@ We would check two methods described while initializing objects in Typescript.
 Variable object which hasn't been initialize at start or constructor would have error if you try to directly replace data.
 
 ```typescript
-
 class expC {
      productData2: { name: string, quantity: number };
 
@@ -56,13 +54,12 @@ onInit() {
 
 So you would have to define null in the objects where it is defined. So it won't have the error.
 
-```error
+```text
 error : Uncaught (in promise):
         // TypeError: Cannot set property 'name' of undefined
 ```
 
 ```typescript
-
 class expC {
      productData2: { name: string, quantity: number } = { name: null, quantity: null };
 
@@ -78,3 +75,4 @@ onInit() {
 ### Authored by : [Kautilya Save](https://kautilya.design)
 
 ### [GitHub](https://github.com/SensehacK)
+

@@ -1,9 +1,11 @@
 # Creating new Data Service in IONIC
 
 ## Create CLI command for generating the service
->  ionic g service services/service_name
+
+> ionic g service services/service\_name
 
 Let's start with creating a new file named 'data.service.ts'
+
 ```typescript
 import { Injectable } from '@angular/core';
 
@@ -23,7 +25,6 @@ export class DataService {
         return this.message;
     }
 }
-
 ```
 
 Copy this boilerplate code, so that you can at least get around retrieving one value anywhere you need.
@@ -43,12 +44,11 @@ testData: string;
 constructor(private data2: DataService) {
     this.testData = data2.getMessage();
     // returns "Hello Sensehack"
-
 ```
 
 Our shop page html where we display all of the html content. @'shop.page.html'
 
-```html
+```markup
 <ion-header>
   <ion-toolbar>
     <ion-title>Shop</ion-title>
@@ -64,3 +64,4 @@ Our shop page html where we display all of the html content. @'shop.page.html'
 ### Authored by : [Kautilya Save](https://kautilya.design)
 
 ### [GitHub](https://github.com/SensehacK)
+
