@@ -1,5 +1,11 @@
 # Git Ignore
 
+## Template
+
+Generate git ignore files for your project, usually frameworks & libraries like angular, ionic, react usually generate .gitignore file with their generate project cli tool.
+
+[Git Ignore](http://gitignore.io)
+
 ## Banishing DS Store
 
 Remove existing files from the repository:
@@ -27,3 +33,7 @@ git commit -m '.DS_Store banished!'
 
 [StackOverflow Answer](https://stackoverflow.com/a/107921)
 
+## Untrack Tracked files
+
+Untrack files already added to git repository based on .gitignore
+[Untrack files gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
