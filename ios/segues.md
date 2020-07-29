@@ -1,25 +1,29 @@
 # iOS Segues
 
-## Creation
+## iOS Segues
 
-<<<<<<< Updated upstream:ios/segues.md
+### Creation
+
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream:ios/segues.md
+
+## Segues can be created programmatically and Storyboard You can name your segue with an identifier so that it would be easier to differentiate which segue has been instantiated in “prepareForSegue” segue life cycle method.
+
 Segues can be created programmatically and Storyboard You can name your segue with an identifier so that it would be easier to differentiate which segue has been instantiated in “prepareForSegue” segue life cycle method.
-=======
-Segues can be created programmatically and Storyboard
-You can name your segue with an identifier so that it would be easier to differentiate which segue has been instantiated in “prepareForSegue” segue life cycle method.
->>>>>>> Stashed changes:iOS/segues.md
 
-## Modally
+> > > > > > > Stashed changes:iOS/segues.md
+
+### Modally
 
 iOS 13 brings in the new method of adding the default card presentation. So it doesn’t fully overtakes the screen. Hence we may need to switch our Segue Kind to “Present Modally” Presentation: “Full Screen”
 
 [SO Link](https://stackoverflow.com/questions/56435510/presenting-modal-in-ios-13-fullscreen)
 
-## Storyboard
+### Storyboard
 
-### With Identifier
+#### With Identifier
 
-<<<<<<< Updated upstream:ios/segues.md
+&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream:ios/segues.md
+
 ```swift
 =======
 ```Swift
@@ -30,7 +34,7 @@ viewC.modalPresentationStyle = .fullScreen
 self.present(viewC, animated: true)
 ```
 
-### Without Identifier
+#### Without Identifier
 
 Set View with Initial View controller of Storyboard to avoid having duplicate assigning the Storyboard Identifier.
 
@@ -43,9 +47,9 @@ if let barchart = barChartVC {
 }
 ```
 
-## Data Passing
+### Data Passing
 
-### Parent - Child VC Observation
+#### Parent - Child VC Observation
 
 Funny enough when I put a debugger here both the following commands gets executed with perfect valid "Kautilya 2/3" strings I believe with debugger it creates/invokes the child VC just before executing this line. So in normal instance if the destination VC isn't properly invoked these values won't be changed. Better approach is to pass a whole object and then in ViewDidLoad method of childVC class initialization code should be ran.
 
@@ -61,10 +65,7 @@ if segue.identifier == "SummaryChildSegue" {
         } }
 ```
 
-> destVC.titleLabel.text  = "Kautilya 3"
-This outright crashes as titleLabel still hasn't been invoked in Child VC
-> destVC.titleLabel?.text = "Kautilya 2"
-This doesn't crash as it looks for an optional value and it doesn't find it so text assignment is not done
+> destVC.titleLabel.text = "Kautilya 3" This outright crashes as titleLabel still hasn't been invoked in Child VC destVC.titleLabel?.text = "Kautilya 2" This doesn't crash as it looks for an optional value and it doesn't find it so text assignment is not done
 
 Child View Controller
 
@@ -79,3 +80,4 @@ class SummaryChildVC: UIViewController {
         titleLabel.text = titleObj ?? "Summary"
   } }
 ```
+
