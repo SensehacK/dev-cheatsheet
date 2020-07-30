@@ -4,13 +4,7 @@
 
 ### Creation
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream:ios/segues.md
-
-## Segues can be created programmatically and Storyboard You can name your segue with an identifier so that it would be easier to differentiate which segue has been instantiated in “prepareForSegue” segue life cycle method.
-
 Segues can be created programmatically and Storyboard You can name your segue with an identifier so that it would be easier to differentiate which segue has been instantiated in “prepareForSegue” segue life cycle method.
-
-> > > > > > > Stashed changes:iOS/segues.md
 
 ### Modally
 
@@ -22,12 +16,7 @@ iOS 13 brings in the new method of adding the default card presentation. So it d
 
 #### With Identifier
 
-&lt;&lt;&lt;&lt;&lt;&lt;&lt; Updated upstream:ios/segues.md
-
 ```swift
-=======
-```Swift
->>>>>>> Stashed changes:iOS/segues.md
 let onboardStoryboard = UIStoryboard(name: "CustomViewController", bundle: nil)
 let viewC = onboardStoryboard.instantiateViewController(identifier: "CustomViewController")
 viewC.modalPresentationStyle = .fullScreen
