@@ -4,7 +4,7 @@
 * [ios](ios/README.md)
   * [Extensions](ios/extensions.md)
   * [xcode](ios/xcode/README.md)
-    * [Xcode Project Merge](ios/xcode/xcode-project-merge.md)
+    * [Xcode Project Merge](ios/xcode/xcode_merge.md)
     * [Xcode Build Commands](ios/xcode/build_commands.md)
     * [iOS Xcode Resign CLI](ios/xcode/resign_cli.md)
     * [Xcode iOS Xcode Wireless Deploy](ios/xcode/wireless_deploy.md)
