@@ -56,7 +56,7 @@
   * [Ionic Deprecations](ionic/deprecations.md)
   * [Ionic Issues](ionic/issues.md)
 * [terminal](terminal/README.md)
-  * [Xcode CLI](terminal/xcode-cli.md)
+  * [Xcode CLI](terminal/xcode.md)
   * [Shell Alias](terminal/shell-alias.md)
   * [Ionic](terminal/ionic.md)
   * [Node](terminal/ionic-cli-commands.md)
