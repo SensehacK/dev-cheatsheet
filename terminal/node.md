@@ -1,16 +1,18 @@
-# Terminal commands for NPM / Node / Angular / ionic
+# Node
 
-## Installation
+## Terminal commands for NPM / Node / Angular / ionic
+
+### Installation
 
 > \# sudo npm install -g @angular/cli \# sudo npm install -g ionic@latest \# sudo npm install $ npm run ionic $ npm run ionic:serveStatic
 
-### Downgrade
+#### Downgrade
 
 > $ npm install -g ionic@1.4.0
 
 \(version number after ionic@**\_.\_.\_**\)
 
-## NVM Version Control
+### NVM Version Control
 
 ~ fetch latest npm
 
@@ -22,7 +24,7 @@ To download, compile, and install the latest release of node, do this:
 
 And then in any new shell just use the installed version: nvm use node Or you can just run it:
 
-## Change Node
+### Change Node
 
 List all of the node runtime installed locally
 
@@ -36,7 +38,7 @@ You can set the default Node.js version by using alias: Anyone is fine.
 
 > $ nvm alias default system $ nvm alias default v9.3.0
 
-## Version Check
+### Version Check
 
 nvm run node --version
 
@@ -48,7 +50,7 @@ angular cli can report its version when you run it with the version flag
 
 > $ ng --version $ IONIC versions $ Ionic info $ ionic --v
 
-## Ionic
+### Ionic
 
 Set telemetry to false, No to collect analytics & data. ionic config set -g telemetry false
 
@@ -84,5 +86,5 @@ To run locally on chrome
 
 > $ ionic serve
 
-## End
+### End
 
