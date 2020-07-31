@@ -18,6 +18,7 @@
     * [Xcode iOS CICD](ios/automation/ios_ci_cd.md)
     * [Travis CI](ios/automation/travis_ci_yml.md)
   * [Library](ios/library/README.md)
+    * [SnapKit](ios/library/snapkit.md)
     * [Macaw](ios/library/macaw.md)
   * [iOS View Controllers](ios/view_controllers.md)
   * [Gesture Recognizer](ios/gesture_recognizer.md)
