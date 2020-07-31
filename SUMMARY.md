@@ -18,7 +18,7 @@
     * [Resign CLI](mobile/ios/xcode/resign_cli.md)
     * [Wireless Deploy](mobile/ios/xcode/wireless_deploy.md)
     * [Script Error](mobile/ios/xcode/auto_increment.md)
-    * [iPA Package Generation](mobile/ios/xcode/ipa_generation.md)
+    * [iPA Generation](mobile/ios/xcode/ipa_generation.md)
     * [Simulator](mobile/ios/xcode/simulator.md)
     * [Build Errors](mobile/ios/xcode/build_errors.md)
     * [Debugging](mobile/ios/xcode/debug.md)

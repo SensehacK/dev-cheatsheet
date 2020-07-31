@@ -1,4 +1,4 @@
-# iPA Package Generation
+# iPA Generation
 
 ## Prerequisites
 
