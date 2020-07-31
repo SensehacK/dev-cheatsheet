@@ -1,4 +1,4 @@
-# Swift Safe
+# Safe
 
 ## Binary operator operations
 

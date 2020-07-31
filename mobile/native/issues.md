@@ -1,4 +1,4 @@
-# React Native Issues
+# Issues
 
 ## Build Errors
 

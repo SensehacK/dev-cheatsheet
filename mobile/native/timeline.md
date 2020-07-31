@@ -1,4 +1,4 @@
-# React Native
+# Config
 
 ## Creation of new project
 

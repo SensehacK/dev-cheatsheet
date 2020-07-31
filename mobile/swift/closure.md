@@ -1,4 +1,4 @@
-# Swift Closures
+# Closures
 
 ## Intro
 
