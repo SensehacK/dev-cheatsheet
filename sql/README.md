@@ -1,6 +1,0 @@
-# sql
-
-README
-
-SQL Cheatsheet
-
