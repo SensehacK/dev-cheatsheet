@@ -1,23 +1,22 @@
 # Date Picker
 
-
-## Implementation
-
+### Implementation
 
 Programmatically making a text field open up Date picker with two selectors of able to cancel the picker and save the date from the picker.
 
-### Extension
+#### Extension
+
 ```swift
 import UIKit
 extension UITextField {
-    
+
     func setInputViewDatePicker(target: Any, selector: Selector) {
         // Create a UIDatePicker object and assign to inputView
         let screenWidth = UIScreen.main.bounds.width
         let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))
         datePicker.datePickerMode = .date 
         self.inputView = datePicker 
-        
+
         // Create a toolbar and assign it to inputAccessoryView
         let toolBar = UIToolbar(frame: CGRect(x: 0.0, y: 0.0, width: screenWidth, height: 44.0)) 
         let flexible = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: nil, action: nil) 
@@ -26,11 +25,11 @@ extension UITextField {
         toolBar.setItems([cancel, flexible, barButton], animated: false) 
         self.inputAccessoryView = toolBar 
     }
-    
+
     @objc func CancelButtonTapped() {
         self.resignFirstResponder()
     }
-    
+
 }
 ```
 
@@ -38,15 +37,14 @@ Great article, learned a lot about how events work, toolbar creation on top of p
 
 [Swift Dev Center](https://www.swiftdevcenter.com/uidatepicker-as-input-view-to-uitextfield-swift/)
 
-
 Usage of the extension with protocol delegate coordinator pattern with programmatic UI.
 
-### View Class
-```swift
+#### View Class
 
+```swift
 protocol UserProfileViewDelegate: class { 
-		
-		/// Informs that user wants to specify date of birth
+
+        /// Informs that user wants to specify date of birth
     func userProfileViewDidTapDateOfBirth(_ view: UserProfileView, textField: UITextField)
 
 }
@@ -56,40 +54,38 @@ class UserProfileView: UIView {
     // MARK: - Weak Properties
     weak var delegate: UserProfileViewDelegate?
 
-		private lazy var dateOfBirthTextField: TextField = {
-		        let field = TextField(placeholder: Texts.dateOfBirth.rawValue,
-		                              keyboard: UIKeyboardType.alphabet,
-		                              contentType: .name)
-		        field.textField.accessibilityLabel = Accessibility.dateOfBirth.rawValue.localized
-		        field.textField.setInputViewDatePicker(target: self, selector: #selector(datePickerDoneButtonTapped))
-		        return field
-		    }()
-		
-		
-		
-		@objc func datePickerDoneButtonTapped() {
-		        delegate?.userProfileViewDidTapDateOfBirth(self, textField: dateOfBirthTextField.textField)
-		    }
-		
+        private lazy var dateOfBirthTextField: TextField = {
+                let field = TextField(placeholder: Texts.dateOfBirth.rawValue,
+                                      keyboard: UIKeyboardType.alphabet,
+                                      contentType: .name)
+                field.textField.accessibilityLabel = Accessibility.dateOfBirth.rawValue.localized
+                field.textField.setInputViewDatePicker(target: self, selector: #selector(datePickerDoneButtonTapped))
+                return field
+            }()
+
+
+
+        @objc func datePickerDoneButtonTapped() {
+                delegate?.userProfileViewDidTapDateOfBirth(self, textField: dateOfBirthTextField.textField)
+            }
+
 
 }
 ```
 
+#### ViewController Class
 
-
-### ViewController Class
 ```swift
-
 class UserProfileViewController: UIViewController {
-    
+
     // MARK: - Overridden Properties
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
     }
-    
+
     // MARK: - Lazy Properties
     private(set) lazy var coordinator = UserProfileCoordinator(dataSource: userProfileView.content)
-    
+
     private(set) lazy var userProfileView: UserProfileView = {
         let view = UserProfileView()
         view.delegate = self
@@ -104,7 +100,7 @@ extension UserProfileViewController {
     override func loadView() {
         view = userProfileView
     }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -128,3 +124,4 @@ extension UserProfileViewController: UserProfileViewDelegate {
 
 }
 ```
+
