@@ -1,4 +1,4 @@
-# Basic SQL CLI
+# CLI
 
 ## Login
 

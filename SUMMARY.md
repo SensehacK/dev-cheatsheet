@@ -132,11 +132,11 @@
 ## Database
 
 * [SQL](database/sql/README.md)
-  * [Basic SQL CLI](database/sql/basic_sql_cli.md)
+  * [CLI](database/sql/basic_sql_cli.md)
   * [Setup](database/sql/setup.md)
   * [CRUD Operations](database/sql/crud_operations.md)
 * [Mongo](database/mongo/README.md)
-  * [Mongo DB ReadMe](database/mongo/mongo_db_.md)
+  * [Connection](database/mongo/connection.md)
 * [Docker](database/docker/README.md)
   * [Docker Build](database/docker/build.md)
   * [Docker Commands](database/docker/commands.md)
@@ -145,13 +145,15 @@
 ## OS
 
 * [Windows](os/windows/README.md)
-  * [Default](os/windows/defaults.md)
-  * [Keymap](os/windows/keymap_mac.md)
-  * [Clipboard](os/windows/clipboard.md)
   * [WSL](os/windows/wsl_folder.md)
+  * [Keymap](os/windows/keymap_mac.md)
+  * [Default](os/windows/defaults.md)
+  * [Clipboard](os/windows/clipboard.md)
 * [Linux](os/linux/README.md)
   * [I am Root](os/linux/user_root.md)
 * [Mac](os/mac/README.md)
+  * [Hidden Files](os/mac/hidden-files.md)
+  * [Disable Gatekeeper](os/mac/disable-gatekeeper.md)
   * [OS Quirks](os/mac/mac_os_quirks.md)
   * [Commands](os/mac/mac_commands.md)
 * [Shortcuts](os/key_shortcuts.md)
