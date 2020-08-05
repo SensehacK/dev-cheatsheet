@@ -54,7 +54,6 @@
   * [Config](mobile/native/timeline.md)
   * [Issues](mobile/native/issues.md)
 * [Unity](mobile/unity/README.md)
-  * [Loop](mobile/unity/loop.md)
   * [Listeners](mobile/unity/listeners.md)
   * [Errors](mobile/unity/errors.md)
   * [Config](mobile/unity/unity.md)
