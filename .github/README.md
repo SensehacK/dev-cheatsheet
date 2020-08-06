@@ -1,4 +1,4 @@
-# github
+# Sensehack Developer Cheatsheet
 
 ## Intro
 
