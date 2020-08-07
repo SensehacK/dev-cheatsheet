@@ -57,6 +57,7 @@
   * [Listeners](mobile/unity/listeners.md)
   * [Errors](mobile/unity/errors.md)
   * [Config](mobile/unity/unity.md)
+  * [Loop](mobile/unity/loop.md)
   * [Shortcuts](mobile/unity/shortcuts.md)
   * [Input Field](mobile/unity/input_field.md)
   * [VS Code](mobile/unity/vscode.md)
