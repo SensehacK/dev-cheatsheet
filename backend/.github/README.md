@@ -1,4 +1,4 @@
-# Cheatsheet
+# Sensehack Developer Cheatsheet
 
 ## Intro
 

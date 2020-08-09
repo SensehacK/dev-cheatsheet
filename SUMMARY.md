@@ -57,6 +57,7 @@
   * [Listeners](mobile/unity/listeners.md)
   * [Errors](mobile/unity/errors.md)
   * [Config](mobile/unity/unity.md)
+  * [Loop](mobile/unity/loop.md)
   * [Shortcuts](mobile/unity/shortcuts.md)
   * [Input Field](mobile/unity/input_field.md)
   * [VS Code](mobile/unity/vscode.md)
@@ -160,7 +161,7 @@
 
 ## Backend
 
-* [Cheatsheet](backend/.github/README.md)
+* [Sensehack Developer Cheatsheet](backend/.github/README.md)
   * [ISSUE\_TEMPLATE](backend/.github/issue_template/README.md)
     * [feature\_request](backend/.github/issue_template/feature_request.md)
 * [Node](backend/node.md)
