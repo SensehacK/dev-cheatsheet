@@ -1,7 +1,6 @@
 # TextField
 
-Great article which digs deeper in how textfield works with iOS internally.
-[grokswift guide](https://grokswift.com/uitextfield/)
+Great article which digs deeper in how textfield works with iOS internally. [grokswift guide](https://grokswift.com/uitextfield/)
 
 ## Programmatic
 
@@ -21,8 +20,6 @@ myLabel.attributedText = myAttrString
 
 [Source](https://stackoverflow.com/questions/24666515/how-do-i-make-an-attributed-string-using-swift)
 
-
-
 ## Delegates
 
 You can import or override various delegate methods for your specific custom textfields and cater it towards different functionalities you want to have.
@@ -35,7 +32,7 @@ protocol LoginViewDelegate: class {
 }
 
 class LoginView: UIView {
-		private lazy var passwordTextField: CustomTextField = {
+        private lazy var passwordTextField: CustomTextField = {
         let field =  CustomTextField(textColor: .White,
                                      isSecuredEntry: true,
                                      contentType: .password,
@@ -64,33 +61,31 @@ extension LoginView: UITextFieldDelegate {
 
 // MARK: - LoginViewDelegate Methods
 extension LoginViewController: LoginViewDelegate {
-	func LoginViewDidReturnPassword(_ view: LoginView) { }
+    func LoginViewDidReturnPassword(_ view: LoginView) { }
 }
 ```
 
 ### Unique Textfield
-Identifying which textfield belongs to can be done utilizing tags or even basic ``==`` operator.
+
+Identifying which textfield belongs to can be done utilizing tags or even basic `==` operator.
 
 This [StackOverflow post](https://stackoverflow.com/questions/50465748/swift-4-identifying-only-one-text-field-as-delegate-for-editingdidend-etc) explains it better.
 
-
 ## Validation
+
 Validation is needed for checking input fields like email and password or enforcing different policies on the user with available input options.
 
 [Small article Validating](https://medium.com/swift2go/a-better-approach-to-text-field-validations-on-ios-81bd87598070)
 
-
 ## Navigation
 
-Form like navigation from one text field to next textfield
-[SO](https://stackoverflow.com/questions/1347779/how-to-navigate-through-textfields-next-done-buttons)
-[Hacking With Swift](https://www.hackingwithswift.com/example-code/uikit/how-to-move-to-the-next-uitextfield-when-the-user-presses-return)
+Form like navigation from one text field to next textfield [SO](https://stackoverflow.com/questions/1347779/how-to-navigate-through-textfields-next-done-buttons) [Hacking With Swift](https://www.hackingwithswift.com/example-code/uikit/how-to-move-to-the-next-uitextfield-when-the-user-presses-return)
 
 But I chose a different approach with custom Text fields and just directly sent the responder with specific text field.
 
 ```swift
 class LoginView: UIView {
-		private lazy var emailTextField: CustomTextField = {
+        private lazy var emailTextField: CustomTextField = {
          let field =  CustomTextField(keyboard: .emailAddress,
                                       textColor: .White,
                                       contentType: .emailAddress,
@@ -100,8 +95,8 @@ class LoginView: UIView {
         field.CustomTextField.returnKeyType = .next
         return field
     }()
-    
-		private lazy var passwordTextField: CustomTextField = {
+
+        private lazy var passwordTextField: CustomTextField = {
         let field =  CustomTextField(textColor: .White,
                                      isSecuredEntry: true,
                                      contentType: .password,
@@ -127,3 +122,4 @@ public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 }
 }
 ```
+

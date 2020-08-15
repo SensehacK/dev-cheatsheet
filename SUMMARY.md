@@ -5,7 +5,10 @@
 ## Mobile
 
 * [iOS](mobile/ios/README.md)
+  * [Config](mobile/ios/config/README.md)
+    * [Certificate](mobile/ios/config/certificate.md)
   * [UI](mobile/ios/ui/README.md)
+    * [Keyboard](mobile/ios/ui/keyboard.md)
     * [UIKit](mobile/ios/ui/uikit.md)
     * [UIView](mobile/ios/ui/uiview.md)
     * [TextField](mobile/ios/ui/textfield.md)
