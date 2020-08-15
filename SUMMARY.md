@@ -149,6 +149,7 @@
 ## OS
 
 * [Windows](os/windows/README.md)
+  * [Registry](os/windows/registry.md)
   * [WSL](os/windows/wsl_folder.md)
   * [Keymap](os/windows/keymap_mac.md)
   * [Default](os/windows/defaults.md)
