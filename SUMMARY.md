@@ -6,6 +6,7 @@
 
 * [iOS](mobile/ios/README.md)
   * [Config](mobile/ios/config/README.md)
+    * [Provisioning](mobile/ios/config/provisioning.md)
     * [Certificate](mobile/ios/config/certificate.md)
   * [UI](mobile/ios/ui/README.md)
     * [Keyboard](mobile/ios/ui/keyboard.md)
