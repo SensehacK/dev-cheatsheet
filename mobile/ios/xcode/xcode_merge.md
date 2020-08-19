@@ -53,9 +53,9 @@ So with pod command I also got a new error, which was obvious as Xcode couldn’
 
 I quickly searched again which returned me various results specifically telling me that the dependency has a bug but the thread being old I thought I’m already on the latest library dependency and quickly moved to a different approach of the problem.
 
-\[Cocoapods Github Issue\]\([https://github.com/CocoaPods/CocoaPods/issues/6108](https://github.com/CocoaPods/CocoaPods/issues/6108)\)  
-\[Other issue link\]\([https://github.com/CocoaPods/CocoaPods/issues/6214](https://github.com/CocoaPods/CocoaPods/issues/6214)\)  
-\[Developer Forum\]\([https://developer.apple.com/forums/thread/114511](https://developer.apple.com/forums/thread/114511)\)
+* [Cocoapods Github Issue](https://github.com/CocoaPods/CocoaPods/issues/6108)
+* [Other issue link](https://github.com/CocoaPods/CocoaPods/issues/6214)
+* [Developer Forum](https://developer.apple.com/forums/thread/114511)
 
 Moved too Github for versioning changes.
 
