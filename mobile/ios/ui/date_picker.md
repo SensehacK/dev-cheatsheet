@@ -125,3 +125,17 @@ extension UserProfileViewController: UserProfileViewDelegate {
 }
 ```
 
+### Properties
+
+Setting Minimum or Maximum date in the picker view
+
+```swift
+let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, height: 216))
+        datePicker.datePickerMode = .date
+        datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: -150, to: Date())
+        datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: -18, to: Date())
+        self.inputView = datePicker 
+        
+```
+
+[StackOverflow](https://stackoverflow.com/questions/10494174/minimum-and-maximum-date-in-uidatepicker)
