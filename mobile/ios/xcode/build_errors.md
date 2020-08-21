@@ -46,3 +46,23 @@ You just need to git diff from the files and open in your favorite text editor t
 
 [SO Link](https://stackoverflow.com/questions/21818821/couldnt-open-xib-file-after-git-pull-invalid-element-name)
 
+
+
+## Error: Multiple commands produce
+
+https://medium.com/codespace69/xcode-10-xcode-11-2-x-error-multiple-commands-produce-4e5ab75558f2
+
+
+error: module name "" is not a valid identifier
+[](https://stackoverflow.com/questions/45289802/xcode-module-name-is-not-a-valid-identifier-while-running-xc-unit-test)
+
+[](https://stackoverflow.com/questions/46881215/adding-swift-file-to-my-project-causes-invalid-module-error)
+
+
+SWIFT_ENABLE_BATCH_MODE
+https://stackoverflow.com/questions/46690619/build-fails-with-command-failed-with-a-nonzero-exit-code
+
+
+## Failed to set plugin placeholders
+
+[Stack Overflow](https://stackoverflow.com/questions/47344160/failed-to-set-plugin-placeholders-message)

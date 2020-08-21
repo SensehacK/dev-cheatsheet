@@ -22,3 +22,7 @@ On Simulator App, navigate to ‘Device’ menu -&gt; ‘Reset Content and Setti
 
 [Link](https://stackoverflow.com/questions/16195859/reset-ios-simulator-application-data-to-run-app-for-first-time)
 
+## Clean Build Folder
+If you need to clean the project derived data which can sometimes resolve previous invalid cache of the build system.
+You can find it in 
+> Top menu -> Product -> Clean Build Folder
