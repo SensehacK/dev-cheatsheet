@@ -1,10 +1,10 @@
 # Date Picker
 
-### Implementation
+## Implementation
 
 Programmatically making a text field open up Date picker with two selectors of able to cancel the picker and save the date from the picker.
 
-#### Extension
+### Extension
 
 ```swift
 import UIKit
@@ -39,7 +39,7 @@ Great article, learned a lot about how events work, toolbar creation on top of p
 
 Usage of the extension with protocol delegate coordinator pattern with programmatic UI.
 
-#### View Class
+### View Class
 
 ```swift
 protocol UserProfileViewDelegate: class { 
@@ -73,7 +73,7 @@ class UserProfileView: UIView {
 }
 ```
 
-#### ViewController Class
+### ViewController Class
 
 ```swift
 class UserProfileViewController: UIViewController {
@@ -125,7 +125,7 @@ extension UserProfileViewController: UserProfileViewDelegate {
 }
 ```
 
-### Properties
+## Properties
 
 Setting Minimum or Maximum date in the picker view
 
@@ -134,8 +134,8 @@ let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, heig
         datePicker.datePickerMode = .date
         datePicker.minimumDate = Calendar.current.date(byAdding: .year, value: -150, to: Date())
         datePicker.maximumDate = Calendar.current.date(byAdding: .year, value: -18, to: Date())
-        self.inputView = datePicker 
-        
+        self.inputView = datePicker
 ```
 
 [StackOverflow](https://stackoverflow.com/questions/10494174/minimum-and-maximum-date-in-uidatepicker)
+
