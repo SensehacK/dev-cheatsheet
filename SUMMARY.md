@@ -33,6 +33,7 @@
     * [GitHub Actions](mobile/ios/automation/github_actions.md)
     * [Xcode iOS CICD](mobile/ios/automation/ios_ci_cd.md)
   * [Library](mobile/ios/library/README.md)
+    * [SiriKit](mobile/ios/library/sirikit.md)
     * [Cocoapods](mobile/ios/library/cocoapods_syntax.md)
     * [SnapKit](mobile/ios/library/snapkit.md)
     * [Macaw](mobile/ios/library/macaw.md)
