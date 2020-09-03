@@ -1,10 +1,10 @@
-# CheckBox
+# Checkbox
 
-## Implementation
+### Implementation
 
 Programmatically making a button toggle between active and inactive state using an checkmark image.
 
-### Custom UIButton Class
+#### Custom UIButton Class
 
 ```swift
 import UIKit
@@ -83,15 +83,18 @@ private extension CheckMarkButton {
     }
 
 }
+
 ```
 
-Good sources [SO](https://stackoverflow.com/questions/29117759/how-to-create-radio-buttons-and-checkbox-in-swift-ios)
+
+Good sources
+[SO](https://stackoverflow.com/questions/29117759/how-to-create-radio-buttons-and-checkbox-in-swift-ios)
 
 [Medium Simple Checkbox](https://medium.com/swift-india/simple-checkbox-component-in-ios-311a865c0b02)
 
 Usage of the extension with protocol delegate coordinator pattern with programmatic UI.
 
-### View Class
+#### View Class
 
 ```swift
 protocol RegisterViewDelegate: class { 
@@ -122,14 +125,14 @@ class UserProfileView: UIView {
 }
 ```
 
-### ViewController Class
+#### ViewController Class
 
 ```swift
 class RegisterViewController: UIViewController {
-
-        // MARK: - Properties
+		
+		// MARK: - Properties
     var isCheckmark: Bool?
-
+    
     // MARK: - Overridden Properties
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -144,7 +147,7 @@ class RegisterViewController: UIViewController {
         view.button.isEnabled = false
         return view
     }()
-
+    
 }
 
 // MARK: - Life Cycle Methods
@@ -185,4 +188,3 @@ private extension RegisterViewController {
 
 }
 ```
-
