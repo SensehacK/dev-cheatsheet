@@ -1,6 +1,6 @@
 # Shortcuts
 
-## Shortcuts
+## Keys
 
 For the command palette shortcut
 
@@ -19,10 +19,3 @@ Fold & Unfold methods functions
 Unfold methods functions
 
 > Command + J
-
-"Command + Shift + P" - Command Pallette
-
-"Command + P" - Open File / folder
-
-## 
-
