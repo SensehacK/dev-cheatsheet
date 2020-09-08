@@ -123,3 +123,35 @@ public func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 }
 ```
 
+## Behaviors
+
+### UserInteractionEnabled vs Enabled
+If we want the textfield to be user intractable which is by default turned on.
+
+- IsUserInteractionEnabled doesn’t change any background of the default textfield.
+- isEnabled does change the background opacity to minimum and it results into a darker grayish disabled view.
+
+```swift
+
+private lazy var emailTextField: UITextField = {
+       let field = UITextField()
+       field.text = "Kautilya Save"
+       field.isUserInteractionEnabled = false
+       field.isEnabled = false
+       field.backgroundColor = .gray
+       return field
+    }()
+
+```
+
+
+This behavior is valid until the custom UITextField class hasn’t been defined with its background color property.
+
+> self.backgroundColor = .clear
+
+Then you would have to override the custom UITextField object with the backgroundColor property accordingly 
+
+> emailTextField.backgroundColor = isEnabled ? .clear : .gray
+
+
+[SO](https://stackoverflow.com/questions/29791644/disabling-user-input-for-uitextfield-in-swift)

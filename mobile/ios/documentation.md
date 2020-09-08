@@ -8,6 +8,12 @@ You can defined your own documentation while coding for your functions to be pro
 
 // TODO:
 
+### Old Headers
+
+In objective C we have pragma mark, we can utilize **MARK:**
+[SO](https://stackoverflow.com/questions/24017316/pragma-mark-in-swift?rq=1)
+
+
 ## Auto Completion
 
 If you really like auto completion for your own internal methods, this is the way to do it. Also you can `command + click` on your function initializer with parameters in order to directly generate documentation stubs for you. Or you can manually enter them with appropriate parameters and back slashes.
