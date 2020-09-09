@@ -21,3 +21,7 @@ Firefox supports exceptional Grid layout system to visualize overall CSS and how
 Disable auto update on firefox nightly
 
 [Guide](https://techsupportwhale.com/disable-firefox-auto-update/)
+
+### Enterprise Policy
+
+[Guide](https://www.journeybytes.com/disable-firefox-quantum-updates/)

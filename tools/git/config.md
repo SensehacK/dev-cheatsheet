@@ -42,3 +42,16 @@ Add the email address to your GitHub account by setting your commit email addres
 
 Your other option is to edit the repo config file directly. With a default Git clone, it's usually the .git/config file in your repo's root folder. Just open that file in an editor and starting adding your settings, or invoke an editor for it at the command line using git config --edit.
 
+## Case Sensitive
+
+Good discussion about case insensitive O.S and how to work with renaming from files in those underlying systems.
+
+[SO](https://stackoverflow.com/questions/10523849/changing-capitalization-of-filenames-in-git)
+
+We could just turn ON case sensitivity by running this command as global git config
+
+> git config --global core.ignorecase false
+
+To verify whether the settings was applied or not, we could run this command
+
+> git config --global --get core.ignorecase
