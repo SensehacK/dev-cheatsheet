@@ -20,7 +20,7 @@ Which will open the ubuntu WSL in that specific folder.
 
 If you're in specific file path and you just need to view that directory or workspace in GUI.
 
-You could utilize this command and it will directly open up the $pwd path in your file explorer.
+You could utilize this command and it will directly open up the \$pwd path in your file explorer.
 
 > explorer.exe .
 
@@ -34,7 +34,7 @@ Or if you need VS Code to open up a project.
 
 You can set path on default shell
 
-By this I can open a specific $pwd in explorer to view it So when we enter ```open .`` it would internally convert that syntax to```explorer.exe .\`\` Pretty sweet Window to Unix support Header bridge.
+By this I can open a specific \$pwd in explorer to view it So when we enter ` open .`` it would internally convert that syntax to `explorer.exe .\`\` Pretty sweet Window to Unix support Header bridge.
 
 > open .
 
@@ -44,3 +44,31 @@ By this I can open a specific $pwd in explorer to view it So when we enter ```op
 
 How to install 'zsh' in windows 10 WSL subsystem & it also shares proper screenshots along the guide. Very easy to follow - [Link](https://www.maketecheasier.com/install-zsh-and-oh-my-zsh-windows10/)
 
+## NPM on WSL Ubuntu
+
+[GitHub Gist](https://gist.github.com/noygal/6b7b1796a92d70e24e35f94b53722219)
+
+> curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+
+Restart your terminal after install.
+
+### NVM ZSH config
+
+And for my ZSH environment setup, I had to link nvm directory using these two commands in my .zshrc file
+
+```bash
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
+```
+
+Installing the LTS version using node version manager
+
+> nvm install --lts
+
+Using the LTS version using node version manager
+
+> nvm use --lts
+
+You can also add this command to the end of your ZSH config file:
+
+> echo "nvm use --lts" >> ~/.zshrc
