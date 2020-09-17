@@ -12,13 +12,28 @@ The general form for making and setting an attributed string is like this. You c
 
 ```swift
 // create attributed string 
-let myString = "Swift Attributed String" let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.blue ] 
+let myString = "Swift Attributed String" 
+let myAttribute = [ NSAttributedString.Key.foregroundColor: UIColor.blue ] 
 let myAttrString = NSAttributedString(string: myString, attributes: myAttribute)
+
 // set attributed text on a UILabel 
 myLabel.attributedText = myAttrString
 ```
 
 [Source](https://stackoverflow.com/questions/24666515/how-do-i-make-an-attributed-string-using-swift)
+
+### Color
+
+We can set the blinking cursor color for the text field by setting the tintColor property.
+
+
+```swift
+// create attributed string 
+
+let socialTextField = UITextField() 
+socialTextField.tintColor = UIColor.yellow
+
+```
 
 ## Delegates
 
