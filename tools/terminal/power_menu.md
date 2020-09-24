@@ -10,6 +10,20 @@ Use the command in terminal bash or zsh where the -h parameter will take a numbe
 
 > sudo shutdown -h +30
 
+To shut down your Mac immediately:
+
+
+$ sudo shutdown -h now
+To restart your Mac immediately:
+
+
+$ sudo shutdown -r now
+We can even add a time delay (in minutes) if we wish:
+
+
+> sudo shutdown -r +60
+
+
 #### Windows
 
 Use the command in powershell or windows terminal where the -t parameter will take a number which is in seconds so 10 minutes is 600 seconds. So with \(1200\) is 20 minutes.
