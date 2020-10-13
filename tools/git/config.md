@@ -55,3 +55,4 @@ We could just turn ON case sensitivity by running this command as global git con
 To verify whether the settings was applied or not, we could run this command
 
 > git config --global --get core.ignorecase
+

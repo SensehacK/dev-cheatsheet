@@ -12,17 +12,11 @@ Use the command in terminal bash or zsh where the -h parameter will take a numbe
 
 To shut down your Mac immediately:
 
+$ sudo shutdown -h now To restart your Mac immediately:
 
-$ sudo shutdown -h now
-To restart your Mac immediately:
-
-
-$ sudo shutdown -r now
-We can even add a time delay (in minutes) if we wish:
-
+$ sudo shutdown -r now We can even add a time delay \(in minutes\) if we wish:
 
 > sudo shutdown -r +60
-
 
 #### Windows
 
@@ -35,3 +29,4 @@ Windows 10 Terminal
 > shutdown /s /t 3600
 
 ### Restart
+

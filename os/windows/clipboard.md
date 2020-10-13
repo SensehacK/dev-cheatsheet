@@ -7,3 +7,4 @@ Utilize the app called Ditto & assign hot key "Ctrl + C" as would transpile to "
 Windows default feature in settings
 
 > Windows Command + V
+

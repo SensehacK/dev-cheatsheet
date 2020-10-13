@@ -25,3 +25,4 @@ Disable auto update on firefox nightly
 ### Enterprise Policy
 
 [Guide](https://www.journeybytes.com/disable-firefox-quantum-updates/)
+

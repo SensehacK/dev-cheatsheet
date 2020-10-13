@@ -169,6 +169,8 @@
 
 ## Backend
 
+* [Python](backend/python.md)
+* [Shortcuts](backend/shortcuts.md)
 * [Sensehack Developer Cheatsheet](backend/.github/README.md)
   * [ISSUE\_TEMPLATE](backend/.github/issue_template/README.md)
     * [feature\_request](backend/.github/issue_template/feature_request.md)

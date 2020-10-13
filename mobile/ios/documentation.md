@@ -10,9 +10,7 @@ You can defined your own documentation while coding for your functions to be pro
 
 ### Old Headers
 
-In objective C we have pragma mark, we can utilize **MARK:**
-[SO](https://stackoverflow.com/questions/24017316/pragma-mark-in-swift?rq=1)
-
+In objective C we have pragma mark, we can utilize **MARK:** [SO](https://stackoverflow.com/questions/24017316/pragma-mark-in-swift?rq=1)
 
 ## Auto Completion
 

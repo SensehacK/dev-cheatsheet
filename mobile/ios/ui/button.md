@@ -14,8 +14,7 @@ Two solutions but I would prefer left align and left align text by default as Te
 
 Setting size of a button
 
-> customButton.frame.size = CGSize(width, height)
+> customButton.frame.size = CGSize\(width, height\)
 
+How to programmatically resize a UIButton to text size [Resizable button with text](https://www.codesd.com/item/how-to-programmatically-resize-a-uibutton-to-text-size-and-keep-a-good-padding.html)
 
-How to programmatically resize a UIButton to text size
-[Resizable button with text](https://www.codesd.com/item/how-to-programmatically-resize-a-uibutton-to-text-size-and-keep-a-good-padding.html)

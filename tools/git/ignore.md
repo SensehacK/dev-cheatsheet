@@ -37,7 +37,6 @@ git commit -m '.DS_Store banished!'
 
 Untrack files already added to git repository based on .gitignore [Untrack files gitignore](http://www.codeblocq.com/2016/01/Untrack-files-already-added-to-git-repository-based-on-gitignore/)
 
-
 ## Ignore Specific Filename
 
 Good article on specifics of ignoring filename and their wildcard patterns.
