@@ -1,4 +1,4 @@
-# globalStyle
+# Global Style
 
 React Native Global Style
 

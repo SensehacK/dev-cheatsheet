@@ -94,7 +94,7 @@
 * [Angular](frontend/angular.md)
 * [React](frontend/react/README.md)
   * [State](frontend/react/state.md)
-  * [globalStyle](frontend/react/globalstyle.md)
+  * [Global Style](frontend/react/globalstyle.md)
   * [Data passing](frontend/react/data_passing.md)
 
 ## Tools
