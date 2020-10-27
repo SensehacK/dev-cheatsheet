@@ -34,3 +34,13 @@ This time the constraint was not available at runtime as we had commented the co
 
 Here _descriptionLabel.snp.bottom_ can’t be referenced as it is commented in the code.
 
+
+Parent subview not present error:
+
+```text
+
+reason: 'NSLayoutConstraint for <UIView: 0x7ff16cc39bf0; frame = (0 0; 0 0); layer = <CALayer: 0x60000012d5e0>>: A multiplier of 0 or a nil second item together with a location for the first attribute creates an illegal constraint of a location equal to a constant. Location attributes must be specified in pairs.'
+
+```
+
+So this happens if the snap kit element is referencing on a certain parent object which hasn’t been instantiated or called upon before executing the child object.
