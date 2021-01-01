@@ -58,3 +58,17 @@ SWIFT\_ENABLE\_BATCH\_MODE [https://stackoverflow.com/questions/46690619/build-f
 
 [Stack Overflow](https://stackoverflow.com/questions/47344160/failed-to-set-plugin-placeholders-message)
 
+## Invalid code signature
+
+
+```text
+Could not launch “HealthSense”
+Domain: IDEDebugSessionErrorDomain
+Code: 3
+Failure Reason: The operation couldn’t be completed. Unable to launch kautilya.HealthSense because it has an invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user.
+User Info: {
+    DVTRadarComponentKey = 855031;
+    RawLLDBErrorMessage = "The operation couldn\U2019t be completed. Unable to launch kautilya.HealthSense because it has an invalid code signature, inadequate entitlements or its profile has not been explicitly trusted by the user.";
+}
+```
+
