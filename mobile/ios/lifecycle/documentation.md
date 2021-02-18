@@ -10,7 +10,14 @@ You can defined your own documentation while coding for your functions to be pro
 
 ### Old Headers
 
-In objective C we have pragma mark, we can utilize **MARK:** [SO](https://stackoverflow.com/questions/24017316/pragma-mark-in-swift?rq=1)
+In objective C we have pragma mark, we can utilize **MARK:** 
+```text
+You can use // MARK:
+
+There has also been discussion that liberal use of class extensions might be a better practice anyway. Since extensions can implement protocols, you can e.g. put all of your table view delegate methods in an extension and group your code at a more semantic level than #pragma mark is capable of.
+```
+[SO](https://stackoverflow.com/questions/24017316/pragma-mark-in-swift?rq=1)
+
 
 ## Auto Completion
 
