@@ -1,6 +1,6 @@
 # UIView
 
-### Identify UIView Uniquely
+## Identify UIView Uniquely
 
 Identify uniquely which UIView is in the reference and utilize accessibility identifier to get its values.
 
@@ -34,3 +34,31 @@ required init?(coder: NSCoder) {
     }
 ```
 
+
+
+## Remove UIView
+
+Remove the child view from superview by this command.
+> view_object_name.removeFromSuperview()
+
+Programmatic collection of UIViews
+```swift
+var allocatedViews: [UIView] = [UIView]()
+
+// Programmatic adding UIViews 
+for i in 0..<n {
+	let childView = UIView()
+	self.view.addSubview(childView)
+	allocatedViews.append(childView)
+}
+
+
+// Programmatic deallocating UIViews
+for view in allocatedViews {
+    view.removeFromSuperview()
+}
+
+```
+[SO](https://stackoverflow.com/questions/26569159/remove-programmatically-added-uiimageview)
+
+[Article](http://swiftdeveloperblog.com/add-subview-and-remove-subview-example-in-swift/)
