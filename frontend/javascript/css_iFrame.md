@@ -94,6 +94,6 @@ Image Before vs After differences
 
 ![alt text][article]
 
-[article]: https://github.com/SensehacK/dev-cheatsheet/tree/master/assets/clean_article_embedly.png
+[article]: https://raw.githubusercontent.com/SensehacK/dev-cheatsheet/master/assets/clean_article_embedly.png
 “Before After Article Stack
 
