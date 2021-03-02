@@ -54,7 +54,32 @@ Update: It’s also in constant Big O(1) time.
 - Different data types can be utilized. 
 - Great for real life enterprise scenarios where restful APIs returns a mix of primitive types in JSON data format.
 
+## HashMap
 
+
+```swift
+func hashTable()  {
+        let numbers = [1,4,5,3,3,12,3,5,3,3,6,7,1,2]
+        var hashMap = [Int: Int]()
+        
+        for number in numbers {
+            if (hashMap[number] != nil) {
+                hashMap[number]! += 1
+            } else {
+                hashMap[number] = 1
+            }
+        }
+        
+//        hashMap
+        
+        
+        for (keys, values) in hashMap {
+            print("\(keys): \(values)")
+        }
+    }
+
+
+```
 ## References
 
 [SO](https://stackoverflow.com/questions/44637836/what-is-the-equivalent-of-a-java-hashmapstring-integer-in-swift)
