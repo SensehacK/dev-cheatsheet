@@ -4,9 +4,6 @@
 ## Init
 
 
-## 2D Array
-
-[HWS](https://www.hackingwithswift.com/example-code/arrays/how-do-you-create-multi-dimensional-arrays)
 
 ## Join
 
@@ -43,6 +40,42 @@ myArr.sort { $0.deadline < $1.deadline }
 
 let newArr = myArr.sorted { $0.deadline < $1.deadline }
 ```
+
+## Stride
+
+```swift
+for i in stride(from: 0, to: 10, by: 2) {
+    print(i)
+}
+
+```
+
+## 2D Array
+
+
+```swift
+// Create a constant, jagged array.
+let units: [[Int]] = [
+[100, 200, 300],
+[400, 500], [600],
+[700, 800], [900]
+]
+
+// Loop over array and all nested arrays.
+for var x in 0..<units.count {
+    var line = ""
+    for var y in 0..<units[x].count {
+        line += String(units[x][y])
+        line += " "
+    }
+    print(line)
+}
+
+```
+
+
+[HWS](https://www.hackingwithswift.com/example-code/arrays/how-do-you-create-multi-dimensional-arrays)
+[2D Array](https://www.dotnetperls.com/2d-swift)
 
 ## Array to Number
 
