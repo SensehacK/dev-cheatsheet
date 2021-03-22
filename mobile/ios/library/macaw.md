@@ -18,6 +18,6 @@ With Circular Arc Macaw View, for some reason my View sticks to the left more an
                 width: 5,
                 cap: .round
         ))
-        newNodes.append(transparentArc)\
+        newNodes.append(transparentArc)
 ```
 

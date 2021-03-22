@@ -3,8 +3,10 @@
 
 You could save your API end point in .plist file which we can specifically ignore committing to the git servers.
 
-Make a keys.plist file
+Note: If pushing out production App always encrypt out your keys so that decrypting or reverse engineering an app bundle package won’t reveal certain confidential information in the app package.
 
+
+Make a keys.plist file from Xcode -> File -> New File
 
 
 
