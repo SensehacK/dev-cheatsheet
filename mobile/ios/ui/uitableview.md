@@ -40,3 +40,11 @@ Properly reset the attributes of the table view cell so that it doesn’t take a
 [Apple docs prepareToReuse](https://developer.apple.com/documentation/uikit/uitableviewcell/1623223-prepareforreuse)
 
 [duplicate cells](https://fluffy.es/solve-duplicated-cells/)
+
+
+## Errors
+
+### Constraints Error
+
+Warning: Detected a case where constraints ambiguously suggest a height of zero
+[SO](https://stackoverflow.com/questions/25902288/detected-a-case-where-constraints-ambiguously-suggest-a-height-of-zero)
