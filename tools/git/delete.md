@@ -10,3 +10,12 @@ Also next git push won’t commit the deleted commit and also you will lose the 
 
 [Stack Overflow](https://stackoverflow.com/questions/8903953/how-to-revert-last-commit-and-remove-it-from-history)
 
+
+
+
+## For reverting Undo the commits.
+
+Removing the last commit from the git current branch 
+> git reset --soft HEAD~1  
+
+[SO](https://stackoverflow.com/questions/3197413/how-do-i-delete-unpushed-git-commits)

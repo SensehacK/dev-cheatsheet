@@ -28,3 +28,7 @@ This command will restart the DNS of the system if you have made changes to Mac 
 
 Works in Mac OS Mojave 10.14.6
 
+
+> sudo dscacheutil -flushcache; sudo killall -HUP mDNSResponder
+
+For Mac OS Catalina 10.15.6

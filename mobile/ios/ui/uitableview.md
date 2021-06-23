@@ -48,3 +48,9 @@ Properly reset the attributes of the table view cell so that it doesn’t take a
 
 Warning: Detected a case where constraints ambiguously suggest a height of zero
 [SO](https://stackoverflow.com/questions/25902288/detected-a-case-where-constraints-ambiguously-suggest-a-height-of-zero)
+
+### Footer Empty cell
+
+[SO](https://stackoverflow.com/questions/19911536/how-to-add-footer-view-for-uitableview-in-ib-when-working-with-storyboards)
+
+[Show UITableView footer when empty SO](https://stackoverflow.com/questions/36330344/show-uitableview-footer-when-empty)

@@ -62,3 +62,20 @@ for view in allocatedViews {
 [SO](https://stackoverflow.com/questions/26569159/remove-programmatically-added-uiimageview)
 
 [Article](http://swiftdeveloperblog.com/add-subview-and-remove-subview-example-in-swift/)
+
+
+
+## Custom Parameters
+
+You can utilize UIView(autoLayout = true)
+
+> private lazy var customView = UIView(useAutoLayout: true)
+
+This will help us to remove the horrendous long variable setup with every override func viewDidLoad()
+> customView.translatesAutoresizingMaskIntoConstraints = false
+
+
+## Changes
+
+iOS 13 changes
+[SO](https://stackoverflow.com/questions/56435510/presenting-modal-in-ios-13-fullscreen)

@@ -103,6 +103,18 @@ func plusOne(_ digits: [Int]) -> [Int] {
 
 ```
 
+
+
+## Map
+Makes mapping every element easier on the contiguous data structure.
+
+
+## Reduce
+
+
+
+[Reduce function](https://medium.com/@lucianoalmeida1/a-little-bit-about-the-cool-reduce-in-swift-306edd9ceb57)
+
 ## References
 
 [SO](https://stackoverflow.com/questions/24781027/how-do-you-sort-an-array-of-structs-in-swift)
