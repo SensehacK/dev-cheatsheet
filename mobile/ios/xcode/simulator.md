@@ -22,3 +22,10 @@ Health data continuous workout randomized data could be accessible for testing t
 
 Health app doesn’t fully synced my data to the iOS simulator. Or maybe I was missing some iCloud sync settings. I did turned on Health explicitly on “Settings” app of the simulator.
 
+
+## Offline Mode
+
+
+Utilize the network link conditioner on Mac OS.
+
+[Network disable](https://www.tutorialspoint.com/how-to-disable-the-network-in-ios-simulator)

@@ -128,3 +128,10 @@ UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
 
 // To rotate to the set current orientation
 UINavigationController.attemptRotationToDeviceOrientation()
+```
+
+
+
+## Sources
+
+[Force landscape mode in one ViewController](https://stackoverflow.com/questions/27037839/force-landscape-mode-in-one-viewcontroller-using-swift)
