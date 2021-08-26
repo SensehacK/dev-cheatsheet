@@ -72,3 +72,14 @@ User Info: {
 }
 ```
 
+
+
+## Changing folder name
+
+```
+Showing Recent Messages
+/Users/ksave/Automation/Projects/Pods/Target Support Files/Pods-API/Pods-API.debug.xcconfig: unable to open file (in target "API" in project "API")
+
+```
+
+Maybe update the proper references and also clear the Derived Data.

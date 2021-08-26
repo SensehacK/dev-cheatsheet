@@ -26,3 +26,9 @@ func loadJson(fileName: String) -> Person? {
 }
 
 ```
+
+
+[Parse Local JSON](https://praveenkommuri.medium.com/how-to-read-parse-local-json-file-in-swift-28f6cec747cf)
+
+
+[Apple Working with JSON](https://developer.apple.com/swift/blog/?id=37)
