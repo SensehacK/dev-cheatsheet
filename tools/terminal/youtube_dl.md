@@ -52,3 +52,16 @@ I have total 135 videos in my playlist. I have successfully downloaded 38 of the
 
 Its downloading my remaining 97 videos.
 
+## Update
+
+Use youtube-dlp as it's the latest fork for the updated youtube fixes.
+[Youtube-DLP](https://github.com/yt-dlp/yt-dlp/)
+
+## Alias
+
+You can add this as an alias
+
+> alias yt-dl='yt-dlp -f bestvideo+bestaudio'
+
+Usage would be 
+> yt-dl https://www.youtube.com/
