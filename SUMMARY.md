@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Sensehack Developer Journal](README.md)
+* [Sensehack Developer Journal](dev_cheatsheet/README.md)
 
 ## Mobile
 
@@ -18,6 +18,7 @@
   * [Custom Component](mobile/ios/custom-component/README.md)
     * [Reusable component for Text Alignment](mobile/ios/custom-component/rtl_alignment_support.md)
   * [Library](mobile/ios/library/README.md)
+    * [RxSwift](dev_cheatsheet/mobile/ios/library/rxSwift/README.md)
     * [SiriKit](mobile/ios/library/sirikit.md)
     * [Cocoapods](mobile/ios/library/cocoapods_syntax.md)
     * [SnapKit](mobile/ios/library/snapkit.md)

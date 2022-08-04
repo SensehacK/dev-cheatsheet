@@ -1,9 +1,10 @@
-Bind vs Subscribe
+# Bind vs Subscribe
 
 LoginViewModel Ln: 251
 
 
-```
+```swift
+
   .bind(to: dashboardNavigationContextSubject)
             
   vs

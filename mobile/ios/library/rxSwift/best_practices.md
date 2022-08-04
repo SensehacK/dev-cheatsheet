@@ -7,7 +7,8 @@ Listing overall learnings of RxSwift do's and don'ts for writing good reactive c
 
 ### Input & Output
 
-We use structs inside our classes with explicit definition called "Input" and "Output"
+We use structs inside our classe
+s with explicit definition called "Input" and "Output"
 
 Eg.
 ```swift
