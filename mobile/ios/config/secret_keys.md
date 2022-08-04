@@ -71,6 +71,11 @@ API key and private keys need to be always secret, you could utilize the Github 
 
 [Github secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
+## Guide
+
+[NS Hipster Secrets guide](https://nshipster.com/secrets/)
+
 ## Other Platforms
 
 [React Web app](https://medium.com/better-programming/how-to-hide-your-api-keys-c2b952bc07e6)
+

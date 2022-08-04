@@ -39,3 +39,8 @@ When we tell docker to show us all images currently listed on the computer:
 docker image ls -a
 ```
 
+Inspecting the containers info
+
+```
+docker inspect <container name/id>
+```

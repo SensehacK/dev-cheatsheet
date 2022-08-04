@@ -142,3 +142,45 @@ Use rm with flag -P for overwriting the file so that it won't be recovered easil
 
 > rm -P "filename.fileExtension"
 
+
+## Previous Commands
+
+We can access previous commands by using '!' parameter and also specify which parameter we want to swap for faster commands cycling.
+
+Command 1:
+> mkdir test_git
+
+This will utilize the first parameter of previous command.
+> cd !:1 # cd test_git
+
+```sh
+
+!:0 = the name of command executed.
+
+!:1 = the first parameter of the previous command
+
+!:* = all of the parameters of the previous command
+
+!:-1 = the final parameter of the previous command
+
+!! = the previous command line
+
+```
+
+[SO](https://stackoverflow.com/a/9502698)
+
+
+
+## Reload Terminal
+
+Loading the terminal with latest settings without logging out. 
+
+You can enter the long form command:
+
+> source ~/.bashrc
+
+or you can use the shorter version of the command:
+
+> . ~/.bashrc
+
+[SO](https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again)

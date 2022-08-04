@@ -1,57 +1,25 @@
-# Git
+# Shell
 
-Various Git commands handy cheatsheet.
+It is a shell around the O.S kernel and could be used to perform a lot of tasks using Command Line Interface (CLI).
 
-## Git Stash Commands
+There are lot of shell available and my favorite is `iTerm2` on macOS. It has host of different functionalities embedded in it and supports various environments.
 
-Git stash commands comes in handy when needed to pull other branches & the other branch codebase has conflicts with your own branch. This stash utility saves a local copy of your working branch & pulls the new branch & then you can override your local branch with the incoming branch.
 
-```text
-> \$ git stash
-> \$ git pull --rebase
-> \$ git stash apply
-```
+## Creating a script
 
-## Git Branch Commands
+You could create a `.sh` file for making all of these commands and saving it in the file to execute sequentially in order.
 
-If you want to switch to different branch from your current local uncommitted branch you could follow these steps overall.
+Sometimes we need to provide some execution permissions for the script or else it would be dangerous for every other script to run just by double clicking it.
 
-Step 1 : Local\_Branch\_Name \(Local Changes\) Considering you want to save or forward these changes to your new branch.
+> chmod x script_name
 
-Step 2 : Create your newly created branch with base as of updated master or develop.
+And to run the shell script on some of default shells like bash or zsh you can just type
 
-Step 3 : Run Git stash command to save your workflow.
+> sh script_name
+or 
+> . script_name.sh
 
-```text
-> \$ git stash
-> \$ git checkout branch_name
-```
 
-Step 4 : After switching to new branch via Git CLI or Git GUI just run Stash Apply command for overwriting your changes to new branch.
 
-> $ git stash apply
 
-## Git Rebase Commands
-
-## Git Remove Commits
-
-Multiple options if we haven’t pushed the code to origin server.
-
-Option 1 : Undo commit and keep all files staged
-
-> git reset --soft HEAD~;
-
-Option 2 : Undo commit and un-stage all files
-
-```text
-> git reset HEAD~;
-OR
-> git reset --mixed HEAD~;
-```
-
-Option 3 : Undo the commit and completely remove all changes
-
-> git reset --hard HEAD~;
-
-[Source](https://bytefreaks.net/programming-2/how-to-undo-a-git-commit-that-was-not-pushed)
 

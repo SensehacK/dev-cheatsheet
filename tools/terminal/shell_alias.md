@@ -41,3 +41,9 @@ alias textedit='open -a TextEdit’ alias o="open ." \# Open the current directo
 
 alias audioR="sudo kill -9 `ps ax|grep 'coreaudio[a-z]' | awk '{print $1}'`" alias ks='echo "$\_\_ksWelcome"'
 
+
+#### Youtube DL
+
+You can add this as an alias
+
+`alias yt-dl='yt-dlp -f bestvideo+bestaudio'`

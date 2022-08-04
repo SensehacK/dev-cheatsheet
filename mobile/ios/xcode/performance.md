@@ -7,7 +7,7 @@ We can optimize the build performance of any project so that it saves time rebui
 
 By giving better context to the compiler or Xcode would result in faster builds, results and quick prototypes of the idea.
 
-[Analyze Xcode build perfomance](https://www.avanderlee.com/optimization/analysing-build-performance-xcode/)
+[Analyze Xcode build performance](https://www.avanderlee.com/optimization/analysing-build-performance-xcode/)
 
 
 ## Instruments

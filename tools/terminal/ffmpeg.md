@@ -1,6 +1,12 @@
 # ffmpeg
 
+## Install
 
+> sudo apt update
+
+> sudo apt install ffmpeg
+
+[LinuxHint](https://linuxhint.com/install_ffmpeg_ubuntu_20-04/)
 
 ## Reduce Video size
 

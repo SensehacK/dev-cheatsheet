@@ -47,13 +47,13 @@ let newArr = myArr.sorted { $0.deadline < $1.deadline }
 for i in stride(from: 0, to: 10, by: 2) {
     print(i)
 }
-
 ```
 
 ## 2D Array
 
 
 ```swift
+
 // Create a constant, jagged array.
 let units: [[Int]] = [
 [100, 200, 300],
@@ -70,7 +70,6 @@ for var x in 0..<units.count {
     }
     print(line)
 }
-
 ```
 
 
@@ -103,7 +102,17 @@ func plusOne(_ digits: [Int]) -> [Int] {
 
 ```
 
+## Data
 
+```swift
+let arrFields = [
+    FieldFilter(hasDynamicRecordId: true, name: "Test 1"),
+    FieldFilter(hasDynamicRecordId: false, name: "Test 2"),
+    FieldFilter(hasDynamicRecordId: false, name: "Test 3"),
+    FieldFilter(hasDynamicRecordId: true, name: "Test 4"),
+    FieldFilter(hasDynamicRecordId: true, name: "Test 5"),
+]
+```
 
 ## Map
 Makes mapping every element easier on the contiguous data structure.
@@ -111,10 +120,45 @@ Makes mapping every element easier on the contiguous data structure.
 
 ## Reduce
 
-
-
 [Reduce function](https://medium.com/@lucianoalmeida1/a-little-bit-about-the-cool-reduce-in-swift-306edd9ceb57)
+
+
+## Filter
+
+```swift
+// Even Odd example
+let arr = [1, 2, 3, 4]
+let evens = arr.filter { $0 % 2 == 0 }
+print(evens)
+```
+
+
+```swift
+print("\n Using Filter")
+let filterDynamicRecordFields = arrFields.filter { $0.hasDynamicRecordId }
+print(filterDynamicRecordFields)
+
+```
+
+
+## Compact Map
+
+// Note: We had to provide an optional return type of FieldFilter as we need to return nil -> which gets discarded by `CompactMap`
+
+```swift
+print("\n Using Compact Map")
+let compactMapDynamicRecordFields = arrFields.compactMap { fieldFilter -> FieldFilter? in
+    guard fieldFilter.hasDynamicRecordId else { return nil }
+    return fieldFilter
+}
+print(compactMapDynamicRecordFields)
+
+```
+
+
+
 
 ## References
 
 [SO](https://stackoverflow.com/questions/24781027/how-do-you-sort-an-array-of-structs-in-swift)
+[Alphabetical Sort](https://stackoverflow.com/questions/46750243/sort-struct-in-alphabetical-order-swift4)

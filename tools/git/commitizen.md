@@ -1,10 +1,10 @@
 # Commitizen
 
-### Git Standard
+## Git Standard
 
 Conventional commit messages as a global utility
 
-#### Installation
+### Installation
 
 Install commitizen globally, if you have not already.
 
@@ -14,9 +14,7 @@ Install your preferred commitizen adapter globally, for example cz-conventional-
 
 > npm install -g cz-conventional-changelog
 
-#### 
-
-#### Configuration
+### Configuration
 
 Create a .czrc file in your home directory, with path referring to the preferred, globally installed, commitizen adapter
 

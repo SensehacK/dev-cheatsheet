@@ -42,3 +42,7 @@ We need to push tags from local to remote repo, where “v1.5” is tag name.
 
 > git push origin v1.5
 
+
+## Resources
+
+[SO](https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository)

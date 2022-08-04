@@ -12,3 +12,16 @@ Enter the password in the terminal and it is done. It should be working fine wit
 
 [Restart Services](https://serverfault.com/questions/194832/how-to-start-stop-restart-launchd-services-from-the-command-line)
 
+
+
+## Audio Cracking
+
+Macbook pro 16 audio cracking
+
+I have this issue with my Macbook pro 2020, 13 inch , It appears from time to time , there is two solutions: 
+
+1- restart the macbook pro , but when you work it will be annoying sometimes 
+
+2- open activity monitor and quit the `audioid` it works just fine 
+[Source](https://discussions.apple.com/thread/251203866)
+[Apple forums](https://developer.apple.com/forums/thread/132423)

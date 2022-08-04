@@ -29,3 +29,8 @@ Very useful thread for getting character of string in swift, playing with its in
 ## Range
 
 [SO](https://stackoverflow.com/questions/28182441/swift-how-to-get-substring-from-start-to-last-index-of-character)
+
+
+## Deprecations
+
+[String interpolation Debug description](https://izziswift.com/how-to-solve-string-interpolation-produces-a-debug-description-for-an-optional-value-did-you-mean-to-make-this-explicit-in-xcode-8-3-beta/)

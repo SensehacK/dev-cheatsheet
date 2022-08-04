@@ -43,3 +43,36 @@ This will install the necessary components for setting up local workspace in ord
 [gitlab environment](https://docs.gitlab.com/ee/ci/environments/)
 
 [mac stadium gitlab CI](https://about.gitlab.com/blog/2017/05/15/how-to-use-macstadium-and-gitlab-ci-to-build-your-macos-or-ios-projects/)
+
+[Gitlab Predefined variables](https://docs.gitlab.com/ee/ci/variables/predefined_variables.html)
+
+
+## Reference Code
+
+
+```yaml
+
+##################################################
+# POST DEPLOY
+##################################################
+# Deploys a App  Debug version of the latest `develop` branch to App Store Connect.
+tag_release:
+  stage: post_deploy
+  needs: ["install:packages"]
+  # needs: ["deploy:production"] Need to add back in.
+  script:
+    - echo "Getting Git Tag version"
+    - bundle exec fastlane tag_release
+    - git_tag_result=$(bundle exec fastlane display_app_version)
+    - git_tag_result=$(echo $git_tag_name | grep "Result:")
+		# String subscript range.
+    - git_tag_name=${git_tag_result:25}
+    - cd SupportTool
+    - swift run xvia tag ${git_tag_name} -p
+  rules:
+    - if: '$CI_COMMIT_BRANCH == "ci/TV-21163-Add-tagging-at-all-layers"'
+      when: always
+    - if: *is_target_branch_mr_trigger
+      when: never
+      
+```

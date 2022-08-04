@@ -8,6 +8,16 @@
 
 "Command + Shift + T" - Reopen close Tab.
 
+### Power Options
+"Command + Option + Control + Eject / Power" - Shut Down Mac
+
+"Command + Option + Eject / Power" - Sleep
+
+"Shift + Control + Eject / Power" - Turn Off Display
+
+"Control + Command + Eject / Power" - Restart Mac
+
+
 ## Windows
 
 "F5" - Refresh

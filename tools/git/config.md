@@ -1,5 +1,11 @@
 # Config
 
+## Creating Git Repository
+
+This command will initialize the current working directory with git local repository.
+
+> git init  
+
 ## List Git Config
 
 List outs all of the git config settings for the particular user.

@@ -54,3 +54,8 @@ Warning: Detected a case where constraints ambiguously suggest a height of zero
 [SO](https://stackoverflow.com/questions/19911536/how-to-add-footer-view-for-uitableview-in-ib-when-working-with-storyboards)
 
 [Show UITableView footer when empty SO](https://stackoverflow.com/questions/36330344/show-uitableview-footer-when-empty)
+
+## Updates
+
+iOS 15 TableViewCell reconfigure
+[UITableView: reconfigure](https://twitter.com/smileyborg/status/1403908057185144832?lang=en)
