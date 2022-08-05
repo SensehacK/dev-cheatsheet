@@ -6,11 +6,12 @@
       {
         "id": "8a3cea1156244075",
         "type": "leaf",
+        "dimension": 36.480293308890936,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "frontend/README_frontend.md",
+            "file": "SUMMARY.md",
             "mode": "source",
             "source": false
           },
@@ -18,12 +19,30 @@
         }
       },
       {
-        "id": "13fd405e40078d4d",
+        "id": "62e53cb4e8609b62",
         "type": "leaf",
+        "dimension": 27.86434463794684,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "mobile/README_mobile.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "d894e1ce7cebc816",
+        "type": "leaf",
+        "dimension": 35.655362053162236,
         "pinned": true,
         "state": {
-          "type": "graph",
-          "state": {},
+          "type": "markdown",
+          "state": {
+            "file": "tools/README_tools.md",
+            "mode": "source",
+            "source": false
+          },
           "pinned": true
         }
       }
@@ -52,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#available",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -89,6 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "SUMMARY.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +147,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "SUMMARY.md"
+              }
             }
           }
         ],
@@ -134,15 +157,20 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
-  "active": "13fd405e40078d4d",
+  "active": "8a3cea1156244075",
   "lastOpenFiles": [
-    "frontend/README_frontend.md",
-    "frontend/html/README 1.md",
-    "SUMMARY.md",
-    "frontend/angular/README_angular.md",
     "mobile/README_mobile.md",
-    "mobile/ios/library/wildcard_checks.md"
+    "tools/README_tools.md",
+    "mobile/ios/README_iOS.md",
+    "SUMMARY.md",
+    "mobile/unity/errors.md",
+    "tools/utility/README_utility.md",
+    "tools/browsers/README_browsers.md",
+    "os/architecture/README_architecture.md",
+    "os/README_os.md",
+    "process/README_process.md"
   ]
 }

@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "type": "file",
+      "title": "SUMMARY",
+      "path": "SUMMARY.md"
+    },
+    {
+      "type": "file",
+      "title": "README_mobile",
+      "path": "mobile/README_mobile.md"
+    },
+    {
+      "type": "file",
+      "title": "README_iOS",
+      "path": "mobile/ios/README_iOS.md"
+    }
+  ]
+}
