@@ -1,22 +1,65 @@
 {
-  "collapse-filter": true,
+  "collapse-filter": false,
   "search": "",
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": false,
   "showOrphans": true,
   "collapse-color-groups": true,
-  "colorGroups": [],
-  "collapse-display": true,
+  "colorGroups": [
+    {
+      "query": "frontend",
+      "color": {
+        "a": 1,
+        "rgb": 15728640
+      }
+    },
+    {
+      "query": "iOS",
+      "color": {
+        "a": 1,
+        "rgb": 487424
+      }
+    },
+    {
+      "query": "backend",
+      "color": {
+        "a": 1,
+        "rgb": 3218455
+      }
+    },
+    {
+      "query": "process",
+      "color": {
+        "a": 1,
+        "rgb": 15470268
+      }
+    },
+    {
+      "query": "git",
+      "color": {
+        "a": 1,
+        "rgb": 15327772
+      }
+    },
+    {
+      "query": "terminal",
+      "color": {
+        "a": 1,
+        "rgb": 16414976
+      }
+    }
+  ],
+  "collapse-display": false,
   "showArrow": false,
-  "textFadeMultiplier": 0,
-  "nodeSizeMultiplier": 1,
-  "lineSizeMultiplier": 1,
-  "collapse-forces": true,
-  "centerStrength": 0.518713248970312,
-  "repelStrength": 10,
+  "textFadeMultiplier": -0.3,
+  "nodeSizeMultiplier": 1.67603468663776,
+  "lineSizeMultiplier": 3.31729177405173,
+  "collapse-forces": false,
+  "centerStrength": 0.364876747218095,
+  "repelStrength": 19.594311876535,
   "linkStrength": 1,
-  "linkDistance": 250,
-  "scale": 1.0273996590637164,
+  "linkDistance": 286,
+  "scale": 0.12535872942085122,
   "close": false
 }
