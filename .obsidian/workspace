@@ -6,13 +6,25 @@
       {
         "id": "8a3cea1156244075",
         "type": "leaf",
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mobile/ios/library/wildcard_checks.md",
+            "file": "frontend/README_frontend.md",
             "mode": "source",
             "source": false
-          }
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "13fd405e40078d4d",
+        "type": "leaf",
+        "pinned": true,
+        "state": {
+          "type": "graph",
+          "state": {},
+          "pinned": true
         }
       }
     ],
@@ -57,8 +69,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -78,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mobile/ios/library/wildcard_checks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -95,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mobile/ios/library/wildcard_checks.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -108,7 +117,7 @@
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": false
               }
             }
           },
@@ -117,20 +126,23 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "mobile/ios/library/wildcard_checks.md"
-              }
+              "state": {}
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
     "width": 300
   },
-  "active": "8a3cea1156244075",
+  "active": "13fd405e40078d4d",
   "lastOpenFiles": [
-    "SUMMARY.md"
+    "frontend/README_frontend.md",
+    "frontend/html/README 1.md",
+    "SUMMARY.md",
+    "frontend/angular/README_angular.md",
+    "mobile/README_mobile.md",
+    "mobile/ios/library/wildcard_checks.md"
   ]
 }
