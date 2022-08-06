@@ -4,40 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "491e135897ae5e55",
-        "type": "leaf",
-        "dimension": 20.866349709455893,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "SUMMARY.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
-        "id": "1cbbf66331df9eee",
-        "type": "leaf",
-        "dimension": 37.6122556788167,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "tools/git/guidelines.md",
-            "mode": "source",
-            "source": false
-          }
-        }
-      },
-      {
         "id": "e97d633fe1e2f135",
         "type": "leaf",
-        "dimension": 41.521394611727416,
-        "pinned": true,
         "state": {
-          "type": "graph",
-          "state": {},
-          "pinned": true
+          "type": "markdown",
+          "state": {
+            "file": "mobile/ios/xcode/auto_increment.md",
+            "mode": "source",
+            "source": false
+          }
         }
       }
     ],
@@ -86,7 +61,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 199.00556182861328
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -102,7 +77,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/git/guidelines.md",
+                "file": "mobile/ios/xcode/auto_increment.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +94,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tools/git/guidelines.md",
+                "file": "mobile/ios/xcode/auto_increment.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +117,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tools/git/guidelines.md"
+                "file": "mobile/ios/xcode/auto_increment.md"
               }
             }
           }
@@ -154,17 +129,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "1cbbf66331df9eee",
+  "active": "e97d633fe1e2f135",
   "lastOpenFiles": [
+    "mobile/ios/library/wildcard_checks.md",
+    "process/README_process.md",
+    "mobile/ios/library/rxSwift/README_rxSwift.md",
+    "tools/utility/README_utility.md",
+    "tools/utility/alfred.md",
     "SUMMARY.md",
-    "README.md",
     "tools/git/guidelines.md",
+    "README.md",
     "tools/vim/modes.md",
-    "tools/vim/README_vim.md",
-    "mobile/ios/automation/README_automation.md",
-    "mobile/ios/config/README_config.md",
-    "mobile/ios/config/jailbreak.md",
-    "mobile/ios/library/realm/RLMException Crash.md",
-    "mobile/ios/library/rxSwift/README_rxSwift.md"
+    "tools/vim/README_vim.md"
   ]
 }

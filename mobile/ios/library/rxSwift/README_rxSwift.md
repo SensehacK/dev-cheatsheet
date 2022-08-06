@@ -55,3 +55,5 @@
 [[side_effects]]
 
 [[mobile/ios/library/rxSwift/timeline]]
+
+[[subscription_chain_not_firing]]

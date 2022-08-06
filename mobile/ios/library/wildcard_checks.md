@@ -14,7 +14,7 @@ print("This code only runs on iOS 14 and up")
 
 ```
 
-[@available / #available](https://www.avanderlee.com/swift/available-deprecated-renamed/)
+[@available / available](https://www.avanderlee.com/swift/available-deprecated-renamed/)
 
 [NSH](https://nshipster.com/available/)
 
