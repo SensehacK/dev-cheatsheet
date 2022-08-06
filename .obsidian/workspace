@@ -4,45 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "8a3cea1156244075",
+        "id": "491e135897ae5e55",
         "type": "leaf",
-        "dimension": 36.480293308890936,
-        "pinned": true,
+        "dimension": 20.866349709455893,
         "state": {
           "type": "markdown",
           "state": {
             "file": "SUMMARY.md",
             "mode": "source",
             "source": false
-          },
-          "pinned": true
+          }
         }
       },
       {
-        "id": "62e53cb4e8609b62",
+        "id": "1cbbf66331df9eee",
         "type": "leaf",
-        "dimension": 27.86434463794684,
+        "dimension": 37.6122556788167,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mobile/README_mobile.md",
+            "file": "tools/git/guidelines.md",
             "mode": "source",
             "source": false
           }
         }
       },
       {
-        "id": "d894e1ce7cebc816",
+        "id": "e97d633fe1e2f135",
         "type": "leaf",
-        "dimension": 35.655362053162236,
+        "dimension": 41.521394611727416,
         "pinned": true,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "tools/README_tools.md",
-            "mode": "source",
-            "source": false
-          },
+          "type": "graph",
+          "state": {},
           "pinned": true
         }
       }
@@ -108,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "tools/git/guidelines.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -125,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "tools/git/guidelines.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -148,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "tools/git/guidelines.md"
               }
             }
           }
@@ -160,17 +154,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "8a3cea1156244075",
+  "active": "1cbbf66331df9eee",
   "lastOpenFiles": [
-    "mobile/README_mobile.md",
-    "tools/README_tools.md",
-    "mobile/ios/README_iOS.md",
     "SUMMARY.md",
-    "mobile/unity/errors.md",
-    "tools/utility/README_utility.md",
-    "tools/browsers/README_browsers.md",
-    "os/architecture/README_architecture.md",
-    "os/README_os.md",
-    "process/README_process.md"
+    "README.md",
+    "tools/git/guidelines.md",
+    "tools/vim/modes.md",
+    "tools/vim/README_vim.md",
+    "mobile/ios/automation/README_automation.md",
+    "mobile/ios/config/README_config.md",
+    "mobile/ios/config/jailbreak.md",
+    "mobile/ios/library/realm/RLMException Crash.md",
+    "mobile/ios/library/rxSwift/README_rxSwift.md"
   ]
 }

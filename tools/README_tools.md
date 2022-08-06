@@ -12,3 +12,7 @@
 [[README_terminal]]
 
 [[README_utility]]
+
+[[README_vim]]
+
+[[README_vscode]]

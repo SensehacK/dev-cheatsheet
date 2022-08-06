@@ -6,13 +6,14 @@
 
 [[class]]
 
-[[dev_cheatsheet/mobile/ios/lifecycle/dark_mode]]
+[[mobile/ios/lifecycle/dark_mode]]
+
 
 [[dimensions]]
 
-[[dev_cheatsheet/mobile/ios/lifecycle/documentation]]
+[[mobile/ios/lifecycle/documentation]]
 
-[[dev_cheatsheet/mobile/ios/lifecycle/extensions]]
+[[mobile/ios/lifecycle/extensions]]
 
 [[localization]]
 
@@ -25,6 +26,7 @@
 [[read_local_file]]
 
 [[retain_cycle]]
+
 [[rtl_alignment_support]]
 [[segues]]
 [[storyboard_refactor]]

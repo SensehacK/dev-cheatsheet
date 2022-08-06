@@ -4,4 +4,8 @@ README
 
 SQL Cheatsheet
 
-[[README_sql]]
+## List
+
+[[setup]]
+[[basic_sql_cli]]
+[[crud_operations]]

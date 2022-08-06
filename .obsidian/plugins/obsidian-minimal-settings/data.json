@@ -5,7 +5,7 @@
   "lightStyle": "minimal-light",
   "darkStyle": "minimal-dark-black",
   "lightScheme": "minimal-default-light",
-  "darkScheme": "minimal-things-dark",
+  "darkScheme": "minimal-dracula-dark",
   "editorFont": "",
   "lineHeight": 1.5,
   "lineWidth": 40,

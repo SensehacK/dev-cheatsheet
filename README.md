@@ -26,23 +26,23 @@ Currently I have 2 repositories for learning of my IONIC Angular development wit
 
 WIP Few documentation I'm currently working on
 
-iOS Documentation: [iOS Documentation](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/iOS_documentation/README.md)
+iOS Documentation: [iOS Documentation](https://github.com/SensehacK/dev-cheatsheet/blob/master/mobile/ios/README_iOS.md/)
 
-Ionic Learn Timeline: [Ionic Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/ionic_cheatsheet/README.md)
+Ionic Learn Timeline: [Ionic Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/blob/master/mobile/ionic)
 
-Best Coding practices : [Coding practices](./)
+Best Coding practices : [Coding practices]()
 
-Swift Learn Timeline: [Swift Learn Timeline](./)
+Swift Learn Timeline: [Swift Learn Timeline]()
 
-Git Learn Timeline: [Git Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/git_cheatsheet/git.md)
+Git Learn Timeline: [Git Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/)
 
-React Learn Timeline: [React Learn Timeline](./)
+React Learn Timeline: [React Learn Timeline]()
 
-Angular Learn Timeline: [Angular Learn Timeline](./)
+Angular Learn Timeline: [Angular Learn Timeline]()
 
-Javascript Learn Timeline: [Javascript Learn Timeline](./)
+Javascript Learn Timeline: [Javascript Learn Timeline]()
 
-Html Learn Timeline: [HTML Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/html_cheatsheet/README.md)
+Html Learn Timeline: [HTML Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/)
 
 ## Tools
 

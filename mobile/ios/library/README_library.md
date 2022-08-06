@@ -7,7 +7,7 @@
 
 [[foundation_library]]
 
-[[dev_cheatsheet/mobile/ios/library/jailbreak]]
+[[mobile/ios/library/jailbreak]]
 
 [[keychain]]
 
@@ -26,4 +26,6 @@
 [[switch]]
 
 [[wildcard_checks]]
+
+[[RLMException Crash]]
 

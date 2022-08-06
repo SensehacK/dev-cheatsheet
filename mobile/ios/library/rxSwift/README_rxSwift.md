@@ -28,17 +28,17 @@
 
 [[conversionRxObservableConcrete]]
 
-[[dev_cheatsheet/mobile/ios/library/rxSwift/documentation]]
+[[mobile/ios/library/rxSwift/documentation]]
 
 [[doubts]]
 
-[[dev_cheatsheet/mobile/ios/library/rxSwift/extensions]]
+[[mobile/ios/library/rxSwift/extensions]]
 
 [[flatMap]]
 
 [[map]]
 
-[[dev_cheatsheet/mobile/ios/library/rxSwift/merge]]
+[[mobile/ios/library/rxSwift/merge]]
 
 [[playground]]
 
@@ -54,4 +54,4 @@
 
 [[side_effects]]
 
-[[dev_cheatsheet/mobile/ios/library/rxSwift/timeline]]
+[[mobile/ios/library/rxSwift/timeline]]

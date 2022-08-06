@@ -14,6 +14,11 @@
       "type": "file",
       "title": "README_iOS",
       "path": "mobile/ios/README_iOS.md"
+    },
+    {
+      "type": "file",
+      "title": "README_git",
+      "path": "tools/git/README_git.md"
     }
   ]
 }

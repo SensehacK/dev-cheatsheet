@@ -22,6 +22,17 @@ Remove unnecessary text decoration
 
 CSS precedence
 
+
+## List 
+
+[[alignment]]
+[[elements]]
+[[flex_layout]]
+[[grid_layout]]
+[[link_underline_removal]]
+[[preferences_inferences]]
+
+
 ## Tools
 
 Hardware: MacBook Pro 13’ 2015 : Core i5 , 128GB SSD OS: Mac OS Mojave 10.14.6 IDE: Xcode 11.2.1 VS Code Stable / Insiders Browsers: Firefox Nightly /Dev /Main Safari /Technical Preview Microsoft Edge Dev \( Chromium \) Writer: iA Writer Version Management: Github Task Manager: [Things](https://culturedcode.com/things/) by Cultured Code Terminal : iTerm

@@ -26,8 +26,8 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[safe_programming]]
 [[short_hands]]
-[[dev_cheatsheet/mobile/ios/swift/string]]
-[[dev_cheatsheet/mobile/ios/swift/ternary]]
+[[mobile/ios/swift/string]]
+[[mobile/ios/swift/ternary]]
 [[type_casting]]
 
 
