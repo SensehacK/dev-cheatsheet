@@ -5,7 +5,8 @@
 ## Conversion to UTC
 Converting from one timezone to UTC timezone.
 
-```/// Convert user timezone to UTC
+```swift
+/// Convert user timezone to UTC
     public static func dateTimeToUTC(_ date: Date,
                                      timezone: TimeZone) -> Date {
         print("Current date passed \(date)")
@@ -48,7 +49,7 @@ Converting from one timezone to UTC timezone.
 
 
     
-```
+```swift
     public static func dateFromUTCToUserProfileTimezone(_ date: Date,
                                                       timezone: TimeZone) -> Date {
         
@@ -78,6 +79,58 @@ Converting from one timezone to UTC timezone.
         print(dateTestDummy)
         return dateTestDummy
     }
+```
+
+
+## Time
+
+Mutating time object so that you can work around certain scenarios about it.
+
+
+```swift
+
+// Checking for custom refreshToken override
+
+        var customExpirationDate: Date?
+
+        if let storedExpiredToken = UserDefaults.standard.value(forKey: UserDefaults.Keys.customRefreshTokenValue) {
+
+            print("Value was found")
+
+            if let retrievedDate = storedExpiredToken as? Date {
+
+                customExpirationDate = retrievedDate
+
+            }
+
+        } else {
+
+            // Assuming the user has logged in - which is correct since `Mission Control`
+
+            // setupRefreshTokenExpirationBindings checks if auth object is present and then .unwraps()
+
+            // it which makes sure that auth object is present in order to override the expirationDate() in User Defaults.
+
+            customExpirationDate = Date().addingTimeInterval(60)
+
+            UserDefaults.standard.set(customExpirationDate, forKey: UserDefaults.Keys.customRefreshTokenValue)
+
+        }
+```
+
+Date range ... operator to define a Range(startDate...endDate)
+```swift
+
+let easementDate = expirationDate.addingTimeInterval(Constant.easementTimeInternal)
+let easementWindow = easementDate...expirationDate
+print(easementWindow)
+print("Easement window range \(easementWindow.contains(Date()))")
+```
+
+Check whether the date is way past current date.
+```swift
+let isCustomDateExpiredCheck = Date().isAfterDate(expirationDate, granularity: .minute)
+print("My custom Expiration check: \(isCustomDateExpiredCheck)")
 ```
 
 ## References

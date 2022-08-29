@@ -15,6 +15,7 @@
 My understanding: 
 
 This time the constraint was not available at runtime as we had commented the code & snap kit didn’t throw any errors due to maybe the library works runtime constraint execution or unwrapping but it turns out that code was commented so null pointer reference to begin with.
+```
 
 ```swift
 /*

@@ -25,7 +25,7 @@ DispatchQueue.global(qos: .background).async {
 
 ```
 
-## NSOperation 
+## NSOperation Operation Queue
 
 NSOperation advantages over GCD:
 

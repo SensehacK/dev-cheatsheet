@@ -8,7 +8,7 @@ If you want to change the author details of the commit message, you can do it us
 
 > git commit --amend --author="Kautilya <kautilya@email.com>"
 
-> git commit --amend --author="Kautilya <kautilya.save@trackvia.com>"
+> git commit --amend --author="Kautilya <kautilya.save@product_name.com>"
 
 [Tower author change](https://www.git-tower.com/learn/git/faq/change-author-name-email/)
 

@@ -6,6 +6,13 @@ Normal logic behind the gates.
 
 ## AND
 
+X      Y     AND(X,Y)
+
+0       0           0
+0       1            0
+1        0           0
+1        1            1
+
 ## XOR
 
 ## NAND

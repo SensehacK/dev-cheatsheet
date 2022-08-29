@@ -33,7 +33,7 @@
 [[structs]]
 [[swift_types]]
 [[thread_concurrency]]
-[[timer]]
+[[mobile/ios/lifecycle/timer]]
 [[unowned_vs_weak]]
 [[user_defaults]]
 [[view_controllers]]

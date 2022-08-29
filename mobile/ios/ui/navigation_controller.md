@@ -26,3 +26,77 @@ else {
 		presentingViewController.present(alertViewController, animated: true)
 }
 ```
+
+
+
+## iOS 15
+
+Need to use UINavigationBarAppearance for updating the UINavigation Bar properties.
+
+Before iOS 15
+
+```swift
+private let navigationController: UINavigationController = {
+
+	let navigationController = UINavigationController()
+	let navigationBar = navigationController.navigationBar
+	
+	navigationBar.backgroundColor = UIColor(red: 0.93, green: 0.22, blue: 0.28, alpha: 1.00)
+	appearance.titleTextAttributes = [
+		NSAttributedString.Key.font: UIFont(name: "Avenir-Medium", size: 32.0)!,
+		NSAttributedString.Key.foregroundColor: UIColor.white
+	]
+	
+	return navigationController
+}()
+
+```
+
+After iOS 15
+```swift
+private let navigationController: UINavigationController = {
+
+	let navigationController = UINavigationController()
+	let navigationBar = navigationController.navigationBar
+	let appearance = UINavigationBarAppearance()
+	
+	appearance.configureWithOpaqueBackground()
+	appearance.backgroundColor = UIColor(red: 0.93, green: 0.22, blue: 0.28, alpha: 1.00)
+	appearance.titleTextAttributes = [
+		NSAttributedString.Key.font: UIFont(name: "Avenir-Medium", size: 32.0)!,
+		NSAttributedString.Key.foregroundColor: UIColor.white
+	]
+	
+	navigationBar.standardAppearance = appearance;
+	navigationBar.scrollEdgeAppearance = navigationBar.standardAppearance	
+	
+	return navigationController
+}()
+```
+
+[Apple Dev forums](https://developer.apple.com/forums/thread/682420)
+
+## Text Attributes not updating
+
+You need to update the property using UINavigationBarAppearance or else it won't work with whatever text attribute being set towards the title.
+
+```swift
+//This is the line that doesnt work :( 
+navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white
+```
+
+You can use object of  `UINavigationBarAppearance` & update the code. It could also depend on whether you're using `preferLargeTitle` property on navigation bar.
+
+```swift
+
+let appearance = UINavigationBarAppearance()
+appearance.titleTextAttributes = [
+
+	NSAttributedString.Key.font: UIFont(name: "Avenir-Medium", size: 32.0)!,
+
+	NSAttributedString.Key.foregroundColor: UIColor.white
+
+]
+```
+
+[SO](https://stackoverflow.com/questions/54207002/uinavigationbar-wont-set-title-text-attributes)

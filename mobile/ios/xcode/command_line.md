@@ -30,33 +30,33 @@ To run all tests
 To run specific tests
 > swift test --filter testTargetName
 
-swift test --filter TrackViaNetworkUnitTests
+swift test --filter product_nameNetworkUnitTests
 
 ```
-swift test --filter TrackViaNetworkUnitTests -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk  -target arm64-apple-ios15.2
+swift test --filter product_nameNetworkUnitTests -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk  -target arm64-apple-ios15.2
 ```
 
-swift test --filter TrackViaNetworkUnitTests -target arm64-apple-ios15.2
+swift test --filter product_nameNetworkUnitTests -target arm64-apple-ios15.2
 
 
 Running this command for tests.
 
 ```
-xcodebuild -scheme TrackViaNetworkTestKit test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13'
+xcodebuild -scheme product_nameNetworkTestKit test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13'
 ```
 
 
 Running specific package tests 
 
 ```
-xcodebuild test -scheme TrackViaNetwork-Package -sdk iphonesimulator15.2 -destination "OS=15.2,name=iPhone 13" -only-testing:"TrackViaNetworkIntegrationTests"
+xcodebuild test -scheme product_nameNetwork-Package -sdk iphonesimulator15.2 -destination "OS=15.2,name=iPhone 13" -only-testing:"product_nameNetworkIntegrationTests"
 
 ```
 
 Running specific class unit tests 
 
 ```
-xcodebuild test -scheme TrackViaNetwork-Package -sdk iphonesimulator15.4 -destination "OS=15.4,name=iPhone 13" -only-testing:"TrackViaNetworkIntegrationTests/AuthenticationServiceIntegrationTests/testLogin" -quiet
+xcodebuild test -scheme product_nameNetwork-Package -sdk iphonesimulator15.4 -destination "OS=15.4,name=iPhone 13" -only-testing:"product_nameNetworkIntegrationTests/AuthenticationServiceIntegrationTests/testLogin" -quiet
 ```
 
 
@@ -100,9 +100,9 @@ Setting variables
 building on mac OS version.
 
 ```
-error: the library 'TrackViaCore' requires macos 10.10, but depends on the product 'CryptoSwift' which requires macos 10.12; consider changing the library 'TrackViaCore' to require macos 10.12 or later, or the product 'CryptoSwift' to require macos 10.10 or earlier.
-error: the library 'TrackViaNetwork' requires macos 10.10, but depends on the product 'Moya' which requires macos 10.12; consider changing the library 'TrackViaNetwork' to require macos 10.12 or later, or the product 'Moya' to require macos 10.10 or earlier.
-error: the library 'TrackViaNetwork' requires macos 10.10, but depends on the product 'Alamofire' which requires macos 10.12; consider changing the library 'TrackViaNetwork' to require macos 10.12 or later, or the product 'Alamofire' to require macos 10.10 or earlier.
+error: the library 'product_nameCore' requires macos 10.10, but depends on the product 'CryptoSwift' which requires macos 10.12; consider changing the library 'product_nameCore' to require macos 10.12 or later, or the product 'CryptoSwift' to require macos 10.10 or earlier.
+error: the library 'product_nameNetwork' requires macos 10.10, but depends on the product 'Moya' which requires macos 10.12; consider changing the library 'product_nameNetwork' to require macos 10.12 or later, or the product 'Moya' to require macos 10.10 or earlier.
+error: the library 'product_nameNetwork' requires macos 10.10, but depends on the product 'Alamofire' which requires macos 10.12; consider changing the library 'product_nameNetwork' to require macos 10.12 or later, or the product 'Alamofire' to require macos 10.10 or earlier.
 error: fatalError
 ```
 
@@ -112,16 +112,16 @@ error: fatalError
 
 Schemes available for running
 
-Information about workspace "TrackVia-iOS-Network":
+Information about workspace "product_name-iOS-Network":
     Schemes:
-        TrackViaNetwork
-        TrackViaNetwork-Package
-        TrackViaNetworkTestKit
+        product_nameNetwork
+        product_nameNetwork-Package
+        product_nameNetworkTestKit
         
         
 
 ```
-xcodebuild: error: Scheme TrackViaNetworkTestKit is not currently configured for the test action.
+xcodebuild: error: Scheme product_nameNetworkTestKit is not currently configured for the test action.
 ```
 
 

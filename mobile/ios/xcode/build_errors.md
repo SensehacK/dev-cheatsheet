@@ -83,3 +83,17 @@ Showing Recent Messages
 ```
 
 Maybe update the proper references and also clear the Derived Data.
+
+
+## Undefined symbol $_XCTestSwiftSupport
+
+```swift
+Undefined symbol: __swift_FORCE_LOAD_$_XCTestSwiftSupport
+```
+
+Had to turn this setting on in order to build appropriately.
+
+```swift
+PROJECT -> Build Settings -> Build Options -> Enable Testing Search Paths
+```
+ [XCode 13.1: Undefined symbol: __swift_FORCE_LOAD_$_XCTestSwiftSupport](https://stackoverflow.com/questions/69893836/xcode-13-1-undefined-symbol-swift-force-load-xctestswiftsupport)

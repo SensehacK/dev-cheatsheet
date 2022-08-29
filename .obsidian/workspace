@@ -4,15 +4,46 @@
     "type": "split",
     "children": [
       {
-        "id": "e97d633fe1e2f135",
+        "id": "9a08191831037e25",
         "type": "leaf",
+        "dimension": 25.786924939467312,
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mobile/ios/xcode/auto_increment.md",
+            "file": "mobile/ios/swift/arrays.md",
+            "mode": "source",
+            "source": false
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "6409a75e0bbe583d",
+        "type": "leaf",
+        "dimension": 25.786924939467312,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "mobile/ios/library/rxSwift/documentation.md",
             "mode": "source",
             "source": false
           }
+        }
+      },
+      {
+        "id": "f315c33a46a81442",
+        "type": "leaf",
+        "dimension": 48.426150121065376,
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "mobile/ios/lifecycle/network_calls.md",
+            "mode": "source",
+            "source": false
+          },
+          "pinned": true
         }
       }
     ],
@@ -40,7 +71,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "enum",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -61,7 +92,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 199.00556182861328
+    "width": 255.00556182861328
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -77,7 +108,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mobile/ios/xcode/auto_increment.md",
+                "file": "mobile/ios/library/rxSwift/documentation.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -94,7 +125,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mobile/ios/xcode/auto_increment.md",
+                "file": "mobile/ios/library/rxSwift/documentation.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -117,7 +148,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mobile/ios/xcode/auto_increment.md"
+                "file": "mobile/ios/library/rxSwift/documentation.md"
               }
             }
           }
@@ -129,17 +160,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "e97d633fe1e2f135",
+  "active": "6409a75e0bbe583d",
   "lastOpenFiles": [
-    "mobile/ios/library/wildcard_checks.md",
-    "process/README_process.md",
-    "mobile/ios/library/rxSwift/README_rxSwift.md",
-    "tools/utility/README_utility.md",
-    "tools/utility/alfred.md",
+    "mobile/ios/swift/arrays.md",
+    "mobile/ios/lifecycle/network_calls.md",
+    "mobile/ios/library/rxSwift/pain_points.md",
+    "mobile/ios/swift/enum.md",
+    "Untitled.md",
     "SUMMARY.md",
-    "tools/git/guidelines.md",
-    "README.md",
-    "tools/vim/modes.md",
-    "tools/vim/README_vim.md"
+    "mobile/ios/library/rxSwift/combination.md",
+    "mobile/ios/library/cocoapods.md",
+    "mobile/ios/lifecycle/timer.md",
+    "misc/logic/logic_gates.md"
   ]
 }

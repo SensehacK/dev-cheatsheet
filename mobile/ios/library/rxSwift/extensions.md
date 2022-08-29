@@ -122,6 +122,84 @@ extension Result: ResultType {}
 
 ## Extenisfying Everything
 
+
+```swift
+import UIKit
+import RxSwift
+import RxCocoa
+
+extension Reactive where Base: UIViewController {
+    var viewDidLoad: ControlEvent<Void> {
+        let source = self.methodInvoked(#selector(Base.viewDidLoad)).map { _ in }
+        return ControlEvent(events: source)
+      }
+
+    var viewWillAppear: ControlEvent<Bool> {
+        let source = self.methodInvoked(#selector(Base.viewWillAppear)).map { $0.first as? Bool ?? false }
+        return ControlEvent(events: source)
+      }
+
+    /// ControlEvent that emits when the view controller's appearance state changes
+    var isVisible: Observable<Bool> {
+        let viewDidAppearObservable = self.base.rx.viewDidAppear.map { _ in true }
+        let viewWillDisappearObservable = self.base.rx.viewWillDisappear.map { _ in false }
+        return Observable<Bool>.merge(viewDidAppearObservable, viewWillDisappearObservable)
+    }
+
+    /// ControlEvent that emits when the ViewController is being dismissed.
+    var isDismissing: ControlEvent<Bool> {
+        let source = self.sentMessage(#selector(Base.dismiss)).map { $0.first as? Bool ?? false }
+        return ControlEvent(events: source)
+    }
+
+
+}
+
+```
+
+
+
 My comment on recent extension addition towards ControlEvents across iOS UI life cycle events.
 
-[Gitlab MR comment](https://gitlab.com/xvia/mobile/TrackVia-iOS/-/merge_requests/1129#note_938251301)
+[Gitlab MR comment](https://gitlab.com/xvia/mobile/product_name-iOS/-/merge_requests/1129#note_938251301)
+
+
+## Logging
+
+```swift
+public extension ObservableType {
+
+    func log(_ level: RxLog, lineNumber: Int = #line, function: String = #function) -> Observable<Element> {
+
+        return self.do(onNext: { _ in
+
+            Logger.log(level)
+
+        })
+
+    }
+
+    func log(_ block: @escaping (Element) -> RxLogLevel?, lineNumber: Int = #line, function: String = #function) -> Observable<Element> {
+
+        return self.do(onNext: { element in
+
+            guard let level = block(element) else { return }
+
+            Logger.log(level)
+
+        })
+
+    }
+
+}
+
+public enum RxLog {
+	case warning(String)
+    case error(String)
+    case verbose(String)
+    case fatal(String)
+    case debug(String)
+    case info(String)
+}
+
+```

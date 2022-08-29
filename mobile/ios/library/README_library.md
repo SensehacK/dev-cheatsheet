@@ -27,5 +27,5 @@
 
 [[wildcard_checks]]
 
-[[RLMException Crash]]
+[[rlm_exception_crash]]
 

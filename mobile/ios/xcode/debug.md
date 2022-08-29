@@ -28,3 +28,20 @@ If you need to clean the project derived data which can sometimes resolve previo
 
 > Top menu -&gt; Product -&gt; Clean Build Folder
 
+
+## Change variables in runtime
+
+You can execute commands or change variables while in debugger breakpoint mode in LLDB Xcode console command.
+
+
+Just enter `expr` or `e` followed by the expression you want to execute.
+
+Function status with parameter change for different user experience timeline switch.
+```swift
+e NetworkConfigurationManager.shared.setConnectivity(isEnabled: true)
+```
+Variables alteration
+```swift
+e isValid = false
+```
+https://stackoverflow.com/questions/9907387/how-to-change-variables-value-while-debugging-with-lldb-in-xcode

@@ -15,5 +15,5 @@ CoreSimulator 757.5
 ## Xcode
 
 ### Build linking error
-ld: in /Users/ksave/Projects/TrackVia-iOS/Pods/Realm/core/librealmcore-ios.a(array_binary.o), building for iOS Simulator, but linking in object file built for iOS, for architecture arm64
+ld: in /Users/ksave/Projects/product_name-iOS/Pods/Realm/core/librealmcore-ios.a(array_binary.o), building for iOS Simulator, but linking in object file built for iOS, for architecture arm64
 clang: error: linker command failed with exit code 1 (use -v to see invocation)

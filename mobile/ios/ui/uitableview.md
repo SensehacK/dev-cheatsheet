@@ -10,6 +10,17 @@ UI TableView
 ## Customizability
 
 
+## DataSource
+
+
+
+## Diffable DataSource
+
+`UITableViewDiffableDataSource`
+
+https://medium.com/@ali-akhtar/uitableview-diffable-datasource-part-1-13a24e8f23d8
+
+
 ## Extension
 
 Unselecting the selected tableview

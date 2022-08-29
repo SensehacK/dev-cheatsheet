@@ -35,3 +35,5 @@ So delete the `.build` directory.
 
 [Basics](https://medium.com/server-side-swift-and-more/swift-package-manager-basics-c653de716e13)
 
+
+https://www.youtube.com/watch?v=QmBZ9wJguS4
