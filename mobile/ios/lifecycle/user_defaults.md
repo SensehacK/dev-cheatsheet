@@ -19,3 +19,11 @@ print("library path is \(library_path)")
 ## Custom dictionary
 
 Specify which part of data would be under a certain class name / struct. 
+
+
+`NSHomeDirectory()`
+
+https://crystalminds.medium.com/where-are-the-standard-userdefaults-stored-d02bf74854ff
+
+Note about User Defaults drawbacks.
+https://www.hackingwithswift.com/guide/ios-swiftui/4/2/key-points

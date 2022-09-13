@@ -9,8 +9,6 @@
 
 [[mobile/ios/library/jailbreak]]
 
-[[keychain]]
-
 [[macaw]]
 
 [[math]]
@@ -23,9 +21,9 @@
 
 [[snapkit]]
 
-[[switch]]
+[[storage]]
 
 [[wildcard_checks]]
 
-[[rlm_exception_crash]]
+
 

@@ -6,6 +6,7 @@ It is always easier to forget which shorthands are available and sometimes you n
 ## Map
 
 
+
 ## FlatMap
 
 
@@ -50,6 +51,9 @@ print(dynamicRecordFields)
 
 
 
+## Note
+
+Have added appropriate RxSwift implementations of `map, flatMap, compactMap` as well in RxSwift
 
 ## Resources
 

@@ -16,3 +16,44 @@ uilabel
 ## Extension
 
 [article](https://spin.atomicobject.com/2017/08/04/swift-extending-uilabel/)
+
+
+## Multi line
+
+This is the normal way of adding multiple lines. Important thing to remember you need to define your height/width constraints properly in order to have multiple line on a UILabel.
+
+```swift
+textLabel.lineBreakMode = .byWordWrapping
+textLabel.numberOfLines = 0
+```
+
+
+Now if you have `NSAttributedString` define which gets added to the label
+
+```swift
+var attributedTitle: NSAttributedString = {
+let title = NSMutableAttributedString(
+   icon: Icon.flows,
+   iconSize: Constants.iconSize,
+   iconColor: labelTextColor)
+
+let paragraphStyle = NSMutableParagraphStyle()
+let textRange = NSRange(location: 0,
+						length:title.length)
+paragraphStyle.alignment = .center
+paragraphStyle.minimumLineHeight = 12
+title.addAttribute(.paragraphStyle,
+				   value: paragraphStyle,
+				   range: textRange)
+
+
+// Setting the attributed text
+textLabel.attributedText = attributedTitle
+```
+
+Remember that your minimumLineHeight could also come in picture with multi - line texts. It didn't help me overall but just letting this in the doc.
+
+
+https://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel
+
+https://www.hackingwithswift.com/read/24/4/formatting-strings-with-nsattributedstring

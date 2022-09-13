@@ -70,3 +70,6 @@ Warning: Detected a case where constraints ambiguously suggest a height of zero
 
 iOS 15 TableViewCell reconfigure
 [UITableView: reconfigure](https://twitter.com/smileyborg/status/1403908057185144832?lang=en)
+
+Programmatic UITableView
+https://martinlasek.medium.com/tutorial-adding-a-uitableview-programmatically-433cb17ae07d

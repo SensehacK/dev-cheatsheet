@@ -51,3 +51,6 @@ Inner observable -> completes of 1 out of 3
 It will wait for all 3 observables to complete their observable chain.
 Flat maps are easier to discern if we one offs observable.of() or observable.just() which only processes one element and sends .onNext(value) => .onComplete(_) event to end its observable chain.
 
+
+
+https://betterprogramming.pub/rxswift-deep-inside-flatmap-1ca150c41b18?gi=5416d91e4282

@@ -25,6 +25,21 @@ Here you can find various documentation related to iOS development which can hel
 [[README_xcode]]
 
 
+## Resources
+
+https://www.swiftbysundell.com/
+
+https://stackoverflow.com/questions/tagged/swift
+
+https://www.raywenderlich.com/ios/articles
+
+https://nshipster.com/
+
+https://www.reddit.com/r/iOSProgramming/
+
+https://www.avanderlee.com/
+
+https://www.hackingwithswift.com/
 
 ## Documentation Links
 
@@ -35,6 +50,7 @@ iOS Natural Alignment Support Link: [iOS Natural Alignment Support](https://gith
 iOS Xcode Wireless Deploy Link: [iOS Wireless Deployment](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/iOS/iOSXcodeWirelessDeploy.md)
 
 Travis CI Learn Timeline: [Travis CI Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/iOS/TravisCITimeline.md)
+
 
 ## Contribution
 

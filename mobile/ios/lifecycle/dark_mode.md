@@ -12,3 +12,8 @@ You could use User Defaults to save the in app settings for different themes.
 
 Utilize Color Set in Xcode with “Any” & “Dark” Mode. To better update the application with dynamic settings.
 
+
+
+## Dynamic colors
+
+https://www.swiftbysundell.com/articles/defining-dynamic-colors-in-swift/
