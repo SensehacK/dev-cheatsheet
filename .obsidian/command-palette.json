@@ -1,0 +1,8 @@
+{
+  "pinned": [
+    "workspace:toggle-pin",
+    "markdown:toggle-preview",
+    "workspace:split-vertical",
+    "workspace:split-horizontal"
+  ]
+}

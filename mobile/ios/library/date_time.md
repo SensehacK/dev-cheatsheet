@@ -133,6 +133,15 @@ let isCustomDateExpiredCheck = Date().isAfterDate(expirationDate, granularity: .
 print("My custom Expiration check: \(isCustomDateExpiredCheck)")
 ```
 
+
+## Formatting 
+
+Formatting time interval in swift using build in `DateComponentsFormatter()`
+& `TimeInterval`.
+
+
+https://cocoacasts.com/cocoa-fundamentals-formatting-a-time-interval-in-swift
+
 ## References
 
 

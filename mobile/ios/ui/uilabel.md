@@ -57,3 +57,14 @@ Remember that your minimumLineHeight could also come in picture with multi - lin
 https://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel
 
 https://www.hackingwithswift.com/read/24/4/formatting-strings-with-nsattributedstring
+
+Caveats with baseline offset being added which could be non-zero, this would prematurely make the label truncated and the number of lines = 0 not being respected for having multi line support.
+
+```swift
+title.addAttribute(.baselineOffset,
+				   value: 24,
+				   range: NSRange
+				   (location: 0,
+				   length: element.length)
+				   )
+```

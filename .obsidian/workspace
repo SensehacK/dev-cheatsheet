@@ -6,29 +6,63 @@
       {
         "id": "f315c33a46a81442",
         "type": "leaf",
-        "dimension": 54.80631276901004,
+        "dimension": 18.73362445414847,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "mobile/ios/lifecycle/view_controllers.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          }
+        }
+      },
+      {
+        "id": "2031f43835807424",
+        "type": "leaf",
+        "dimension": 30.480349344978166,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mobile/ios/lifecycle/network_calls.md",
-            "mode": "preview",
+            "file": "mobile/ios/lifecycle/thread_concurrency.md",
+            "mode": "source",
+            "backlinks": true,
             "source": false
           },
           "pinned": true
         }
       },
       {
-        "id": "a91138c918cff017",
+        "id": "4b4ca0bced9cdda3",
         "type": "leaf",
-        "dimension": 45.19368723098996,
+        "dimension": 28.995633187772924,
+        "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "mobile/ios/swift/arrays.md",
+            "file": "mobile/ios/lifecycle/network_calls.md",
             "mode": "source",
+            "backlinks": true,
             "source": false
-          }
+          },
+          "pinned": true
+        }
+      },
+      {
+        "id": "e83dd8a5a92a8a64",
+        "type": "leaf",
+        "dimension": 21.790393013100438,
+        "pinned": true,
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "os/architecture/concurrency.md",
+            "mode": "source",
+            "backlinks": true,
+            "source": false
+          },
+          "pinned": true
         }
       }
     ],
@@ -56,8 +90,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "completion",
-                "matchingCase": false,
+                "query": "naming",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -73,12 +107,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 100
+    "width": 185
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -94,7 +127,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mobile/ios/swift/arrays.md",
+                "file": "mobile/ios/lifecycle/network_calls.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +144,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mobile/ios/swift/arrays.md",
+                "file": "mobile/ios/lifecycle/network_calls.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +167,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mobile/ios/swift/arrays.md"
+                "file": "mobile/ios/lifecycle/network_calls.md"
               }
             }
           }
@@ -146,17 +179,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "a91138c918cff017",
+  "active": "4b4ca0bced9cdda3",
   "lastOpenFiles": [
-    "mobile/ios/swift/closure.md",
-    "mobile/ios/lifecycle/network_calls.md",
-    "mobile/ios/ui/uitableview.md",
-    "mobile/ios/library/rxSwift/tableView.md",
-    "mobile/ios/swift/arrays.md",
+    "os/architecture/concurrency.md",
     "mobile/ios/lifecycle/thread_concurrency.md",
-    "mobile/ios/README_iOS.md",
-    "mobile/ios/lifecycle/dark_mode.md",
-    "mobile/ios/xcode/instruments.md",
-    "mobile/ios/xcode/performance.md"
+    "mobile/ios/lifecycle/network_calls.md",
+    "mobile/ios/lifecycle/view_controllers.md",
+    "mobile/ios/lifecycle/unowned_vs_weak.md",
+    "mobile/ios/lifecycle/user_defaults.md",
+    "mobile/ios/library/codable.md",
+    "mobile/ios/lifecycle/swift_types.md",
+    "mobile/ios/lifecycle/structs.md",
+    "mobile/ios/lifecycle/storyboard_refactor.md"
   ]
 }

@@ -65,3 +65,37 @@ You can add this as an alias
 
 Usage would be 
 > yt-dl https://www.youtube.com/
+
+
+## Private videos
+
+If you want to download private signed in videos from a different source website behind a paywall.
+
+First inpect the iFrame or embedded video with a right click, inspect - `This Frame` in Firefox or you choice of browser. Copy the unique web url to work with the command line tool to download it appropriately.
+
+If it helps anyone else, this means it will look like this:
+
+```
+> youtube-dl --referer [https://your-original-website.tld](https://your-original-website.tld) [https://player.vimeo.com/video/](https://player.vimeo.com/video/)<id>
+
+```
+
+If you need to log into the original site to watch the video first, then use an [extension to export your Firefox cookie](https://addons.mozilla.org/en-US/firefox/addon/cookies-txt/) to a text file, then tell youtube-dl to use it:
+
+```
+`youtube-dl --cookies path/to/cookie.txt --referer https://your-original-website.tld https://player.vimeo.com/video/<id>`
+```
+
+https://www.reddit.com/r/youtubedl/comments/lbrb2y/downloading_embedded_vimeo_videos/
+
+
+## Note
+
+I don't support downloading copyrighted videos, I just like to store them for educational purposes. Having them offline & readily available without any buffering or network constraints is really helpful in some circumstances like learning some skill off youtube while you're in airplane or at a remote location. Having your own playlists downloaded or synced locally could help you be productive without your reliance on internet.
+Also as long as you are viewing any video in a web browser with appropriate DRM software installed. Even when watching videos you're essentially downloading them. So most of the service providers can't differentiate this on web. They can throttle the speed if you're querying too many network requests but I hardly find that is the case. Sometimes it will send you lots of fragmented data to make sure you're sending too many requests or make the UX little bit bad for people mining the website. Those are just preventive DOS attacks tools enforced by any Site reliability engineer or network engineer at different infrastructure networks. You may also get a Captcha or some kind of human intervention system. Google may try to serve you extra interruptions if you use `Firefox` or you aren't signed in the google account. It is their way of making sure bots aren't making tons of network requests.
+It will always be a cat & mouse game and in order to understand underlying mechanisms you need to work from both perspectives.
+Also for 99.50% they won't bother tinkering with their systems and User experience as they won't have the technical chops to follow through the article or research paper. So big companies won't fight too much for developers, engineers or technical users.
+I can write quite a few articles on DRM and why it is bad in the overall space & creates a bad UX all around for people who want to access stuff legally. Remember everyone starts around with good side but they get tired and switch to Dark side `Anakin` Star Wars alter ego, **Darth Vader**
+
+Good side: Kautilya Save
+Dark side: SensehacK

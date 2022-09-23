@@ -97,3 +97,13 @@ Had to turn this setting on in order to build appropriately.
 PROJECT -> Build Settings -> Build Options -> Enable Testing Search Paths
 ```
  [XCode 13.1: Undefined symbol: __swift_FORCE_LOAD_$_XCTestSwiftSupport](https://stackoverflow.com/questions/69893836/xcode-13-1-undefined-symbol-swift-force-load-xctestswiftsupport)
+
+
+## Other Swift Flags
+
+remark: Incremental compilation has been disabled: it is not compatible with whole module optimization
+
+error: unexpected input file: /Users/ksave/Projects/Project-iOS/RELEASE
+
+Command CompileSwiftSources failed with a nonzero exit code
+By removing that flag it was able to compile again but I can change the Swift Compiler mode according to this thread on [SO](https://stackoverflow.com/questions/68801998/remark-incremental-compilation-has-been-disabled-it-is-not-compatible-with-who)
