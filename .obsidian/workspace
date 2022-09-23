@@ -6,21 +6,16 @@
       {
         "id": "f315c33a46a81442",
         "type": "leaf",
-        "dimension": 18.73362445414847,
+        "dimension": 64.01028277634961,
         "state": {
-          "type": "markdown",
-          "state": {
-            "file": "mobile/ios/lifecycle/view_controllers.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          }
+          "type": "graph",
+          "state": {}
         }
       },
       {
         "id": "2031f43835807424",
         "type": "leaf",
-        "dimension": 30.480349344978166,
+        "dimension": 8.56898029134533,
         "pinned": true,
         "state": {
           "type": "markdown",
@@ -36,7 +31,7 @@
       {
         "id": "4b4ca0bced9cdda3",
         "type": "leaf",
-        "dimension": 28.995633187772924,
+        "dimension": 8.56898029134533,
         "pinned": true,
         "state": {
           "type": "markdown",
@@ -52,7 +47,7 @@
       {
         "id": "e83dd8a5a92a8a64",
         "type": "leaf",
-        "dimension": 21.790393013100438,
+        "dimension": 18.851756640959728,
         "pinned": true,
         "state": {
           "type": "markdown",
@@ -127,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "mobile/ios/lifecycle/network_calls.md",
+                "file": "mobile/ios/lifecycle/thread_concurrency.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "mobile/ios/lifecycle/network_calls.md",
+                "file": "mobile/ios/lifecycle/thread_concurrency.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "mobile/ios/lifecycle/network_calls.md"
+                "file": "mobile/ios/lifecycle/thread_concurrency.md"
               }
             }
           }
@@ -179,12 +174,12 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "4b4ca0bced9cdda3",
+  "active": "f315c33a46a81442",
   "lastOpenFiles": [
-    "os/architecture/concurrency.md",
+    "mobile/ios/lifecycle/view_controllers.md",
     "mobile/ios/lifecycle/thread_concurrency.md",
     "mobile/ios/lifecycle/network_calls.md",
-    "mobile/ios/lifecycle/view_controllers.md",
+    "os/architecture/concurrency.md",
     "mobile/ios/lifecycle/unowned_vs_weak.md",
     "mobile/ios/lifecycle/user_defaults.md",
     "mobile/ios/library/codable.md",
