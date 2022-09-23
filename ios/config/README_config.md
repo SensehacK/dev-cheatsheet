@@ -11,7 +11,7 @@
 
 [[developer_account]]
 
-[[mobile/ios/config/jailbreak]]
+[[ios/config/jailbreak]]
 
 [[linking_apps]]
 

@@ -2,7 +2,7 @@
 
 [[crash]]
 
-[[mobile/ios/test/error_handling]]
+[[ios/test/error_handling]]
 
 [[error_state]]
 

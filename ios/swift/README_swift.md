@@ -29,8 +29,8 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[switch]]
 
-[[mobile/ios/swift/string]]
-[[mobile/ios/swift/ternary]]
+[[ios/swift/string]]
+[[ios/swift/ternary]]
 [[type_casting]]
 
 

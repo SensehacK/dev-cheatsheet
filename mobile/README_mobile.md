@@ -6,26 +6,6 @@
 ## List
 
 
-[[README_iOS]]
-
-	[[README_automation]]
-
-	[[README_config]]
-	
-	[[README_library]]
-	
-	[[README_rxSwift]]
-	
-	[[README_lifecycle]]
-	
-	[[README_swift]]
-	
-	[[README_test]]
-	
-	[[README_ui]]
-	
-	[[README_xcode]]
-
 [[README_ionic]]
 
 	[[components]]

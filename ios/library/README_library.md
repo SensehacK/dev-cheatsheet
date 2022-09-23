@@ -7,7 +7,7 @@
 
 [[foundation_library]]
 
-[[mobile/ios/library/jailbreak]]
+[[ios/library/jailbreak]]
 
 [[macaw]]
 

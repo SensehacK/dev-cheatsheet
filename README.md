@@ -24,25 +24,6 @@ Currently I have 2 repositories for learning of my IONIC Angular development wit
 
 ## Documentation Links
 
-WIP Few documentation I'm currently working on
-
-iOS Documentation: [iOS Documentation](https://github.com/SensehacK/dev-cheatsheet/blob/master/mobile/ios/README_iOS.md/)
-
-Ionic Learn Timeline: [Ionic Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/blob/master/mobile/ionic)
-
-Best Coding practices : [Coding practices]()
-
-Swift Learn Timeline: [Swift Learn Timeline]()
-
-Git Learn Timeline: [Git Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/)
-
-React Learn Timeline: [React Learn Timeline]()
-
-Angular Learn Timeline: [Angular Learn Timeline]()
-
-Javascript Learn Timeline: [Javascript Learn Timeline]()
-
-Html Learn Timeline: [HTML Learn Timeline](https://github.com/SensehacK/dev-cheatsheet/)
 
 ## Tools
 
@@ -55,6 +36,7 @@ IDE: Xcode 11.2.1 VS Code latest patch
 Browsers: Firefox Nightly /Dev /Main Safari /Technical Preview Microsoft Edge Dev \( Chromium \)
 
 Writer: iA Writer
+Obsidian
 
 Version Management: Github
 

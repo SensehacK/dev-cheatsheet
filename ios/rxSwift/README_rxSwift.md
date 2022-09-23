@@ -28,17 +28,17 @@
 
 [[conversionRxObservableConcrete]]
 
-[[mobile/ios/rxSwift/documentation]]
+[[ios/rxSwift/documentation]]
 
 [[doubts]]
 
-[[mobile/ios/rxSwift/extensions]]
+[[ios/rxSwift/extensions]]
 
 [[flatMap]]
 
 [[map]]
 
-[[mobile/ios/rxSwift/merge]]
+[[ios/rxSwift/merge]]
 
 [[playground]]
 
@@ -54,6 +54,6 @@
 
 [[side_effects]]
 
-[[mobile/ios/rxSwift/timeline]]
+[[ios/rxSwift/timeline]]
 
 [[subscription_chain_not_firing]]

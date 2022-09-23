@@ -5,7 +5,7 @@
 [[travis_ci_yml]]
 [[auto_tagging]]
 [[ci_cd]]
-[[mobile/ios/automation/fastlane]]
+[[fastlane]]
 [[github_actions]]
 [[gitlab_ci_yml]]
 [[ios_ci_cd]]

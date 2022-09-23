@@ -6,13 +6,13 @@
 
 [[class]]
 
-[[mobile/ios/lifecycle/dark_mode]]
+[[ios/lifecycle/dark_mode]]
 
 [[dimensions]]
 
-[[mobile/ios/lifecycle/documentation]]
+[[ios/lifecycle/documentation]]
 
-[[mobile/ios/lifecycle/extensions]]
+[[ios/lifecycle/extensions]]
 
 [[localization]]
 
@@ -34,7 +34,7 @@
 
 [[thread_concurrency]]
 
-[[mobile/ios/lifecycle/timer]]
+[[ios/lifecycle/timer]]
 
 [[unowned_vs_weak]]
 
