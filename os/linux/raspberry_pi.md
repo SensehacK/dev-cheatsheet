@@ -96,6 +96,9 @@ Issue while running Docker compose got solved by turning off Open VPN service in
 Linux Media Server Script from this github also helped a lot.
 [Github](https://github.com/GreenFrogSB/LMDS)
 
+Solve a Limited Stack in Portainer
+https://www.benjaminrancourt.ca/how-to-solve-a-limited-stack-in-portainer/
+
 
 ## Storage
 
@@ -131,3 +134,27 @@ My Favorite tutorials overall.
 
 [Pi Plex Server](https://www.youtube.com/watch?v=Hgy_YOQBdTw&list=PLYl5sY0sL98hJRpne6ShX1I9JJ6MVIH4q&index=36&t=637s)
 [HOW TO INSTALL SONARR DOCKER ON A RASPBERRY PI 4](https://www.youtube.com/watch?v=xW0hbxeef6c)
+
+
+## Users
+
+VCHI Initialization failed
+
+https://raspberrypi.stackexchange.com/questions/7546/munin-node-plugins-vchi-initialization-failed
+
+
+## Migration SD Card to SSD
+
+`sudo rpi-eeprom-update -a`
+`sudo reboot`
+
+`sudo rpi-eeprom-config`
+
+This boot order is exactly what we want. If the boot order code is anything other than BOOT_ORDER=0xf14, you can change the boot configuration using this command.  
+`sudo -E rpi-eeprom-config --edit`
+
+https://www.raspberrystreet.com/learn/how-to-boot-raspberrypi-from-usb-ssd
+
+Backup raspberry pi images / SD card / OS 
+
+https://raspberrystreet.com/learn/how-to-backup-raspberrypi-sdcard

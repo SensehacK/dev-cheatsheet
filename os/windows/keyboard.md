@@ -1,6 +1,9 @@
-# Keymap
+# Keyboard 
 
-## Switch Alt - Ctrl
+
+Have keymap bindings like mac on windows.
+
+## Switch Alt - Ctrl Mac
 
 Install the app "SharpKeys" for overwriting the Registry Editor in Windows 10. Its 2020 and we still don't have a proper settings to override the default keymaps on Windows. Registry is a mess and we have to utilize an utility just to overwrite some bunch of hex / other encoded values to map the keys. Switching back from Mac OS to Windows for development machine is a pain in the butt!
 
@@ -21,3 +24,10 @@ After installation, just create a new Autohotkey script and add the following co
 
 If you need to download that script FYI [link](https://github.com/SensehacK/sense-setup) in windows folder.
 
+
+
+## Keyboard input
+
+Lag for keyboard input on windows for repeating keys.
+Used this panel to fix it.
+https://www.makeuseof.com/windows-10-fix-keyboard-lag/

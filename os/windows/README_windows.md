@@ -7,7 +7,7 @@
 [[defaults]]
 [[disable_updates]]
 
-[[keymap_mac]]
+[[dev_cheatsheet/os/windows/keyboard]]
 
 [[registry]]
 [[screen]]

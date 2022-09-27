@@ -44,3 +44,12 @@ Inspecting the containers info
 ```
 docker inspect <container name/id>
 ```
+
+
+Deleting docker containers
+
+```
+docker run -d nginx
+```
+
+https://www.educba.com/docker-delete-container/

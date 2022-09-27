@@ -4,14 +4,13 @@
     "type": "split",
     "children": [
       {
-        "id": "2031f43835807424",
+        "id": "08f3f72b536e1178",
         "type": "leaf",
-        "dimension": 15.85261353898886,
         "pinned": true,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "ios/lifecycle/thread_concurrency.md",
+            "file": "os/linux/raspberry_pi.md",
             "mode": "source",
             "backlinks": true,
             "source": false
@@ -20,49 +19,16 @@
         }
       },
       {
-        "id": "7f4e669acf3e66eb",
+        "id": "106bd69f769e369f",
         "type": "leaf",
-        "dimension": 52.31362467866324,
         "state": {
           "type": "markdown",
           "state": {
-            "file": "process/code_checkout.md",
+            "file": "database/docker/commands.md",
             "mode": "source",
             "backlinks": true,
             "source": false
           }
-        }
-      },
-      {
-        "id": "4b4ca0bced9cdda3",
-        "type": "leaf",
-        "dimension": 8.56898029134533,
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "ios/lifecycle/network_calls.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "e83dd8a5a92a8a64",
-        "type": "leaf",
-        "dimension": 23.26478149100257,
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "os/architecture/concurrency.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
         }
       }
     ],
@@ -90,7 +56,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "naming",
+                "query": "mv",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -107,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -127,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "process/code_checkout.md",
+                "file": "os/linux/raspberry_pi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -144,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "process/code_checkout.md",
+                "file": "os/linux/raspberry_pi.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -167,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "process/code_checkout.md"
+                "file": "os/linux/raspberry_pi.md"
               }
             }
           }
@@ -179,17 +146,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "94448531862c779d",
+  "active": "08f3f72b536e1178",
   "lastOpenFiles": [
-    "process/release.md",
-    "process/README_process.md",
-    "process/peer_review.md",
-    "process/key_shortcuts.md",
+    "database/docker/commands.md",
+    "tools/terminal/directory.md",
+    "os/linux/raspberry_pi.md",
+    "tools/terminal/power_menu.md",
+    "ios/lifecycle/thread_concurrency.md",
+    "ios/lifecycle/network_calls.md",
+    "os/architecture/concurrency.md",
     "process/code_checkout.md",
-    "os/README_os.md",
-    "README.md",
-    "SUMMARY.md",
-    "misc/README_misc.md",
-    "ios/lifecycle/network_calls.md"
+    "process/release.md",
+    "process/README_process.md"
   ]
 }
