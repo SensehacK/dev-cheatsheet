@@ -14,3 +14,8 @@ Blocklist
 
 Regex
 
+https://pi-hole.net/
+https://github.com/pi-hole/pi-hole
+
+To install updates, run `pihole -up`
+(https://docs.pi-hole.net/main/update/)

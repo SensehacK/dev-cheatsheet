@@ -11,12 +11,16 @@ I wanted to try `Diet Pi` but went with Raspbian Pi - Debian based RPi 4 image o
 
 Used basic installation steps for network local DNS blocker on my local network.
 
+[pi_hole](pi_hole.md)
+
 ## Root
 
 File manager GUI with root privileges use this command.
 
 Open the Terminal
 > sudo pcmanfm
+
+`
 
 
 ## Plex Media Server
@@ -158,3 +162,9 @@ https://www.raspberrystreet.com/learn/how-to-boot-raspberrypi-from-usb-ssd
 Backup raspberry pi images / SD card / OS 
 
 https://raspberrystreet.com/learn/how-to-backup-raspberrypi-sdcard
+
+USB boot order - Raspberry Pi
+https://fossbytes.com/enable-usb-boot-on-raspberry-pi/
+
+OS install guide
+https://www.makeuseof.com/tag/install-operating-system-raspberry-pi/
