@@ -11,7 +11,18 @@ You can po event chains as well in order to see how it pans through the code liv
 
 This will execute that instruction and also in the same way show how the error propagates into the rx stream chain.
 
+## Pipe Errors
 
+Simulate some events based on Observable being returned as error.
+
+
+```swift
+yetAnotherSubject
+	.mapToVoid()
+	.map { return NSError(domain: "test error 2", code: -1) }
+	.bind(to: observingSubject)
+	.disposed(by: disposeBag)
+```
 
 ## Resources
 
