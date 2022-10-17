@@ -4,50 +4,61 @@
     "type": "split",
     "children": [
       {
-        "id": "08f3f72b536e1178",
-        "type": "leaf",
-        "dimension": 48.97792313982011,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "ios/ui/uiimage.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
+        "id": "6efba96745e43363",
+        "type": "tabs",
+        "dimension": 76.33136094674558,
+        "children": [
+          {
+            "id": "08f3f72b536e1178",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "misc/best_coding_practices/README_best_coding_practices.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2a59502c75b8f435",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/network_calls.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
           }
-        }
+        ]
       },
       {
-        "id": "59ca96c2c2de519c",
-        "type": "leaf",
-        "dimension": 16.35322976287817,
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "ios/ui/uitableview.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
-        }
-      },
-      {
-        "id": "2a59502c75b8f435",
-        "type": "leaf",
-        "dimension": 34.66884709730172,
-        "pinned": true,
-        "state": {
-          "type": "markdown",
-          "state": {
-            "file": "ios/lifecycle/network_calls.md",
-            "mode": "source",
-            "backlinks": true,
-            "source": false
-          },
-          "pinned": true
-        }
+        "id": "ba1fc2cd65166661",
+        "type": "tabs",
+        "dimension": 23.668639053254438,
+        "children": [
+          {
+            "id": "59ca96c2c2de519c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/ui/uitableview.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -65,7 +76,9 @@
             "type": "leaf",
             "state": {
               "type": "file-explorer",
-              "state": {}
+              "state": {
+                "sortOrder": "alphabetical"
+              }
             }
           },
           {
@@ -91,12 +104,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 191
+    "width": 537
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -112,7 +124,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/ui/uiimage.md",
+                "file": "misc/best_coding_practices/README_best_coding_practices.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -129,7 +141,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/ui/uiimage.md",
+                "file": "misc/best_coding_practices/README_best_coding_practices.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -152,63 +164,31 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/ui/uiimage.md"
+                "file": "misc/best_coding_practices/README_best_coding_practices.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
     "width": 300,
     "collapsed": true
   },
-  "floating": {
-    "id": "74d0a964be0642b2",
-    "type": "floating",
-    "children": [
-      {
-        "id": "8f903178dd074c9a",
-        "type": "window",
-        "children": [
-          {
-            "id": "090b3cc28f6da23e",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swift/closure.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          }
-        ],
-        "direction": "vertical",
-        "x": -819,
-        "y": 574,
-        "width": 786,
-        "height": 1085,
-        "maximize": false,
-        "zoom": 1.5
-      }
-    ]
+  "ribbon": {
+    "mostRecentAction": ""
   },
-  "active": "08f3f72b536e1178",
+  "active": "94448531862c779d",
   "lastOpenFiles": [
-    "ios/swift/closure.md",
+    "misc/best_coding_practices/best_coding_practices.md",
     "ios/ui/uiimage.md",
-    "ios/ui/uitableviewcell.md",
-    "ios/ui/uitableview.md",
-    "ios/swift/arrays.md",
+    "ios/swift/closure.md",
     "ios/lifecycle/network_calls.md",
+    "ios/ui/uitableview.md",
+    "ios/ui/uitableviewcell.md",
+    "ios/swift/arrays.md",
     "ios/lifecycle/view_controllers.md",
     "ios/swift/dictionary.md",
-    "ios/lifecycle/unowned_vs_weak.md",
-    "ios/lifecycle/extensions.md"
+    "ios/lifecycle/unowned_vs_weak.md"
   ]
 }

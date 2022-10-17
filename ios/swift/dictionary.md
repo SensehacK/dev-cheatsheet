@@ -26,7 +26,6 @@ let someProtocol = [
 ```
 
 
-
 ## Access
 
 Traversing

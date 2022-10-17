@@ -2,7 +2,7 @@
 
 
 ## Empty namespace
-
+ 
 Better organization around the code in big projects. No need to initialize or privatize the init() function internally.
 
 

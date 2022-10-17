@@ -4,6 +4,15 @@ Normal logic behind the gates.
 
 ## OR
 
+X      Y     AND(X,Y)
+
+0       0           0
+0       1            1
+1        0           1
+1        1            1
+
+https://www.electronics-tutorials.ws/logic/logic_3.html
+
 ## AND
 
 X      Y     AND(X,Y)

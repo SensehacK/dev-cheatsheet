@@ -35,3 +35,4 @@ Rx Common issues https://infinum.com/handbook/ios/rx/common-issues
 Handle errors in RxSwift http://adamborek.com/how-to-handle-errors-in-rxswift/
 
 SO https://stackoverflow.com/questions/46988049/rxswift-observable-error-stops-chain-web-services-with-rx-how-to-recover
+

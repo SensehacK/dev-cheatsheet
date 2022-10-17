@@ -5,3 +5,5 @@
 
 
 [try catch handling](https://www.avanderlee.com/swift/try-catch-throw-error-handling/)
+
+https://stackoverflow.com/questions/40671991/generate-your-own-error-code-in-swift-3

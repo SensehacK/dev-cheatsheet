@@ -54,3 +54,6 @@ Flat maps are easier to discern if we one offs observable.of() or observable.jus
 
 
 https://betterprogramming.pub/rxswift-deep-inside-flatmap-1ca150c41b18?gi=5416d91e4282
+
+
+https://stackoverflow.com/questions/49361386/rxswift-wait-for-observable-to-complete

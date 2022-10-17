@@ -48,3 +48,27 @@ Also get values off the data from the app or just get a temperature sensor in th
 Does it support Air cleaning as well? Don't know.
 
 First thing to do is to add Alexa integration.
+
+
+
+## Tuya Smart Life
+
+
+Creating Dev API account with 1106 Login error
+
+Account ID: 
+Tuya app email address
+
+password:
+Make sure below 11 chars and no complex symbols $@#!%@
+
+Don't use Tuya IOT Api developer account credentials here.
+
+
+https://www.reddit.com/r/homeassistant/comments/q3hnlz/tuya_login_error_1106_permission_deny/
+
+
+
+
+
+

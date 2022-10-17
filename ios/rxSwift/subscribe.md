@@ -81,3 +81,25 @@ fetchData()
 
 
 ```
+
+
+## Quirks
+
+### Opening parathesis Matters
+
+Just noticed this small quirk in playground that if my `(` is on the next line it won't compile properly for subscribe block
+
+Doesn't work
+```swift
+observable
+	.subscribe
+(
+	onNext: { }
+)
+```
+Works
+```swift
+observable
+	.subscribe(
+	onNext: { }
+)
