@@ -47,3 +47,35 @@ NetworkAPI.sharedInstance().getWeatherDataByLatLon(latitudeWeather : currLat, lo
         })
         
 ```
+
+
+
+## Super in closure
+
+```error
+Using 'super' in a closure where 'self' is explicitly captured is not yet supported
+```
+
+
+```swift
+
+class Parent {
+   func foo() {
+   }
+}
+
+class Child: Parent {
+   override func foo() {
+      UIView.animateWithDuration(1) { [weak self] in // or any closure-producing context
+         self?.super_foo()
+      }
+   }
+
+   private func super_foo() {
+      super.foo()
+   }
+}
+```
+
+Reference
+https://github.com/lionheart/openradar-mirror/issues/6765
