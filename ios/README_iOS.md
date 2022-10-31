@@ -41,6 +41,10 @@ https://www.avanderlee.com/
 
 https://www.hackingwithswift.com/
 
+https://theswiftdev.com/news/
+
+https://www.advancedswift.com/
+
 ## Documentation Links
 
 Xcode iPA Generation Link: [iOS Xcode iPA Generation](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/iOS/iOSXcodeiPAGeneration.md)
