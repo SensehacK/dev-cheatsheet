@@ -92,6 +92,17 @@ group.notify(queue: .main, execute: {
 
 [SO](https://stackoverflow.com/questions/34510/what-is-a-race-condition?rq=1)
 
+## Semaphores
+
+DispatchSemaphore
+
+## Learn
+
+More about race conditions and avoiding critical reads / writes sections in the memory at once.
+Multithreading - checks for whether certain things needed to be checked for thread safety overall.
+The interview basically asked me all the multithreaded questions which I didn't know an answer for.
+
+
 
 
 ## Good sources
