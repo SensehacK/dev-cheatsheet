@@ -131,7 +131,18 @@ UINavigationController.attemptRotationToDeviceOrientation()
 ```
 
 
+## viewWillLayoutSubviews
 
-## Sources
+You need to call the layout code again to properly align the UI view frame bounds.
 
-[Force landscape mode in one ViewController](https://stackoverflow.com/questions/27037839/force-landscape-mode-in-one-viewcontroller-using-swift)
+The sublayers are not automatically resized to fit the view: you should update them when the view gets its layout pass:
+
+```swift
+func viewWillLayoutSubviews() { }
+```
+
+https://stackoverflow.com/questions/38358081/gradient-layer-is-not-working-on-landscape-mode-swift
+
+https://stackoverflow.com/questions/23457391/when-are-the-viewwilllayoutsubviews-and-viewdidlayoutsubviews-methods-called
+
+https://stackoverflow.com/questions/20995336/why-does-uiviewcontroller-almost-always-require-layoutsubviews

@@ -30,3 +30,7 @@ https://medium.com/naukri-engineering/overview-of-dsym-crashlytics-in-ios-dfd72e
 https://stackoverflow.com/questions/3656391/whats-the-dsym-and-how-to-use-it-ios-sdk
 
 https://stackoverflow.com/questions/48296774/firebase-crashlytics-upload-missing-dsyms-to-see-crashes-from-1-versions-ios?noredirect=1&lq=1
+
+https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile-ios/configuration/retrieve-dsyms-bitcode-apps/
+
+https://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs
