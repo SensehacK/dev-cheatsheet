@@ -8,6 +8,10 @@ You can defined your own documentation while coding for your functions to be pro
 
 // TODO:
 
+// FIXME: 
+
+
+
 ### Old Headers
 
 In objective C we have pragma mark, we can utilize **MARK:** 
@@ -36,3 +40,8 @@ If you really like auto completion for your own internal methods, this is the wa
 }
 ```
 
+
+
+## Reference
+
+https://cocoacasts.com/organize-your-swift-project-with-annotations-todos-and-fixmes

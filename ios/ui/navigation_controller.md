@@ -100,3 +100,7 @@ appearance.titleTextAttributes = [
 ```
 
 [SO](https://stackoverflow.com/questions/54207002/uinavigationbar-wont-set-title-text-attributes)
+
+References
+
+https://dmtopolog.com/navigation-bar-customization/
