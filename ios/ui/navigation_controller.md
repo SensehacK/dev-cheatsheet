@@ -104,6 +104,38 @@ appearance.titleTextAttributes = [
 
 [SO](https://stackoverflow.com/questions/54207002/uinavigationbar-wont-set-title-text-attributes)
 
-References
+
+## Theming UIBarButtons
+
+As my fellow [media fanatic mentor](README###Mentors IRL) helped me once with the UINavigationBar or whatever apple UIKit framework has renamed it to now.
+We need to set the parent Viewcontroller navigation property rather than changing the child UI ViewController class.
+It makes sense but yes the documentation or my understanding of documentation could have been better.
+
+
+```swift
+let backItem = UIBarButtonItem(title: "Back", style: .plain, target: nil, action: nil)
+backItem.tintColor = UIColor.red
+navigationItem.backBarButtonItem = backItem
+```
+
+Here is his snippet of Gitlab Merge Request Code review comment.
+
+```markdown
+
+this is the proper way to theme the back button that's visible sun the nav bar when viewing the `FieldMetaType ListViewController`.
+
+it seems odd that a change in a different file would be the fix, but back bar button items are usually owned by the view controller that's below the currently visible view controller in a navigation controller. this actually makes sense tho when you consider that the back button's content is actually driven by the previous view controller's content.
+
+we're only showing the back button, but if there was a back button title, we would want it to be set by the view controller that already knows title. and that's exactly what `UINavigationItem` does for us, allows us to configure everything related to this view controller's navigation bar content and behavior (which is only used if this view controller is used inside of a `UINavigationController`).
+
+even though `UINavigationItem` itself doesn't represent a distinct UI component, it's an abstraction that is used within the specific context of push/pop style navigation.
+```
+
+
+https://stackoverflow.com/questions/28733936/change-color-of-back-button-in-navigation-bar
+
+https://www.youtube.com/watch?v=7KdRpFEOG9I
+
+## References
 
 https://dmtopolog.com/navigation-bar-customization/
