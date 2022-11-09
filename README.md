@@ -45,6 +45,27 @@ Task Manager: Things by Cultured Code
 Terminal : iTerm
 
 ### Authored by : [Kautilya Save](https://sensehack.github.io/)
+## Mentors IRL
 
-### [GitHub](https://github.com/SensehacK)
+[Sandip Sakure](https://www.linkedin.com/in/sandip-sakure-2b880749/) (Web Angular | Breaking complex problems )
 
+[Varghese Abraham](https://www.linkedin.com/in/varghese-abraham-51799928/) (Mobile Hybrid | Work life balance )
+
+[Akash Tripathi](https://www.linkedin.com/in/akashtripathi9/) (Mobile iOS | Team Dynamics)
+
+[Joshua O'Steen](https://www.linkedin.com/in/joshua-osteen/) (Mobile Senior iOS | Reactive Paradigm)
+
+[Kyle Turner](https://www.linkedin.com/in/kylerturner/) (Mobile Architect | SDLC)
+
+[Prashant Yadav](https://www.linkedin.com/in/prashant-yadav-09871133/) (Software Art | UX)
+
+[Arun KP](https://www.linkedin.com/in/arunkp88/) (Mobile iOS | Enterprise)
+
+**In no order whatsoever** & everyone should have great mentors so that you can leap frog your technical and soft skills expertise.
+Also always keep learning and be curious.
+
+## Credits
+
+[Kautilya Save](https://sensehack.github.io/)
+[GitHub](https://github.com/SensehacK)
+[LinkedIn](https://in.linkedin.com/in/kautilyasave) 
