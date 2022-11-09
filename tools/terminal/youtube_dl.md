@@ -89,6 +89,20 @@ If you need to log into the original site to watch the video first, then use an 
 https://www.reddit.com/r/youtubedl/comments/lbrb2y/downloading_embedded_vimeo_videos/
 
 
+## Alfred Automation
+
+Use Snippets feature to add one
+
+Auto expansion :  allowed`  
+Keyword = `:yd `
+Type: Plain Text snippet - match destination
+
+Snippet
+```script
+yt-dl "{clipboard}"
+```
+yt-dl has been mapped to `yt-dlp -f bestvideo+bestaudio` in my bash alias
+
 ## Note
 
 I don't support downloading copyrighted videos, I just like to store them for educational purposes. Having them offline & readily available without any buffering or network constraints is really helpful in some circumstances like learning some skill off youtube while you're in airplane or at a remote location. Having your own playlists downloaded or synced locally could help you be productive without your reliance on internet.

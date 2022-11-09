@@ -57,3 +57,29 @@ https://betterprogramming.pub/rxswift-deep-inside-flatmap-1ca150c41b18?gi=5416d9
 
 
 https://stackoverflow.com/questions/49361386/rxswift-wait-for-observable-to-complete
+
+
+
+## Error Observable < T.success, T.failure >
+
+Error
+```text
+ Declared closure result 'Observable<Result<User, Error>>' is incompatible with contextual type 'Result<T, Error>'
+ Generic parameter 'T' could not be inferred
+```
+
+```swift
+let userEmpty = authenticationSubject
+	// This following code causes aforementioned compilation error
+	.map { auth -> Observable<Result<User, Error>> in
+		UserCoordinator().rx.currentUser(in: nil)
+	}
+```
+
+This fixes it, don't fully understand it why but it could be related to unwrapping its internal observable sequence or else it would be `Observable<Observable<Result<User, Error>>>`
+
+```swift
+let userEmpty = authenticationSubject
+   .flatMapLatest { auth -> Observable<Result<User, Error>> in
+		UserCoordinator().rx.currentUser(in: nil)                 }
+```

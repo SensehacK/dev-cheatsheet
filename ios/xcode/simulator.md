@@ -29,3 +29,19 @@ Health app doesn’t fully synced my data to the iOS simulator. Or maybe I was m
 Utilize the network link conditioner on Mac OS.
 
 [Network disable](https://www.tutorialspoint.com/how-to-disable-the-network-in-ios-simulator)
+
+
+## Screenshot location
+
+I just hate screenshots default location on Desktop where my wallpaper is 100% digital black as my main coding screen is OLED TV 48 LG C1.
+So when coding I like to use 21:9 aspect ratio to get wide screen effect and having that lingering screenshots just feels not right.
+
+Storing the default location 
+```bash
+defaults write com.apple.iphonesimulator ScreenShotSaveLocation -string ~/Documents/Screenshots
+```
+
+Good reference for Mac OS defaults
+https://macos-defaults.com/simulator/screenshotsavelocation.html
+
+SO https://stackoverflow.com/questions/23661097/change-the-location-of-screen-shots-saved-by-the-ios-simulator

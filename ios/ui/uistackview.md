@@ -36,3 +36,23 @@ terminating with uncaught exception of type NSException
 ```
 
 Constraint common view hierarchy error.
+
+
+
+
+## UIView Events
+
+If you're embeding UIstackView in a UIView class and are not able to get some event responses, you need disable its user interaction flag.
+
+```swift
+class CustomView: UIButton {
+	init() {
+        super.init(frame: .zero)
+		labelStackView.addArrangedSubviews(titleStackView, descriptionLabel)
+        addSubview(labelStackView)
+    }
+    
+	private(set) var labelStackView: UIStackView = {
+		stackView.isUserInteractionEnabled = false
+	}
+```

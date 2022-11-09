@@ -38,7 +38,17 @@ We can also dismiss the the whole
 ## Presentation iOS 13
 Different styles [Medium article](https://hacknicity.medium.com/view-controller-presentation-changes-in-ios-13-ac8c901ebc4e)
 
+## Init
 
+
+```swift
+required init?(coder aDecoder: NSCoder) {
+    super.init(coder: aDecoder)
+}
+```
+
+---
+https://stackoverflow.com/questions/24036393/fatal-error-use-of-unimplemented-initializer-initcoder-for-class
 
 ## Resources
 

@@ -1,7 +1,7 @@
 
-[Sensehack Developer Journal](README.md)
+[Sensehack Developer Journal](dev_cheatsheet/README.md)
 
-[[README]]
+[[dev_cheatsheet/README]]
 
 # Table of contents
 

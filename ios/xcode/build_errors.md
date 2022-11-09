@@ -1,5 +1,23 @@
 # Build Errors
 
+## Basic Remidiation
+
+> Have you tried turning it OFF and ON again - The IT Crowd
+
+Glad I can reference that british TV show in my work - hobby - mind map knowledgebase.
+
+The number of times an iOS Engineer has to go back to basics things to try while having a build or runtime error from Xcode - Apple Developer Tools.
+
+- Manually clearing out Derived Data
+- Clean Build Folder
+- Deleting app on simulator
+- Closing Xcode
+- Force quitting Xcode
+- Swift Package Manager - Reset package cache
+- SPM - resolving packages
+- Restarting Mac
+
+
 ## Couldn’t find path for xcconfig pods
 
 * Set the configuration file setting\* "None" for the Pods related target.

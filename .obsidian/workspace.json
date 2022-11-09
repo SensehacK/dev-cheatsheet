@@ -53,8 +53,7 @@
               "pinned": true
             }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "43fbc1785b4684c2",
@@ -77,13 +76,13 @@
             }
           },
           {
-            "id": "dfeadc91d86c30e2",
+            "id": "d308aff382c315a6",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/rxSwift/extensions.md",
+                "file": "ios/xcode/runtime_errors.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -105,7 +104,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/lifecycle/orientation.md",
+                "file": "ios/ui/navigation_controller.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -128,6 +127,7 @@
           {
             "id": "b7b1264f0ab79442",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -135,7 +135,23 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "dfeadc91d86c30e2",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/build_errors.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
             }
           },
           {
@@ -153,8 +169,7 @@
               "pinned": true
             }
           }
-        ],
-        "currentTab": 2
+        ]
       },
       {
         "id": "e2cd7bec1dd4c4ab",
@@ -205,8 +220,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "presentation",
-                "matchingCase": false,
+                "query": "isTranslucent",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -243,7 +258,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/lifecycle/view_controllers.md",
+                "file": "ios/ui/navigation_controller.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -260,7 +275,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/lifecycle/view_controllers.md",
+                "file": "ios/ui/navigation_controller.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -283,7 +298,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/lifecycle/view_controllers.md"
+                "file": "ios/ui/navigation_controller.md"
               }
             }
           }
@@ -294,17 +309,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "b7b1264f0ab79442",
+  "active": "80869bbf157378e7",
   "lastOpenFiles": [
-    "ios/ui/transitions.md",
-    "ios/rxSwift/extensions.md",
-    "ios/rxSwift/map.md",
-    "ios/swift/dictionary.md",
+    "ios/xcode/runtime_errors.md",
+    "ios/ui/navigation_controller.md",
+    "ios/xcode/simulator.md",
+    "tools/editors/markdown.md",
     "ios/ui/textfield.md",
-    "ios/lifecycle/network_calls.md",
-    "ios/lifecycle/orientation.md",
-    "ios/library/webkit.md",
-    "tools/browsers/firefox.md",
-    "ios/rxSwift/reactive_extension.md"
+    "ios/xcode/build_errors.md",
+    "ios/lifecycle/view_controllers.md",
+    "tools/terminal/youtube_dl.md",
+    "ios/swift/arrays.md",
+    "ios/lifecycle/thread_concurrency.md"
   ]
 }

@@ -76,6 +76,9 @@ private let navigationController: UINavigationController = {
 
 [Apple Dev forums](https://developer.apple.com/forums/thread/682420)
 
+`isTranslucent` property being added in iOS 13 which has different behavior with UI NavigationBar background color.
+https://sarunw.com/posts/uinavigationbar-changes-in-ios13/
+
 ## Text Attributes not updating
 
 You need to update the property using UINavigationBarAppearance or else it won't work with whatever text attribute being set towards the title.

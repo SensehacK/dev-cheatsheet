@@ -2,10 +2,27 @@
 
 Things to make your Rx life easier
 
+## Extension Where
 
+The where clause is  an important one to safely limit our extensions for specific types of elements. Which is also an optimization as well as limits undefined behavior with the wrong extension overload.
+
+```swift
+extension ObservableType where Element: ExpressibleByNilLiteral { }
+
+extension ObservableType where Element == Optional<Bool> { }
+
+extension ObservableType where Element: ResultType { }
+
+extension Reactive where Base: UIViewController { }
+
+extension ObservableType where Element == Void { }
+
+```
+
+
+## Optional Chaining
 
 Unwrap optionals in Rx
-
 
 ```swift
 import RxSwift
@@ -17,13 +34,13 @@ extension ObservableType where Element: ExpressibleByNilLiteral {
     }
 }
 
-public extension ObservableType where Element: ExpressibleByNilLiteral {
+extension ObservableType where Element: ExpressibleByNilLiteral {
     func unwrap<T>(default defaultWhenNil: T? = nil) -> Observable<T> where Element == T? {
         return self.flatMap { Observable.from(optional: $0 != nil ? $0 : defaultWhenNil) }
     }
 }
 
-public extension ObservableType where Element == Optional<Bool> {
+extension ObservableType where Element == Optional<Bool> {
     /// Unwraps the observable and emits any non `nil` value to the Rx stream, or emits the supplied `defaultWhenNil` argument if the value is `nil`.
     ///
     /// The default value of `defaultWhenNil` is `false`.
@@ -37,7 +54,7 @@ public extension ObservableType where Element == Optional<Bool> {
 
 ```swift
 
-public extension ObservableType {
+extension ObservableType {
     /**
      Trimmed console output on Observables.
      */
@@ -95,7 +112,7 @@ extension ObservableType {
 
 ```swift
 
-public extension ObservableType where Element: ResultType {
+extension ObservableType where Element: ResultType {
     /// Unwraps the value from a Result, or stops the stream if the value is nil.
     func unwrapSuccess<T>() -> Observable<T> where Element == Result<T, Error> {
         return map { $0.value }.unwrap()
@@ -120,7 +137,79 @@ extension Result: ResultType {}
 ```
 
 
-## Extenisfying Everything
+Creating Observable with Result type. 
+Code example
+
+```swift
+
+public protocol RxAccountCoordinatorProtocol { }
+
+public class AccountCoordinator: RxAccountCoordinatorProtocol { }
+
+extension AccountCoordinator: ReactiveCompatible { }
+
+extension Reactive: RxAccountCoordinatorProtocol where Base: AccountCoordinator {
+    
+    public func accountResult(accountGraph: Result<AccountGraph, Error> ) -> Observable<Result<Account, Error>> {
+        
+        return Observable.create { observer in
+            
+            observer.onNext(accountGraph.map(\.coreObject))
+            
+            // 2 .map can automatically open up new success block & still return previous error.
+//            let result = accountGraph
+//                .map { return $0.coreObject }
+//            observer.onNext(result)
+
+						// 1
+//            switch accountGraph {
+//            case .success(let accountGraph) :
+//                observer.onNext(Result.success(accountGraph.coreObject))
+//            case .failure(let error):
+//                observer.onNext(Result.failure(error))
+//            }
+
+            return Disposables.create()
+        }
+    }
+}
+
+
+
+```
+
+
+## Result Tuple
+
+```swift
+		/// Splits the observable sequence into two (2) separate observable sequences based on the condition block passed to this method.
+    /// - Parameter condition: A block that returns a Bool value that determines how the sequence should be split.
+    /// - Returns: A tuple whose first member is an observable sequence that met the condition and whose
+    ///   second member is an observable sequence that didn't meet the specified condition.
+    ///
+    /// - NOTE: This method does not make any assumptions about shared resources, that is, it does not call `.share()` on the source observable before splitting it into two separate streams. It is up to the caller to determine if a `.share()` is needed and to call it accordingly. The `.share()` can be chained directly before calling this method.
+		func split(_ condition: @escaping (Element) -> Bool) -> (wasTrue: Observable<Element>, wasFalse: Observable<Element>) {
+        let wasTrue = self.filter(condition)
+        let wasFalse = self.filter { !condition($0) }
+        return (wasTrue, wasFalse)
+    }
+
+
+```
+
+## Result Tuple Boolean
+```swift
+
+    func split() -> (wasTrue: Observable<Element>, wasFalse: Observable<Element>) where Element == Bool {
+        let wasTrue = self.filter { $0 }
+        let wasFalse = self.filter { !$0 }
+        return (wasTrue, wasFalse)
+    }
+```
+
+
+
+## UIViewController
 
 
 ```swift
@@ -167,7 +256,7 @@ My comment on recent extension addition towards ControlEvents across iOS UI life
 ## Logging
 
 ```swift
-public extension ObservableType {
+extension ObservableType {
 
     func log(_ level: RxLog, lineNumber: Int = #line, function: String = #function) -> Observable<Element> {
 
@@ -202,4 +291,23 @@ public enum RxLog {
     case info(String)
 }
 
+```
+
+
+## Subcribe
+
+Overloading subscribe methods of `ObservableType` where Element is of type `Void`
+```swift
+extension ObservableType where Element == Void { }
+```
+
+    /// - NOTE: This is an method overload of `RxSwiftExt.subscribeNext<Object: AnyObject>
+```swift
+/// Subscribes an element handler to an observable sequence.
+func subscribeNext<Object: AnyObject>(weak obj: Object, _ onNext: @escaping (Object) -> () -> ()) -> Disposable {
+        return subscribe(onNext: { [weak obj] in
+            guard let obj = obj else { return }
+            onNext(obj)()
+        })
+    }
 ```

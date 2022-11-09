@@ -46,3 +46,22 @@ Note you can use `#colorLiteral(r:g:b:a:);` to hide the values of the color itse
 
 ## Value Conversion
 
+
+## UIView
+
+### Gradient Layer 
+
+Adding a gradient layer to the background UIView object.
+```swift
+import UIKit
+extension UIView {
+	func addGradient(color1: CGColor,
+				 color2: CGColor) {
+		let gradientLayer = CAGradientLayer()
+		gradientLayer.frame = bounds
+		gradientLayer.colors = [color1, color2]
+		layer.addSublayer(gradientLayer)
+	}
+}
+```
+https://www.advancedswift.com/gradient-view-background-in-swift/#override-layerclass-to-add-a-cagradientlayer
