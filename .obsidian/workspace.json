@@ -90,6 +90,21 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "176ec7fc5cc9d4ab",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/editors/markdown.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
           }
         ],
         "currentTab": 1
@@ -263,15 +278,15 @@
   },
   "active": "91df4adee3faacb6",
   "lastOpenFiles": [
-    "assets/obsidian.jpg",
+    "tools/editors/markdown.md",
     "README.md",
+    "assets/obsidian.jpg",
     "ios/swift/arrays.md",
     "ios/xcode/runtime_errors.md",
     "ios/README_iOS.md",
     "ios/lifecycle/network_calls.md",
     "ios/[README](README.md)>.md",
     "ios/swift/dictionary.md",
-    "ios/ui/navigation_controller.md",
-    "SUMMARY.md"
+    "ios/ui/navigation_controller.md"
   ]
 }
