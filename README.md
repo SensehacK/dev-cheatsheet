@@ -11,6 +11,7 @@ As sometimes, we would have limited internet access or restrictive data download
 Development Hell and most of CLI inputs used with bit of documentation so I’m not totally dependent on my Firefox Browser or my One Note / iA Writer App for accessing my documents on different terminal. I can just git clone this repository and boom we are up to date with my personal wiki or documentation.
 
 ### Includes
+
 * Different issues I have faced.
 * Boilerplate Code
 * Deprecated or obsolete commands or code flow
@@ -28,21 +29,22 @@ iOS Dev Journey Repo: swift repo
 Other trials: Playgrounds repo
 My Config: sense-setup
 
-## Where the Beef ?!
+## Where the Beef ?
 
 Checkout Summary file for whole project structure. Would recommend using `Obsidian` for full graph correlation of every topic related to its high level subdomains.
-
 
 ## Tools
 
 ### Hardware
-- MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
-- MacBook Pro 16' 2021 : Core i9, 1TB SSD, 32GB RAM
-- MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
-- iPad Air 5th Gen - M1
-- One Plus 8
 
-### Software 
+* MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
+
+* MacBook Pro 16' 2021 : Core i9, 1TB SSD, 32GB RAM
+* MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
+* iPad Air 5th Gen - M1
+* One Plus 8
+
+### Software
 
 OS: Mac OS Mojave 10.14.6 - macOS Ventura
 IDE: Xcode,
@@ -65,18 +67,18 @@ Documentation Reference: Dash
 
 Terminal : iTerm
 
-## Resources 
+## Resources
 
-- Reddit
-- StackOverflow
-- RayWenderlich
-- Github
-- Linux
-- Youtube
-- r/iOSDevelopers
-- r/webdev
-- r/selfhosted
-- r/developer
+* Reddit
+* StackOverflow
+* RayWenderlich
+* Github
+* Linux
+* Youtube
+* r/iOSDevelopers
+* r/webdev
+* r/selfhosted
+* r/developer
 
 ## Mentors IRL
 
@@ -100,5 +102,7 @@ Also always keep learning and be curious.
 ## Credits
 
 [Kautilya Save](https://sensehack.github.io/)
+
 [GitHub](https://github.com/SensehacK)
-[LinkedIn](https://in.linkedin.com/in/kautilyasave) 
+
+[LinkedIn](https://in.linkedin.com/in/kautilyasave)
