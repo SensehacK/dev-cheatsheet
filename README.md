@@ -22,7 +22,7 @@ Development Hell and most of CLI inputs used with bit of documentation so I’m 
 
 ## Projects
 
-Currently I have seperate folders each assigned for their respective domain knowledge I have gained ever since I started working as a Software Engineer back in 2017.
+Currently I have separate folders each assigned for their respective domain knowledge I have gained ever since I started working as a Software Engineer back in 2017.
 
 iOS Dev Journey Repo: swift repo
 Other trials: Playgrounds repo
@@ -32,10 +32,13 @@ My Config: sense-setup
 
 Checkout Summary file for whole project structure. Would recommend using `Obsidian` for full graph correlation of every topic related to its high level subdomains.
 
+![](/assets/obsidian.jpg)
+
 
 ## Tools
 
 ### Hardware
+
 - MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
 - MacBook Pro 16' 2021 : Core i9, 1TB SSD, 32GB RAM
 - MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
@@ -45,6 +48,7 @@ Checkout Summary file for whole project structure. Would recommend using `Obsidi
 ### Software 
 
 OS: Mac OS Mojave 10.14.6 - macOS Ventura
+
 IDE: Xcode,
 VS Code - Open Source fork
 

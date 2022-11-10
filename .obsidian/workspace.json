@@ -6,7 +6,7 @@
       {
         "id": "6efba96745e43363",
         "type": "tabs",
-        "dimension": 31.52173913043479,
+        "dimension": 13.736263736263737,
         "children": [
           {
             "id": "08f3f72b536e1178",
@@ -59,7 +59,7 @@
       {
         "id": "43fbc1785b4684c2",
         "type": "tabs",
-        "dimension": 37.33695652173913,
+        "dimension": 55.151098901098905,
         "children": [
           {
             "id": "4ffdf4e2de4adf7d",
@@ -77,38 +77,9 @@
             }
           },
           {
-            "id": "d308aff382c315a6",
+            "id": "91df4adee3faacb6",
             "type": "leaf",
             "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/xcode/runtime_errors.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "2910a9fb913b4ba1",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/README_iOS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "dc79146d35e95775",
-            "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
@@ -116,16 +87,17 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "d64a4df558d242f6",
         "type": "tabs",
-        "dimension": 31.14130434782609,
+        "dimension": 31.112637362637365,
         "children": [
           {
             "id": "80869bbf157378e7",
@@ -289,17 +261,17 @@
     "width": 300,
     "collapsed": true
   },
-  "active": "dc79146d35e95775",
+  "active": "91df4adee3faacb6",
   "lastOpenFiles": [
+    "assets/obsidian.jpg",
+    "README.md",
     "ios/swift/arrays.md",
     "ios/xcode/runtime_errors.md",
     "ios/README_iOS.md",
-    "README.md",
-    "ios/[README](README.md)>.md",
     "ios/lifecycle/network_calls.md",
+    "ios/[README](README.md)>.md",
     "ios/swift/dictionary.md",
     "ios/ui/navigation_controller.md",
-    "SUMMARY.md",
-    "ios/lifecycle/view_controllers.md"
+    "SUMMARY.md"
   ]
 }
