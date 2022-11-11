@@ -70,3 +70,28 @@ guard let url = URL(string: Constants.baseURL.rawValue + Constants.image.rawValu
 
 
 ```
+
+
+## URL Components
+
+```swift
+public func createSignUpURL(matching clientID: String = "clientID") -> URL {
+	var components = URLComponents()
+	components.scheme = "https"
+	components.host = "qa1.qa.drive.com"
+	components.path = "/#/sync"
+	components.queryItems = [
+	URLQueryItem(name: "client_id", value: clientID)
+	]
+	let finalURL = components.string?.removingPercentEncoding ?? "https://qa1.qa.drive.com/#/sync?client_id=clientID"
+	
+	return URL(string: finalURL)!
+}
+```
+
+
+https://developer.apple.com/documentation/foundation/urlcomponents
+
+https://www.swiftbysundell.com/articles/constructing-urls-in-swift/
+
+https://www.avanderlee.com/swift/url-components/
