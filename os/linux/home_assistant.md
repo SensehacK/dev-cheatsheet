@@ -68,6 +68,12 @@ Don't use Tuya IOT Api developer account credentials here.
 https://www.reddit.com/r/homeassistant/comments/q3hnlz/tuya_login_error_1106_permission_deny/
 
 
+Renew my API again for 6 months or restart my Home Assistant to work with Tuya integration.
+https://github.com/home-assistant/core/issues/80278
+
+Thread to similar problem of mine.
+https://community.home-assistant.io/t/tuya-devices-entities-gone-missing/347445/111
+Nov 1st week post by [chrisleeca](https://community.home-assistant.io/u/chrisleeca)[Chris Lee](https://community.home-assistant.io/u/chrisleeca)
 
 
 
