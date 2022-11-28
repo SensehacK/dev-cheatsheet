@@ -108,3 +108,11 @@ The interview basically asked me all the multithreaded questions which I didn't 
 ## Good sources
 
 [Free code camp Concurrency](https://www.freecodecamp.org/news/ios-concurrency/)
+
+https://www.avanderlee.com/swift/async-await/
+
+https://www.advancedswift.com/async-await/
+
+https://medium.com/swlh/an-in-depth-guide-to-operation-and-operationqueue-45658a22ee37
+
+https://www.appsloveworld.com/swift/100/174/using-dispatch-async-to-load-images-in-background
