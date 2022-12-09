@@ -114,6 +114,8 @@ Custom InputField Dismiss Keyboard
 
 [TutorialsPoint](https://www.tutorialspoint.com/how-do-you-hide-the-onscreen-keyboard-in-ios-app)
 
+https://stackoverflow.com/questions/24126678/close-ios-keyboard-by-touching-anywhere-using-swift?rq=1
+
 ## Customization
 
 [Text Return custom](https://stackoverflow.com/questions/976950/change-text-of-return-keyboard-button)

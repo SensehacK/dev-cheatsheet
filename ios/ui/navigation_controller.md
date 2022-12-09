@@ -136,6 +136,38 @@ https://stackoverflow.com/questions/28733936/change-color-of-back-button-in-navi
 
 https://www.youtube.com/watch?v=7KdRpFEOG9I
 
+
+## Navigation Items
+
+
+[SO](https://stackoverflow.com/questions/39643169/swift-hide-navigation-title-but-show-its-title-as-back-button-in-next-view-contr)
+
+Try to hide titleView label
+
+```swift
+self.navigationItem.titleView = UIView()
+```
+
+## Swap ViewController
+
+Swap or Replace View Controllers.
+
+```swift
+extension UINavigationController {
+    func swap(currentViewController: UIViewController,
+              newViewController: UIViewController,
+              animated: Bool = false) {
+        var controllerStack = self.viewControllers
+        if let index = controllerStack.firstIndex(of: currentViewController) {
+            controllerStack[index] = newViewController
+        }
+        setViewControllers(controllerStack, animated: animated)
+    }
+```
+
+## Pop View Controllers
+
+https://stackoverflow.com/questions/26132658/pop-2-view-controllers-in-nav-controller-in-swift
 ## References
 
 https://dmtopolog.com/navigation-bar-customization/

@@ -95,3 +95,38 @@ https://developer.apple.com/documentation/foundation/urlcomponents
 https://www.swiftbysundell.com/articles/constructing-urls-in-swift/
 
 https://www.avanderlee.com/swift/url-components/
+
+
+
+## Checks
+
+Checking if URL is valid form
+
+```swift
+// Swift 5
+func verifyUrl (urlString: String?) -> Bool {
+    if let urlString = urlString {
+        if let url = NSURL(string: urlString) {
+            return UIApplication.shared.canOpenURL(url as URL)
+        }
+    }
+    return false
+}
+```
+
+https://stackoverflow.com/questions/28079123/how-to-check-validity-of-url-in-swift
+
+```swift
+guard let url = URL(string: "http://www.google.com") else {
+  return //be safe
+}
+
+if #available(iOS 10.0, *) {
+    UIApplication.shared.open(url, options: [:], completionHandler: nil)
+} else {
+    UIApplication.shared.openURL(url)
+}
+```
+
+https://stackoverflow.com/questions/39546856/how-to-open-an-url-in-swift
+https://developer.apple.com/documentation/uikit/uiapplication/1648685-open
