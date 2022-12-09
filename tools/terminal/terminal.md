@@ -184,3 +184,19 @@ or you can use the shorter version of the command:
 > . ~/.bashrc
 
 [SO](https://stackoverflow.com/questions/2518127/how-to-reload-bashrc-settings-without-logging-out-and-back-in-again)
+
+### ZSH
+
+
+You can enter the long form command:
+
+```bash
+source ~/.zshrc
+```
+
+or you can use the shorter version of the command:
+```bash
+. ~/.zshrc
+```
+
+https://stackoverflow.com/questions/23233603/how-to-load-bash-profile-when-entering-bash-from-within-zsh

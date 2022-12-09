@@ -65,3 +65,23 @@ extension UIView {
 }
 ```
 https://www.advancedswift.com/gradient-view-background-in-swift/#override-layerclass-to-add-a-cagradientlayer
+
+Class approach which is better due to dynamic layout orientation updates
+
+```swift
+class GradientView: UIView {
+    let gradientLayer: CAGradientLayer = .init()
+    init(_ colors: UIColor...) {
+        super.init(frame: .zero)
+        gradientLayer.frame = bounds
+        gradientLayer.colors = colors.map(\.cgColor)
+        layer.addSublayer(gradientLayer)
+    }
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        gradientLayer.frame = bounds
+    }
+}
+```
+
+The func `layoutSubviews()` in my opinion would appropriately deal with framing when the UI is in the process of laying out subviews. Which would be when the user is changing orientation on its physical devices.

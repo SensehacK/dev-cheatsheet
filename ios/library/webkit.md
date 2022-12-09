@@ -42,3 +42,18 @@ https://stackoverflow.com/questions/49628954/how-to-load-url-on-wkwebview
 https://medium.com/capital-one-tech/javascript-manipulation-on-ios-using-webkit-2b1115e7e405
 
 https://medium.com/swlh/web-to-native-code-communication-on-ios-using-wkscriptmessagehandler-8d307b3847fa
+
+
+## Check WebView loaded
+
+```swift
+func webView(_ webView: WKWebView, didCommit navigation: WKNavigation!) {
+    print("Start loading")    
+}
+
+func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
+    print("End loading")
+}
+```
+
+https://stackoverflow.com/questions/45448443/swift-3-check-if-wkwebview-has-loaded-page

@@ -1,5 +1,7 @@
 # Dark Mode
 
+
+
 ## Checking User Style
 
 switch UIScreen.main.traitCollection.userInterfaceStyle { case .light: //light mode case .dark: //dark mode case .unspecified: //the user interface style is not specified }
@@ -17,3 +19,10 @@ Utilize Color Set in Xcode with “Any” & “Dark” Mode. To better update th
 ## Dynamic colors
 
 https://www.swiftbysundell.com/articles/defining-dynamic-colors-in-swift/
+
+
+## Resources
+
+Full guide: 
+
+https://www.avanderlee.com/swift/dark-mode-support-ios/
