@@ -18,3 +18,9 @@ let end : NSDate = NSDate()
 let interval = end.timeIntervalSinceDate(begin)
 print("DURATION extension: \(interval)")
 ```
+
+## Test Coverage
+
+Edit Scheme - Check `Gather Test Coverage` for the products.
+
+https://www.hackingwithswift.com/articles/144/how-to-measure-code-coverage-in-xcode
