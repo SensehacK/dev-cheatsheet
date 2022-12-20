@@ -39,19 +39,12 @@ Checkout Summary file for whole project structure. Would recommend using `Obsidi
 
 ### Hardware
 
-- MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
+- MacBook Pro 13’ 2015 : Core i5 , 128GB SSD, 8GB RAM
 - MacBook Pro 16' 2021 : Core i9, 1TB SSD, 32GB RAM
 - MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
+- MacBook Air 13’ 2022 : M2 , 256GB SSD, 8GB RAM
 - iPad Air 5th Gen - M1
 - One Plus 8
-
-* MacBook Pro 13’ 2015 : Core i5 , 128GB SSD
-
-* MacBook Pro 16' 2021 : Core i9, 1TB SSD, 32GB RAM
-* MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
-* iPad Air 5th Gen - M1
-* One Plus 8
-
 ### Software
 
 OS: Mac OS Mojave 10.14.6 - macOS Ventura
