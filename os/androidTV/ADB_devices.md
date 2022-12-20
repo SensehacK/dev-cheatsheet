@@ -84,3 +84,10 @@ adb shell settings put secure enabled_accessibility services dev.vodik7.tvquicka
 
 adb shell pm grant dev.vodik7.tvquickactions android.permission.WRITE_SECURE_SETTINGS
 ```
+
+
+## Sideload app
+
+
+
+https://www.xda-developers.com/how-to-sideload-apps-android-tv/

@@ -51,6 +51,16 @@ Tautolli
 
 Ombi
 
+## JellyFin
+
+Restarting Jellyfin
+ 
+```bash
+sudo service jellyfin restart
+``` 
+
+https://pimylifeup.com/raspberry-pi-jellyfin/
+
 
 ## SMB Share
 
@@ -168,3 +178,6 @@ https://fossbytes.com/enable-usb-boot-on-raspberry-pi/
 
 OS install guide
 https://www.makeuseof.com/tag/install-operating-system-raspberry-pi/
+
+
+https://raspberrytips.com/raspberry-pi-commands/
