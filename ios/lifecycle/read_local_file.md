@@ -32,3 +32,5 @@ func loadJson(fileName: String) -> Person? {
 
 
 [Apple Working with JSON](https://developer.apple.com/swift/blog/?id=37)
+
+https://stackoverflow.com/questions/24410881/reading-in-a-json-file-using-swift
