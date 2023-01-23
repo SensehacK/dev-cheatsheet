@@ -50,6 +50,15 @@ required init?(coder aDecoder: NSCoder) {
 ---
 https://stackoverflow.com/questions/24036393/fatal-error-use-of-unimplemented-initializer-initcoder-for-class
 
+
+## Container Child View
+
+[uiview](uiview.md)
+
+https://cocoacasts.com/managing-view-controllers-with-container-view-controllers/
+
+https://guides.codepath.com/ios/Adding-and-Removing-Child-View-Controllers
+
 ## Resources
 
 [Custom Presentation Controllers](https://makeapppie.com/2016/04/11/the-step-by-step-guide-to-custom-presentation-controllers/)
