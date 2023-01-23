@@ -147,4 +147,7 @@ https://cocoacasts.com/cocoa-fundamentals-formatting-a-time-interval-in-swift
 
 [Convert String to Date](https://izziswift.com/convert-string-to-date-in-swift/)
 
-[](https://cocoacasts.com/swift-fundamentals-how-to-convert-a-string-to-a-date-in-swift)
+[convert string to date cocoacasts](https://cocoacasts.com/swift-fundamentals-how-to-convert-a-string-to-a-date-in-swift)
+
+
+https://iharishsuthar.github.io/posts/swift-date/

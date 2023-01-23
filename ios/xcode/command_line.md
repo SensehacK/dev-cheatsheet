@@ -77,10 +77,16 @@ Or use pipeline with external tool called `xcpretty`
 
 Setting environment variables on the project and reading from them via Xcode.
 
-Setting variables
+### Setting variables
 ```export TEST_RUNNER_QAENV=EnvironmentQA1```
 
 [xcode build Env variables](https://stackoverflow.com/questions/40722756/passing-arguments-to-ios-tests-with-xcodebuild)
+
+### Removing Environment variable
+
+`unset variablename` 
+
+https://www.cloudbooklet.com/how-to-set-list-and-remove-environment-variables-in-linux/
 
 ## Resources
 

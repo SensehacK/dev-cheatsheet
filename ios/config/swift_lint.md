@@ -13,3 +13,4 @@ On M1 Macs you need to specify the updated path or manually copy the executable 
 
 Extension to use in VSCode
 [Extension](https://marketplace.visualstudio.com/items?itemName=vknabel.vscode-swiftlint)
+

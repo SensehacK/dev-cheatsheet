@@ -55,6 +55,10 @@ Supporting dark mode
 https://medium.com/@iAkashlal/enabling-dark-mode-support-for-your-ios-applications-cd98d79033de
 
 https://developer.apple.com/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface
+
+https://www.kodeco.com/10718147-supporting-dark-mode-adapting-your-app-to-support-dark-mode
+
+https://letcreateanapp.com/2021/08/08/adding-support-of-dark-mode-in-ios-app-in-swift/
 ## Tools
 
 https://www.uicolor.io/
