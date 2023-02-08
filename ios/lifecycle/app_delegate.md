@@ -32,3 +32,18 @@ preconditionFailure()
 ```
 
 https://stackoverflow.com/questions/32511178/easiest-way-to-force-a-crash-in-swift
+
+
+## App lifecycle
+
+
+
+`applicationDidBecomeActive` 
+`applicationWillEnterForeground`
+
+
+`didFinishLaunchingWithOptions`
+
+https://medium.com/@ansujain/ios-application-life-cycle-d517a3c44e7e
+
+[SO](https://stackoverflow.com/questions/10304780/applicationdidbecomeactive-getting-called-twice)

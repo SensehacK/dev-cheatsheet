@@ -79,3 +79,11 @@ This will help us to remove the horrendous long variable setup with every overri
 
 iOS 13 changes
 [SO](https://stackoverflow.com/questions/56435510/presenting-modal-in-ios-13-fullscreen)
+
+## Alpha
+
+
+UIView Alpha vs UIView Subview alpha.
+Alpha is the property which can basically alter a UI presentation to have full opaque visibility or have transparent visibility. So the view behind the foremost UIView gets displayed to have a hint that the UI is still present in the back of that UIView instance or UIWindow.
+
+https://stackoverflow.com/questions/20423390/uiview-alpha-vs-uicolor-alpha

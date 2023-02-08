@@ -142,6 +142,23 @@ Formatting time interval in swift using build in `DateComponentsFormatter()`
 
 https://cocoacasts.com/cocoa-fundamentals-formatting-a-time-interval-in-swift
 
+
+## Timezone Help
+
+
+Also you can have Clock in your local timezone and UTC as mac os widgets or phone widgets.
+
+Just adopt the ISO 8601 format for Date Time
+https://www.iso.org/iso-8601-date-and-time-format.html
+
+Converter to not kill yourself.
+
+https://www.timeanddate.com/worldclock/converter.html
+
+Different Timezone abbreviations 
+https://www.timeanddate.com/time/zones/
+
+
 ## References
 
 
