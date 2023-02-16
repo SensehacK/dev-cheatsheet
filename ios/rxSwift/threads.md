@@ -30,6 +30,9 @@ https://swiftsimplified.medium.com/thread-safety-with-subjects-in-rxswift-254349
 StackOverflow issue
 https://stackoverflow.com/questions/58355951/rxswift-not-subscribing-on-main-thread
 
+[RxSwift Multithreading](https://www.thedroidsonroids.com/blog/rxswift-examples-4-multithreading)
+
+[RxSwift Deepcuts](https://academy.realm.io/posts/krzysztof-siejkowski-mobilization-2017-rxswift-deep-cuts/)
 
 ## Cross links
 

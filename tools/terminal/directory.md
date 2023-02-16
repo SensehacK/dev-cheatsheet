@@ -29,7 +29,7 @@ This will create all the folders/directories necessary till the last folder.
 
 ## Rename directory
 
-Use move command
+Use move command to rename a directory.
 
 > mv SensehackMedia SensehackMedia2
 

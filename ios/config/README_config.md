@@ -13,7 +13,7 @@
 
 [[ios/config/jailbreak]]
 
-[[linking_apps]]
+[[linking]]
 
 [[provisioning]]
 

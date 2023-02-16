@@ -142,6 +142,7 @@ Formatting time interval in swift using build in `DateComponentsFormatter()`
 
 https://cocoacasts.com/cocoa-fundamentals-formatting-a-time-interval-in-swift
 
+[Formatting UTC Date](https://www.advancedswift.com/local-utc-date-format-swift/)
 
 ## Timezone Help
 
@@ -157,6 +158,9 @@ https://www.timeanddate.com/worldclock/converter.html
 
 Different Timezone abbreviations 
 https://www.timeanddate.com/time/zones/
+
+Swift ISO date creation
+https://onmyway133.com/posts/how-to-make-iso-8601-date-in-swift/
 
 
 ## References

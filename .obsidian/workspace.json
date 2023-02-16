@@ -10,55 +10,23 @@
           {
             "id": "537e284dcacfe6c0",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/lifecycle/dark_mode.md",
+                "file": "ios/ui/auto_layout.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
             }
           },
           {
-            "id": "c82b60f87cb197a5",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/ui/uitableview.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "1bf28c8b8d8d1bfd",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/ui/uiview.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "6a55aaaa686c6114",
+            "id": "1ebc2233b0fedf84",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/ui/uipagecontroller.md",
+                "file": "ios/xcode/runtime_errors.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -66,7 +34,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       },
       {
         "id": "0476a0f3177027a7",
@@ -86,8 +54,24 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "b1c6cb2910bba38e",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/linux/raspberry_pi.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -116,8 +100,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "child",
-                "matchingCase": true,
+                "query": "MVVM",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -153,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/ui/uipagecontroller.md",
+                "file": "ios/xcode/runtime_errors.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/ui/uipagecontroller.md",
+                "file": "ios/xcode/runtime_errors.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/ui/uipagecontroller.md"
+                "file": "ios/xcode/runtime_errors.md"
               }
             }
           }
@@ -214,17 +198,17 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "94448531862c779d",
+  "active": "1ebc2233b0fedf84",
   "lastOpenFiles": [
-    "ios/library/import.md",
-    "ios/lifecycle/view_controllers.md",
-    "ios/ui/uipagecontroller.md",
-    "ios/ui/uiview.md",
-    "ios/rxSwift/rx_tests.md",
+    "os/linux/raspberry_pi.md",
+    "ios/xcode/build_errors.md",
+    "ios/lifecycle/MVVM.md",
+    "ios/ui/auto_layout.md",
+    "tools/terminal/directory.md",
     "ios/lifecycle/dark_mode.md",
     "ios/ui/uitableview.md",
-    "ios/xcode/spm.md",
-    "ios/config/string_segregation.md",
-    "misc/best_coding_practices/best_coding_practices.md"
+    "ios/rxSwift/threads.md",
+    "ios/config/danger.md",
+    "ios/library/import.md"
   ]
 }

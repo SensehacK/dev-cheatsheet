@@ -19,3 +19,8 @@ translatesAutoresizingMaskIntoConstraints = false
 
 https://krakendev.io/blog/autolayout-magic-like-harry-potter-but-real
 
+
+
+## Cheatsheet
+
+[HWS](https://www.hackingwithswift.com/articles/140/the-auto-layout-cheat-sheet)
