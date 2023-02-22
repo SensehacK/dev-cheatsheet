@@ -26,7 +26,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/runtime_errors.md",
+                "file": "ios/swift/short_hands.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -137,7 +137,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/xcode/runtime_errors.md",
+                "file": "ios/swift/short_hands.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +154,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/xcode/runtime_errors.md",
+                "file": "ios/swift/short_hands.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +177,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/xcode/runtime_errors.md"
+                "file": "ios/swift/short_hands.md"
               }
             }
           }
@@ -200,6 +200,7 @@
   },
   "active": "1ebc2233b0fedf84",
   "lastOpenFiles": [
+    "ios/xcode/runtime_errors.md",
     "os/linux/raspberry_pi.md",
     "ios/xcode/build_errors.md",
     "ios/lifecycle/MVVM.md",
@@ -208,7 +209,6 @@
     "ios/lifecycle/dark_mode.md",
     "ios/ui/uitableview.md",
     "ios/rxSwift/threads.md",
-    "ios/config/danger.md",
-    "ios/library/import.md"
+    "ios/config/danger.md"
   ]
 }

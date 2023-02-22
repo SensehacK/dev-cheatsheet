@@ -29,3 +29,25 @@ The number of times an iOS Engineer has to go back to basics like
 - Swift Package Manager - Reset package cache
 - SPM - resolving packages
 - Restarting Mac
+
+
+
+## NSRangeException
+
+Usually this is caused due to Array index out of bounds which means if the Array index is greater than the actual value
+eg. 
+```swift
+var tempArray = [2,45,22,53,36]
+// So if you want to access 2nd value of array
+tempArray[1] // 45
+// But if you access 6th value in the array when it doesn't exists
+tempArray[5] // uncaught exception 'NSRangeException' | Out of bounds
+```
+This is the error message
+```error
+*** Terminating app due to uncaught exception 'NSRangeException', reason: 'NSMutableRLEArray replaceObjectsInRange:withObject:length:: Out of bounds'
+terminating with uncaught exception of type NSException
+CoreSimulator 857.14
+```
+
+But removing the app from the simulator and Xcode -> Clean Build also solved the problem if you're not able to determine why this is happening without any proper code change around indexes. Happened with me on Xcode 14.2 - iOS 16.2
