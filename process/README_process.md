@@ -1,6 +1,6 @@
 ## List
 
-[[release]]
+[[process/release]]
 
 [[search]]
 

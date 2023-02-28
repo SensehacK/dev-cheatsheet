@@ -76,3 +76,54 @@ tag_release:
       when: never
       
 ```
+
+
+## Specific Test Case CI
+
+```yaml
+  
+variables:
+	CONFIGURATION:
+		value: "debug"
+		description: "The build configuration to use throughout the pipeline. Options [`debug`, `release`]. Defaults to `debug`."
+
+	RUNNER_TAG:
+		value: "macos"
+		description: "Tag for isolating jobs to specific shell runners. Defaults to `macos`. Example, `gitlabrunner-shell2-mac`."
+
+
+default:
+	tags:
+		- $RUNNER_TAG
+		- 
+.test_integration: &test_integration
+
+	- |
+	xcodebuild test -quiet \
+	-scheme TrackViaNetwork-Package \
+	-sdk iphonesimulator15.4 -destination "OS=15.4,name=iPhone 13" \
+	-only-testing:"product_nameNetworkIntegrationTests" \
+	-skip-testing:"product_nameNetworkIntegrationTests/TableServiceQA3IntegrationTests/testCreateTable" \
+	-skip-testing "product_nameNetworkIntegrationTests/TableServiceQA3IntegrationTests/testCreateTableAllFields"
+
+
+stages:
+	- test
+
+run-integration-tests:
+	stage: test
+	script:
+		- echo "Testing the target..."
+		- *test_integration
+		- echo "Tests complete."
+```
+
+
+
+## Guides
+
+
+https://about.gitlab.com/blog/2016/03/10/setting-up-gitlab-ci-for-ios-projects/
+https://docs.gitlab.com/runner/configuration/macos_setup.html
+
+https://skofgar.ch/computer-science/2018/11/set-up-gitlab-ci-with-an-ios-project-that-uses-cocoapods/

@@ -157,6 +157,24 @@ print(compactMapDynamicRecordFields)
 
 
 
+## Repeated Elements
+
+We could need dummy data to be able to compared against the output. We can quickly do an array of repeating values over `n` times. 
+
+Rather than going through the classic logic of making a `for loop` with `i = starting index` till `n = ending index` and incrementing the `i+1 = starting index with certain values` we can directly utilize `stride` or convenience initializer for every primitive Array types
+`[Type](repeating: Type.Value, count: N-times)` 
+
+```swift
+let expectedResult = [Bool](repeating: true, count: 3)\
+
+print(expectedResult) // [true, true, true]
+```
+
+https://www.hackingwithswift.com/example-code/language/how-to-create-an-array-by-repeating-an-item
+
+https://onmyway133.com/posts/how-to-repeat-array-of-object-in-swift/
+
+https://qualitycoding.org/verify-arrays-approvaltests-swift/
 
 ## References
 

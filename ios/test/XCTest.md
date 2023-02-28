@@ -26,6 +26,12 @@ func test_URL() throws {
 }
 ```
 
+
+
+Test Assertions
+
+https://www.swiftbysundell.com/articles/test-assertions-in-swift/
+
 ## Resources
 
 https://nshipster.com/xctestcase/

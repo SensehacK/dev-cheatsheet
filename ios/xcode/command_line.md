@@ -32,7 +32,7 @@ To run specific tests
 
 swift test --filter product_nameNetworkUnitTests
 
-```
+```bash
 swift test --filter product_nameNetworkUnitTests -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk  -target arm64-apple-ios15.2
 ```
 
@@ -41,24 +41,30 @@ swift test --filter product_nameNetworkUnitTests -target arm64-apple-ios15.2
 
 Running this command for tests.
 
-```
+```bash
 xcodebuild -scheme product_nameNetworkTestKit test -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 13'
 ```
 
 
 Running specific package tests 
 
-```
+```bash
 xcodebuild test -scheme product_nameNetwork-Package -sdk iphonesimulator15.2 -destination "OS=15.2,name=iPhone 13" -only-testing:"product_nameNetworkIntegrationTests"
 
 ```
 
 Running specific class unit tests 
 
-```
-xcodebuild test -scheme product_nameNetwork-Package -sdk iphonesimulator15.4 -destination "OS=15.4,name=iPhone 13" -only-testing:"product_nameNetworkIntegrationTests/AuthenticationServiceIntegrationTests/testLogin" -quiet
+```bash
+xcodebuild test -scheme product_name-Package -sdk iphonesimulator15.4 -destination "OS=15.4,name=iPhone 13" -only-testing:"product_nameNetworkIntegrationTests/AuthenticationServiceIntegrationTests/testLogin" -quiet
 ```
 
+
+Embedded into SPM project dependencies in `.xcworkspace`. Spent around 45 mins + just to figure out why it was erroring out and I think so I had 10+ different variants of Xcode Build Test CLI commands before landing what I was doing wrong. 
+I missed providing `-workspace` argument, xcode couldn't decipher directly based off the `-scheme`  since the project I work on is a poly repo - which has cyclical dependency of 8 layers including the main - iOS lifecycle layer. So it was necessary to provide more context to the Xcode - cli. 
+```bash
+xcodebuild test -workspace product_name-iOS.xcworkspace -scheme product_scheme -sdk iphonesimulator16.2 -destination "OS=16.2,name=iPhone 14" -only-testing:"product_nameViewModelTests/EnvironmentListViewModelTests/test_environmentVariableDefinedToSkipFlakyTests"
+```
 
 No verbose option with xcode build command
 > xcodebuild -quiet

@@ -4,5 +4,5 @@
   "newFileLocation": "current",
   "useMarkdownLinks": true,
   "showUnsupportedFiles": true,
-  "attachmentFolderPath": "./"
+  "attachmentFolderPath": "assets"
 }

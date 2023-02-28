@@ -6,27 +6,45 @@
       {
         "id": "da25f9ac63e120a4",
         "type": "tabs",
+        "dimension": 23.77237264800367,
         "children": [
           {
             "id": "537e284dcacfe6c0",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/ui/auto_layout.md",
+                "file": "ios/automation/gitlab_ci_yml.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "1ebc2233b0fedf84",
+            "id": "d7a05842b2a29c7f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/test/test.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "1b3410247b603191",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swift/short_hands.md",
+                "file": "ios/automation/release.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -34,20 +52,34 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0476a0f3177027a7",
         "type": "tabs",
+        "dimension": 42.909591555759526,
         "children": [
           {
             "id": "0fa0de34466a5035",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/config/ats_plist.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "673f528c92da414a",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/import.md",
+                "file": "ios/config/security.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -62,7 +94,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/linux/raspberry_pi.md",
+                "file": "ios/xcode/command_line.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -71,7 +103,27 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
+      },
+      {
+        "id": "f0f9c7df17c75538",
+        "type": "tabs",
+        "dimension": 33.318035796236806,
+        "children": [
+          {
+            "id": "e61f4e7dd7003701",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/automation/fastlane.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -100,7 +152,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "MVVM",
+                "query": "ProcessInfo",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -137,7 +189,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/swift/short_hands.md",
+                "file": "ios/automation/release.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -154,7 +206,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/swift/short_hands.md",
+                "file": "ios/automation/release.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -177,7 +229,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/swift/short_hands.md"
+                "file": "ios/automation/release.md"
               }
             }
           }
@@ -198,17 +250,36 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1ebc2233b0fedf84",
+  "active": "1b3410247b603191",
   "lastOpenFiles": [
-    "ios/xcode/runtime_errors.md",
-    "os/linux/raspberry_pi.md",
-    "ios/xcode/build_errors.md",
-    "ios/lifecycle/MVVM.md",
+    "ios/test/test.md",
+    "ios/automation/release.md",
+    "ios/xcode/command_line.md",
+    "ios/automation/fastlane.md",
+    "ios/automation/gitlab_ci_yml.md",
+    "ios/config/app_environment.md",
+    "assets/obsidian.jpg",
+    "assets/app_environment_variable.png",
+    "ios/config/security.md",
+    "ios/automation/github_actions.md",
+    "ios/automation/ci_cd.md",
+    "ios/automation/ios_ci_cd.md",
+    "ios/swift/arrays.md",
+    "ios/lifecycle/arc.md",
     "ios/ui/auto_layout.md",
-    "tools/terminal/directory.md",
-    "ios/lifecycle/dark_mode.md",
-    "ios/ui/uitableview.md",
-    "ios/rxSwift/threads.md",
-    "ios/config/danger.md"
+    "ios/Canvas.canvas",
+    "ios/README_iOS.md",
+    "ios/config/README_config.md",
+    "ios/config/linking.md",
+    "ios/config/provisioning.md",
+    "ios/config/swift_lint.md",
+    "ios/config/string_segregation.md",
+    "ios/config/ats_plist.md",
+    "ios/config/developer_account.md",
+    "ios/config/danger.md",
+    "ios/config/certificate.md",
+    "ios/config/dSYM.md",
+    "ios/config/jailbreak.md",
+    "ios/test/XCTest.md"
   ]
 }

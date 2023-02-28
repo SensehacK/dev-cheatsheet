@@ -50,6 +50,29 @@ print(dynamicRecordFields)
 ```
 
 
+## Checking conditions in Map
+
+If you want to check specific condition in an array with short hand - higher order functions you could utilize `allSatisfy` condition to check a specific predicate in all the elements of an array.
+
+```swift
+struct Feature { 
+	let showView: Bool
+	let showNotification: Bool
+	let name: String			   
+}
+let features: [Feature] = [
+	Feature(showView: true  , showNotification: false , name: "Kay"),
+	Feature(showView: true  , showNotification: true , name: "Nay"),
+	Feature(showView: true  , showNotification: false , name: "Say")
+]
+
+let featureShowViewSatisfy = features
+								.map(\.showView)
+								.allSatisfy{ $0 == true }
+
+print(featureShowViewSatisfy) // prints true Bool
+myCustomView.isVisible = featureShowViewSatisfy
+```
 
 ## Note
 
