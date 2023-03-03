@@ -12,3 +12,4 @@
 
 [[key_shortcuts]]
 
+[ADB_devices](ADB_devices.md)

@@ -45,7 +45,7 @@ sessionNotExpired
 ## Navigation Context
 
 You can check the difference between these two options we have for mapping NavigationContext to present them in the same Rx chain. 
-Some of the code refers to the [rxSwift extensions](ios/rxSwift/extensions.md) file 
+Some of the code refers to the [rxSwift extensions](rx_extensions.md) file 
 
 1st example
 Old:

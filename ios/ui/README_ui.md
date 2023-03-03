@@ -15,7 +15,7 @@
 
 [[gesture_recognizer]]
 
-[[dev_cheatsheet/ios/ui/keyboard]]
+[[keyboard]]
 
 [[navigation_controller]]
 
@@ -23,7 +23,7 @@
 
 [[transitions]]
 
-[[ui_imagepicker]]
+[[uiImagePicker]]
 
 [[uibutton]]
 
@@ -44,3 +44,9 @@
 [[uitableviewcell]]
 
 [[uiview]]
+
+[[uiAppearance]]
+
+[uiViewController](uiViewController.md)
+
+[uiPageController](uiPageController.md)

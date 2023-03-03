@@ -18,6 +18,30 @@ Annotated Tags
 
 The -m specifies the comment or description for the tag.
 
+
+## Fetch Tags
+
+> git fetch --all --tags
+
+
+
+
+## Checkout Tag
+
+
+Checkout specific tag 
+
+> git checkout tags/6.2.0-rc1-ga -b 6.2.0-branch
+
+
+## Checking HEAD Tag logs
+
+> git log --oneline --graph
+
+Make sure the head branch and previous commits have tag in the head just to double confirm.
+
+
+
 ## Combining Release
 
 ## Deleting Tags
@@ -46,3 +70,5 @@ We need to push tags from local to remote repo, where “v1.5” is tag name.
 ## Resources
 
 [SO](https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository)
+
+https://devconnected.com/how-to-checkout-git-tags/

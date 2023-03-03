@@ -79,20 +79,7 @@ Or use pipeline with external tool called `xcpretty`
 
 [CLI arguments](https://rderik.com/blog/command-line-argument-parsing-using-swift-package-manager-s/)
 
-## Environment Variables
-
-Setting environment variables on the project and reading from them via Xcode.
-
-### Setting variables
-```export TEST_RUNNER_QAENV=EnvironmentQA1```
-
-[xcode build Env variables](https://stackoverflow.com/questions/40722756/passing-arguments-to-ios-tests-with-xcodebuild)
-
-### Removing Environment variable
-
-`unset variablename` 
-
-https://www.cloudbooklet.com/how-to-set-list-and-remove-environment-variables-in-linux/
+[environment_Variables](environment_Variables.md)
 
 ## Resources
 

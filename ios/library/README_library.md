@@ -25,5 +25,9 @@
 
 [[wildcard_checks]]
 
+[functional_programming](functional_programming.md)
 
+[[framework]]
+
+[codable](codable.md)
 

@@ -1,22 +1,23 @@
 
+```swift
 sessionState
-            .rx
-            .user
-            .distinctUntilChanged(at: \.?.uniqueId)
-            .unwrap()
+	.rx
+	.user
+	.distinctUntilChanged(at: \.?.uniqueId)
+	.unwrap()
+```
 vs 
+```swift
 sessionState
-            .rx
-            .user
-            .unwrap()
-            .distinctUntilChanged(at: \.?.uniqueId)
-
-
+	.rx
+	.user
+	.unwrap()
+	.distinctUntilChanged(at: \.?.uniqueId)
+```
 
 Before 													After
 
 non nil object = unique_id							 	
-
 
 Initial app launch
 

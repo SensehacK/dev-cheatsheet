@@ -2,7 +2,7 @@
 
 [[crash]]
 
-[[ios/test/error_handling]]
+[[test/error_handling]]
 
 [[error_state]]
 
@@ -12,5 +12,10 @@
 
 [[parametrized_unit_tests]]
 
-
 [[stubs]]
+
+[[XCTest]]
+
+[names](names.md)
+
+[test](test.md)

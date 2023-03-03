@@ -6,16 +6,16 @@
       {
         "id": "da25f9ac63e120a4",
         "type": "tabs",
-        "dimension": 23.77237264800367,
+        "dimension": 22.42722427224272,
         "children": [
           {
-            "id": "537e284dcacfe6c0",
+            "id": "0ac6c734dbb06d4e",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/automation/gitlab_ci_yml.md",
+                "file": "ios/lifecycle/README_lifecycle.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -24,13 +24,13 @@
             }
           },
           {
-            "id": "d7a05842b2a29c7f",
+            "id": "37f1a60350f92edb",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/test/test.md",
+                "file": "ios/ui/README_ui.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -39,12 +39,12 @@
             }
           },
           {
-            "id": "1b3410247b603191",
+            "id": "f49e02e7fedb02d1",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/automation/release.md",
+                "file": "tools/browsers/developer_network.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -57,19 +57,16 @@
       {
         "id": "0476a0f3177027a7",
         "type": "tabs",
-        "dimension": 42.909591555759526,
+        "dimension": 44.239442394423946,
         "children": [
           {
             "id": "0fa0de34466a5035",
             "type": "leaf",
+            "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/config/ats_plist.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
+              "type": "graph",
+              "state": {},
+              "pinned": true
             }
           },
           {
@@ -88,17 +85,12 @@
             }
           },
           {
-            "id": "b1c6cb2910bba38e",
+            "id": "c3157481cb45ea69",
             "type": "leaf",
             "pinned": true,
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/xcode/command_line.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
+              "type": "graph",
+              "state": {},
               "pinned": true
             }
           }
@@ -108,22 +100,64 @@
       {
         "id": "f0f9c7df17c75538",
         "type": "tabs",
-        "dimension": 33.318035796236806,
+        "dimension": 33.33333333333333,
         "children": [
           {
             "id": "e61f4e7dd7003701",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/automation/fastlane.md",
+                "file": "ios/swift/keypaths.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "669eb96371727ccd",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/config/README_config.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "8d70bac17eecdb3a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/config/README_config.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b69cdfe545b06ea7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/architecture/README_architecture.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -152,7 +186,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ProcessInfo",
+                "query": ".allSa",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -189,7 +223,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/automation/release.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -206,7 +239,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/automation/release.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -228,9 +260,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "ios/automation/release.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -250,36 +280,38 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1b3410247b603191",
+  "active": "c3157481cb45ea69",
   "lastOpenFiles": [
+    "tools/browsers/developer_network.md",
+    "os/architecture/README_architecture.md",
+    "os/architecture/design_patterns.md",
+    "os/architecture/concurrency.md",
+    "os/architecture/architecture.md",
+    "os/README_os.md",
+    "os/androidTV/ADB_devices.md",
+    "tools/browsers/README_browsers.md",
+    "ios/library/codable.md",
+    "ios/library/README_library.md",
+    "ios/ui/README_ui.md",
+    "ios/lifecycle/README_lifecycle.md",
+    "ios/rxSwift/README_rxSwift.md",
+    "ios/xcode/README_xcode.md",
+    "os/linux/README_linux.md",
+    "ios/swift/property_wrapper.md",
+    "os/linux/retro_pie.md",
+    "ios/swift/README_swift.md",
+    "tools/utility/README_utility.md",
+    "tools/utility/qbittorrent.md",
+    "ios/lifecycle/inheritance.md",
+    "ios/config/developer_account.md",
+    "ios/config/app_store _connect.md",
+    "ios/config/README_config.md",
     "ios/test/test.md",
-    "ios/automation/release.md",
-    "ios/xcode/command_line.md",
-    "ios/automation/fastlane.md",
-    "ios/automation/gitlab_ci_yml.md",
-    "ios/config/app_environment.md",
+    "ios/test/README_test.md",
+    "ios/swift/collections_cheatsheet.webp",
+    "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",
     "assets/app_environment_variable.png",
-    "ios/config/security.md",
-    "ios/automation/github_actions.md",
-    "ios/automation/ci_cd.md",
-    "ios/automation/ios_ci_cd.md",
-    "ios/swift/arrays.md",
-    "ios/lifecycle/arc.md",
-    "ios/ui/auto_layout.md",
-    "ios/Canvas.canvas",
-    "ios/README_iOS.md",
-    "ios/config/README_config.md",
-    "ios/config/linking.md",
-    "ios/config/provisioning.md",
-    "ios/config/swift_lint.md",
-    "ios/config/string_segregation.md",
-    "ios/config/ats_plist.md",
-    "ios/config/developer_account.md",
-    "ios/config/danger.md",
-    "ios/config/certificate.md",
-    "ios/config/dSYM.md",
-    "ios/config/jailbreak.md",
-    "ios/test/XCTest.md"
+    "ios/Canvas.canvas"
   ]
 }

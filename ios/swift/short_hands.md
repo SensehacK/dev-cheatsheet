@@ -1,20 +1,25 @@
 # ShortHands
 
-It is always easier to forget which shorthands are available and sometimes you need a refresher in terms of an example with input and output.
-
+It is always easier to forget which shorthands | higher order functions are available and sometimes you need a refresher in terms of an example with input and output.
 
 ## Map
 
-
-
+RxSwift Map
+[map](map.md)
 ## FlatMap
 
+RxSwift FlatMap
+[flatMap](flatMap.md)
 
 ## CompactMap
 
 Removes the nil values when working with sequence variables.
 
-
+```swift
+let optionalArr = [1, nil, 3, 4, 6, nil, nil, 42]
+let nonEmptyArr = arr.compactMap()
+print(nonEmptyArr) // 1,3,4,6,42
+```
 
 
 ## Filter
@@ -73,6 +78,16 @@ let featureShowViewSatisfy = features
 print(featureShowViewSatisfy) // prints true Bool
 myCustomView.isVisible = featureShowViewSatisfy
 ```
+
+
+## Collection Cheat sheet
+
+![](collections_cheatsheet.webp)
+
+## KeyPaths in higher order functions
+
+[keypaths](keypaths.md)
+
 
 ## Note
 

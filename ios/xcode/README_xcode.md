@@ -19,6 +19,11 @@
 
 [[playgrounds]]
 
+[instruments](instruments.md)
+
+[runtime_errors](runtime_errors.md)
+
+
 
 [[resign_cli]]
 
@@ -31,5 +36,7 @@
 [[target_scheme]]
 
 [[wireless_deploy]]
+
+[upgrade](upgrade.md)
 
 [[xcode_merge]]

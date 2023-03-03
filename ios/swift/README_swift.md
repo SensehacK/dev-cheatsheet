@@ -9,32 +9,50 @@ As sometimes, we would have limited internet access or restrictive data download
 ## List
 
 [[arrays]]
+
 [[associated_types]]
+
 [[attribute]]
+
 [[closure]]
+
 [[completion_handlers]]
+
 [[data_structure]]
+
 [[dictionary]]
+
 [[executables]]
+
 [[functions]]
+
 [[generics]]
+
 [[keypaths]]
+
 [[numbers]]
+
 [[optimization]]
+
 [[optionals]]
+
+[property_wrapper](property_wrapper.md)
+
 [[random]]
 
 [[safe_programming]]
+
 [[short_hands]]
 
 [[switch]]
 
-[[ios/swift/string]]
-[[ios/swift/ternary]]
+[[enum]]
+
 [[type_casting]]
 
+[[ternary]]
 
-
+[[string]]
 
 
 

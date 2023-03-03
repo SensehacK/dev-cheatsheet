@@ -16,7 +16,7 @@
 
 [[autoComplete]]
 
-[[best_practices]]
+[[rx_best_practices]]
 
 [[bind_vs_subscribe]]
 
@@ -28,23 +28,23 @@
 
 [[conversionRxObservableConcrete]]
 
-[[ios/rxSwift/documentation]]
+[[rxSwift/documentation]]
 
 [[doubts]]
 
-[[ios/rxSwift/extensions]]
+[[rx_extensions]]
 
 [[flatMap]]
 
 [[map]]
 
-[[ios/rxSwift/merge]]
+[[merge]]
 
 [[playground]]
 
 [[prerequisites]]
 
-[[reactive_extension]]
+[share](share.md)
 
 [[relays]]
 
@@ -54,6 +54,28 @@
 
 [[side_effects]]
 
-[[ios/rxSwift/timeline]]
+[[rxSwift/timeline]]
 
 [[subscription_chain_not_firing]]
+
+[[rxSwift/error_handling]]
+
+[rx_tests](rx_tests.md)
+
+[[distinct]]
+
+[combination](combination.md)
+
+[timer](ios/rxSwift/timer.md)
+
+[subscribe](subscribe.md)
+
+[tableView](tableView.md)
+
+[pain_points](pain_points.md)
+
+## Issues
+
+[segmentation_fault](segmentation_fault.md)
+
+[subscription_chain_not_firing](subscription_chain_not_firing.md)

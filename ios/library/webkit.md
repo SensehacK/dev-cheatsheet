@@ -57,3 +57,28 @@ func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
 ```
 
 https://stackoverflow.com/questions/45448443/swift-3-check-if-wkwebview-has-loaded-page
+
+
+
+## Clear Cache 
+
+Swift 5 snippet
+
+
+```swift
+WKWebsiteDataStore
+.default()
+.removeData(ofTypes: [WKWebsiteDataTypeDiskCache,
+					  WKWebsiteDataTypeMemoryCache], 
+					  modifiedSince: Date(timeIntervalSince1970:0),
+					  completionHandler:{ })
+```
+
+[Documentation URL](https://developer.apple.com/documentation/webkit/wkwebsitedatastore/1532938-removedata)
+
+https://stackoverflow.com/questions/27105094/how-to-remove-cache-in-wkwebview
+
+## WKWebView Tips
+
+
+https://github.com/ShingoFukuyama/WKWebViewTips
