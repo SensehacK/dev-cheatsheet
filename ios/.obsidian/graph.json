@@ -1,0 +1,51 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": false,
+  "colorGroups": [
+    {
+      "query": "rxSwift",
+      "color": {
+        "a": 1,
+        "rgb": 14701138
+      }
+    },
+    {
+      "query": "xcode",
+      "color": {
+        "a": 1,
+        "rgb": 5402336
+      }
+    },
+    {
+      "query": "UI",
+      "color": {
+        "a": 1,
+        "rgb": 11657298
+      }
+    },
+    {
+      "query": "architecture",
+      "color": {
+        "a": 1,
+        "rgb": 5431454
+      }
+    }
+  ],
+  "collapse-display": false,
+  "showArrow": false,
+  "textFadeMultiplier": -2.3,
+  "nodeSizeMultiplier": 0.945377604166667,
+  "lineSizeMultiplier": 0.6455078125,
+  "collapse-forces": false,
+  "centerStrength": 0.386067708333333,
+  "repelStrength": 11.865234375,
+  "linkStrength": 0.4921875,
+  "linkDistance": 155,
+  "scale": 0.6466985638835132,
+  "close": false
+}

@@ -1,0 +1,279 @@
+{
+  "main": {
+    "id": "803bac3d595cb284",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d9e76327de4c4a1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "322ed3ec0e14017a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "rxSwift/README_rxSwift.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "9515fa42fade3885",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "library/README_library.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "1ac2b9ec61351b9d",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "lifecycle/README_lifecycle.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "70b7f57623b42c76",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "swift/README_swift.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "55f69868a3031053",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ui/README_ui.md",
+                "mode": "source",
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "6c9d34da5b326e01",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "config/README_config.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d171c7ea0749d3e7",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "config/security.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cd1e83a134843ea3",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0745fefb67378a7b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "config/jailbreak.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b7ada91a1732fc82",
+    "type": "split",
+    "children": [
+      {
+        "id": "7a271543059fd20e",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f4d07c48a6254dd0",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "cb4d990ab1e72d12",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "04388def82735d41",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "ba04e746ac24756e",
+    "type": "split",
+    "children": [
+      {
+        "id": "d52a0639c1358729",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "61a575023b241879",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "rxSwift/README_rxSwift.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "af8ae29223b435a2",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "rxSwift/README_rxSwift.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "7027efe73faedb60",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "a6094d62c21a73ea",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "rxSwift/README_rxSwift.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "322ed3ec0e14017a",
+  "lastOpenFiles": [
+    "rxSwift/rx_extensions.md",
+    "config/security.md",
+    "config/jailbreak.md",
+    "config/README_config.md",
+    "ui/README_ui.md",
+    "test/README_test.md",
+    "test/XCTest.md",
+    "ui/uiAppearance.md",
+    "lifecycle/README_lifecycle.md",
+    "lifecycle/dark_mode.md",
+    "swift/README_swift.md",
+    "swift/enum.md",
+    "rxSwift/README_rxSwift.md",
+    "rxSwift/error_handling.md",
+    "swift/string.md",
+    "lifecycle/extensions.md",
+    "rxSwift/distinct.md",
+    "ios/lifecycle/timer.md",
+    "ios/lifecycle",
+    "lifecycle/state_architecture.md",
+    "rxSwift/timeline.md",
+    "ios/rxSwift/timeline.md",
+    "ios/rxSwift",
+    "ios",
+    "library/README_library.md",
+    "library/framework.md",
+    "rxSwift/combination.md"
+  ]
+}
