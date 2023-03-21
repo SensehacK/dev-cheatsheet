@@ -100,6 +100,38 @@ func test_whenSuccessEventIsReceived_And_ResponseBodyIsAnAuthenticationObject_th
 
 ```
 
+
+
+```swift
+// MARK: - RxTest Helpers
+
+public struct Fail {
+    @discardableResult
+    public init(message: String = "", file: StaticString = #filePath, line: UInt = #line) {
+        XCTFail(message, file: file, line: line)
+    }
+}
+
+public struct Assert<TestValueType> {
+    private let testValue: TestValueType
+    public init(_ testValue: TestValueType) {
+        self.testValue = testValue
+    }
+}
+
+public extension Assert {
+
+    func isEqual<T>(to expression: @autoclosure () throws -> [T], message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) where TestValueType == [Recorded<Event<T>>], T: Equatable {
+        guard let comparator = try? expression() else {
+            Fail(message: message(), file: file, line: line)
+            return
+        }
+        XCTAssertRecordedElements(testValue, comparator, file: file, line: line)
+    }
+    
+}
+```
+
 ## Scheduler 
 
 Timing tests
