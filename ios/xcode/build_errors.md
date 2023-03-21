@@ -125,3 +125,11 @@ error: unexpected input file: /Users/ksave/Projects/Project-iOS/RELEASE
 
 Command CompileSwiftSources failed with a nonzero exit code
 By removing that flag it was able to compile again but I can change the Swift Compiler mode according to this thread on [SO](https://stackoverflow.com/questions/68801998/remark-incremental-compilation-has-been-disabled-it-is-not-compatible-with-who)
+
+
+
+ ## debugserver is x86_64 binary running in translation, attached failed
+ 
+ Faced it in Xcode Playgrounds, turns out it was a translation issue related to Rosetta 2 emulation being checked by default. Disabling that using `Xcode.app` -> Get Info. Unchecking `Open using Rosetta`
+
+https://stackoverflow.com/questions/72796354/debugserver-is-x86-64-binary-running-in-translation-attached-failed-could-not

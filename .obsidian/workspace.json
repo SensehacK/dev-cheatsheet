@@ -6,7 +6,7 @@
       {
         "id": "da25f9ac63e120a4",
         "type": "tabs",
-        "dimension": 22.42722427224272,
+        "dimension": 71.04743083003953,
         "children": [
           {
             "id": "0ac6c734dbb06d4e",
@@ -39,12 +39,12 @@
             }
           },
           {
-            "id": "f49e02e7fedb02d1",
+            "id": "8ed0b5561bdaaab2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/browsers/developer_network.md",
+                "file": "ios/swift/enum.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -55,52 +55,9 @@
         "currentTab": 2
       },
       {
-        "id": "0476a0f3177027a7",
-        "type": "tabs",
-        "dimension": 44.239442394423946,
-        "children": [
-          {
-            "id": "0fa0de34466a5035",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true
-            }
-          },
-          {
-            "id": "673f528c92da414a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/config/security.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "c3157481cb45ea69",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "graph",
-              "state": {},
-              "pinned": true
-            }
-          }
-        ],
-        "currentTab": 2
-      },
-      {
         "id": "f0f9c7df17c75538",
         "type": "tabs",
-        "dimension": 33.33333333333333,
+        "dimension": 28.952569169960476,
         "children": [
           {
             "id": "e61f4e7dd7003701",
@@ -149,7 +106,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/architecture/README_architecture.md",
+                "file": "tools/git/tag.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -186,7 +143,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": ".allSa",
+                "query": "update plex",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -203,11 +160,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 235
+    "width": 200
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -223,6 +181,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "ios/swift/enum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -239,6 +198,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "ios/swift/enum.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -260,7 +220,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "ios/swift/enum.md"
+              }
             }
           }
         ]
@@ -280,34 +242,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "c3157481cb45ea69",
+  "active": "8ed0b5561bdaaab2",
   "lastOpenFiles": [
-    "tools/browsers/developer_network.md",
+    "ios/config/xcconfig.md",
+    "os/linux/raspberry_pi.md",
+    "ios/ui/date_picker.md",
+    "ios/xcode/target_scheme.md",
+    "ios/xcode/spm.md",
+    "ios/xcode/simulator.md",
+    "ios/xcode/README_xcode.md",
+    "ios/xcode/resign_cli.md",
+    "ios/xcode/instruments.md",
+    "ios/xcode/debug.md",
+    "ios/lifecycle/README_lifecycle.md",
+    "ios/ui/README_ui.md",
+    "ios/test/stubs.md",
+    "ios/test/mock.md",
+    "ios/automation/auto_tagging.md",
+    "tools/git/tag.md",
+    "misc/logic/logic_gates.md",
     "os/architecture/README_architecture.md",
+    "ios/config/security.md",
+    "tools/browsers/developer_network.md",
     "os/architecture/design_patterns.md",
     "os/architecture/concurrency.md",
     "os/architecture/architecture.md",
     "os/README_os.md",
     "os/androidTV/ADB_devices.md",
     "tools/browsers/README_browsers.md",
-    "ios/library/codable.md",
-    "ios/library/README_library.md",
-    "ios/ui/README_ui.md",
-    "ios/lifecycle/README_lifecycle.md",
-    "ios/rxSwift/README_rxSwift.md",
-    "ios/xcode/README_xcode.md",
-    "os/linux/README_linux.md",
-    "ios/swift/property_wrapper.md",
-    "os/linux/retro_pie.md",
-    "ios/swift/README_swift.md",
-    "tools/utility/README_utility.md",
-    "tools/utility/qbittorrent.md",
-    "ios/lifecycle/inheritance.md",
-    "ios/config/developer_account.md",
-    "ios/config/app_store _connect.md",
-    "ios/config/README_config.md",
-    "ios/test/test.md",
-    "ios/test/README_test.md",
     "ios/swift/collections_cheatsheet.webp",
     "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",

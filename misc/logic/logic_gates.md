@@ -1,6 +1,9 @@
 # Logic Gates
 
 Normal logic behind the gates.
+Where 
+1 = TRUE | True | true
+0 = FALSE | False | false
 
 ## OR
 

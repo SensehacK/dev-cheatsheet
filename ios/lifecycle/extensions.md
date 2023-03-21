@@ -85,3 +85,31 @@ class GradientView: UIView {
 ```
 
 The func `layoutSubviews()` in my opinion would appropriately deal with framing when the UI is in the process of laying out subviews. Which would be when the user is changing orientation on its physical devices.
+
+
+## Limiting conformance
+
+I need to understand the difference between `: Type` & `== Type`
+Would have to check some articles around protocol conformance or extension conformance. I know that one is a protocol type and one is element reference check or something which is more expensive on CPU.
+
+`: Type` 
+```swift
+extension Assert where TestValueType: Collection {
+    public func isEmpty(message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) {
+
+        XCTAssertTrue(testValue.isEmpty, message(), file: file, line: line)
+
+    }
+}
+```
+
+`== Type`
+```swift
+extension Assert where TestValueType == Array<Any> {
+    public func isEmpty(message: @autoclosure () -> String = "", file: StaticString = #filePath, line: UInt = #line) {
+
+        XCTAssertTrue(testValue.isEmpty, message(), file: file, line: line)
+
+    }
+}
+```

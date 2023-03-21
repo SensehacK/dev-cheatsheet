@@ -27,3 +27,8 @@ public struct AutoLayout<T: UIView> {
 	}
 }
 ```
+
+
+## links
+
+https://www.toptal.com/swift/wrappers-swift-properties

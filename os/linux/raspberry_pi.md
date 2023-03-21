@@ -36,6 +36,18 @@ Check status
 
 > sudo service plexmediaserver status
 
+Update plex on Debian
+
+```bash
+sudo apt list --upgradable plexmediaserver
+```
+
+
+```bash
+sudo apt upgrade plexmediaserver -y
+```
+
+https://ownyourstreaming.com/server/update-plex-on-rpi
 
 ### Permission Plex Users Groups
 

@@ -83,7 +83,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "config/README_config.md",
+                "file": "xcode/build_errors.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "96ae59c4463bbbfc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "swift/enum.md",
                 "mode": "source",
                 "source": false
               }
@@ -101,7 +113,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 6
       },
       {
         "id": "cd1e83a134843ea3",
@@ -113,7 +126,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "config/jailbreak.md",
+                "file": "ui/uiPageController.md",
                 "mode": "source",
                 "source": false
               }
@@ -148,8 +161,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
-                "matchingCase": false,
+                "query": "xcconfig",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -185,7 +198,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "rxSwift/README_rxSwift.md",
+                "file": "swift/enum.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -202,7 +215,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "rxSwift/README_rxSwift.md",
+                "file": "swift/enum.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -225,7 +238,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "rxSwift/README_rxSwift.md"
+                "file": "swift/enum.md"
               }
             }
           }
@@ -246,11 +259,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "322ed3ec0e14017a",
+  "active": "96ae59c4463bbbfc",
   "lastOpenFiles": [
+    "config/Xcconfig.md",
+    "xcode/build_errors.md",
+    "library/codable.md",
+    "ui/uiPageController.md",
+    "config/jailbreak.md",
+    "swift/property_wrapper.md",
+    "test/mocks.md",
+    "rxSwift/README_rxSwift.md",
+    "test/test.md",
     "rxSwift/rx_extensions.md",
     "config/security.md",
-    "config/jailbreak.md",
     "config/README_config.md",
     "ui/README_ui.md",
     "test/README_test.md",
@@ -260,7 +281,6 @@
     "lifecycle/dark_mode.md",
     "swift/README_swift.md",
     "swift/enum.md",
-    "rxSwift/README_rxSwift.md",
     "rxSwift/error_handling.md",
     "swift/string.md",
     "lifecycle/extensions.md",
@@ -268,12 +288,7 @@
     "ios/lifecycle/timer.md",
     "ios/lifecycle",
     "lifecycle/state_architecture.md",
-    "rxSwift/timeline.md",
-    "ios/rxSwift/timeline.md",
     "ios/rxSwift",
-    "ios",
-    "library/README_library.md",
-    "library/framework.md",
-    "rxSwift/combination.md"
+    "ios"
   ]
 }

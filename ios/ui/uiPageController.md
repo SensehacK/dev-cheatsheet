@@ -27,6 +27,32 @@ so configuring the page controller with the view controllers that it’s in char
 ```
 
 
+
+
+## NS Internal InconsistencyException
+
+```error
+pageViewController setViewControllers crashes with "Invalid parameter not satisfying: [views count] == 3
+```
+
+This happens only when the code block isn't being called upon from Main thread or higher `.qos` for asynchronous code path execution.
+
+https://stackoverflow.com/questions/24000712/pageviewcontroller-setviewcontrollers-crashes-with-invalid-parameter-not-satisf
+
+The solution according to the Stack Overflow thread is to make sure utilze GCD tools in order to switch the thread back to main thread for UI work.
+dispatch_async on the main queue
+
+```objC
+dispatch_async(dispatch_get_main_queue(), ^ {  });
+```
+
+```swift
+DispatchQueue.main.async { 
+	self.pageViewController?.setViewControllers()
+}
+```
+
+
 ## Resources
 
 https://www.youtube.com/watch?v=hIMRn_LdvOg
