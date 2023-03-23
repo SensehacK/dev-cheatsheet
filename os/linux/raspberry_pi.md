@@ -193,3 +193,28 @@ https://www.makeuseof.com/tag/install-operating-system-raspberry-pi/
 
 
 https://raspberrytips.com/raspberry-pi-commands/
+
+
+
+## RetroPie
+
+
+Bootable from SSD
+Argon M2 SSD case Raspberry Pi 4
+
+
+Controllers Bluetooth pairing
+Configuration -> Bluetooth.
+
+File ROM transfers
+
+
+Wifi setup
+
+https://retropie.org.uk/docs/Wifi/
+
+
+4K Lag issue
+Flag to set it to 1080P
+
+https://retropie.org.uk/docs/Pi4/?h=config.txt#issues-using-a-4k-tv

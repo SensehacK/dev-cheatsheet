@@ -44,7 +44,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swift/enum.md",
+                "file": "os/linux/raspberry_pi.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -160,8 +160,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,7 +180,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/swift/enum.md",
+                "file": "os/linux/raspberry_pi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +197,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/swift/enum.md",
+                "file": "os/linux/raspberry_pi.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +220,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/swift/enum.md"
+                "file": "os/linux/raspberry_pi.md"
               }
             }
           }
@@ -244,6 +243,8 @@
   },
   "active": "8ed0b5561bdaaab2",
   "lastOpenFiles": [
+    "ios/lifecycle/README_lifecycle.md",
+    "ios/swift/enum.md",
     "ios/config/xcconfig.md",
     "os/linux/raspberry_pi.md",
     "ios/ui/date_picker.md",
@@ -254,7 +255,6 @@
     "ios/xcode/resign_cli.md",
     "ios/xcode/instruments.md",
     "ios/xcode/debug.md",
-    "ios/lifecycle/README_lifecycle.md",
     "ios/ui/README_ui.md",
     "ios/test/stubs.md",
     "ios/test/mock.md",
@@ -269,7 +269,6 @@
     "os/architecture/architecture.md",
     "os/README_os.md",
     "os/androidTV/ADB_devices.md",
-    "tools/browsers/README_browsers.md",
     "ios/swift/collections_cheatsheet.webp",
     "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",
