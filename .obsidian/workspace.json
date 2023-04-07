@@ -6,7 +6,7 @@
       {
         "id": "da25f9ac63e120a4",
         "type": "tabs",
-        "dimension": 71.04743083003953,
+        "dimension": 43.405114401076716,
         "children": [
           {
             "id": "0ac6c734dbb06d4e",
@@ -44,20 +44,74 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "ios/xcode/upgrade.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "809ef883d90118cc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "os/linux/raspberry_pi.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
+          },
+          {
+            "id": "d8209212301afd9b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/resign_cli.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "84de64578d3d956f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "process/code_checkout.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bd4e9dc26f601b35",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/linux/home_assistant.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 6
       },
       {
         "id": "f0f9c7df17c75538",
         "type": "tabs",
-        "dimension": 28.952569169960476,
+        "dimension": 56.594885598923284,
         "children": [
           {
             "id": "e61f4e7dd7003701",
@@ -106,7 +160,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/git/tag.md",
+                "file": "misc/logic/logic_gates.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -143,7 +197,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "update plex",
+                "query": "gates",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -160,7 +214,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -180,7 +235,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "os/linux/raspberry_pi.md",
+                "file": "misc/logic/logic_gates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -197,7 +252,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "os/linux/raspberry_pi.md",
+                "file": "misc/logic/logic_gates.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -220,7 +275,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "os/linux/raspberry_pi.md"
+                "file": "misc/logic/logic_gates.md"
               }
             }
           }
@@ -241,34 +296,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8ed0b5561bdaaab2",
+  "active": "b69cdfe545b06ea7",
   "lastOpenFiles": [
+    "os/linux/home_assistant.md",
+    "ios/swift/functions.md",
+    "ios/ui/checkbox.md",
+    "ios/ui/date_picker.md",
+    "ios/rxSwift/rx_extensions.md",
+    "ios/ui/uiImagePicker.md",
+    "tools/git/tag.md",
+    "process/Copy Files Server CLI.md",
+    "process/code_checkout.md",
+    "os/mac/Compression.md",
+    "ios/xcode/resign_cli.md",
+    "ios/rxSwift/combination.md",
+    "ios/automation/auto_tagging.md",
+    "os/windows/Kill Switch.md",
+    "os/linux/raspberry_pi.md",
+    "tools/terminal/shell_alias.md",
+    "tools/terminal/Curl.md",
+    "ios/ui/textfield.md",
+    "ios/ui/uiViewController.md",
+    "ios/lifecycle/view_controllers.md",
+    "ios/ui/navigation_controller.md",
+    "ios/config/upgrade.md",
+    "ios/xcode/upgrade.md",
     "ios/lifecycle/README_lifecycle.md",
     "ios/swift/enum.md",
     "ios/config/xcconfig.md",
-    "os/linux/raspberry_pi.md",
-    "ios/ui/date_picker.md",
-    "ios/xcode/target_scheme.md",
-    "ios/xcode/spm.md",
-    "ios/xcode/simulator.md",
-    "ios/xcode/README_xcode.md",
-    "ios/xcode/resign_cli.md",
-    "ios/xcode/instruments.md",
-    "ios/xcode/debug.md",
-    "ios/ui/README_ui.md",
-    "ios/test/stubs.md",
-    "ios/test/mock.md",
-    "ios/automation/auto_tagging.md",
-    "tools/git/tag.md",
-    "misc/logic/logic_gates.md",
-    "os/architecture/README_architecture.md",
-    "ios/config/security.md",
-    "tools/browsers/developer_network.md",
-    "os/architecture/design_patterns.md",
-    "os/architecture/concurrency.md",
-    "os/architecture/architecture.md",
-    "os/README_os.md",
-    "os/androidTV/ADB_devices.md",
     "ios/swift/collections_cheatsheet.webp",
     "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",

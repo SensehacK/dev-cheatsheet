@@ -13,3 +13,10 @@
 
 
 https://nshipster.com/method-swizzling/
+
+
+## Selector Obj C
+
+**_Unrecognized Selector Sent To Instance_**
+
+https://becodable.com/unrecognized-selector-sent-to-instance/

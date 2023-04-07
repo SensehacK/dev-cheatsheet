@@ -78,3 +78,64 @@ Nov 1st week post by [chrisleeca](https://community.home-assistant.io/u/chrislee
 
 
 
+
+
+## Xcel Smart Energy Meter
+
+
+I read through the spec and put together the proper commands to generate your own certificate.
+
+```
+openssl req -x509 -nodes -newkey ec -pkeyopt ec_paramgen_curve:prime256v1 -keyout key.pem -out cert.pem -sha256 -days 1094 -subj '/CN=MeterReaderHanClient' -addext "certificatePolicies = critical,1.3.6.1.4.1.40732.2.2" -addext "keyUsage = critical,digitalSignature"
+```
+
+This will give you `cert.pem` and `key.pem` valid for just under 3 years (which is the maximum valid length).
+
+The LFDI is the first 40 characters of the SHA256 signature.
+
+```
+openssl x509 -noout -fingerprint -SHA256 -inform pem -in cert.pem | sed -e 's/://g' -e 's/SHA256 Fingerprint=//g' | cut -c1-40
+```
+
+I added this LFDI to my devices in Xcel and the certificates worked a few seconds later.
+
+Currently have it pulling in on my Energy dashboard with:
+
+```yaml
+sensor:
+  - platform: command_line
+    unique_id: xcel_meter_power
+    name: "Smart Electric Meter Power"
+    command: "/usr/bin/curl --ciphers ECDHE-ECDSA-AES128-CCM8 --insecure --url https://192.168.1.39:8081/upt/1/mr/1/r --cert /config/c.pem --key /config/k.pem 2>&1 | grep -o '<value>.*</value>' | grep -Eo '[0-9]+'"
+    unit_of_measurement: "W"
+#    device_class: 'power'
+    scan_interval: 5
+    command_timeout: 5
+
+  - platform: command_line
+    unique_id: xcel_meter_consumption
+    name: "Smart Electric Meter Consumption"
+    command: "/usr/bin/curl --ciphers ECDHE-ECDSA-AES128-CCM8 --insecure --url https://192.168.1.39:8081/upt/1/mr/3/r --cert /config/c.pem --key /config/k.pem 2>&1 | grep -o '<value>.*</value>' | grep -Eo '[0-9]+'"
+    unit_of_measurement: "kWh"
+    value_template: "{{ value | multiply(0.001) | round(3)}}"
+#    device_class: 'energy'
+#    state_class: 'total_increasing'
+    scan_interval: 5
+    command_timeout: 5
+
+homeassistant:
+  customize:
+    sensor.smart_electric_meter_consumption:
+      device_class: energy
+      state_class: total_increasing
+    sensor.smart_electric_meter_power:
+      device_class: power
+      state_class: measurement
+```
+
+
+```bash
+curl --ciphers ECDHE-ECDSA-AES128-CCM8 --insecure -v --url https://192.168.0.80:8081/upt --cert /config/otherxcelcerts/cert.pem --key /config/otherxcelcerts/key.pem
+
+curl --ciphers ECDHE-ECDSA-AES128-CCM8 --insecure -v --url https://192.168.0.80:8081/upt --cert /config/xcelcerts/cert.pem --key /config/xcelcerts/key.pem
+```

@@ -23,6 +23,11 @@ alias gp='git push '
 
 alias clr='cat /dev/null &gt; ~/.bash\_history && history -c && exit' alias ut="uptime" \# Computer uptime alias ip="curl icanhazip.com" \# Your public IP address
 
+```bash
+curl ipinfo.io/city
+```
+
+https://askubuntu.com/questions/673910/how-to-monitor-public-ip-and-the-locationcountry-state-city-simultaneously-i
 ### NPM
 
 alias ni='npm install' alias ns='npm start' alias ibp='ionic build --prod'

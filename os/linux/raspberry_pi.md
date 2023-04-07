@@ -126,6 +126,8 @@ Solve a Limited Stack in Portainer
 https://www.benjaminrancourt.ca/how-to-solve-a-limited-stack-in-portainer/
 
 
+## Kill Switch
+
 ## Storage
 
 If your raspberry Pi always becomes full with storage you could try few of these things

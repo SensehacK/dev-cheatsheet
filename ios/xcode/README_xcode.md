@@ -37,6 +37,6 @@
 
 [[wireless_deploy]]
 
-[upgrade](upgrade.md)
+[upgrade](ios/xcode/upgrade.md)
 
 [[xcode_merge]]
