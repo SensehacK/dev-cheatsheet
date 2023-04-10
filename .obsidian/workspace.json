@@ -39,19 +39,6 @@
             }
           },
           {
-            "id": "8ed0b5561bdaaab2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/xcode/upgrade.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "809ef883d90118cc",
             "type": "leaf",
             "state": {
@@ -80,24 +67,11 @@
           {
             "id": "84de64578d3d956f",
             "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "process/code_checkout.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "bd4e9dc26f601b35",
-            "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/linux/home_assistant.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -106,69 +80,27 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       },
       {
-        "id": "f0f9c7df17c75538",
+        "id": "c1d6dd5386f9951d",
         "type": "tabs",
         "dimension": 56.594885598923284,
         "children": [
           {
-            "id": "e61f4e7dd7003701",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swift/keypaths.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "669eb96371727ccd",
+            "id": "6b29464450e567a7",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/config/README_config.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8d70bac17eecdb3a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/config/README_config.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b69cdfe545b06ea7",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "misc/logic/logic_gates.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -214,8 +146,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -235,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc/logic/logic_gates.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -252,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc/logic/logic_gates.md",
+                "file": "README.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -275,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc/logic/logic_gates.md"
+                "file": "README.md"
               }
             }
           }
@@ -296,8 +227,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b69cdfe545b06ea7",
+  "active": "6b29464450e567a7",
   "lastOpenFiles": [
+    "ios/ui/README_ui.md",
+    "ios/README_iOS.md",
+    "ios/Canvas.canvas",
+    "SUMMARY.md",
+    "README.md",
+    "ios/swift/keypaths.md",
+    "ios/rxSwift/README_rxSwift.md",
+    "ios/library/README_library.md",
+    "ios/lifecycle/README_lifecycle.md",
+    "process/code_checkout.md",
+    "netlify.toml",
+    "New Text Document.txt",
+    "ios/swift/Untitled.md",
+    "ios/config/README_config.md",
+    "misc/logic/logic_gates.md",
     "os/linux/home_assistant.md",
     "ios/swift/functions.md",
     "ios/ui/checkbox.md",
@@ -306,28 +252,14 @@
     "ios/ui/uiImagePicker.md",
     "tools/git/tag.md",
     "process/Copy Files Server CLI.md",
-    "process/code_checkout.md",
     "os/mac/Compression.md",
     "ios/xcode/resign_cli.md",
     "ios/rxSwift/combination.md",
     "ios/automation/auto_tagging.md",
     "os/windows/Kill Switch.md",
-    "os/linux/raspberry_pi.md",
-    "tools/terminal/shell_alias.md",
-    "tools/terminal/Curl.md",
-    "ios/ui/textfield.md",
-    "ios/ui/uiViewController.md",
-    "ios/lifecycle/view_controllers.md",
-    "ios/ui/navigation_controller.md",
-    "ios/config/upgrade.md",
-    "ios/xcode/upgrade.md",
-    "ios/lifecycle/README_lifecycle.md",
-    "ios/swift/enum.md",
-    "ios/config/xcconfig.md",
     "ios/swift/collections_cheatsheet.webp",
     "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",
-    "assets/app_environment_variable.png",
-    "ios/Canvas.canvas"
+    "assets/app_environment_variable.png"
   ]
 }
