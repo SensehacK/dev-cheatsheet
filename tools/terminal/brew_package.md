@@ -8,3 +8,8 @@ Great for just sharing project structures online.
 
 > tree -L 3 where -L level Descend only level directories deep with integer parameter. tree —help For getting the list of commands.
 
+
+
+### path update
+
+https://stackoverflow.com/questions/36657321/after-installing-homebrew-i-get-zsh-command-not-found-brew

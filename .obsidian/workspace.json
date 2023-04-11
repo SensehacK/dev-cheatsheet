@@ -43,7 +43,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/linux/raspberry_pi.md",
+                "file": "os/mac/fresh_install.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -79,7 +79,7 @@
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       },
       {
         "id": "0b8c9b492a892f78",
@@ -91,7 +91,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "ios/library/cocoapods.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -164,7 +164,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/ui/README_ui.md",
+                "file": "os/mac/fresh_install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +181,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/ui/README_ui.md",
+                "file": "os/mac/fresh_install.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +204,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/ui/README_ui.md"
+                "file": "os/mac/fresh_install.md"
               }
             }
           }
@@ -225,10 +225,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "37f1a60350f92edb",
+  "active": "809ef883d90118cc",
   "lastOpenFiles": [
-    "README.md",
+    "os/mac/compression.md",
     "ios/ui/README_ui.md",
+    "os/mac/New install.md",
+    "os/mac/fresh_install.md",
+    "ios/library/cocoapods.md",
+    "tools/terminal/brew_package.md",
+    "README.md",
     "misc/network/wireshark.md",
     "backend.md",
     "SUMMARY.md",
@@ -251,11 +256,6 @@
     "ios/ui/date_picker.md",
     "ios/rxSwift/rx_extensions.md",
     "ios/ui/uiImagePicker.md",
-    "tools/git/tag.md",
-    "process/Copy Files Server CLI.md",
-    "os/mac/Compression.md",
-    "ios/xcode/resign_cli.md",
-    "ios/rxSwift/combination.md",
     "ios/swift/collections_cheatsheet.webp",
     "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",

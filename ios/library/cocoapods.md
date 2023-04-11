@@ -2,6 +2,15 @@
 
 Cocoapods is a library package manager for swift, way before Swift package manager was a thing. Many swift libraries were available using cocoapods “pod file”.
 
+
+## Installation
+
+```bash
+sudo gem install activesupport -v 6.1.7.3
+
+sudo gem install cocoapods
+```
+https://guides.cocoapods.org/using/getting-started.html
 ## Errors
 
 ### Removing cocoapods generated pods and cache
