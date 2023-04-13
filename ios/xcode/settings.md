@@ -34,3 +34,7 @@ For Xcode preferences as mentioned by one of the answers, you need to copy
 
 
 [Xcode Pref locations](https://stackoverflow.com/questions/2580193/xcode-preferences-across-multiple-computers)
+
+
+Key bindings export
+https://stackoverflow.com/questions/4200735/is-there-a-way-to-export-xcode-key-bindings

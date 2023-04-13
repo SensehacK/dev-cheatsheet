@@ -40,14 +40,16 @@
           {
             "id": "809ef883d90118cc",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "ios/rxSwift/map.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -56,7 +58,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/resign_cli.md",
+                "file": "ios/lifecycle/app_delegate.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -79,7 +81,7 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "0b8c9b492a892f78",
@@ -88,17 +90,35 @@
           {
             "id": "1598669e657b4b5f",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/cocoapods.md",
+                "file": "ios/swift/short_hands.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "c80ad3e8b9d7293a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/architecture/design_patterns.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -127,7 +147,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "gates",
+                "query": "delegate",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -148,7 +168,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 245.00556182861328
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -164,7 +184,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "os/architecture/design_patterns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -181,7 +201,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "os/architecture/design_patterns.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -204,7 +224,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "os/mac/fresh_install.md"
+                "file": "os/architecture/design_patterns.md"
               }
             }
           }
@@ -225,37 +245,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "809ef883d90118cc",
+  "active": "c80ad3e8b9d7293a",
   "lastOpenFiles": [
+    "ios/swift/short_hands.md",
+    "os/architecture/design_patterns.md",
+    "ios/lifecycle/app_delegate.md",
+    "ios/lifecycle/user_notifications.md",
+    "ios/lifecycle/userNotifications.md",
+    "ios/lifecycle/User Notifications.md",
+    "ios/lifecycle/background_tasks.md",
+    "ios/lifecycle/state_architecture.md",
+    "ios/rxSwift/map.md",
+    "ios/lifecycle/dimensions.md",
+    "ios/lifecycle/MVVM.md",
+    "mobile/unity/errors.md",
+    "ios/swift/keypaths.md",
+    "ios/xcode/settings.md",
+    "ios/rxSwift/flatMap.md",
+    "ios/rxSwift/merge.md",
+    "ios/rxSwift/additional_links.md",
+    "ios/rxSwift/asObserver_vs_asObservable.md",
+    "ios/rxSwift/autoComplete.md",
+    "os/mac/fresh_install.md",
+    "ios/library/cocoapods.md",
     "os/mac/compression.md",
     "ios/ui/README_ui.md",
     "os/mac/New install.md",
-    "os/mac/fresh_install.md",
-    "ios/library/cocoapods.md",
     "tools/terminal/brew_package.md",
     "README.md",
-    "misc/network/wireshark.md",
-    "backend.md",
-    "SUMMARY.md",
-    "backend/README_backend.md",
-    "ios/README_iOS.md",
     "ios/Canvas.canvas",
-    "ios/swift/keypaths.md",
-    "ios/rxSwift/README_rxSwift.md",
-    "ios/library/README_library.md",
-    "ios/lifecycle/README_lifecycle.md",
-    "process/code_checkout.md",
     "netlify.toml",
     "New Text Document.txt",
-    "ios/swift/Untitled.md",
-    "ios/config/README_config.md",
-    "misc/logic/logic_gates.md",
-    "os/linux/home_assistant.md",
-    "ios/swift/functions.md",
-    "ios/ui/checkbox.md",
-    "ios/ui/date_picker.md",
-    "ios/rxSwift/rx_extensions.md",
-    "ios/ui/uiImagePicker.md",
     "ios/swift/collections_cheatsheet.webp",
     "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",

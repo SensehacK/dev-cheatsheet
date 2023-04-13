@@ -47,3 +47,28 @@ https://stackoverflow.com/questions/32511178/easiest-way-to-force-a-crash-in-swi
 https://medium.com/@ansujain/ios-application-life-cycle-d517a3c44e7e
 
 [SO](https://stackoverflow.com/questions/10304780/applicationdidbecomeactive-getting-called-twice)
+
+
+## Swift UI App State Reactive
+
+```swift
+struct ContentView: View {
+    @Environment(\.scenePhase) var scenePhase
+
+    var body: some View {
+        Text("Hello, world!")
+            .padding()
+            .onChange(of: scenePhase) { newPhase in
+                if newPhase == .active {
+                    print("Active")
+                } else if newPhase == .inactive {
+                    print("Inactive")
+                } else if newPhase == .background {
+                    print("Background")
+                }
+            }
+    }
+}
+```
+
+https://www.hackingwithswift.com/books/ios-swiftui/how-to-be-notified-when-your-swiftui-app-moves-to-the-background

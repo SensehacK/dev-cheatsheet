@@ -89,6 +89,7 @@ myCustomView.isVisible = featureShowViewSatisfy
 [keypaths](keypaths.md)
 
 
+
 ## Note
 
 Have added appropriate RxSwift implementations of `map, flatMap, compactMap` as well in RxSwift

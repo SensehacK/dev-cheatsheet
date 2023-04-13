@@ -19,3 +19,8 @@ let showFeatureNotifications = features
 	.map(\.showNotification)	
 
 print(showFeatureNotifications) // [false, true, false]
+```
+
+
+KVO Observing
+https://www.hackingwithswift.com/example-code/language/what-is-key-value-observing
