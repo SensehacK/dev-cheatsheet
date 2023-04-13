@@ -24,3 +24,5 @@ print(showFeatureNotifications) // [false, true, false]
 
 KVO Observing
 https://www.hackingwithswift.com/example-code/language/what-is-key-value-observing
+
+https://nalexn.github.io/kvo-guide-for-key-value-observing/

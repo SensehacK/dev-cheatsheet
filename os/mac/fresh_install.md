@@ -23,7 +23,7 @@ Dev environment
 - obsidian
 - screenshots directory location
 - cocoapods
-- finder enhancements ( file extensions, hidden files, folders on top, search current folder, disable tags, disable cloud in sidebar, default home location)
+- finder enhancements ( file extensions, [hidden_files](hidden_files.md), folders on top, search current folder, disable tags, disable cloud in sidebar, default home location)
 - spark (all emails)
 - xcode 2 more simulators
 - xcode workspace config
@@ -34,4 +34,5 @@ Dev environment
 - External displays same 
 - Monitor Control (https://github.com/MonitorControl/MonitorControl)
 - dracula theme everywhere iterm, xcode, vscode
+-  macos quirks [keyboard](os/mac/keyboard.md)
 

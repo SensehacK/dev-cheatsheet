@@ -15,7 +15,7 @@
 
 [[gesture_recognizer]]
 
-[[keyboard]]
+[[ios/ui/keyboard]]
 
 [[navigation_controller]]
 
