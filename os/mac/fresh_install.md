@@ -27,4 +27,11 @@ Dev environment
 - spark (all emails)
 - xcode 2 more simulators
 - xcode workspace config
+- disable spotlight & key
+- alfred snippets
+- Keyboard macros (Keychron Via)
+- video conferencing tools
+- External displays same 
+- Monitor Control (https://github.com/MonitorControl/MonitorControl)
+- dracula theme everywhere iterm, xcode, vscode
 
