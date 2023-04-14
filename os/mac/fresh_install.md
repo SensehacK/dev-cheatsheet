@@ -35,4 +35,4 @@ Dev environment
 - Monitor Control (https://github.com/MonitorControl/MonitorControl)
 - dracula theme everywhere iterm, xcode, vscode
 -  macos quirks [keyboard](os/mac/keyboard.md)
-
+- razer synapse not supported after mac os mojave. So use a free app called [mac mouse fix](https://mousefix.org/about/)
