@@ -42,6 +42,30 @@ If you really like auto completion for your own internal methods, this is the wa
 
 
 
+## Functions Doc example
+
+```swift
+/**
+Makes a network request using Generic type T: Codable and returns the two completioner handlers - Parsing & Result Type.
+Consuming this API is quite easy and it also gives us an option to parse the network data response in the completion handler
+- Parameter parse: Call internal parsing closure
+- Parameter completion: Return Result(success, failure) `T:Codable` value
+- Returns: Result<T? ,Error>
+- Warning: Safely unwraping of `T:Codable` is consumer's responsibility.
+	```
+	Webservice().fetch(url: url) { }
+	```
+*/
+ public func fetch<T: Codable>(url: URL,
+    completion: @escaping (Result<T?, NetworkError>) -> Void)  { }
+```
+
+This lets us specify code as well in the docs or when xcode `Build Documentation` in Product Menu bar. This nicely compiles markdown format into the `Documentation` window. Or you can use `Dash` on macOS for your quick references.
+
 ## Reference
 
 https://cocoacasts.com/organize-your-swift-project-with-annotations-todos-and-fixmes
+
+https://sarunw.com/posts/swift-documentation/
+
+https://nshipster.com/swift-documentation/
