@@ -17,12 +17,20 @@ https://www.swiftbysundell.com/basics/enums/
 
 
 
+## Indirect Enums
+
+Mostly used in Apple foundation or library frameworks in order to make references internally using enums.
+```swift
+indirect Node {
+	case node(value: Node)
+	case value(String)
+}
+```
 
 ## Unit test
 
 
 ```swift
-
 enum Security: String {
 	case faceID, touchID, password, none
 	var systemImageName: String { 
@@ -50,3 +58,6 @@ final class SecurityTypeTests: XCTestCase {
 
 }
 ```
+
+
+

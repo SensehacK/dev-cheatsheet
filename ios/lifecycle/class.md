@@ -17,3 +17,4 @@ Inheriting superclass - subclass in swift. Better explained on Apple [docs](http
 Via protocol oriented and extensions.
 
 [Article](https://www.vadimbulavin.com/multiple-inheritance-swift/)
+

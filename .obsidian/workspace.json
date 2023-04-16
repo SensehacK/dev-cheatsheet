@@ -24,106 +24,8 @@
             }
           },
           {
-            "id": "37f1a60350f92edb",
+            "id": "dc344770f7335760",
             "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/ui/README_ui.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "809ef883d90118cc",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/rxSwift/map.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "d8209212301afd9b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/lifecycle/documentation.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f62a9b2b10b10d96",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swiftUI/alert.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "361037167c16f516",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/rxSwift/subscribe.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "8cc73d01ef5f3cdb",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/combine/sink.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "b63d37660673edc9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swiftUI/list.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "84de64578d3d956f",
-            "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -131,12 +33,11 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       },
       {
         "id": "dd4a158ffe1a15b2",
@@ -144,61 +45,21 @@
         "dimension": 37.53333333333334,
         "children": [
           {
-            "id": "4c71b4193e317f9c",
+            "id": "af7f8cdce940e3ba",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/combine/assign.md",
+                "file": "ios/config/best_practices.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "pinned": true
             }
-          },
-          {
-            "id": "e8aed914e12cad63",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swiftUI/view.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "e64bc4c94b306cc1",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swiftUI/view.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "75064c46d580c330",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/combine/assign.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "vertical"
@@ -264,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/combine/assign.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -281,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/combine/assign.md",
+                "file": "README.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -304,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/combine/assign.md"
+                "file": "README.md"
               }
             }
           }
@@ -325,38 +186,39 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "75064c46d580c330",
+  "active": "dc344770f7335760",
   "lastOpenFiles": [
-    "ios/combine/sink.md",
-    "ios/combine/assign.md",
-    "ios/combine/publisher.md",
-    "ios/swiftUI/view.md",
-    "ios/swiftUI/button.md",
-    "ios/swiftUI/list.md",
-    "os/mac/fresh_install.md",
-    "ios/library/framework.md",
-    "ios/rxSwift/subscribe.md",
-    "ios/rxSwift/bind_vs_subscribe.md",
-    "ios/rxSwift/binder.md",
-    "ios/combine/anyCancellable.md",
-    "ios/combine/problem_solving.md",
-    "ios/rxSwift/disposeBag.md",
-    "ios/rxSwift/completion.md",
-    "ios/test/README_test.md",
-    "ios/combine/ReadMe_combine.md",
-    "ios/swiftUI/Readme_swiftUI.md",
-    "ios/swiftUI/alert.md",
-    "ios/lifecycle/documentation.md",
-    "ios/rxSwift/map.md",
-    "ios/swiftUI/textField.md",
-    "ios/swiftUI/Stack.md",
-    "ios/swiftUI/stack.md",
-    "ios/swiftUI/TextField.md",
-    "ios/swiftUI/lifeCycle.md",
+    "tools/vscode/workspace.md",
+    "tools/vim/README_vim.md",
+    "tools/utility/qbittorrent.md",
+    "tools/vim/modes.md",
+    "tools/terminal/terminal.md",
+    "tools/terminal/shell_alias.md",
+    "tools/terminal/process.md",
+    "tools/terminal/ionic.md",
+    "tools/terminal/curl.md",
+    "process/copy_files_server_CLI.md",
+    "os/mac/automount volumes disable.md",
+    "os/mac/codesign_app.md",
+    "os/mac/disable_gatekeeper.md",
+    "os/mac/compression.md",
+    "ios/README_iOS.md",
+    "ios/Canvas.canvas",
+    "ios/swift/type_casting.md",
+    "ios/swift/ternary.md",
+    "ios/swift/string.md",
+    "ios/swift/short_hands.md",
+    "ios/swift/safe_programming.md",
+    "ios/swift/enum.md",
+    "ios/swift/functions.md",
+    "ios/swift/executables.md",
+    "ios/swift/data_structure.md",
+    "ios/lifecycle/dark_mode.md",
+    "ios/lifecycle/dimensions.md",
+    "ios/concurrency",
     "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
     "ios/swiftUI",
     "ios/combine",
-    "ios/Canvas.canvas",
     "netlify.toml",
     "New Text Document.txt",
     "ios/swift/collections_cheatsheet.webp",

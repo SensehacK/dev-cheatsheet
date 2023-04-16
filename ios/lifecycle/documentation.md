@@ -41,7 +41,6 @@ If you really like auto completion for your own internal methods, this is the wa
 ```
 
 
-
 ## Functions Doc example
 
 ```swift

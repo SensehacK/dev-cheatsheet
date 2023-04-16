@@ -38,6 +38,14 @@ extension YourClassNameHere: WKScriptMessageHandler {
 If you have lot of protocol conformance autocomplete stubs in class declaration then don't try to subclass `NSObject` in that class' extension. `extension YourClassNameHere: NSObject`
 
 
+## Note
+
+- Swift doesn't support multiple inheritance
+- You can get around this by following POP - Protocol Oriented Programming concepts
+- Any one can conform to multiple protocols
+- Avoids `Diamond inheritance` problem by only allowing single inheritance
+
+
 ## Reference
 
 

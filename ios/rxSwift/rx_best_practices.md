@@ -2,6 +2,11 @@
 
 Listing overall learnings of RxSwift do's and don'ts for writing good reactive code which is easily discernible and succinct enough to get the job done.
 
+## Architecture
+
+
+Bla Bla Car app for RxSwift + MVVM
+https://medium.com/blablacar/rxswift-mvvm-66827b8b3f10
 
 ## Code structure
 

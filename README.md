@@ -84,31 +84,31 @@ Also always keep learning and be curious.
 
 ### Hardware
 
+- MacBook Pro 14’ 2023 : M2 Pro , 512GB SSD, 16GB RAM
+- MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
 - MacBook Pro 13’ 2015 : Core i5 , 128GB SSD, 8GB RAM
 - MacBook Pro 16' 2021 : Core i9, 1TB SSD, 32GB RAM
-- MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
 - MacBook Air 13’ 2022 : M2 , 256GB SSD, 8GB RAM
 - iPad Air 5th Gen - M1
 - One Plus 8
 ### Software
 
-OS: Mac OS Mojave 10.14.6 - macOS Ventura
+OS: Mac OS Mojave 10.14.6 - macOS Ventura 13.3.1
 
 IDE: Xcode,
 VS Code - Open Source fork
 
 Browsers: Firefox Nightly / Dev / Main Safari / Technical Preview Microsoft Edge Dev \( Chromium \)
 
-Writer: iA Writer
-Obsidian
+Writer: Obsidian, iA Writer
 
-Version Management: Git, Dropbox
+Version Management: Git
 
 Compilation: Github Pages, GitBook, Obsidian Graphs
 
 Task Manager: Things by Cultured Code
 
-Scheduler: Fantastical
+Scheduler: Fantastical, Focused Pro
 
 Documentation Reference: Dash
 

@@ -7,7 +7,7 @@
 [[brew_package]]
 [[c_language_compilation]]
 [[cli]]
-[[Curl]]
+[[curl]]
 [[customize]]
 [[directory]]
 [[exiftool]]
