@@ -19,7 +19,7 @@
 
 [[navigation_controller]]
 
-[[textfield]]
+[[ios/ui/textfield]]
 
 [[transitions]]
 

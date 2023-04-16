@@ -6,7 +6,7 @@
       {
         "id": "da25f9ac63e120a4",
         "type": "tabs",
-        "dimension": 81.34328358208955,
+        "dimension": 62.46666666666667,
         "children": [
           {
             "id": "0ac6c734dbb06d4e",
@@ -80,6 +80,32 @@
             }
           },
           {
+            "id": "627bfd9ea028ee0a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/combine/ReadMe_combine.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b63d37660673edc9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/swiftUI/list.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "84de64578d3d956f",
             "type": "leaf",
             "pinned": true,
@@ -95,12 +121,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       },
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 18.65671641791045,
+        "dimension": 37.53333333333334,
         "children": [
           {
             "id": "4c71b4193e317f9c",
@@ -108,7 +134,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/architecture/design_patterns.md",
+                "file": "ios/rxSwift/disposeBag.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -181,7 +207,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/swiftUI/alert.md",
+                "file": "ios/swiftUI/list.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -198,7 +224,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/swiftUI/alert.md",
+                "file": "ios/swiftUI/list.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -221,7 +247,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/swiftUI/alert.md"
+                "file": "ios/swiftUI/list.md"
               }
             }
           }
@@ -242,13 +268,26 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "f62a9b2b10b10d96",
+  "active": "b63d37660673edc9",
   "lastOpenFiles": [
-    "ios/lifecycle/documentation.md",
+    "ios/combine/anyCancellable.md",
+    "ios/swiftUI/textField.md",
+    "ios/swiftUI/Stack.md",
+    "ios/swiftUI/stack.md",
+    "ios/swiftUI/list.md",
+    "ios/swiftUI/TextField.md",
+    "ios/swiftUI/lifeCycle.md",
+    "ios/swiftUI/view.md",
+    "ios/combine/AnyCancellable.md",
+    "ios/rxSwift/disposeBag.md",
+    "os/architecture/design_patterns.md",
+    "ios/combine/ReadMe_combine.md",
     "ios/swiftUI/alert.md",
+    "ios/swiftUI/View.md",
+    "ios/swiftUI/List.md",
+    "ios/lifecycle/documentation.md",
     "ios/rxSwift/documentation.md",
     "ios/swiftUI/identifiable.md",
-    "os/architecture/design_patterns.md",
     "os/architecture/system_designs.md",
     "os/mac/fresh_install.md",
     "README.md",
@@ -257,19 +296,6 @@
     "tools/terminal/result_from_CLI.md",
     "tools/terminal/save the result from CLI command.md",
     "tools/terminal/process.md",
-    "ios/lifecycle/segues.md",
-    "ios/lifecycle/state_architecture.md",
-    "ios/lifecycle/rtl_alignment_support.md",
-    "ios/lifecycle/retain_cycle.md",
-    "ios/lifecycle/network_calls.md",
-    "ios/lifecycle/MVVM.md",
-    "ios/lifecycle/logging.md",
-    "ios/lifecycle/localization.md",
-    "ios/combine/problem_solving.md",
-    "ios/combine/ReadMe_combine.md",
-    "ios/rxSwift/side_effects.md",
-    "ios/rxSwift/rx_tests.md",
-    "ios/rxSwift/rx_extensions.md",
     "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
     "ios/swiftUI",
     "ios/combine",
