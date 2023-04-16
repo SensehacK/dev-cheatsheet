@@ -22,22 +22,8 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "dc344770f7335760",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SUMMARY.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       },
       {
         "id": "dd4a158ffe1a15b2",
@@ -45,13 +31,28 @@
         "dimension": 37.53333333333334,
         "children": [
           {
-            "id": "af7f8cdce940e3ba",
+            "id": "dc344770f7335760",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/config/best_practices.md",
+                "file": "ios/README_iOS.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "fe238297d89b12f6",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "SUMMARY.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "ios/README_iOS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "ios/README_iOS.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "ios/README_iOS.md"
               }
             }
           }
@@ -188,34 +189,34 @@
   },
   "active": "dc344770f7335760",
   "lastOpenFiles": [
-    "ios/README_iOS.md",
     "SUMMARY.md",
-    "dev_cheatsheet/README.md",
+    "ios/lifecycle/README_lifecycle.md",
+    "ios/config/best_practices.md",
+    "ios/README_iOS.md",
+    "ios/rxSwift/README_rxSwift.md",
+    "frontend/README_frontend.md",
+    "frontend/javascript/README_javascript.md",
     "README.md",
-    "dev_cheatsheet",
-    "tools/vscode/workspace.md",
-    "tools/vim/README_vim.md",
-    "tools/utility/qbittorrent.md",
-    "tools/vim/modes.md",
+    "ios/swiftUI/README_swiftUI.mdREADME_swiftUI.md",
+    "ios/swift/README_swift.md",
+    "ios/combine/ReadMe_combine.md",
+    "ios/concurrency/Readme_concurrency.md",
+    "ios/library/README_library.md",
+    "ios/automation/README_automation.md",
+    "ios/README_combine.md",
+    "tools/terminal/README_terminal.md",
+    "mobile/ionic/ionic 1.md",
+    "mobile/ionic/commands.md",
+    "tools/git/README_git.md",
+    "ios/xcode/README_xcode.md",
     "tools/terminal/terminal.md",
     "tools/terminal/shell_alias.md",
-    "tools/terminal/process.md",
-    "tools/terminal/ionic.md",
-    "tools/terminal/curl.md",
-    "process/copy_files_server_CLI.md",
-    "os/mac/automount volumes disable.md",
-    "os/mac/codesign_app.md",
-    "os/mac/disable_gatekeeper.md",
-    "os/mac/compression.md",
+    "tools/terminal/result_from_CLI.md",
+    "process/search.md",
+    "process/release.md",
+    "process/peer_review.md",
+    "dev_cheatsheet",
     "ios/Canvas.canvas",
-    "ios/swift/type_casting.md",
-    "ios/swift/ternary.md",
-    "ios/swift/string.md",
-    "ios/swift/short_hands.md",
-    "ios/swift/safe_programming.md",
-    "ios/swift/enum.md",
-    "ios/swift/functions.md",
-    "ios/swift/executables.md",
     "ios/concurrency",
     "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
     "ios/swiftUI",

@@ -1,13 +1,39 @@
 
-[Sensehack Developer Journal](README.md)
-
-
-
 ## [iOS](ios/README_iOS.md)
-[iOS Second](README_iOS.md)
-## Git
 
-## Web
+### [automation](ios/automation/README_automation.md)
+
+### [config](ios/config/README_config)
+
+### [combine](ios/combine/README_combine.md)
+
+### [concurrency](ios/concurrency/README_concurrency.md)
+
+### [library](ios/library/README_library.md)
+
+### [rxSwift](ios/rxSwift/README_rxSwift.md)
+
+### [lifecycle](ios/lifecycle/README_lifecycle.md)
+
+### [swift](ios/swift/README_swift.md)
+
+### [swiftUI](ios/swiftUI/README_swiftUI.mdREADME_swiftUI.md)
+
+### [test](ios/test/README_test.md)
+
+### [ui](ios/ui/README_ui.md)
+
+### [xcode](ios/xcode/README_xcode.md)
+
+
+## Tools
+
+### [Git](tools/git/README_git.md)
+
+### [Terminal](tools/terminal/README_terminal.md)
+
+
+## [Web](frontend/README_frontend.md)
 
 
 
@@ -40,7 +66,6 @@
 [[README_javascript]]
 
 [[README_react]]
-
 
 [[README_iOS]]
 
@@ -91,12 +116,6 @@
 [[key_shortcuts]]
 
 [[README_process]]
-
-[[release]]
-
-[[search]]
-
-[[peer_review]]
 
 [[README_tools]]
 

@@ -8,6 +8,24 @@ Different issues I have faced.
 
 Some depreciations.
 
+
+## List
+
+[[components]]
+
+[[create_new_page]]
+
+[[data_service]]
+
+[[deprecations]]
+
+[[mobile/ionic/issues]]
+
+[[learn]]
+
+[[package]]
+
+
 ## Projects
 
 Currently I have 2 repositories for learning of my IONIC Angular development with Cordova for building Hybrid Apps.
@@ -25,22 +43,6 @@ Ionic Commands: [Ionic Commands](https://github.com/SensehacK/dev-cheatsheet/tre
 Ionic Data Service: [Ionic Data Service](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/ionic/ionic_data_service.md)
 
 Ionic Deprecation: [Ionic Deprecation](https://github.com/SensehacK/dev-cheatsheet/tree/88f67add347b1607b94f5c5ac6ec7917192dddf6/ionic/ionic_deprecations.md)
-
-## List
-
-[[components]]
-
-[[create_new_page]]
-
-[[data_service]]
-
-[[deprecations]]
-
-[[mobile/ionic/issues]]
-
-[[learn]]
-
-[[package]]
 
 
 ## Tools

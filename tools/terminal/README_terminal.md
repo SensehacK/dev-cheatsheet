@@ -12,11 +12,13 @@
 [[directory]]
 [[exiftool]]
 [[ffmpeg]]
-[[ionic]]
+[[mobile/ionic/commands]]
 [[node]]
 [[power_menu]]
-
+[result_from_CLI](result_from_CLI.md)
 [[shell_alias]]
 [[terminal]]
 [[vim]]
 [[xcode]]
+[youtube_dl](youtube_dl.md)
+[process](process.md)
