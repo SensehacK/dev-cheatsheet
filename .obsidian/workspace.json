@@ -29,7 +29,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "SUMMARY.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,7 +125,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "SUMMARY.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -142,7 +142,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "SUMMARY.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -165,7 +165,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "SUMMARY.md"
               }
             }
           }
@@ -188,6 +188,11 @@
   },
   "active": "dc344770f7335760",
   "lastOpenFiles": [
+    "ios/README_iOS.md",
+    "SUMMARY.md",
+    "dev_cheatsheet/README.md",
+    "README.md",
+    "dev_cheatsheet",
     "tools/vscode/workspace.md",
     "tools/vim/README_vim.md",
     "tools/utility/qbittorrent.md",
@@ -202,7 +207,6 @@
     "os/mac/codesign_app.md",
     "os/mac/disable_gatekeeper.md",
     "os/mac/compression.md",
-    "ios/README_iOS.md",
     "ios/Canvas.canvas",
     "ios/swift/type_casting.md",
     "ios/swift/ternary.md",
@@ -212,9 +216,6 @@
     "ios/swift/enum.md",
     "ios/swift/functions.md",
     "ios/swift/executables.md",
-    "ios/swift/data_structure.md",
-    "ios/lifecycle/dark_mode.md",
-    "ios/lifecycle/dimensions.md",
     "ios/concurrency",
     "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
     "ios/swiftUI",
