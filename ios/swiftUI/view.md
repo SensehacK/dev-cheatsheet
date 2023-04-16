@@ -14,6 +14,25 @@ https://stackoverflow.com/a/72885925/5177704
 
 
 
+Importance of Spacer
+
+https://medium.com/geekculture/understanding-spacers-and-padding-in-swift-ui-e1fb5f6efa44
+
+https://www.hackingwithswift.com/quick-start/swiftui/how-to-control-spacing-around-individual-views-using-padding
+## MaxWidth
+
+
+https://designcode.io/swiftui-handbook-max-width-and-frame-alignment
+
+https://stackoverflow.com/questions/57345136/how-to-make-a-view-max-width-with-padding-in-swiftui
+
+
+## Safe Area
+
+
+https://www.hackingwithswift.com/quick-start/swiftui/how-to-inset-the-safe-area-with-custom-content
+
+
 ## Error
 
 ```

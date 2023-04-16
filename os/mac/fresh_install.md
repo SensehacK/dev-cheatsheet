@@ -12,7 +12,7 @@ Dev environment
 - rosetta install
 - zsh shell brew path
 - bartender app
-- be focused pro - tomodoro app
+- be focused pro - pomodoro app
 - github desktop
 - vscode
 - xcode app - multiple xcode app setup
@@ -36,3 +36,4 @@ Dev environment
 - dracula theme everywhere iterm, xcode, vscode
 -  macos quirks [keyboard](os/mac/keyboard.md)
 - razer synapse not supported after mac os mojave. So use a free app called [mac mouse fix](https://mousefix.org/about/)
+- mac os accessibility - zoom scroll mouse modifier
