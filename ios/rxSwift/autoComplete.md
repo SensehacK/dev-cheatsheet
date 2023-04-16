@@ -15,10 +15,10 @@ Eg.
 
 ```swift
 let (showSyncAlert, noSyncAlert) = accountRequestSubject
-            .mapToVoid()
-            .flatMap {  _ in
-                return Observable<Bool>.of(true)
-            }
+	.mapToVoid()
+	.flatMap {  _ in
+		return Observable<Bool>.of(true)
+	}
 ```
 The `showSyncAlert` & `noSyncAlert` won't be able to parse properly since it is not a tuple. So we need to assign back to just one variable `syncStatus`.
 After that we could do a `split()` which 

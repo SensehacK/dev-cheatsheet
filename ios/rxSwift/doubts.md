@@ -5,7 +5,7 @@
 
 Why convert to observable for RxCocoa UI elements
 
-```
+```swift
 // Button
 let button = closeButtonItem
             .rx

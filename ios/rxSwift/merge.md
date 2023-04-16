@@ -61,5 +61,4 @@ JERSH  4 minutes ago
 Observable
     .of(37)   // Observable<Int>
     .withLatestFrom(.of("thirty seven")) { $1 } // Observable<String>
-    
 ```

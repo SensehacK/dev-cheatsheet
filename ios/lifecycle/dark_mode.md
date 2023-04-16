@@ -4,7 +4,13 @@
 
 ## Checking User Style
 
-switch UIScreen.main.traitCollection.userInterfaceStyle { case .light: //light mode case .dark: //dark mode case .unspecified: //the user interface style is not specified }
+```swift
+switch UIScreen.main.traitCollection.userInterfaceStyle { 
+	case .light: //light mode 
+	case .dark: //dark mode 
+	case .unspecified: //the user interface style is not specified
+}
+```
 
 ## Override the App user style
 

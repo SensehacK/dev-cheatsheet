@@ -31,14 +31,14 @@ sessionNotExpired
 
 ```swift
 // Not present? Optional ?
-        let (isSSOEnabled, isSSODisabled) = sessionEntry
-            .filter { session in
-                return session == nil
-            }
-            .mapToVoid()
-            .split { _ in context.account.onlySSO }
-            .map { _ in context.account.onlySSO }
-            .split{$0}
+let (isSSOEnabled, isSSODisabled) = sessionEntry
+	.filter { session in
+		return session == nil
+	}
+	.mapToVoid()
+	.split { _ in context.account.onlySSO }
+	.map { _ in context.account.onlySSO }
+	.split{$0}
 ```
 
 

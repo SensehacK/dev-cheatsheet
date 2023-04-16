@@ -1,13 +1,12 @@
 # Bind vs Subscribe
 
 ```swift
-
-  .bind(to: dashboardNavigationContextSubject)
+.bind(to: dashboardNavigationContextSubject)
             
-  vs
+//vs
             
-	.subscribe(onNext: { data in
-                dashboardNavigationContextSubject.onNext(data)
+.subscribe(onNext: { data in
+            dashboardNavigationContextSubject.onNext(data)
 ```
 
 

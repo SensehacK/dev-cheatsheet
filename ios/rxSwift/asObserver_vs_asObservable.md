@@ -7,13 +7,12 @@ Only access control would be granted access if they are in that authorized state
 
 
 
-```
+```swift
 otherAccountsSelected
-            .debugLane("AccountList")
-            .map { $0.account }
-            .bind(to: context.switchAccount)
-            .disposed(by: disposeBag)`
-            
+	.debugLane("AccountList")
+	.map { $0.account }
+	.bind(to: context.switchAccount)
+	.disposed(by: disposeBag)`
 ```
 
 So bind -> Subscribe 

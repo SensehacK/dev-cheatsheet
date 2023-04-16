@@ -17,7 +17,7 @@
 
 ### [swift](ios/swift/README_swift.md)
 
-### [swiftUI](ios/swiftUI/README_swiftUI.mdREADME_swiftUI.md)
+### [swiftUI](ios/swiftUI/README_swiftUI.md)
 
 ### [test](ios/test/README_test.md)
 

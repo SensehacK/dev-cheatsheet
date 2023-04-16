@@ -19,7 +19,7 @@ https://guides.cocoapods.org/using/getting-started.html
 
 You could try the following: Clearing CocoaPods' cache:
 
-```text
+```bash
 > rm -rf "${HOME}/Library/Caches/CocoaPods"
 > rm -rf "`pwd`/Pods/" (while in your project's dir)
 > pod update
@@ -29,7 +29,7 @@ If you are using 0.38.0.beta1, you can just use pod cache clean
 
 Regenerate everything:
 
-```text
+```bash
 > rm -rf ~/Library/Caches/CocoaPods
 > rm -rf Pods
 > rm -rf ~/Library/Developer/Xcode/DerivedData/*

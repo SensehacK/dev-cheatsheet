@@ -7,12 +7,12 @@ Think of it as an 2D array flat mapping into a 1D array
 # Traditional
 Flat Map 2D => 1D Array of Int values
 
-```
+```swift
 [ 
-	1,2,3,
-  4,5,6,
-  7,8,9
-]                    ====> [1,2,3,4,5,6,7,8,9] 
+1,2,3,
+4,5,6,
+7,8,9
+]  ====> [1,2,3,4,5,6,7,8,9] 
 
 ```
 
@@ -20,7 +20,7 @@ Flat Map 2D => 1D Array of Int values
 
 ## Reactive
 
-// Imagine the variables as observable without the appropriate syntax.
+Imagine the variables as observable without the appropriate syntax.
 
 ```swift
 

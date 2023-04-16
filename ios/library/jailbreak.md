@@ -10,5 +10,8 @@ Getting started with Mobile Substrate tweaking.
 ## Update packages
 
 In terminal type (after loging with su):
+```bash
 mkdir -p var/cache/apt/archives/partial
 apt-get update
+```
+

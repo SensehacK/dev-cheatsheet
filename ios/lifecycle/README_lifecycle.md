@@ -46,8 +46,6 @@
 
 [[lifecycle/extensions]]
 
-[[dark_mode]]
-
 [inheritance](inheritance.md)
 
 [logging](logging.md)

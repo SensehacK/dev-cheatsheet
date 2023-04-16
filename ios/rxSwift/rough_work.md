@@ -2,6 +2,7 @@ Rough work
 
 This reverts commit 592da3f4c5ecb4ddb19bfdb208ccb05e7ab5b2b1.
 
+```swift
 
 //
 //  Mock.swift
@@ -39,3 +40,4 @@ extension Mock {
         }
     }
 }
+```
