@@ -41,23 +41,40 @@
           {
             "id": "7363c745dbdc2dde",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/lifecycle/README_lifecycle.md",
+                "file": "mobile/ionic/commands.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
             "id": "a0c51758c119d80c",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/rxSwift/rough_work.md",
+                "file": "mobile/ionic/package.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "322fa81523d2c495",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/combine/swiftUI.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -65,7 +82,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       },
       {
         "id": "dd4a158ffe1a15b2",
@@ -132,7 +149,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "defaults write",
+                "query": "read json",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -169,7 +186,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/rxSwift/rough_work.md",
+                "file": "ios/combine/swiftUI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -186,7 +203,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/rxSwift/rough_work.md",
+                "file": "ios/combine/swiftUI.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -209,7 +226,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/rxSwift/rough_work.md"
+                "file": "ios/combine/swiftUI.md"
               }
             }
           }
@@ -230,8 +247,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a0c51758c119d80c",
+  "active": "322fa81523d2c495",
   "lastOpenFiles": [
+    "ios/swiftUI/stack.md",
+    "ios/swiftUI/list.md",
+    "ios/swiftUI/identifiable.md",
+    "ios/lifecycle/read_local_file.md",
+    "mobile/ionic/package.md",
+    "mobile/ionic/commands.md",
+    "tools/terminal/node.md",
+    "SUMMARY.md",
+    "mobile/ionic/README_ionic.md",
+    "mobile/ionic/learn.md",
+    "mobile/ionic/issues.md",
+    "mobile/ionic/data_service.md",
+    "mobile/ionic/create_new_page.md",
+    "mobile/ionic/components.md",
+    "ios/rxSwift/rough_work.md",
     "ios/rxSwift/resources.md",
     "ios/rxSwift/relays.md",
     "ios/rxSwift/README_rxSwift.md",
@@ -243,21 +275,6 @@
     "ios/rxSwift/map.md",
     "ios/rxSwift/flatMap.md",
     "ios/rxSwift/error_handling.md",
-    "ios/rxSwift/doubts.md",
-    "ios/rxSwift/distinct.md",
-    "ios/rxSwift/documentation.md",
-    "ios/rxSwift/disposeBag.md",
-    "ios/rxSwift/conversionRxObservableConcrete.md",
-    "ios/rxSwift/concurrency_rxSwift.md",
-    "ios/rxSwift/completion.md",
-    "ios/rxSwift/combination.md",
-    "ios/rxSwift/binder.md",
-    "ios/rxSwift/bind_vs_subscribe.md",
-    "ios/rxSwift/autoComplete.md",
-    "ios/rxSwift/asObserver_vs_asObservable.md",
-    "ios/rxSwift/additional_links.md",
-    "ios/library/wildcard_checks.md",
-    "ios/library/webkit.md",
     "dev_cheatsheet",
     "ios/Canvas.canvas",
     "ios/concurrency",

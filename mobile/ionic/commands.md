@@ -2,6 +2,8 @@
 
 ### Installation
 
+First make sure you have Node.js or NPM installed
+[node](node.md)
 For installing IONIC CLI Framework via NPM
 
 ```text

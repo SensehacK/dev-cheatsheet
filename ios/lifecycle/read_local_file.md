@@ -33,7 +33,42 @@ func loadJson(fileName: String) -> Person? {
 
 [Apple Working with JSON](https://developer.apple.com/swift/blog/?id=37)
 
+
+Small Extension helper with Codable
+
+```swift
+```swift
+enum JSONParseError: Error {
+    case fileNotFound
+    case dataInitialisation(error: Error)
+    case decoding(error: Error)
+}
+**
+extension Decodable {
+    static func from(localJSON filename: String,
+                     bundle: Bundle = .main) -> Result<Self, JSONParseError> {
+        guard let url = bundle.url(forResource: filename, withExtension: "json") else {
+            return .failure(.fileNotFound)
+        }
+        let data: Data
+        do {
+            data = try Data(contentsOf: url)
+        } catch let error {
+            return .failure(.dataInitialisation(error: error))
+        }
+
+        do {
+            return .success(try JSONDecoder().decode(self, from: data))
+        } catch let error {
+            return .failure(.decoding(error: error))
+        }
+    }
+}
+```
+Source
 https://stackoverflow.com/questions/24410881/reading-in-a-json-file-using-swift
+
+
 
 
 ## Error Parsing JSON
