@@ -133,3 +133,17 @@ By removing that flag it was able to compile again but I can change the Swift Co
  Faced it in Xcode Playgrounds, turns out it was a translation issue related to Rosetta 2 emulation being checked by default. Disabling that using `Xcode.app` -> Get Info. Unchecking `Open using Rosetta`
 
 https://stackoverflow.com/questions/72796354/debugserver-is-x86-64-binary-running-in-translation-attached-failed-could-not
+
+
+## Platform Path
+```bash
+swift build -v
+error: terminated(1): /usr/bin/xcrun --sdk macosx --show-sdk-platform-path output:
+    xcrun: error: unable to lookup item 'PlatformPath' from command line tools installation
+```
+
+Just set the xcode default path 
+
+```bash
+sudo xcode-select -switch /Applications/Xcode.app
+```

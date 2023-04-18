@@ -33,3 +33,29 @@ In which we create storyB as an UIStoryboard object. We then try to invoke insta
 * “FirstOnboardingVC"
 * "SecondOnboardingVC"
 
+
+
+## Error with Main Storyboard
+
+```error
+Failed to instantiate the default view controller for UIMainStoryboardFile 'AnotherMain' - perhaps the designated entry point is not set?
+```
+Just set my new `AnotherMain.storyboard` name in `Info.plist` as well as in Xcode inspector I forgot to make sure that `IsInitial View controller ` property was set.
+
+https://stackoverflow.com/questions/20875823/failed-to-instantiate-the-default-view-controller-for-uimainstoryboardfile-main
+
+
+## IB outlet errors
+
+```error
+IBoutlet is nil even when connected with storyboard
+
+Thread 1: Fatal error: Unexpectedly found nil while implicitly unwrapping an Optional value
+```
+.
+
+So my solution was I deleted the storyboard and tried invoking the ViewController programmatically but View Controller had IBOutlets connected to `Main.storyboard` so they weren't initialized as I had deleted its reference from UIKit `build setting` Xcode 14 and `Info.plist` dictionary.
+
+Fun problem. 2 different storyboards and 2 diff ViewControllers and then programatic UI. But saving restore point to quickly discard local changes using git was really needed here. But I wasn't actively staging or commiting my changeset. Here we are. Of course this was just a practice test of combine with storyboard UI kit so no loss here.
+
+https://stackoverflow.com/questions/29321383/iboutlet-is-nil-but-it-is-connected-in-storyboard-swift

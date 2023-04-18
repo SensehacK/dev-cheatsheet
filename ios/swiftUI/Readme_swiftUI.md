@@ -1,5 +1,7 @@
 [alert](alert.md)
 
+[button](button.md)
+
 [data_initialization](data_initialization.md)
 
 [identifiable](identifiable.md)

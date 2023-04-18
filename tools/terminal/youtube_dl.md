@@ -67,6 +67,8 @@ Usage would be
 > yt-dl https://www.youtube.com/
 
 
+https://github.com/yt-dlp/yt-dlp/wiki/Installation
+
 ## Private videos
 
 If you want to download private signed in videos from a different source website behind a paywall.

@@ -4,90 +4,8 @@
     "type": "split",
     "children": [
       {
-        "id": "da25f9ac63e120a4",
-        "type": "tabs",
-        "dimension": 62.46666666666667,
-        "children": [
-          {
-            "id": "0ac6c734dbb06d4e",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/lifecycle/README_lifecycle.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "1d718930367ce401",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/lifecycle/dark_mode.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "7363c745dbdc2dde",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mobile/ionic/commands.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "a0c51758c119d80c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mobile/ionic/package.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "322fa81523d2c495",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/combine/swiftUI.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          }
-        ],
-        "currentTab": 4
-      },
-      {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 37.53333333333334,
         "children": [
           {
             "id": "dc344770f7335760",
@@ -118,9 +36,43 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "507fac6d2e8a8c4b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/storyboard_refactor.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
+      },
+      {
+        "id": "8cc2de9518c701fa",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "320512fd04dbaac5",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/combine/anyCancellable.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -149,7 +101,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "read json",
+                "query": "yt-d",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -186,7 +138,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/combine/swiftUI.md",
+                "file": "ios/lifecycle/storyboard_refactor.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -203,7 +155,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/combine/swiftUI.md",
+                "file": "ios/lifecycle/storyboard_refactor.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -226,7 +178,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/combine/swiftUI.md"
+                "file": "ios/lifecycle/storyboard_refactor.md"
               }
             }
           }
@@ -247,8 +199,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "322fa81523d2c495",
+  "active": "507fac6d2e8a8c4b",
   "lastOpenFiles": [
+    "ios/combine/anyCancellable.md",
+    "SUMMARY.md",
+    "ios/lifecycle/README_lifecycle.md",
+    "ios/lifecycle/dark_mode.md",
+    "ios/swiftUI/Readme_swiftUI.md",
+    "ios/concurrency/Readme_concurrency.md",
+    "ios/combine/ReadMe_combine.md",
+    "ios/combine/Untitled.md",
+    "os/mac/fresh_install.md",
+    "tools/terminal/shell_alias.md",
+    "tools/terminal/youtube_dl.md",
+    "ios/concurrency/actors.md",
+    "ios/combine/swiftUI.md",
+    "ios/library/wildcard_checks.md",
+    "ios/xcode/build_errors.md",
     "ios/swiftUI/stack.md",
     "ios/swiftUI/list.md",
     "ios/swiftUI/identifiable.md",
@@ -256,25 +223,10 @@
     "mobile/ionic/package.md",
     "mobile/ionic/commands.md",
     "tools/terminal/node.md",
-    "SUMMARY.md",
     "mobile/ionic/README_ionic.md",
     "mobile/ionic/learn.md",
     "mobile/ionic/issues.md",
     "mobile/ionic/data_service.md",
-    "mobile/ionic/create_new_page.md",
-    "mobile/ionic/components.md",
-    "ios/rxSwift/rough_work.md",
-    "ios/rxSwift/resources.md",
-    "ios/rxSwift/relays.md",
-    "ios/rxSwift/README_rxSwift.md",
-    "ios/rxSwift/prerequisites.md",
-    "ios/rxSwift/playground.md",
-    "ios/rxSwift/pain_points.md",
-    "ios/rxSwift/observe.md",
-    "ios/rxSwift/merge.md",
-    "ios/rxSwift/map.md",
-    "ios/rxSwift/flatMap.md",
-    "ios/rxSwift/error_handling.md",
     "dev_cheatsheet",
     "ios/Canvas.canvas",
     "ios/concurrency",

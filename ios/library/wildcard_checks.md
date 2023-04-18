@@ -12,9 +12,16 @@ guard #available(iOS 14, *) else {
 
 print("This code only runs on iOS 14 and up")
 
+
 ```
 
 [@available / available](https://www.avanderlee.com/swift/available-deprecated-renamed/)
+
+```swift
+@available(iOS 13.0, macOS 10.15, *)
+public class AsyncNetwork { }
+
+```
 
 [NSH](https://nshipster.com/available/)
 

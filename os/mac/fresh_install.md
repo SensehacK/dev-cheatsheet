@@ -37,3 +37,7 @@ Dev environment
 -  macos quirks [keyboard](os/mac/keyboard.md)
 - razer synapse not supported after mac os mojave. So use a free app called [mac mouse fix](https://mousefix.org/about/)
 - mac os accessibility - zoom scroll mouse modifier
+- `brew install ffmpeg`
+- install youtube-dl
+- install nvm - for node package manager
+- IINA https://iina.io/

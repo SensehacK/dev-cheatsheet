@@ -12,3 +12,5 @@ https://peterfriese.dev/posts/swiftui-combine-networking-gettingstarted/#how-to-
 https://swiftwithmajid.com/2019/11/27/combine-and-swiftui-views/
 
 https://www.swiftbysundell.com/tips/observing-combine-publishers-in-swiftui-views/
+
+
