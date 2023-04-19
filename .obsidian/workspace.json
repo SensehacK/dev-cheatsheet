@@ -44,7 +44,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/codable.md",
+                "file": "os/mac/fresh_install.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "48b02b051a6e3ac8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/swift/decimal.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -116,7 +129,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "codable",
+                "query": "%.1",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,8 +146,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -154,7 +166,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/library/codable.md",
+                "file": "os/mac/fresh_install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -171,7 +183,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/library/codable.md",
+                "file": "os/mac/fresh_install.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -194,7 +206,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/library/codable.md"
+                "file": "os/mac/fresh_install.md"
               }
             }
           }
@@ -217,6 +229,10 @@
   },
   "active": "507fac6d2e8a8c4b",
   "lastOpenFiles": [
+    "ios/swift/decimal.md",
+    "os/mac/fresh_install.md",
+    "ios/swiftUI/view.md",
+    "ios/library/codable.md",
     "ios/lifecycle/read_local_file.md",
     "ios/lifecycle/app_delegate.md",
     "ios/lifecycle/view_controllers.md",
@@ -234,15 +250,11 @@
     "ios/concurrency/Readme_concurrency.md",
     "ios/combine/ReadMe_combine.md",
     "ios/combine/Untitled.md",
-    "os/mac/fresh_install.md",
     "tools/terminal/shell_alias.md",
     "tools/terminal/youtube_dl.md",
     "ios/concurrency/actors.md",
     "ios/combine/swiftUI.md",
     "ios/xcode/build_errors.md",
-    "ios/swiftUI/stack.md",
-    "ios/swiftUI/list.md",
-    "ios/swiftUI/identifiable.md",
     "dev_cheatsheet",
     "ios/Canvas.canvas",
     "ios/concurrency",

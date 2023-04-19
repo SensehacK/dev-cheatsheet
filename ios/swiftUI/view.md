@@ -33,6 +33,14 @@ https://stackoverflow.com/questions/57345136/how-to-make-a-view-max-width-with-p
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-inset-the-safe-area-with-custom-content
 
 
+## Some View
+
+You need a function to make return statements `-> some view`
+
+In this function you can't have guard let statements since that paired with `AsyncImage -> AsyncImagePhase enum` could confuse the compiler about the type of data being returned. It couldn't infer properly. 
+
+You need to make sure that whatever return type you're sending conforms to both return type.
+
 ## Error
 
 ```

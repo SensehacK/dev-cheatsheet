@@ -41,3 +41,5 @@ Dev environment
 - install youtube-dl
 - install nvm - for node package manager
 - IINA https://iina.io/
+- proxyman - network sniffer https://proxyman.io/
+- Postman for API prototyping https://www.postman.com/downloads/
