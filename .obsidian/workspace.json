@@ -6,6 +6,7 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
+        "dimension": 81.44876325088339,
         "children": [
           {
             "id": "dc344770f7335760",
@@ -43,7 +44,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/lifecycle/storyboard_refactor.md",
+                "file": "ios/library/codable.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e9090d7b82e1d9fc",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/ui/uiTableViewCell.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -56,6 +70,7 @@
       {
         "id": "8cc2de9518c701fa",
         "type": "tabs",
+        "dimension": 18.551236749116608,
         "children": [
           {
             "id": "320512fd04dbaac5",
@@ -101,7 +116,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "yt-d",
+                "query": "codable",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -118,7 +133,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -138,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/lifecycle/storyboard_refactor.md",
+                "file": "ios/library/codable.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -155,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/lifecycle/storyboard_refactor.md",
+                "file": "ios/library/codable.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -178,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/lifecycle/storyboard_refactor.md"
+                "file": "ios/library/codable.md"
               }
             }
           }
@@ -201,7 +217,16 @@
   },
   "active": "507fac6d2e8a8c4b",
   "lastOpenFiles": [
+    "ios/lifecycle/read_local_file.md",
+    "ios/lifecycle/app_delegate.md",
+    "ios/lifecycle/view_controllers.md",
+    "ios/ui/uiTableViewCell.md",
+    "ios/library/wildcard_checks.md",
+    "ios/library/avkit.md",
+    "ios/config/ats_plist.md",
+    "ios/lifecycle/storyboard_refactor.md",
     "ios/combine/anyCancellable.md",
+    "ios/lifecycle/segues.md",
     "SUMMARY.md",
     "ios/lifecycle/README_lifecycle.md",
     "ios/lifecycle/dark_mode.md",
@@ -214,19 +239,10 @@
     "tools/terminal/youtube_dl.md",
     "ios/concurrency/actors.md",
     "ios/combine/swiftUI.md",
-    "ios/library/wildcard_checks.md",
     "ios/xcode/build_errors.md",
     "ios/swiftUI/stack.md",
     "ios/swiftUI/list.md",
     "ios/swiftUI/identifiable.md",
-    "ios/lifecycle/read_local_file.md",
-    "mobile/ionic/package.md",
-    "mobile/ionic/commands.md",
-    "tools/terminal/node.md",
-    "mobile/ionic/README_ionic.md",
-    "mobile/ionic/learn.md",
-    "mobile/ionic/issues.md",
-    "mobile/ionic/data_service.md",
     "dev_cheatsheet",
     "ios/Canvas.canvas",
     "ios/concurrency",

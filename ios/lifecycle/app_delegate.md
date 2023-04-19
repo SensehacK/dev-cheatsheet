@@ -72,3 +72,16 @@ struct ContentView: View {
 ```
 
 https://www.hackingwithswift.com/books/ios-swiftui/how-to-be-notified-when-your-swiftui-app-moves-to-the-background
+
+
+## Initial ViewController called Twice
+
+Turns out when removing my Storyboard reference and replacing that logic in `AppDelegate` as well as `Scene Delegate` . I was invoking my `ViewController` from both places.
+So with iOS 16 my current simulator. Scene Delegate Life cycle was calling my view controller first and then `AppDelegate` was also calling my View again. 
+Removing the AppDelegate `UIWindow` object initialization removed the `viewDidLoad` getting called twice.
+
+
+Maybe relevant SO I didn't find a solution from the accepted one but still including it.
+https://stackoverflow.com/questions/1081131/viewdidload-getting-called-twice-on-rootviewcontroller-at-launch
+
+https://stackoverflow.com/questions/7079602/viewdidload-is-called-twice

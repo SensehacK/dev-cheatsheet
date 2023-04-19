@@ -59,3 +59,5 @@ So my solution was I deleted the storyboard and tried invoking the ViewControlle
 Fun problem. 2 different storyboards and 2 diff ViewControllers and then programatic UI. But saving restore point to quickly discard local changes using git was really needed here. But I wasn't actively staging or commiting my changeset. Here we are. Of course this was just a practice test of combine with storyboard UI kit so no loss here.
 
 https://stackoverflow.com/questions/29321383/iboutlet-is-nil-but-it-is-connected-in-storyboard-swift
+
+https://www.hackingwithswift.com/example-code/uikit/how-to-fix-the-error-failed-to-instantiate-the-default-view-controller-for-uimainstoryboardfile

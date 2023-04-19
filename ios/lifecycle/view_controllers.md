@@ -59,6 +59,43 @@ https://cocoacasts.com/managing-view-controllers-with-container-view-controllers
 
 https://guides.codepath.com/ios/Adding-and-Removing-Child-View-Controllers
 
+
+## No Storyboard Xcode
+
+No `main.storyboard` in new project
+Basically remove its references and just create a new ViewController() instance and set its view to rootView
+
+Depending on whether your app uses `AppDelegate` or `SceneDelegate` 
+
+AppDelegate
+
+```swift
+var window: UIWindow?
+
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {    
+	let window = UIWindow(frame: UIScreen.main.bounds) 
+	window.rootViewController = ViewController()    
+	window.makeKeyAndVisible()
+	self.window = window										
+	return true											
+}
+```
+
+SceneDelegate
+
+```swift
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {    
+
+	guard let windowScene = (scene as? UIWindowScene) else { return }
+    let window = UIWindow(windowScene: windowScene)    window.rootViewController = ViewController()
+    window.makeKeyAndVisible()
+    self.window = window
+}
+```
+
+
+https://sarunw.com/posts/how-to-create-new-xcode-project-without-storyboard/
+
 ## Resources
 
 [Custom Presentation Controllers](https://makeapppie.com/2016/04/11/the-step-by-step-guide-to-custom-presentation-controllers/)

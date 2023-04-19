@@ -27,4 +27,9 @@ From security standpoint, the app developer should always only allow certain dom
 </dict>
 ```
 
+SwiftUI App Xcode 14
+-> Project Targets -> Info.
+Create new Key `App Transport Security Settings` Dictionary type.
+Add a Key `Allow Arbitrary Loads` YES
+
 [SO](https://stackoverflow.com/questions/32892121/xcode-7-1-beta-2-disable-ats/32894812#32894812)
