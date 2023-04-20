@@ -6,6 +6,8 @@
 
 [[class]]
 
+[cache](ios/lifecycle/cache.md)
+
 [[ios/lifecycle/dark_mode]]
 
 [[dimensions]]
@@ -49,3 +51,5 @@
 [inheritance](inheritance.md)
 
 [logging](logging.md)
+
+[user_notifications](user_notifications.md)

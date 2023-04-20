@@ -32,7 +32,7 @@ My all time favorite is "Tower" git client and favorite enterprise git SaaS is "
 [[workflow]]
 [[amend]]
 [[branch]]
-[[cache]]
+[[tools/git/cache]]
 [[checkout]]
 [[commitizen]]
 [[config]]

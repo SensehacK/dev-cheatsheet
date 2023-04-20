@@ -8,9 +8,9 @@
 
 [[defaults]]
 
-
 [[disable_updates]]
 
+[Kill Switch](Kill%20Switch.md)
 
 [keyboard](os/windows/keyboard.md)
 

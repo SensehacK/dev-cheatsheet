@@ -20,6 +20,8 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[data_structure]]
 
+[decimal](decimal.md)
+
 [[dictionary]]
 
 [[executables]]

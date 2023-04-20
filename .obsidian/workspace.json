@@ -6,7 +6,7 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 81.44876325088339,
+        "dimension": 49.31178934769599,
         "children": [
           {
             "id": "dc344770f7335760",
@@ -41,14 +41,16 @@
           {
             "id": "507fac6d2e8a8c4b",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "ios/ui/uiImage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -57,7 +59,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swift/decimal.md",
+                "file": "misc/README_misc.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -78,12 +80,12 @@
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 3
       },
       {
         "id": "8cc2de9518c701fa",
         "type": "tabs",
-        "dimension": 18.551236749116608,
+        "dimension": 50.68821065230401,
         "children": [
           {
             "id": "320512fd04dbaac5",
@@ -99,8 +101,19 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "7cc2216df0cb157f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "graph",
+              "state": {},
+              "pinned": true
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -166,7 +179,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "os/mac/fresh_install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -183,7 +195,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "os/mac/fresh_install.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -205,9 +216,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "os/mac/fresh_install.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -227,34 +236,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "507fac6d2e8a8c4b",
+  "active": "7cc2216df0cb157f",
   "lastOpenFiles": [
-    "ios/swift/decimal.md",
-    "os/mac/fresh_install.md",
-    "ios/swiftUI/view.md",
-    "ios/library/codable.md",
-    "ios/lifecycle/read_local_file.md",
-    "ios/lifecycle/app_delegate.md",
-    "ios/lifecycle/view_controllers.md",
-    "ios/ui/uiTableViewCell.md",
-    "ios/library/wildcard_checks.md",
-    "ios/library/avkit.md",
-    "ios/config/ats_plist.md",
-    "ios/lifecycle/storyboard_refactor.md",
-    "ios/combine/anyCancellable.md",
-    "ios/lifecycle/segues.md",
-    "SUMMARY.md",
+    "misc/README_misc.md",
+    "misc/network/README_network.md",
+    "os/linux/network.md",
+    "misc/network/Tplink.md",
+    "os/windows/README_windows.md",
+    "os/windows/Kill Switch.md",
     "ios/lifecycle/README_lifecycle.md",
-    "ios/lifecycle/dark_mode.md",
-    "ios/swiftUI/Readme_swiftUI.md",
+    "ios/lifecycle/user_notifications.md",
+    "ios/swift/README_swift.md",
+    "ios/swift/decimal.md",
     "ios/concurrency/Readme_concurrency.md",
-    "ios/combine/ReadMe_combine.md",
-    "ios/combine/Untitled.md",
-    "tools/terminal/shell_alias.md",
-    "tools/terminal/youtube_dl.md",
     "ios/concurrency/actors.md",
-    "ios/combine/swiftUI.md",
-    "ios/xcode/build_errors.md",
+    "ios/library/README_library.md",
+    "ios/library/functional_programming.md",
+    "ios/library/avkit.md",
+    "os/architecture/design_patterns.md",
+    "os/architecture/singleton_pattern.md",
+    "ios/config/README_config.md",
+    "ios/config/xcconfig.md",
+    "ios/test/README_test.md",
+    "ios/test/mock.md",
+    "ios/library/webkit.md",
+    "ios/ui/uiImage.md",
+    "ios/combine/anyCancellable.md",
+    "ios/lifecycle/cache.md",
+    "ios/combine/ReadMe_combine.md",
     "dev_cheatsheet",
     "ios/Canvas.canvas",
     "ios/concurrency",
