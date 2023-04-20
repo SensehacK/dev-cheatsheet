@@ -60,7 +60,6 @@ Update: It’s also in constant Big O(1) time.
 func hashTable()  {
         let numbers = [1,4,5,3,3,12,3,5,3,3,6,7,1,2]
         var hashMap = [Int: Int]()
-        
         for number in numbers {
             if (hashMap[number] != nil) {
                 hashMap[number]! += 1
@@ -68,17 +67,34 @@ func hashTable()  {
                 hashMap[number] = 1
             }
         }
-        
 //        hashMap
-        
-        
         for (keys, values) in hashMap {
             print("\(keys): \(values)")
         }
     }
+```
 
+Fib 
+
+```swift
+func fibonacciSequence(n: Int) -> [Int] {
+    var result: [Int] = [0,1]
+    guard n > 1 else { return result }
+    for _ in 0...n-2 {
+        let sum = result[result.count - 2] + result.last!
+        result.append(sum)
+    }
+    return result
+}
+```
+
+Array
+```swift
+for (index, value) in arrayS.enumerated() { }
+for i in stride(from: 0, to: arrayValue.count, by: 1) { }
 
 ```
+
 ## References
 
 [SO](https://stackoverflow.com/questions/44637836/what-is-the-equivalent-of-a-java-hashmapstring-integer-in-swift)

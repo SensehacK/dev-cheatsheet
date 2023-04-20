@@ -34,3 +34,16 @@ let peopleValue = people.mapValues { String(describing: $0) }
 ```
 
 https://daddycoding.com/2020/02/17/converting-string-any-to-string-string/
+
+
+##  Converting to Data
+
+
+```swift
+let cafe: Data? = "Café".data(using: .utf8) // non-nil
+```
+
+https://www.objc.io/blog/2018/02/13/string-to-data-and-back/
+
+JSON data Dictionary parsing
+https://medium.com/@lukesimoncurtis/parsing-json-to-dictionary-in-swift-4-from-an-api-3589df6aa5cf

@@ -55,6 +55,7 @@
           {
             "id": "48b02b051a6e3ac8",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -62,20 +63,23 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "3208aac59ada31ef",
+            "id": "97abe2ebb342e99c",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swiftUI/image.md",
+                "file": "ios/swift/dictionary.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -92,7 +96,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -121,8 +125,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "%.1",
-                "matchingCase": false,
+                "query": "hash map",
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -142,7 +146,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 315.0055618286133
+    "width": 293.0055618286133
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -158,7 +162,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/swiftUI/image.md",
+                "file": "ios/swift/dictionary.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -175,7 +179,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/swiftUI/image.md",
+                "file": "ios/swift/dictionary.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -198,7 +202,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/swiftUI/image.md"
+                "file": "ios/swift/dictionary.md"
               }
             }
           }
@@ -219,12 +223,57 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "3208aac59ada31ef",
+  "floating": {
+    "id": "199fbfb92850000c",
+    "type": "floating",
+    "children": [
+      {
+        "id": "2335a10bdc7ac1ff",
+        "type": "window",
+        "children": [
+          {
+            "id": "0055b7d9d12dbeb9",
+            "type": "tabs",
+            "children": [
+              {
+                "id": "b233a800e345ec75",
+                "type": "leaf",
+                "state": {
+                  "type": "image",
+                  "state": {
+                    "file": "ios/swift/collections_cheatsheet.webp"
+                  }
+                }
+              }
+            ]
+          }
+        ],
+        "direction": "vertical",
+        "x": 636,
+        "y": 82,
+        "width": 966,
+        "height": 766,
+        "maximize": false,
+        "zoom": 1.5
+      }
+    ]
+  },
+  "active": "48b02b051a6e3ac8",
   "lastOpenFiles": [
-    "ios/lifecycle/cache.md",
-    "ios/swiftUI/image.md",
-    "ios/combine/anyCancellable.md",
+    "ios/swift/short_hands.md",
+    "ios/swift/collections_cheatsheet.webp",
+    "ios/swift/string.md",
+    "ios/swift/switch.md",
+    "ios/swift/type_casting.md",
+    "ios/swift/ternary.md",
     "ios/swift/dictionary.md",
+    "ios/swiftUI/Readme_swiftUI.md",
+    "ios/swiftUI/scrollView.md",
+    "ios/swiftUI/view.md",
+    "ios/README_iOS.md",
+    "ios/swiftUI/image.md",
+    "ios/lifecycle/cache.md",
+    "ios/combine/anyCancellable.md",
     "misc/README_misc.md",
     "misc/network/README_network.md",
     "os/linux/network.md",
@@ -237,16 +286,6 @@
     "ios/swift/decimal.md",
     "ios/concurrency/Readme_concurrency.md",
     "ios/concurrency/actors.md",
-    "ios/library/README_library.md",
-    "ios/library/functional_programming.md",
-    "ios/library/avkit.md",
-    "os/architecture/design_patterns.md",
-    "os/architecture/singleton_pattern.md",
-    "ios/config/README_config.md",
-    "ios/config/xcconfig.md",
-    "ios/test/README_test.md",
-    "ios/test/mock.md",
-    "ios/library/webkit.md",
     "dev_cheatsheet",
     "ios/Canvas.canvas",
     "ios/concurrency",
@@ -255,7 +294,6 @@
     "ios/combine",
     "netlify.toml",
     "New Text Document.txt",
-    "ios/swift/collections_cheatsheet.webp",
     "assets/export_compliance_missing.png",
     "assets/obsidian.jpg",
     "assets/app_environment_variable.png"

@@ -6,9 +6,13 @@
 
 [identifiable](identifiable.md)
 
+[image](image.md)
+
 [lifeCycle](lifeCycle.md)
 
 [list](list.md)
+
+[scrollView](scrollView.md)
 
 [stack](stack.md)
 
