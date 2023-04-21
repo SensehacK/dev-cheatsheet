@@ -3,7 +3,7 @@
 
 ## 10000 Ft level explaination
 
-[concurrency](concurrency.md)
+[concurrency](architecture/concurrency.md)
 
 ## Note: WIP
 ## List

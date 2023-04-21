@@ -2,7 +2,7 @@
 
 ## List
 
-[[README_architecture]]
+[[ReadMe_architecture]]
 
 [[README_linux]]
 

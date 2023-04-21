@@ -6,6 +6,8 @@ Here you can find various documentation related to iOS development which can hel
 
 ## List
 
+###  [architecture](ReadMe_architecture.md)
+
 ### [automation](README_automation.md)
 
 ### [config](README_config)

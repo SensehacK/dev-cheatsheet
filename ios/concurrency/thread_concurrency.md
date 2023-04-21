@@ -70,17 +70,7 @@ customQueue.maxConcurrentOperationCount = 30
 
 ## Dispatch Group
 
-let group = DispatchGroup()
-
-
-group.enter()
-group.leave()
-
-
-
-group.notify(queue: .main, execute: {
-
-})
+[dispatch_global](dispatch_global.md)
 
 
 [Concurrency in iOS ](https://metova.com/concurrency-in-ios/)

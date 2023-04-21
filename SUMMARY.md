@@ -1,6 +1,8 @@
 
 ## [iOS](ios/README_iOS.md)
 
+### [architecture](architecture/ReadMe_architecture.md)
+
 ### [automation](ios/automation/README_automation.md)
 
 ### [config](ios/config/README_config)
@@ -31,7 +33,6 @@
 ### [Git](tools/git/README_git.md)
 
 ### [Terminal](tools/terminal/README_terminal.md)
-
 
 ## [Web](frontend/README_frontend.md)
 
@@ -105,7 +106,7 @@
 
 [[README_os]]
 
-[[README_architecture]]
+[[ReadMe_architecture]]
 
 [[README_linux]]
 

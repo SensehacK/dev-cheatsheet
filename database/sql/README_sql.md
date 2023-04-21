@@ -6,6 +6,6 @@ SQL Cheatsheet
 
 ## List
 
-[[setup]]
+[[database/sql/setup]]
 [[basic_sql_cli]]
 [[crud_operations]]

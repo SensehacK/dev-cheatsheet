@@ -11,15 +11,11 @@ But side note I have also observed that sometimes listening to `onComplete` even
 
 ## Model 
 
-
 ```swift
-
 public class Custom { } // Model
 
 public protocol CustomViewModelProtocol {
-
     var input: CustomViewModel.Input { get }
-
     var output: CustomViewModel.Output { get }
 
 }
@@ -50,14 +46,11 @@ public class CustomViewModel: ViewModellable {
             
 ```
 
-
 ## ViewController
 
 
-
 ```swift
-
-class CustomViewController: UIViewController, ViewStateResponsive {
+class CustomViewController: UIViewController, ViewStateBridger {
 
 	private let viewModel: CustomViewModelProtocol
 	
@@ -71,8 +64,6 @@ class CustomViewController: UIViewController, ViewStateResponsive {
 		})
 		.disposed(by: disposeBag)
 }
-
 ```
-
 
 Listening to the ViewModel while adhering to the ViewState architecture and having Input & Output as structs for easy I/O from `Model = = ViewModel = = ViewController` 
