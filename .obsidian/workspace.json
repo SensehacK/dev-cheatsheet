@@ -6,7 +6,7 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 65.39735099337747,
+        "dimension": 65.39735099337749,
         "children": [
           {
             "id": "dc344770f7335760",
@@ -99,12 +99,12 @@
             }
           },
           {
-            "id": "a6800d93dd5a006f",
+            "id": "82e504cfdd40a1e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/concurrency/Readme_concurrency.md",
+                "file": "architecture/composable/ReadMe_composable.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -112,59 +112,25 @@
             }
           },
           {
-            "id": "7711b787f3ef98fc",
+            "id": "81681080152a7fcf",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/concurrency/Readme_concurrency.md",
+                "file": "architecture/ReadMe_architecture.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               }
-            }
-          },
-          {
-            "id": "8149c4de7a88bfab",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/concurrency/Readme_concurrency.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "11138af54b07a51e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "SUMMARY.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "52e2e1c36b7f7875",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {}
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 7
       },
       {
         "id": "50ad62547a03ea1f",
         "type": "tabs",
-        "dimension": 34.602649006622514,
+        "dimension": 34.60264900662252,
         "children": [
           {
             "id": "5c968719c026c29f",
@@ -292,7 +258,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 528.0055618286133
+    "width": 306.0055618286133
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -308,7 +274,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "architecture/ReadMe_architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -325,7 +291,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "SUMMARY.md",
+                "file": "architecture/ReadMe_architecture.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -348,7 +314,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "SUMMARY.md"
+                "file": "architecture/ReadMe_architecture.md"
               }
             }
           }
@@ -369,18 +335,19 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "11138af54b07a51e",
+  "active": "81681080152a7fcf",
   "lastOpenFiles": [
-    "README.md",
-    "SUMMARY.md",
-    "architecture/concurrency.md",
-    "ios/concurrency/Readme_concurrency.md",
+    "architecture/navigationCoordinator.md",
+    "architecture/composable/ReadMe_composable.md",
     "architecture/ReadMe_architecture.md",
+    "architecture/composable/usage.md",
+    "ios/concurrency/Readme_concurrency.md",
+    "SUMMARY.md",
+    "README.md",
+    "architecture/concurrency.md",
     "architecture/design_patterns.md",
     "architecture/system_designs.md",
     "architecture/Untitled",
-    "architecture/composable/usage.md",
-    "architecture/composable/ReadMe_composable.md",
     "ios/concurrency/actors.md",
     "ios/concurrency/dispatch_main.md",
     "ios/concurrency/operations.md",
@@ -397,7 +364,6 @@
     "ios/architecture/architecture.md",
     "os/architecture/README_architecture.md",
     "architecture/singleton_pattern.md",
-    "ios/architecture/Design Patterns.md",
     "architecture/composable",
     "architecture",
     "ios/swift/collections_cheatsheet.webp",
