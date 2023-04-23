@@ -62,3 +62,18 @@ xcrun simctl openurl booted "com.trackvia://"
 
 
 https://isapozhnik.com/articles/6-ways-of-launching-deeplinks-on-ios-simulator/
+
+
+## Deep Links
+
+Good scenarios of how to utilize it in project.
+
+```text
+-   Create a deeplink as a quick action to log in using a specific account  
+    E.g. `myapp://login?account=testaccount&password=StrongPassword`
+-   Use a deeplink to switch between a staging and production environment  
+    E.g. `myapp://switch-environment?target=staging`
+-   Open a debug view based on a particular URL  
+    E.g. `myapp://open-debug-view`
+```
+Above snippet from https://www.avanderlee.com/swiftui/deeplink-url-handling

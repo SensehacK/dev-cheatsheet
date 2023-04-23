@@ -1,8 +1,18 @@
 
 
 
+Libraries involved
+AVKit
 AVFoundation
+AVPlayer
 
+
+## Blank Video but audio audible
+
+iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. Spent around 20 mins debugging what is wrong with my code overall.
+
+My own project POC.
+https://github.com/SensehacK/swift/tree/master/swiftUI/VideoContent
 
 
 ## SwiftUI POC
@@ -10,7 +20,24 @@ AVFoundation
 SwiftUI + Video player to stream.
 https://www.createwithswift.com/hls-streaming-with-avkit-and-swiftui/
 
+## Video thumbnail
 
+This below snippet code should be able to extract the thumbnail image from the given video source. We can also create random time value to generate different thumbnails but we have ensure that the video is atleast 13 secs long in this code snippet. You can safe guard yourself with a range of video duration and generate random thumbnail out of it. 
+
+```swift
+let asset = AVAsset(url: url)
+let avAssetImageGen = AVAssetImageGenerator(asset: asset)
+avAssetImageGen.appliesPreferredTrackTransform = true
+
+let thumbnailSnapTime = CMTimeMake(value: 13, timescale: 1)
+do { 
+   let thumbCGImage = try avAssetImageGen
+   .copyCGImage(at: thumbanailSnaptime, actualTime: nil)
+   let thumbImage = UIImage(cgImage: thumbCGImage)
+} catch {
+	print(error)
+}
+```
 ## Reference
 
 https://developer.apple.com/documentation/avfoundation/offline_playback_and_storage/using_avfoundation_to_play_and_persist_http_live_streams

@@ -117,7 +117,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/ReadMe_architecture.md",
+                "file": "ios/library/avkit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -237,7 +237,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ViewStateResponsive",
+                "query": "framework",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -274,7 +274,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architecture/ReadMe_architecture.md",
+                "file": "ios/library/avkit.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -291,7 +291,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architecture/ReadMe_architecture.md",
+                "file": "ios/library/avkit.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -314,7 +314,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architecture/ReadMe_architecture.md"
+                "file": "ios/library/avkit.md"
               }
             }
           }
@@ -337,10 +337,15 @@
   },
   "active": "81681080152a7fcf",
   "lastOpenFiles": [
+    "ios/library/framework.md",
+    "mobile/ionic/deprecations.md",
+    "mobile/ionic/components.md",
+    "ios/library/avkit.md",
     "architecture/navigationCoordinator.md",
-    "architecture/composable/ReadMe_composable.md",
-    "architecture/ReadMe_architecture.md",
+    "ios/config/linking.md",
     "architecture/composable/usage.md",
+    "architecture/ReadMe_architecture.md",
+    "architecture/composable/ReadMe_composable.md",
     "ios/concurrency/Readme_concurrency.md",
     "SUMMARY.md",
     "README.md",
@@ -359,11 +364,6 @@
     "architecture/mvvm_c_pattern.md",
     "architecture/mvc_pattern.md",
     "architecture/facade_pattern.md",
-    "architecture/delegate_pattern.md",
-    "architecture/coordinator_pattern.md",
-    "ios/architecture/architecture.md",
-    "os/architecture/README_architecture.md",
-    "architecture/singleton_pattern.md",
     "architecture/composable",
     "architecture",
     "ios/swift/collections_cheatsheet.webp",
