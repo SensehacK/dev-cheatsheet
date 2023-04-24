@@ -6,106 +6,45 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 81.76895306859205,
+        "dimension": 60.15144344533838,
         "children": [
-          {
-            "id": "dc344770f7335760",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/README_iOS.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "33f5b79506e65ea9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/navigationCoordinator.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "5d5c8e4a5ae3a712",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/orchestration.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f579f071aca10c8c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/orchestration.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "9a304d3e90b511c6",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/orchestration.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
           {
             "id": "6a25767ea83a46c5",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/config/README_config.md",
+                "file": "ios/library/avkit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "83c7ab5a70c51b35",
+            "id": "7f7c9015702ab681",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/navigationCoordinator.md",
+                "file": "ios/library/framework.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       },
       {
         "id": "50ad62547a03ea1f",
         "type": "tabs",
-        "dimension": 18.231046931407942,
+        "dimension": 39.84855655466162,
         "children": [
           {
             "id": "5c968719c026c29f",
@@ -173,7 +112,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/composable/viewStateViewModel.md",
+                "file": "ios/library/import.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e5e089229a91b293",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/software_updates.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -196,7 +148,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -225,7 +177,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cache",
+                "query": "dynamic",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -262,7 +214,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architecture/navigationCoordinator.md",
+                "file": "architecture/software_updates.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -279,7 +231,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architecture/navigationCoordinator.md",
+                "file": "architecture/software_updates.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -302,7 +254,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architecture/navigationCoordinator.md"
+                "file": "architecture/software_updates.md"
               }
             }
           }
@@ -323,34 +275,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "83c7ab5a70c51b35",
+  "active": "e5e089229a91b293",
   "lastOpenFiles": [
+    "ios/library/framework.md",
+    "architecture/software_updates.md",
+    "ios/library/import.md",
+    "architecture/composable/viewStateViewModel.md",
+    "ios/library/avkit.md",
+    "architecture/orchestration.md",
+    "ios/README_iOS.md",
+    "architecture/navigationCoordinator.md",
+    "tools/browsers/developer_network.md",
     "ios/config/README_config.md",
+    "os/mac/fresh_install.md",
     "ios/lifecycle/README_lifecycle.md",
     "ios/lifecycle/database.md",
     "ios/config/secret_keys.md",
-    "architecture/orchestration.md",
     "ios/swiftUI/image.md",
     "ios/lifecycle/cache.md",
     "ios/config/cache.md",
     "architecture/mvvm_c_pattern.md",
     "architecture/mvvm_pattern.md",
     "architecture/notification_pattern.md",
-    "architecture/navigationCoordinator.md",
     "architecture/ReadMe_architecture.md",
     "ios/config/analytics.md",
     "ios/config/app_environment.md",
     "ios/config/appConfiguration.md",
     "ios/config/app_store _connect.md",
     "ios/library/storage.md",
-    "ios/config/[storage](storage.md).md",
-    "tools/git/cache.md",
-    "architecture/composable/viewStateViewModel.md",
-    "architecture/composable/viewStateCustomModel.md",
-    "ios/README_iOS.md",
-    "ios/swift/dictionary.md",
-    "architecture/composable/viewStateBridgeVCVM.md",
-    "architecture/composable/viewStateProtocol.md",
     "architecture/Untitled",
     "architecture/composable",
     "architecture",

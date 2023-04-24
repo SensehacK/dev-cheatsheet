@@ -25,17 +25,18 @@ Dev environment
 - cocoapods
 - finder enhancements ( file extensions, [hidden_files](hidden_files.md), folders on top, search current folder, disable tags, disable cloud in sidebar, default home location)
 - spark (all emails)
-- xcode 2 more simulators
+- xcode 2 more simulators (one latest, another 2 or 1 year older)
 - xcode workspace config
 - disable spotlight & key
-- alfred snippets
+- alfred snippets - dropbox sync
 - Keyboard macros (Keychron Via)
 - video conferencing tools
 - External displays same 
 - Monitor Control (https://github.com/MonitorControl/MonitorControl)
-- dracula theme everywhere iterm, xcode, vscode
+- [dracula theme](https://draculatheme.com/) everywhere iterm, xcode, vscode
 -  macos quirks [keyboard](os/mac/keyboard.md)
 - razer synapse not supported after mac os mojave. So use a free app called [mac mouse fix](https://mousefix.org/about/)
+- [rescue Time](https://www.rescuetime.com/download) 
 - mac os accessibility - zoom scroll mouse modifier
 - `brew install ffmpeg`
 - install youtube-dl
