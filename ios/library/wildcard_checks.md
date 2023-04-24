@@ -42,3 +42,28 @@ print("This code only runs if UIKit is supported on the device OS.")
 #endif
 ```
 [canImport HWS](https://www.hackingwithswift.com/example-code/language/how-to-check-whether-a-module-is-available-using-canimport)
+
+
+## Check OS Support
+
+Why do you maybe need this. 
+Well if you are writing a framework or library and you started out with supporting both macOS and iOS. But while running swift DocC publisher you can try to avoid building errors for macOS target.
+
+I encountered this problem while running https://github.com/SensehacK/swift-sense for this Swift DocC.
+
+```swift
+#if os(macOS)
+func someMacOSOnlyFunction() { /* ... */ }
+#endif
+```
+
+```swift
+#if os(iOS)
+import UIKit
+public extension Image { }
+#endif
+```
+
+
+https://forums.swift.org/t/if-vs-available-vs-if-available/40266/2
+

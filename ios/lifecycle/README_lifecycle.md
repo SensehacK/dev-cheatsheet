@@ -10,6 +10,8 @@
 
 [[ios/lifecycle/dark_mode]]
 
+[database](database.md)
+
 [[dimensions]]
 
 [[ios/lifecycle/documentation]]

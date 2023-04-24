@@ -15,6 +15,39 @@ It will take `ViewController` as one of its parameters in order to present those
 Its responsibilities could also fallback on always providing some view which is interactable for the end user and able to quickly recover from any state to a certain state which will not make the user be in locked zone. By locked zone I mean no UI interactions are possible and the only way out of this zone / screen / state is killing the app and relaunching it again. We don't want to serve our end users with this kind of user experience UX. 
 
 
+```swift
+class WindowManager: NSObject {
+	let window: UIWindow
+
+	var rootVC: UIViewController? {
+        return window.rootViewController
+    }
+
+	var topVC: UIViewController? {
+        return recursiveTopVC(window.rootViewController)
+    }
+
+	override init() {
+	window = UIWindow(frame: UIScreen.main.bounds)
+	super.init()
+	}
+
+	func setRoot(ViewController viewController: UIViewController) {
+        window.rootViewController?.dismiss(animated: false)
+        window.rootViewController = viewController
+        window.makeKeyAndVisible()
+    }
+
+	func present(viewController: UIViewController) {
+		viewController.modalPresentationStyle = .fullScreen
+		if let presentedVC = rootVC?.presentedViewController {
+			presentedVC.present(viewController, animated: true)
+		} else {
+			topVC?.present(viewController, animated: true)
+		}
+	}
+}
+```
 
 
 
@@ -65,4 +98,28 @@ static func createMainViewController(context: GlobalContext) {
 ```
 
 
+
 ## Usage
+
+So in one Rx - Reactive stream, you can trigger things by observing to `Publisher` | `Observable` and subscribing to those changeset.
+So `AppLaunchObserver` is subscribing to those constant stream of changes.
+
+Apple Combine or RxSwift | ReactiveX is a great option to utilize for solving these kind of builder pattern.
+In this following code snippet we listen to notifier `AppLaunchObserver` , we create `LoginContext` object and map to `NavigationContext.login` which returns us `NavigationContext` enum which we further downstream to `ViewControllerFactory` create function which returns `ViewController`. In order to make the presentation logic back to `WindowManager` to do presenting of things.
+
+```swift
+AppLaunchObserver
+	.map { _ in
+		LoginContext(sessionCoordinator = init(),
+					tokenDidExpire: false,
+					successfulSignIn: .empty())
+	}
+	.map(NavigationContext.login)
+	.observe(on: MainScheduler.instance)
+	.do(onNext: { _ in
+		doSomething() // Proper Side Effect
+	})
+	.map(ViewControllerFactory.create)
+	.subscribeNext(weak: windowManager, WindowManager.present)
+	.disposed(by: disposeBag)
+```

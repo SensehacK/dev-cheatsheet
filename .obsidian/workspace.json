@@ -6,12 +6,11 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 65.39735099337749,
+        "dimension": 81.76895306859205,
         "children": [
           {
             "id": "dc344770f7335760",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
@@ -19,92 +18,16 @@
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
             }
           },
           {
-            "id": "48b02b051a6e3ac8",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swift/dictionary.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "69d0cfa58f53d34c",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/composable/viewStateBridgeVCVM.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "cecc03464a04a494",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/composable/viewStateProtocol.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "015ef4ca8ad38b4d",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/composable/viewStateProtocol.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "9b383c25ca769e23",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/composable/ReadMe_composable.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "82e504cfdd40a1e3",
+            "id": "33f5b79506e65ea9",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/composable/ReadMe_composable.md",
+                "file": "architecture/navigationCoordinator.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -112,12 +35,64 @@
             }
           },
           {
-            "id": "81681080152a7fcf",
+            "id": "5d5c8e4a5ae3a712",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/avkit.md",
+                "file": "architecture/orchestration.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f579f071aca10c8c",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/orchestration.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a304d3e90b511c6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/orchestration.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6a25767ea83a46c5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/config/README_config.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "83c7ab5a70c51b35",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/navigationCoordinator.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -125,12 +100,12 @@
             }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       },
       {
         "id": "50ad62547a03ea1f",
         "type": "tabs",
-        "dimension": 34.60264900662252,
+        "dimension": 18.231046931407942,
         "children": [
           {
             "id": "5c968719c026c29f",
@@ -193,6 +168,19 @@
             }
           },
           {
+            "id": "81681080152a7fcf",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/composable/viewStateViewModel.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "b09d7b071308fc9a",
             "type": "leaf",
             "pinned": true,
@@ -208,7 +196,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -237,7 +225,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "framework",
+                "query": "cache",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -258,7 +246,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 306.0055618286133
+    "width": 226.00556182861328
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -274,7 +262,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/library/avkit.md",
+                "file": "architecture/navigationCoordinator.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -291,7 +279,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/library/avkit.md",
+                "file": "architecture/navigationCoordinator.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -314,7 +302,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/library/avkit.md"
+                "file": "architecture/navigationCoordinator.md"
               }
             }
           }
@@ -335,35 +323,35 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "81681080152a7fcf",
+  "active": "83c7ab5a70c51b35",
   "lastOpenFiles": [
-    "ios/library/framework.md",
-    "mobile/ionic/deprecations.md",
-    "mobile/ionic/components.md",
-    "ios/library/avkit.md",
-    "architecture/navigationCoordinator.md",
-    "ios/config/linking.md",
-    "architecture/composable/usage.md",
-    "architecture/ReadMe_architecture.md",
-    "architecture/composable/ReadMe_composable.md",
-    "ios/concurrency/Readme_concurrency.md",
-    "SUMMARY.md",
-    "README.md",
-    "architecture/concurrency.md",
-    "architecture/design_patterns.md",
-    "architecture/system_designs.md",
-    "architecture/Untitled",
-    "ios/concurrency/actors.md",
-    "ios/concurrency/dispatch_main.md",
-    "ios/concurrency/operations.md",
-    "ios/concurrency/thread_concurrency.md",
-    "architecture/composable/input_output.md",
-    "architecture/composable/viewStateBridgeVCVM.md",
-    "architecture/composable/viewState.md",
-    "architecture/notification_pattern.md",
+    "ios/config/README_config.md",
+    "ios/lifecycle/README_lifecycle.md",
+    "ios/lifecycle/database.md",
+    "ios/config/secret_keys.md",
+    "architecture/orchestration.md",
+    "ios/swiftUI/image.md",
+    "ios/lifecycle/cache.md",
+    "ios/config/cache.md",
     "architecture/mvvm_c_pattern.md",
-    "architecture/mvc_pattern.md",
-    "architecture/facade_pattern.md",
+    "architecture/mvvm_pattern.md",
+    "architecture/notification_pattern.md",
+    "architecture/navigationCoordinator.md",
+    "architecture/ReadMe_architecture.md",
+    "ios/config/analytics.md",
+    "ios/config/app_environment.md",
+    "ios/config/appConfiguration.md",
+    "ios/config/app_store _connect.md",
+    "ios/library/storage.md",
+    "ios/config/[storage](storage.md).md",
+    "tools/git/cache.md",
+    "architecture/composable/viewStateViewModel.md",
+    "architecture/composable/viewStateCustomModel.md",
+    "ios/README_iOS.md",
+    "ios/swift/dictionary.md",
+    "architecture/composable/viewStateBridgeVCVM.md",
+    "architecture/composable/viewStateProtocol.md",
+    "architecture/Untitled",
     "architecture/composable",
     "architecture",
     "ios/swift/collections_cheatsheet.webp",

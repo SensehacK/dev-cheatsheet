@@ -1,8 +1,56 @@
-
+# Cache
 
 ## Intro
 
 Caching is an important topic and doing it right is sometimes very hard.
+Lots of topics to cover in Caching mechanism. Here we just go through basic stuff about Caching.
+
+## Manager
+
+
+```swift
+class CacheManager {
+	// Singleton
+	static let shared = CacheManager()
+	private init() { }
+
+	func configure() { 
+		URLCache.shared = CachedSession.sessionUrlCache
+	}
+	
+	func clearCache() {
+		URLCache.shared.removeAllCachedResponses()
+	}
+	
+
+	func saveCache() {
+		queue.sync(flags: .barrier, execute: {
+            try? saveToDatabaseManager()
+        })
+	}
+}
+```
+
+
+## Cache Config
+
+```swift
+class CachedSession {
+	static var sessionUrlCache: URLCache = {
+        return URLCache(memoryCapacity: 1024 * 1024 * 200 ,
+                                   diskCapacity: Int.max,
+                                   diskPath: nil)
+    }()					
+}
+
+```
+
+It equals approximately 209 MegaBytes of Cache storage.
+
+
+## Image Cache
+
+
 
 
 ## Caching Dictionary

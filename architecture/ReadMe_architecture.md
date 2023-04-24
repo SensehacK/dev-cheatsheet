@@ -16,6 +16,8 @@ Enjoy
 
 [Composable](composable/ReadMe_composable.md)
 
+[orchestration](orchestration.md)
+
 [[concurrency]]
 
 [mvc_pattern](mvc_pattern.md)
@@ -32,12 +34,11 @@ Enjoy
 
 [notification_pattern](notification_pattern.md)
 
+[navigationCoordinator](navigationCoordinator.md)
+
 [delegate_pattern](delegate_pattern.md)
 
 [[system_designs]]
-
-[navigationCoordinator](navigationCoordinator.md)
-
 
 ## Resources
 

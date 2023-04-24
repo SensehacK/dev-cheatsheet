@@ -9,6 +9,8 @@
 
 [app_store _connect](app_store%20_connect.md)
 
+[appConfiguration](appConfiguration.md)
+
 [ats_plist](ats_plist.md)
 
 [best_practices](best_practices.md)
