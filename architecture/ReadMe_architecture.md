@@ -20,6 +20,8 @@ Enjoy
 
 [[concurrency]]
 
+[mvvm_pattern](mvvm_pattern.md)
+
 [mvc_pattern](mvc_pattern.md)
 
 [singleton_pattern](singleton_pattern.md)
@@ -27,8 +29,6 @@ Enjoy
 [facade_pattern](facade_pattern.md)
 
 [coordinator_pattern](coordinator_pattern.md)
-
-[mvvm_pattern](mvvm_pattern.md)
 
 [mvvm_c_pattern](mvvm_c_pattern.md)
 
@@ -41,8 +41,6 @@ Enjoy
 [[system_designs]]
 
 ## Resources
-
-
 
 [Point Free](https://www.pointfree.co/collections/composable-architecture)
 

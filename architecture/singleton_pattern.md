@@ -1,6 +1,7 @@
-## Singleton
+# Singleton
 
-Pros:
+## Pros
+
 - Easy understanding
 - One source of truth
 - Object remains in the memory throughtout the app lifecycle.
@@ -9,7 +10,8 @@ Pros:
 - iOS UIKit, CocoaTouch relies a lot on Singleton and MVC pattern.
 - App Delegate is important singleton instance.
 
-Cons:
+## Cons 
+
 - Data inconsistency - Not multi thread safe. (Not good for CRUD operations)
 - More dependencies - Highly coupled
 - Less testable
@@ -19,8 +21,11 @@ Cons:
 - Could be time dependent with some callback.
 
 
-```swift
+## Code
 
+Important to privatize the initi() in order to not let invocation rights to anyone else.
+
+```swift
 class SingletonClass { 
 	static let shared: SingletonClass = SingletonClass()
 
@@ -28,4 +33,17 @@ class SingletonClass {
 
 	func foo() { }	 
 }
+```
 
+Also defining the class `final` and having just `Singleton` pattern for invocation only once is kind of similar but there is definitely need for each in their own right.
+
+
+
+I know Java has few differences & I haven't taken my time to research these things in iOS Swift world.
+
+https://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern?rq=1
+
+https://stackoverflow.com/questions/51508613/is-final-necessary-for-a-singleton-class-in-swift
+
+
+https://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-vs-static-class-java.html

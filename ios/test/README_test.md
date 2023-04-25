@@ -10,16 +10,14 @@
 
 [[mocks]]
 
+[names](names.md)
+
 [[parametrized_unit_tests]]
 
 [[stubs]]
-
-[[XCTest]]
-
-[names](names.md)
 
 [test](test.md)
 
 [rx_tests](rx_tests.md)
 
-[mock](mock.md)
+[[XCTest]]

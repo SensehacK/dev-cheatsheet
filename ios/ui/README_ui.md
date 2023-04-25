@@ -5,6 +5,7 @@
 
 
 [[auto_layout]]
+
 [[checkbox]]
 
 [[constraints]]
@@ -23,7 +24,7 @@
 
 [[transitions]]
 
-[[uiImagePicker]]
+[uiAppearance](uiAppearance.md)
 
 [[uibutton]]
 
@@ -35,6 +36,8 @@
 
 [[uilabel]]
 
+[uiPageController](uiPageController.md)
+
 [[uiscrollview]]
 
 [[uistackview]]
@@ -45,8 +48,5 @@
 
 [[uiview]]
 
-[[uiAppearance]]
-
 [uiViewController](uiViewController.md)
 
-[uiPageController](uiPageController.md)

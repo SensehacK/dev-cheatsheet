@@ -38,7 +38,7 @@
 
 [[swift_types]]
 
-[[thread_concurrency]]
+[[thread]]
 
 [[lifecycle/timer]]
 

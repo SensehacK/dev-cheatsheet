@@ -2,6 +2,7 @@
 
 Basic concepts from my understanding.
 
+If you want to quickly jump into Swift Concurrency or iOS Xcode Swift concurrency examples. Please follow this [Readme_concurrency](Readme_concurrency.md) or folder `iOS/concurrency/readME_concurrency` 
 
 ## Multi Threading | Multi Processing
 
@@ -14,11 +15,11 @@ Side note: You can do multi threading on a single processor or do multi tasking 
 
 When a piece of work, process, thread, code, executable (machine code) is meant to execute in a blocking or non blocking way. 
 
-### Async: 
+### Async
 
 For example your heart beats in an async fashion it isn't dependent retrospectively for someone's input in order to make the next heart beat to pump blood in your veins  of the human body.
 
-### Sync: 
+### Sync
 
 On the other hand eyes, brain coordinate with each other to send a neuron signal via synapses in order for the human motor functions to operate. So that is in a way synchronous activity. Hands or other body functions are dependent on some other functions when they give signals to do certain task synchronously and when they are doing certain task they do it in somewhat blocking way. Of course human brain is somewhat more capable of scheduling multiple instances of parallel activities such as your mental intuition is still in the works, your five sensory inputs are still working in the background and more.
 
@@ -29,10 +30,14 @@ I should have went with a better example since human body mostly works asynchron
 
 A unit of work to be executed by a processor.
 Multiple threads can exist on a single process.
+[thread](thread.md)
+
 
 ## Process
 
 A collection of threads or units of work to be executed by the OS scheduler is called a process. It may also include shared resources in order to better communicate with other processes or access low level apis with kernel or I/O devices.
+[tasks](tasks.md)
+
 
 ## Scheduler
 

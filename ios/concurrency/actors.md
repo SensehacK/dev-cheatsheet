@@ -1,8 +1,16 @@
+# Actors
+
+## Intro
 
 Reference type.
 Single threaded.
 Much better solution than relying on classes for concurrency.
 
+## New Kid on the Block
+
+Reference type just like `Class` and `function` but it guarantees exclusive access to its execution environment with independent threads. Of course it does have to maintain references and the `reference` type checks and all that goody / baddy stuff for updating states across all the layers whenever something changes due to it inherently being of `reference` type but still great for Swift concurrency manifesto and not worrying about one more extra thing.
+
+SwiftUI `ObservableObject` conforming classes can be marked with `@MainActor` and it just works like magic.
 
 ## Swift UI
 

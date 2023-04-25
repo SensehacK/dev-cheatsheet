@@ -1,25 +1,39 @@
-
-
+# Concurrency
 
 ## 10000 Ft level explaination
 
-[concurrency](architecture/concurrency.md)
+If you want to get a refresher of basic concurrency concepts please read through the [concurrency](architecture/concurrency.md) file. As this specifically discusses on Swift iOS / Apple SDK implementation code snippets.
 
-## Note: WIP
 ## List
 
 [actors](actors.md)
 
+[asyncAwait](asyncAwait.md)
+
+[asyncLet](asyncLet.md)
+
+[asyncTaskGroup](asyncTaskGroup.md)
+
 [background_tasks](background_tasks.md)
 
-[dispatch_main](dispatch_main.md)
+[dispatch_barrier](dispatch_barrier.md)
+
+[dispatch_global](dispatch_global.md)
 
 [dispatch_group](dispatch_group.md)
 
-[dispatch_global](dispatch_global.md)
+[dispatch_main](dispatch_main.md)
+
+[dispatch_queue](dispatch_queue.md)
+
+[dispatch_semaphore](dispatch_semaphore.md)
+
+[dispatch_work_item](dispatch_work_item.md)
 
 [GCD](GCD.md)
 
 [operations](operations.md)
 
-[thread_concurrency](thread_concurrency.md)
+[tasks](tasks.md)
+
+[thread](thread.md)

@@ -60,3 +60,34 @@ public func fetchData<T: Decodable>(url: String, id: Int? = nil, type: T.Type) a
         return decodedData
     }
 ```
+
+
+## Passing StateObject to Extracted View
+
+Utilize @ObservedObject for passing ViewModel ref in extracted views.
+
+```swift
+struct ContentView: View {
+    @StateObject var vm = ViewModel()
+	var body {
+		ExtractedView(vm: vm)
+	}
+}
+
+struct ExtractedView: View {
+	@ObservedObject var vm: ImageNetwork
+
+	// do something
+	VStack { 
+		Text(vm.fetchText())
+	}
+}
+```
+
+Passing Data between Views in SwiftUI
+https://www.createwithswift.com/tutorial-passing-data-between-views-in-swiftui-using-state-and-binding/
+
+https://www.swiftdevjournal.com/passing-data-to-swiftui-views/
+
+Pass `@StateObject` data in views.
+https://www.hackingwithswift.com/books/ios-swiftui/sharing-swiftui-state-with-stateobject
