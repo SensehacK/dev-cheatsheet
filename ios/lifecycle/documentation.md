@@ -64,6 +64,14 @@ This lets us specify code as well in the docs or when xcode `Build Documentation
 
 ## Swift DocC
 
+
+Spent approx 45 mins deciphering why my github pages wasn't showing the Swift DocC generated static site. Turns out the url for target path component is also lowercase as pointed out by this SO post.
+
+Note that my repository name was lowercase so I used `-hosting-base-path foobar`. The target path component, however, is always lowercase, Idk why.
+https://stackoverflow.com/a/71199418/5177704
+
+
+
 Great tool to use for generating documentation for your project. As long as you document things properly.
 
 
@@ -71,6 +79,10 @@ Great tool to use for generating documentation for your project. As long as you 
 https://developer.apple.com/documentation/docc
 Xcode 13
 https://www.wwdcnotes.com/notes/wwdc21/10166/
+
+https://developer.apple.com/videos/play/wwdc2021/10236/
+
+https://developer.apple.com/videos/play/wwdc2022/110369/
 
 Kodeco 
 https://www.kodeco.com/34919511-docc-tutorial-for-swift-getting-started

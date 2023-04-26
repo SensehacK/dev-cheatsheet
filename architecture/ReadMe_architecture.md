@@ -10,7 +10,7 @@ This is one of those head scratchers where I thought I would start writing thing
 So it won't be fully fleshed out but nothing in this whole cheatsheet is. Everything is just a scratch pad for me to keep my brain stimulated with new things and gotchas.
 
 
-Enjoy
+Enjoy!
 
 ## List
 

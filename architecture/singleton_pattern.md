@@ -38,6 +38,7 @@ class SingletonClass {
 Also defining the class `final` and having just `Singleton` pattern for invocation only once is kind of similar but there is definitely need for each in their own right.
 
 
+## References
 
 I know Java has few differences & I haven't taken my time to research these things in iOS Swift world.
 
@@ -47,3 +48,5 @@ https://stackoverflow.com/questions/51508613/is-final-necessary-for-a-singleton-
 
 
 https://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-vs-static-class-java.html
+
+https://medium.com/@nimjea/singleton-class-in-swift-17eef2d01d88

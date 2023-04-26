@@ -18,3 +18,10 @@ Via protocol oriented and extensions.
 
 [Article](https://www.vadimbulavin.com/multiple-inheritance-swift/)
 
+
+## Initializer Patterns
+
+
+https://theswiftdev.com/swift-init-patterns/
+
+https://docs.swift.org/swift-book/documentation/the-swift-programming-language/initialization/

@@ -2,7 +2,7 @@
 
 Basic concepts from my understanding.
 
-If you want to quickly jump into Swift Concurrency or iOS Xcode Swift concurrency examples. Please follow this [Readme_concurrency](Readme_concurrency.md) or folder `iOS/concurrency/readME_concurrency` 
+If you want to quickly jump into Swift Concurrency or iOS Xcode Swift concurrency examples. Please follow this [Readme_concurrency](ios/concurrency/Readme_concurrency.md) or folder `iOS/concurrency/readME_concurrency` 
 
 ## Multi Threading | Multi Processing
 

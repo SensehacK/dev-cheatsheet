@@ -38,6 +38,59 @@ do {
 	print(error)
 }
 ```
+
+
+AVKit Quirks
+
+https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1
+
+## DRM
+
+Lot of different options
+
+- WideVine
+- Axinom DRM
+- Apple's FairPlay HLS (https://en.wikipedia.org/wiki/FairPlay)
+- https://developer.apple.com/streaming/fps/
+- BrightCove SDK (https://sdks.support.brightcove.com/getting-started/native-video-playback.html)
+
+## Video Geeking
+
+Codec - HEVC x265 - fav
+Dolby Vision vs HDR10
+4:4:4 DCI - Color accuracy
+HLS - components sending data, easily quality switchable, streams m3u8 format
+DASH MPD
+HDMI 2.0 vs 2.1 
+40Gbps vs 48Gbps
+4K @120hz or 8K @60Hz
+Apple Macbook pro 2023 M2Pro | Max finally has HDMI 2.1
+Fav TV tech - LG OLEDs C3, G3 - 
+Fav Video reviewer - [HDTVTest](https://www.youtube.com/@hdtvtest)
+Fav games technical analysis - Digital Foundry
+Rting website for nitty gritty comparison of Video tech.
+https://aria2.github.io/ - cli download utility
+fav project https://github.com/yt-dlp/yt-dlp
+https://www.ffmpeg.org/ - video conversion cli
+handbrake - video encoder decoder GUI
+decryption AES streams https://github.com/Legrandin/pycryptodome
+geo verification proxy - VPN and browser session - decryption and encryption
+https://sponsor.ajay.app/ - youtube community sourced sponsor sharing like Waze reporting tool.
+
+
+
 ## Reference
 
 https://developer.apple.com/documentation/avfoundation/offline_playback_and_storage/using_avfoundation_to_play_and_persist_http_live_streams
+
+
+Video article 
+https://medium.com/@burak.oguz/ios-fairplay-drm-integration-with-different-use-cases-8aff3d4248dd
+
+https://github.com/Axinom/drm-sample-player-ios
+
+Video Kit UIKit delegate and public functions
+https://www.youtube.com/watch?v=IVyy-VBU-Cc
+
+How DRM works
+https://www.youtube.com/watch?v=mn2POYEiJVE

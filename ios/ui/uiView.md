@@ -34,6 +34,7 @@ required init?(coder: NSCoder) {
     }
 ```
 
+https://cocoacasts.com/what-is-fatalerror-in-swift-and-when-to-use-it
 
 
 ## Remove UIView
@@ -87,3 +88,9 @@ UIView Alpha vs UIView Subview alpha.
 Alpha is the property which can basically alter a UI presentation to have full opaque visibility or have transparent visibility. So the view behind the foremost UIView gets displayed to have a hint that the UI is still present in the back of that UIView instance or UIWindow.
 
 https://stackoverflow.com/questions/20423390/uiview-alpha-vs-uicolor-alpha
+
+## References
+
+https://medium.com/@tapkain/custom-uiview-in-swift-done-right-ddfe2c3080a
+
+https://samwize.com/2017/11/01/guide-to-creating-custom-uiview/
