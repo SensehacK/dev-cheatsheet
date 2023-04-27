@@ -5,7 +5,7 @@ Quickly type JSON structs for Swift or any other languages. Network Models
 
 https://app.quicktype.io/
 
-## UserDefaults Codable Wrapper
+## UserDefaults Codable Property Wrapper
 
 On iOS 12 and prior, primitive types (Int, Double, Bool, etc), while Codable
 as a property of a Codable type, cannot itself be JSON encodable. Trying encoding/decoding with these types on iOS 12 earlier platforms will throw an error.

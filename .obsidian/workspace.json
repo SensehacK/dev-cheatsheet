@@ -40,14 +40,16 @@
           {
             "id": "1e67adc31c056023",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swift/switch.md",
+                "file": "ios/xcode/simulator.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -63,6 +65,78 @@
                 "source": false
               },
               "pinned": true
+            }
+          }
+        ],
+        "currentTab": 2
+      },
+      {
+        "id": "2a4e8ec0e497256a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bbf6ff5aea2cd833",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/README_tools.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "33cbae991d5ebff9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/online_apps.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "cb4af96a02afc8ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/location.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "4c1ab3834980b8fe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/network_calls.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e6552fd5c567e6ec",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/network_calls.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ],
@@ -95,7 +169,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "fatal",
+                "query": "Location",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -132,7 +206,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/swift/switch.md",
+                "file": "ios/library/location.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -149,7 +223,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/swift/switch.md",
+                "file": "ios/library/location.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -172,7 +246,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/swift/switch.md"
+                "file": "ios/library/location.md"
               }
             }
           }
@@ -193,36 +267,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "1e67adc31c056023",
+  "active": "cb4af96a02afc8ae",
   "lastOpenFiles": [
+    "tools/online_apps.md",
+    "ios/library/location.md",
+    "ios/xcode/simulator.md",
+    "ios/lifecycle/localization.md",
+    "ios/combine/filter.md",
+    "ios/concurrency/asyncAwait.md",
+    "architecture/system_designs.md",
+    "ios/lifecycle/network_calls.md",
+    "ios/combine/ReadMe_combine.md",
+    "tools/README_tools.md",
+    "ios/lifecycle/structs.md",
+    "thoughts/ReadME_thoughts.md",
+    "ios/combine/publisher.md",
+    "thoughts",
+    "ios/library/codable.md",
+    "ios/concurrency/thread.md",
+    "ios/library/framework.md",
+    "ios/combine/problem_solving.md",
+    "ios/swift/switch.md",
     "ios/lifecycle/class.md",
     "ios/ui/uiView.md",
     "ios/lifecycle/app_delegate.md",
     "ios/xcode/command_line.md",
     "ios/lifecycle/documentation.md",
-    "ios/library/framework.md",
     "ios/rxSwift/documentation.md",
     "ios/library/avkit.md",
     "ios/swift/decimal.md",
-    "architecture/singleton_pattern.md",
-    "architecture/mvvm_pattern.md",
-    "architecture/navigationCoordinator.md",
-    "architecture/mvc_pattern.md",
-    "architecture/mvvm_c_pattern.md",
-    "architecture/concurrency.md",
-    "ios/concurrency/Readme_concurrency.md",
-    "architecture/ReadMe_architecture.md",
     "assets/obs_april_2023.png",
     "Untitled.canvas",
-    "ios/concurrency/actors.md",
-    "ios/concurrency/background_tasks.md",
-    "ios/concurrency/asyncLet.md",
-    "ios/concurrency/asyncAwait.md",
-    "ios/concurrency/operations.md",
-    "ios/concurrency/GCD.md",
-    "ios/concurrency/dispatch_semaphore.md",
-    "ios/concurrency/dispatch_queue.md",
-    "ios/concurrency/dispatch_main.md",
     "architecture/Untitled",
     "architecture/composable",
     "architecture",
