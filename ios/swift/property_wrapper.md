@@ -29,6 +29,33 @@ public struct AutoLayout<T: UIView> {
 ```
 
 
+## Trimmed
+
+```swift
+@propertyWrapper
+public struct Trimmed {
+    var value: String
+
+    public init(wrappedValue: String) {
+        self.value = wrappedValue
+    }
+
+    public var wrappedValue: String {
+        get {
+            value.trimmingCharacters(in: .whitespacesAndNewlines)
+        }
+        set {
+            value = newValue
+        }
+    }
+
+}
+```
+
+User Defaults Property Wrapper
+[codable](codable.md)
+
+
 ## links
 
 https://www.toptal.com/swift/wrappers-swift-properties

@@ -19,7 +19,22 @@ So we can encapsulate the boolean value in string and print it.
 
 
 ## nth element
+
 Very useful thread for getting character of string in swift, playing with its index values rather than just value of the string character.
+
+
+
+```swift
+let input = "Kautilya Save"
+let char = input[input.index(input.startIndex, offsetBy: 0)]
+print(char) // K
+
+// Extension method
+print(input[0] input[9]) // KS
+
+```
+
+You can also use an extension
 
 [SO](https://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language)
 

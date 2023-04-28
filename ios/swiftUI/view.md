@@ -51,3 +51,15 @@ I was able to fix it by having to explicitly mention
 `return NavigationView { }` after I tacked on `.onAppear{ performAnotherTask() }` calling another external function in the same view struct.
 
 https://www.hackingwithswift.com/quick-start/swiftui/how-to-fix-function-declares-an-opaque-return-type-but-has-no-return-statements-in-its-body-from-which-to-infer-an-underlying-ty
+
+
+## UIKit Interop
+
+```swift
+let swiftView = UIHostingController(rootView: SwiftUIView())
+
+present(swiftView, animated: true)
+
+```
+
+https://sarunw.com/posts/swiftui-in-uikit/

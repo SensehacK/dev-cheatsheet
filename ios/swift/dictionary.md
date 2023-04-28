@@ -88,12 +88,35 @@ func fibonacciSequence(n: Int) -> [Int] {
 }
 ```
 
-Array
+## Array
+
 ```swift
 for (index, value) in arrayS.enumerated() { }
 for i in stride(from: 0, to: arrayValue.count, by: 1) { }
 
+let array = ["1", "0", "1"] // =-> "101"
+let result = array.map({$0}).joined(seperator: "")
+array.joined()
+
+
 ```
+
+
+
+## Conversion
+
+```swift
+
+// String to Int
+
+let myString1 = "556"
+let myInt1 = Int(myString1) ?? 0
+
+let convertedInt = try? Int(inputConcat, format: .number)
+
+
+```
+
 
 ## References
 

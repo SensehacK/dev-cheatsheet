@@ -34,7 +34,11 @@ func loadJson(fileName: String) -> Person? {
 [Apple Working with JSON](https://developer.apple.com/swift/blog/?id=37)
 
 
+## JSON Codable helper
+
 Small Extension helper with Codable
+
+### Code
 
 ```swift
 ```swift
@@ -68,7 +72,21 @@ extension Decodable {
 Source
 https://stackoverflow.com/questions/24410881/reading-in-a-json-file-using-swift
 
+### Usage 
 
+For SwiftUI easier local json testing.
+```swift
+struct UserCellView: View { }
+
+static var previews: some View {
+	switch User.from(localJSON: "user") {
+	case .success(let value):
+		UserCellView(user: value)
+	case .failure(_):
+		Text("No Data loaded")
+	}
+}
+```
 
 
 ## Error Parsing JSON

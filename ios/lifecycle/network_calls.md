@@ -31,7 +31,6 @@ guard let url = URL(string: Constants.baseURL.rawValue + Constants.image.rawValu
         let task = URLSession.shared.dataTask(with: request) { (data, response, error) in
             guard error == nil else { return }
             
-            
             guard let httpResponse = (response as? HTTPURLResponse)?.statusCode, httpResponse == HTTPStatusCode.statusSuccess.rawValue else {
                 let httpCode = (response as? HTTPURLResponse )?.statusCode
                 print("Error in retrieving data from API", +httpCode!)
@@ -43,8 +42,7 @@ guard let url = URL(string: Constants.baseURL.rawValue + Constants.image.rawValu
                 }
                 return
             }
-            
-            
+
             guard let data = data else { return }
             do {
                 imgResponse = try JSONDecoder().decode(ImageResponse.self, from: data)

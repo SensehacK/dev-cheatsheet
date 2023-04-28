@@ -42,7 +42,19 @@ Note you can use `#colorLiteral(r:g:b:a:);` to hide the values of the color itse
 
 [Keyboard Dismiss](https://stackoverflow.com/questions/11282449/move-uiview-up-when-the-keyboard-appears-in-ios?noredirect=1&lq=1)
 
-## String Format
+## String
+
+### Character nth element
+
+```swift
+extension StringProtocol {
+    subscript(offset: Int) -> Character {
+        self[index(startIndex, offsetBy: offset)]
+    }
+}
+```
+
+### Format
 
 ## Value Conversion
 

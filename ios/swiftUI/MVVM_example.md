@@ -2,16 +2,24 @@
 
 
 ```swift
-// View
+// Model
+struct Meal: Decodable {
+    let strMeal: String
+    let strMealThumb: String
+    let idMeal: String
+}
+
+// View 
+struct InternalView: View {
+	var recipe: [RecipeData]
+}
+
+// View Controller
 struct CustomListView: View {
 	@StateObject var model: CustomViewModel = CustomViewModel()
 	var body: some View {
 		InternalView(recipe: model.data)
 	}
-}
-// 2nd Extracted View 
-struct InternalView: View {
-	var recipe: [RecipeData]
 }
 
 // ViewModel
@@ -35,12 +43,7 @@ struct MealViewModel: Identifiable {
     var title: String { meal.strMeal }
 }
 
-// Model
-struct Meal: Decodable {
-    let strMeal: String
-    let strMealThumb: String
-    let idMeal: String
-}
+
 ```
 
 Network Async / Await

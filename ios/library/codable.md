@@ -5,17 +5,17 @@ Quickly type JSON structs for Swift or any other languages. Network Models
 
 https://app.quicktype.io/
 
-## UserDefaults Codable Property Wrapper
+## UserDefaults
 
+Codable Property Wrapper
 On iOS 12 and prior, primitive types (Int, Double, Bool, etc), while Codable
 as a property of a Codable type, cannot itself be JSON encodable. Trying encoding/decoding with these types on iOS 12 earlier platforms will throw an error.
 To remedy this behavior we wrap the Codable value in a simple Codable struct.
 
+User Defaults example usage
 
-User Defaults example
 ```swift
 @propertyWrapper
-
 public struct UserDefaultsBacked<Value: Codable> {
 private let key: String
 private let defaultValue: Value
@@ -34,10 +34,6 @@ struct Wrapper<Value>: Codable where Value: Codable {
 	let value: Value
 }
 
-
-
-
-```swift
 // Wrapped value
 // GET
 do {

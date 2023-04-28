@@ -96,6 +96,27 @@ func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options conn
 
 https://sarunw.com/posts/how-to-create-new-xcode-project-without-storyboard/
 
+
+
+## Errors
+
+Warning: Attempt to present * on *whose view is not in the window hierarchy"
+
+
+
+This could be because there is timing issue when presenting the view controller.
+So it is safe to do this after some event has happened via a button or a delay.
+
+```swift
+override func viewDidAppear(_ animated: Bool) {
+        initializeAnotherView()
+}
+```
+
+But to be extra sure you can present another screen after the ViewLifecycle method named `viewDidAppear()` is called and then try to present that view controller.
+
+
+
 ## Resources
 
 [Custom Presentation Controllers](https://makeapppie.com/2016/04/11/the-step-by-step-guide-to-custom-presentation-controllers/)
