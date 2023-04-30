@@ -1,12 +1,12 @@
 # ARC
 
-
 Automatic Reference Counting
 
+## Intro
 
+Value and Reference type comes into picture as always. Number one culprit is the closures  which are reference type by nature will retain the strong reference (which is default) and thus when you're referencing self or inherently something is referencing self then you create a Retain Cycle.
 
-
-
+[unowned_vs_weak](unowned_vs_weak.md)
 
 ## Advance
 
@@ -14,12 +14,20 @@ Optimization on Swift
 
 [Github markdown](https://github.com/apple/swift/blob/main/docs/ARCOptimization.md)
 
+## Memory Graph
 
-## Memory graph 
+It is a great tool to quickly identify things across the application lifecycle. It creats a graph like structure which shows strong or weak references of the objects currently in flight. You can also check if there are more objects being still in the memory after they have been dismissed or replaced by the navigation View controller by replacing or pushing one more view.
+
+If the navigation uiview / uiviewcontroller stack is empty then by default swift / uikit / appkit or objective c runtime should automatically check the references and if the references are 0 zero then ARC (automatic reference counting) should do its job to deallocate those objects. 
+
+I still remember the C / C++ days of unsafe pointers, `malloc` to allocate some memory and in order to save a string we needed to allocate each character byte to store a string. How far we have come in programming that an Open AI - Chat GPT 3 / 4 tool can easily generate code for us. Boilerplate code or just getting more information from the search engine but still cool nonetheless.
+Objective C internally still has ways of Manual Memory management I believe. More control.
 
 Memory Graph Debugger
 
 https://agostini.tech/2018/12/09/memory-graph-debugging-in-xcode/
+
+
 
 ## Memory Management
 

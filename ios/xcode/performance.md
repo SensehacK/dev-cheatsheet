@@ -12,8 +12,45 @@ By giving better context to the compiler or Xcode would result in faster builds,
 
 ## Instruments
 
+[instruments](instruments.md)
+
 
 [Profiler](https://www.avanderlee.com/debugging/xcode-instruments-time-profiler/)
+
+## Debug
+
+View Debugging
+[debug](debug.md)
+
+## Image allocation
+
+Good talk about Image allocation and how thumbnail and resized images could actually save us lot of CPU cycles.
+
+## Caching
+
+Utilizing NSCache or our own dictionary of caching solution is great to improve our performance.
+
+
+## Diffable data source
+
+When your data source is hashable or identifiable. You can have your model conform to protocols `identifiable` or `hashable` and provide our own hasher functions.
+You can also conform to `comparable` which lets you run operators like `>, <, == ` on your custom models and not just the primitive types provided by swift or any programming language.
+
+## Static vs Dynamic dispatch
+
+Static always wins because it knows where it needs to be dispatched when referrering to the witness table.
+
+
+## Reference vs Value types
+
+Know the right data structure to choose from when you're assuming how the app architecture is leaning towards modularization, concurrency heavy or just thin clients.
+It would also affect how the application communitcation pattern is being deployed internally. It is observer pattern, closure based, delegates or fully reactive.
+
+
+## Measure
+
+Xcode or swift llvm gives us lots of tools to measure our method execution time and features. You can find it in this file more about  [measure](measure.md) usage in testing.
+
 
 
 ## Tips

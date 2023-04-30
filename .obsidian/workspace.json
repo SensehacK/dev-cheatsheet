@@ -119,20 +119,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/online_apps.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "f88f6cf5b3bb56f5",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swift/short_hands.md",
+                "file": "ios/swift/DSAlgoTricks.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -145,7 +132,7 @@
       {
         "id": "571d4cef6517c47c",
         "type": "tabs",
-        "dimension": 37.83287419651056,
+        "dimension": 37.832874196510566,
         "children": [
           {
             "id": "cb4af96a02afc8ae",
@@ -211,7 +198,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/debug.md",
+                "file": "architecture/it_Depends.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -237,7 +224,7 @@
       {
         "id": "2a4e8ec0e497256a",
         "type": "tabs",
-        "dimension": 18.365472910927455,
+        "dimension": 18.36547291092746,
         "children": [
           {
             "id": "af505bb63128bd17",
@@ -298,7 +285,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ARC",
+                "query": "continue",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -335,7 +322,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/online_apps.md",
+                "file": "ios/swift/DSAlgoTricks.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -352,7 +339,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tools/online_apps.md",
+                "file": "ios/swift/DSAlgoTricks.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -375,7 +362,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tools/online_apps.md"
+                "file": "ios/swift/DSAlgoTricks.md"
               }
             }
           }
@@ -438,6 +425,16 @@
   },
   "active": "3ac428dba6eda70f",
   "lastOpenFiles": [
+    "ios/swift/arrays.md",
+    "ios/swift/short_hands.md",
+    "architecture/ReadMe_architecture.md",
+    "ios/swift/switch.md",
+    "thoughts/ReadME_thoughts.md",
+    "architecture/it_Depends.md",
+    "ios/swift/DSAlgoTricks.md",
+    "ios/xcode/debug.md",
+    "ios/swiftUI/MVVM_example.md",
+    "tools/online_apps.md",
     "README.md",
     "SUMMARY.md",
     "ios/README_iOS.md",
@@ -454,16 +451,6 @@
     "ios/config/jailbreak.md",
     "ios/config/firebase.md",
     "ios/config/developer_account.md",
-    "ios/config/danger.md",
-    "ios/config/certificate.md",
-    "ios/config/best_practices.md",
-    "ios/config/ats_plist.md",
-    "ios/config/appConfiguration.md",
-    "ios/config/app_store _connect.md",
-    "ios/config/app_environment.md",
-    "ios/config/analytics.md",
-    "ios/automation/auto_increment.md",
-    "ios/automation/auto_tagging.md",
     "ios/swift/collections_cheatsheet.webp",
     "thoughts",
     "assets/obs_april_2023.png",
