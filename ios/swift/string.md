@@ -5,6 +5,12 @@
 
 ## Substring
 
+```swift
+let quote = "The revolution will be Swift"
+let substring = quote.dropFirst(23)
+let realString = String(substring)
+```
+
 Type conversion to String [HWS](https://www.hackingwithswift.com/example-code/language/how-to-convert-a-substring-to-a-string)
 
 
@@ -12,8 +18,6 @@ Type conversion to String [HWS](https://www.hackingwithswift.com/example-code/la
 
 Printing boolean values in print statement wasn’t straight forward as I believed it was.
 So we can encapsulate the boolean value in string and print it.
-
-
 
 [SO](https://stackoverflow.com/questions/28136555/display-the-value-of-bool-in-swift)
 
@@ -33,8 +37,9 @@ print(char) // K
 print(input[0] input[9]) // KS
 
 ```
+https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/
 
-You can also use an extension
+You can also use an extension for it. [extensions Character nth element](extensions.md)
 
 [SO](https://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language)
 

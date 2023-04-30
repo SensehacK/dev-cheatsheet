@@ -4,7 +4,6 @@
 
 This is just a personal documentation or cheatsheet with personal examples for easy reference in future projects.
 
-
 As sometimes, we would have limited internet access or restrictive data download policies. Personal Git documentation for specific programming languages, libraries & frameworks help a lot to quickly absorb the problem statement and work swiftly :P
 
 Hosted 
@@ -31,9 +30,9 @@ Development Hell and most of CLI inputs used with bit of documentation so I’m 
 
 Currently I have separate folders each assigned for their respective domain knowledge I have gained ever since I started working as a Software Engineer back in 2017.
 
-iOS Dev Journey Repo: swift repo
-Other trials: Playgrounds repo
-My Config: sense-setup
+iOS Dev Journey Repo: [swift repo](https://github.com/SensehacK/swift)
+My Config: [sense-setup](https://github.com/SensehacK/sense-setup)
+Other trials: [Playgrounds repo](https://github.com/SensehacK/playgrounds)
 
 ## Where the Beef ?
 

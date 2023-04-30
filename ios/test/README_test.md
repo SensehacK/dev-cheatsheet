@@ -8,7 +8,7 @@
 
 [[measure]]
 
-[[mocks]]
+[[mock]]
 
 [names](names.md)
 

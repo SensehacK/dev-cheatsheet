@@ -6,7 +6,7 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 45.034246575342465,
+        "dimension": 43.80165289256198,
         "children": [
           {
             "id": "6a25767ea83a46c5",
@@ -86,10 +86,53 @@
           {
             "id": "b6901d99181836aa",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swift/property_wrapper.md",
+                "file": "ios/swift/dictionary.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "852d6f7423aa37d4",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/ReadMe_architecture.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "3ac428dba6eda70f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/online_apps.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f88f6cf5b3bb56f5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/swift/short_hands.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -97,12 +140,12 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 7
       },
       {
         "id": "571d4cef6517c47c",
         "type": "tabs",
-        "dimension": 37.84246575342466,
+        "dimension": 37.83287419651056,
         "children": [
           {
             "id": "cb4af96a02afc8ae",
@@ -133,14 +176,68 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "d1ad6eeaea69bc36",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/performance.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "9e52f2469330003e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/performance.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6879f09d31a0e60e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/debug.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a5586d20dd522ae6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/debug.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 4
       },
       {
         "id": "2a4e8ec0e497256a",
         "type": "tabs",
-        "dimension": 17.123287671232877,
+        "dimension": 18.365472910927455,
         "children": [
           {
             "id": "af505bb63128bd17",
@@ -201,7 +298,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Property Wrapp",
+                "query": "ARC",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -218,12 +315,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 258.0055618286133
+    "width": 278
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -239,7 +335,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/swift/property_wrapper.md",
+                "file": "tools/online_apps.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -256,7 +352,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/swift/property_wrapper.md",
+                "file": "tools/online_apps.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -279,7 +375,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/swift/property_wrapper.md"
+                "file": "tools/online_apps.md"
               }
             }
           }
@@ -340,41 +436,41 @@
       }
     ]
   },
-  "active": "b6901d99181836aa",
+  "active": "3ac428dba6eda70f",
   "lastOpenFiles": [
-    "ios/concurrency/dispatch_main.md",
-    "ios/library/codable.md",
-    "ios/swift/property_wrapper.md",
-    "ios/swift/dictionary.md",
-    "ios/library/avkit.md",
-    "ios/swiftUI/MVVM_example.md",
-    "ios/concurrency/dispatch_group.md",
-    "ios/concurrency/dispatch_global.md",
-    "ios/concurrency/dispatch_queue.md",
-    "ios/library/framework.md",
-    "ios/concurrency/thread.md",
-    "ios/concurrency/GCD.md",
-    "ios/lifecycle/read_local_file.md",
-    "ios/lifecycle/view_controllers.md",
-    "ios/ui/uiViewController.md",
-    "ios/ui/navigation_controller.md",
-    "architecture/navigationCoordinator.md",
-    "ios/swiftUI/view.md",
-    "ios/combine/swiftUI.md",
-    "ios/swift/string.md",
-    "ios/concurrency/operations.md",
-    "ios/swiftUI/list.md",
-    "ios/lifecycle/network_calls.md",
-    "ios/combine/publisher.md",
-    "ios/combine/sink.md",
-    "ios/xcode/simulator.md",
+    "README.md",
+    "SUMMARY.md",
+    "ios/README_iOS.md",
+    "architecture/software_updates.md",
+    "ios/config/upgrade.md",
+    "ios/config/swift_lint.md",
+    "ios/config/string_segregation.md",
+    "ios/config/security.md",
+    "ios/config/secret_keys.md",
+    "ios/config/README_config.md",
+    "ios/config/provisioning.md",
+    "ios/config/naming.md",
+    "ios/config/linking.md",
+    "ios/config/jailbreak.md",
+    "ios/config/firebase.md",
+    "ios/config/developer_account.md",
+    "ios/config/danger.md",
+    "ios/config/certificate.md",
+    "ios/config/best_practices.md",
+    "ios/config/ats_plist.md",
+    "ios/config/appConfiguration.md",
+    "ios/config/app_store _connect.md",
+    "ios/config/app_environment.md",
+    "ios/config/analytics.md",
+    "ios/automation/auto_increment.md",
+    "ios/automation/auto_tagging.md",
+    "ios/swift/collections_cheatsheet.webp",
     "thoughts",
     "assets/obs_april_2023.png",
     "Untitled.canvas",
     "architecture/Untitled",
     "architecture/composable",
     "architecture",
-    "ios/swift/collections_cheatsheet.webp",
     "dev_cheatsheet",
     "ios/Canvas.canvas",
     "ios/concurrency",

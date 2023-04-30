@@ -76,9 +76,9 @@ func loadAllImages() {
     }
 }
 
-func imageLocXML(il:String) {
+func imageLocXML(url:String) {
     dispatch_async(dispatch_get_global_queue(QOS_CLASS_USER_INITIATED, 0)) {
-        let url:NSURL? = NSURL(string: il)
+        let url:NSURL? = NSURL(string: url)
         let data:NSData? = NSData(contentsOfURL: url!)
         let image = UIImage(data: data!)
         self.pieceImages.append(image!)
@@ -124,8 +124,33 @@ func loadAllImages() {
 ```
 https://stackoverflow.com/questions/37885623/using-dispatch-async-to-load-images-in-background
 
-## Programmatic UI Image
+### Async Image Global background queue
 
+You can also resort to background queue and just set the image in main queue when the image is downloaded and resized or any other operations are completed.
+
+```swift
+lazy var queue = DispatchQueue(label: "com.yourApp.OperationName", qos: .userInitiated, attributes: [.concurrent])
+
+
+func downloadImages(urls: [URL]) {
+	guard let imageView = tableViewItem.imageView else { return nil }
+	let tempTag = imageView.tag + 1
+	tableViewItem.imageView?.tag = tempTag
+	let url = urls[tempTag] // Just uniquely identify the url to download not a production solution.
+	queue.async { 
+		let image = downloadIndividualImage(with: url)
+		// Jump to main thread for updating UI
+		DispatchQueue.main.async {
+			if tempTag == imageView.tag {
+				imageView.image = image
+			}
+		}
+	}
+}
+
+```
+
+## Programmatic UI Image
 
 [article](https://www.appsdeveloperblog.com/create-uiimage-and-uiimageview-programmatically/)
 [SO](https://stackoverflow.com/questions/26569371/how-do-you-create-a-uiimage-view-programmatically-swift)
@@ -139,3 +164,6 @@ Supporting vector - scalable image asset in iOS
 Using `Preserve Vector Data` property in Assets option in the inspector tab.
 Good article about its usage.
 https://useyourloaf.com/blog/xcode-9-vector-images/
+
+Always use single image which are scallable it also helps us save app bundle size with 1x, 2x & 3x sizes respectively. Apple does I believe inflate those assets internally on device constrains basis. But having 1 size which is easily scalable with pdf or svg format makes it easier to maintain as well as saves internet bandwidth as well both ways. With CI/CD and other deployment tools constantly cloning repositories - even though now they are caching lot of data if there are subsequent runs but if its a new macOS image which gets virtually instantiated on the server runners then I do believe it will not have the cache or the old cache would get invalidated.
+

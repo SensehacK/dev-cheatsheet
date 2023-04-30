@@ -1,10 +1,9 @@
-
-
 # App Configuration
 
 
-Configuring your app with important data when the app is launched is one of the crucial steps of App Launch lifecycle
+## Intro
 
+Configuring your app with important data when the app is launched is one of the crucial steps of App Launch lifecycle
 
 ```swift
 struct AppConfig {

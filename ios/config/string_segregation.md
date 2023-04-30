@@ -1,5 +1,3 @@
-
-
 # String Segregation
 
 ## Code Ergonomics

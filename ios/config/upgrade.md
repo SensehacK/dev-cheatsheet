@@ -1,4 +1,4 @@
-
+# Upgrade
 
 Force upgrade in iOS apps
 Dark UX pattern for sure but if there is a incompatible API version in the backend then it is necessary to do this banner way of showing upgrade quickly.

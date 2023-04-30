@@ -1,6 +1,5 @@
 # Measure
 
-
 ## Time elapsed
 
 Many times you could benefit from measuring time elapsed when running a certain function in order to have better analytics and work around the efficiency of the so called custom function. To compare previous states around baseline tests and times with the updated Merge Requests or new features having a performance hit towards the implemented feature.

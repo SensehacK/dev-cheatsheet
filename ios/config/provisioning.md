@@ -1,5 +1,7 @@
 # Provisioning
 
+## Intro
+
 Provisioning profile is needed for making sure that the signed iOS app should run according to certain privileges or restrictions. For example if an app requires to have “Apple Pay” functionality in their app they need to define that parameter while creating a provisioning profile. By the time of reading this, usually the provisioning profile should be already set up by lead developers, you would only need it specifically if you want to add any new capability which Apple offers or want to run the signed iOS app on your personal devices.
 
 ## Prerequisite
