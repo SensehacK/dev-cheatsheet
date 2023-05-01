@@ -40,6 +40,7 @@ Sink receive values when we are subscriber / observer
 .receive(on: DispatchQueue.main)
 ```
 
+
 ## RxSwift
 
 ### Observe Publisher
@@ -75,3 +76,10 @@ class CustomClass: ObservableObject {
 	}
 }
 ```
+
+
+## References
+
+https://www.hackingwithswift.com/read/9/4/back-to-the-main-thread-dispatchqueuemain
+
+https://holyswift.app/swift-and-combine-which-thread-runs-my-sink-closure/

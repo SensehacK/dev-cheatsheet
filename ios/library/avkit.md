@@ -94,3 +94,7 @@ https://www.youtube.com/watch?v=IVyy-VBU-Cc
 
 How DRM works
 https://www.youtube.com/watch?v=mn2POYEiJVE
+
+https://chris-mash.medium.com/avplayer-swiftui-part-2-player-controls-c28b721e7e27
+
+https://benoitpasquier.com/playing-video-avplayer-swiftui/

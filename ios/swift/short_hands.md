@@ -99,3 +99,5 @@ Have added appropriate RxSwift implementations of `map, flatMap, compactMap` as 
 [Apple Docs](https://developer.apple.com/documentation/swift/sequence/3018365-filter)
 
 [swiftbysundell map basics](https://www.swiftbysundell.com/basics/map-flatmap-and-compactmap/)
+
+https://www.hackingwithswift.com/example-code/language/what-is-a-monad

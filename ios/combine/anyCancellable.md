@@ -37,3 +37,6 @@ This could be also attributed to Hot vs Cold observable phenomenon in RxSwift
 https://www.avanderlee.com/swift/combine/
 
 
+https://www.swiftbysundell.com/articles/combine-self-cancellable-memory-management/
+
+https://www.donnywals.com/what-exactly-is-a-combine-anycancellable/

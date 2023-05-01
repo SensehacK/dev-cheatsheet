@@ -56,3 +56,7 @@ Xcode or swift llvm gives us lots of tools to measure our method execution time 
 ## Tips
 
 [Raywenderlich performance tips](https://www.raywenderlich.com/2752-25-ios-app-performance-tips-tricks)
+
+https://aglowiditsolutions.com/blog/ios-app-performance-optimization/
+
+https://medium.com/strava-engineering/striving-for-ios-app-performance-ac2e1d4c29a2

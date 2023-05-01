@@ -6,7 +6,7 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 43.80165289256198,
+        "dimension": 61.165048543689316,
         "children": [
           {
             "id": "6a25767ea83a46c5",
@@ -112,27 +112,14 @@
               },
               "pinned": true
             }
-          },
-          {
-            "id": "3ac428dba6eda70f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swift/DSAlgoTricks.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 7
+        "currentTab": 6
       },
       {
         "id": "571d4cef6517c47c",
         "type": "tabs",
-        "dimension": 37.832874196510566,
+        "dimension": 19.41747572815534,
         "children": [
           {
             "id": "cb4af96a02afc8ae",
@@ -193,19 +180,6 @@
             }
           },
           {
-            "id": "6879f09d31a0e60e",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/it_Depends.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a5586d20dd522ae6",
             "type": "leaf",
             "state": {
@@ -219,12 +193,12 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       },
       {
         "id": "2a4e8ec0e497256a",
         "type": "tabs",
-        "dimension": 18.36547291092746,
+        "dimension": 19.41747572815534,
         "children": [
           {
             "id": "af505bb63128bd17",
@@ -285,7 +259,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "continue",
+                "query": "https://holyswift.app/swift-and-combine-which-thread-runs-my-sink-closure/",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -306,7 +280,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 278
+    "width": 286.00130462646484
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -322,7 +296,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/swift/DSAlgoTricks.md",
+                "file": "architecture/ReadMe_architecture.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -339,7 +313,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/swift/DSAlgoTricks.md",
+                "file": "architecture/ReadMe_architecture.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -362,7 +336,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/swift/DSAlgoTricks.md"
+                "file": "architecture/ReadMe_architecture.md"
               }
             }
           }
@@ -423,15 +397,26 @@
       }
     ]
   },
-  "active": "3ac428dba6eda70f",
+  "active": "852d6f7423aa37d4",
   "lastOpenFiles": [
+    "ios/swift/dictionary.md",
+    "ios/concurrency/dispatch_main.md",
+    "ios/concurrency/GCD.md",
+    "ios/combine/anyCancellable.md",
+    "ios/combine/swiftUI.md",
+    "ios/xcode/performance.md",
+    "ios/library/avkit.md",
+    "architecture/system_designs.md",
     "ios/swift/arrays.md",
     "ios/swift/short_hands.md",
+    "ios/swiftUI/view.md",
+    "ios/concurrency/asyncStream.md",
+    "ios/concurrency/thread.md",
     "architecture/ReadMe_architecture.md",
+    "ios/swift/DSAlgoTricks.md",
+    "architecture/it_Depends.md",
     "ios/swift/switch.md",
     "thoughts/ReadME_thoughts.md",
-    "architecture/it_Depends.md",
-    "ios/swift/DSAlgoTricks.md",
     "ios/xcode/debug.md",
     "ios/swiftUI/MVVM_example.md",
     "tools/online_apps.md",
@@ -440,17 +425,6 @@
     "ios/README_iOS.md",
     "architecture/software_updates.md",
     "ios/config/upgrade.md",
-    "ios/config/swift_lint.md",
-    "ios/config/string_segregation.md",
-    "ios/config/security.md",
-    "ios/config/secret_keys.md",
-    "ios/config/README_config.md",
-    "ios/config/provisioning.md",
-    "ios/config/naming.md",
-    "ios/config/linking.md",
-    "ios/config/jailbreak.md",
-    "ios/config/firebase.md",
-    "ios/config/developer_account.md",
     "ios/swift/collections_cheatsheet.webp",
     "thoughts",
     "assets/obs_april_2023.png",

@@ -49,6 +49,24 @@ for i in stride(from: 0, to: 10, by: 2) {
 }
 ```
 
+## Continue || Break
+
+Print odd numbers only and skip even numbers. We can ofcourse flip the condition with just 1 if condition for print(i) but my example wanted to include something for `continue` and `break`
+```swift
+for i in stride(from: 0, to: 15, by: 1) {
+	if i % 2 == 0 {
+		continue
+	} else {
+		print(i)
+	}
+
+	if i == 7 {
+		print("Found the lucky number!")
+		break
+	}
+}
+```
+
 ## 2D Array
 
 
@@ -176,6 +194,7 @@ https://onmyway133.com/posts/how-to-repeat-array-of-object-in-swift/
 
 https://qualitycoding.org/verify-arrays-approvaltests-swift/
 
+https://betterprogramming.pub/13-useful-array-methods-in-swift-e169a78cba8d
 ## References
 
 [SO](https://stackoverflow.com/questions/24781027/how-do-you-sort-an-array-of-structs-in-swift)
