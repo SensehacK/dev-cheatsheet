@@ -6,6 +6,9 @@
 Every queue is always First In First Out (FIFO) order. 
 The queue itself could be on main thread or background thread with varying Quality of services.
 
+Wikipedia https://en.wikipedia.org/wiki/Grand_Central_Dispatch
+
+
 Refer `Main thread` [dispatch_main](dispatch_main.md)
 Refer Background threads [dispatch_global](dispatch_global.md)
 
@@ -35,3 +38,8 @@ DispatchQueue.global(qos: .background).async {
 
 
 
+## References
+
+https://developer.apple.com/videos/play/wwdc2015/718/
+
+https://www.kodeco.com/books/concurrency-by-tutorials/v2.0/chapters/2-gcd-vs-operations

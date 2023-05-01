@@ -18,6 +18,8 @@ Development Hell and most of CLI inputs used with bit of documentation so I’m 
 ### Includes
 
 * Different issues I have faced.
+* Architecture
+* Concurrency
 * Boilerplate Code
 * Deprecated or obsolete commands or code flow
 * Timeline of features
@@ -25,6 +27,8 @@ Development Hell and most of CLI inputs used with bit of documentation so I’m 
 * Developer Rants
 * Software Lifecycle
 * Imposter Syndrome
+* Internal Thoughts
+* Opionated patterns
 
 ## Projects
 

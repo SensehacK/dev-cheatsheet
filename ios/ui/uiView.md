@@ -36,6 +36,15 @@ required init?(coder: NSCoder) {
 
 https://cocoacasts.com/what-is-fatalerror-in-swift-and-when-to-use-it
 
+Wrapping multiple views in a sequence and executing them individually to eliminate multiple layout code and boilerplate fluff.
+
+```swift
+[customView1, customView2, customView3].forEach({
+	$0.translatesAutoresizingMaskIntoConstraints = false
+	$0.layer.cornerRadius = 40
+	addSubview($0)
+})
+```
 
 ## Remove UIView
 
@@ -70,11 +79,16 @@ for view in allocatedViews {
 
 You can utilize UIView(autoLayout = true)
 
-> private lazy var customView = UIView(useAutoLayout: true)
+```swift
+private lazy var customView = UIView(useAutoLayout: true)
+```
 
 This will help us to remove the horrendous long variable setup with every override func viewDidLoad()
-> customView.translatesAutoresizingMaskIntoConstraints = false
-
+```swift
+customView.translatesAutoresizingMaskIntoConstraints = false
+```
+Or you can resort to Property Wrapper of which sets these values to false.
+[property_wrapper Extension AutoLayout](property_wrapper.md)
 
 ## Changes
 

@@ -79,3 +79,11 @@
 [segmentation_fault](segmentation_fault.md)
 
 [subscription_chain_not_firing](subscription_chain_not_firing.md)
+
+
+
+## References
+
+
+https://www.reactiveprinciples.org/
+

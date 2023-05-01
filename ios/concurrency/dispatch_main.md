@@ -1,4 +1,5 @@
 # Dispatch Main
+
 ## Info
 
 Serial Queue but async execution if `async` is being used. Usually the prefered option.
@@ -59,7 +60,6 @@ Custom Queue scheduler
 let scheduler = SerialDispatchQueueScheduler(queue: DispatchQueue.main, internalSerialQueueName: "CustomQueue")
 .observe(on: scheduler)
 ```
-
 
 ## SwiftUI
 

@@ -4,8 +4,6 @@ System design is very much a way to express your architectural designing skills 
 
 Below is my list of factors which I consider when designing a system.
 
-
-
 ## Scope 
 
 Defining scope is very important to begin with.
@@ -76,6 +74,8 @@ Prefetching - collections view - images or lists. Cancel old tasks if the User s
 
 Background downloads - syncing - 
 
+Network JSON / API contract definition.
+
 ## Product led growth
 
 Are we experimenting with the app for different flows>? 
@@ -121,7 +121,6 @@ Different source of truth
 Merge timestamp and override data ? 
 
 
-
 ## Good articles to read
 
 [Right Data Structure](https://www.swiftbysundell.com/articles/picking-the-right-data-structure-in-swift/)
@@ -129,6 +128,5 @@ Merge timestamp and override data ?
 https://themobileinterview.com/cracking-the-mobile-system-design-interview/
 
 https://medium.com/geekculture/system-design-interview-for-mobile-engineers-ce712d6ac2c1
-
 
 https://www.techinterviewhandbook.org/system-design/

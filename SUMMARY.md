@@ -1,15 +1,16 @@
+# Summary
+
+## [architecture](architecture/ReadMe_architecture.md)
+
+## [concurrency](ios/concurrency/README_concurrency.md)
 
 ## [iOS](ios/README_iOS.md)
-
-### [architecture](architecture/ReadMe_architecture.md)
 
 ### [automation](ios/automation/README_automation.md)
 
 ### [config](ios/config/README_config)
 
 ### [combine](ios/combine/README_combine.md)
-
-### [concurrency](ios/concurrency/README_concurrency.md)
 
 ### [library](ios/library/README_library.md)
 

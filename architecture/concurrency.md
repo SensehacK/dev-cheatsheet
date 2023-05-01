@@ -26,18 +26,21 @@ On the other hand eyes, brain coordinate with each other to send a neuron signal
 I should have went with a better example since human body mostly works asynchronously for most tasks and does it in a multi processing state. Well I wanted to try explaining it from a human mind's perspective.
 
 
-## Thread 
+## Tasks
 
 A unit of work to be executed by a processor.
+[tasks](ios/concurrency/tasks.md)
+## Thread 
+
+Multiple Tasks to be executed by a single thread. The thread runs on its own context and doesn't share its context with other threads. So running independent work items / tasks on a single Thread is highly recommended. When you add shared / mutable data mutation which can be accessed by mutliple threads thus leading to dirty writes. Which leads to data inconsistency issues.
+
 Multiple threads can exist on a single process.
-[thread](thread.md)
+[thread](ios/concurrency/thread.md)
 
 
 ## Process
 
 A collection of threads or units of work to be executed by the OS scheduler is called a process. It may also include shared resources in order to better communicate with other processes or access low level apis with kernel or I/O devices.
-[tasks](tasks.md)
-
 
 ## Scheduler
 
