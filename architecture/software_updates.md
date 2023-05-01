@@ -22,3 +22,8 @@ As a fellow engineer, the code I wrote yesterday is already obsolete and the cod
 ## Other
 
 ABI - consideration
+
+## Dark UX Pattern
+
+Mac OS upgrades & don't get me started on how Windows 10 handles force upgrades ever since Windows 8.
+[upgrade](ios/config/upgrade.md)

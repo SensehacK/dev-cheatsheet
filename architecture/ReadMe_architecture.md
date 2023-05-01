@@ -9,20 +9,31 @@ This is one of those head scratchers where I thought I would start writing thing
 
 So it won't be fully fleshed out but nothing in this whole cheatsheet is. Everything is just a scratch pad for me to keep my brain stimulated with new things and gotchas.
 
-
 Enjoy!
 
 ## List
 
 [Composable](composable/ReadMe_composable.md)
 
-[orchestration](orchestration.md)
+[App orchestration](orchestration.md)
 
-[[concurrency]]
+[IT Depends](it_Depends.md)
+
+[[Concurrency]]
+
+[System Designs](system_designs.md)
+
+[software_updates](software_updates.md)
+
+## Design Patterns
 
 [mvvm_pattern](mvvm_pattern.md)
 
 [mvc_pattern](mvc_pattern.md)
+
+[mvvm_c_pattern](mvvm_c_pattern.md)
+
+## Architecture Patterns 
 
 [singleton_pattern](singleton_pattern.md)
 
@@ -30,15 +41,26 @@ Enjoy!
 
 [coordinator_pattern](coordinator_pattern.md)
 
-[mvvm_c_pattern](mvvm_c_pattern.md)
-
 [notification_pattern](notification_pattern.md)
 
 [navigationCoordinator](navigationCoordinator.md)
 
 [delegate_pattern](delegate_pattern.md)
 
-[[system_designs]]
+## Advance Topics
+
+[Swift Concurrency](ios/concurrency/Readme_concurrency.md)
+
+Reactive Paradigm 
+[RxSwift](ios/rxSwift/README_rxSwift.md)
+[Combine](ios/combine/ReadMe_combine.md)
+
+View Debugging, Memory Graph, Method Swizzling
+[Performance](ios/xcode/performance.md)
+[ARC](ios/lifecycle/arc.md)
+[debug](ios/xcode/debug.md)
+
+Higher Order functions [short_hands](ios/swift/short_hands.md)
 
 ## Resources
 
