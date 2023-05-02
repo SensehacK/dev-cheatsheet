@@ -2,7 +2,6 @@
 
 [[arc]]
 
-[[background_tasks]]
 
 [[class]]
 
@@ -18,17 +17,25 @@
 
 [[ios/lifecycle/extensions]]
 
+[inheritance](inheritance.md)
+
 [[localization]]
+
+[logging](logging.md)
+
+[notification_pattern](notification_pattern.md)
 
 [[network_calls]]
 
 [[orientation]]
 
+[plist](plist.md)
+
+[read_local_file](read_local_file.md)
+
 [[retain_cycle]]
 
 [[rtl_alignment_support]]
-
-[MVVM](MVVM.md)
 
 [[segues]]
 
@@ -38,20 +45,14 @@
 
 [[swift_types]]
 
-[[thread]]
-
-[[lifecycle/timer]]
+[timer](ios/lifecycle/timer.md)
 
 [[unowned_vs_weak]]
 
-[[view_controllers]]
-
 [[state_architecture]]
 
-[[lifecycle/extensions]]
-
-[inheritance](inheritance.md)
-
-[logging](logging.md)
+[user_defaults](user_defaults.md)
 
 [user_notifications](user_notifications.md)
+
+[[view_controllers]]

@@ -1,4 +1,4 @@
-## Notification Pattern
+## Observer Pattern
 
 1 - > N 
 
@@ -10,3 +10,11 @@ Cons:
 - Subscribing and disposing of subsribers
 - Multiple firing of events.
 - Hot / Cold observers
+
+
+
+
+
+## Examples
+
+iOS example with combine [notification_pattern](ios/lifecycle/notification_pattern.md)

@@ -1,6 +1,8 @@
+# User Notifications
 
 
 
+## Push Notifications
 
 Open app in specific view when push notification is tapped
 https://fluffy.es/open-specific-view-push-notification-tapped/
@@ -10,40 +12,44 @@ Best Practices around Notifications
 https://blog.hurree.co/ios-push-notification-permissions-best-practises
 https://tanaschita.com/20220502-quick-guide-on-local-notifications-for-ios/
 
-## Combine Listen Lifecycle events
 
 
+## Simulate Push notification in Simulator
 
-```swift
-
-import UIKit
-import Combine
-
-class MyFunkyViewController: UIViewController {
-
-    /// The cancel bag containing all the subscriptions.
-    private var cancelBag: Set<AnyCancellable> = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        addSubscribers()
-    }
-
-    /// Adds all the subscribers.
-    private func addSubscribers() {
-        NotificationCenter
-            .Publisher(center: .default,
-                       name: UIApplication.willEnterForegroundNotification)
-            .sink { [weak self] _ in
-                self?.doSomething()
-            }
-            .store(in: &cancelBag)
-    }
-
-    /// Called when entering foreground.
-    private func doSomething() {
-        print("Hello foreground!")
-    }
+Create `custom_notification.apns` file with your target identifier.
+```text
+{
+	"Simulator Target Bundle": "com.your.targets.bundle.identifier",
+	"aps": {
+		"alert": "Push Notifications Test",
+		"sound": "default",
+		"badge": 1
+	}
 }
 ```
-https://stackoverflow.com/questions/25716012/triggering-a-specific-action-when-the-app-enters-foreground-from-a-local-notific
+
+Drag and drop the file in iOS / iPadOS simulator. As long as the app bundle ID is correct and the simulator has the app installed it should show the right notification.
+
+You need to have asked a permission for allowing notifications on the app you want to test push notifications.
+
+SwiftUI notifications permission
+
+```swift
+VStack {
+	Text("Hello Kautilya!")
+}
+.onAppear {
+	UNUserNotificationCenter.current().requestAuthorization(options: [.badge, .sound, .alert]) { _, _ in 
+		print("Hello Again?")
+	}
+}
+
+```
+
+## Local Notifications
+
+
+
+## References
+
+https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification

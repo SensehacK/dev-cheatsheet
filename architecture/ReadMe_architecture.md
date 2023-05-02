@@ -41,7 +41,7 @@ Enjoy!
 
 [coordinator_pattern](coordinator_pattern.md)
 
-[notification_pattern](notification_pattern.md)
+[observer_pattern](observer_pattern.md)
 
 [navigationCoordinator](navigationCoordinator.md)
 

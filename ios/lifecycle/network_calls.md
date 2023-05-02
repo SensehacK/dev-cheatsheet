@@ -136,3 +136,26 @@ if #available(iOS 10.0, *) {
 
 https://stackoverflow.com/questions/39546856/how-to-open-an-url-in-swift
 https://developer.apple.com/documentation/uikit/uiapplication/1648685-open
+
+
+## URL encoding
+
+Spaces -> percent encoding ` ` -> `%20`
+```swift
+let urlEncoded = value.addingPercentEncoding(withAllowedCharacters: .alphanumerics)
+let url = "http://www.example.com/?name=\(urlEncoded!)"
+```
+
+Adding base path 
+
+```swift
+let category = "swift"
+let baseURL = URL(string: "https://www.avanderlee.com")!
+let blogURL = URL(string: category, relativeTo: baseURL)!
+print(blogURL) // Prints: swift -- https://www.avanderlee.com
+print(blogURL.absoluteString) // Prints: https://www.avanderlee.com/swift
+```
+
+URL components base path: https://www.avanderlee.com/swift/url-components/
+
+
