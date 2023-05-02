@@ -1,7 +1,6 @@
 # Curl
 
-
-
+Pretty lightweight tool to quickly get network requests and responses from the server.
 
 ## Download file FTP
 
@@ -15,3 +14,15 @@ curl -L -R -O ftp://ftp.gnu.org/gnu/bc/bc-1.07.1.tar.gz
 
 Do man curl or curl --help for more information.
 [SO ](https://apple.stackexchange.com/questions/320781/missing-ftp-command-line-tool-on-macos)
+
+
+## GET
+
+```bash
+curl https://www.example.com/
+```
+
+## Source
+
+man help - curl
+[Manual](https://curl.se/docs/manual.html)
