@@ -27,3 +27,38 @@ https://crystalminds.medium.com/where-are-the-standard-userdefaults-stored-d02bf
 
 Note about User Defaults drawbacks.
 https://www.hackingwithswift.com/guide/ios-swiftui/4/2/key-points
+
+
+### Keys
+
+Good way to define keys in order to access them whenever needed.
+
+```swift
+enum Keys {
+	static let isLoggedIn = "AppName.State.isLoggedIn"
+	static let colorScheme = "AppName.Pref.colorScheme"
+}
+```
+
+
+## Manager
+
+
+```swift
+class UserDefaultsManager {
+	private let defaults = UserDefaults.standard
+    
+    // Singleton
+    static var shared: UserDefaultsManager = UserDefaultsManager()
+    private init() { }
+    
+    // MARK: - Public methods
+    func get(key: UserDefaultsKey) -> String? {
+        guard let returnedValue = defaults.object(forKey: key.rawValue) as? String else { return nil }
+        return returnedValue
+    }
+
+    func set(key: UserDefaultsKey, value: String) {
+        defaults.set(value, forKey: key.rawValue)
+    }
+```

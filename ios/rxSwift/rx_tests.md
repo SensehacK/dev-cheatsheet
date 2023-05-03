@@ -150,6 +150,8 @@ https://fivenyc.medium.com/testing-rxswift-code-how-i-learned-to-stop-worrying-a
 
 https://www.youtube.com/watch?v=1SUFMcYjCpE
 
+https://www.essentialdeveloper.com/articles/testing-code-that-uses-dispatchqueue-main-async-ios-lead-essentials-community-qa
+
 ## MVVM
 https://benoitpasquier.com/how-to-use-rxtests-to-test-mvvm/
 
