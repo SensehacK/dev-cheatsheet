@@ -1,23 +1,22 @@
-Network API Calls
+# Network
 
 
+## API Calls
 
-## Step 1
+### Step 1
 
 Make structure to conform with codable data type
 
+### Step 2
 
-## Step 2
 Make asynchronous network calls with specific URL
 
-## Step 3
+### Step 3
+
 Add header files and authorization to the network request being created and sent over from apple default URLSession
 
 
-
 ```swift
-
-
 guard let url = URL(string: Constants.baseURL.rawValue + Constants.image.rawValue + value) else { return  }
         
 	// ImageResponse(name: "Billy", url: "https://i.redd.it/vxyig96zgfh61.png", type: "png", width: 400, height: 400)
@@ -72,13 +71,15 @@ Or you could just directly use `URL`
 
 ```swift
 let task = URLSession.shared.dataTask(with: URL) { (data, response, error) in 
-												  
+		  
 }
 ```
 
 dataTaskWithURL vs downloadTaskWithURL
 First one downloads in memory / RAM and the other one downloads the file and stores it on local storage - of the device.
 ## URL Components
+
+Constructing URLs using URL Components is much nicer and lets us have `preconditionFailure` in guard statements.
 
 ```swift
 public func createSignUpURL(matching clientID: String = "clientID") -> URL {
@@ -95,14 +96,24 @@ public func createSignUpURL(matching clientID: String = "clientID") -> URL {
 }
 ```
 
+Source swift by sundell
+```swift
+var url: URL {
+	var components = URLComponents()
+	components.scheme = "https"
+	components.host = "api.myapp.com"
+	components.path = "/" + path
+	components.queryItems = queryItems
 
-https://developer.apple.com/documentation/foundation/urlcomponents
+	guard let url = components.url else {
+		preconditionFailure(
+			"Invalid URL components: \(components)"
+		)
+	}
 
-https://www.swiftbysundell.com/articles/constructing-urls-in-swift/
-
-https://www.avanderlee.com/swift/url-components/
-
-
+	return url
+}
+```
 
 ## Checks
 
@@ -156,6 +167,19 @@ print(blogURL) // Prints: swift -- https://www.avanderlee.com
 print(blogURL.absoluteString) // Prints: https://www.avanderlee.com/swift
 ```
 
-URL components base path: https://www.avanderlee.com/swift/url-components/
 
 
+## Reference 
+
+https://developer.apple.com/documentation/foundation/urlcomponents
+
+https://www.swiftbysundell.com/articles/constructing-urls-in-swift/
+
+Managing URLs and endpoints
+https://www.swiftbysundell.com/clips/4/
+
+URL components base path
+https://www.avanderlee.com/swift/url-components/
+
+Generic network APIs
+https://www.swiftbysundell.com/articles/creating-generic-networking-apis-in-swift/
