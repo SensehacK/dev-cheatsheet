@@ -175,6 +175,21 @@ i don't think we need to have multiple and nearly identical JSON structures. for
 
 http://iosunittesting.com/manual-mocking-swift/
 
+
+## Core Location Mocking
+
+1.  Open Xcode.
+    
+2.  Choose Product > Test Plan > Edit Test Plan.
+    
+3.  In the test plan editor pane, choose Configuration.
+    
+4.  Under Localization, click Simulated Location and choose a location from the menu.
+
+https://developer.apple.com/documentation/xcode/simulating-location-in-tests
+
+https://rwhtechnology.com/blog/unit-test-cllocationmanager-with-mock/
+
 ## Resources
 
 http://iosunittesting.com/
