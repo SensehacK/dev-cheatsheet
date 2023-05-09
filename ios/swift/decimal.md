@@ -1,4 +1,4 @@
-
+# Decimal
 
 To only get 2 after the decimal option. `%.1f` Depends on your configuration.
 Double, Float values.

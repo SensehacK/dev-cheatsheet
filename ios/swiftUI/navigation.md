@@ -17,6 +17,16 @@ NavigationView {
         }
 ```
 
+List with custom Cell view and destination navigation detail view
+```swift
+List(recipes) { recipe in
+	NavigationLink(destination: DetailView(ID: recipe.id)) 
+	{
+		MealRecipeCellView(meal: recipe)
+	}
+}
+```
+
 ## Binding Based approach
 
 

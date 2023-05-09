@@ -59,4 +59,4 @@ Cons:
 
 https://www.swiftbysundell.com/articles/swifts-closure-capturing-mechanics/
 
-
+https://medium.com/@almalehdev/you-dont-always-need-weak-self-a778bec505ef

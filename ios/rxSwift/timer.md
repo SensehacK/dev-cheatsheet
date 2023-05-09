@@ -1,4 +1,4 @@
-
+# Timer
 ## Code block interval
 
 When you want to run a specific block of code every interval you can create an interval which fires off that Rx chain every time interval

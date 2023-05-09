@@ -1,4 +1,4 @@
-Relays
+# Relays
 
 
 RxRelay provides three kinds of Relays: PublishRelay, BehaviorRelay and ReplayRelay. They behave exactly like their parallel Subjects, with two changes:

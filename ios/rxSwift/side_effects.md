@@ -1,11 +1,11 @@
-Side Effects
+# Side Effects
 
 
 ## Good practise
 
 Jersh comment on
 
-```
+```swift
 Observable.just(nil),
 ```
 

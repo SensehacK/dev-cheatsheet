@@ -163,6 +163,7 @@ Swift ISO date creation
 https://onmyway133.com/posts/how-to-make-iso-8601-date-in-swift/
 
 
+
 ## References
 
 
@@ -172,3 +173,11 @@ https://onmyway133.com/posts/how-to-make-iso-8601-date-in-swift/
 
 
 https://iharishsuthar.github.io/posts/swift-date/
+
+CMTime 
+Time precision with Floats and new struct type needed
+https://warrenmoore.net/understanding-cmtime
+
+https://dcordero.me/posts/cmtime-for-human-beings.html
+
+https://developer.apple.com/documentation/coremedia/cmtime-u58

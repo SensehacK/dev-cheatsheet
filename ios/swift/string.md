@@ -39,7 +39,7 @@ print(input[0] input[9]) // KS
 ```
 https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/
 
-You can also use an extension for it. [extensions Character nth element](extensions.md)
+You can also use an extension for it. [extensions Character nth element](ios/lifecycle/extensions.md)
 
 [SO](https://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language)
 

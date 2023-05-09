@@ -50,3 +50,5 @@ https://stackoverflow.com/questions/51508613/is-final-necessary-for-a-singleton-
 https://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-vs-static-class-java.html
 
 https://medium.com/@nimjea/singleton-class-in-swift-17eef2d01d88
+
+https://www.swiftbysundell.com/tips/quickly-replacing-singletons-with-functions/

@@ -1,4 +1,4 @@
-Timeline
+# Timeline
 
 Dec 2nd week: Started learning RxSwift.
 

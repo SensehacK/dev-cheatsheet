@@ -1,8 +1,10 @@
-PreRequisites
+# PreRequisites
+
 
 
 There are few things a person should know before getting started with RxSwift
 
+# List
 
 - Package dependency manager ( CocoaPods or SPM )
 - Shorthand functions ( map, filter, compactMap, flatMap, reduce )
