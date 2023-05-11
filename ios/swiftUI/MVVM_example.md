@@ -134,7 +134,7 @@ public func fetchData<T: Decodable>(url: String, id: Int? = nil, type: T.Type) a
         }
         let (data, response) = try await URLSession.shared.data(from: url)
         guard let response = response as? HTTPURLResponse,
-              response.isResponseOK() else {
+              (200..<300).contains(httpResponse.statusCode) else {
             throw NetworkError.requestBad
         }
         guard let decodedData = try? JSONDecoder().decode(T.self, from: data) else {
@@ -165,6 +165,20 @@ struct ExtractedView: View {
 	VStack { 
 		Text(vm.fetchText())
 	}
+}
+```
+
+
+
+## Error Enums
+
+```swift
+enum NetworkError: Error {
+    case requestBad
+    case requestDataFailedNetworkError
+    case invalidURL
+    case requestBadDecoding
+    case unknown
 }
 ```
 

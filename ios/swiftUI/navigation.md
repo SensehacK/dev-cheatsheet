@@ -27,6 +27,27 @@ List(recipes) { recipe in
 }
 ```
 
+NavigationLink should be inside the NavigationView just like how UIKit works with ViewController being part of the parent navigation ViewController.
+
+```swift
+NavigationView {
+	VStack {
+		Text("Hello World!")
+		
+		NavigationLink(destination: ViewInit()) {
+			Text("Navigate to new screen")
+		}
+	}
+}
+```
+
+
+
+## iOS 16
+
+Navigation Stack - Router Based approach
+
+
 ## Binding Based approach
 
 

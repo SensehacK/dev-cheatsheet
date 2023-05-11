@@ -59,3 +59,7 @@ User Defaults Property Wrapper
 ## links
 
 https://www.toptal.com/swift/wrappers-swift-properties
+
+https://swiftwithmajid.com/2021/08/11/how-to-create-a-property-wrapper-in-swift/
+
+https://quickbirdstudios.com/blog/swift-property-wrappers/
