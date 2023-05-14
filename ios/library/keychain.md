@@ -7,6 +7,9 @@ Shared Keychain to store data of the app. Specifically Username, password and UU
 Good library 
 [KeychainSwift](https://github.com/evgenyneu/keychain-swift)
 
+Better documentation with this library.
+https://github.com/kishikawakatsumi/KeychainAccess
+
 
 
 ### Keys

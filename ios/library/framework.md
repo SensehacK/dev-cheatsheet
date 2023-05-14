@@ -27,6 +27,12 @@ Static - unit of codebase linked at compile time. Which doesnt change
 
 Dynamic - binds symbols at runtime execution. Recommended approach to save storage. But has performance costs when the compiler does dynamic linking with `Mach-O` llvm and other process stuff.
 
+Dynamic libraries are most of the times slow since it will link those library on app startup.
+Static won't have to deal with linking on app startup but it will increase the app size. Also it could be fast but depends on how many libraries you load at startup.
+
+Embedding in the app executable or not.
+
+
 ### Framework 
 It is a bundle of resources. Could include code, assets, bridging headers, documentation, UI code etc. 
 In this also you can static or dynamic framework - same concept applies about generating / linking those assets internally. There is always a cost for storage or performance you have to pay with any approach. 
@@ -40,6 +46,8 @@ So which is better ?
 
 ### Mach - O
 `ABI` - `Application Binary Interface`
+
+
 
 
 ### Different extensions

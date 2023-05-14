@@ -6,6 +6,8 @@
 
 [codable](codable.md)
 
+[cryptoSwift](cryptoSwift.md)
+
 [[date_time]]
 
 [[foundation_library]]
