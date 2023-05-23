@@ -3,17 +3,17 @@
 
 ## Setup
 
+Ruby bundler installation is a prerequisite. To install and run fastlane commands on macOS or any unix environment.
 
 ## Commands
 
 
-```sh
+```bash
 bundle exec fastlane ea
 
 bundle exec fastlane increment_build
 
 bundle exec fastlane increment_version
-
 ```
 
 

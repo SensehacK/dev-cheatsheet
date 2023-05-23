@@ -23,7 +23,7 @@ func setupMemoryWarningBindings() {
 
 
 class SystemMemory {
-					
+	
 }
 ```
 ## Firebase

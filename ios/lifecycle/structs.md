@@ -1,4 +1,4 @@
-Structs
+# Structs
 
 
 ## Choose Struct over class

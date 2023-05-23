@@ -1,4 +1,4 @@
-Command Line
+# Command Line
 
 
 
@@ -7,30 +7,46 @@ Command Line
 
 
 Default documentation
-> xcode-build -help
+```bash
+xcode-build -help
+```
 
-> man xcode-build
+```bash
+man xcode-build
+```
+
 
 
 ### Build
 
 Cleaning the project.
 
-> xcodebuild clean
+
+```bash
+xcodebuild clean
+```
+
 
 Listing all schemes
+```bash
 xcodebuild -list
+```
+
 
 ### Tests
 
 To run all tests
-> swift test
+```bash
+swift test
+```
 
 
 To run specific tests
-> swift test --filter testTargetName
+```bash
+swift test --filter testTargetName
 
 swift test --filter product_nameNetworkUnitTests
+```
 
 ```bash
 swift test --filter product_nameNetworkUnitTests -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk  -target arm64-apple-ios15.2
@@ -98,7 +114,7 @@ Or use pipeline with external tool called `xcpretty`
 
 building on mac OS version.
 
-```
+```bash
 error: the library 'product_nameCore' requires macos 10.10, but depends on the product 'CryptoSwift' which requires macos 10.12; consider changing the library 'product_nameCore' to require macos 10.12 or later, or the product 'CryptoSwift' to require macos 10.10 or earlier.
 error: the library 'product_nameNetwork' requires macos 10.10, but depends on the product 'Moya' which requires macos 10.12; consider changing the library 'product_nameNetwork' to require macos 10.12 or later, or the product 'Moya' to require macos 10.10 or earlier.
 error: the library 'product_nameNetwork' requires macos 10.10, but depends on the product 'Alamofire' which requires macos 10.12; consider changing the library 'product_nameNetwork' to require macos 10.12 or later, or the product 'Alamofire' to require macos 10.10 or earlier.
@@ -119,7 +135,7 @@ Information about workspace "product_name-iOS-Network":
         
         
 
-```
+```bash
 xcodebuild: error: Scheme product_nameNetworkTestKit is not currently configured for the test action.
 ```
 

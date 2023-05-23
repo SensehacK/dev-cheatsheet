@@ -1,3 +1,3 @@
 associated-types
 
-[](https://www.avanderlee.com/swift/associated-types-protocols/)
+[avanderlee post](https://www.avanderlee.com/swift/associated-types-protocols/)

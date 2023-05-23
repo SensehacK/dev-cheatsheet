@@ -1,4 +1,4 @@
-# spm
+# SPM Swift Package Manager
 
 
 ## Setup

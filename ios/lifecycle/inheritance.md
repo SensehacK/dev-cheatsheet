@@ -1,4 +1,8 @@
+# Inheritance
 
+## Intro
+
+Common OOP concept for swift to support.
 
 
 ## NSObject

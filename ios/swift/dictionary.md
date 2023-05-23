@@ -38,13 +38,14 @@ for (key, value) in dictionaryName {
 
 ## Complexity
 
-Search: 
+### Search
 Searching time is always constant in Dictionary as they are hashed internally, so the key is accepted in any common hashable data type and Swift compiler internally generates a Hash value for it. So it’s easy to get those details. 
 
-Quirks: 
+### Quirks
 Thats the reason that Dictionary aren’t organized in a sorted manner.
 
-Update: It’s also in constant Big O(1) time.
+### Update
+It’s also in constant Big O(1) time.
 
 
 ## Applications

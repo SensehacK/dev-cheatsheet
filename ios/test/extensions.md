@@ -1,4 +1,4 @@
-# Extension
+# Test Extension
 
 
 Simple wrapper functions to make assertions a bit more readable at call sites and so we don't have to constantly prefix assertions with `XCT`.

@@ -1,5 +1,6 @@
-# transitions
+# Transitions
 
+## Intro
 Transitioning from one view controller to another is always great way to show how the views or the flow of data / work is being carried out.
 It can literally make or break the User Experience of the end user and also needs to be not done overly complicated with too many animations.
 Looking for sweet spot is important in that aspect.

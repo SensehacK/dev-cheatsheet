@@ -23,8 +23,6 @@
 
 [runtime_errors](runtime_errors.md)
 
-
-
 [[resign_cli]]
 
 [[settings]]
@@ -37,6 +35,6 @@
 
 [[wireless_deploy]]
 
-[upgrade](ios/xcode/upgrade.md)
+[migration](migration.md)
 
 [[xcode_merge]]
