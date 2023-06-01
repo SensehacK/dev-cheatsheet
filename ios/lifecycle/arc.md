@@ -6,7 +6,14 @@ Automatic Reference Counting
 
 Value and Reference type comes into picture as always. Number one culprit is the closures  which are reference type by nature will retain the strong reference (which is default) and thus when you're referencing self or inherently something is referencing self then you create a Retain Cycle.
 
-[unowned_vs_weak](unowned_vs_weak.md)
+
+
+## Retain Cycle
+
+You can read up more on this [retain_cycle post.](retain_cycle.md)
+
+When to use weak capture list to break the retain cycle.[unowned_vs_weak](unowned_vs_weak.md)
+
 
 ## Advance
 
@@ -63,3 +70,7 @@ self.aSubView = nil;
  
 https://stackoverflow.com/questions/21654113/why-does-xcode-create-a-weak-reference-for-an-iboutlet
 
+
+## References
+
+https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/

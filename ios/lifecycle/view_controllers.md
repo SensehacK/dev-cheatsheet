@@ -14,21 +14,27 @@ This would be better explained using iOS Segues doc as we would dive more deep i
 
 Dismissing Child view controller could be done using various methods depending on how it was created.
 
-View Controller: 
+### View Controller
 
-> Normal View controller uses just dismiss method. self.dismiss\(animated: true, completion: nil\)
+Normal View controller uses just dismiss method. 
 
-Navigation Controller: 
+```swift
+self.dismiss(animated: true, completion: nil)
+```
 
-> navigationController?.dismiss\(animated: true\)
-
+Navigation Controller
+```swift
+navigationController?.dismiss(animated: true)
+```
 
 ## Pop
 
 Navigation controller needs pop method to pop the current view controller into the navigation stack
 
+```swift
+navigationController?.popViewController(animated: true)
+```
 
-> navigationController?.popViewController\(animated: true\)
 
 [SO](https://stackoverflow.com/questions/23841617/how-to-pop-navigation-controller-ios)
 
@@ -39,7 +45,6 @@ We can also dismiss the the whole
 Different styles [Medium article](https://hacknicity.medium.com/view-controller-presentation-changes-in-ios-13-ac8c901ebc4e)
 
 ## Init
-
 
 ```swift
 required init?(coder aDecoder: NSCoder) {
@@ -118,6 +123,9 @@ But to be extra sure you can present another screen after the ViewLifecycle meth
 
 
 ## Resources
+
+My own [uiViewController ](uiViewController.md) UI specific documentation changes.
+
 
 [Custom Presentation Controllers](https://makeapppie.com/2016/04/11/the-step-by-step-guide-to-custom-presentation-controllers/)
 

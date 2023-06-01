@@ -1,9 +1,9 @@
-Unowned vs Weak Reference
+# Unowned vs Weak Reference
 
 
 
 
-Good Stack overflow explanation
+## Good Stack overflow explanation
 
 [SO](https://stackoverflow.com/questions/25377674/unowned-vs-weak-why-we-should-prefer-unowned)
 unowned vs. weak. Why we should prefer unowned?
@@ -29,13 +29,12 @@ https://stackoverflow.com/questions/39433221/why-do-closures-require-an-explicit
 
 When you're not sure whether certain instance would be present at that time in a closure which could outlive its parent invocation. Then you should use `[weak self]` capture list in closures in order to not create [retain_cycle](retain_cycle.md) as well as not crashing the app if the instance you're trying to access isn't present.
 
-
-Pros:
+### Pros
 - Safe
 - Easy understanding
 - Preferred way
 
-Cons:
+### Cons
 - Performance cost
 - Always `Optional` self so the code looks ugly `self?.doSomething()`
 - Easily ^ avoidable using `guard let self = self else { return }`
@@ -43,11 +42,11 @@ Cons:
 
 ## Unowned
 
-Pros:
+### Pros
 - Performance faster as no overhead of checking reference valid
 - Doesn't look ugly with code `self?.` vs `self` 
 
-Cons:
+### Cons
 - Not Safe
 - Harder understanding
 - Always `Optional` self so the code looks ugly `self?.doSomething()`

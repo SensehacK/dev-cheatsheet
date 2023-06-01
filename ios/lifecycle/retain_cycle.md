@@ -1,16 +1,52 @@
 # Retain Cycle
 
 
+## Intro
+
+When object A -> holds a strong reference to Object B. 
+And Object B -> holds a strong reference to Object A.
+Multiple objects can be present but the important concept is it is cyclic dependency graph or a retain cycle since Apple - Swift runtime execution always defaults to strong reference object types.
+
 
 
 ## Identify
 
+Only classes and closures are reference types in Swift.
+Everything else is mostly value type.
+Now `actors` are the exeption which was recently introduced.
+
+As long as you reference a reference object in a closure body by default it captures strong so to avoid that you can capture them in the closure block syntax
 
 ## Mitigate
 
+Avoiding retain cycle by capturing self if being referenced in the closure. By making it weak object reference using `weak` or `unowned` is the way to break the cyclic dependency graph or retain cycle
+
+Possible Retain Cycle
+```swift
+class ParentClass {
+	anotherFunction() { print("Callback!")}
+	
+	SomeClass()
+	.functionCompletioner { 
+		self.anotherFunction
+	}
+}
+```
+
+Breaking Retain Cycle
+```swift
+class ParentClass {
+	anotherFunction() { print("Callback!")}
+	
+	SomeClass()
+	.functionCompletioner { [weak self] in
+		self?.anotherFunction
+	}
+}
+```
 
 
-
+You can read up on when to use weak or unowned in this [unowned_vs_weak post.](unowned_vs_weak.md)
 
 
 ## Basic errors
@@ -27,6 +63,7 @@ Protocol with weak references
 https://stackoverflow.com/questions/19892245/understanding-retain-cycle-in-depth
 
 ## Sources
+
 
 [avoiding retain cycle](https://medium.com/mackmobile/avoiding-retain-cycles-in-swift-7b08d50fe3ef)
 
