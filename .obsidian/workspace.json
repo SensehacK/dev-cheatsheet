@@ -184,10 +184,38 @@
           {
             "id": "ad4cfb0d62786816",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/lifecycle/network_calls.md",
+                "file": "os/mac/fresh_install.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "396729b90ac07892",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/mac/fresh_install.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e2d2537c21b07417",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "process/code_checkout.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -195,7 +223,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       },
       {
         "id": "2a4e8ec0e497256a",
@@ -216,8 +244,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "d3fdf5887e6f2b8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/mac/fresh_install.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -246,7 +288,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "dataTask(with:",
+                "query": "ssh",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -262,12 +304,21 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "62c7509a5cf14d8d",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 341.00130462646484
+    "width": 296
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -283,7 +334,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/lifecycle/network_calls.md",
+                "file": "os/mac/fresh_install.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -300,7 +351,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/lifecycle/network_calls.md",
+                "file": "os/mac/fresh_install.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -323,15 +374,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/lifecycle/network_calls.md"
+                "file": "os/mac/fresh_install.md"
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -344,83 +396,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "floating": {
-    "id": "cd49bd7e9616cfb0",
-    "type": "floating",
-    "children": [
-      {
-        "id": "d854bfe104c77bed",
-        "type": "window",
-        "children": [
-          {
-            "id": "4f032cb86ed27c03",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "1e67adc31c056023",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swiftUI/MVVM_example.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 488,
-        "y": 182,
-        "width": 1024,
-        "height": 800,
-        "maximize": false,
-        "zoom": 1.5
-      },
-      {
-        "id": "ed9f25f1e4a667b1",
-        "type": "window",
-        "children": [
-          {
-            "id": "b655a99fd3ec5c76",
-            "type": "tabs",
-            "children": [
-              {
-                "id": "a5586d20dd522ae6",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swift/DSAlgoTricks.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "vertical",
-        "x": 100,
-        "y": 982,
-        "width": 1412,
-        "height": 1890,
-        "maximize": false,
-        "zoom": 1.5
-      }
-    ]
-  },
-  "active": "ad4cfb0d62786816",
+  "active": "d3fdf5887e6f2b8d",
   "lastOpenFiles": [
+    "process/code_checkout.md",
+    "process/copy_files_server_CLI.md",
+    "tools/git/github_Enterprise.md",
     "architecture/ReadMe_architecture.md",
+    "tools/git/remote.md",
+    "os/mac/hidden_files.md",
+    "os/mac/keyboard.md",
+    "os/mac/fresh_install.md",
+    "ios/concurrency/operations.md",
+    "tools/terminal/brew_package.md",
+    "ios/config/swift_lint.md",
+    "tools/terminal/README_terminal.md",
+    "ios/automation/gitlab_ci_yml.md",
+    "ios/lifecycle/network_calls.md",
+    "ios/swiftUI/MVVM_example.md",
     "ios/lifecycle/user_notifications.md",
     "ios/swift/DSAlgoTricks.md",
     "ios/lifecycle/notification_pattern.md",
@@ -432,20 +424,6 @@
     "ios/lifecycle/state_architecture.md",
     "ios/lifecycle/README_lifecycle.md",
     "ios/lifecycle/MVVM.md",
-    "ios/concurrency/Readme_concurrency.md",
-    "ios/concurrency/background_tasks.md",
-    "ios/lifecycle/retain_cycle.md",
-    "ios/lifecycle/app_delegate.md",
-    "ios/concurrency/asyncLet.md",
-    "ios/combine/sink.md",
-    "ios/concurrency/operations.md",
-    "ios/ui/uiViewController.md",
-    "architecture/system_designs.md",
-    "ios/swiftUI/MVVM_example.md",
-    "SUMMARY.md",
-    "README.md",
-    "architecture/concurrency.md",
-    "ios/concurrency/asyncTaskGroup.md",
     "ios/swift/collections_cheatsheet.webp",
     "thoughts",
     "assets/obs_april_2023.png",
