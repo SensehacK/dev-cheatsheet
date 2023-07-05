@@ -9,7 +9,8 @@ Dev environment
 - [xcodes app](https://github.com/XcodesOrg/XcodesApp/releases/) - multiple xcode app setup
 - [iterm](https://iterm2.com/) 
 - home brew install  (https://brew.sh/)
-- zsh [shell brew path](fresh_install.md#brew_path)
+- zsh [shell brew path](fresh_install.md#brew_path) 
+- ohmyzsh https://ohmyz.sh/#install
 - rosetta install
 - bartender app
 - be focused pro - pomodoro app
