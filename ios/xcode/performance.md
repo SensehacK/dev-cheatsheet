@@ -46,12 +46,32 @@ Static always wins because it knows where it needs to be dispatched when referre
 Know the right data structure to choose from when you're assuming how the app architecture is leaning towards modularization, concurrency heavy or just thin clients.
 It would also affect how the application communitcation pattern is being deployed internally. It is observer pattern, closure based, delegates or fully reactive.
 
+Swift internal implementation for small optimization if using non mutable value types. In this post with [Copy On Write example](ios/lifecycle/swift_types#Copy on Write (CoW))
+
 
 ## Measure
 
 Xcode or swift llvm gives us lots of tools to measure our method execution time and features. You can find it in this file more about  [measure](measure.md) usage in testing.
 
+### Measure execution in a function
 
+```swift
+let start = CFAbsoluteTimeGetCurrent()
+// run your work
+let diff = CFAbsoluteTimeGetCurrent() - start
+print("Took \(diff) seconds")
+```
+
+```swift
+func doSomething() { 
+	// do heavy operation 
+}
+
+let clock = ContinuousClock()
+let result = clock.measure(doSomething)
+```
+
+https://developer.apple.com/documentation/swift/clock
 
 ## Tips
 
@@ -60,3 +80,7 @@ Xcode or swift llvm gives us lots of tools to measure our method execution time 
 https://aglowiditsolutions.com/blog/ios-app-performance-optimization/
 
 https://medium.com/strava-engineering/striving-for-ios-app-performance-ac2e1d4c29a2
+
+https://www.hackingwithswift.com/example-code/system/measuring-execution-speed-using-cfabsolutetimegetcurrent
+
+https://stackoverflow.com/questions/24755558/measure-elapsed-time-in-swift

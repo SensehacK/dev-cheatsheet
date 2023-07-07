@@ -231,6 +231,19 @@
         "dimension": 30.77736647276573,
         "children": [
           {
+            "id": "d3fdf5887e6f2b8d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/mac/fresh_install.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
             "id": "1e90eef14d6eac8a",
             "type": "leaf",
             "pinned": true,
@@ -243,19 +256,6 @@
                 "source": false
               },
               "pinned": true
-            }
-          },
-          {
-            "id": "d3fdf5887e6f2b8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "os/mac/fresh_install.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
             }
           }
         ],
