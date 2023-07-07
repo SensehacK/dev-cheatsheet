@@ -1,4 +1,4 @@
-
+# Routers
 
 ## Intro
 
@@ -74,12 +74,39 @@ Project Management
 ## Security
 
 - Wireless Fidelity is little bit easier compared to Ethernet for snooping network packets.
+- WEP (first, basic, not recommended) easier to brute force.
+- WPA 2, 3 Enterprise (TKIP) temporal hashing / salting based techniques
+- iOS recommends WPA 3 
+
+
+Wired Equivalent Privacy (WEP)
+Wi-Fi Protected Access (WPA)
+WPA 2 - CCMP & AES encryption
+WPA 3 - SAE and 192 encyption optional Enterprise mode
+
+
+
+### Wifi signal packets message
+
+#### Management frames 
+	- Setup (association, reassociation, probe requests)
+
+#### Acknowledgement / Control frames
+	- Block ACK
+	- RTS (Ready to Send)
+	- ACK
+
+
+#### Data frames
+	- Data driven packets
+	- 
 
 
 
 ## Terminologies
 
 ### SSID
+The name of the AP Identifier.
 
 ## 2.4 Ghz
 
@@ -100,15 +127,21 @@ Project Management
 - Faster transfer rates
 - Can penetrate lesser
 - Suited for 4K or higher bit rate content. 
-- 
+- Newer technology
+
+####  Wifi 6 ax
+
+#### Wifi 6E
+
+
+## 6 hz
+
 
 ## RF
 
-##
-
 ### 80 11
 
-#### ax
+
 
 ### Radio Patterns
 
@@ -130,7 +163,6 @@ Project Management
 ### Collision Detection / Avoidance
 
 
-
 ## Radio Frequency Isolation
 
 - RF Boxes 
@@ -146,3 +178,49 @@ Project Management
 - Brands 
 	- Ramsey shield box RF shield box.
 
+
+
+
+## Debug
+
+- Verbose Wifi SSID logging
+- Turn on verbose logging through Android system settings.
+- AP would show little bit slower because it may not have updated reactive web UI.
+
+
+## Wireshark
+
+- Filter out traffic with specific types
+
+
+## Beacons
+- Listening to beacons is part of passive scanning
+
+
+## Timeline
+
+- Wifi client -> Wifi AP
+Active Scanning
+
+Authentication handshake
+- Probe request <->  Ack
+- Authentication Request  <-> Ack
+- Association Request <-> Ack
+
+
+
+### DHCP 
+
+- Client will send DHCP discover and AP sends and assigns an IP address back.
+- DHCP server will assign internal IP address range table
+
+
+## Difference
+
+- Active vs Passive Scanning
+
+
+
+## Interview
+
+- Diff between active and passive scanning with examples
