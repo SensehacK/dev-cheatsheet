@@ -25,3 +25,11 @@ https://www.hackingwithswift.com/quick-start/concurrency/how-to-use-mainactor-to
 https://www.hackingwithswift.com/quick-start/concurrency/important-do-not-use-an-actor-for-your-swiftui-data-models
 
 
+## References
+
+
+https://developer.apple.com/videos/play/wwdc2021/10133
+
+https://developer.apple.com/videos/play/wwdc2021/10254/
+
+https://developer.apple.com/videos/play/wwdc2021/10194

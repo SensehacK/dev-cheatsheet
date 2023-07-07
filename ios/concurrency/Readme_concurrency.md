@@ -1,6 +1,6 @@
 # Concurrency
 
-## 10000 Ft level explaination
+## 10000 Ft level explanation
 
 If you want to get a refresher of basic concurrency concepts please read through the [concurrency](architecture/concurrency.md) file. As this specifically discusses on Swift iOS / Apple SDK implementation code snippets.
 
@@ -53,4 +53,7 @@ If you want to get a refresher of basic concurrency concepts please read through
 
 
 https://tclementdev.com/posts/what_went_wrong_with_the_libdispatch.html
+
+https://www.avanderlee.com/category/concurrency/
+
 

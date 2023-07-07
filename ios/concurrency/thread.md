@@ -1,6 +1,8 @@
-# Concurrency
+# Thread
 
-## Threads
+## Intro
+
+Individual [tasks](tasks.md) runs on Thread with a priority assigned by the Operating system runtime operation.
 
 
 ## Dispatch Group

@@ -1,4 +1,3 @@
-
 # Tasks
 
 ## Intro
@@ -13,6 +12,23 @@ Multiple threads + resources -> Process
 Multiple threads could run on single core.
 
 Multiple processes could run on single core.
+
+## Code 
+
+Swift Concurrency Task example
+Task allows us to create concurrent tasks and call that from a non concurrent method using `async/await`.
+
+```swift
+let basicTask = Task {
+    return "This is the result of the task"
+}
+print(await basicTask.value)
+```
+
+Lots of more examples of Task part of concurrency framework. WWDC 2021.  
+https://www.avanderlee.com/concurrency/tasks/
+
+
 
 ## Context Switching
 

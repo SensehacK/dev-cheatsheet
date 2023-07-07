@@ -1,5 +1,9 @@
 # Background Tasks
 
+# Intro
+
+These are long running tasks, running on background threads which could be bundled together in a process. Different names depending on different OS architecture.
+
 
 ## Capabilities
 

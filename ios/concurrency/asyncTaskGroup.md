@@ -1,5 +1,3 @@
-
-
 # Async TaskGroup
 
 Important for kicking off new tasks and not waiting for async tasks to complete and then move to next line of code like a imperative programming paradigm.
@@ -68,3 +66,9 @@ Like `Type?.self` to denote that out of `n` network request one can fail and you
 withThrowingTaskGroup(of: CustomModel?.self) 
 ```
 
+
+## Order guarantee
+
+Guaranteeing the order of async execution is important.
+
+https://www.swiftbysundell.com/articles/async-and-concurrent-forEach-and-map/

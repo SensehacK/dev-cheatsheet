@@ -1,5 +1,3 @@
-
-
 # Async Let
 
 Important for kicking off new tasks and not waiting for async tasks to complete and then move to next line of code like a imperative programming paradigm.
