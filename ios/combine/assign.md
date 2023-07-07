@@ -98,3 +98,12 @@ init() {
    
 
 https://www.donnywals.com/updating-ui-with-assigntoon-in-combine/
+
+
+## Async Combine Interop
+
+https://www.swiftbysundell.com/articles/calling-async-functions-within-a-combine-pipeline/
+
+https://augmentedcode.io/2023/01/09/async-await-support-for-combines-sink-and-map/
+
+https://peterfriese.dev/posts/combine-vs-async/

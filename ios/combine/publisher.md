@@ -10,9 +10,9 @@ By utilizing property wrapper we can just decorate any variable with `@Pubished`
 
 UserDefault custom propery wrapper example [codable](codable.md)
 
-
-
-
+Note:
+Well suited for SwiftUI + Combine.
+`willSet` internally it calls so that SwiftUI can make optimizations towards what should be refreshed on the UI when compared directly to `CurrentValueSubject` [subjects](subjects.md)
 
 ## Create custom Publisher
 
@@ -32,3 +32,12 @@ https://www.swiftbysundell.com/articles/published-properties-in-swift/
 
 [thoughts on number 3](ReadME_thoughts.md)
 
+
+Connecting and merging Combine publishers in Swift
+https://www.swiftbysundell.com/articles/connecting-and-merging-combine-publishers-in-swift/
+
+
+Core location example 
+https://brightdigit.com/tutorials/combine-corelocation-publishers-delegates/
+
+https://shareup.app/blog/how-to-clean-up-resources-when-a-combine-publisher-is-cancelled/
