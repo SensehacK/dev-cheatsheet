@@ -2,7 +2,6 @@
 
 [[arc]]
 
-
 [[class]]
 
 [cache](ios/lifecycle/cache.md)
@@ -14,6 +13,8 @@
 [[dimensions]]
 
 [[ios/lifecycle/documentation]]
+
+[dynamic_runtime](dynamic_runtime.md)
 
 [[ios/lifecycle/extensions]]
 

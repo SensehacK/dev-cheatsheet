@@ -6,7 +6,7 @@
       {
         "id": "dd4a158ffe1a15b2",
         "type": "tabs",
-        "dimension": 25.859333685880486,
+        "dimension": 37.35676088617265,
         "children": [
           {
             "id": "6a25767ea83a46c5",
@@ -112,14 +112,29 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "32fd31ae04a2e05c",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/terminal/terminal.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
           }
         ],
-        "currentTab": 6
+        "currentTab": 1
       },
       {
         "id": "571d4cef6517c47c",
         "type": "tabs",
-        "dimension": 43.36329984135378,
+        "dimension": 31.321619556913678,
         "children": [
           {
             "id": "cb4af96a02afc8ae",
@@ -129,21 +144,6 @@
               "type": "markdown",
               "state": {
                 "file": "ios/swift/dictionary.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "54d8bc9a7ca3ab7e",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/library/codable.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -182,13 +182,26 @@
             }
           },
           {
-            "id": "ad4cfb0d62786816",
+            "id": "e2d2537c21b07417",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "tools/git/github_enterprise.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9a85df7360d49b88",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "process/code_checkout.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -197,25 +210,27 @@
             }
           },
           {
-            "id": "396729b90ac07892",
+            "id": "3cda34f400ab096e",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "ios/library/carthage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
-            "id": "e2d2537c21b07417",
+            "id": "2236a28be5fabd49",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "process/code_checkout.md",
+                "file": "tools/git/checkout.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -226,31 +241,18 @@
         "currentTab": 6
       },
       {
-        "id": "2a4e8ec0e497256a",
+        "id": "0970ce1e53c8155f",
         "type": "tabs",
-        "dimension": 30.77736647276573,
+        "dimension": 31.321619556913678,
         "children": [
           {
-            "id": "d3fdf5887e6f2b8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "os/mac/fresh_install.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e90eef14d6eac8a",
+            "id": "b01b0c29ba169b42",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/concurrency/operations.md",
+                "file": "ios/library/swiftPM.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -258,8 +260,7 @@
               "pinned": true
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -288,9 +289,9 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "ssh",
-                "matchingCase": true,
-                "explainSearch": false,
+                "query": "swift pack",
+                "matchingCase": false,
+                "explainSearch": true,
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical"
@@ -313,8 +314,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -334,7 +334,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "ios/library/swiftPM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -351,9 +351,9 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "os/mac/fresh_install.md",
+                "file": "ios/library/swiftPM.md",
                 "linksCollapsed": true,
-                "unlinkedCollapsed": true
+                "unlinkedCollapsed": false
               }
             }
           },
@@ -374,12 +374,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "os/mac/fresh_install.md"
+                "file": "ios/library/swiftPM.md"
               }
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -396,34 +395,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d3fdf5887e6f2b8d",
+  "active": "b01b0c29ba169b42",
   "lastOpenFiles": [
-    "process/code_checkout.md",
-    "process/copy_files_server_CLI.md",
-    "tools/git/github_Enterprise.md",
-    "architecture/ReadMe_architecture.md",
-    "tools/git/remote.md",
-    "os/mac/hidden_files.md",
-    "os/mac/keyboard.md",
-    "os/mac/fresh_install.md",
-    "ios/concurrency/operations.md",
-    "tools/terminal/brew_package.md",
-    "ios/config/swift_lint.md",
-    "tools/terminal/README_terminal.md",
-    "ios/automation/gitlab_ci_yml.md",
-    "ios/lifecycle/network_calls.md",
-    "ios/swiftUI/MVVM_example.md",
-    "ios/lifecycle/user_notifications.md",
-    "ios/swift/DSAlgoTricks.md",
-    "ios/lifecycle/notification_pattern.md",
-    "architecture/navigationCoordinator.md",
-    "architecture/observer_pattern.md",
-    "ios/swift/arrays.md",
-    "ios/xcode/performance.md",
-    "ios/swift/dictionary.md",
-    "ios/lifecycle/state_architecture.md",
-    "ios/lifecycle/README_lifecycle.md",
-    "ios/lifecycle/MVVM.md",
+    "tools/git/checkout.md",
+    "ios/library/swiftPM.md",
+    "ios/library/framework.md",
+    "tools/git/cache.md",
+    "tools/git/commitizen.md",
+    "tools/git/delete.md",
+    "tools/git/git_alias.md",
+    "tools/git/github_enterprise.md",
+    "tools/git/ignore.md",
+    "tools/git/stash.md",
+    "misc/network/wireshark.md",
+    "misc/network/Tplink.md",
+    "misc/network/pi_hole.md",
+    "misc/network/README_network.md",
+    "ios/test/names.md",
+    "ios/test/measure.md",
+    "ios/test/crash.md",
+    "ios/test/asynchronous.md",
+    "ios/test/error_state.md",
+    "ios/test/error_handling.md",
+    "ios/xcode/build_commands.md",
+    "ios/library/README_library.md",
+    "ios/library/carthage.md",
+    "ios/xcode/build_errors.md",
+    "ios/library/cocoapods.md",
+    "tools/git/amend.md",
     "ios/swift/collections_cheatsheet.webp",
     "thoughts",
     "assets/obs_april_2023.png",

@@ -10,7 +10,7 @@ Generate git ignore files for your project, usually frameworks & libraries like 
 
 Remove existing files from the repository:
 
-```text
+```bash
 find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch
 ```
 
@@ -20,13 +20,13 @@ Add the line
 
 to the file .gitignore, which can be found at the top level of your repository \(or created if it isn't there already\). You can do this easily with this command in the top directory
 
-```text
+```bash
 echo .DS_Store >> .gitignore
 ```
 
 Then
 
-```text
+```sh
 git add .gitignore
 git commit -m '.DS_Store banished!'
 ```

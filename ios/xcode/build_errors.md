@@ -147,3 +147,20 @@ Just set the xcode default path
 ```bash
 sudo xcode-select -switch /Applications/Xcode.app
 ```
+
+
+## Show Rosetta Build
+
+If you need to have Rosetta simulators in xcode, you can show them in Xcode settings.
+
+Go to “**Product**” in the menu bar and select **Destination -> Destination Architectures -> Show both**
+
+https://armen-mkrtchian.medium.com/run-rosetta-simulator-on-xcode-14-3-381d341364ee
+
+
+### Logic Testing on devices not supported
+
+Make sure the test target with the section of `General` -> `Testing`. 
+Enable the `Host Application` with the App target to run the unit tests on physical device.
+
+https://stackoverflow.com/questions/8454935/logic-testing-on-ios-devices-is-not-supported

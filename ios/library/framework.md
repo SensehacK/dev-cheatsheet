@@ -68,6 +68,11 @@ https://stackoverflow.com/questions/15331056/library-static-dynamic-or-framework
 https://stackoverflow.com/questions/31450690/why-xcode-7-shows-tbd-instead-of-dylib
 
 
+### Framework Arch Mismatch
+
+`Could not find module for target 'x86_64-apple-ios-simulator'`
+
+https://stackoverflow.com/questions/56957632/could-not-find-module-for-target-x86-64-apple-ios-simulator?rq=4
 
 ## Resources
 

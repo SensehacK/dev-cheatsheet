@@ -26,11 +26,15 @@ Setting your email address for a single repository You can change the email addr
 
 To know the username, type:
 
-> git config user.name
+```bash
+git config user.name
+``` 
 
 To know the email, type:
 
-> git config user.email email@example.com
+```bash
+git config user.email email@example.com
+```
 
 Confirm that you have set the email address correctly in Git:
 

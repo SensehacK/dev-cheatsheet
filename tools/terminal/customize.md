@@ -12,3 +12,15 @@ Auto Suggestions plugin [https://github.com/zsh-users/zsh-autosuggestions](https
 
 While running the command it automatically changes the color depending on whether the command is correct. [https://github.com/zsh-users/zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
+History auto complete plugin
+https://superuser.com/questions/417627/oh-my-zsh-history-completion
+
+
+Sometimes the plugins were not behaving properly or loading properly.
+So explicitly sourced its shell script.
+```bash
+source ~/.oh-my-zsh/custom/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
+```
+
+This appeared to be a problem when working with external themes like Powerlevel10K
+https://github.com/romkatv/powerlevel10k/issues/1631

@@ -12,28 +12,34 @@ According to User: gmale's answer on ask.wireshark.org, he solved his problem in
 
 To see your exact user name (for me that was AliGht)
 
-2- Type 'whoami'
+2- Type `whoami`
 
 enter image description here
 
 3- execute the following commands:
 
+```bash
 cd /dev
 sudo chown AliGht:admin bp*
+```
 and enter your computer password:
-
 enter image description here
 
 4- now type this command:
 
+```bash
 ls -la | grep bp
+```
 The last command will display a list of files such as:
 
 enter image description here
 
 5- Make sure all of them have your user name and admin as the user/group. For some reason, the last one didn't get assigned properly so I had to run the command:
 
+```bash
 sudo chown AliGht:admin bpf4
+```
+
 so the last command fixed my problem as you see in the last image:
 
 enter image description here

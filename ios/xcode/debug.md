@@ -159,7 +159,7 @@ DONE
 [git gist](https://gist.github.com/maxchuquimia/3eb255b0ea2088829b460358d9f058d3)
 
 
-## Method Swizzling
+## Method_Swizzling
 
 
 You can reverse engineer certain libraries / frameworks of apple UIKit , AppKit and utilize objective-C runtime methods to quickly replace our own implementation of the method we want to override.

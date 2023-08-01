@@ -24,3 +24,13 @@ git commit --amend --date=now
 ```
 
 https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git
+
+
+
+## Empty Commit 
+
+Sometimes we want to not commit anything and just need some change set in order to trigger a build on CI or Github Actions.
+```bash
+git commit --allow-empty -m "bump for CI"
+git push 
+```

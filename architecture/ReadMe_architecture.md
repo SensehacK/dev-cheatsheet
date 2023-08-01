@@ -25,7 +25,7 @@ Enjoy!
 
 [software_updates](software_updates.md)
 
-## Design Patterns
+## Architecture Patterns
 
 [mvvm_pattern](mvvm_pattern.md)
 
@@ -33,7 +33,7 @@ Enjoy!
 
 [mvvm_c_pattern](mvvm_c_pattern.md)
 
-## Architecture Patterns 
+##  Design Patterns
 
 [singleton_pattern](singleton_pattern.md)
 
@@ -46,6 +46,8 @@ Enjoy!
 [navigationCoordinator](navigationCoordinator.md)
 
 [delegate_pattern](delegate_pattern.md)
+
+
 
 ## Advance Topics
 
@@ -67,3 +69,13 @@ Higher Order functions [short_hands](ios/swift/short_hands.md)
 [Point Free](https://www.pointfree.co/collections/composable-architecture)
 
 [Point Series](https://www.pointfree.co)
+
+https://refactoring.guru/design-patterns/catalog
+
+https://stackoverflow.com/questions/4243187/whats-the-difference-between-design-patterns-and-architectural-patterns
+
+https://en.wikipedia.org/wiki/Architectural_pattern
+
+https://en.wikipedia.org/wiki/Design_pattern
+
+https://singhdivesh.medium.com/according-to-wikipedia-b1afa6de08c
