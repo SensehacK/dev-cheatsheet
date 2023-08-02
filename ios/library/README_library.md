@@ -20,7 +20,9 @@
 
 [import](import.md)
 
-[[ios/library/jailbreak]]
+[jailbreak](ios/library/jailbreak.md)
+
+[jenkins](jenkins.md)
 
 [keychain](keychain.md)
 

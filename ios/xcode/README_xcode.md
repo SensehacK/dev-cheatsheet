@@ -11,15 +11,25 @@
 
 [[command_line]]
 
+[carthage](carthage.md)
+
+[command_line](command_line.md)
+
+[config](ios/xcode/config.md)
+
 [[debug]]
 
+[environment_Variables](environment_Variables.md)
+
+[instruments](instruments.md)
+
 [[ipa_generation]]
+
+[migration](migration.md)
 
 [[performance]]
 
 [[playgrounds]]
-
-[instruments](instruments.md)
 
 [runtime_errors](runtime_errors.md)
 
@@ -34,7 +44,5 @@
 [[target_scheme]]
 
 [[wireless_deploy]]
-
-[migration](migration.md)
 
 [[xcode_merge]]

@@ -4,7 +4,7 @@
 
 
 [[youtube_dl]]
-[[brew_package]]
+[[homebrew]]
 [[c_language_compilation]]
 [[cli]]
 [[curl]]

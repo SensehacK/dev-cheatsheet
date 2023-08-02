@@ -216,7 +216,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/carthage.md",
+                "file": "ios/xcode/carthage.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -230,7 +230,20 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/git/checkout.md",
+                "file": "os/mac/hidden_files.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "391d00b552cc0f1f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardware/routers.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -238,7 +251,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 7
       },
       {
         "id": "0970ce1e53c8155f",
@@ -252,7 +265,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/swiftPM.md",
+                "file": "ios/xcode/build_errors.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -289,7 +302,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "swift pack",
+                "query": "brew ",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": false,
@@ -334,7 +347,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/library/swiftPM.md",
+                "file": "hardware/routers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -351,7 +364,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/library/swiftPM.md",
+                "file": "hardware/routers.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": false
               }
@@ -374,7 +387,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/library/swiftPM.md"
+                "file": "hardware/routers.md"
               }
             }
           }
@@ -395,34 +408,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "b01b0c29ba169b42",
+  "active": "391d00b552cc0f1f",
   "lastOpenFiles": [
-    "tools/git/checkout.md",
-    "ios/library/swiftPM.md",
     "ios/library/framework.md",
-    "tools/git/cache.md",
-    "tools/git/commitizen.md",
-    "tools/git/delete.md",
-    "tools/git/git_alias.md",
-    "tools/git/github_enterprise.md",
-    "tools/git/ignore.md",
-    "tools/git/stash.md",
-    "misc/network/wireshark.md",
-    "misc/network/Tplink.md",
-    "misc/network/pi_hole.md",
-    "misc/network/README_network.md",
-    "ios/test/names.md",
-    "ios/test/measure.md",
-    "ios/test/crash.md",
-    "ios/test/asynchronous.md",
-    "ios/test/error_state.md",
-    "ios/test/error_handling.md",
+    "hardware/routers.md",
+    "ios/lifecycle/view_controllers.md",
+    "ios/lifecycle/user_defaults.md",
+    "ios/lifecycle/user_notifications.md",
+    "ios/lifecycle/unowned_vs_weak.md",
+    "ios/lifecycle/timer.md",
+    "ios/lifecycle/swift_types.md",
+    "ios/lifecycle/structs.md",
+    "ios/lifecycle/storyboard_refactor.md",
+    "ios/lifecycle/state_architecture.md",
+    "ios/lifecycle/segues.md",
+    "ios/lifecycle/logging.md",
+    "ios/lifecycle/network_calls.md",
+    "ios/lifecycle/inheritance.md",
+    "ios/lifecycle/extensions.md",
+    "ios/lifecycle/dynamic_runtime.md",
+    "ios/lifecycle/documentation.md",
+    "ios/lifecycle/database.md",
+    "ios/lifecycle/cache.md",
+    "ios/lifecycle/arc.md",
+    "ios/lifecycle/class.md",
+    "ios/lifecycle/dimensions.md",
+    "ios/README_iOS.md",
     "ios/xcode/build_commands.md",
-    "ios/library/README_library.md",
-    "ios/library/carthage.md",
-    "ios/xcode/build_errors.md",
-    "ios/library/cocoapods.md",
-    "tools/git/amend.md",
+    "ios/xcode/README_xcode.md",
     "ios/swift/collections_cheatsheet.webp",
     "thoughts",
     "assets/obs_april_2023.png",

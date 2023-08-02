@@ -34,3 +34,6 @@ Just clone the repository on a CLI. When running scripts on CI server the termin
 A shell task (/usr/bin/env git fetch --prune --quiet [https://github.com/-ios/OHHTTPStubs.git](https://github.com/-ios/OHHTTPStubs.git) refs/tags/*:refs/tags/* +refs/heads/*:refs/heads/* (launched in /Users/jenkins/Library/Caches/org.carthage.CarthageKit/dependencies/OHHTTPStubs)) failed with exit code 128:
 fatal: could not read Username for '[https://github.com](https://github.com)': terminal prompts disabled
 ```
+
+Or your personal Access token is expired so you're getting this error according to Github issue thread.
+https://github.com/actions/checkout/issues/664

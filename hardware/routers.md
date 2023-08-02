@@ -134,6 +134,9 @@ The name of the AP Identifier.
 #### Wifi 6E
 
 
+## Wifi 7
+
+
 ## 6 hz
 
 
@@ -219,7 +222,11 @@ Authentication handshake
 
 - Active vs Passive Scanning
 
+## Switch
 
+- Managed vs Unmanaged
+- SPF ports for high speed reliability and takeover
+- 
 
 ## Interview
 
