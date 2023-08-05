@@ -2,6 +2,12 @@
 Table equivalent of UIKit in swiftUI
 
 
+```swift
+List(viewModel.pokemons, id: \.id) { pokemon in
+
+}
+
+```
 
 
 ## Grids

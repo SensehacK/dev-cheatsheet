@@ -31,7 +31,9 @@ This will create all the folders/directories necessary till the last folder.
 
 Use move command to rename a directory.
 
-> mv SensehackMedia SensehackMedia2
+```bash
+mv SensehackMedia SensehackMedia2
+```
 
 
 ## Deletion Directories 

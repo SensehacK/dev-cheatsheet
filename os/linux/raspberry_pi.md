@@ -103,6 +103,11 @@ Setting password for SMB user
 It auto mounted my external HDD on the media or mount folder. I don't recall what steps I took in order to make it workable to link the HDD to my Pi.
 
 
+## HDD name conflict
+
+Folder creation by Portainer - docker folders. 
+So sometimes when restarted it creates a race condition to map a folder / directory for NAS / external HDD on Raspberry Pi. So I have to disable Portainer - containers like `transmission, radarr, sonarr`. and make sure that previous folder / directory gets named to something suffix_12 and then after restart the Raspberry Pi assigns the appropriate HDD name in `/media/pi/HDD_name`
+Sometimes 
 
 ## Open VPN
 
