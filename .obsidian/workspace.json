@@ -4,232 +4,82 @@
     "type": "split",
     "children": [
       {
-        "id": "dd4a158ffe1a15b2",
+        "id": "706685fff5da337c",
         "type": "tabs",
-        "dimension": 25.859333685880486,
+        "dimension": 48.97792313982011,
         "children": [
           {
-            "id": "7f7c9015702ab681",
+            "id": "08f3f72b536e1178",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/framework.md",
+                "file": "backend/ruby/documentation.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
+              }
             }
           },
           {
-            "id": "e6552fd5c567e6ec",
+            "id": "131b81471901c220",
             "type": "leaf",
-            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/concurrency/GCD.md",
+                "file": "misc/README_misc.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "b3af81faa6b47756",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/concurrency/dispatch_main.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "b6901d99181836aa",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swift/dictionary.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "9e52f2469330003e",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/swift/arrays.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "852d6f7423aa37d4",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/ReadMe_architecture.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
+              }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 1
       },
       {
-        "id": "90c2025173842105",
-        "type": "split",
-        "dimension": 43.36329984135378,
-        "children": [
-          {
-            "id": "0e26f3dd9bdce51d",
-            "type": "tabs",
-            "dimension": 60.691823899371066,
-            "children": [
-              {
-                "id": "f289253197a02205",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swift/DSAlgoTricks.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              }
-            ]
-          },
-          {
-            "id": "571d4cef6517c47c",
-            "type": "tabs",
-            "dimension": 39.308176100628934,
-            "children": [
-              {
-                "id": "cb4af96a02afc8ae",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swift/dictionary.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "54d8bc9a7ca3ab7e",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/library/codable.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "396729b90ac07892",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swiftUI/MVVM_example.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 1
-          }
-        ],
-        "direction": "horizontal"
-      },
-      {
-        "id": "2a4e8ec0e497256a",
+        "id": "83070a1061c30bec",
         "type": "tabs",
-        "dimension": 30.77736647276573,
+        "dimension": 16.35322976287817,
         "children": [
           {
-            "id": "d3fdf5887e6f2b8d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "os/mac/fresh_install.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "1e90eef14d6eac8a",
+            "id": "59ca96c2c2de519c",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/concurrency/operations.md",
+                "file": "ios/ui/uitableview.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
               "pinned": true
             }
-          },
+          }
+        ]
+      },
+      {
+        "id": "b08e1978a615200b",
+        "type": "tabs",
+        "dimension": 34.66884709730172,
+        "children": [
           {
-            "id": "212ddeeb4aa051ef",
+            "id": "2a59502c75b8f435",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/linux/raspberry_pi.md",
+                "file": "ios/lifecycle/network_calls.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
-        ],
-        "currentTab": 2
+        ]
       }
     ],
     "direction": "vertical"
@@ -258,8 +108,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "rename",
-                "matchingCase": true,
+                "query": "spell",
+                "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -276,7 +126,7 @@
             }
           },
           {
-            "id": "62c7509a5cf14d8d",
+            "id": "5cb962bdd6c6dc4f",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
@@ -287,7 +137,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 450
+    "width": 191
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -303,7 +153,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "os/linux/raspberry_pi.md",
+                "file": "misc/README_misc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -320,7 +170,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "os/linux/raspberry_pi.md",
+                "file": "misc/README_misc.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -343,16 +193,16 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "os/linux/raspberry_pi.md"
+                "file": "misc/README_misc.md"
               }
             }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
-    "width": 200,
+    "width": 300,
     "collapsed": true
   },
   "left-ribbon": {
@@ -365,51 +215,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "212ddeeb4aa051ef",
+  "active": "131b81471901c220",
   "lastOpenFiles": [
-    "ios/swift/arrays.md",
-    "ios/swift/DSAlgoTricks.md",
-    "tools/terminal/directory.md",
-    "ios/library/codable.md",
-    "ios/concurrency/mvv.md",
-    "tools/terminal/homebrew.md",
-    "misc/network/charles proxy.md",
-    "misc/network/HTTP Status Codes.md",
-    "ios/xcode/config.md",
-    "ios/xcode/cocoapods.md",
-    "ios/xcode/carthage.md",
-    "ios/lifecycle/dynamic_runtime.md",
-    "ios/library/objectiveC.md",
-    "ios/library/jenkins.md",
-    "ios/concurrency/asyncTaskGroup.md",
-    "ios/swiftUI/list.md",
-    "ios/concurrency/operations.md",
-    "os/mac/fresh_install.md",
-    "ios/swift/dictionary.md",
-    "ios/library/framework.md",
-    "ios/concurrency/GCD.md",
-    "ios/concurrency/dispatch_main.md",
-    "architecture/ReadMe_architecture.md",
-    "ios/swift/data_structure.md",
-    "ios/library/avkit.md",
-    "ios/concurrency/thread.md",
-    "ios/swift/collections_cheatsheet.webp",
-    "thoughts",
-    "assets/obs_april_2023.png",
-    "Untitled.canvas",
-    "architecture/Untitled",
-    "architecture/composable",
-    "architecture",
-    "dev_cheatsheet",
-    "ios/Canvas.canvas",
-    "ios/concurrency",
-    "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
-    "ios/swiftUI",
-    "ios/combine",
-    "netlify.toml",
-    "New Text Document.txt",
-    "assets/export_compliance_missing.png",
-    "assets/obsidian.jpg",
-    "assets/app_environment_variable.png"
+    "thoughts/ReadME_thoughts.md",
+    "process/README_process.md",
+    "misc/best_coding_practices/README_best_coding_practices.md",
+    "process/best_coding_practices.md",
+    "misc/network/README_network.md",
+    "misc/network/HTTP_status_codes.md",
+    "process/process_kanban.md",
+    "process/release.md",
+    "process/code_formatting.md",
+    "tools/git/delete.md",
+    "ios/lifecycle/documentation.md",
+    "ios/ui/uitableview.md",
+    "backend/ruby/documentation.md",
+    "ios/rxSwift/side_effects.md",
+    "ios/rxSwift/rx_extensions.md",
+    "ios/rxSwift/observe.md",
+    "ios/ui/navigation_controller.md",
+    "ios/lifecycle/localization.md",
+    "process/code_checkout.md",
+    "ios/rxSwift/autoComplete.md",
+    "mobile/native/issues.md",
+    "os/linux/home_assistant.md",
+    "tools/git/guidelines.md",
+    "backend/ruby/hello_world.md",
+    "ios/swift/closure.md",
+    "ios/ui/uiimage.md"
   ]
 }

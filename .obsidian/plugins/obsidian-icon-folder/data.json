@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "LiNetwork",
-      "TiPackages",
-      "TiTools",
-      "SiCodereview",
-      "FabUnity"
+      "TiSettingsAutomation",
+      "IbMessageBubble",
+      "FarImages",
+      "RiFlowChart",
+      "FabPython"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -47,5 +47,10 @@
   "process": "SiCodereview",
   "tools": "TiTools",
   "misc": "TiPackages",
-  "misc/network": "LiNetwork"
+  "misc/network": "LiNetwork",
+  "backend/ruby": "SiRuby",
+  "backend/python": "FabPython",
+  "architecture": "RiFlowChart",
+  "assets": "FarImages",
+  "thoughts": "IbMessageBubble"
 }
