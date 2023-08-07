@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "migrated": true,
+    "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
+    "fontSize": 16,
+    "emojiStyle": "none",
+    "iconColor": null,
+    "recentlyUsedIcons": [
+      "LiNetwork",
+      "TiPackages",
+      "TiTools",
+      "SiCodereview",
+      "FabUnity"
+    ],
+    "recentlyUsedIconsSize": 5,
+    "rules": [],
+    "extraMargin": {
+      "top": 0,
+      "right": 4,
+      "bottom": 0,
+      "left": 0
+    },
+    "iconInTabsEnabled": false
+  },
+  "ios": "IbIphone",
+  "os": "FarWindowMaximize",
+  "os/windows": "FabWindows",
+  "os/mac": "IbMacintosh",
+  "os/linux": "FabLinux",
+  "backend/node": "FabNode",
+  "backend": "LiServer",
+  "database": "LiDatabase",
+  "database/docker": "FabDocker",
+  "database/sql": "TiBrandMysql",
+  "frontend": "SiWebpack",
+  "frontend/angular": "FabAngular",
+  "frontend/css": "FabCss3Alt",
+  "frontend/html": "FabHtml5",
+  "frontend/javascript": "TiBrandJavascript",
+  "frontend/react": "FabReact",
+  "hardware/routers.md": "LiRouter",
+  "hardware": "LiCpu",
+  "mobile": "TiDeviceMobile",
+  "mobile/ionic": "SiIonic",
+  "mobile/native": "SiAndroid",
+  "mobile/unity": "FabUnity",
+  "process": "SiCodereview",
+  "tools": "TiTools",
+  "misc": "TiPackages",
+  "misc/network": "LiNetwork"
+}
