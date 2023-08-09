@@ -17,7 +17,7 @@ Turning on `whitespaces` and `tabspaces` also visually helps where is the extra 
 
 Before pushing your config file changes, it is always beneficial to validate it locally and then commit those changes to CI server. Since it saves us lot of resources which includes Network bandwidth, time, space and headaches. Personally it saves me getting anxious till the CI build pushes out a slack `SUCCESS` notification.
 
-I believe Jenkins, GitLab runner and FastLane should most probably have some internal function which we can pass the local config file and it will generate the warnings / errors on the terminal for us to address.
+I believe Jenkins, GitLab runner and [FastLane](https://docs.fastlane.tools/getting-started/ios/fastlane-swift/) should most probably have some internal function which we can pass the local config file and it will generate the warnings / errors on the terminal for us to address.
 
 ## Spell Checker
 

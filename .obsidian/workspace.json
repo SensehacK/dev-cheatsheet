@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc/README_misc.md",
+                "file": "os/linux/raspberry_pi.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -108,7 +108,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "spell",
+                "query": "ssh name",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -133,7 +133,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -153,7 +154,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc/README_misc.md",
+                "file": "os/linux/raspberry_pi.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -170,7 +171,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc/README_misc.md",
+                "file": "os/linux/raspberry_pi.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -193,7 +194,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc/README_misc.md"
+                "file": "os/linux/raspberry_pi.md"
               }
             }
           }
@@ -215,33 +216,33 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "131b81471901c220",
+  "active": "44a5e771000b19ce",
   "lastOpenFiles": [
+    "tools/terminal/youtube_dl.md",
+    "misc/algorithm/timeline.md",
+    "ios/README_iOS.md",
+    "os/mac/permissions.md",
+    "os/linux/home_assistant.md",
+    "tools/browsers/developer_network.md",
+    "misc/network/pi_hole.md",
+    "misc/network/README_network.md",
+    "misc/network/wireshark.md",
+    "misc/network/Tplink.md",
+    "os/linux/raspberry_pi.md",
+    "backend/ruby/ternary.md",
+    "backend/ruby/hello_world.md",
+    "backend/ruby/documentation.md",
+    "process/code_formatting.md",
+    "misc/README_misc.md",
     "thoughts/ReadME_thoughts.md",
     "process/README_process.md",
     "misc/best_coding_practices/README_best_coding_practices.md",
     "process/best_coding_practices.md",
-    "misc/network/README_network.md",
     "misc/network/HTTP_status_codes.md",
     "process/process_kanban.md",
     "process/release.md",
-    "process/code_formatting.md",
     "tools/git/delete.md",
     "ios/lifecycle/documentation.md",
-    "ios/ui/uitableview.md",
-    "backend/ruby/documentation.md",
-    "ios/rxSwift/side_effects.md",
-    "ios/rxSwift/rx_extensions.md",
-    "ios/rxSwift/observe.md",
-    "ios/ui/navigation_controller.md",
-    "ios/lifecycle/localization.md",
-    "process/code_checkout.md",
-    "ios/rxSwift/autoComplete.md",
-    "mobile/native/issues.md",
-    "os/linux/home_assistant.md",
-    "tools/git/guidelines.md",
-    "backend/ruby/hello_world.md",
-    "ios/swift/closure.md",
-    "ios/ui/uiimage.md"
+    "ios/ui/uitableview.md"
   ]
 }

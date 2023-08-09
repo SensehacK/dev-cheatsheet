@@ -41,6 +41,47 @@ If you really like auto completion for your own internal methods, this is the wa
 ```
 
 
+## Adding Comments
+
+
+### Normal comment
+
+```swift
+let my_array = [a,b,c,d,e]
+# my_array[1] # b
+
+# Execute something
+doSomething()
+func doSomething() {
+	print("Hello")				
+}
+```
+
+### Multi line comment
+```swift
+let my_array = [a,b,c,d,e]
+/*
+my_array[1] # b
+
+doSomething()
+func doSomething() {
+	print("Hello")				
+}
+*/
+print("After multi line comment")
+```
+
+### Benefits of Multi line comment
+- Less git diff since it is only 2 lines of code change
+- Easier to read / review when Code Review
+- Quickly you can toggle big chunk of commented out code or lane. 
+
+```swift
+// /* 
+Some nonsensical stuff here
+// */
+```
+
 ## Functions Doc example
 
 ```swift

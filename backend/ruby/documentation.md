@@ -22,3 +22,8 @@ code2()
 executeSomethingImportant()
 =end
 ```
+
+
+## Cheatsheet
+
+https://github.com/ThibaultJanBeyer/cheatsheets/blob/master/Ruby-Cheatsheet.md
