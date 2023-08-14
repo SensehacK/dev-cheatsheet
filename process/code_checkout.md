@@ -103,7 +103,7 @@ github "https://github.com/company-lib-ios/OHHTTPStubs" "7.0.0"
 #### xcodebuild path error.
 
 ```bash
-A shell task (/usr/bin/xcrun xcodebuild -project /Users/ksave957/git/github_internal/playerplatform_ios/Carthage/Checkouts/FastCoderFramework/FastCoder.xcodeproj CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= CARTHAGE=YES -list) failed with exit code 72:
+A shell task (/usr/bin/xcrun xcodebuild -project /Users/username/git/github_internal/playerplatform_ios/Carthage/Checkouts/FastCoderFramework/FastCoder.xcodeproj CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= CARTHAGE=YES -list) failed with exit code 72:
 xcrun: error: unable to find utility "xcodebuild", not a developer tool or in PATH
 ```
 
@@ -123,7 +123,7 @@ Could not find any available simulators for tvOS
 ```bash
 Build Failed
 	Task failed with exit code 65:
-	/usr/bin/xcrun xcodebuild -workspace /Users/ksave957/git/github_internal/playerplatform_ios/Carthage/Checkouts/OHHTTPStubs/OHHTTPStubs/OHHTTPStubs.xcworkspace -scheme OHHTTPStubs\ Mac\ Framework -configuration Release -derivedDataPath /Users/ksave957/Library/Caches/org.carthage.CarthageKit/DerivedData/14.3_14E222b/OHHTTPStubs/7.0.0 ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= CARTHAGE=YES archive VALIDATE_WORKSPACE=NO -archivePath /var/folders/2k/9fdzvdzx13nfcvq2p27r3zsc0000gp/T/OHHTTPStubs SKIP_INSTALL=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=NO CLANG_ENABLE_CODE_COVERAGE=NO STRIP_INSTALLED_PRODUCT=NO (launched in /Users/ksave957/git/github_internal/playerplatform_ios/Carthage/Checkouts/OHHTTPStubs)
+	/usr/bin/xcrun xcodebuild -workspace /Users/username/git/github_internal/playerplatform_ios/Carthage/Checkouts/OHHTTPStubs/OHHTTPStubs/OHHTTPStubs.xcworkspace -scheme OHHTTPStubs\ Mac\ Framework -configuration Release -derivedDataPath /Users/username/Library/Caches/org.carthage.CarthageKit/DerivedData/14.3_14E222b/OHHTTPStubs/7.0.0 ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= CARTHAGE=YES archive VALIDATE_WORKSPACE=NO -archivePath /var/folders/2k/9fdzvdzx13nfcvq2p27r3zsc0000gp/T/OHHTTPStubs SKIP_INSTALL=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=NO CLANG_ENABLE_CODE_COVERAGE=NO STRIP_INSTALLED_PRODUCT=NO (launched in /Users/username/git/github_internal/playerplatform_ios/Carthage/Checkouts/OHHTTPStubs)
 
 This usually indicates that project itself failed to compile. Please check the xcodebuild log for more details: /var/folders/2k/9fdzvdzx13nfcvq2p27r3zsc0000gp/T/carthage-xcodebuild.UgRayH.log
 ```
@@ -131,16 +131,16 @@ This usually indicates that project itself failed to compile. Please check the x
 Checking the logs it shows 
 
 ```bash
--o /Users/ksave957/Library/Caches/org.carthage.CarthageKit/DerivedData/14.3_14E222b/OHHTTPStubs/7.0.0/Build/Intermediates.noindex/ArchiveIntermediates/OHHTTPStubs\ Mac\ Framework/IntermediateBuildFilesPath/OHHTTPStubs.build/Release/OHHTTPStubs\ Mac\ Framework.build/Objects-normal/x86_64/Binary/OHHTTPStubs
+-o /Users/username/Library/Caches/org.carthage.CarthageKit/DerivedData/14.3_14E222b/OHHTTPStubs/7.0.0/Build/Intermediates.noindex/ArchiveIntermediates/OHHTTPStubs\ Mac\ Framework/IntermediateBuildFilesPath/OHHTTPStubs.build/Release/OHHTTPStubs\ Mac\ Framework.build/Objects-normal/x86_64/Binary/OHHTTPStubs
 ld: file not found: /Applications/Xcode-14.3.0.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/arc/libarclite_macosx.a
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 
-/Users/ksave957/git/github_internal/playerplatform_ios/Carthage/Checkouts/OHHTTPStubs/OHHTTPStubs/OHHTTPStubs.xcodeproj: warning: The macOS deployment target 'MACOSX_DEPLOYMENT_TARGET' is set to 10.9, but the range of supported deployment target versions is 10.13 to 13.3.99. (in target 'OHHTTPStubs Mac Framework' from project 'OHHTTPStubs')
+/Users/username/git/github_internal/playerplatform_ios/Carthage/Checkouts/OHHTTPStubs/OHHTTPStubs/OHHTTPStubs.xcodeproj: warning: The macOS deployment target 'MACOSX_DEPLOYMENT_TARGET' is set to 10.9, but the range of supported deployment target versions is 10.13 to 13.3.99. (in target 'OHHTTPStubs Mac Framework' from project 'OHHTTPStubs')
 ** ARCHIVE FAILED **
 
 
 The following build commands failed:
-	Ld /Users/ksave957/Library/Caches/org.carthage.CarthageKit/DerivedData/14.3_14E222b/OHHTTPStubs/7.0.0/Build/Intermediates.noindex/ArchiveIntermediates/OHHTTPStubs\ Mac\ Framework/IntermediateBuildFilesPath/OHHTTPStubs.build/Release/OHHTTPStubs\ Mac\ Framework.build/Objects-normal/x86_64/Binary/OHHTTPStubs normal x86_64 (in target 'OHHTTPStubs Mac Framework' from project 'OHHTTPStubs')
+	Ld /Users/username/Library/Caches/org.carthage.CarthageKit/DerivedData/14.3_14E222b/OHHTTPStubs/7.0.0/Build/Intermediates.noindex/ArchiveIntermediates/OHHTTPStubs\ Mac\ Framework/IntermediateBuildFilesPath/OHHTTPStubs.build/Release/OHHTTPStubs\ Mac\ Framework.build/Objects-normal/x86_64/Binary/OHHTTPStubs normal x86_64 (in target 'OHHTTPStubs Mac Framework' from project 'OHHTTPStubs')
 (1 failure)
 
 ```

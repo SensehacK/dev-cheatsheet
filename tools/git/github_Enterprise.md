@@ -16,7 +16,7 @@ fatal: could not read Username for 'https://github.website.com': terminal prompt
 Git replace of https to ssh URL in local config
 
 ```bash
-git config --local url.ssh://git@github.comcast.com/.insteadOf https://github.comcast.com/
+git config --local url.ssh://git@github.company.com/.insteadOf https://github.company.com/
 ```
 
 You can find these changes in `.git` folder with `config` file where you can remove these things.

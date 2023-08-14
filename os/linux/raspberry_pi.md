@@ -208,6 +208,28 @@ https://www.makeuseof.com/tag/install-operating-system-raspberry-pi/
 
 https://raspberrytips.com/raspberry-pi-commands/
 
+## Network
+
+
+All your network settings are located in `etc/dhcpcd.conf`
+Make sure if you want to edit the Ethernet interface or WLAN interface for Wireless.
+
+```config
+interface eth0
+static ip_address=10.1.1.30/24
+static routers=10.1.1.1
+static domain_name_servers=10.1.1.1
+```
+
+https://raspberrypi.stackexchange.com/questions/37920/how-do-i-set-up-networking-wifi-static-ip-address-on-raspbian-raspberry-pi-os/74428#74428
+
+https://raspberrypi.stackexchange.com/questions/110950/no-internet-via-ethernet-local-network-working
+
+https://www.reddit.com/r/raspberry_pi/comments/117eizu/raspberry_pi_4_connects_to_wlan0_but_refuses_to/
+
+FileZilla for connecting the FTP / SFTP server
+
+https://stackoverflow.com/questions/12687900/connection-attempt-failed-with-econnrefused-connection-refused-by-server
 
 
 ## RetroPie
