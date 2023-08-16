@@ -37,6 +37,12 @@ class SingletonClass {
 
 Also defining the class `final` and having just `Singleton` pattern for invocation only once is kind of similar but there is definitely need for each in their own right.
 
+## Migrating away from Singleton
+
+Switch to Dependency injection and protocol driven interface
+
+
+https://theswiftdev.com/swift-singleton-design-pattern/
 
 ## References
 
