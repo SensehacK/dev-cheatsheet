@@ -195,6 +195,22 @@ https://onmyway133.com/posts/how-to-repeat-array-of-object-in-swift/
 https://qualitycoding.org/verify-arrays-approvaltests-swift/
 
 https://betterprogramming.pub/13-useful-array-methods-in-swift-e169a78cba8d
+
+
+## Extensions
+
+### Does Not Contains
+Opposite of `contains` check and could be properly named as `excludes` == !contains()
+```swift
+extension Sequence where Element: Equatable {
+    
+    func doesNotContains(_ element: Element) -> Bool {
+        return !self.contains(element)
+    }
+}
+```
+
+
 ## References
 
 [SO](https://stackoverflow.com/questions/24781027/how-do-you-sort-an-array-of-structs-in-swift)

@@ -62,6 +62,12 @@ var image_: (String) -> String {
 print(image_("3"))
 ```
 
+
+## Expressible Literals
+
+Good article about what they are and how they are used.
+https://www.avanderlee.com/swift/expressible-literals/
+
 ## Deprecations
 
 [String interpolation Debug description](https://izziswift.com/how-to-solve-string-interpolation-produces-a-debug-description-for-an-optional-value-did-you-mean-to-make-this-explicit-in-xcode-8-3-beta/)
