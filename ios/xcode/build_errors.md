@@ -121,7 +121,10 @@ PROJECT -> Build Settings -> Build Options -> Enable Testing Search Paths
 
 remark: Incremental compilation has been disabled: it is not compatible with whole module optimization
 
+```logs
 error: unexpected input file: /Users/ksave/Projects/Project-iOS/RELEASE
+```
+
 
 Command CompileSwiftSources failed with a nonzero exit code
 By removing that flag it was able to compile again but I can change the Swift Compiler mode according to this thread on [SO](https://stackoverflow.com/questions/68801998/remark-incremental-compilation-has-been-disabled-it-is-not-compatible-with-who)
@@ -133,6 +136,8 @@ By removing that flag it was able to compile again but I can change the Swift Co
  Faced it in Xcode Playgrounds, turns out it was a translation issue related to Rosetta 2 emulation being checked by default. Disabling that using `Xcode.app` -> Get Info. Unchecking `Open using Rosetta`
 
 https://stackoverflow.com/questions/72796354/debugserver-is-x86-64-binary-running-in-translation-attached-failed-could-not
+
+https://sarunw.com/posts/open-using-rosetta-in-xcode-14-3/
 
 
 ## Platform Path
@@ -164,3 +169,15 @@ Make sure the test target with the section of `General` -> `Testing`.
 Enable the `Host Application` with the App target to run the unit tests on physical device.
 
 https://stackoverflow.com/questions/8454935/logic-testing-on-ios-devices-is-not-supported
+
+## Xcode  failed to verify module interface of 'project' 
+
+`failed to verify module interface of 'projectName' due to the errors above; the textual interface may be broken by project issues or a compiler bug`  
+along with `No such module Firebase`
+
+Enable the flag 
+`-no-verify-emitted-module-interface` to Other Swift Flags in Build Settings for SPM dependency issue.
+
+https://stackoverflow.com/questions/75929888/xcode-14-3-failed-to-verify-module-interface-of-project
+
+https://github.com/apple/swift/issues/64669

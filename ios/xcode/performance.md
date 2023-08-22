@@ -38,7 +38,8 @@ You can also conform to `comparable` which lets you run operators like `>, <, ==
 
 ## Static vs Dynamic dispatch
 
-Static always wins because it knows where it needs to be dispatched when referrering to the witness table.
+Static always wins because it knows where it needs to be dispatched when referering to the witness table.
+
 
 
 ## Reference vs Value types

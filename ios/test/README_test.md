@@ -10,6 +10,8 @@
 
 [extensions](ios/test/extensions.md)
 
+[lifecycle](ios/test/lifecycle.md)
+
 [[measure]]
 
 [[mock]]
