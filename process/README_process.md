@@ -6,6 +6,8 @@
 
 [code_formatting](code_formatting.md)
 
+[collaboration_practices](collaboration_practices.md)
+
 [copy_files_server_CLI](copy_files_server_CLI.md)
 
 [key_shortcuts](key_shortcuts.md)

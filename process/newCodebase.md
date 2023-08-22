@@ -8,6 +8,7 @@ As a developer or someone new in a team who recently join, it is always a steep 
 
 
 
+## Code Linter
 
 
 

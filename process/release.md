@@ -3,6 +3,8 @@
 
 ## Software Releases
 
+We can make sure to follow Semantic Versioning when it comes to releasing software. Since this is widely accepted standard when it comes to versioning your software package. This definitely helps in estimation and execution when it comes to integration of different packages with different dependencies internally. 
+
 ### Tagging
 
 ### Archiving process
