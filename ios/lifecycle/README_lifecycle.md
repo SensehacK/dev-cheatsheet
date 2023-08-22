@@ -20,6 +20,8 @@
 
 [inheritance](inheritance.md)
 
+[initialization](initialization.md)
+
 [[localization]]
 
 [logging](logging.md)

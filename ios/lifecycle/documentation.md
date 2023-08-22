@@ -82,6 +82,25 @@ Some nonsensical stuff here
 // */
 ```
 
+
+
+## Adding links to Doc
+
+You can define markdown links or reference them as a link node in the documentation information.
+```swift
+/**
+  Defines the OSLog's logging levels to categorize priority and messaging.
+
+  [OS Log - Logger Library Reference]: https://developer.apple.com/documentation/os/logger "Logger"
+
+  ### **Useful Links**
+
+  * [OS Log - Logger Library Reference]
+
+ */
+ enum LogType: String { }
+```
+
 ## Functions Doc example
 
 ```swift
@@ -115,8 +134,6 @@ https://stackoverflow.com/a/71199418/5177704
 
 Great tool to use for generating documentation for your project. As long as you document things properly.
 
-
-
 https://developer.apple.com/documentation/docc
 Xcode 13
 https://www.wwdcnotes.com/notes/wwdc21/10166/
@@ -127,6 +144,15 @@ https://developer.apple.com/videos/play/wwdc2022/110369/
 
 Kodeco 
 https://www.kodeco.com/34919511-docc-tutorial-for-swift-getting-started
+
+
+## Markdown
+
+Markdown support has been added for Swift documentation in order to make the text formatting easier to write and consume.
+https://www.appcoda.com/swift-markdown/
+
+
+
 ## Reference
 
 https://cocoacasts.com/organize-your-swift-project-with-annotations-todos-and-fixmes

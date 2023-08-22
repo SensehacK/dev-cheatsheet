@@ -99,6 +99,34 @@ class GradientView: UIView {
 The func `layoutSubviews()` in my opinion would appropriately deal with framing when the UI is in the process of laying out subviews. Which would be when the user is changing orientation on its physical devices.
 
 
+## Collection
+
+Handy extensions for checking things when they are being conformed to protocol hashable elements.
+```swift
+extension Collection where Element: Hashable {
+    func excludes(_ element: Element) -> Bool {
+        return !self.contains(element)
+    }
+    
+    var isNotEmpty: Bool {
+        return !self.isEmpty
+    }
+}
+```
+
+
+## Optional
+
+Checking `isNil` condition for better readability.
+
+```swift
+extension Optional {
+    var isNil: Bool {
+        return self == nil
+    }
+}
+```
+
 ## Limiting conformance
 
 I need to understand the difference between `: Type` & `== Type`
@@ -125,3 +153,8 @@ extension Assert where TestValueType == Array<Any> {
     }
 }
 ```
+
+
+## Resources
+
+https://www.swiftbysundell.com/articles/the-power-of-extensions-in-swift/

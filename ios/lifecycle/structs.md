@@ -23,3 +23,10 @@ print(favCar.brand)
 print(favCar.name)
 ```
 https://www.hackingwithswift.com/articles/55/how-to-use-dynamic-member-lookup-in-swift
+
+
+## Private Initializer
+
+Structs do provide default initializers but if we want to expose them we need to define them as public init.
+https://docs.swift.org/swift-book/documentation/the-swift-programming-language/accesscontrol/#Default-Memberwise-Initializers-for-Structure-Types
+

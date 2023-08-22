@@ -1,4 +1,9 @@
 
+## Unified Logging
+
+Apple recently introduced `os_log` and unified logging mechanism for iOS 14/15 which made it easier for developer to work with logging solution by apple.
+
+
 
 ## Log levels
 
