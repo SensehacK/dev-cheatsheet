@@ -71,6 +71,12 @@ API key and private keys need to be always secret, you could utilize the Github 
 
 [Github secrets](https://docs.github.com/en/actions/reference/encrypted-secrets)
 
+
+## Fastlane
+
+You can utilize `dotEnv` approach and fastlane approach to appropriately store the Keys
+Similar [information by me for fastlane](ios/automation/fastlane#Environment%20Variables)
+
 ## Guide
 
 [NS Hipster Secrets guide](https://nshipster.com/secrets/)

@@ -52,3 +52,5 @@ Set the production username, password and other parameters which you don’t wan
 [SO Link](https://stackoverflow.com/questions/22348705/best-way-to-store-db-config-in-node-js-express-app)
 
 [SO](https://stackoverflow.com/questions/44915758/node-process-env-variable-name-returning-undefined)
+
+https://github.com/bkeepers/dotenv

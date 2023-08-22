@@ -23,7 +23,7 @@ https://github.com/SensehacK/swift/blob/master/swiftUI/VideoContent/README.md
 
 ### Static vs Dynamic
 
-Static - unit of codebase linked at compile time. Which doesnt change
+Static - unit of codebase linked at compile time. Which doesn't change
 
 Dynamic - binds symbols at runtime execution. Recommended approach to save storage. But has performance costs when the compiler does dynamic linking with `Mach-O` llvm and other process stuff.
 
@@ -74,7 +74,40 @@ https://stackoverflow.com/questions/31450690/why-xcode-7-shows-tbd-instead-of-dy
 
 https://stackoverflow.com/questions/56957632/could-not-find-module-for-target-x86-64-apple-ios-simulator?rq=4
 
+Probably best to ask the vendor to support the appropriate SDK option
+
+```logs
+Could not find module '' for target 'arm64-apple-ios-simulator'; found: x86_64-apple-ios-simulator, at: /Users/username/Library/Developer/Xcode/DerivedData/ProjectPlatform-ephpdgxzgtsjofhisorxmacihwzc/Index.noindex/Build/Products/Debug-iphonesimulator/OHHTTPStubs.framework/Modules/OHHTTPStubs.swiftmodule
+```
+
+### Cannot load module build with SDK Version mismatch
+```text
+  
+
+**Showing All Messages**
+
+/Users/username/git/github_internal/Projectplatform_ios/ProjectPlatformTests/ConfigEndpointsTest.swift:14:8: Cannot load module 'OHHTTPStubs' built with SDK 'iphonesimulator16.4' when using SDK 'iphonesimulator17.0': /Users/username/Library/Developer/Xcode/DerivedData/ProjectPlatform-ephpdgxzgtsjofhisorxmacihwzc/Build/Products/Debug-iphonesimulator/OHHTTPStubs.framework/Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
+
+```
+### Missing package product
+
+Local Swift Packages Error for each package dependency Missing package product
+https://stackoverflow.com/questions/69281786/local-swift-packages-stopped-working-in-xcode-13/69793517#69793517
+
 ## Resources
 
 Swift code reuse made simple: packages, modules, libraries - Julia Vashchenko - Swift Heroes 2019
 https://www.youtube.com/watch?v=w3QGc8wWTIg
+
+
+Apple Silicon and Library incompatibility 
+https://susuthapa19961227.medium.com/apple-silicon-and-the-library-incompatibility-problem-for-ios-development-8c2d875283f2
+
+Migration from Intel to ARM https://blog.codemagic.io/migrating-intel-m1-silicon/
+
+Migrating Pre-compiled libraries from vendors
+https://developer.apple.com/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors
+
+
+Swift PM with CI
+https://medium.com/uptech-team/swift-package-manager-and-how-to-cache-it-with-ci-14968cd58c5f

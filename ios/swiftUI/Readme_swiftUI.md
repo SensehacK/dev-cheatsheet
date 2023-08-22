@@ -8,7 +8,7 @@
 
 [image](image.md)
 
-[lifeCycle](lifeCycle.md)
+[lifeCycle](ios/swiftUI/lifeCycle.md)
 
 [list](list.md)
 

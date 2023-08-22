@@ -20,6 +20,32 @@ bundle exec fastlane increment_version
 ## Issues
 
 
+
+## Environment Variables
+
+Make `dotEnv` `.env` file in order to quickly import appropriate `Environment` variables in the build system.
+
+Fastfile config file
+```ruby
+
+platform :ios do
+  before_all do
+    Dotenv.load ".env.ios"
+  end
+
+  lane: beta do
+    match
+    deliver
+  end
+end
+```
+
+https://docs.fastlane.tools/best-practices/keys/
+
+https://www.runway.team/blog/better-fastlane-with-environments
+
+
+
 ## Resources
 
 [Implementing fastlane from nothing to App Store](https://www.youtube.com/watch?v=6Jz-Ywxki0U)
