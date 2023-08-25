@@ -115,6 +115,26 @@ extension Collection where Element: Hashable {
 ```
 
 
+## Dictionary
+
+```swift
+extension Dictionary {
+    mutating func merge(dict: [Key: Value]){
+        for (k, v) in dict {
+            updateValue(v, forKey: k)
+        }
+    }
+
+    func merged(dict: [Key: Value]) -> [Key: Value] {
+        var newDict: [Key: Value] = self
+        for (k, v) in dict {
+            newDict.updateValue(v, forKey: k)
+        }
+        return newDict
+    }
+}
+```
+
 ## Optional
 
 Checking `isNil` condition for better readability.

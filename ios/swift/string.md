@@ -68,6 +68,19 @@ print(image_("3"))
 Good article about what they are and how they are used.
 https://www.avanderlee.com/swift/expressible-literals/
 
+## Performance
+
+String concatenation `+` is faster than `\(string_variable)` in the code according to this below document.
+
+```swift
+let name = "Kautilya"
+let str1: String = "Hi! my name is \(name)"
+let str2: String = "Hi! my name is " + name
+
+```
+
+https://www.globalnerdy.com/2016/02/03/concatenating-strings-in-swift-which-way-is-faster/
+
 ## Deprecations
 
 [String interpolation Debug description](https://izziswift.com/how-to-solve-string-interpolation-produces-a-debug-description-for-an-optional-value-did-you-mean-to-make-this-explicit-in-xcode-8-3-beta/)
