@@ -19,6 +19,12 @@
       "type": "file",
       "path": "tools/git/README_git.md",
       "ctime": 1683120715140
+    },
+    {
+      "type": "file",
+      "ctime": 1695767688209,
+      "path": "ios/library/framework.md",
+      "subpath": "#Code Signing XcFramework"
     }
   ]
 }
