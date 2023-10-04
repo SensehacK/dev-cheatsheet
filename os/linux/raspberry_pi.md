@@ -132,9 +132,23 @@ Used Portainer for managing docker images.
 
 Issue while running Docker compose got solved by turning off Open VPN service in the background while Docker compose was executing some commands.
 
+### Portainer
+
+Downloading portainer from docker
+```sh
+sudo docker pull portainer/portainer-ce:latest
+```
+Running portainer from docker CLI.
+```sh
+sudo docker run -d -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
+```
+
+Restarting service
 ```sh
 sudo docker restart portainer
 ```
+
+https://pimylifeup.com/raspberry-pi-portainer/
 
 [SO](https://stackoverflow.com/questions/43720339/docker-error-could-not-find-an-available-non-overlapping-ipv4-address-pool-am)
 
@@ -144,6 +158,8 @@ Linux Media Server Script from this github also helped a lot.
 Solve a Limited Stack in Portainer
 https://www.benjaminrancourt.ca/how-to-solve-a-limited-stack-in-portainer/
 
+Portainer Docker permission error
+https://phoenixnap.com/kb/docker-permission-denied
 
 ## Kill Switch
 
