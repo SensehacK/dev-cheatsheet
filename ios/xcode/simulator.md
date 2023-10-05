@@ -45,3 +45,20 @@ Good reference for Mac OS defaults
 https://macos-defaults.com/simulator/screenshotsavelocation.html
 
 SO https://stackoverflow.com/questions/23661097/change-the-location-of-screen-shots-saved-by-the-ios-simulator
+
+
+
+
+## Architecture
+
+**_iOS Platforms:_**
+
+- iOS device `"generic/platform=iOS"`
+- Simulator `"generic/platform=iOS Simulator"`
+
+**Note:** There a whole lot more platforms. For brevity I’m just focused on iOS platforms. Otherwise there are macOS, watchOS, tvOS, visionOS platforms.
+
+**_CPU Architectures:_**
+
+- arm64
+- x86_64

@@ -7,6 +7,12 @@ Frameworks have important purposes
 - Reusability
 - Modularization
 
+## Diff FAT and xcFramework
+
+[FAT binary](https://en.wikipedia.org/wiki/Fat_binary) is a bundle of all the architecture object files executable to run. So its more bigger and wasteful with its storage, network and cpu resources.
+
+XCFramework on the other hand is just a structured folder/ wrapper. It has distinct directories designated for each platform where it contains a binary. This binary could be a FAT (Multi architecture) or a non FAT (Single architecture).
+
 ## Creation
 
 https://www.kodeco.com/17753301-creating-a-framework-for-ios
@@ -94,6 +100,107 @@ Could not find module '' for target 'arm64-apple-ios-simulator'; found: x86_64-a
 Local Swift Packages Error for each package dependency Missing package product
 https://stackoverflow.com/questions/69281786/local-swift-packages-stopped-working-in-xcode-13/69793517#69793517
 
+
+## Library not loaded dylb cache
+
+dyld: Library not loaded
+
+```log
+dyld[14624]: Library not loaded: @rpath/PromiseKit.framework/PromiseKit
+  Referenced from: <-B900-2B6DBEB96FE0> /private/var/containers/Bundle/Application/-A0C7-E660638AF789/TestUI.app/Frameworks/SClient.framework/SClient
+  Reason: tried: '/usr/lib/swift/PromiseKit.framework/PromiseKit' (no such file, not in dyld cache), 
+```
+Even if you did delete the rogue references and readded it again. You need to make sure you delete your derived data on your xcode and somehow uninstall your app on your test device.
+
+SPM `update to latest versions` definitely helps if there's a version change and then the previous cache gets invalidated. But its a hit or miss sometimes.
+Important thing is to find the right cache path and delete the cache in order to get a proper reference of the dynamic library linking on runtime. Or else you'll get a crash.
+
+
+https://sarunw.com/posts/how-to-fix-dyld-library-not-loaded-error/
+
+## Library duplicate Choosing one
+
+So somethings there are two frameworks being added in Xcode dynamic library but it leads to linking error. 
+We are having this issue because SPM internal dependencies dependency hasn't exposed it appropriately as a framework. So hence the frameworks are being added twice since the framework team didn't expose the PromiseKit properly so we had to explicitly add the `framework` inorder to get the right xcframework.
+
+```log
+objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framework/) and TestUI.app/TestUI (0x1026b3620). One of the two will be used. Which one is undefined.
+```
+## Code Signing XcFramework
+
+
+https://stackoverflow.com/questions/30963294/creating-ios-osx-frameworks-is-it-necessary-to-codesign-them-before-distributin
+
+https://ioscodesigning.com/code-signing-ios-frameworks/
+
+CMAKE to provide the code signing identity 
+`set_target_properties(dynamicFramework PROPERTIES` 
+`XCODE_ATTRIBUTE_CODE_SIGN_IDENTITY`
+https://cmake.org/cmake/help/v3.26/prop_tgt/FRAMEWORK.html
+
+
+[Relevant Code signing Hell article](https://mtldoc.com/swift/2022/12/23/xcframework-code-signing) 
+
+https://developer.apple.com/documentation/Xcode/verifying-the-origin-of-your-xcframeworks
+
+[WWDC 2023 Verify app dependencies with digital signatures](https://developer.apple.com/videos/play/wwdc2023/10061)
+
+
+
+## Optimizing Frameworks
+
+
+[Libraries with resources optimized for build time and application size](https://ilya.puchka.me/libraries-with-resources-optimized-for-build-time-and-application-size/)
+
+Does my app gets bloated with all the platform architecture combinations that we don't need to provide. No for xcFrameworks since it will automatically select the right arch + platform combo while submitting the archive file or generating the `ipa` file. 
+If you have FAT binaries then you could have extra architecture bloatware depending on how you sliced or thinned the binary while creating it.
+
+
+## Debugging Frameworks 
+
+The process usually for debugging `xcframework` is described below. As described by my team member.
+
+1. if you install a xcframework into a client application, it's generally built with  optimization, so there are no debug symbols and you can't break point that code
+2. However, if you have access to the dependency code, like `ProjectPlatform`, you can build a `framework` file locally without optimization so debug symbols (dSyms) are included in that binary/app bundle.
+3. If you copy that module information into the dependency's xcframework on the client app, you can essentially "fake" the build system because now it will run the framework code as if there are debug symbols. 
+
+
+[Open: xcframework_internal_redacted.png](assets/628b71a20fd797895058280a80be476c_MD5.png)
+![](assets/628b71a20fd797895058280a80be476c_MD5.png)
+
+Third point does it relates to actually opening up client dependency frameworks and swapping the `object-linked` file? Will have to test this theory as well or read more about hot swapping the binary files.
+
+Edit: We can just swap out the `Unix Executable file` binary file with our locally built binary file with no optimization and the `.xcFramework` directory would also include `dSYMs` directory for specific os architecture.
+
+
+
+## Build Output
+
+- If you're building a **debug** config, then it will only build for the CPU architecture of the destination's platform. Meaning:
+    
+    - If you're building into your iPhone, you'll just need to support ARM64
+    - If you're building into a simulator, you'll just need to support X86_64
+- If you're building a **release** config, then it will:
+    
+    - Build for **both** platforms and all possible architectures.
+
+### x86 Intel / amd64 AMD CPUs
+
+- Debug 
+	- iPhone - ARM64
+	- Simulator - X86_64
+- Release
+	- Both Platform and all possible architectures
+
+### ARM CPUs
+- Debug 
+	- iPhone - ARM64
+	- Simulator - ARM64
+	- Rosetta Enabled on Xcode Simulator - X86_64
+- Release
+	- Both Platform and all possible architectures
+
+
 ## Resources
 
 Swift code reuse made simple: packages, modules, libraries - Julia Vashchenko - Swift Heroes 2019
@@ -111,3 +218,7 @@ https://developer.apple.com/documentation/technotes/tn3117-resolving-build-error
 
 Swift PM with CI
 https://medium.com/uptech-team/swift-package-manager-and-how-to-cache-it-with-ci-14968cd58c5f
+
+
+Multiplatform binary framework
+https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle

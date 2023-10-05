@@ -28,3 +28,14 @@ Scheme - A scheme defines what happens when you press "Build", "Test", "Profile"
 
 
 [target-and-scheme-in-plain-language](https://stackoverflow.com/questions/20637435/xcode-what-is-a-target-and-scheme-in-plain-language?rq=1)
+
+
+## Multiplatform Target 
+
+Creating few visionOS and iPad targets to make it easier for testing and development is very important for initial stages.
+Definitely needs to have some caveats added for migration and checks in place for different platforms.
+
+Having the wildcards is important sometimes to differentiate those things overall.
+
+
+``

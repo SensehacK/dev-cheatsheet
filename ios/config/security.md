@@ -34,6 +34,12 @@ You would need a jailbreak or some kind of developer account access inorder to s
 [provisioning](provisioning.md)
 
 
+## Code Signing
+
+[framework](ios/library/framework#Code%20Signing%20XcFramework)
+
+
+
 ## Secrets
 [secret_keys](secret_keys.md)
 

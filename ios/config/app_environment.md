@@ -31,3 +31,19 @@ Use Swift Compiler - Custom flags option in Xcode Target build settings in order
 https://www.swiftbysundell.com/articles/feature-flags-in-swift/
 
 [environment_Variables](environment_Variables.md)
+
+Caveat in Swift Package - custom compilation flag is isn't supported in build configuration for SPM. Xcode 13. SPM only supports two build configs `.debug` and `.release` 
+You can read more about it [here](ios/xcode/spm#Pitfalls)
+
+### Custom compilation conditions
+
+```swift
+...
+targets: [
+  .target(
+    name: "MyLibrary",
+    dependencies: [],
++   swiftSettings: [.define("CUSTOM", .when(configuration: .debug))]
+  ),
+...
+```

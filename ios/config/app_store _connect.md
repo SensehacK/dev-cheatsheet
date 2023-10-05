@@ -35,3 +35,13 @@ https://www.gabrielle-earnshaw.com/posts/phased-releases-for-ios-apps-on-app-sto
 
 Big Bang Release Case 
 https://www.gabrielle-earnshaw.com/posts/mitigating-the-risk-of-big-bang-app-releases/
+
+
+
+## Unsupported Architecture
+
+```error
+Unsupported Architecture. Your executable contains unsupported architecture '[x86_64, i386]'
+```
+
+https://stackoverflow.com/questions/30547283/submit-to-app-store-issues-unsupported-architecture-x86

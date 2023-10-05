@@ -23,6 +23,36 @@ Create
 swift package 
 ```
 
+https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode
+
+## Sample Package.swift
+
+
+```swift
+let package = Package(
+    name: "test-apple",
+    platforms: [
+        .iOS(.v16),
+        .tvOS(.v16)
+    ],
+    products: [
+		.library(
+            name: "DummyUnit",
+            targets: ["DummyUnit"]),
+    ],
+	dependencies: [
+        .package(url: "git@github.com:repo_name/test.git",
+        branch: "important-events")
+    ],
+    targets: [
+	    .target(
+            name: "DummyUnit",
+            dependencies: [],
+            path: "Sources/product_path"
+        ),
+    ]
+)
+```
 
 ## Directory
 
@@ -143,6 +173,76 @@ Revision 37351b7ac065f11cd70c41ca7610539a82856ddf for security-spm-client-manife
 Fetching from https://github.company.com/contentsecurity/security-spm-client-manifest.git (cached)
 ```
 
+
+
+### missing required module ''
+
+```bash
+<unknown>:0: error: missing required module 'HLSObjectiveC'
+```
+
+*This* usually happens if the target / library sources have an import product_name / library and you haven't defined its dependency in the `target` package.swift
+
+```swift
+// Logging.swift
+import productName
+
+
+// Package.swift
+
+.target(
+	name: "Logging",
+	dependencies: [.product(name: "productName",
+							package: "packageName")],
+	path: "Sources/Logging"
+)
+```
+
+## Exposing Library & Target
+
+When working with Swift Package managers you need to expose every folder as a different library in order to import them in the project itself. Swift Packages treat every directory or folder independent and you can't just directly access them if they are out of the default scope of `Package_Name -> Sources` library package name.
+
+```swift
+products: [
+	.library(
+		name: "DummyUnit",
+		targets: ["DummyUnit"]),
+],
+targets: [
+	.target(
+		name: "DummyUnit",
+		dependencies: [.product(name: "testLib", 
+								package: "product_name")],
+		path: "Sources/product_path"
+	),
+]
+```
+
+In order to access the directory as a library in your codebase, you would have to add dependencies if they are seperate repositories. 
+
+To import just use the following syntax as long as the library builds correctly and is embedded into the project product target in `General Settings` -> `Frameworks, libraries and Embedded Content`
+
+```swift]
+import DummyUnit
+```
+For more information on Frameworks refer my other [docs](ios/library/framework.md)
+
+
+
+
+
+## Local Package dependency
+
+You can point a swift package to local option in order to do faster prototyping instead of waiting for xcode to close / fetch / resolve SPM package directory and then make it usable to edit a file. 
+
++1 Less `.xcodeproj` `xcworkspace` headaches.
+
+
+## Pitfalls
+
+
+[Some pitfalls of using SPM and Build Configuration in Xcode](https://www.sobyte.net/post/2022-10/spm-in-xcode/)
+
 ## Resources
 
 
@@ -153,3 +253,5 @@ https://www.youtube.com/watch?v=QmBZ9wJguS4
 
 Caching and Purge caching
 https://blog.eidinger.info/swift-package-purge-cache
+
+[SwiftPM: Same sources, multiple targets](https://forums.swift.org/t/swiftpm-same-sources-multiple-targets/48810)
