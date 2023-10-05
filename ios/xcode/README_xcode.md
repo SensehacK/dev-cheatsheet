@@ -5,6 +5,8 @@
 
 [[auto_increment]]
 
+[build](ios/xcode/build.md)
+
 [[build_commands]]
 
 [[build_errors]]
@@ -43,7 +45,11 @@
 
 [[target_scheme]]
 
+[updates](updates.md)
+
 [[wireless_deploy]]
+
+[xcode_15_presentation](xcode_15_presentation.md)
 
 [[xcode_merge]]
 

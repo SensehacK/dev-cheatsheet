@@ -20,7 +20,7 @@
 
 ### [swift](ios/swift/README_swift.md)
 
-### [swiftUI](ios/swiftUI/README_swiftUI.md)
+### [swiftUI](README_swiftUI.md)
 
 ### [test](ios/test/README_test.md)
 
@@ -58,6 +58,8 @@
 [[README_sql]]
 
 [[README_frontend]]
+
+[README_hardware](README_hardware.md)
 
 [[README_angular]]
 
@@ -118,6 +120,8 @@
 [[key_shortcuts]]
 
 [[README_process]]
+
+[ReadME_thoughts](ReadME_thoughts.md)
 
 [[README_tools]]
 

@@ -26,6 +26,8 @@
 
 [keychain](keychain.md)
 
+[location](location.md)
+
 [[macaw]]
 
 [[math]]

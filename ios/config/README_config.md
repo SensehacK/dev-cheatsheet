@@ -21,6 +21,8 @@
 
 [[developer_account]]
 
+[device](ios/config/device.md)
+
 [dSYM](dSYM.md)
 
 [firebase](firebase.md)

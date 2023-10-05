@@ -29,3 +29,5 @@ To be clear, a framework or an app can both be inspected with `lipo`. Similarly 
 ## Resources
 
 [Excellent StackOverflow post about xcode build process related to architecture and linking](https://stackoverflow.com/a/75454378/5177704)
+
+https://en.wikipedia.org/wiki/Instruction_set_architecture

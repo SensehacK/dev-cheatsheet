@@ -77,5 +77,15 @@ class Child: Parent {
 }
 ```
 
+
+## Unit Tests closure
+
+callback example
+[Open: unit tests _closure _ swift.png](../../assets/7d97352a88ec99bcc2d7a56b28c8ae68_MD5.png)
+![](../../assets/7d97352a88ec99bcc2d7a56b28c8ae68_MD5.png)
+
 Reference
+
 https://github.com/lionheart/openradar-mirror/issues/6765
+
+https://stackoverflow.com/questions/24603559/store-a-closure-as-a-variable-in-swift

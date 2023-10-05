@@ -8,7 +8,7 @@
 [[fastlane]]
 [[github_actions]]
 [[gitlab_ci_yml]]
-[[ios_ci_cd]]
+[[ci_cd]]
 
 [[testflight]]
 [[travis_ci_timeline]]

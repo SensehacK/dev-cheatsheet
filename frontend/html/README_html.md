@@ -4,7 +4,7 @@ Listing my snippets and easy reference methods for html usage. With few tips and
 
 ## List
 
-[[device]]
+[[frontend/html/device]]
 
 [[mobile]]
 

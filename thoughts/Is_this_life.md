@@ -1,6 +1,6 @@
 
 ## Context
-While I was waiting for my build to work on Jenkins CI 
+While I was waiting for my build to work on Jenkins CI, I decided to be snarky about SDLC
 
 ## Text
 

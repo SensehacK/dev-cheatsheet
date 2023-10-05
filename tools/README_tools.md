@@ -9,6 +9,8 @@
 
 [[README_git]]
 
+[README_server](README_server.md)
+
 [[README_terminal]]
 
 [[README_utility]]

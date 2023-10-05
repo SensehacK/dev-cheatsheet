@@ -19,6 +19,10 @@
 
 [[peer_review]]
 
+[presentation](presentation.md)
+
+[process_kanban](process_kanban.md)
+
 [release](process/release.md)
 
 [[search]]

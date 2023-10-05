@@ -4,6 +4,10 @@
 
 [assign](assign.md)
 
+[environmentObject](environmentObject.md)
+
+[filter](filter.md)
+
 [problem_solving](problem_solving.md)
 
 [publisher](publisher.md)
