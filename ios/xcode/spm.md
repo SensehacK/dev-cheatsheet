@@ -238,6 +238,18 @@ You can point a swift package to local option in order to do faster prototyping 
 +1 Less `.xcodeproj` `xcworkspace` headaches.
 
 
+Local dependency path in `package.swift` url takes both local and remote paths in its initializer.
+```swift
+dependencies: [
+// Local Package
+	.package(url: "/Users/ksave/git/cloud/packageName", branch: "28-events")
+
+// Remote package
+    .package(url: "git@github.com:companyName/packageName.git", branch: "21-events")
+
+],
+```
+
 ## Pitfalls
 
 

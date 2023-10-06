@@ -49,3 +49,59 @@ One could prefer Windows, macOS (unix subsystem), Debian flavored Linux, LinuxSE
 UI - KDE plasma, Gnome, Windows Start, MacOS Springboard / launchpad / dock.
 
 Btw I use `Arch` Linux.  **r/linuxMasterRace** meme
+
+
+## Delay in Task
+
+https://www.swiftbysundell.com/articles/delaying-an-async-swift-task/
+
+
+## Articles 
+
+Tasks vs OnAppear https://byby.dev/swiftui-task-vs-onappear
+
+
+## Result Type
+
+Code snippet from [HWS](https://www.hackingwithswift.com/quick-start/concurrency/how-to-get-a-result-from-a-task)
+```swift
+enum LoadError: Error {
+    case fetchFailed, decodeFailed
+}
+
+func fetchQuotes() async {
+    let downloadTask = Task { () -> String in
+        let url = URL(string: "https://hws.dev/quotes.txt")!
+        let data: Data
+
+        do {
+            (data, _) = try await URLSession.shared.data(from: url)
+        } catch {
+            throw LoadError.fetchFailed
+        }
+
+        if let string = String(data: data, encoding: .utf8) {
+            return string
+        } else {
+            throw LoadError.decodeFailed
+        }
+    }
+
+    let result = await downloadTask.result
+
+    do {
+        let string = try result.get()
+        print(string)
+    } catch LoadError.fetchFailed {
+        print("Unable to fetch the quotes.")
+    } catch LoadError.decodeFailed {
+        print("Unable to convert quotes to text.")
+    } catch {
+        print("Unknown error.")
+    }
+}
+
+await fetchQuotes()
+```
+
+

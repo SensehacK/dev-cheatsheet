@@ -53,3 +53,15 @@ func testWeatherAPIByCity() async -> [WeatherCity?] {
 ```
 
 https://www.hackingwithswift.com/quick-start/concurrency/how-to-get-a-result-from-a-task
+
+
+## Memory Management
+
+https://tanaschita.com/20221003-memory-management-for-async-await/
+
+
+
+## Resources
+
+https://matteomanferdini.com/swift-async-await/
+https://www.avanderlee.com/swift/async-await/

@@ -44,7 +44,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/spm.md",
+                "file": "tools/git/amend.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -85,7 +85,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/xcode_merge.md",
+                "file": "process/README_process.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -93,15 +93,33 @@
             }
           },
           {
-            "id": "8ff40beba3d5f756",
+            "id": "f7b7b430105d7b6c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/build.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ac58354b3fa8ed39",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "mobile/unity/naming_conventions.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "a20c977295fbb090",
@@ -198,9 +216,22 @@
                   },
                   "pinned": true
                 }
+              },
+              {
+                "id": "c85463cc82a021e9",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/xcode/performance.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
               }
             ],
-            "currentTab": 5
+            "currentTab": 1
           },
           {
             "id": "5e3b10958fb56145",
@@ -267,8 +298,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "(assets/",
-                "matchingCase": true,
+                "query": "empty commi",
+                "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
                 "extraContext": true,
@@ -313,7 +344,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/xcode/xcode_merge.md",
+                "file": "tools/git/amend.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -330,7 +361,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/xcode/xcode_merge.md",
+                "file": "tools/git/amend.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -353,7 +384,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/xcode/xcode_merge.md"
+                "file": "tools/git/amend.md"
               }
             }
           },
@@ -387,39 +418,40 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "1984514dd628606a",
+  "active": "e6575bc6063d31f0",
   "lastOpenFiles": [
-    "ios/xcode/xcode_15_presentation.md",
-    "README.md",
-    "ios/library/jailbreak.md",
-    "assets/2a7043566214d95f4da9e448fc3fc385_MD5.png",
+    "tools/git/rebase.md",
+    "tools/git/revert.md",
+    "tools/git/git_alias.md",
+    "ios/concurrency/tasks.md",
     "ios/library/framework.md",
-    "assets/628b71a20fd797895058280a80be476c_MD5.png",
-    "frontend/javascript/css_iFrame.md",
+    "ios/concurrency/asyncTaskGroup.md",
+    "ios/xcode/spm.md",
+    "ios/xcode/build.md",
+    "ios/xcode/performance.md",
+    "ios/swiftUI/README_swiftUI.md",
+    "ios/concurrency/asyncLet.md",
+    "ios/concurrency/GCD.md",
+    "ios/concurrency/asyncAwait.md",
+    "process/README_process.md",
     "process/code_formatting.md",
-    "ios/swift/closure.md",
+    "process/best_coding_practices.md",
+    "process/code_checkout.md",
+    "ios/config/best_practices.md",
+    "ios/config/README_config.md",
+    "ios/config/string_segregation.md",
+    "ios/config/naming.md",
+    "process/code_naming.md",
+    "process/new_codebase.md",
+    "process/code_readability.md",
+    "mobile/unity/naming_conventions.md",
+    "tools/git/config.md",
+    "assets/2a7043566214d95f4da9e448fc3fc385_MD5.png",
+    "assets/628b71a20fd797895058280a80be476c_MD5.png",
     "assets/7d97352a88ec99bcc2d7a56b28c8ae68_MD5.png",
     "assets/59a0ac94867a60973e5e50c75c2b4c6d_MD5.gif",
-    "ios/xcode/xcode_merge.md",
     "Untitled.canvas",
     "Untitled 1.canvas",
-    "ios/swiftUI/README_swiftUI.md",
-    "ios/xcode/build.md",
-    "ios/xcode/simulator.md",
-    "ios/swift/DSAlgoTricks.md",
-    "ios/swift/README_swift.md",
-    "process/process_kanban.md",
-    "process/README_process.md",
-    "SUMMARY.md",
-    "thoughts/ReadME_thoughts.md",
-    "thoughts/nerd_thoughts.md",
-    "thoughts/Is_this_life.md",
-    "hardware/README_hardware.md",
-    "hardware/routers.md",
-    "ios/library/location.md",
-    "ios/library/README_library.md",
-    "process/presentation.md",
-    "ios/swift/equatable.md",
     "tools/server",
     "ios/visionOS",
     "ios/tvOS",

@@ -26,8 +26,15 @@ lipo -info <path-to-binary>
 
 To be clear, a framework or an app can both be inspected with `lipo`. Similarly if you access the build folder on the simulator, you can inspect the binary as well.
 
+
+## Performance
+
+[Xcode performance analysis](performance.md)
+
 ## Resources
 
 [Excellent StackOverflow post about xcode build process related to architecture and linking](https://stackoverflow.com/a/75454378/5177704)
 
 https://en.wikipedia.org/wiki/Instruction_set_architecture
+
+

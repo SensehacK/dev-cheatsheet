@@ -30,3 +30,11 @@ func fetchDataAsync() {
 }
 
 ```
+
+
+```swift
+async let france = Server.shared.getCapital(of: "France")
+async let germany = Server.shared.getCapital(of: "Germany")
+// ... could do other stuff here
+let capitals = [("France", await france), ("Germany", await germany)]
+```
