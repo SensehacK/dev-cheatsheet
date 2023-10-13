@@ -24,6 +24,80 @@ https://www.swiftbysundell.com/articles/building-custom-combine-publishers-in-sw
 
 https://thoughtbot.com/blog/lets-build-a-custom-publisher-in-combine
 
+## Migrating to @Observable
+
+View Model
+```swift
+import Combine
+
+final class AppSettings: ObservableObject {
+	@Published var confirmDeletion = true
+}
+
+// VS
+
+import Observation
+@Observable final class AppSettings {
+	var confirmDeletion = true
+}
+```
+
+View
+
+```swift
+struct SettingsView: View {
+  @ObservedObject var appSettings: AppSettings
+}
+
+// VS
+
+struct SettingsView: View {
+  var appSettings: AppSettings
+}
+```
+
+
+https://useyourloaf.com/blog/migrating-to-observable/
+
+## Type Erasure 
+
+Just for reference if anyone is reading this one of the fundamental concepts of combine/reactive paradigm when everything is a stream / observable sequence. 
+
+```swift
+private let eventSubject = PassthroughSubject<EngineEvent, Never>()
+
+
+```
+When an observable is being initialized (it can be hot / cold) without going to overboard - here because its an `PassThroughSubject` which doesn't require initial value equivalent `PublishSubject` of RxSwift.
+
+```swift
+let eventPublisher: AnyPublisher<EngineEvent, Never>
+init() {
+        eventPublisher = eventSubject.eraseToAnyPublisher()
+}
+```
+
+```swift
+extension EngineEventBus: EventSendable {
+    func sendEvent(_ type: EventType, metaData: EventMetaData?, url: URL) {
+        eventSubject.send(EngineEvent(type: type, metaData: metaData, url: url))
+    }
+}
+```
+
+But author also has an extension with function to add explicit setters via a protocol `EventSendable` It does contradict sometimes with the purely functional reactive paradigm but this gives us more flexibility in the long run while doing more checks for `sending` values upstream.
+
+
+[Apple doc reference](https://developer.apple.com/documentation/combine/anypublisher) doesn't make it crystal clear but if its any consolation - Reactive programming is harder to grasp at first level.
+
+
+
+PS: Sorry for the long winded comment but I had a tough time wrapping my head around with Reactive programming when I was starting out. So adding this comment for others who are reviewing if that makes even 5% sense is helpful.
+
+
+
+
+
 
 ## Reference
 

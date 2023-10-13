@@ -109,6 +109,22 @@ passthrough
 	.store(in: &anyCancellables)
 ```
 
+
+
+## Binding 
+
+Error Warning
+SwiftUI: Cannot convert value of type 'Bool' to expected argument type 'Binding Bool'
+```swift
+nameOfBinding.wrappedValue
+```
+
+
+If there is a requirement of binding variable to be provided not the actual value you can pass `$` to notify its a bindable property type.
+
+```swift
+Toggle(isOn: $character.isSelected){
+```
 ## Reference
 
 https://stackoverflow.com/a/63404168/5177704
@@ -117,3 +133,5 @@ https://www.avanderlee.com/combine/passthroughsubject-currentvaluesubject-explai
 
 
 https://www.avanderlee.com/swiftui/published-property-wrapper/
+
+https://stackoverflow.com/questions/60482737/what-is-passthroughsubject-currentvaluesubject/63404168#63404168
