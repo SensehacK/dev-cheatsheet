@@ -81,3 +81,32 @@ struct FavoritesProgrammaticallyView: View {
 
 
 Source code snippets by [avanderlee](https://www.avanderlee.com/swiftui/navigationlink-programmatically-binding/)
+
+
+
+## Navigation Tab View SwiftUI  
+
+
+SwiftUI Pitfalls
+https://betterprogramming.pub/working-around-the-shortfalls-of-swiftuis-tabview-ac9aa2a9d894
+
+
+Navigation Views, Inside a Tab View
+https://medium.nextlevelswift.com/build-an-app-like-lego-with-swiftui-tutorial-3-235af2bf0f88
+
+
+## Reference
+
+https://developer.apple.com/documentation/swiftui/tabview
+
+https://developer.apple.com/documentation/swiftui/navigation
+
+https://developer.apple.com/design/human-interface-guidelines/tab-bars
+
+https://developer.apple.com/design/human-interface-guidelines/sidebars
+
+Tab Views
+
+https://developer.apple.com/design/human-interface-guidelines/tab-views
+
+https://developer.apple.com/design/human-interface-guidelines/segmented-controls

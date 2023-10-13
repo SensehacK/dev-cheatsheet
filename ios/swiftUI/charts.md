@@ -5,6 +5,12 @@
 
 
 
+
+## Create Custom Activity Ring 
+
+Good post about leveraging SwiftUI to create a custom UI imitating Activity Rings
+https://sarunw.com/posts/how-to-create-activity-ring-in-swiftui/
+
 ## References
 
 https://developer.apple.com/documentation/charts/creating-a-chart-using-swift-charts

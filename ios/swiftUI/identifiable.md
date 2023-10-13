@@ -40,3 +40,18 @@ let model: MealRecipeDetailViewModel
 
     }
 ```
+ 
+
+## Expected argument type Range < >
+
+Cannot convert value of type [array] to expected argument type Range<Int>
+
+Make the `struct customObject` conform to Identifiable
+
+```swift
+struct A: Identifiable {
+    var id: String {
+        return /*some ID*/
+    }
+}
+```
