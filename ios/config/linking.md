@@ -77,3 +77,27 @@ Good scenarios of how to utilize it in project.
     E.g. `myapp://open-debug-view`
 ```
 Above snippet from https://www.avanderlee.com/swiftui/deeplink-url-handling
+
+
+## Swift UI Deep links
+
+```swift
+var body: some Scene {
+    WindowGroup {
+        ContentView()
+            .onOpenURL { (url) in
+			// Handle url here
+			}
+		}
+}
+```
+
+Can't use the same App Delegate methods lifecycle options in SwiftUI.
+
+https://developer.apple.com/forums/thread/651234
+
+https://developer.apple.com/documentation/swiftui/view/onopenurl(perform:)/
+
+## Reference
+
+https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app

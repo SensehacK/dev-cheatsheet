@@ -6,10 +6,7 @@ Overriding the system namespace which are reserved could be avoided using backti
 
 ```swift
 public enum Bool {
-
-        public static let `false` = "false".localized
-
-        public static let `true` = "true".localized
-
-    }
+	public static let `false` = "false".localized
+	public static let `true` = "true".localized
+}
 ```

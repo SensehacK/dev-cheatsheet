@@ -34,3 +34,9 @@ This could be fixed easily via getting your own signing certificate.
 
 You’re done with creating your own signing certificate signed by Apple CA.
 
+
+
+## Resources
+
+What is a pem file
+https://www.howtogeek.com/devops/what-is-a-pem-file-and-how-do-you-use-it/
