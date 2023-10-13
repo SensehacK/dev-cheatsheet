@@ -36,6 +36,9 @@ let peopleValue = people.mapValues { String(describing: $0) }
 https://daddycoding.com/2020/02/17/converting-string-any-to-string-string/
 
 
+Existential Any types
+https://www.hackingwithswift.com/swift/5.6/existential-any
+
 ##  Converting to Data
 
 

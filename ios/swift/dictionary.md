@@ -54,8 +54,27 @@ It’s also in constant Big O(1) time.
 - Different data types can be utilized. 
 - Great for real life enterprise scenarios where restful APIs returns a mix of primitive types in JSON data format.
 
+
+
+## convert Dictionary Values to Array
+
+Could be replaced with compactMap { $0 } as well
+```swift
+let colors = colorsForColorScheme.values.flatMap { $0 }
+```
+Or 
+```swift
+let colors = Array(dict.values)
+```
+Or 
+```swift
+let colors = colorsForColorScheme.map { $0.1 }
+```
+
 ## References
 
 [SO](https://stackoverflow.com/questions/44637836/what-is-the-equivalent-of-a-java-hashmapstring-integer-in-swift)
 
 [Tutorials Point](https://www.tutorialspoint.com/swift/swift_dictionaries.htm)
+
+https://stackoverflow.com/questions/26988167/swift-dictionary-get-values-as-array

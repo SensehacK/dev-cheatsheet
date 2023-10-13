@@ -24,11 +24,17 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[dictionary]]
 
+[DSAlgoTricks](DSAlgoTricks.md)
+
+[equatable](equatable.md)
+
 [[executables]]
 
 [[functions]]
 
 [[generics]]
+
+[hashable](hashable.md)
 
 [[keypaths]]
 
@@ -37,6 +43,8 @@ As sometimes, we would have limited internet access or restrictive data download
 [[optimization]]
 
 [[optionals]]
+
+[property](property.md)
 
 [property_wrapper](property_wrapper.md)
 
