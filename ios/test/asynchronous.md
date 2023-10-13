@@ -66,6 +66,23 @@ Async Await makes writing asynchronous tests a bit simpler.
 Because now we can do synchronous ways of certain asynchronous tasks. It helps us to read through like the normal synchronous way of execution.
 
 
+## Explicit Wait
+
+You can use [XCTWaiter.wait](https://developer.apple.com/documentation/xctest/xctwaiter) functions.
+
+For example:
+
+```swift
+let exp = expectation(description: "Test after 5 seconds")
+let result = XCTWaiter.wait(for: [exp], timeout: 5.0)
+if result == XCTWaiter.Result.timedOut {
+    XCTAssert(<test if state is correct after this delay>)
+} else {
+    XCTFail("Delay interrupted")
+}
+```
+
+
 ## References
 
 https://www.swiftbysundell.com/articles/unit-testing-asynchronous-swift-code/#expectations
@@ -74,3 +91,5 @@ https://www.swiftbysundell.com/articles/unit-testing-code-that-uses-async-await/
 
 Refactoring code for testability
 https://www.swiftbysundell.com/articles/refactoring-swift-code-for-testability/
+
+https://stackoverflow.com/questions/50247929/how-to-wait-in-a-xctest-for-t-seconds-without-timeout-error

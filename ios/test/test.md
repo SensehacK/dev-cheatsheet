@@ -39,6 +39,33 @@ The `setUpWithError` is the right candidate for skipping tests without adding th
 Clean and less verbose.
 
 
+## setUp
+
+```swift
+class PPVSSLoaderDelegateTests: XCTestCase {
+	var mockVSSDelegate: MockVSSDelegate!
+
+	override func setUp()  {
+      mockVSSDelegate = MockVSSDelegate()
+    }
+}
+
+```
+
+
+## Teardown
+
+
+```swift
+class PPVSSLoaderDelegateTests: XCTestCase {
+	var mockVSSDelegate: MockVSSDelegate!
+
+	override func tearDown()  {
+      mockVSSDelegate.reset()
+    }
+}
+
+```
 ## Warnings
 
 `Errors thrown from here are not handled` - this appears when you're trying to call a function which can throw an error. Swift needs to either do a `try catch` to handle the thrown error or mark the test function with `throws`
@@ -82,7 +109,27 @@ Note:
 - You can resort to `private(set)` for the properties to make tests which can be just read for unit testing.
 
 
+## Assertions
 
+– `assert()`  
+– `precondition()`  
+– `assertionFailure()`  
+– `preconditionFailure()`  
+– `fatalError()`
+
+
+```swift
+assert(10 > 5, "10 is not less than 5")
+```
+
+https://andybargh.com/swift-assertions/
+
+
+
+## Simulators vs emulators
+
+
+https://www.testingxperts.com/blog/testing-on-real-devices-vs-simulators-vs-emulators/ca-en
 
 ## Links
 
@@ -101,3 +148,6 @@ https://www.matrixprojects.net/p/skipping-tests-in-xcode/
 https://medium.com/xcblog/speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane-a982b0060676
 
 https://cocoacasts.com/how-to-unit-test-private-methods-in-swift
+
+
+https://hackernoon.com/swift-xctest-setup-and-teardown-are-not-dead-yet
