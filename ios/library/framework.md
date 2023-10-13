@@ -222,3 +222,6 @@ https://medium.com/uptech-team/swift-package-manager-and-how-to-cache-it-with-ci
 
 Multiplatform binary framework
 https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle
+
+XcFramework examples
+https://github.com/bielikb/xcframeworks

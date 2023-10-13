@@ -10,7 +10,9 @@ Good library
 Better documentation with this library.
 https://github.com/kishikawakatsumi/KeychainAccess
 
+## Why
 
+You can use Keychain to keep persistence over app installs / uninstalls in order to uniquely identify whether the app was ever used by the end user. Given that they don't reset their device which clears out the keychain entry. Could be a stop gap to implement trial check being used previously by that end user.
 
 ### Keys
 
@@ -34,3 +36,8 @@ func checkAccessible(key: String) -> Bool {
 	return keychainManager.result != errSecInteractionNotAllowed
 }
 ```
+
+
+## References
+
+https://developer.apple.com/documentation/security/keychain_services

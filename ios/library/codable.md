@@ -50,3 +50,21 @@ set {
 	} catch {}
 }
 ```
+
+
+## Decoder
+
+Snake case issue 
+
+```swift
+ERROR: keyNotFound(CodingKeys(stringValue: "iso_3166_1", intValue: nil)
+```
+Just use 
+`.convertFromSnakeCase` for decoder strategy
+
+```swift
+let decoder = JSONDecoder()
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
+```
+
+https://stackoverflow.com/questions/61378814/swiftui-get-error-when-decoding-json-data-which-includes-key-name-as-iso-3166
