@@ -6,4 +6,9 @@ Tower - Git app really helps to do rebase properly and gives more context to wha
 
 
 ## Commands
-	
+
+
+## Reference
+
+Merging vs Rebasing
+https://www.atlassian.com/git/tutorials/merging-vs-rebasing
