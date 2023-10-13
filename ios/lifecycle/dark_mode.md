@@ -44,6 +44,77 @@ https://stackoverflow.com/questions/58312095/ios13-dark-mode-change-not-recogniz
 
 https://stackoverflow.com/questions/58016866/how-to-detect-light-dark-mode-change-in-ios-13
 
+
+## Single View Override
+
+[First retrieve color scheme of the app.](ios/swiftUI/environment#Retrieving)
+
+### SwiftUI
+Specific single view passed with environment or 
+```swift
+.environment(\.colorScheme, .light) // or .dark
+// OR
+.preferredColorScheme(.dark)
+```
+
+
+## Entire App Color scheme
+### UIKit 
+
+Each `UIView` has access to the window, So you can use it to set the `. overrideUserInterfaceStyle` value to any scheme you need.
+
+```swift
+myView.window?.overrideUserInterfaceStyle = .dark
+```
+
+### SwiftUI 
+
+
+
+
+Copied from [StackOverflow post](https://stackoverflow.com/questions/58476048/implement-dark-mode-switch-in-swiftui-app) 
+
+First you need to access the window to change the app colorScheme that called `UserInterfaceStyle` in `UIKit`.
+
+I used this in `SceneDelegate`:
+
+```swift
+private(set) static var shared: SceneDelegate?
+
+func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
+    Self.shared = self
+    ...
+}
+```
+
+Then you need to bind an action to the toggle. So you need a model for it.
+
+```swift
+struct ToggleModel {
+    var isDark: Bool = true {
+        didSet { 
+            SceneDelegate.shared?.window!.overrideUserInterfaceStyle = isDark ? .dark : .light 
+        }
+    }
+}
+```
+
+At last, you just need to toggle the switch:
+
+```swift
+struct ContentView: View {
+     @State var model = ToggleModel()
+
+     var body: some View {
+         Toggle(isOn: $model.isDark) {
+             Text("is Dark")
+        }
+    }
+}
+```
+
+
+
 ## Resources
 
 Full guide: 

@@ -102,3 +102,26 @@ MySingleton.shared
 ```
 
 [SO source](https://stackoverflow.com/questions/28429544/singleton-and-init-with-parameter)
+
+
+
+## Property Getter and Setters 
+
+
+```swift
+class Temperature {
+    var celsius: Float = 0.0
+    var fahrenheit: Float {
+        get {
+            ((celsius * 1.8) + 32.0)
+        }
+        set(temp) {
+            celsius = (temp - 32)/1.8
+        }
+    }
+}
+
+let temp = Temperature()
+temp.fahrenheit = 99
+print (temp.celsius)
+```

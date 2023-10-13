@@ -46,6 +46,10 @@ VStack {
 
 ```
 
+
+Generate a `.pem` file for notifications apns authentications
+https://developer.blueshift.com/docs/generate-a-pem-file
+
 ## Local Notifications
 
 
@@ -53,3 +57,4 @@ VStack {
 ## References
 
 https://developer.apple.com/documentation/usernotifications/setting_up_a_remote_notification_server/generating_a_remote_notification
+

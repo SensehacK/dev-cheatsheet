@@ -85,3 +85,45 @@ Maybe relevant SO I didn't find a solution from the accepted one but still inclu
 https://stackoverflow.com/questions/1081131/viewdidload-getting-called-twice-on-rootviewcontroller-at-launch
 
 https://stackoverflow.com/questions/7079602/viewdidload-is-called-twice
+
+
+## SwiftUI Migration
+
+App Delegate migration
+
+```swift
+class FSAppDelegate: NSObject, UIApplicationDelegate {
+  func application(
+    _ application: UIApplication,
+    didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil
+  ) -> Bool {
+    // ...
+    return true
+  }
+}
+```
+
+```swift
+@main
+struct FSApp: App {
+  @UIApplicationDelegateAdaptor var delegate: FSAppDelegate 
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+    }
+  }
+}
+```
+
+https://www.fivestars.blog/articles/app-delegate-scene-delegate-swiftui/
+
+Note: 
+
+Open URL - Deep Links delegate won't work here. Just amazing in SwiftUI so **you** need to switch to `onOpenURL { }` [linked here](ios/config/linking#Swift%20UI%20Deep%20links)
+```swift
+func application(_ app: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool { }
+```
+

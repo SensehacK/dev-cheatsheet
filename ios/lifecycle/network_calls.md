@@ -77,6 +77,7 @@ let task = URLSession.shared.dataTask(with: URL) { (data, response, error) in
 
 dataTaskWithURL vs downloadTaskWithURL
 First one downloads in memory / RAM and the other one downloads the file and stores it on local storage - of the device.
+
 ## URL Components
 
 Constructing URLs using URL Components is much nicer and lets us have `preconditionFailure` in guard statements.
@@ -114,6 +115,34 @@ var url: URL {
 	return url
 }
 ```
+
+## URLQueryItem
+
+
+
+```swift
+let searchTerm = "obi wan kenobi"
+let format = "wookiee"
+
+var urlComponents = URLComponents()
+urlComponents.scheme = "https"
+urlComponents.host = "swapi.co"
+urlComponents.path = "/api/people"
+urlComponents.queryItems = [
+   URLQueryItem(name: "search", value: searchTerm),
+   URLQueryItem(name: "format", value: format)
+]
+
+print(urlComponents.url?.absoluteString) 
+// https://swapi.co/api/people?search=obi%20wan%20kenobi&format=wookie
+```
+
+Reference code from this link
+https://www.alfianlosari.com/posts/building-safe-url-in-swift-using-urlcomponents-and-urlqueryitem/
+
+
+
+https://cocoacasts.com/building-urls-with-urlqueryitem-in-swift
 
 ## Checks
 
@@ -166,6 +195,25 @@ let blogURL = URL(string: category, relativeTo: baseURL)!
 print(blogURL) // Prints: swift -- https://www.avanderlee.com
 print(blogURL.absoluteString) // Prints: https://www.avanderlee.com/swift
 ```
+
+
+
+## Caveats 
+
+One of the Trakt TV Api I needed to use `addValue` instead of `setValue` Spent like 20 mins wondering why it is failing for me on VisionOS & Xcode 15 Beta 6.
+
+Stack overflow and internet was not helpful stating to restart the simulator and Xcode beta issues of some kind.
+
+```swift
+var urlRequest = URLRequest(url: url)
+
+urlRequest.setValue("Content-Type", forHTTPHeaderField: "application/json")
+
+urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
+```
+
+Probably something related to adding it incrementally ? with `addValue` it works. Is it a Trakt TV API issue ? or maybe the async await API for URLSession.shared.data(urlRequest:) recommends this way of adding them content headers values to URLRequest.
+
 
 
 
