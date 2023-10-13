@@ -23,3 +23,19 @@ The procedure to run the .sh file shell script on Linux is as follows:
 
 
 [Source](https://www.cyberciti.biz/faq/run-execute-sh-shell-script/)
+
+
+## Escape space characters
+
+I've solved it by including a backslash to escape the space:
+/Program Files` becomes `/Program\ Files`
+
+```bash
+DESTINATION_PLATFORM_VALUE="generic/platform=iOS Simulator"
+# vs
+DESTINATION_PLATFORM_VALUE="generic/platform=iOS\ Simulator"
+```
+
+
+
+https://stackoverflow.com/questions/5819423/bash-variables-with-spaces

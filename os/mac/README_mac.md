@@ -22,3 +22,5 @@
 [[mac_os_quirks]]
 
 [[permissions]]
+
+[profiles](profiles.md)
