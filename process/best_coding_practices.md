@@ -30,6 +30,10 @@ else {
 
 
 
+## Swift Specific Tips
+
+[best_practices](best_practices.md)
+
 
 ## Resources
 

@@ -31,3 +31,22 @@ if let manifestUrl = asset?.manifestUrl,
      asset?.manifestUrl = "\(manifestUrl)sz=\(comLocationPostalCode)&sz=\(comDeviceType)"
 }
 ```
+
+
+
+## Parameters naming
+
+Code snippet in review
+```swift
+static func customPlayer(with asset: Asset, authAPI: customAuth) throws -> PlayerConstruction {|
+	return try PlayerDirector.construct(with: asset, drmAuthorizer: customAuth) 
+}
+```
+
+Stylistic comment
+
+I usually don't like to change params being passed around too much. 
+Since we now have `authAPI`, `drmAuthorizer` If you want it named `drmAuthorizer` internally maybe having similar external param could help and internally reference same. 
+
+
+Since while reading from `.construct()` it just gets more hazy with 3 diff names -> of course `customAuth` param value might always change depending on the managed solution construction but we can always control the `params` internal / external.

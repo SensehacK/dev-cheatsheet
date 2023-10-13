@@ -6,8 +6,9 @@
 
 [code_formatting](code_formatting.md)
 
-[code_readability](code_readability.md)
+[code_naming](code_naming.md)
 
+[code_readability](code_readability.md)
 
 [collaboration_practices](collaboration_practices.md)
 

@@ -39,4 +39,4 @@ Hope this was helpful to some extent
 
 P.S - Are you a tabs guy or a space guy ? Silicon Valley debacle
 
-![Tabs versus Spaces](https://i.makeagif.com/media/6-01-2016/7L15qu.gif)
+![Tabs versus Spaces](../assets/59a0ac94867a60973e5e50c75c2b4c6d_MD5.gif)
