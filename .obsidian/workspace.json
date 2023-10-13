@@ -6,7 +6,7 @@
       {
         "id": "706685fff5da337c",
         "type": "tabs",
-        "dimension": 69.00584795321637,
+        "dimension": 53.9020979020979,
         "children": [
           {
             "id": "08f3f72b536e1178",
@@ -41,14 +41,16 @@
           {
             "id": "e6575bc6063d31f0",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "tools/git/amend.md",
+                "file": "misc/network/proxyman.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           },
           {
@@ -117,14 +119,27 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "475cd16cdf1ef7e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/protocol.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 8
       },
       {
         "id": "a20c977295fbb090",
         "type": "split",
-        "dimension": 30.994152046783626,
+        "dimension": 46.0979020979021,
         "children": [
           {
             "id": "fd42ace9dcd8f418",
@@ -223,7 +238,7 @@
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ios/xcode/performance.md",
+                    "file": "ios/swift/functions.md",
                     "mode": "source",
                     "backlinks": true,
                     "source": false
@@ -231,7 +246,7 @@
                 }
               }
             ],
-            "currentTab": 1
+            "currentTab": 6
           },
           {
             "id": "5e3b10958fb56145",
@@ -298,7 +313,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "empty commi",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -323,8 +338,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -344,7 +358,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "tools/git/amend.md",
+                "file": "ios/lifecycle/protocol.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -361,7 +375,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "tools/git/amend.md",
+                "file": "ios/lifecycle/protocol.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -384,7 +398,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "tools/git/amend.md"
+                "file": "ios/lifecycle/protocol.md"
               }
             }
           },
@@ -418,34 +432,34 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "e6575bc6063d31f0",
+  "active": "475cd16cdf1ef7e6",
   "lastOpenFiles": [
+    "ios/swift/arrays.md",
+    "ios/swift/functions.md",
+    "ios/swift/set.md",
+    "ios/xcode/performance.md",
+    "ios/config/mdm.md",
+    "misc/network/charles_proxy.md",
+    "ios/config/certificate.md",
+    "misc/network/charles proxy.md",
+    "os/mac/fresh_install.md",
+    "os/mac/profiles.md",
+    "ios/lifecycle/user_notifications.md",
+    "misc/network/proxyman.md",
+    "ios/xcode/spm.md",
+    "tools/editors/markdown.md",
+    "os/mac/mac_os_quirks.md",
+    "ios/swift/access_control.md",
+    "ios/lifecycle/initialization.md",
+    "ios/lifecycle/protocol.md",
+    "ios/lifecycle/documentation.md",
+    "ios/combine/publisher.md",
+    "ios/xcode/build_commands.md",
+    "os/linux/shell_scripts.md",
+    "ios/library/framework.md",
+    "tools/git/amend.md",
     "tools/git/rebase.md",
     "tools/git/revert.md",
-    "tools/git/git_alias.md",
-    "ios/concurrency/tasks.md",
-    "ios/library/framework.md",
-    "ios/concurrency/asyncTaskGroup.md",
-    "ios/xcode/spm.md",
-    "ios/xcode/build.md",
-    "ios/xcode/performance.md",
-    "ios/swiftUI/README_swiftUI.md",
-    "ios/concurrency/asyncLet.md",
-    "ios/concurrency/GCD.md",
-    "ios/concurrency/asyncAwait.md",
-    "process/README_process.md",
-    "process/code_formatting.md",
-    "process/best_coding_practices.md",
-    "process/code_checkout.md",
-    "ios/config/best_practices.md",
-    "ios/config/README_config.md",
-    "ios/config/string_segregation.md",
-    "ios/config/naming.md",
-    "process/code_naming.md",
-    "process/new_codebase.md",
-    "process/code_readability.md",
-    "mobile/unity/naming_conventions.md",
-    "tools/git/config.md",
     "assets/2a7043566214d95f4da9e448fc3fc385_MD5.png",
     "assets/628b71a20fd797895058280a80be476c_MD5.png",
     "assets/7d97352a88ec99bcc2d7a56b28c8ae68_MD5.png",

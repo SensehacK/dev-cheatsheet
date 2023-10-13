@@ -167,3 +167,12 @@ https://useyourloaf.com/blog/xcode-9-vector-images/
 
 Always use single image which are scallable it also helps us save app bundle size with 1x, 2x & 3x sizes respectively. Apple does I believe inflate those assets internally on device constrains basis. But having 1 size which is easily scalable with pdf or svg format makes it easier to maintain as well as saves internet bandwidth as well both ways. With CI/CD and other deployment tools constantly cloning repositories - even though now they are caching lot of data if there are subsequent runs but if its a new macOS image which gets virtually instantiated on the server runners then I do believe it will not have the cache or the old cache would get invalidated.
 
+## Loading Assets
+
+```swift
+// Local Asset
+UIImage(named: "asset_local")
+
+// SFSymbols
+UIImage(named: "cloud.drizzle.fill")
+```

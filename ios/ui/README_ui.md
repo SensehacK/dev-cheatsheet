@@ -28,6 +28,8 @@
 
 [[uibutton]]
 
+[uiColor](uiColor.md)
+
 [[uiimage]]
 
 [[uiimagepicker]]
