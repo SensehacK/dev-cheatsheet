@@ -1,6 +1,6 @@
 # GitHub Actions
 
-Github Actions
+## Workflow Example
 
 This is the script I’m using for building on Github Actions workflow.
 
@@ -41,3 +41,21 @@ jobs:
       run: pod --version
 ```
 
+
+
+## Runners
+
+Checking what runners are available for Github Actions
+https://github.com/actions/runner-images
+
+
+## Specify Xcode Version
+
+You can use this action before running your command
+https://github.com/marketplace/actions/setup-xcode-version
+
+```log
+package 'swift-docc' is using Swift tools version 5.9.0 but the installed version is 5.8.0
+```
+
+Sometimes its more important to be on specific xcode version or swift package tools

@@ -50,3 +50,8 @@ xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSen
 xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSenseCI -destination "platform=iOS Simulator,OS=13.3,name=iPhone 11" ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO -skip-testing:HealthSenseUITests
 ```
 
+
+## Resources
+
+
+https://www.macstadium.com/blog/making-sense-of-xcodebuild-arguments

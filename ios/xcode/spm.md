@@ -95,6 +95,24 @@ This location stores the Repositories resolved meta data. You need to delete the
 
 https://github.com/apple/swift-package-manager/blob/main/Documentation/ReleaseNotes/5.4.md#package-dependency-caching
 
+
+
+## Delete Cache
+
+Full Swift Package manager cache directory
+```swift
+rm -rf ~/Library/Caches/org.swift.swiftpm
+rm -rf ~/Library/org.swift.swiftpm
+```
+
+Or a single repository cache
+
+To reset the cache for a single package:
+
+- Navigate to ~/Library/Caches/org.swift.swiftpm/repositories and deleting the folder and lock file related to the package
+- Then, in Xcode, run File-->Swift Packages-->Reset Package Caches
+
+
 ## Dependency
 
 Adding a branch as a dependency or a tag.
@@ -198,6 +216,15 @@ import productName
 )
 ```
 
+### `Missing package product <package name>`
+
+Just run the xcode build command with a flag 
+```sh
+xcodebuild -resolvePackageDependencies
+```
+
+https://blog.leonifrancesco.com/articles/missing-package-product
+
 ## Exposing Library & Target
 
 When working with Swift Package managers you need to expose every folder as a different library in order to import them in the project itself. Swift Packages treat every directory or folder independent and you can't just directly access them if they are out of the default scope of `Package_Name -> Sources` library package name.
@@ -250,6 +277,15 @@ dependencies: [
 ],
 ```
 
+Change set in `.resolved` file 
+```git
+"identity" : "dependency_name",
+- "kind" : "remoteSourceControl",
+- "location" : "git@github.com:org-name/dependency_name.git",
++ "kind" : "localSourceControl",
++ "location" : "/Users/username/git/cloud/dependency_name",
+```
+
 ## Pitfalls
 
 
@@ -267,3 +303,5 @@ Caching and Purge caching
 https://blog.eidinger.info/swift-package-purge-cache
 
 [SwiftPM: Same sources, multiple targets](https://forums.swift.org/t/swiftpm-same-sources-multiple-targets/48810)
+
+[Deleting cache SO post](https://stackoverflow.com/questions/60033082/how-can-i-reset-the-package-cache-on-just-one-package-with-swift-package-manager)
