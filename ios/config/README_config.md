@@ -27,7 +27,7 @@
 
 [firebase](firebase.md)
 
-[jailbreak](ios/config/jailbreak.md)
+[third_party_apps](third_party_apps.md)
 
 [[linking]]
 

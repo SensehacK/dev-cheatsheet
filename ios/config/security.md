@@ -23,7 +23,7 @@ nscurl --ats-diagnostics <URL here> --verbose
 ## Sideloading
 You would need a jailbreak or some kind of developer account access inorder to side load apps via signing them with your developer account. Apple usually requires you to run signed code on iOS ecosystem. On macOs it will give the warning of `Unverified developer / App` but on iOS it won't let you install the app. You could circumvent that requirement by jailbreaking / rooting your iPhone to run unsign code / app on your physical device.
 
-[[config/jailbreak]]
+[[third_party_apps]]
 
 ## Certificate
 
