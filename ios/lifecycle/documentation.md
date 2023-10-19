@@ -151,6 +151,9 @@ https://www.kodeco.com/40047657-docc-tutorial-for-swift-automating-publishing-wi
 
 Hosting it locally using local server follow [this guide](tools/server/http-server#Quick%20run)
 
+Multi Platform DocC
+https://danielsaidi.com/blog/2022/04/27/building-multi-platform-documentation-with-docc
+
 ## DocC Errors
 
 ### swift docc empty webpage
