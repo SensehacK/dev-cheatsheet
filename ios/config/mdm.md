@@ -6,7 +6,7 @@ Understanding supervision mode on iOS device using MDM profiles setup.
 https://imazing.com/guides/understanding-supervision-mdm-ade
 
 ## Tools
-iTunes, Finder, iMazing etc.
+[iTunes](iTunes.md), Finder, iMazing etc.
 
 ## Backup
 
