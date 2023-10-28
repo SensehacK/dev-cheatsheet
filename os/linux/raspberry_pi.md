@@ -161,6 +161,16 @@ https://www.benjaminrancourt.ca/how-to-solve-a-limited-stack-in-portainer/
 Portainer Docker permission error
 https://phoenixnap.com/kb/docker-permission-denied
 
+portainer not reachable 
+500 internal error code
+use this command
+'''
+sudo systemctl restart docker
+
+
+
+
+
 ## Kill Switch
 
 ## Storage
