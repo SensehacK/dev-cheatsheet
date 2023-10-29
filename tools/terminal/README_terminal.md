@@ -17,7 +17,7 @@
 [[power_menu]]
 [result_from_CLI](result_from_CLI.md)
 [[shell_alias]]
-[[terminal]]
+[[shell]]
 [[vim]]
 [[xcode]]
 [youtube_dl](youtube_dl.md)

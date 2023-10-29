@@ -31,7 +31,7 @@
 
 ## Tools
 
-### [Git](tools/git/README_git.md)
+### [Git](README_git.md)
 
 ### [Terminal](tools/terminal/README_terminal.md)
 
@@ -106,6 +106,8 @@
 [[README_native]]
 
 [[README_unity]]
+
+[[README_network]]
 
 [[README_os]]
 

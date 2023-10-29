@@ -6,4 +6,3 @@
 
 [[README_logic]]
 
-[[README_network]]

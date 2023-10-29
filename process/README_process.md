@@ -14,6 +14,8 @@
 
 [copy_files_server_CLI](copy_files_server_CLI.md)
 
+[greenfield_code](greenfield_code.md)
+
 [key_shortcuts](key_shortcuts.md)
 
 [new_codebase](new_codebase.md)

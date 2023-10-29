@@ -29,27 +29,49 @@ My all time favorite is "Tower" git client and favorite enterprise git SaaS is "
 
 ## List
 
-[[workflow]]
+
 [[amend]]
+
 [[branch]]
-[[tools/git/cache]]
-[[checkout]]
+
+[[git/cache]]
+
+[[clone]]
+
 [[commitizen]]
-[[tools/git/config]]
+
+[[git/config]]
+
 [[delete]]
+
 [[differences]]
-[[tools/git/errors]]
+
+[[git/errors]]
+
 [[git_alias]]
+
 [[git_attributes]]
-[github_enterprise](github_enterprise.md)
+
+[github_Enterprise](github_Enterprise.md)
+
 [[github_sync_fork]]
+
 [[guidelines]]
+
 [[ignore]]
-[[tools/git/merge]]
+
+[[git/merge]]
+
 [[merging_two_repos]]
+
 [[modules]]
 
 [[rebase]]
+
 [[remote]]
+
 [[stash]]
+
 [[tag]]
+
+[[workflow]]
