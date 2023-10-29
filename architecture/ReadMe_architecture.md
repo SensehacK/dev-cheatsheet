@@ -41,11 +41,21 @@ Enjoy!
 
 [coordinator_pattern](coordinator_pattern.md)
 
-[observer_pattern](observer_pattern.md)
 
-[navigationCoordinator](navigationCoordinator.md)
+
+[navigation_coordinator](navigation_coordinator.md)
+
+
+
+## Communication Patterns
 
 [delegate_pattern](delegate_pattern.md)
+
+[observer_pattern](observer_pattern.md)
+
+
+
+
 
 
 

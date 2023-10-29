@@ -18,9 +18,4 @@
 [[network]]
 
 [[open_vpn]]
-
-[[raspberry_pi]]
-
-[home_assistant](home_assistant.md)
-
-[retro_pie](retro_pie.md)
+](retro_pie.md)

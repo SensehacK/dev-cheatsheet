@@ -17,4 +17,4 @@ Cons:
 
 ## Examples
 
-iOS example with combine [notification_pattern](ios/lifecycle/notification_pattern.md)
+iOS example of [notification_pattern](notification_pattern.md) - simple Swift way and Combine Reactive paradigm way.

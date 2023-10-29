@@ -2,7 +2,7 @@
 
 ## List
 
-[[ReadMe_architecture]]
+
 
 [[README_linux]]
 
@@ -10,6 +10,4 @@
 
 [[README_windows]]
 
-[[key_shortcuts]]
-
-[ADB_devices](ADB_devices.md)
+[Android_TV_ADB_devices](ADB_devices.md)

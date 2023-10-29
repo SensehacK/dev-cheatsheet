@@ -59,6 +59,8 @@
 
 [[README_frontend]]
 
+[[README_git]]
+
 [README_hardware](README_hardware.md)
 
 [[README_angular]]
@@ -131,7 +133,7 @@
 
 [[README_editors]]
 
-[[README_git]]
+
 
 [[README_terminal]]
 

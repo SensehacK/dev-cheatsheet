@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiGit",
       "TiSettingsAutomation",
       "IbMessageBubble",
       "FarImages",
-      "RiFlowChart",
-      "FabPython"
+      "RiFlowChart"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -52,5 +52,6 @@
   "assets": "FarImages",
   "thoughts": "IbMessageBubble",
   "network": "LiNetwork",
-  "network/routers.md": "LiRouter"
+  "network/routers.md": "LiRouter",
+  "git": "SiGit"
 }

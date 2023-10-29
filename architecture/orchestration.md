@@ -64,7 +64,7 @@ public class AnalyticsLogger: Logger {
 
 ## Configuration
 
-You can read more about this in my [appConfiguration](appConfiguration.md) file in `iOS/Config` folder.
+You can read more about this in my [app_configuration](app_configuration.md) file in `iOS/Config` folder.
 
 You can also configure your environment of the app to behave using different schemes or have explicit `xcConfig` files to read values from to properly switch network subdomains accordingly.
 [app_environment](app_environment.md)
@@ -74,7 +74,7 @@ You can also configure your environment of the app to behave using different sch
 This could be instantiated in the app lifecycle to take over the coordination of View presentation logic and keep loosely coupled with other components. We also avoid polluting our `Views`, `ViewControllers` to handle window manager presentation, dismissal, ViewBuilder responsibilities for the app.
 Thus making our App internal navigation API more streamlined.
 
-[navigationCoordinator](navigationCoordinator.md)
+[navigation_coordinator](navigation_coordinator.md)
 
 
 ## Cache Manager

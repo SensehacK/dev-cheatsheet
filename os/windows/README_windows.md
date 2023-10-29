@@ -10,7 +10,7 @@
 
 [[disable_updates]]
 
-[Kill Switch](Kill%20Switch.md)
+[kill_switch](kill_switch.md)
 
 [keyboard](os/windows/keyboard.md)
 
