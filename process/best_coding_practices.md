@@ -22,6 +22,24 @@ else {
 }
 ```
 
+###  Guard usage for unnecessary optional syntax
+
+More example for avoiding unnecessary `?` `!` or `??` 
+```swift
+public override func isEqual(_ object: Any?) -> Bool {
+	strID == (object as? VSS)?.strID
+	&& strSignal == (object as? VSS)?.strSignal
+}
+```
+New Code
+```swift
+public override func isEqual(_ object: Any?) -> Bool {
+	guard let vssO = object as? VSS else { return false }
+	
+	return strID == vssO.strID
+	&& strSignal == vssO.strSignal
+}
+```
 
 ## Formatting
 

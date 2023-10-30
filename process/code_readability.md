@@ -4,7 +4,7 @@ It is one of those things which goes hand in hand when compared to code perusing
 
 ## Naming schemes
 
-Naming appropriately with variables is important. Try to avoid appending the type to the variable since the IDE can always show quick help or infer those types automatically with its tooltip option + click.
+Naming appropriately with variables is important. Try to avoid appending the atype to the variable since the IDE can always show quick help or infer those types automatically with its tooltip option + click.
 
 Less is more.
 
@@ -32,7 +32,19 @@ if let manifestUrl = asset?.manifestUrl,
 }
 ```
 
+### Another example of Ultra wide code
 
+```swift
+NotificationCenter.default.post(name: NSNotification.Name(rawValue: CustomName), object: player, userInfo: [CustomName_SIGNAL_ID:"x",CustomName_STREAM_ID:"1"])
+```
+
+```swift
+NotificationCenter.default.post(name: NSNotification.Name(rawValue: CustomName),
+object: player,
+userInfo: [CustomName_SIGNAL_ID:"x",CustomName_STREAM_ID:"1"])
+```
+
+more readable rather than one liner and I do have ultra wide monitor but I split my code editors in x3 format so this makes it easier to read and review while on mobile, ipad, or portrait screens like a browser tabs 2/3 of space.
 
 ## Parameters naming
 
@@ -50,3 +62,50 @@ Since we now have `authAPI`, `drmAuthorizer` If you want it named `drmAuthorizer
 
 
 Since while reading from `.construct()` it just gets more hazy with 3 diff names -> of course `customAuth` param value might always change depending on the managed solution construction but we can always control the `params` internal / external.
+
+
+### Bloated Initializer with Long Array or list
+
+Question: 
+> But wouldn't adding a comment also suffice unless we are using this allowList elsewhere?
+
+Old code
+```swift
+init() { 
+	self.bus.add(observer: self, for: [.adQProgress,
+            .assetSourceChanged,
+            .adEvent,
+            .bufferingStarted,
+            .bufferingCompleted,
+            .esp,
+            .error,
+            .fragmentWarning,
+            .seekStarted,
+            .seekCompleted,
+    ])
+}
+```
+New code
+```swift
+init() { 
+	let allowedEventTypes: [CustomBusEventType] = [
+            .adQProgress,
+            .assetSourceChanged,
+            .adEvent,
+            .bufferingStarted,
+            .bufferingCompleted,
+            .esp,
+            .error,
+            .fragmentWarning,
+            .seekStarted,
+            .seekCompleted,
+        ]
+    self.bus.add(observer: self, for: allowedEventTypes)	 
+}
+```
+
+My reasoning: 
+
+
+Rather than adding comments every time, sometimes having a variable succinct enough to make the code readable in the `init` makes it easier for the code breakage and structurally having a mind map of what is going on.  
+In this case you can go either way but since the init had a long list of array having it as a variable makes it more easier for future `git diffs` or `adding more things to the array` or `being independent from an overloaded` init()` while reading it.

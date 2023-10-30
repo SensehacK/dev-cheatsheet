@@ -15,3 +15,7 @@ public protocol AuthorizerDelegate { }
 // New
 // AuthorizerDelegate+Protocol.swift
 ```
+
+
+
+### Readable 
