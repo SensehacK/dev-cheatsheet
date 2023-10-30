@@ -7,6 +7,8 @@
 
 [[README_editors]]
 
+[README_gaming](README_gaming.md)
+
 [[README_git]]
 
 [README_server](README_server.md)

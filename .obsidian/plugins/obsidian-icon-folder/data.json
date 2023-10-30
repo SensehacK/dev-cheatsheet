@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "SiGit",
       "TiSettingsAutomation",
       "IbMessageBubble",
       "FarImages",
-      "RiFlowChart",
-      "FabPython"
+      "RiFlowChart"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -38,7 +38,6 @@
   "frontend/html": "FabHtml5",
   "frontend/javascript": "TiBrandJavascript",
   "frontend/react": "FabReact",
-  "hardware/routers.md": "LiRouter",
   "hardware": "LiCpu",
   "mobile": "TiDeviceMobile",
   "mobile/ionic": "SiIonic",
@@ -47,10 +46,12 @@
   "process": "SiCodereview",
   "tools": "TiTools",
   "misc": "TiPackages",
-  "misc/network": "LiNetwork",
   "backend/ruby": "SiRuby",
   "backend/python": "FabPython",
   "architecture": "RiFlowChart",
   "assets": "FarImages",
-  "thoughts": "IbMessageBubble"
+  "thoughts": "IbMessageBubble",
+  "network": "LiNetwork",
+  "network/routers.md": "LiRouter",
+  "git": "SiGit"
 }

@@ -38,7 +38,7 @@
 
 [[map]]
 
-[[merge]]
+[[ios/rxSwift/merge]]
 
 [[playground]]
 

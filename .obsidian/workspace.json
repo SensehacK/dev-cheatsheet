@@ -45,7 +45,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "misc/network/proxyman.md",
+                "file": "network/proxyman.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -126,7 +126,124 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/lifecycle/protocol.md",
+                "file": "SUMMARY.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "9d8fcf425411fab9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "thoughts/nerd.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2b9743b93e643ba3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git/README_git.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c007b2f3e2f3b18b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/README_os.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "146fa6cd624c4891",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/README_os.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "15618fb3cce70623",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "os/README_os.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b38bfecfcd197a02",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardware/README_hardware.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ab2456dcfbbf9afe",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/ReadMe_architecture.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b120d77cd546fe54",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/observer_pattern.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a8b49ae5ef33a365",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/observer_pattern.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -134,157 +251,109 @@
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 17
       },
       {
-        "id": "a20c977295fbb090",
-        "type": "split",
+        "id": "fd42ace9dcd8f418",
+        "type": "tabs",
         "dimension": 46.0979020979021,
         "children": [
           {
-            "id": "fd42ace9dcd8f418",
-            "type": "tabs",
-            "dimension": 73.76644736842105,
-            "children": [
-              {
-                "id": "162eb7c9eab38846",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/lifecycle/dark_mode.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
+            "id": "162eb7c9eab38846",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/dark_mode.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               },
-              {
-                "id": "c6b33be2f141c524",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/library/framework.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "d48bcf8bd36dfbcf",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/xcode/spm.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "2951c21aa0fd4b99",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/library/README_library.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "684c84e98311f60a",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/lifecycle/documentation.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "b84d0db36917216f",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swiftUI/README_swiftUI.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "c85463cc82a021e9",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swift/functions.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 6
+              "pinned": true
+            }
           },
           {
-            "id": "5e3b10958fb56145",
-            "type": "tabs",
-            "dimension": 26.23355263157895,
-            "children": [
-              {
-                "id": "21523b9f1ff1bbda",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/combine/publisher.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
+            "id": "c6b33be2f141c524",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/framework.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               },
-              {
-                "id": "6747bd4b0d5ba19d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/combine/assign.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
+              "pinned": true
+            }
+          },
+          {
+            "id": "d48bcf8bd36dfbcf",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/spm.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "2951c21aa0fd4b99",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/README_library.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
               }
-            ]
+            }
+          },
+          {
+            "id": "684c84e98311f60a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/documentation.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b84d0db36917216f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "empty",
+              "state": {},
+              "pinned": true
+            }
+          },
+          {
+            "id": "c85463cc82a021e9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/concurrency.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "direction": "horizontal"
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -313,7 +382,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "alexa",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -342,7 +411,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 373.5
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -358,7 +427,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/lifecycle/protocol.md",
+                "file": "architecture/observer_pattern.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -375,7 +444,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/lifecycle/protocol.md",
+                "file": "architecture/observer_pattern.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -398,7 +467,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/lifecycle/protocol.md"
+                "file": "architecture/observer_pattern.md"
               }
             }
           },
@@ -432,34 +501,35 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "475cd16cdf1ef7e6",
+  "active": "a8b49ae5ef33a365",
   "lastOpenFiles": [
-    "ios/swift/arrays.md",
-    "ios/swift/functions.md",
-    "ios/swift/set.md",
-    "ios/xcode/performance.md",
-    "ios/config/mdm.md",
-    "misc/network/charles_proxy.md",
-    "ios/config/certificate.md",
-    "misc/network/charles proxy.md",
-    "os/mac/fresh_install.md",
-    "os/mac/profiles.md",
+    "ios/lifecycle/notification_pattern.md",
+    "ios/lifecycle/README_lifecycle.md",
+    "architecture/observer_pattern.md",
+    "architecture/ReadMe_architecture.md",
+    "architecture/concurrency.md",
+    "architecture/coordinator_pattern.md",
+    "tools/terminal/shell.md",
     "ios/lifecycle/user_notifications.md",
-    "misc/network/proxyman.md",
-    "ios/xcode/spm.md",
-    "tools/editors/markdown.md",
-    "os/mac/mac_os_quirks.md",
-    "ios/swift/access_control.md",
-    "ios/lifecycle/initialization.md",
-    "ios/lifecycle/protocol.md",
-    "ios/lifecycle/documentation.md",
-    "ios/combine/publisher.md",
-    "ios/xcode/build_commands.md",
-    "os/linux/shell_scripts.md",
-    "ios/library/framework.md",
-    "tools/git/amend.md",
-    "tools/git/rebase.md",
-    "tools/git/revert.md",
+    "ios/config/app_configuration.md",
+    "ios/config/app_store _connect.md",
+    "ios/config/ats_plist.md",
+    "ios/config/best_practices.md",
+    "architecture/composable/ReadMe_composable.md",
+    "architecture/navigation_coordinator.md",
+    "architecture/singleton_pattern.md",
+    "architecture/system_designs.md",
+    "architecture/software_updates.md",
+    "backend/node/aws.md",
+    "backend/ruby/documentation.md",
+    "backend/ruby/hello_world.md",
+    "backend/ruby/README_ruby.md",
+    "backend/ruby/ternary.md",
+    "backend/node/dot_env.md",
+    "database/README_database.md",
+    "database/docker/commands.md",
+    "database/docker/info.md",
+    "tools/gaming",
     "assets/2a7043566214d95f4da9e448fc3fc385_MD5.png",
     "assets/628b71a20fd797895058280a80be476c_MD5.png",
     "assets/7d97352a88ec99bcc2d7a56b28c8ae68_MD5.png",
@@ -467,8 +537,8 @@
     "Untitled.canvas",
     "Untitled 1.canvas",
     "tools/server",
-    "ios/visionOS",
-    "ios/tvOS",
+    "ios/visionos",
+    "ios/tvos",
     "assets/ad8b17a8d57aeb3e30e3eebab144f1cf_MD5.png",
     "assets/Pasted image 20231004103727.png",
     "assets/9016298270586fbb93524365fd6e007e_MD5.png",

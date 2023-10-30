@@ -44,7 +44,7 @@ public override func isEqual(_ object: Any?) -> Bool {
 ## Formatting
 
 [code_formatting](code_formatting.md)
-[Code Linter](process/greenfield_Code##Code%20Linter)
+[Code Linter](greenfield_code.md##Code%20Linter)
 
 
 

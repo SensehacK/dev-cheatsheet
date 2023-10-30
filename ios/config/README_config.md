@@ -9,7 +9,7 @@
 
 [app_store _connect](app_store%20_connect.md)
 
-[appConfiguration](appConfiguration.md)
+[app_configuration](app_configuration.md)
 
 [ats_plist](ats_plist.md)
 

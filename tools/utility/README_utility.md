@@ -1,6 +1,8 @@
 
 ## List
 
+[[alfred]]
+
 [qbittorrent](qbittorrent.md)
 
-[[alfred]]
+[discord](discord.md)
