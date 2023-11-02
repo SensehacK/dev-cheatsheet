@@ -4,7 +4,7 @@
 
 ## Extensions
 
-uBlock Origin Dark Reader One Note
+[extensions](tools/browsers/extensions.md)
 
 ## Shortcuts
 
@@ -26,3 +26,9 @@ Disable auto update on firefox nightly
 
 [Guide](https://www.journeybytes.com/disable-firefox-quantum-updates/)
 
+
+## Preferences
+
+### don't allow [website] to prompt me
+Restarting the browser should be able to reset those queries.
+https://support.mozilla.org/en-US/questions/1351901
