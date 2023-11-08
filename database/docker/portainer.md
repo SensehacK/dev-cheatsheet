@@ -1,5 +1,5 @@
+# Portainer
 
-## Portainer
 
 Used Portainer for managing docker images.
 
@@ -16,7 +16,28 @@ Linux Media Server Script from this github also helped a lot.
 Solve a Limited Stack in Portainer
 https://www.benjaminrancourt.ca/how-to-solve-a-limited-stack-in-portainer/
 
+
+### Error 
+
+
+`stack.env: no such file or directory`
+https://github.com/portainer/portainer/issues/6701
+
+
 ## Watchtower
 
 Updating Docker containers
 https://github.com/containrrr/watchtower
+
+## Editing Configs
+
+For some reason I couldn't use `vim` or `nano` but when I used `vi` it worked fine
+
+https://github.com/portainer/portainer/issues/322#issuecomment-392251221
+
+Or you can set environment files for docker containers or compose files
+
+```sh
+RUN apt-get update && apt-get install -y locales locales-all  
+ENV LC_ALL en_US.UTF-8
+```
