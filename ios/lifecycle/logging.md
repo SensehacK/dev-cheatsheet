@@ -43,3 +43,18 @@ public enum LogLevel: String {
 
 ```
 
+
+## Console log prefix filtering
+
+Having a prefix to your debugging logs when working on a big feature or bug hunt is crucial as well.
+
+```swift
+print("CUSTOM_FLAG: ")
+print("$$$ \(someVariable)")
+```
+In Xcode -> console log GUI. At the right most bottom corner you can specify your string `prefix` and only get filtered logs for easier confirmation of code path execution being carried out.
+
+Helps me sift through bunch of non related console / debug prints from large projects where if you don't want to mess around with disabling those analytics flags or configs to not print out junk logs in the console at the given moment.
+
+This is if your project has non structured logging API, if you have appropriate subsystems designated for `Unified Logging API` with Xcode 15+ you get more advance filters to work around your problem. 
+

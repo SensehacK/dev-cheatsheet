@@ -154,6 +154,13 @@ Hosting it locally using local server follow [this guide](tools/server/http-serv
 Multi Platform DocC
 https://danielsaidi.com/blog/2022/04/27/building-multi-platform-documentation-with-docc
 
+Custom Routing
+
+For multiple targets docC generation easy script 
+https://medium.com/kinandcartacreated/host-and-automate-your-docc-documentation-c6ac29dc0feb#53c7
+https://github.com/theappbusiness/ModularSlothCreator/blob/main/ci_site_deploy.sh
+
+
 ## DocC Errors
 
 ### swift docc empty webpage
@@ -171,7 +178,7 @@ If the swift docc is blank on our CI/CD server probably you forgot to update the
 
 Sometimes your xcodebuild fails and the job swift docc command line would state errors which aren't in correlation with it. So make sure you build locally first with codebase and then push new changes in order to avoid anxiety on what's wrong with your CI/CD. 
 
-```error
+```sh
 Error: '/Users/runner/work/swift-docc/swift-docc/.derivedData/Build/Products/Debug-iphonesimulator/swifty-docc.doccarchive' is not a valid DocC Archive. Expected a directory but a path to a file was provided
 
 Usage: docc process-archive transform-for-static-hosting <source-archive-path> [--output-path <output-path>] [--hosting-base-path <hosting-base-path>]

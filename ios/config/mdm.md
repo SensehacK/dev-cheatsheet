@@ -11,7 +11,7 @@ https://imazing.com/guides/understanding-supervision-mdm-ade
 ## Backup
 
 Local Encrypted backups kinda worked and I didn't have to fully setup my work iOS device again after doing a reset.
-Definitely helps having local encrypted backups and restore quickly when `Reset All Content and Erase` option was clicked through and not being paired with local iPhone nearby. Just let it complete little bit and connect the new reset iphone with Finder / iTunes and just do full restore. After that is done, Apple might ask you to enter the apple ID credentials again to download all the App Store apps but the internal app data is still intact so no need of extra setup needed.
+Definitely helps having local encrypted backups and restore quickly when `Reset All Content and Erase` option was clicked through and not being paired with local iPhone nearby. Just let it complete little bit and connect the new reset iPhone with Finder / iTunes and just do full restore. After that is done, Apple might ask you to enter the apple ID credentials again to download all the App Store apps but the internal app data is still intact so no need of extra setup needed.
 
 https://support.apple.com/guide/deployment/backup-and-restore-devices-depd44f045b4/web
 

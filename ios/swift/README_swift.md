@@ -67,7 +67,10 @@ As sometimes, we would have limited internet access or restrictive data download
 
 
 
+## Migration or Language Equivalents
 
+Typescript vs Swift syntax equivalents
+https://medium.com/@yankuan/syntax-comparison-typescript-vs-swift-7c94dfb2f7da
 
 
 

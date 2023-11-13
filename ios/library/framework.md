@@ -74,6 +74,7 @@ https://stackoverflow.com/questions/15331056/library-static-dynamic-or-framework
 https://stackoverflow.com/questions/31450690/why-xcode-7-shows-tbd-instead-of-dylib
 
 
+## Errors
 ### Framework Arch Mismatch
 
 `Could not find module for target 'x86_64-apple-ios-simulator'`
@@ -101,7 +102,7 @@ Local Swift Packages Error for each package dependency Missing package product
 https://stackoverflow.com/questions/69281786/local-swift-packages-stopped-working-in-xcode-13/69793517#69793517
 
 
-## Library not loaded dylb cache
+### Library not loaded dyld cache
 
 dyld: Library not loaded
 
@@ -118,14 +119,19 @@ Important thing is to find the right cache path and delete the cache in order to
 
 https://sarunw.com/posts/how-to-fix-dyld-library-not-loaded-error/
 
-## Library duplicate Choosing one
+### Library duplicate Choosing one
 
 So somethings there are two frameworks being added in Xcode dynamic library but it leads to linking error. 
-We are having this issue because SPM internal dependencies dependency hasn't exposed it appropriately as a framework. So hence the frameworks are being added twice since the framework team didn't expose the PromiseKit properly so we had to explicitly add the `framework` inorder to get the right xcframework.
+We are having this issue because SPM internal dependencies dependency hasn't exposed it appropriately as a framework. So hence the frameworks are being added twice since the framework team didn't expose the PromiseKit properly so we had to explicitly add the `framework` in order to get the right xcframework.
 
 ```log
 objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framework/) and TestUI.app/TestUI (0x1026b3620). One of the two will be used. Which one is undefined.
 ```
+
+
+
+
+
 ## Code Signing XcFramework
 
 
@@ -147,6 +153,7 @@ https://developer.apple.com/documentation/Xcode/verifying-the-origin-of-your-xcf
 
 
 
+
 ## Optimizing Frameworks
 
 
@@ -154,6 +161,8 @@ https://developer.apple.com/documentation/Xcode/verifying-the-origin-of-your-xcf
 
 Does my app gets bloated with all the platform architecture combinations that we don't need to provide. No for xcFrameworks since it will automatically select the right arch + platform combo while submitting the archive file or generating the `ipa` file. 
 If you have FAT binaries then you could have extra architecture bloatware depending on how you sliced or thinned the binary while creating it.
+
+
 
 
 ## Debugging Frameworks 
