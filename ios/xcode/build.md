@@ -2,7 +2,21 @@
 
 # Build Process
 
+This shell script (sh | bash) is a script which runs the xcode project build commands via terminal (CLI)  
+You can read on this MAN page of [xcodeBuild](https://keith.github.io/xcode-man-pages/xcodebuild.1.html)
 
+
+The project can have multiple targets and we specify the scheme which we want to make the CI/CD server run the project.  
+
+### Why Xcode CLI
+
+It is not efficient to open up xcode app (GUI) when trying to work with CI/CD so a headless unit like `xcodeBuild` CLI is recommended which comes preinstalled with Xcode app or you can install them using
+
+```shell
+xcode-select --install
+```
+
+This installs `Xcode Command Line Tools` when you're opening up xcode setup process for first time. 
 
 ## Optimization
 
@@ -26,10 +40,17 @@ lipo -info <path-to-binary>
 
 To be clear, a framework or an app can both be inspected with `lipo`. Similarly if you access the build folder on the simulator, you can inspect the binary as well.
 
+https://llvm.org/docs/CommandGuide/llvm-lipo.html
 
 ## Performance
 
 [Xcode performance analysis](performance.md)
+
+
+## Auto Completion | Indexing | Source LSP
+
+Great article around how xcode internally handles its stuff for getting more metadata around the project which it needs to make better inferences.
+https://pspdfkit.com/blog/2019/how-xcode-indexing-works-and-how-to-solve-problems/
 
 ## Resources
 
@@ -38,3 +59,6 @@ To be clear, a framework or an app can both be inspected with `lipo`. Similarly 
 https://en.wikipedia.org/wiki/Instruction_set_architecture
 
 
+https://www.waldo.com/blog/use-xcodebuild-command-line
+
+https://tarikdahic.com/posts/build-ios-apps-from-the-command-line-using-xcodebuild/

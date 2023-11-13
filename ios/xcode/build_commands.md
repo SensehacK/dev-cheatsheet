@@ -54,4 +54,3 @@ xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSen
 ## Resources
 
 
-https://www.macstadium.com/blog/making-sense-of-xcodebuild-arguments

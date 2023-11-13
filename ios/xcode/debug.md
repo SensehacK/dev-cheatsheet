@@ -39,6 +39,9 @@ let firstObject = CustomType()
 withUnsafePointer(to: firstObject) { print("\($0)") }
 ```
 
+Custom conditions in breakpoints 
+https://developer.apple.com/documentation/xcode/setting-breakpoints-to-pause-your-running-app
+
 [SO](https://stackoverflow.com/questions/24058906/printing-a-variable-memory-address-in-swift)
 ## Reset Simulator
 

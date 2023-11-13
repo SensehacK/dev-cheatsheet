@@ -95,7 +95,7 @@ Or use pipeline with external tool called `xcpretty`
 
 [CLI arguments](https://rderik.com/blog/command-line-argument-parsing-using-swift-package-manager-s/)
 
-[environment_Variables](environment_Variables.md)
+[app_environment_variables](app_environment_variables.md)
 
 ## Resources
 
@@ -108,6 +108,8 @@ Or use pipeline with external tool called `xcpretty`
 [cli-xcodeBuild](https://tarikdahic.com/posts/build-ios-apps-from-the-command-line-using-xcodebuild/)
 
 [xcodebuild arguments](https://www.macstadium.com/blog/making-sense-of-xcodebuild-arguments)
+
+https://keith.github.io/xcode-man-pages/xcodebuild.1.html
 
 
 ## Errors

@@ -1,42 +1,17 @@
-## Environment Variables
+# App Environment Variables
 
 
 Setting environment variables on the project and reading from them via Xcode.
 
-### Setting variables
-```bash
-export TEST_RUNNER_QAENV=EnvironmentQA1
-```
+[environment_variables](os/linux/environment_variables.md)
 
-[xcode build Env variables](https://stackoverflow.com/questions/40722756/passing-arguments-to-ios-tests-with-xcodebuild)
-
-### Removing Environment variable
-
-```bash
-unset variablename 
-```
-
-
-https://www.cloudbooklet.com/how-to-set-list-and-remove-environment-variables-in-linux/
+## Xcode
 
 Recent updates I believe from Xcode 12.5 gives an option for xcode-build-cli to be able to import the `Environment variables` of the host environment. 
 Which leads to good opportunities towards getting xcode work in tandem with various CI/CD providers to have different `SWITCH` | `A/B Behavior` on dev environments locally or remote servers running the build commands.
 
 
-You would need to either set the environment variable using 
-```bash
-export IS_CI_SERVER="false"
-
-// Confirm your environment variable works
-echo $IS_CI_SERVER
-```
-
-You could also define an `.env` file to source these kind of variables and your project or any kind of host runner needs to include this step as a script before executing the `xcode-build`
-
-```bash
-source .env
-```
-
+## iOS Implementation
 
 On iOS you can read the environment variable keys | values using this code snippet.
 
@@ -45,8 +20,7 @@ if let envV = ProcessInfo.processInfo.environment["IS_CI_SERVER"] {
 	print("The environment variable \(envV)")													   
 }
 ```
-
-
+[xcode build Env variables](https://stackoverflow.com/questions/40722756/passing-arguments-to-ios-tests-with-xcodebuild)
 
 ### Issues
 

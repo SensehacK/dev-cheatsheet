@@ -15,13 +15,15 @@
 
 [carthage](carthage.md)
 
+[[cocoapods]]
+
 [command_line](command_line.md)
 
 [config](ios/xcode/config.md)
 
 [[debug]]
 
-[environment_Variables](environment_Variables.md)
+[app_environment_variables](app_environment_variables.md)
 
 [instruments](instruments.md)
 

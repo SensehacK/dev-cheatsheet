@@ -225,6 +225,9 @@ xcodebuild -resolvePackageDependencies
 
 https://blog.leonifrancesco.com/articles/missing-package-product
 
+ Xcode GUI approach to get past this error is to do `Xcode` -> `File` -> `Packages` ->  `Reset Package Cache`
+
+
 ## Exposing Library & Target
 
 When working with Swift Package managers you need to expose every folder as a different library in order to import them in the project itself. Swift Packages treat every directory or folder independent and you can't just directly access them if they are out of the default scope of `Package_Name -> Sources` library package name.
@@ -286,10 +289,23 @@ Change set in `.resolved` file
 + "location" : "/Users/username/git/cloud/dependency_name",
 ```
 
+
+### An unknown error not found (-1)
+
+```sh
+git@github.com:company-repo-group/repoName.git: An unknown error occurred. reference 'refs/remotes/origin/develop' not found (-1)
+```
+
+You can have this error sometimes if you're having Xcode local package name conflicting with similar remote package name. So one way to get past this error is to do `Xcode` -> `File` -> `Packages` ->  `Reset Package Cache`
+
 ## Pitfalls
 
 
 [Some pitfalls of using SPM and Build Configuration in Xcode](https://www.sobyte.net/post/2022-10/spm-in-xcode/)
+
+
+### Unexpected Duplicate tasks
+Multiple commands produce `framework` libraries. Probably deleting SPM cache and metadata. also `.resolved` SPM project helps me to get over this build error. Reset Package graph and Resolve Packages as well.
 
 ## Resources
 
