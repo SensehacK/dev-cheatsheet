@@ -2,7 +2,7 @@
 
 ## Intro
 
-This piece is quite opiniated from point of view. No way this is scientific or academic. So take it with a grain of salt or a glass of Whiskey talk speaking.
+This piece is quite opinionated from point of view. No way this is scientific or academic. So take it with a grain of salt or a glass of Whiskey talk speaking.
 But none theless enjoy my thought process around Software updates in general.
 
 ## Process

@@ -11,49 +11,26 @@ So it won't be fully fleshed out but nothing in this whole cheatsheet is. Everyt
 
 Enjoy!
 
+## [Architecture Patterns](architectural_pattern.md)
+
+## [Behavioral Patterns](behavioral_patterns.md)
+
+## [Concurrency Pattern](concurrency_pattern.md)
+
+## [Creational Patterns](creational_patterns.md)
+
+## [Structural Pattern](structural_pattern.md)
+
+
 ## SDLC
-
-[Composable](composable/ReadMe_composable.md)
-
-[App orchestration](orchestration.md)
 
 [IT Depends](it_Depends.md)
 
-[[Concurrency]]
+[[concurrency]]
 
 [System Designs](system_designs.md)
 
 [software_updates](software_updates.md)
-
-## Architecture Patterns
-
-[mvvm_pattern](mvvm_pattern.md)
-
-[mvc_pattern](mvc_pattern.md)
-
-[mvvm_c_pattern](mvvm_c_pattern.md)
-
-##  Design Patterns
-
-[singleton_pattern](singleton_pattern.md)
-
-[facade_pattern](facade_pattern.md)
-
-[coordinator_pattern](coordinator_pattern.md)
-
-
-
-[navigation_coordinator](navigation_coordinator.md)
-
-
-
-## Communication Patterns
-
-[delegate_pattern](delegate_pattern.md)
-
-[observer_pattern](observer_pattern.md)
-
-
 
 
 
@@ -83,6 +60,8 @@ Higher Order functions [short_hands](ios/swift/short_hands.md)
 https://refactoring.guru/design-patterns/catalog
 
 https://stackoverflow.com/questions/4243187/whats-the-difference-between-design-patterns-and-architectural-patterns
+
+https://en.wikipedia.org/wiki/Software_design_pattern
 
 https://en.wikipedia.org/wiki/Architectural_pattern
 

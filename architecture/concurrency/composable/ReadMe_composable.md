@@ -5,7 +5,7 @@ Composable Architecture for keeping track of different states across the app. Ju
 
 [input_output](input_output.md)
 
-[setup](setup.md)
+[setup](architecture/concurrency/composable/setup.md)
 
 [usage](usage.md)
 

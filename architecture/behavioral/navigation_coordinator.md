@@ -12,7 +12,7 @@ To show more Views on top of current view or just present alerts. Or make dismis
 
 It will take `ViewController` as one of its parameters in order to present those view controllers on the current stack.
 
-Its responsibilities could also fallback on always providing some view which is interactable for the end user and able to quickly recover from any state to a certain state which will not make the user be in locked zone. By locked zone I mean no UI interactions are possible and the only way out of this zone / screen / state is killing the app and relaunching it again. We don't want to serve our end users with this kind of user experience UX. 
+Its responsibilities could also fallback on always providing some view which is interact-able for the end user and able to quickly recover from any state to a certain state which will not make the user be in locked zone. By locked zone I mean no UI interactions are possible and the only way out of this zone / screen / state is killing the app and relaunching it again. We don't want to serve our end users with this kind of user experience UX. 
 
 
 ```swift
@@ -93,7 +93,7 @@ static func createMainViewController(context: GlobalContext) {
 	// Set delegates if needed
 	navigationController.delegate
     return navigationController														  
-}
+	}
 }
 ```
 

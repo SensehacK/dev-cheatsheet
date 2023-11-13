@@ -121,6 +121,11 @@ Different source of truth
 Merge timestamp and override data ? 
 
 
+
+## Implementation
+
+[iOS Swift equivalent WIP docs](API_design.md)
+
 ## Good articles to read
 
 [Right Data Structure](https://www.swiftbysundell.com/articles/picking-the-right-data-structure-in-swift/)

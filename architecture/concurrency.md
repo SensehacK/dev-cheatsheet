@@ -32,7 +32,7 @@ A unit of work to be executed by a processor.
 [tasks](ios/concurrency/tasks.md)
 ## Thread 
 
-Multiple Tasks to be executed by a single thread. The thread runs on its own context and doesn't share its context with other threads. So running independent work items / tasks on a single Thread is highly recommended. When you add shared / mutable data mutation which can be accessed by mutliple threads thus leading to dirty writes. Which leads to data inconsistency issues.
+Multiple Tasks to be executed by a single thread. The thread runs on its own context and doesn't share its context with other threads. So running independent work items / tasks on a single Thread is highly recommended. When you add shared / mutable data mutation which can be accessed by multiple threads thus leading to dirty writes. Which leads to data inconsistency issues.
 
 Multiple threads can exist on a single process.
 [thread](ios/concurrency/thread.md)

@@ -46,9 +46,9 @@ Loadbalancer balancing out the user requests and routing it to appropriate serve
 
 ## Hashing 
 
-Hashing solves lot of problems and it takes smaller performance hit at the time when it is initialized or changed everytime but the cost is negligible for its applications where your architecture has constant need to reads from I/O to get status updates or polling of data for changes or displaying / reading data every `n` of times.
+Hashing solves lot of problems and it takes smaller performance hit at the time when it is initialized or changed every time but the cost is negligible for its applications where your architecture has constant need to reads from I/O to get status updates or polling of data for changes or displaying / reading data every `n` of times.
 
-Great hashing algorithms solve the problems of collision and makes it easier for the consumer to have a trully unique ID to reference in a given context.
+Great hashing algorithms solve the problems of collision and makes it easier for the consumer to have a truly unique ID to reference in a given context.
 This guarantees faster checks of huge data by just running checksums and quickly identifying what changed and what not. Great performance boost in most cases.
 
 
@@ -78,7 +78,7 @@ SSL pinning, cryptography, code signing, certificates, public - private key infr
 
 ## Design Pattern
 
-Design patterns in mobile app development usually comes is MVC, MVVM, MVP, VIPer etc. The architecture of the mobile app constitues of networking, caching, data management, application states, caching, analytics, third party libraries etc. Design pattern just establishes how a certain module which could be UI related is communicating with its own view state, viewmodel and data model. Invoking those state and interacting with other aspects of the app is totally different.
+Design patterns in mobile app development usually comes is MVC, MVVM, MVP, VIPer etc. The architecture of the mobile app constitutes of networking, caching, data management, application states, caching, analytics, third party libraries etc. Design pattern just establishes how a certain module which could be UI related is communicating with its own view state, viewmodel and data model. Invoking those state and interacting with other aspects of the app is totally different.
 
 
 

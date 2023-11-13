@@ -6,7 +6,7 @@
       {
         "id": "706685fff5da337c",
         "type": "tabs",
-        "dimension": 35.431654676258994,
+        "dimension": 31.591639871382633,
         "children": [
           {
             "id": "e6e2eef97dbb92d4",
@@ -65,12 +65,227 @@
             }
           },
           {
-            "id": "eb8876dfd75e0e0f",
+            "id": "460c5b03a5a835dd",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/DRM.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "290f754bb1c8c93a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/crossPlatform.md",
+                "mode": "source",
+                "backlinks": false,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "a629ac2846ad5dfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/build_commands.md",
+                "file": "ios/xcode/build.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a16c902457a72b20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/test/test.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d7f10a233392360f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/ReadMe_architecture.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "978476604f7aa247",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/ReadMe_architecture.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "23d301d7d6cba201",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/ReadMe_architecture.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "b30e05f0f0eb5f64",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/creational_patterns.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c1e1b0546039f746",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/ReadMe_architecture.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e58df321deabf520",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/behavioral_patterns.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "920f659b7555f278",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/behavioral_patterns.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          }
+        ],
+        "currentTab": 14
+      },
+      {
+        "id": "fd42ace9dcd8f418",
+        "type": "tabs",
+        "dimension": 68.40836012861736,
+        "children": [
+          {
+            "id": "c6b33be2f141c524",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/framework.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "d48bcf8bd36dfbcf",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/spm.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "b7aaa4676769e86f",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/avkit.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "f861677c04bad87a",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/protocol.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              },
+              "pinned": true
+            }
+          },
+          {
+            "id": "6d0146a14541fd8b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "architecture/behavioral/navigation_coordinator.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -79,158 +294,6 @@
           }
         ],
         "currentTab": 4
-      },
-      {
-        "id": "a20c977295fbb090",
-        "type": "split",
-        "dimension": 64.568345323741,
-        "children": [
-          {
-            "id": "fd42ace9dcd8f418",
-            "type": "tabs",
-            "dimension": 41.42857142857143,
-            "children": [
-              {
-                "id": "162eb7c9eab38846",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/lifecycle/dark_mode.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "c6b33be2f141c524",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/library/framework.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "d48bcf8bd36dfbcf",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/xcode/spm.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "b84d0db36917216f",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/swiftUI/README_swiftUI.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "c85463cc82a021e9",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/library/jailbreak.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "b7aaa4676769e86f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/lifecycle/notification_pattern.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "921f88993755f917",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/xcode/build.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              }
-            ],
-            "currentTab": 6
-          },
-          {
-            "id": "5e3b10958fb56145",
-            "type": "tabs",
-            "dimension": 58.57142857142858,
-            "children": [
-              {
-                "id": "21523b9f1ff1bbda",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/combine/publisher.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "6747bd4b0d5ba19d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/combine/assign.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              }
-            ]
-          }
-        ],
-        "direction": "horizontal"
       }
     ],
     "direction": "vertical"
@@ -259,7 +322,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "encrypted back",
+                "query": "UIWindow",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -288,7 +351,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 220.5
+    "width": 367.5
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -304,7 +367,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/xcode/build_commands.md",
+                "file": "architecture/behavioral_patterns.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -321,7 +384,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/xcode/build_commands.md",
+                "file": "architecture/behavioral_patterns.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -344,7 +407,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/xcode/build_commands.md"
+                "file": "architecture/behavioral_patterns.md"
               }
             }
           },
@@ -378,35 +441,41 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "eb8876dfd75e0e0f",
+  "active": "920f659b7555f278",
   "lastOpenFiles": [
-    "hardware/README_hardware.md",
-    "ios/xcode/build_commands.md",
-    "ios/combine/publisher.md",
-    "tools/vscode/config.md",
-    "architecture/builder_pattern.md",
-    "tools/terminal/shell.md",
-    "thoughts/FOMO.md",
-    "thoughts/media.md",
-    "thoughts/numbers.md",
-    "thoughts/politics.md",
-    "thoughts/rants.md",
-    "tools/gaming/playnite.md",
-    "tools/gaming/discord.md",
-    "tools/gaming/README_gaming.md",
+    "architecture/ReadMe_architecture.md",
+    "architecture/behavioral/chain_of_responsibility_pattern.md",
+    "architecture/behavioral/coordinator_pattern.md",
+    "architecture/behavioral/navigation_coordinator.md",
+    "architecture/behavioral_patterns.md",
+    "architecture/creational_patterns.md",
+    "ios/lifecycle/app_delegate.md",
+    "ios/lifecycle/view_controllers.md",
+    "ios/concurrency/Readme_concurrency.md",
+    "architecture/behavioral/observer_pattern.md",
+    "architecture/structural_pattern.md",
+    "architecture/architectural_pattern.md",
+    "architecture/software_updates.md",
+    "architecture/system_designs.md",
+    "architecture/it_Depends.md",
+    "architecture/concurrency.md",
+    "architecture/architectural/mvc_pattern.md",
+    "architecture/architectural",
+    "architecture/concurrency_pattern.md",
+    "ios/config/best_practices.md",
+    "architecture/structural/orchestration.md",
+    "architecture/concurrency",
+    "architecture/structural/facade_pattern.md",
+    "architecture/concurrency/composable/setup.md",
+    "architecture/concurrency/composable/input_output.md",
+    "architecture/concurrency/composable/ReadMe_composable.md",
+    "architecture/concurrency/composable/usage.md",
+    "architecture/concurrency/composable/viewState.md",
+    "architecture/structural",
+    "architecture/behavioral",
+    "architecture/creational",
+    "architecture/SDLC",
     "tools/gaming",
-    "thoughts/people.md",
-    "thoughts/proverbs.md",
-    "thoughts/nerd.md",
-    "os/windows/kill_switch.md",
-    "network/wireshark.md",
-    "network/routers.md",
-    "network/proxyman.md",
-    "network/pi_hole.md",
-    "network/charles_proxy.md",
-    "network/README_network.md",
-    "network/Tplink.md",
-    "network/HTTP_status_codes.md",
     "network",
     "git",
     "Untitled.canvas",
@@ -416,17 +485,11 @@
     "assets/59a0ac94867a60973e5e50c75c2b4c6d_MD5.gif",
     "Untitled 1.canvas",
     "tools/server",
-    "ios/visionOS",
-    "ios/tvOS",
     "assets/ad8b17a8d57aeb3e30e3eebab144f1cf_MD5.png",
     "assets/Pasted image 20231004103727.png",
     "assets/9016298270586fbb93524365fd6e007e_MD5.png",
     "assets/90b21adb364e09f326e2a8c1d6c9edff_MD5.png",
     "assets/c73ad784778bd591c2b37e95372e6f7c_MD5.png",
-    "assets/85b04c0bb815805984095c388cfbd4a9_MD5.png",
-    "ios/library/assets",
-    "ios/xcode/assets/xcode_updates",
-    "ios/xcode/assets",
-    "ios/macOS"
+    "assets/85b04c0bb815805984095c388cfbd4a9_MD5.png"
   ]
 }
