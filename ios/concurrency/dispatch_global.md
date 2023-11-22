@@ -36,8 +36,6 @@ DispatchQueue.global().async {
 .receive(on: DispatchQueue.global())
 ```
 
-
-
 ## Source
 
 https://developer.apple.com/documentation/dispatch/dispatchqos/qosclass

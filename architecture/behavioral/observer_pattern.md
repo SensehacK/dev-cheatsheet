@@ -2,12 +2,12 @@
 
 1 - > N 
 
-Pros:
+## Pros
 - Broadcasting everything at once.
 - Big state change and you need to reflect that everywhere.
 
-Cons:
-- Subscribing and disposing of subsribers
+## Cons
+- Subscribing and disposing of subscribers
 - Multiple firing of events.
 - Hot / Cold observers
 

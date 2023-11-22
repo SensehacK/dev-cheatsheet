@@ -6,4 +6,4 @@
 
 
 ## App Store Connect
-[app_store _connect](app_store%20_connect.md)
+[app_store_connect](app_store_connect.md)

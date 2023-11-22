@@ -24,7 +24,7 @@ public class AsyncNetwork { }
 ```
 
 [NSH](https://nshipster.com/available/)
-
+https://sarunw.com/posts/how-to-handle-api-changes-with-@available/
 
 ## Check Library support
 

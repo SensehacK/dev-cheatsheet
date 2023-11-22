@@ -58,3 +58,4 @@ https://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-
 https://medium.com/@nimjea/singleton-class-in-swift-17eef2d01d88
 
 https://www.swiftbysundell.com/tips/quickly-replacing-singletons-with-functions/
+

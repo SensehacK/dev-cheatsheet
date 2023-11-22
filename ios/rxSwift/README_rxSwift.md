@@ -50,8 +50,6 @@
 
 [[resources]]
 
-[[rough_work]]
-
 [[side_effects]]
 
 [[rxSwift/timeline]]

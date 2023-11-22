@@ -87,29 +87,11 @@ class CustomClass: ObservableObject {
 
 
 
-## MainActor
 
-You can always define your class as an actor which would gurantee the reference type object to be in its own context with its dedicated thread.
-It is Swift's newer APIs available for users to make it more thread safe and the general guidelines are to use `actor` if possible to avoid extra overhead of dealing with criticial section or putting barrier or signals when writing shared / mutable data / resource.
-
-When using `Task { }` to perform any asynchronous task and utilizing the result of the async task to make some changes on UI, we need to again jump back to main thread. In order to do that sometimes SwiftUI is smart if the class is conforming to `:ObservableObject` and has `@mainActor` being marked it will do the thread switching in the background without explicit developer's input. But if using tasks and sending results back with completion handlers with closures. You need to be sure to premptively switch threads to the main thread for doing UI work.
-
-```swift
-Task {
-do {
-	let data = try await AsyncNetwork.shared.fetchData(url: url, type: User.self)
-	await MainActor.run {
-		completion(.success(data))
-	}
-} catch { print("error") }
-}
-```
-The code snippet which makes sure we are on the main thread is `MainActor.run` , we can also use `DispatchQueue.main.async` block. But if we are already supporting async/await and using task might as well utilize the improved API.
-
-## Actor
+## Actor & MainActor
 
 Refer this doc for more information [actors](actors.md)
-
+ [main actor](actors.md##MainActor)
 
 
 ## References

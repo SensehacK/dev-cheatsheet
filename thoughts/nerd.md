@@ -16,7 +16,7 @@ This drives innovation, of course lot of other factors are present but I can't d
 ## Immigration Rants
 
 It is what it is! I take my cup half empty | half full ideology with being happy there is a cup to drink the beverage by. Rather than debating whether it is empty or full.
-Always greatful for the opportunity this country has presented.
+Always grateful for the opportunity this country has presented.
 And yeah American dream is a dream for people who are sleeping or too ssssspid to believe in it ~ George Carlin
 
 

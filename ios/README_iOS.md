@@ -24,7 +24,7 @@ Here you can find various documentation related to iOS development which can hel
 
 ### [swift](README_swift.md)
 
-### [swiftUI](README_swiftUI.mdREADME_swiftUI.md)
+### [swiftUI](README_swiftUI.md)
 
 [tvOS](README_tvOS.md)
 
@@ -59,7 +59,7 @@ https://www.advancedswift.com/
 
 Great Mentors IRL listed in the main [ReadME](README.md)
 
-## Contribution˜
+## Contribution
 
 Feel free to fork this project & raise a pull request to add more relevant information regarding development tools used in iOS ecosystem.
 

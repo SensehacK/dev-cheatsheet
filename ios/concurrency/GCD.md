@@ -6,13 +6,13 @@
 Every queue is always First In First Out (FIFO) order. 
 The queue itself could be on main thread or background thread with varying Quality of services.
 
-Wikipedia https://en.wikipedia.org/wiki/Grand_Central_Dispatch
-
+[Wikipedia](https://en.wikipedia.org/wiki/Grand_Central_Dispatch) 
 
 Refer `Main thread` [dispatch_main](dispatch_main.md)
 Refer Background threads [dispatch_global](dispatch_global.md)
 
-## low-level C-based API.
+## low-level C-based API
+
 NSOperation and NSOperationQueue are Objective-C classes.
 NSOperationQueue is objective C wrapper over GCD. If you are using NSOperation, then you are implicitly using Grand Central Dispatch.
 
@@ -35,8 +35,6 @@ DispatchQueue.global(qos: .background).async {
 	doSomething()
 }
 ```
-
-
 
 ## References
 
