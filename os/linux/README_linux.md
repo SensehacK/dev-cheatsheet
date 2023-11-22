@@ -9,6 +9,8 @@
 
 [[grep]]
 
+[installation](os/linux/installation.md)
+
 [[network]]
 
 [[open_vpn]]
@@ -20,5 +22,3 @@
 [[task_manager]]
 
 [[user_root]]
-
-

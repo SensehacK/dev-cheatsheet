@@ -39,3 +39,25 @@ DESTINATION_PLATFORM_VALUE="generic/platform=iOS\ Simulator"
 
 
 https://stackoverflow.com/questions/5819423/bash-variables-with-spaces
+
+
+
+## Run on Startup
+
+Try using this command to ensure your script is added to the boot sequence:
+
+```
+sudo update-rc.d /etc/init.d/nameofscript.sh defaults
+```
+
+Note that you can make a script executable using the +x option with chmod:
+
+```
+chmod +x /etc/init.d/nameofscript.sh
+```
+https://raspberrypi.stackexchange.com/questions/15475/run-bash-script-on-startup
+
+
+## Cron job
+
+https://opensource.com/article/22/3/scheduling-tasks-linux-cron

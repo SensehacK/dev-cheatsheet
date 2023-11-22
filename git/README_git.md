@@ -70,6 +70,8 @@ My all time favorite is "Tower" git client and favorite enterprise git SaaS is "
 
 [[remote]]
 
+[revert](revert.md)
+
 [[stash]]
 
 [[tag]]
