@@ -26,6 +26,8 @@
 
 [process_kanban](process_kanban.md)
 
+[project_management](project_management.md)
+
 [release](process/release.md)
 
 [[search]]

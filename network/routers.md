@@ -24,82 +24,23 @@
 - Aruba
 - CMBian
 
+## [Network Testing](network_testing.md)
 
 
-## AP Testing
-
-- Testing access points
-- Any device which is capable of Wifi - you can test.
+## [Project Management](project_management.md)
 
 
-
-## Test Cases
-
-- Manual testing - no programming required
-- If Wifi Automation Testing  - Added advantage
-
-### Device types Testing
-Devices are referred as clients. 
-Access points is the server 
-Client - Server architecture
-
-- iOS 
-- Android
-
-
-## Testing Tools
-
-- Wireshark - Network Sniffer (free)
-- Omni Peek https://www.liveaction.com/products/omnipeek/ (Paid, enterprise)
-- fluke air check (scan SSIDs )
-- Wifi analyzer
-- Wifi Site survey 
-	- Air magnet 
-	- Ekahu
-
-
-Project Management
-- JIRA - KanBan
-- Free tool (Gitlab, Github Projects, Trello)
 
 
 ## History
 
 - We moved from Ethernet -> Wifi
-- Move around - seamless connectivty
+- Move around - seamless connectivity
 - Security aspect - wifi sniffing - catching the packets.
 
 
 
-## Security
-
-- Wireless Fidelity is little bit easier compared to Ethernet for snooping network packets.
-- WEP (first, basic, not recommended) easier to brute force.
-- WPA 2, 3 Enterprise (TKIP) temporal hashing / salting based techniques
-- iOS recommends WPA 3 
-
-
-Wired Equivalent Privacy (WEP)
-Wi-Fi Protected Access (WPA)
-WPA 2 - CCMP & AES encryption
-WPA 3 - SAE and 192 encyption optional Enterprise mode
-
-
-
-### Wifi signal packets message
-
-#### Management frames 
-	- Setup (association, reassociation, probe requests)
-
-#### Acknowledgement / Control frames
-	- Block ACK
-	- RTS (Ready to Send)
-	- ACK
-
-
-#### Data frames
-	- Data driven packets
-	- 
+## [router_security](router_security.md)
 
 
 
@@ -191,9 +132,7 @@ The name of the AP Identifier.
 - AP would show little bit slower because it may not have updated reactive web UI.
 
 
-## Wireshark
 
-- Filter out traffic with specific types
 
 
 ## Beacons
@@ -212,21 +151,14 @@ Authentication handshake
 
 
 
-### DHCP 
-
-- Client will send DHCP discover and AP sends and assigns an IP address back.
-- DHCP server will assign internal IP address range table
-
+## [DHCP](DHCP.md)
 
 ## Difference
 
 - Active vs Passive Scanning
 
-## Switch
 
-- Managed vs Unmanaged
-- SPF ports for high speed reliability and takeover
-- 
+## [Switch](network/switch.md)
 
 ## Interview
 
