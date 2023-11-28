@@ -44,7 +44,7 @@ object: player,
 userInfo: [CustomName_SIGNAL_ID:"x",CustomName_STREAM_ID:"1"])
 ```
 
-more readable rather than one liner and I do have ultra wide monitor but I split my code editors in x3 format so this makes it easier to read and review while on mobile, ipad, or portrait screens like a browser tabs 2/3 of space.
+more readable rather than one liner and I do have ultra wide monitor but I split my code editors in x3 format so this makes it easier to read and review while on mobile, iPad, or portrait screens like a browser tabs 2/3 of space.
 
 ## Parameters naming
 

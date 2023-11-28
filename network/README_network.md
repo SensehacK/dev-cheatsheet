@@ -13,6 +13,6 @@
 
 [routers](routers.md)
 
-[Tplink](Tplink.md)
+[tplink](tplink.md)
 
 [[wireshark]]

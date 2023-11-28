@@ -150,6 +150,29 @@ Update to Latest Package versions
 ```
 
 
+## Cross Platform
+
+```swift
+// Package.swift
+
+#if !os(Windows)
+
+dependencies.append(.package(url: "https://github.com/danger/swift.git", from: "3.12.1"))
+
+targets.append(.target(name: "DangerDeps", dependencies: [.product(name: "Danger", package: "swift")]))
+
+products.append(.library(name: "DangerDeps", type: .dynamic, targets: ["DangerDeps"]))
+
+#endif
+```
+
+
+https://www.polpiella.dev/platform-specific-code-in-swift-packages
+
+## Migrating to SPM
+
+https://forums.swift.org/t/migrating-to-spm-from-mix-of-embedded-frameworks-and-static-libraries/34253
+
 ## Errors
 
 ### Module Cache Path 
@@ -227,6 +250,56 @@ https://blog.leonifrancesco.com/articles/missing-package-product
 
  Xcode GUI approach to get past this error is to do `Xcode` -> `File` -> `Packages` ->  `Reset Package Cache`
 
+
+
+### failed downloading required by target
+
+```log
+  
+failed downloading 'https://artifactory.website.com/someLibrary.zip' which is required by binary target 'target_name': Operation cancelled
+
+downloadError("The network connection was lost.")
+
+```
+
+
+Sometimes your vpn or internet connection is too slow, better way to debug is just copy the URL and check if we are getting the asset being downloaded at appropriate speeds in your browser or curl. Turns out I was on really bad  Wifi network which was throttling my speed and xcode SPM was just showing me loading circle for past 5 minutes without any progress bar to explain how much percentage was being done or at what speeds.
+
+
+
+
+
+### parsing package manifest failed
+
+```log
+Invalid semantic version string 'branch_name`
+```
+This was due to using branch name where tag semantic version was needed. Build error for SPM package.swift where the syntax should be 
+
+```swift
+.package(url: "git@github.com:repoName/project.git", from: "0.1.0"),
+.package(url: "git@github.com:repoName/project.git", branch: "develop"),
+```
+### reference 'refs/remotes/origin/' not found (-1)
+
+skipping cache due to an error
+```log
+git@github.com:repoName/project.git: An unknown error occurred. reference 'refs/remotes/origin/develop' not found (-1)
+```
+
+This could be resolved by deleting the project `Packaged.resolved` files and removing the resolved package references and if that doesn't work deleting the SPM manifest cache libraries. 
+And if it still doesn't work might as well `Reset Package Cache` in Xcode menu bar and then `Resolve Package Versions`. If this fails might as well update your dependencies to see if something changed on the server with old tagged versions by using `Update to Latest versions` should do the trick. If all fails restart mac and refer to the `Notes` section of this document.
+
+
+
+## Notes
+
+Xcode should be quit before deleting the references and cache of SPM. Since Xcode reactively tries to resolve those dependency midway while you're trying to resolve it manually.
+
+Sometimes regenerating your SSH keys on your dev machine is helpful to isolate that permission issues, but since Xcode 14.1, it has been bubbling up better errors to the developer to show what failed and what went wrong. 
+
+This [script from a stackoverflow](https://stackoverflow.com/a/74130700) user also goes through selectively deleting cache from Derived Data and SPM cache manifest files which is more efficient than nuking the whole cache as its more time consuming and resource intensive.
+Relevant thread which is tracked on [swift forum](https://forums.swift.org/t/adding-a-swift-package-using-the-ssh-url/60888/19)
 
 ## Exposing Library & Target
 
@@ -306,6 +379,14 @@ You can have this error sometimes if you're having Xcode local package name conf
 
 ### Unexpected Duplicate tasks
 Multiple commands produce `framework` libraries. Probably deleting SPM cache and metadata. also `.resolved` SPM project helps me to get over this build error. Reset Package graph and Resolve Packages as well.
+
+
+## Timeline
+
+Supporting Binary dependencies in SPM 
+[Added in Swift 5.3](https://github.com/apple/swift-evolution/blob/main/proposals/0272-swiftpm-binary-dependencies.md)
+So [carthage](carthage.md) and [cocoapods](cocoapods.md) were used in lot of projects if your dependencies had images, data files, close source code, binaries.
+
 
 ## Resources
 

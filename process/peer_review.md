@@ -10,3 +10,8 @@ Your software architect or senior software engineers in your team can pitch in f
 Less change-set or git diff the better readability for the reviewer -> Which in turn would help us review concise and faster peer reviews. Is what I think, let me know what you guys think.   
 
 
+
+## Code Review
+
+Good article about how to approach code reviews.
+https://mtlynch.io/human-code-reviews-1/

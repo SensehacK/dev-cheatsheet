@@ -20,6 +20,8 @@
 
 [new_codebase](new_codebase.md)
 
+[packaging](packaging.md)
+
 [[peer_review]]
 
 [presentation](presentation.md)

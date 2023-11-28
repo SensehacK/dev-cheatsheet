@@ -18,7 +18,9 @@ Usually it is advisable to use temporary root user as it prevents from having to
 
 If you're familiar with linux ecosystem or any of the unix subsystem which houses bash or zsh. You may have ran into using commands like
 
-> sudo apt-get install some\_package\_name
+```sh
+sudo apt-get install some\_package\_name
+```
 
 That `sudo` command is what makes you a temporary root access from normal user for executing that specific command for the time being. After you hit enter you need to enter the password for the root user.
 

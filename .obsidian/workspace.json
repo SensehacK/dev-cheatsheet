@@ -6,7 +6,7 @@
       {
         "id": "706685fff5da337c",
         "type": "tabs",
-        "dimension": 31.591639871382633,
+        "dimension": 44.88697524219591,
         "children": [
           {
             "id": "e6e2eef97dbb92d4",
@@ -29,20 +29,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/build.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ac58354b3fa8ed39",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "mobile/unity/naming_conventions.md",
+                "file": "security/README_security.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -100,7 +87,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/build.md",
+                "file": "network/routers.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -113,59 +100,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/test/test.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "d7f10a233392360f",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/ReadMe_architecture.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "978476604f7aa247",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/ReadMe_architecture.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "23d301d7d6cba201",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/ReadMe_architecture.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "b30e05f0f0eb5f64",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/creational_patterns.md",
+                "file": "process/release.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -184,40 +119,14 @@
                 "source": false
               }
             }
-          },
-          {
-            "id": "e58df321deabf520",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/behavioral_patterns.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "920f659b7555f278",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/behavioral_patterns.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
           }
         ],
-        "currentTab": 14
+        "currentTab": 5
       },
       {
         "id": "fd42ace9dcd8f418",
         "type": "tabs",
-        "dimension": 68.40836012861736,
+        "dimension": 55.11302475780409,
         "children": [
           {
             "id": "c6b33be2f141c524",
@@ -280,12 +189,25 @@
             }
           },
           {
-            "id": "6d0146a14541fd8b",
+            "id": "55b43af784bd99b4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/behavioral/navigation_coordinator.md",
+                "file": "mobile/ionic/package.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "6f602bacb7162216",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardware/raspberry_pi.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -322,8 +244,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "UIWindow",
-                "matchingCase": true,
+                "query": "cordova",
+                "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
                 "extraContext": true,
@@ -351,7 +273,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 367.5
+    "width": 335.5
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -367,7 +289,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "architecture/behavioral_patterns.md",
+                "file": "network/routers.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -384,7 +306,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "architecture/behavioral_patterns.md",
+                "file": "network/routers.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -407,7 +329,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "architecture/behavioral_patterns.md"
+                "file": "network/routers.md"
               }
             }
           },
@@ -426,7 +348,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -441,50 +363,50 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "920f659b7555f278",
+  "active": "a629ac2846ad5dfb",
   "lastOpenFiles": [
-    "architecture/ReadMe_architecture.md",
-    "architecture/behavioral/chain_of_responsibility_pattern.md",
-    "architecture/behavioral/coordinator_pattern.md",
-    "architecture/behavioral/navigation_coordinator.md",
-    "architecture/behavioral_patterns.md",
-    "architecture/creational_patterns.md",
-    "ios/lifecycle/app_delegate.md",
-    "ios/lifecycle/view_controllers.md",
-    "ios/concurrency/Readme_concurrency.md",
-    "architecture/behavioral/observer_pattern.md",
-    "architecture/structural_pattern.md",
-    "architecture/architectural_pattern.md",
-    "architecture/software_updates.md",
-    "architecture/system_designs.md",
-    "architecture/it_Depends.md",
-    "architecture/concurrency.md",
-    "architecture/architectural/mvc_pattern.md",
+    "os/linux/Untitled.md",
+    "network/routers.md",
+    "architecture/behavioral/subject.md",
+    "misc/regular_expressions/quotations_each_line.md",
+    "misc/regular_expressions/README_regular_expressions.md",
+    "misc/README_misc.md",
+    "mobile/README_mobile.md",
+    "mobile/native/issues.md",
+    "mobile/native",
+    "mobile/react_native/issues.md",
+    "mobile/react_native/timeline.md",
+    "SUMMARY.md",
+    "mobile/react_native/README_react_native.md",
+    "mobile/android",
+    "process/packaging.md",
+    "os/linux/installation.md",
+    "tools/terminal/node.md",
+    "mobile/ionic/package.md",
+    "backend/python/installation.md",
+    "database/docker/docker_hub.md",
+    "ios/xcode/build.md",
+    "process/release.md",
+    "process/README_process.md",
+    "database/docker/compose.md",
+    "network/tplink.md",
+    "network/switch.md",
+    "ios/combine/filter.md",
+    "ios/automation/fastlane.md",
+    "security",
     "architecture/architectural",
-    "architecture/concurrency_pattern.md",
-    "ios/config/best_practices.md",
-    "architecture/structural/orchestration.md",
     "architecture/concurrency",
-    "architecture/structural/facade_pattern.md",
-    "architecture/concurrency/composable/setup.md",
-    "architecture/concurrency/composable/input_output.md",
-    "architecture/concurrency/composable/ReadMe_composable.md",
-    "architecture/concurrency/composable/usage.md",
-    "architecture/concurrency/composable/viewState.md",
     "architecture/structural",
     "architecture/behavioral",
     "architecture/creational",
     "architecture/SDLC",
     "tools/gaming",
-    "network",
-    "git",
     "Untitled.canvas",
     "assets/2a7043566214d95f4da9e448fc3fc385_MD5.png",
     "assets/628b71a20fd797895058280a80be476c_MD5.png",
     "assets/7d97352a88ec99bcc2d7a56b28c8ae68_MD5.png",
     "assets/59a0ac94867a60973e5e50c75c2b4c6d_MD5.gif",
     "Untitled 1.canvas",
-    "tools/server",
     "assets/ad8b17a8d57aeb3e30e3eebab144f1cf_MD5.png",
     "assets/Pasted image 20231004103727.png",
     "assets/9016298270586fbb93524365fd6e007e_MD5.png",

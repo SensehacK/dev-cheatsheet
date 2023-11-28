@@ -93,10 +93,10 @@ and the repository exists.
 ```
 Changing Cartfile.private, deleted carthrage resolved file, deleted project cache and build folders.
 Changed a dependency branch 
-try pointing your NGAuth in the Cartfile to the `XTVAuth_8.0.0_GHC` branch to this below file.
+try pointing your NGAuth in the Cartfile to the `ProjectDependency__8.0.0_GHC` branch to this below file.
 Cartfile.private
 ```text
-github "https://github.com/company-lib-ios/NextGenXTVAuth.git" "XTVAuth_8.0.0_GHC"
+github "https://github.com/company-lib-ios/ProjectDependency.git" "ProjectDependency_8.0.0_GHC"
 github "https://github.com/company-lib-ios/OHHTTPStubs" "7.0.0"
 ```
 
@@ -187,8 +187,8 @@ Voila Classic github token works and it enabled to download the repo.
 
 
 #### library Path update
-XTVAuth_v7.3.0 vs 
-github "https://github.com/company-aae-ios/NextGenXTVAuth.git" "XTVAuth_8.0.0_GHC"
+ProjectDependency_v7.3.0 vs 
+github "https://github.com/company-name/ProjectDependency.git" "ProjectDependency_8.0.0_GHC"
 
 
 #### Dependency graph cycle
@@ -196,16 +196,7 @@ github "https://github.com/company-aae-ios/NextGenXTVAuth.git" "XTVAuth_8.0.0_GH
 ```text
 The dependency graph contained a cycle:
 yajl:
-CIMHAL: YapDatabase, FastCoderFramework
-FastCoderFramework:
-playerplatform_ios_disney:
-OHHTTPStubs:
-YapDatabase:
-SecClient:
-NextGenXTVAuth: CIMHAL, secclient-ios-binary, Resourcerer
-Resourcerer: PromiseKit, CIMHAL
+DIMHAL: FapDatabase
 PromiseKit:
-secclient-ios-binary: PromiseKit, yajl, SecManMobileConfig, SecClient
-playerplatform_ios_espn:
-SecManMobileConfig:
+securityClient-ios-binary: PromiseKit, yajl, SMobileConfig, 
 ```

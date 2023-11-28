@@ -86,3 +86,19 @@ Visit the repo settings and select the newly created or modified branch “gh-pa
 
 [SO Link](https://stackoverflow.com/questions/53036381/how-to-deploy-ionic-4-app-to-github-pages)
 
+
+
+
+## Ionic
+
+Manage Cordova plugins through Ionic
+https://ionicframework.com/docs/cli/commands/cordova-plugin
+
+Capacitor plugins
+https://ionicframework.com/docs/native/setup
+
+
+## Cordova
+
+https://cordova.apache.org/plugins/
+https://www.npmjs.com/search?q=keywords:ecosystem:cordova

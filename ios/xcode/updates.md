@@ -33,7 +33,7 @@ ABI Application Binary Interface (Swift 5) but slightly related towards adding m
 
 ### Package Manager / Dependency improvements
 Code Signing section added in inspector
-Cant demo this since I don’t know if there’s any `.xcFramework` in our project dependency as an explicit marked via SPM. Maybe XTV app I can show it but first I would need the project to be locally build on my machine in order to reach to a conclusion.
+Cant demo this since I don’t know if there’s any `.xcFramework` in our project dependency as an explicit marked via SPM. Maybe `Project_Name` app I can show it but first I would need the project to be locally build on my machine in order to reach to a conclusion.
 
 
 https://developer.apple.com/documentation/Xcode/verifying-the-origin-of-your-xcframeworks

@@ -86,5 +86,8 @@ To run locally on chrome
 
 > $ ionic serve
 
-### End
 
+## Node Package Manager
+
+Package repository
+https://www.npmjs.com/package/package

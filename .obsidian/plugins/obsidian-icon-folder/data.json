@@ -6,11 +6,11 @@
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
-      "SiGit",
-      "TiSettingsAutomation",
-      "IbMessageBubble",
-      "FarImages",
-      "RiFlowChart"
+      "SiVisualstudiocode",
+      "TiBrandVscode",
+      "SiVim",
+      "TiTool",
+      "LiTerminal"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -41,7 +41,6 @@
   "hardware": "LiCpu",
   "mobile": "TiDeviceMobile",
   "mobile/ionic": "SiIonic",
-  "mobile/native": "SiAndroid",
   "mobile/unity": "FabUnity",
   "process": "SiCodereview",
   "tools": "TiTools",
@@ -53,5 +52,17 @@
   "thoughts": "IbMessageBubble",
   "network": "LiNetwork",
   "network/routers.md": "LiRouter",
-  "git": "SiGit"
+  "git": "SiGit",
+  "security": "TiShieldCheckFilled",
+  "mobile/react_native": "TiBrandReactNative",
+  "mobile/android": "SiAndroid",
+  "database/mongo": "SiMongodb",
+  "tools/browsers": "FabFirefoxBrowser",
+  "tools/editors": "SiSublimetext",
+  "tools/gaming": "LiGamepad2",
+  "tools/server": "LiServerCog",
+  "tools/terminal": "LiTerminal",
+  "tools/utility": "TiTool",
+  "tools/vim": "SiVim",
+  "tools/vscode": "SiVisualstudiocode"
 }

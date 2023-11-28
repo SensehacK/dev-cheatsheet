@@ -1,6 +1,6 @@
-
-
 # Build Process
+
+## Intro
 
 This shell script (sh | bash) is a script which runs the xcode project build commands via terminal (CLI)  
 You can read on this MAN page of [xcodeBuild](https://keith.github.io/xcode-man-pages/xcodebuild.1.html)
@@ -8,7 +8,7 @@ You can read on this MAN page of [xcodeBuild](https://keith.github.io/xcode-man-
 
 The project can have multiple targets and we specify the scheme which we want to make the CI/CD server run the project.  
 
-### Why Xcode CLI
+## Why Xcode CLI
 
 It is not efficient to open up xcode app (GUI) when trying to work with CI/CD so a headless unit like `xcodeBuild` CLI is recommended which comes preinstalled with Xcode app or you can install them using
 
@@ -25,8 +25,6 @@ During active development, you want to build things fast. It doesn't make sense 
 
 ### Release 
 While releasing it — for others. Then because you don't want to limit/dictate how they build your app, then you have to build for all possible combinations and make sure your framework compiles for all of them.
-
-
 
 ## Binary
 
@@ -51,6 +49,25 @@ https://llvm.org/docs/CommandGuide/llvm-lipo.html
 
 Great article around how xcode internally handles its stuff for getting more metadata around the project which it needs to make better inferences.
 https://pspdfkit.com/blog/2019/how-xcode-indexing-works-and-how-to-solve-problems/
+
+## Resolving arch build errors
+
+`ARCHS`
+
+https://developer.apple.com/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon
+
+[Apple Silicon and the library incompatibility problem for iOS development](https://susuthapa19961227.medium.com/apple-silicon-and-the-library-incompatibility-problem-for-ios-development-8c2d875283f2)
+
+
+## Errors
+
+### deployment target mismatch
+
+```log
+/code/Project/Carthage/Checkouts/projectName_ios_dependency_one/ProjectDependency_one.xcodeproj: warning: The iOS Simulator deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 10.2, but the range of supported deployment target versions is 11.0 to 16.4.99. (in target 'ProjectDependency_one' from project 'ProjectDependency_one')
+** BUILD FAILED **
+```
+Just open the project in Xcode and set your `Project.xcodeproj` file with `Targets` selected, `General` Tab and `Minimum Deployments` section to the range required by the project.
 
 ## Resources
 

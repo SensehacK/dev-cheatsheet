@@ -23,11 +23,11 @@
 	[[package]]
 
 
-[[README_native]]
+[[README_react_native]]
 
-	[[mobile/native/issues]]
+	[[mobile/react_native/issues]]
 
-	[[mobile/native/timeline]]
+	[[mobile/react_native/timeline]]
 
 	
 
