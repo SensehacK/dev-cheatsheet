@@ -47,7 +47,7 @@
 
 [[target_scheme]]
 
-[updates](updates.md)
+[updates](ios/xcode/updates.md)
 
 [[wireless_deploy]]
 

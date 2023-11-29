@@ -87,6 +87,7 @@ Also always keep learning and be curious.
 
 ### Hardware
 
+- MacBook Pro 16' 2023: M2 Pro 512GB SSD, 16GB RAM
 - MacBook Pro 14’ 2023 : M2 Pro , 512GB SSD, 16GB RAM
 - MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
 - MacBook Pro 13’ 2015 : Core i5 , 128GB SSD, 8GB RAM
@@ -96,16 +97,18 @@ Also always keep learning and be curious.
 - One Plus 8
 ### Software
 
-OS: Mac OS Mojave 10.14.6 - macOS Ventura 13.3.1
+OS: 
+Mac OS Mojave 10.14.6 - macOS Ventura 13.5.0
+Windows 10
 
 IDE: Xcode,
 VS Code - Open Source fork
 
-Browsers: Firefox Nightly / Dev / Main Safari / Technical Preview Microsoft Edge Dev \( Chromium \)
+Browsers: Firefox Nightly / Main, Safari 
 
 Writer: Obsidian, iA Writer
 
-Version Management: Git
+Version Management: Git, Github Desktop, GitKraken
 
 Compilation: Github Pages, GitBook, Obsidian Graphs
 
@@ -116,6 +119,8 @@ Scheduler: Fantastical, Focused Pro
 Documentation Reference: Dash
 
 Terminal : iTerm
+
+Debugging: Proxyman, Postman, Little Snitch
 
 ## Credits
 

@@ -69,6 +69,21 @@ https://developer.apple.com/documentation/technotes/tn3117-resolving-build-error
 ```
 Just open the project in Xcode and set your `Project.xcodeproj` file with `Targets` selected, `General` Tab and `Minimum Deployments` section to the range required by the project.
 
+
+### clang error building for iOS simulator
+
+```log
+ld: in building for iOS Simulator, but linking in object file built for iOS, file `filePath` for architecture arm64
+
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+```
+
+`BuildSettings -> Search -> "Architectures" -> Build Active Architecture Only` 
+
+Comment copied from [apple dev forums](https://developer.apple.com/forums/thread/657913)
+I've seen quite a bit of weird behavior with frameworks, I think due to changes to the simulators to support Apple silicon. My temporary workaround is, in my app/extension targets, to add "arm64" to the Excluded Architectures build setting when building for the simulator (as your preview appears to be trying to do), and setting "Build Active Architecture Only" to No for all schemes. Might be worth a try.
+
+
 ## Resources
 
 [Excellent StackOverflow post about xcode build process related to architecture and linking](https://stackoverflow.com/a/75454378/5177704)

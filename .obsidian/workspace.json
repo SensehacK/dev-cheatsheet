@@ -82,38 +82,12 @@
             }
           },
           {
-            "id": "a629ac2846ad5dfb",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "network/routers.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "a16c902457a72b20",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "process/release.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c1e1b0546039f746",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "architecture/ReadMe_architecture.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -189,12 +163,12 @@
             }
           },
           {
-            "id": "55b43af784bd99b4",
+            "id": "a629ac2846ad5dfb",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "mobile/ionic/package.md",
+                "file": "os/windows/disable_updates.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -202,12 +176,25 @@
             }
           },
           {
-            "id": "6f602bacb7162216",
+            "id": "c1e1b0546039f746",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/raspberry_pi.md",
+                "file": "architecture/software_updates.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a3edf1ae0ae0262a",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/macOS/updates.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -215,7 +202,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -244,7 +231,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "cordova",
+                "query": "imazing",
                 "matchingCase": false,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -289,7 +276,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "network/routers.md",
+                "file": "README.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -306,7 +293,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "network/routers.md",
+                "file": "README.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -329,7 +316,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "network/routers.md"
+                "file": "README.md"
               }
             }
           },
@@ -363,36 +350,36 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "a629ac2846ad5dfb",
+  "active": "a16c902457a72b20",
   "lastOpenFiles": [
-    "os/linux/Untitled.md",
-    "network/routers.md",
-    "architecture/behavioral/subject.md",
-    "misc/regular_expressions/quotations_each_line.md",
-    "misc/regular_expressions/README_regular_expressions.md",
-    "misc/README_misc.md",
-    "mobile/README_mobile.md",
-    "mobile/native/issues.md",
-    "mobile/native",
-    "mobile/react_native/issues.md",
-    "mobile/react_native/timeline.md",
-    "SUMMARY.md",
-    "mobile/react_native/README_react_native.md",
-    "mobile/android",
-    "process/packaging.md",
-    "os/linux/installation.md",
-    "tools/terminal/node.md",
-    "mobile/ionic/package.md",
-    "backend/python/installation.md",
-    "database/docker/docker_hub.md",
-    "ios/xcode/build.md",
+    "process/best_coding_practices.md",
+    "ios/config/README_config.md",
+    "ios/macOS/updates.md",
+    "ios/config/mdm.md",
+    "architecture/software_updates.md",
     "process/release.md",
-    "process/README_process.md",
-    "database/docker/compose.md",
-    "network/tplink.md",
-    "network/switch.md",
-    "ios/combine/filter.md",
-    "ios/automation/fastlane.md",
+    "ios/macOS/README_macOS.md",
+    "architecture/ReadMe_architecture.md",
+    "os/windows/disable_updates.md",
+    "ios/xcode/updates.md",
+    "ios/library/crossPlatform.md",
+    "ios/xcode/spm.md",
+    "ios/README_iOS.md",
+    "ios/xcode/build.md",
+    "ios/xcode/carthage.md",
+    "process/code_checkout.md",
+    "ios/lifecycle/documentation.md",
+    "ios/lifecycle/protocol.md",
+    "hardware/xbox_controllers.md",
+    "hardware/README_hardware.md",
+    "hardware/retro_pie.md",
+    "network/routers.md",
+    "architecture/creational_patterns.md",
+    "ios/config/design_patterns.md",
+    "ios/config/best_practices.md",
+    "mobile/ionic/package.md",
+    "mobile/native",
+    "mobile/android",
     "security",
     "architecture/architectural",
     "architecture/concurrency",

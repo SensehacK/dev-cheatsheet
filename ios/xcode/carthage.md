@@ -86,6 +86,23 @@ carthage build projectName-dependency --platform iOS
 carthage bootstrap
 ```
 
+
+### Invalid cache found for
+
+Cache issues [thread](https://github.com/Carthage/Carthage/issues/2892)
+
+
+### Dependency graph cycle
+
+```text
+The dependency graph contained a cycle:
+yajl:
+DIMHAL: FapDatabase
+PromiseKit:
+securityClient-ios-binary: PromiseKit, yajl, SMobileConfig, 
+```
+Removing the dependency or contacting them to remove specific dependency is helpful in order to remove circular dependency graph cycle issues.
+
 ## Resources
 
 [7 Carthage Terminal Commands to Bookmark](https://medium.com/remote-ios-dev/7-carthage-terminal-commands-to-bookmark-6c19b6d16379)

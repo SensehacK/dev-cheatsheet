@@ -83,7 +83,7 @@ In that option, you can select `configure SSO` and make the organization you wan
 
 ## Other Build Errors
 
-#### Github old repo Access Issues
+### Github old repo Access Issues
 ```
 github.company.com/lib-ios/Resourcerer.git 
 fatal: Could not read from remote repository.
@@ -100,7 +100,7 @@ github "https://github.com/company-lib-ios/ProjectDependency.git" "ProjectDepend
 github "https://github.com/company-lib-ios/OHHTTPStubs" "7.0.0"
 ```
 
-#### xcodebuild path error.
+### xcodebuild path error.
 
 ```bash
 A shell task (/usr/bin/xcrun xcodebuild -project /Users/username/git/github_internal/playerplatform_ios/Carthage/Checkouts/FastCoderFramework/FastCoder.xcodeproj CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= CARTHAGE=YES -list) failed with exit code 72:
@@ -112,7 +112,7 @@ I had to go to `Applications` -> `Xcode` -> `Preferences` -> `Locations` and mak
 Similar thread on [github](https://github.com/XcodesOrg/XcodesApp/issues/254#issuecomment-1210938365) StackOverflow
 
 
-#### tvOS simulator unavailable
+### tvOS simulator unavailable
 ```text
 Could not find any available simulators for tvOS
 ```
@@ -147,7 +147,7 @@ The following build commands failed:
 
 
 
-#### Xcode SSH Git dependency
+### Xcode SSH Git dependency
 
 
 ```bash
@@ -160,7 +160,7 @@ x-swift-package-repository-authentication://?scm=com.apple.dt.Xcode.sourcecontro
 
 Just verify it properly and trust the server.
 
-#### Credentials are wrong or missing
+### Credentials are wrong or missing
 
 ```bash
 FastCoderFramework
@@ -186,17 +186,8 @@ I'll try the classic way of github token generation.
 Voila Classic github token works and it enabled to download the repo.
 
 
-#### library Path update
+### library Path update
 ProjectDependency_v7.3.0 vs 
 github "https://github.com/company-name/ProjectDependency.git" "ProjectDependency_8.0.0_GHC"
 
 
-#### Dependency graph cycle
-
-```text
-The dependency graph contained a cycle:
-yajl:
-DIMHAL: FapDatabase
-PromiseKit:
-securityClient-ios-binary: PromiseKit, yajl, SMobileConfig, 
-```

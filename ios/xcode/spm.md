@@ -381,6 +381,14 @@ You can have this error sometimes if you're having Xcode local package name conf
 Multiple commands produce `framework` libraries. Probably deleting SPM cache and metadata. also `.resolved` SPM project helps me to get over this build error. Reset Package graph and Resolve Packages as well.
 
 
+## Circular dependency
+
+Also experienced it in [Carthage build command](ios/xcode/carthage#Dependency%20graph%20cycle)
+
+https://stackoverflow.com/questions/47872419/resolve-circular-dependency-in-swift
+
+https://forums.swift.org/t/circular-dependencies-in-swiftpm/13580
+
 ## Timeline
 
 Supporting Binary dependencies in SPM 

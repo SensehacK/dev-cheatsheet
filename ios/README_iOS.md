@@ -6,7 +6,7 @@ Here you can find various documentation related to iOS development which can hel
 
 ## List
 
-###  [architecture](ReadMe_architecture.md)
+### [architecture](ReadMe_architecture.md)
 
 ### [automation](README_automation.md)
 
@@ -22,6 +22,8 @@ Here you can find various documentation related to iOS development which can hel
 
 ### [lifecycle](README_lifecycle.md)
 
+### [macOS](README_macOS.md)
+
 ### [swift](README_swift.md)
 
 ### [swiftUI](README_swiftUI.md)
@@ -36,26 +38,25 @@ Here you can find various documentation related to iOS development which can hel
 
 ### [xcode](README_xcode.md)
 
-
 ## Resources
 
-https://www.swiftbysundell.com/
+[swiftbysundell](https://www.swiftbysundell.com/)
 
-https://stackoverflow.com/questions/tagged/swift
+[stackoverflow swift](https://stackoverflow.com/questions/tagged/swift) 
 
-https://www.raywenderlich.com/ios/articles
+[raywenderlich](https://www.raywenderlich.com/ios/articles)
 
-https://nshipster.com/
+[nshipster](https://nshipster.com/)
 
-https://www.reddit.com/r/iOSProgramming/
+[r/iOSProgramming](https://www.reddit.com/r/iOSProgramming/)
 
-https://www.avanderlee.com/
+[avanderlee](https://www.avanderlee.com/)
 
-https://www.hackingwithswift.com/
+[hackingwithswift](https://www.hackingwithswift.com/)
 
-https://theswiftdev.com/news/
+[theswiftdev](https://theswiftdev.com/news/)
 
-https://www.advancedswift.com/
+[advancedswift](https://www.advancedswift.com/)
 
 Great Mentors IRL listed in the main [ReadME](README.md)
 
@@ -66,4 +67,3 @@ Feel free to fork this project & raise a pull request to add more relevant infor
 ## Author : [Kautilya Save](https://kautilya.design/)
 
 ### [GitHub](https://github.com/SensehacK)
-
