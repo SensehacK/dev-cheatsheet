@@ -24,19 +24,6 @@
             }
           },
           {
-            "id": "f7b7b430105d7b6c",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "security/README_security.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
             "id": "475cd16cdf1ef7e6",
             "type": "leaf",
             "pinned": true,
@@ -82,20 +69,22 @@
             }
           },
           {
-            "id": "a16c902457a72b20",
+            "id": "96de5a354700148f",
             "type": "leaf",
+            "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "process/problem_solving.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
-              }
+              },
+              "pinned": true
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 2
       },
       {
         "id": "fd42ace9dcd8f418",
@@ -181,20 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "architecture/software_updates.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "a3edf1ae0ae0262a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/macOS/updates.md",
+                "file": "process/problem_solving.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -202,7 +178,7 @@
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 5
       }
     ],
     "direction": "vertical"
@@ -231,8 +207,8 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "imazing",
-                "matchingCase": false,
+                "query": "Less is more",
+                "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
                 "extraContext": true,
@@ -276,7 +252,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README.md",
+                "file": "ios/library/DRM.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -293,7 +269,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README.md",
+                "file": "ios/library/DRM.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -316,7 +292,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md"
+                "file": "ios/library/DRM.md"
               }
             }
           },
@@ -350,34 +326,34 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "a16c902457a72b20",
+  "active": "460c5b03a5a835dd",
   "lastOpenFiles": [
+    "process/problem_solving.md",
+    "ios/library/DRM.md",
+    "process/code_readability.md",
+    "ios/config/app_environment.md",
+    "security/README_security.md",
+    "ios/library/crossPlatform.md",
+    "ios/xcode/wireless_deploy.md",
+    "thoughts/Is_this_life.md",
+    "process/README_process.md",
+    "process/presentation.md",
+    "process/search.md",
+    "ios/combine/ReadMe_combine.md",
+    "ios/combine/get_started_guides.md",
+    "architecture/software_updates.md",
+    "ios/swiftUI/identifiable.md",
+    "README.md",
+    "os/windows/disable_updates.md",
+    "architecture/system_designs.md",
+    "ios/library/API_design.md",
+    "ios/macOS/updates.md",
     "process/best_coding_practices.md",
     "ios/config/README_config.md",
-    "ios/macOS/updates.md",
     "ios/config/mdm.md",
-    "architecture/software_updates.md",
     "process/release.md",
     "ios/macOS/README_macOS.md",
     "architecture/ReadMe_architecture.md",
-    "os/windows/disable_updates.md",
-    "ios/xcode/updates.md",
-    "ios/library/crossPlatform.md",
-    "ios/xcode/spm.md",
-    "ios/README_iOS.md",
-    "ios/xcode/build.md",
-    "ios/xcode/carthage.md",
-    "process/code_checkout.md",
-    "ios/lifecycle/documentation.md",
-    "ios/lifecycle/protocol.md",
-    "hardware/xbox_controllers.md",
-    "hardware/README_hardware.md",
-    "hardware/retro_pie.md",
-    "network/routers.md",
-    "architecture/creational_patterns.md",
-    "ios/config/design_patterns.md",
-    "ios/config/best_practices.md",
-    "mobile/ionic/package.md",
     "mobile/native",
     "mobile/android",
     "security",

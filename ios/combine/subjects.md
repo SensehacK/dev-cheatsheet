@@ -66,6 +66,23 @@ var users = CurrentValueSubject<UsersConsumableViewModel?, Error>(nil)
 It needs to be initialized with something in order for its subscribers to listen to its state. Another 18 mins spent around debugging and understanding why my data doesn't appear on the screen.
 I love reactive paradigm and chasing its bugs asynchronously.
 
+
+### Skip First event
+Operator prefix 
+
+```swift
+$subject
+	.dropFirst()
+	.sink { }
+	.store(&cancellable)
+```
+
+https://www.apeth.com/UnderstandingCombine/operators/operatorsPartitioners/operatorsprefix.html
+
+https://developer.apple.com/documentation/combine/publisher/dropfirst(_:)
+
+https://www.donnywals.com/ignore-first-number-of-elements-from-a-publisher-in-combine/
+
 ## PassthroughValueSubject
 
 Holds the no initial value of the type defined. 

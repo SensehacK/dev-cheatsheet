@@ -95,9 +95,18 @@ But author also has an extension with function to add explicit setters via a pro
 PS: Sorry for the long winded comment but I had a tough time wrapping my head around with Reactive programming when I was starting out. So adding this comment for others who are reviewing if that makes even 5% sense is helpful.
 
 
+## Did Set
 
+When you want to debug the Published properties, you can use `didSet` to get some more insights about the lifecycle of these combine properties.
 
-
+```swift
+@Published private var audioTracks: [AudioTrack] = [] {
+	didSet {
+		print("didSet \(audioTracks)")
+	}
+}
+```
+ 
 
 ## Reference
 

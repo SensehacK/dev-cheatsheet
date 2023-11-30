@@ -8,7 +8,7 @@
 
 [filter](filter.md)
 
-[problem_solving](problem_solving.md)
+[get_started_guides](get_started_guides.md)
 
 [publisher](publisher.md)
 
@@ -39,3 +39,6 @@ https://benoitpasquier.com/migrating-mvvm-uikit-rxswift-to-combine/
 ## Extensions
 
 https://www.swiftbysundell.com/articles/extending-combine-with-convenience-apis/
+
+Open source equivalent
+https://github.com/OpenCombine/OpenCombine

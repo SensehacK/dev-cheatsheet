@@ -85,7 +85,7 @@ fetchData()
 
 ## Quirks
 
-### Opening parathesis Matters
+### Opening paranthesis Matters
 
 Just noticed this small quirk in playground that if my `(` is on the next line it won't compile properly for subscribe block
 
@@ -103,5 +103,5 @@ observable
 	.subscribe(
 	onNext: { }
 )
-
+```
 

@@ -1,10 +1,11 @@
 # Library
 
+[API_design](API_design.md)
+
 [avkit](avkit.md)
 
-[carthage](carthage.md)
+[codable](codable.md)
 
-[[cocoapods]]
 
 [codable](codable.md)
 
@@ -43,8 +44,6 @@
 [[snapkit]]
 
 [[storage]]
-
-[swiftPM](swiftPM.md)
 
 [webkit](webkit.md)
 

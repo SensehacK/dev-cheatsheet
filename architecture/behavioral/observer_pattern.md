@@ -18,3 +18,11 @@
 ## Examples
 
 iOS example of [notification_pattern](notification_pattern.md) - simple Swift way and Combine Reactive paradigm way.
+
+[combine Publisher](publisher.md)
+
+[combine Subjects](subjects.md)
+
+[rxSwift subscribe](subscribe.md)
+
+[rxSwift subjects](rx_subjects.md)

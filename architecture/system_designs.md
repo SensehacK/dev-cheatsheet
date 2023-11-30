@@ -120,6 +120,13 @@ Different source of truth
 ### Data Overriding strategies? 
 Merge timestamp and override data ? 
 
+## Tools
+
+[Miro board](https://miro.com/)
+Obsidian 
+Draw io
+Apple Freeform
+
 
 
 ## Implementation

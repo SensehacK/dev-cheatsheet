@@ -1,6 +1,8 @@
 # Any Cancellable
 
 
+## RxSwift Equivalent
+
 RxSwift equivalent of [disposeBag](disposeBag.md)
 
 ```swift
@@ -41,18 +43,65 @@ One thing I have observed while making my network manager code for Combine in it
 
 It is because maybe I'm accessing the combine function of a class instance in a function. Which limits its scope of class reference.
 Because if I use a singleton instance of `Network Manager` it just works fine.
-I think so after my 15 mins debugging, I believe because I create the reference of `NEtwork Manager` in a function scope of the consumer. The Arc or `anycancellables` is deinitializing itself or subscription is ending quickly.
+I think so after my 15 mins debugging, I believe because I create the reference of `Network Manager` in a function scope of the consumer. The Arc or `anycancellables` is deinitializing itself or subscription is ending quickly.
 `.print()` operator really helped how to narrow down the publisher - subscription chain internal events. 
 
+More Learning Nov 2023
+### Very important
 
+if a classA -> Instantiates classB, where classB has `Cancellables` references but classA should hold onto the reference of classB in a variable so that the subscription stays alive and retained.
+
+
+```swift
+class classA {
+
+	var classB: ClassB?
+
+	// This will hold the subscriptions lifecycle
+	normalInstantiate() {
+		classB = ClassB()
+	}
+
+	// This won't, this will get deallocated quickly.
+	func assignedInstantiate() {
+		let _ = ClassB()
+	}
+
+}
+
+
+class classB {
+	private var cancellables = Set<AnyCancellable>()
+
+	private let publisher: PassthroughSubject<EventRepresentable, Never>
+
+	func subscriptions() {
+		NotificationCenter
+            .default
+            .publisher(for: AVPlayerItem.mediaSelectionDidChangeNotification)
+            .receive(on: eventQueue)
+            .sink { doSomething() }
+            .store(in: &cancellables)
+
+		publisher
+            .receive(EventsType.self, on: DispatchQueue.main) { event in
+                if case .noEvent = event {
+                    print("Hello No Event!@")
+                }
+            }
+            .store(in: &cancellables)
+	}
+}
+
+```
+
+[Managing self and cancellable references when using Combine](https://www.swiftbysundell.com/articles/combine-self-cancellable-memory-management/)
+
+https://www.donnywals.com/what-exactly-is-a-combine-anycancellable/
 
 ## Links
 
 https://www.avanderlee.com/swift/combine/
-
-https://www.swiftbysundell.com/articles/combine-self-cancellable-memory-management/
-
-https://www.donnywals.com/what-exactly-is-a-combine-anycancellable/
 
 https://tanaschita.com/20220912-memory-management-in-combine/
 
