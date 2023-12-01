@@ -53,9 +53,9 @@ Checkout Summary file for whole project structure. Would recommend using `Obsidi
 ## Telemetry
 
 ### [Resources](misc/resources.md)
-### [Hardware](README_hardware.md)
-### [Software](apps.md)
-### [OS](README_os.md)
+### [Hardware](hardware/README_hardware.md)
+### [Software](tools/apps.md)
+### [OS](os/README_os.md)
 
 ## Contact
 
