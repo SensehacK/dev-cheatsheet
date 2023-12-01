@@ -21,7 +21,6 @@ You can read more about it in [resigning](resigning.md) and my favorite [third p
 
 ## Tools
 
-
 https://sideloadly.io/
 
 https://dantheman827.github.io/ios-app-signer/

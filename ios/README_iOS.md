@@ -58,7 +58,7 @@ Here you can find various documentation related to iOS development which can hel
 
 [advancedswift](https://www.advancedswift.com/)
 
-Great Mentors IRL listed in the main [ReadME](README.md)
+Great Mentors IRL listed [here](misc/resources#Offline)
 
 ## Contribution
 
