@@ -82,9 +82,22 @@
               },
               "pinned": true
             }
+          },
+          {
+            "id": "c1e1b0546039f746",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "hardware/README_hardware.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
           }
         ],
-        "currentTab": 2
+        "currentTab": 5
       },
       {
         "id": "fd42ace9dcd8f418",
@@ -152,25 +165,12 @@
             }
           },
           {
-            "id": "a629ac2846ad5dfb",
+            "id": "7a2deb8de4cc3006",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/windows/disable_updates.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "c1e1b0546039f746",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "process/problem_solving.md",
+                "file": "hardware/raspberry_pi.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -178,7 +178,7 @@
             }
           }
         ],
-        "currentTab": 5
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -207,7 +207,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Less is more",
+                "query": "sudo pcmanfm",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -252,7 +252,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ios/library/DRM.md",
+                "file": "hardware/README_hardware.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -269,7 +269,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ios/library/DRM.md",
+                "file": "hardware/README_hardware.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -292,7 +292,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ios/library/DRM.md"
+                "file": "hardware/README_hardware.md"
               }
             }
           },
@@ -326,34 +326,34 @@
       "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
     }
   },
-  "active": "460c5b03a5a835dd",
+  "active": "c1e1b0546039f746",
   "lastOpenFiles": [
-    "process/problem_solving.md",
-    "ios/library/DRM.md",
-    "process/code_readability.md",
-    "ios/config/app_environment.md",
-    "security/README_security.md",
-    "ios/library/crossPlatform.md",
-    "ios/xcode/wireless_deploy.md",
-    "thoughts/Is_this_life.md",
-    "process/README_process.md",
-    "process/presentation.md",
-    "process/search.md",
-    "ios/combine/ReadMe_combine.md",
-    "ios/combine/get_started_guides.md",
-    "architecture/software_updates.md",
-    "ios/swiftUI/identifiable.md",
-    "README.md",
-    "os/windows/disable_updates.md",
-    "architecture/system_designs.md",
-    "ios/library/API_design.md",
-    "ios/macOS/updates.md",
-    "process/best_coding_practices.md",
-    "ios/config/README_config.md",
-    "ios/config/mdm.md",
-    "process/release.md",
-    "ios/macOS/README_macOS.md",
-    "architecture/ReadMe_architecture.md",
+    "hardware/raspberry_pi.md",
+    "os/README_os.md",
+    "hardware/linux_tools.md",
+    "os/retro_pie.md",
+    "os/androidTV/ADB_devices.md",
+    "hardware/README_hardware.md",
+    "os/home_assistant.md",
+    "tools/terminal/curl.md",
+    "os/linux/system_info.md",
+    "os/linux/user_root.md",
+    "os/linux/disk.md",
+    "os/linux/network.md",
+    "os/linux/users.md",
+    "os/linux/README_linux.md",
+    "os/linux/open_vpn.md",
+    "tools/server/samba.md",
+    "ios/lifecycle/protocol.md",
+    "tools/server/README_server.md",
+    "tools/server/plex_media_server.md",
+    "network/pi_hole.md",
+    "database/docker/portainer.md",
+    "tools/server/jellyfin.md",
+    "database/docker/README_docker.md",
+    "database/docker/commands.md",
+    "tools/server/sonarr.md",
+    "tools/server/radarr.md",
     "mobile/native",
     "mobile/android",
     "security",

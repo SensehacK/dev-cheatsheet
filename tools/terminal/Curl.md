@@ -22,6 +22,11 @@ Do man curl or curl --help for more information.
 curl https://www.example.com/
 ```
 
+Another example
+
+```sh
+curl -s "http://url.something.com/filepath/filename-.m3u8?sz=asfa"
+```
 ## Source
 
 man help - curl

@@ -44,3 +44,15 @@ As long as I have linux subsystem running on windows natively, I won't be missin
 
 Also I'm loving the Windows Terminal which I'll make the default shell of Linux Ubuntu. [Link](https://superuser.com/questions/1456511/is-there-a-way-to-change-the-default-shell-in-windows-terminal)
 
+
+
+## Root File Manager
+
+
+File manager GUI with root privileges use this command.
+
+Open the Terminal
+```sh
+sudo pcmanfm
+```
+[File manager with root privileges](https://forums.raspberrypi.com/viewtopic.php?t=164083)

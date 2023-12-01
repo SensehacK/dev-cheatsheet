@@ -6,7 +6,7 @@ Services to be turned on for Accessibility options
 
 On Mac OS
 
-# Manually (just the platform tools)
+## Manually (just the platform tools)
 
 This is the easiest way to get a manual installation of ADB and Fastboot.
 

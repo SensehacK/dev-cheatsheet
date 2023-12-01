@@ -14,4 +14,4 @@
 
 [[docker_rough_build_commands]]
 
-[[info]]
+[[database/docker/info]]

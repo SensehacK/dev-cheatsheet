@@ -1,8 +1,7 @@
-# os
+# OS
+
 
 ## List
-
-
 
 [[README_linux]]
 
@@ -10,4 +9,10 @@
 
 [[README_windows]]
 
-[Android_TV_ADB_devices](ADB_devices.md)
+## Other OS
+
+[retro_pie](retro_pie.md)
+
+[home_assistant](home_assistant.md)
+
+[Android TV ADB Setup](ADB_devices.md)
