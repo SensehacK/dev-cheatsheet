@@ -89,7 +89,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/README_hardware.md",
+                "file": "misc/README_misc.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -170,7 +170,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hardware/raspberry_pi.md",
+                "file": "README.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -207,7 +207,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "sudo pcmanfm",
+                "query": "Obsidian",
                 "matchingCase": true,
                 "explainSearch": true,
                 "collapseAll": true,
@@ -252,7 +252,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "hardware/README_hardware.md",
+                "file": "misc/README_misc.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -269,7 +269,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "hardware/README_hardware.md",
+                "file": "misc/README_misc.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -292,7 +292,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "hardware/README_hardware.md"
+                "file": "misc/README_misc.md"
               }
             }
           },
@@ -328,32 +328,32 @@
   },
   "active": "c1e1b0546039f746",
   "lastOpenFiles": [
-    "hardware/raspberry_pi.md",
+    "README.md",
+    "misc/README_misc.md",
+    "misc/resources.md",
     "os/README_os.md",
+    "hardware/README_hardware.md",
+    "tools/apps.md",
+    "tools/editors/iterm2.md",
+    "tools/editors/markdown.md",
+    "tools/editors/README_editors.md",
+    "tools/README_tools.md",
+    "process/presentation.md",
+    "ios/library/API_design.md",
+    "architecture/system_designs.md",
+    "hardware/raspberry_pi.md",
+    "tools/utility/README_utility.md",
+    "tools/utility/firefly_iii.md",
+    "tools/utility/alfred.md",
+    "tools/utility/qbittorrent.md",
+    "tools/server/sonarr.md",
+    "tools/server/plex_media_server.md",
     "hardware/linux_tools.md",
     "os/retro_pie.md",
     "os/androidTV/ADB_devices.md",
-    "hardware/README_hardware.md",
     "os/home_assistant.md",
     "tools/terminal/curl.md",
     "os/linux/system_info.md",
-    "os/linux/user_root.md",
-    "os/linux/disk.md",
-    "os/linux/network.md",
-    "os/linux/users.md",
-    "os/linux/README_linux.md",
-    "os/linux/open_vpn.md",
-    "tools/server/samba.md",
-    "ios/lifecycle/protocol.md",
-    "tools/server/README_server.md",
-    "tools/server/plex_media_server.md",
-    "network/pi_hole.md",
-    "database/docker/portainer.md",
-    "tools/server/jellyfin.md",
-    "database/docker/README_docker.md",
-    "database/docker/commands.md",
-    "tools/server/sonarr.md",
-    "tools/server/radarr.md",
     "mobile/native",
     "mobile/android",
     "security",

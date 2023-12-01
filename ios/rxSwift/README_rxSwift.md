@@ -48,7 +48,7 @@
 
 [[relays]]
 
-[[resources]]
+[[ios/rxSwift/resources]]
 
 [[side_effects]]
 

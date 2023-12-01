@@ -19,4 +19,4 @@
 
 [[README_vscode]]
 
-[online_apps](online_apps.md)
+[apps](apps.md)

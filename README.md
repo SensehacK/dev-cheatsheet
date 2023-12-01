@@ -6,7 +6,7 @@ This is just a personal documentation or cheatsheet with personal examples for e
 
 As sometimes, we would have limited internet access or restrictive data download policies. Personal Git documentation for specific programming languages, libraries & frameworks help a lot to quickly absorb the problem statement and work swiftly :P
 
-Hosted 
+### Hosted 
 Local: [Obsidian](https://obsidian.md/)
 Remote:  https://elegant-moonbeam-c40240.netlify.app/docs/summary/
 
@@ -32,11 +32,12 @@ Development Hell and most of CLI inputs used with bit of documentation so I’m 
 
 ## Projects
 
-Currently I have separate folders each assigned for their respective domain knowledge I have gained ever since I started working as a Software Engineer back in 2017.
+Currently I have separate folders each assigned for their respective domain knowledge I have gained ever since I started working as a Software Engineer back in 2016.
 
 iOS Dev Journey Repo: [swift repo](https://github.com/SensehacK/swift)
 My Config: [sense-setup](https://github.com/SensehacK/sense-setup)
 Other trials: [Playgrounds repo](https://github.com/SensehacK/playgrounds)
+
 
 ## Where the Beef ?
 
@@ -47,82 +48,16 @@ Checkout Summary file for whole project structure. Would recommend using `Obsidi
 
 
 
-## Resources
 
-* Reddit
-* StackOverflow
-* RayWenderlich
-* Github
-* Linux
-* Youtube
-* r/iOSDevelopers
-* r/webdev
-* r/selfhosted
-* r/developer
 
-## Mentors IRL
+## Telemetry
 
-[Sandip Sakure](https://www.linkedin.com/in/sandip-sakure-2b880749/) (Web Angular | Breaking complex problems) | Infosys - Pune
+### [Resources](misc/resources.md)
+### [Hardware](README_hardware.md)
+### [Software](apps.md)
+### [OS](README_os.md)
 
-[Varghese Abraham](https://www.linkedin.com/in/varghese-abraham-51799928/) (Mobile Hybrid | Work life balance) | Infosys - Pune
-
-[Akash Tripathi](https://www.linkedin.com/in/akashtripathi9/) (Mobile iOS | Team Dynamics) | Infosys - Pune
-
-[Joshua O'Steen](https://www.linkedin.com/in/joshua-osteen/) (Mobile Senior iOS | Reactive Paradigm) | Trackvia - Denver
-
-[Kyle Turner](https://www.linkedin.com/in/kylerturner/) (Mobile Architect | SDLC) | Trackvia - Denver
-
-[Prashant Yadav](https://www.linkedin.com/in/prashant-yadav-09871133/) (Software Art | UX) | Infosys - Pune
-
-[Arun KP](https://www.linkedin.com/in/arunkp88/) (Mobile iOS | Enterprise) | Infosys - Trivandrum
-
-[James Kiely](https://www.linkedin.com/in/james-kiely-aa56b46/) (Accessibility | SDLC) | WearWorks - NYC
-
-[Liron Lerman](https://www.linkedin.com/in/liron-lerman-64051212/)(Soft Skills | Management) | Glimpse Group - NYC
-
-**In no order whatsoever** & everyone should have great mentors so that you can leap frog your technical and soft skills expertise.
-Also always keep learning and be curious.
-
-## Tools
-
-### Hardware
-
-- MacBook Pro 16' 2023: M2 Pro 512GB SSD, 16GB RAM
-- MacBook Pro 14’ 2023 : M2 Pro , 512GB SSD, 16GB RAM
-- MacBook Pro 16' 2022: M1Max 1TB SSD, 64GB RAM
-- MacBook Pro 13’ 2015 : Core i5 , 128GB SSD, 8GB RAM
-- MacBook Pro 16' 2021 : Core i9, 1TB SSD, 32GB RAM
-- MacBook Air 13’ 2022 : M2 , 256GB SSD, 8GB RAM
-- iPad Air 5th Gen - M1
-- One Plus 8
-### Software
-
-OS: 
-Mac OS Mojave 10.14.6 - macOS Ventura 13.5.0
-Windows 10
-
-IDE: Xcode,
-VS Code - Open Source fork
-
-Browsers: Firefox Nightly / Main, Safari 
-
-Writer: Obsidian, iA Writer
-
-Version Management: Git, Github Desktop, GitKraken
-
-Compilation: Github Pages, GitBook, Obsidian Graphs
-
-Task Manager: Things by Cultured Code
-
-Scheduler: Fantastical, Focused Pro
-
-Documentation Reference: Dash
-
-Terminal : iTerm
-
-Debugging: Proxyman, Postman, Little Snitch
-
-## Credits
+## Contact
 
 [Kautilya Save](https://sensehack.github.io/)
 

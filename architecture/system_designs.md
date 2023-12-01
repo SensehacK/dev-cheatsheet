@@ -1,5 +1,7 @@
 # System Designs
 
+## Intro
+
 System design is very much a way to express your architectural designing skills in order to give high level picture of the system and express the foundation of the app or product you're building. It defines the initial contract Input / Output for any components in the system design architecture of how orchestration is taking place between different agnostic systems.
 
 Below is my list of factors which I consider when designing a system.
@@ -120,15 +122,7 @@ Different source of truth
 ### Data Overriding strategies? 
 Merge timestamp and override data ? 
 
-## Tools
-
-[Miro board](https://miro.com/)
-Obsidian 
-Draw io
-Apple Freeform
-
-
-
+## [Tools](apps.md#Design)
 ## Implementation
 
 [iOS Swift equivalent WIP docs](API_design.md)
