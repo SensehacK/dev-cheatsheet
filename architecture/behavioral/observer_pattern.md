@@ -17,7 +17,11 @@
 
 ## Examples
 
-iOS example of [notification_pattern](notification_pattern.md) - simple Swift way and Combine Reactive paradigm way.
+iOS examples of observer pattern in simple Swift way and Combine Reactive paradigm way.
+
+[notification_pattern](notification_pattern.md)
+
+[swift keypaths](keypaths.md)
 
 [combine Publisher](publisher.md)
 

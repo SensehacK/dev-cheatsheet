@@ -4,6 +4,8 @@
 
 ## [concurrency](ios/concurrency/README_concurrency.md)
 
+----------------------------------------------------
+
 ## [iOS](ios/README_iOS.md)
 
 ### [automation](ios/automation/README_automation.md)
@@ -28,110 +30,104 @@
 
 ### [xcode](ios/xcode/README_xcode.md)
 
+----------------------------------------------------
+
 ## Tools
 
-### [Git](README_git.md)
+### [Git](git/README_git.md)
 
 ### [Terminal](tools/terminal/README_terminal.md)
 
+### [browsers](browsers/README_browsers)
+
+### [editors](editors/README_editors)
+
+### [terminal](terminal/README_terminal)
+
+### [utility](utility/README_utility)
+
+----------------------------------------------------
+
 ## [Web](frontend/README_frontend.md)
+
+### [angular](angular/README_angular)
+
+### [css](css/README_css)
+
+### [html](html/README_html)
+
+### [javascript](javascript/README_javascript)
+
+### [react](react/README_react)
+
+----------------------------------------------------
+
+## [Process](process/README_process)
+
+### [best coding practices](process/README_best_coding_practices)
+
+### [code readability](code_readability.md)
+
+### [packaging](packaging.md)
+
+### [problem solving](problem_solving.md)
+
+----------------------------------------------------
+
+## Mobile
+
+### [mobile](mobile/README_mobile)
+
+### [ionic](mobile/ionic/README_ionic)
+
+### [react native](mobile/react_native/README_react_native)
+
+### [unity](mobile/unity/README_unity)
+
+----------------------------------------------------
+
+## [Security](security/README_security.md)
+
+## [Thoughts](thoughts/ReadME_thoughts.md)
+
+----------------------------------------------------
+
+## [OS](README_os.md)
+
+### [linux](linux/README_linux)
+
+### [mac](mac/README_mac)
+
+### [windows](windows/README_windows)
+
+----------------------------------------------------
+
+## [backend](backend/README_backend)
+
+### [node](node/README_node)
+
+### [python](python/README_python)
+
+### [ruby](ruby/README_ruby)
+
+----------------------------------------------------
+
+## [database](database/README_database)
+
+### [docker](docker/README_docker)
+
+### [mongoDB](mongoDB/README_mongoDB)
+
+### [SQL](sql/README_sql)
+
+----------------------------------------------------
+
+## [Network](network/README_network)
 
 ## All contents
 
-[backend](README_backend)
+[hardware](hardware/README_hardware.md)
 
-[node](README_node)
+[misc](misc/README_misc)
 
-[python](README_python)
-
-[ruby](README_ruby)
-
-[database](README_database)
-
-[docker](README_docker)
-
-[mongoDB](README_mongoDB)
-
-[sql](README_sql)
-
-[frontend](README_frontend)
-
-[git](README_git)
-
-[hardware](README_hardware.md)
-
-[angular](README_angular)
-
-[css](README_css)
-
-[html](README_html)
-
-[javascript](README_javascript)
-
-[react](README_react)
-
-[iOS](README_iOS)
-
-[automation](README_automation)
-
-[config](README_config)
-
-[library](README_library)
-
-[rxSwift](README_rxSwift)
-
-[lifecycle](README_lifecycle)
-
-[swift](README_swift)
-
-[test](README_test)
-
-[ui](README_ui)
-
-[xcode](README_xcode)
-
-[misc](README_misc)
-
-[algorithm](README_algorithm)
-
-[best_coding_practices](README_best_coding_practices)
-
-[regular_expressions](README_regular_expressions)
-
-[mobile](README_mobile)
-
-[ionic](README_ionic)
-
-[react_native](README_react_native)
-
-[unity](README_unity)
-
-[network](README_network)
-
-[os](README_os)
-
-[architecture](ReadMe_architecture)
-
-[linux](README_linux)
-
-[mac](README_mac)
-
-[windows](README_windows)
-
-[[key_shortcuts]]
-
-[process](README_process)
-
-[security](README_security.md)
-
-[thoughts](ReadME_thoughts.md)
-
-[tools](README_tools)
-
-[browsers](README_browsers)
-
-[editors](README_editors)
-
-[terminal](README_terminal)
-
-[utility](README_utility)
+[algorithm](algorithm/README_algorithm)

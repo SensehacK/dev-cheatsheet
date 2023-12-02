@@ -17,6 +17,8 @@
 
 [[shell_scripts]]
 
+[ssh](ssh.md)
+
 [[system_service]]
 
 [[task_manager]]

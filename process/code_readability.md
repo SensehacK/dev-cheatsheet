@@ -6,7 +6,7 @@ It is one of those things which goes hand in hand when compared to code perusing
 
 Naming appropriately with variables is important. Try to avoid appending the atype to the variable since the IDE can always show quick help or infer those types automatically with its tooltip option + click.
 
-Less is more.
+> Less is more.
 
 
 ## Two many characters on same line

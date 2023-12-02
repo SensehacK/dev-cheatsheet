@@ -38,7 +38,7 @@ struct Person {
 let kay = Person(name: "Kautilya", age: 28)
 ```
 
-[structs](structs.md)
+[struct](struct.md)
 
 ## Static Functions
 1. We can directly access the static function as if it was a class method. Like `ClassSomething.doSomething()`

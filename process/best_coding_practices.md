@@ -22,22 +22,25 @@ else {
 }
 ```
 
-###  Guard usage for unnecessary optional syntax
+### Guard usage for unnecessary optional syntax
 
 More example for avoiding unnecessary `?` `!` or `??` 
+
 ```swift
 public override func isEqual(_ object: Any?) -> Bool {
-	strID == (object as? VSS)?.strID
-	&& strSignal == (object as? VSS)?.strSignal
+ strID == (object as? VSS)?.strID
+ && strSignal == (object as? VSS)?.strSignal
 }
 ```
+
 New Code
+
 ```swift
 public override func isEqual(_ object: Any?) -> Bool {
-	guard let vssO = object as? VSS else { return false }
-	
-	return strID == vssO.strID
-	&& strSignal == vssO.strSignal
+ guard let vssO = object as? VSS else { return false }
+ 
+ return strID == vssO.strID
+ && strSignal == vssO.strSignal
 }
 ```
 
@@ -46,12 +49,9 @@ public override func isEqual(_ object: Any?) -> Bool {
 [code_formatting](code_formatting.md)
 [Code Linter](greenfield_code.md##Code%20Linter)
 
-
-
 ## Swift Specific Tips
 
 [best_practices](best_practices.md)
-
 
 ## Resources
 
@@ -60,4 +60,3 @@ https://www.avanderlee.com/optimization/refactoring-swift-best-practices/
 ### Authored by : [Kautilya Save](https://sensehack.github.io/)
 
 ### [GitHub](https://github.com/SensehacK)
-
