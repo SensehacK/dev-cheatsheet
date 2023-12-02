@@ -26,6 +26,8 @@
 
 [presentation](presentation.md)
 
+[problem_solving](problem_solving.md)
+
 [process_kanban](process_kanban.md)
 
 [project_management](project_management.md)

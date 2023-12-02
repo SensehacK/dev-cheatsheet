@@ -32,7 +32,7 @@ if let manifestUrl = asset?.manifestUrl,
 }
 ```
 
-### Another example of Ultra wide code
+### Another example of Ultra wide *code*
 
 ```swift
 NotificationCenter.default.post(name: NSNotification.Name(rawValue: CustomName), object: player, userInfo: [CustomName_SIGNAL_ID:"x",CustomName_STREAM_ID:"1"])

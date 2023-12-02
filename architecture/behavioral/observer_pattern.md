@@ -23,6 +23,8 @@ iOS examples of observer pattern in simple Swift way and Combine Reactive paradi
 
 [swift keypaths](keypaths.md)
 
+[Key - Value Coding KVO pattern](KVO_pattern.md)
+
 [combine Publisher](publisher.md)
 
 [combine Subjects](subjects.md)

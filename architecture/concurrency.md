@@ -2,11 +2,11 @@
 
 Basic concepts from my understanding.
 
-If you want to quickly jump into Swift Concurrency or iOS Xcode Swift concurrency examples. Please follow this [Readme_concurrency](ios/concurrency/Readme_concurrency.md) or folder `iOS/concurrency/readME_concurrency` 
+If you want to quickly jump into Swift Concurrency or iOS Xcode Swift concurrency examples. Please follow this [Readme_concurrency](../ios/concurrency/Readme_concurrency.md) or folder `iOS/concurrency/readME_concurrency`
 
 ## Multi Threading | Multi Processing
 
-I know they defer a lot when we really want to go into the weeds of Operating Systems, Kernel implementation or resource allocation with respect to hardware I/O. But for the sake of argument just coupling them together for normal conversations. Don't want to open a pandora's box to further complicate this. 
+I know they defer a lot when we really want to go into the weeds of Operating Systems, Kernel implementation or resource allocation with respect to hardware I/O. But for the sake of argument just coupling them together for normal conversations. Don't want to open a pandora's box to further complicate this.
 
 Side note: You can do multi threading on a single processor or do multi tasking (smart context switching) on a single thread or processor - windows 95 or 98 introduced it long time ago I believe.
 
@@ -29,13 +29,13 @@ I should have went with a better example since human body mostly works asynchron
 ## Tasks
 
 A unit of work to be executed by a processor.
-[tasks](ios/concurrency/tasks.md)
+[tasks](../ios/concurrency/tasks.md)
 ## Thread 
 
 Multiple Tasks to be executed by a single thread. The thread runs on its own context and doesn't share its context with other threads. So running independent work items / tasks on a single Thread is highly recommended. When you add shared / mutable data mutation which can be accessed by multiple threads thus leading to dirty writes. Which leads to data inconsistency issues.
 
 Multiple threads can exist on a single process.
-[thread](ios/concurrency/thread.md)
+[thread](../ios/concurrency/thread.md)
 
 
 ## Process

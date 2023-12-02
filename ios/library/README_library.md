@@ -6,6 +6,7 @@
 
 [codable](codable.md)
 
+[crossPlatform](crossPlatform.md)
 
 [codable](codable.md)
 
@@ -13,11 +14,15 @@
 
 [[date_time]]
 
+[DRM](DRM.md)
+
 [[foundation_library]]
 
 [framework](framework.md)
 
 [functional_programming](functional_programming.md)
+
+[HLS](HLS.md)
 
 [import](import.md)
 

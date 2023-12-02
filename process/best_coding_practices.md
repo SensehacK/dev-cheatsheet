@@ -55,7 +55,7 @@ public override func isEqual(_ object: Any?) -> Bool {
 
 ## Resources
 
-https://www.avanderlee.com/optimization/refactoring-swift-best-practices/
+[refactoring-swift-best-practices](https://www.avanderlee.com/optimization/refactoring-swift-best-practices)
 
 ### Authored by : [Kautilya Save](https://sensehack.github.io/)
 

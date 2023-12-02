@@ -38,27 +38,27 @@
 
 ### [Terminal](tools/terminal/README_terminal.md)
 
-### [browsers](browsers/README_browsers)
+### [browsers](tools/browsers/README_browsers)
 
-### [editors](editors/README_editors)
+### [editors](tools/editors/README_editors)
 
-### [terminal](terminal/README_terminal)
+### [terminal](tools/terminal/README_terminal)
 
-### [utility](utility/README_utility)
+### [utility](tools/utility/README_utility)
 
 ----------------------------------------------------
 
 ## [Web](frontend/README_frontend.md)
 
-### [angular](angular/README_angular)
+### [angular](frontend/angular/README_angular)
 
-### [css](css/README_css)
+### [css](frontend/css/README_css)
 
-### [html](html/README_html)
+### [html](frontend/html/README_html)
 
-### [javascript](javascript/README_javascript)
+### [javascript](frontend/javascript/README_javascript)
 
-### [react](react/README_react)
+### [react](frontend/react/README_react)
 
 ----------------------------------------------------
 
@@ -66,11 +66,11 @@
 
 ### [best coding practices](process/README_best_coding_practices)
 
-### [code readability](code_readability.md)
+### [code readability](process/code_readability.md)
 
-### [packaging](packaging.md)
+### [packaging](process/packaging.md)
 
-### [problem solving](problem_solving.md)
+### [problem solving](process/problem_solving.md)
 
 ----------------------------------------------------
 
@@ -94,31 +94,31 @@
 
 ## [OS](README_os.md)
 
-### [linux](linux/README_linux)
+### [linux](os/linux/README_linux)
 
-### [mac](mac/README_mac)
+### [mac](os/mac/README_mac)
 
-### [windows](windows/README_windows)
+### [windows](os/windows/README_windows)
 
 ----------------------------------------------------
 
 ## [backend](backend/README_backend)
 
-### [node](node/README_node)
+### [node](backend/node/README_node)
 
-### [python](python/README_python)
+### [python](backend/python/README_python)
 
-### [ruby](ruby/README_ruby)
+### [ruby](backend/ruby/README_ruby)
 
 ----------------------------------------------------
 
 ## [database](database/README_database)
 
-### [docker](docker/README_docker)
+### [docker](database/docker/README_docker)
 
-### [mongoDB](mongoDB/README_mongoDB)
+### [mongoDB](database/mongoDB/README_mongoDB)
 
-### [SQL](sql/README_sql)
+### [SQL](database/sql/README_sql)
 
 ----------------------------------------------------
 

@@ -1,61 +1,71 @@
-[[app_delegate]]
+# iOS Lifecycle
 
-[[arc]]
+## List
 
-[[class]]
+[[ios/lifecycle/app_delegate]]
+
+[[ios/lifecycle/arc]]
+
+[[ios/lifecycle/class]]
 
 [cache](ios/lifecycle/cache.md)
 
 [[ios/lifecycle/dark_mode]]
 
-[database](database.md)
+[database](ios/lifecycle/database.md)
 
-[[dimensions]]
+[delegation_pattern](ios/lifecycle/delegation_pattern.md)
+
+[[ios/lifecycle/dimensions]]
 
 [[ios/lifecycle/documentation]]
 
-[dynamic_runtime](dynamic_runtime.md)
+[dynamic_runtime](ios/lifecycle/dynamic_runtime.md)
 
 [[ios/lifecycle/extensions]]
 
-[inheritance](inheritance.md)
+[inheritance](ios/lifecycle/inheritance.md)
 
-[initialization](initialization.md)
+[initialization](ios/lifecycle/initialization.md)
 
-[[localization]]
+[KVO_pattern](ios/lifecycle/KVO_pattern.md)
 
-[logging](logging.md)
+[[ios/lifecycle/localization]]
 
-[notification_pattern](notification_pattern.md)
+[logging](ios/lifecycle/logging.md)
 
-[[network_calls]]
+[notification_pattern](ios/lifecycle/notification_pattern.md)
 
-[[orientation]]
+[[ios/lifecycle/network_calls]]
 
-[plist](plist.md)
+[[ios/lifecycle/orientation]]
 
-[read_local_file](read_local_file.md)
+[plist](ios/lifecycle/plist.md)
 
-[[retain_cycle]]
+[protocol](ios/lifecycle/protocol.md)
 
-[[rtl_alignment_support]]
+[read_local_file](ios/lifecycle/read_local_file.md)
 
-[[segues]]
+[[ios/lifecycle/retain_cycle]]
 
-[[storyboard_refactor]]
+[[ios/lifecycle/rtl_alignment_support]]
 
-[[structs]]
+[[ios/lifecycle/segues]]
 
-[[swift_types]]
+[[ios/lifecycle/storyboard_refactor]]
+
+[[ios/lifecycle/struct]]
+
+[[ios/lifecycle/swift_types]]
 
 [timer](ios/lifecycle/timer.md)
 
-[[unowned_vs_weak]]
+[[ios/lifecycle/unowned_vs_weak]]
 
-[[state_architecture]]
+[[ios/lifecycle/state_architecture]]
 
-[user_defaults](user_defaults.md)
+[user_defaults](ios/lifecycle/user_defaults.md)
 
-[user_notifications](user_notifications.md)
+[user_notifications](ios/lifecycle/user_notifications.md)
 
-[[view_controllers]]
+[[ios/lifecycle/view_controllers]
