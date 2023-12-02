@@ -7,7 +7,7 @@
 let customQueue = DispatchQueue(label: "com.sensehack.kautilya", attributes: .concurrent)
 
 customQueue.async(flags: .barrier) {
-	doSomething()
+    doSomething()
 }
 
 ```
@@ -19,6 +19,6 @@ Flag: `barrier` is being set to signal the executioner that this part of async b
 
 ```swift
 DispatchQueue.global().sync(flags: .barrier) {
-	doSomething()
+    doSomething()
 }
 ```

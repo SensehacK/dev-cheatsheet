@@ -11,7 +11,7 @@ withThrowingTaskGroup(of: Type.self)
 Add these async tasks to the execution scheduler `group: TaskGroup`.
 ```swift
 group.addTask {
-	try await doSomeAsyncTask()
+    try await doSomeAsyncTask()
 }
 ```
 Usually good idea to iterate over the array of data to pull concurrent tasks which are not dependent on each other and are mutually exclusive.
@@ -22,39 +22,37 @@ Full code for easier consumption of a task.
 
 ```swift
 func fetchImagesTaskGroup() async {
-	if let images = try? await fetchImagesAsyncTaskGroup() {
-		self.imagesAsyncGroup.append(contentsOf: images)
-	}
+    if let images = try? await fetchImagesAsyncTaskGroup() {
+        self.imagesAsyncGroup.append(contentsOf: images)
+    }
 }
 
 func fetchImagesAsyncTaskGroup() async throws -> [UIImage] {
-	return try await withThrowingTaskGroup(of: UIImage?.self) { [weak self] group in
-		guard let self = self else { throw error }
-		var images: [UIImage] = []
-		images.reserveCapacity(imagesArr.count)
-		for imageURL in imagesArr {
-			group.addTask {
-				try await self.fetchSingleImage(url: imageURL)
-			}
-		}
+    return try await withThrowingTaskGroup(of: UIImage?.self) { [weak self] group in
+        guard let self = self else { throw error }
+        var images: [UIImage] = []
+        images.reserveCapacity(imagesArr.count)
+        for imageURL in imagesArr {
+            group.addTask {
+                try await self.fetchSingleImage(url: imageURL)
+            }
+        }
 
-		for try await image in group {
-			if let image = image { images.append(image) }
-		}
-		return images
-	}
+        for try await image in group {
+            if let image = image { images.append(image) }
+        }
+        return images
+    }
 }
 
 func fetchSingleImage(url: String) async throws -> UIImage {
-	guard let url = URL(string: url) else { throw URLError(.badURL) }
-	let (data, _) = try await URLSession.shared.data(from: url)
-	guard let image = UIImage(data: data) else { throw error }
-	return image
+    guard let url = URL(string: url) else { throw URLError(.badURL) }
+    let (data, _) = try await URLSession.shared.data(from: url)
+    guard let image = UIImage(data: data) else { throw error }
+    return image
 }
 
 ```
-
-
 
 ## Failing task in multiple tasks
 
@@ -66,15 +64,14 @@ Like `Type?.self` to denote that out of `n` network request one can fail and you
 withThrowingTaskGroup(of: CustomModel?.self) 
 ```
 
-
 ## Order guarantee
-
 
 Guaranteeing the order of async execution is important.
 Easier solution is to use a dictionary to do unique Key mapping and then depending on what you want at the end of the async function you could return a dictionary or ordered array.
 It would of course add one more `O(n)` complexity towards the creation of sorted array again from the dictionary.
 
 Code snippet from [SO post](https://stackoverflow.com/a/69981562/17303441)
+
 ```swift
 let stooges = ["moe", "larry", "curly"]
 let images = await downloadImages(names: stooges)
@@ -105,35 +102,29 @@ let countries = await Server.shared.getCountries()
 print(countries)
 var capitals = [(country:String, capital:String)]()
 await withTaskGroup(of: (String,String).self) { group in
-	for country in countries {
-		group.addTask {
-			let capital = await Server
-								.shared
-								.getCapital(of:country)
-			return (country,capital)
-		}
-	}
-	for await pair in group {
-		capitals.append(pair)
-	}
+    for country in countries {
+        group.addTask {
+            let capital = await Server
+                                .shared
+                                .getCapital(of:country)
+            return (country,capital)
+        }
+    }
+    for await pair in group {
+        capitals.append(pair)
+    }
 }
 print(capitals)
 ```
 
-Good article about maintaining order in async concurrent loops.
-https://www.swiftbysundell.com/articles/async-and-concurrent-forEach-and-map/
-
+Good article about maintaining order in [async concurrent loops](https://www.swiftbysundell.com/articles/async-and-concurrent-forEach-and-map/).
 
 ## Async Loops
 
+[asynchronous-looping-with-async-await](https://www.biteinteractive.com/swift-5-5-asynchronous-looping-with-async-await/)
 
-https://www.biteinteractive.com/swift-5-5-asynchronous-looping-with-async-await/
-
-https://www.hackingwithswift.com/quick-start/concurrency/how-to-loop-over-an-asyncsequence-using-for-await
-
-
+[how-to-loop-over-an-asyncsequence-using-for-await](https://www.hackingwithswift.com/quick-start/concurrency/how-to-loop-over-an-asyncsequence-using-for-await)
 
 ## Handling Errors in TaskGroup
 
-
-https://swiftsenpai.com/swift/task-groups-error-handling/
+[task-groups-error-handling](https://swiftsenpai.com/swift/task-groups-error-handling/)

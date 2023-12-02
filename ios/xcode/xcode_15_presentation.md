@@ -28,7 +28,7 @@
 
 <split left="1" right="2" gap="2" style="font-size:24px">
 
-XCFrameworks imported into the project now shows the digital signature being signed for the specific framework. eg. PlayerPlatform.xcFramework
+XCFrameworks imported into the project now shows the digital signature being signed for the specific framework. eg. projectplatform.xcFramework
 
 <split wrap="2">
 ![](assets/xcode_updates/xcFramework_signatures.png)

@@ -79,3 +79,22 @@ https://stackoverflow.com/questions/58559908/combine-going-from-notification-cen
 
 
 
+## NS Notification vs KeyPath KVO Observing
+
+This won't work because `AVPlayer` KVO property doesn't work with NotificationCenter type since the `publisher` is an extension on that.
+
+```swift
+let avPlayer: AVPlayer
+NotificationCenter.default
+.publisher(for: avPlayer.timeControlStatus, 
+		   options: [.initial, .new, .prior])
+
+```
+
+But this one would work. I'm still new to this kind of listeners and why something works and something doesn't. Might need to read up on objective C, KVO and notification center observers. To properly explain why somethings are done this way and other way.
+```swift
+let avPlayer: AVPlayer
+avPlayer
+.publisher(for: \.timeControlStatus)
+.filter({ $0 == .playing })
+```
