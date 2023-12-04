@@ -6,6 +6,62 @@
 
 ## Delegates
 
+Everything is a delegated via iOS when you set your class object to listen to the delegate callbacks for the TableView Delegate
+
+With Sections in the TableView Row.
+Source Model definition
+
+```swift
+struct IDataSource {
+    let sections = [
+        IDataSourceSection(
+            title: "age",
+            items:
+            [IDataSourceItem(displayTitle: "Files",
+            valueDisplayer: .delayed(storageType: .file))
+             ]),
+		IDataSourceSection(
+            title: "Mie",
+            items:
+            [IDataSourceItem(displayTitle: "BT",
+            valueDisplayer: .other))
+             ])
+      ]
+    func getItem(at indexPath: IndexPath) -> InfoDataSourceItem? {
+        return sections.element(at: indexPath.section)?.items.element(at: indexPath.row)
+    }
+}
+```
+
+Table View Delegate methods
+
+```swift
+class IViewController: UITableViewController { }
+private let iDataSource = IDataSource()
+
+// Section
+public override func numberOfSections(in tableView: UITableView) -> Int {
+        return iDataSource.sections.count
+}
+// Row
+public override func tableView(_ tableView: UITableView,
+                                   numberOfRowsInSection section: Int) -> Int {
+    return iDataSource.sections.element(at: section)?.items.count ?? 0
+}
+
+// Header
+public override func tableView(_ tableView: UITableView,
+                     titleForHeaderInSection section: Int) -> String? {
+    return iDataSource.sections.element(at: section)?.title ?? ""
+}
+// Cell configure
+public override func tableView(_ tableView: UITableView,
+					cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+   guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? CustomUITableViewCell else { return UITableViewCell() }
+   guard let item = iDataSource.getItem(at: indexPath) else {return cell }
+   return cell
+}
+```
 
 ## Customizability
 
@@ -75,57 +131,3 @@ Programmatic UITableView
 https://martinlasek.medium.com/tutorial-adding-a-uitableview-programmatically-433cb17ae07d
 
 
-## Delegates
-
-With Sections in the TableView Row.
-Source Model definition
-```swift
-struct IDataSource {
-    let sections = [
-        IDataSourceSection(
-            title: "age",
-            items:
-            [IDataSourceItem(displayTitle: "Files",
-            valueDisplayer: .delayed(storageType: .file))
-             ]),
-		IDataSourceSection(
-            title: "Mie",
-            items:
-            [IDataSourceItem(displayTitle: "BT",
-            valueDisplayer: .other))
-             ])
-      ]
-    func getItem(at indexPath: IndexPath) -> InfoDataSourceItem? {
-        return sections.element(at: indexPath.section)?.items.element(at: indexPath.row)
-    }
-}
-```
-
-Table View Delegate methods
-```swift
-class IViewController: UITableViewController { }
-private let iDataSource = IDataSource()
-
-// Section
-public override func numberOfSections(in tableView: UITableView) -> Int {
-        return iDataSource.sections.count
-}
-// Row
-public override func tableView(_ tableView: UITableView,
-                                   numberOfRowsInSection section: Int) -> Int {
-    return iDataSource.sections.element(at: section)?.items.count ?? 0
-}
-
-// Header
-public override func tableView(_ tableView: UITableView,
-                     titleForHeaderInSection section: Int) -> String? {
-    return iDataSource.sections.element(at: section)?.title ?? ""
-}
-// Cell configure
-public override func tableView(_ tableView: UITableView,
-					cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-   guard let cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? CustomUITableViewCell else { return UITableViewCell() }
-   guard let item = iDataSource.getItem(at: indexPath) else {return cell }
-   return cell
-}
-```

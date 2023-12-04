@@ -22,7 +22,7 @@ https://www.createwithswift.com/hls-streaming-with-avkit-and-swiftui/
 
 ## Video thumbnail
 
-This below snippet code should be able to extract the thumbnail image from the given video source. We can also create random time value to generate different thumbnails but we have ensure that the video is atleast 13 secs long in this code snippet. You can safe guard yourself with a range of video duration and generate random thumbnail out of it. 
+This below snippet code should be able to extract the thumbnail image from the given video source. We can also create random time value to generate different thumbnails but we have ensure that the video is at least 13 secs long in this code snippet. You can safe guard yourself with a range of video duration and generate random thumbnail out of it. 
 
 ```swift
 let asset = AVAsset(url: url)
@@ -44,15 +44,9 @@ AVKit Quirks
 
 https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1
 
-## DRM
+[DRM](DRM.md)
 
-Lot of different options
 
-- WideVine
-- Axinom DRM
-- Apple's FairPlay HLS (https://en.wikipedia.org/wiki/FairPlay)
-- https://developer.apple.com/streaming/fps/
-- BrightCove SDK (https://sdks.support.brightcove.com/getting-started/native-video-playback.html)
 
 ## Video Geeking
 
@@ -92,9 +86,3 @@ https://github.com/Axinom/drm-sample-player-ios
 Video Kit UIKit delegate and public functions
 https://www.youtube.com/watch?v=IVyy-VBU-Cc
 
-How DRM works
-https://www.youtube.com/watch?v=mn2POYEiJVE
-
-https://chris-mash.medium.com/avplayer-swiftui-part-2-player-controls-c28b721e7e27
-
-https://benoitpasquier.com/playing-video-avplayer-swiftui/

@@ -54,6 +54,15 @@ git remote add origin
 
 [github remote url](https://help.github.com/en/github/using-git/changing-a-remotes-url)
 
+```config
+`repo_full_url` = https://SensehacK:github_pat_token_@github.com/SensehacK/dev-cheatsheet
+```
+
+```sh
+git remote add origin `repo_full_url`
+```
+
+
 
 ## Errors
 

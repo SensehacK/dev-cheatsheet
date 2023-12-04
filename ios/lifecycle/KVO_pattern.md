@@ -2,9 +2,11 @@
 # Key - Value Observing
 
 ## KVO Observing
-https://www.hackingwithswift.com/example-code/language/what-is-key-value-observing
 
-https://nalexn.github.io/kvo-guide-for-key-value-observing/
+[What is key-value observing?](https://www.hackingwithswift.com/example-code/language/what-is-key-value-observing)
+
+[Guide to KVO in Swift 5 with code examples](https://nalexn.github.io/kvo-guide-for-key-value-observing/)
+
 
 
 ## KVO to Combine

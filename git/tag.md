@@ -4,39 +4,47 @@
 
 You can check tags via
 
-> git tag
+```sh
+git tag
+```
 
 ## Creating Tags
 
 Lightweight Tags
 
-> git tag v1.5
+```sh 
+git tag v1.5
+```
 
 Annotated Tags
 
-> git tag -a v2.0 -m “CS Second Semester”
+```sh 
+git tag -a v2.0 -m “CS Second Semester”
+```
+
 
 The -m specifies the comment or description for the tag.
 
 
 ## Fetch Tags
 
-> git fetch --all --tags
-
-
-
+```sh
+git fetch --all --tags
+```
 
 ## Checkout Tag
 
-
 Checkout specific tag 
 
-> git checkout tags/6.2.0-rc1-ga -b 6.2.0-branch
-
+```sh
+git checkout tags/6.2.0-rc1-ga -b 6.2.0-branch
+```
 
 ## Checking HEAD Tag logs
 
-> git log --oneline --graph
+```sh
+git log --oneline --graph
+```
 
 Make sure the head branch and previous commits have tag in the head just to double confirm.
 
@@ -54,7 +62,9 @@ Deleting on local origin Branch
 
 Deleting on Remote origin Branch
 
-> git push --delete origin v0.1
+```sh
+git push --delete origin v0.1
+```
 
 ## Local vs Remote
 
@@ -64,7 +74,9 @@ By default, the git push command doesn’t transfer tags to remote servers. [Sou
 
 We need to push tags from local to remote repo, where “v1.5” is tag name.
 
-> git push origin v1.5
+```sh
+git push origin v1.5
+``` 
 
 
 ## Resources

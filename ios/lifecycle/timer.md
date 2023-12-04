@@ -26,7 +26,7 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 
 ## RxTimer
 
-Using timer to continuesly check for certain condition - that could be the access token or refresh token expiring on app launch to present the login screen or logout the user for security purposes.
+Using timer to continuosly check for certain condition - that could be the access token or refresh token expiring on app launch to present the login screen or logout the user for security purposes.
 We can achieve that using a `timer` option in Rx world.
 Method Signature
 ```swift
@@ -66,3 +66,4 @@ As stated by my teammate in an excellent MR changeset comment
 Note: unfortunately we can't pass `.seconds(0)` as the `dueTime` as this prevents an initial element from being emitted and the use of `.startWith(0)` would again be required. so i just sent a sufficiently small time interval of 400 milliseconds
 ```
 Which also states the `.startWith()` observable chain being ready for observing so to get around that we start with `.milliseconds(400)` 
+
