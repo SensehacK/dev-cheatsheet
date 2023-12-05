@@ -7,20 +7,25 @@ AVFoundation
 AVPlayer
 
 
-## Blank Video but audio audible
-
-iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. Spent around 20 mins debugging what is wrong with my code overall.
-
-My own project POC.
-https://github.com/SensehacK/swift/tree/master/swiftUI/VideoContent
-
 
 ## SwiftUI POC
 
 SwiftUI + Video player to stream.
 https://www.createwithswift.com/hls-streaming-with-avkit-and-swiftui/
 
-## Video thumbnail
+
+## [DRM](DRM.md)
+
+## [HLS](HLS.md)
+
+## [AVPlayer](avPlayer.md)
+
+
+## AVPlayerItem
+
+## Guides
+
+### Video thumbnail
 
 This below snippet code should be able to extract the thumbnail image from the given video source. We can also create random time value to generate different thumbnails but we have ensure that the video is at least 13 secs long in this code snippet. You can safe guard yourself with a range of video duration and generate random thumbnail out of it. 
 
@@ -40,13 +45,24 @@ do {
 ```
 
 
-AVKit Quirks
+### Multiple Tracks 
+
+https://developer.apple.com/documentation/avfoundation/media_playback/selecting_subtitles_and_alternative_audio_tracks
+
+## Quirks
 
 https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1
 
-[DRM](DRM.md)
+### Blank Video but audio audible
 
+iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. Spent around 20 mins debugging what is wrong with my code overall.
 
+My own project POC.
+https://github.com/SensehacK/swift/tree/master/swiftUI/VideoContent
+
+## Interview Questions
+
+https://interviewprep.org/avplayer-interview-questions/
 
 ## Video Geeking
 

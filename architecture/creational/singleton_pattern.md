@@ -35,7 +35,13 @@ class SingletonClass {
 }
 ```
 
-Also defining the class `final` and having just `Singleton` pattern for invocation only once is kind of similar but there is definitely need for each in their own right.
+Also defining the class `final` and having just `Singleton` pattern for invocation only once is kind of similar but there is definitely need for each in 
+their own right.
+
+## Examples
+
+iOS examples of [singleton pattern](ios/lifecycle/singleton_pattern.md).
+
 
 ## Migrating away from Singleton
 

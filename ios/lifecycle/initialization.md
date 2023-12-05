@@ -7,7 +7,7 @@ Including the default initialization for class, structs in Swift.
 
 
 
-## Class
+## [Class](class.md)
 
 We need to specify the initializer for class.
 ```swift
@@ -25,8 +25,8 @@ class Person {
 let kay = Person(name: "Kautilya", age: 28)
 ```
 
-[class](class.md)
-## Struct
+
+## [Struct](struct.md)
 
 We don't need to specify the initializer for structs.
 ```swift
@@ -38,7 +38,7 @@ struct Person {
 let kay = Person(name: "Kautilya", age: 28)
 ```
 
-[struct](struct.md)
+
 
 ## Static Functions
 1. We can directly access the static function as if it was a class method. Like `ClassSomething.doSomething()`
@@ -60,48 +60,7 @@ class ClassSomething {
 }
 ```
 
-
-
-
-## Singleton Builder Pattern
-
-```swift
-class MySingleton {
-
-    static let shared = MySingleton()
-    
-    struct Config {
-        let param:String
-    }
-    private static var config:Config?
-    
-    class func setup(_ config:Config){
-        MySingleton.config = config
-    }
-    
-    private init() {
-        guard let config = MySingleton.config else {
-            fatalError("Error - you must call setup before accessing MySingleton.shared")
-        }
-        
-        //Regular initialisation using config
-    }
-}
-```
-
-Init
-
-```swift
-MySingleton.setup(MySingleton.Config(param: "Some Param"))
-```
-
-Access Singleton
-
-```swift
-MySingleton.shared
-```
-
-[SO source](https://stackoverflow.com/questions/28429544/singleton-and-init-with-parameter)
+## [Singleton Pattern](ios/lifecycle/singleton_pattern.md)
 
 
 

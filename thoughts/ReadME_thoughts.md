@@ -19,6 +19,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 [media](media.md)
 
+[memes](memes.md)
+
 [nerd](nerd.md)
 
 [numbers](thoughts/numbers.md)

@@ -4,13 +4,13 @@
 
 It is a bundle of resources. Could include code, assets, bridging headers, documentation, UI code etc. 
 
-
 ## Purpose
 
 Frameworks have important purposes
 - Encapsulation
 - Reusability
 - Modularization
+
 
 ## Process
 
@@ -65,8 +65,8 @@ https://stackoverflow.com/questions/31450690/why-xcode-7-shows-tbd-instead-of-dy
 XCFramework on the other hand is just a structured folder/ wrapper. It has distinct directories designated for each platform where it contains a binary. This binary could be a FAT (Multi architecture) or a non FAT (Single architecture).
 
 
-## Frameworks
 
+## Frameworks
 ### Creating Frameworks
 
 https://www.kodeco.com/17753301-creating-a-framework-for-ios
@@ -128,27 +128,26 @@ Edit: We can just swap out the `Unix Executable file` binary file with our local
 
 
 
+
+
 ## Errors
 ### Framework Arch Mismatch
 
 `Could not find module for target 'x86_64-apple-ios-simulator'`
 
-https://stackoverflow.com/questions/56957632/could-not-find-module-for-target-x86-64-apple-ios-simulator?rq=4
+[Could not find module for target 'x86_64-apple-ios-simulator'](https://stackoverflow.com/questions/56957632/could-not-find-module-for-target-x86-64-apple-ios-simulator)
 
 Probably best to ask the vendor to support the appropriate SDK option
 
-```logs
+```log
 Could not find module '' for target 'arm64-apple-ios-simulator'; found: x86_64-apple-ios-simulator, at: /Users/username/Library/Developer/Xcode/DerivedData/ProjectPlatform-ephpdgxzgtsjofhisorxmacihwzc/Index.noindex/Build/Products/Debug-iphonesimulator/OHHTTPStubs.framework/Modules/OHHTTPStubs.swiftmodule
 ```
 
 ### Cannot load module build with SDK Version mismatch
-```text
-  
-
+```log
 **Showing All Messages**
 
 /Users/username/git/github_internal/Projectplatform_ios/ProjectPlatformTests/ConfigEndpointsTest.swift:14:8: Cannot load module 'OHHTTPStubs' built with SDK 'iphonesimulator16.4' when using SDK 'iphonesimulator17.0': /Users/username/Library/Developer/Xcode/DerivedData/ProjectPlatform-ephpdgxzgtsjofhisorxmacihwzc/Build/Products/Debug-iphonesimulator/OHHTTPStubs.framework/Modules/OHHTTPStubs.swiftmodule/x86_64-apple-ios-simulator.swiftmodule
-
 ```
 ### Missing package product
 
@@ -187,14 +186,15 @@ objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framewor
 
 
 
+
 ## Build Output
 
 - If you're building a **debug** config, then it will only build for the CPU architecture of the destination's platform. Meaning:
     
     - If you're building into your iPhone, you'll just need to support ARM64
     - If you're building into a simulator, you'll just need to support X86_64
+
 - If you're building a **release** config, then it will:
-    
     - Build for **both** platforms and all possible architectures.
 
 ### x86 Intel / amd64 AMD CPUs
@@ -214,27 +214,19 @@ objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framewor
 	- Both Platform and all possible architectures
 
 
+
 ## Resources
 
-Swift code reuse made simple: packages, modules, libraries - Julia Vashchenko - Swift Heroes 2019
-https://www.youtube.com/watch?v=w3QGc8wWTIg
+[Swift code reuse made simple: packages, modules, libraries - Julia Vashchenko - Swift Heroes 2019](https://www.youtube.com/watch?v=w3QGc8wWTIg)
 
+[Apple Silicon and Library incompatibility](https://susuthapa19961227.medium.com/apple-silicon-and-the-library-incompatibility-problem-for-ios-development-8c2d875283f2) 
 
-Apple Silicon and Library incompatibility 
-https://susuthapa19961227.medium.com/apple-silicon-and-the-library-incompatibility-problem-for-ios-development-8c2d875283f2
+[Migration from Intel to ARM](https://blog.codemagic.io/migrating-intel-m1-silicon/) 
 
-Migration from Intel to ARM https://blog.codemagic.io/migrating-intel-m1-silicon/
+[Migrating Pre-compiled libraries from vendors](https://developer.apple.com/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors)
 
-Migrating Pre-compiled libraries from vendors
-https://developer.apple.com/documentation/technotes/tn3117-resolving-build-errors-for-apple-silicon#Update-pre-compiled-libraries-from-vendors
+[Swift PM with CI](https://medium.com/uptech-team/swift-package-manager-and-how-to-cache-it-with-ci-14968cd58c5f)
 
+[Multiplatform binary framework](https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle)
 
-Swift PM with CI
-https://medium.com/uptech-team/swift-package-manager-and-how-to-cache-it-with-ci-14968cd58c5f
-
-
-Multiplatform binary framework
-https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle
-
-XcFramework examples
-https://github.com/bielikb/xcframeworks
+[XcFramework examples](https://github.com/bielikb/xcframeworks)

@@ -29,3 +29,5 @@ Love vincent vangough, Monet. I'm not very knowledgable about Art but I still ap
 Huge fan of Rap, since I believe good music with good beats requires poetry. Few of my favorite artists - Eminem, J.Cole, Notorious B.I.G, Big Daddy Kane, Kendrick, JayZ, Nas.
 
 Outside of rap genre I also enjoy rock, jazz, pop. My current listening history on [lastFM](https://www.last.fm/user/Sensehack)
+
+[Glossary of literary terms](https://genius.com/2895698)

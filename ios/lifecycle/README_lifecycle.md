@@ -52,6 +52,8 @@
 
 [[ios/lifecycle/segues]]
 
+[singleton_pattern](ios/lifecycle/singleton_pattern.md)
+
 [[ios/lifecycle/storyboard_refactor]]
 
 [[ios/lifecycle/struct]]
