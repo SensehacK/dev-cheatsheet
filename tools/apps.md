@@ -48,7 +48,7 @@ All my favorite apps listed here used in SDLC.
 ## Design
 
 [Miro board](https://miro.com/)
-Draw io
+[Draw io](https://www.drawio.com/)
 Apple Freeform
 
 ## Image Tools
@@ -57,6 +57,7 @@ Apple Freeform
 - Quick photoshop
 - image app icons extraction
 - png / svg icons icons8.com
+- SVG Gapplin [mac os app](https://apps.apple.com/us/app/gapplin/id768053424?mt=12?ls=1)
 
 ## IDE
 - Xcode

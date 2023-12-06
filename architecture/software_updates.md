@@ -24,6 +24,11 @@ As a fellow engineer, the code I wrote yesterday is already obsolete and the cod
 ABI - consideration
 ABI Stability is very crucial when delivering different executables or packaging libraries or modules of code to be reusable and frozen.
 I'll share some reference links to read about it.
+[Difference between API and ABI](https://stackoverflow.com/questions/3784389/difference-between-api-and-abi/59270667#59270667)
+
+[Swift ABI v5.0](https://stackoverflow.com/questions/58654714/module-compiled-with-swift-5-1-cannot-be-imported-by-the-swift-5-1-2-compiler/63305234#63305234)
+
+[Official swift ABI](https://www.swift.org/blog/abi-stability-and-more/)
 
 
 
@@ -46,7 +51,7 @@ Mac OS upgrades & don't get me started on how Windows 10 handles force upgrades 
 ## References
 
 
-https://www.swift.org/blog/abi-stability-and-more/
+
 
 ABI Stability Manifesto Swift
 https://github.com/apple/swift/blob/main/docs/ABIStabilityManifesto.md

@@ -33,3 +33,11 @@ Not blocking the main thread for smooth UI operations read more about apple swif
 ## Storage
 
 [secret_keys](secret_keys.md)
+
+
+##  [Access Control](ios/swift/access_control.md)
+
+## Conformance
+
+You can have [protocol enforcement](protocol.md) in your code for safe guarding yourself to not expose things more than necessary or make sure that the public interface gets properly written with strict Inputs and Outputs.
+

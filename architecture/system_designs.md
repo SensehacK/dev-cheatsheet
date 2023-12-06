@@ -122,7 +122,7 @@ Different source of truth
 ### Data Overriding strategies? 
 Merge timestamp and override data ? 
 
-## [Tools](apps.md#Design)
+## [Design Tools](apps.md#Design)
 ## Implementation
 
 [iOS Swift equivalent WIP docs](API_design.md)

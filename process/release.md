@@ -13,10 +13,15 @@ We can make sure to follow Semantic Versioning when it comes to releasing softwa
 ### Logging
 
 
-
-
 ## [Packaging](packaging.md)
 
+Architecture support libraries would be different in sizes as it depends on how we are packaging them into the architecture support.
+Universal with include `x86 & amd_64` + `arm64`
+Internal doc on framework exporting in [iOS / Xcode / Apple ecosystem](ios/library/framework#Build%20Output)
+
+[arm64 package 147MB](https://github.com/jgraph/drawio-desktop/releases/download/v22.1.2/draw.io-arm64-22.1.2.dmg)
+vs
+[dmg universal 217MB](https://github.com/jgraph/drawio-desktop/releases/download/v22.1.2/draw.io-universal-22.1.2.dmg)
 
 ## Release Notes
 

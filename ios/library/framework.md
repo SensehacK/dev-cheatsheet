@@ -197,6 +197,20 @@ objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framewor
 - If you're building a **release** config, then it will:
     - Build for **both** platforms and all possible architectures.
 
+Given that choice, the Apple Silicon M1 (and M2) chip is an AArch64 architecture.
+
+AArch64 is another name for ARM64, so it is an ARM architecture.
+
+The AMD64 architecture is what is also known as x86_64, x64 or even Intel 64-bit architecture. This is what you would typically see in slightly older Macs introduced before Apple Silicon.
+
+You can check the architecture of your own computer by opening the Terminal application, and running the following command:
+On the M1 chip it will display: `arm64`
+
+```sh
+arch
+```
+[Source SO](https://apple.stackexchange.com/a/451240)
+
 ### x86 Intel / amd64 AMD CPUs
 
 - Debug 
