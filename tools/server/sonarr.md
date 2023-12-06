@@ -1,7 +1,6 @@
+# Sonarr
 
 ## Intro
-
-
 
 ## Guide
 
@@ -27,13 +26,11 @@ As before, we know this probably isn't what you want to hear, but unfortunately 
 
 https://www.linuxserver.io/blog/a-farewell-to-arm-hf
 
-
 ## ARM 32 Woes
 
 Pi4 is 64 bit but the os runs in 32-bit userspace.
 
 i found out that my pi4 is 32bit-arm so the inuxserver/sonarr:lastest image doesn't support. The last i support is linuxserver/sonarr:3.0.8.1507-ls151
-
 
 
 sonarr
@@ -46,13 +43,11 @@ image: linuxserver/sonarr:arm32v7-3.0.9
 [arm32v7-3.0.9](https://hub.docker.com/layers/linuxserver/sonarr/arm32v7-3.0.9/images/sha256-2f56f6445567cc5833f669fc071fbc923b7434ab967e6e219164a6ef3b052562?context=explore)
 
 docker: no matching manifest for linux/arm/v8 in the manifest list entries.
-Docker Jackett
-https://github.com/ahuh/docker-arm-jackett
+[Docker Jackett](https://github.com/ahuh/docker-arm-jackett)
 
-https://www.reddit.com/r/sonarr/comments/wh0biw/comment/ijqngnj/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button
+[no arm32 version discussion reddit](https://www.reddit.com/r/sonarr/comments/wh0biw/comment/ijqngnj/?utm_source=share&utm_medium=mweb3x&utm_name=mweb3xcss&utm_term=1&utm_content=share_button)
 
-
-###  This has problems starting up on Raspberry Pi v4 (64bit ARMv8) but docker / portainer space is 32Bit is my understanding.
+###  This has problems starting up on Raspberry Pi v4 (64bit ARMv8) but docker / portainer space is 32Bit is my understanding
 
 `image: linuxserver/jackett:arm64v8-latest`
 
@@ -62,7 +57,7 @@ This below has `curl -vvv https://1337x.to/` SSL 443 connection refuse error for
 
 This works fine with index / trackers
 image: linuxserver/jackett:arm32v7-version-v0.20.754
-https://hub.docker.com/layers/linuxserver/jackett/arm32v7-version-v0.20.754/images/sha256-64c2e0954cb65213e5a1a172228f69c24e307967aa5184cf7ea1ad86326f7078
+Source [dockerhub](https://hub.docker.com/r/linuxserver/jackett)
 
 
 
