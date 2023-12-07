@@ -228,6 +228,9 @@ arch
 	- Both Platform and all possible architectures
 
 
+## Mind Map
+
+[Xcode Build process Mind Map link](ios/xcode/build.md)
 
 ## Resources
 
@@ -244,3 +247,4 @@ arch
 [Multiplatform binary framework](https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle)
 
 [XcFramework examples](https://github.com/bielikb/xcframeworks)
+

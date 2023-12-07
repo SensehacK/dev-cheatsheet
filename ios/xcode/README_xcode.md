@@ -58,5 +58,4 @@
 
 ## Updates
 
-
-https://developer.apple.com/documentation/updates/xcode
+[apple xcode updates](https://developer.apple.com/documentation/updates/xcode)

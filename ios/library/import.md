@@ -7,20 +7,13 @@ I don't know how compiler or llvm compiler does linking internally but if its a 
 ## Bundling 
 
 When bundling you would have different call site depending on the Modules defined within the product. This below link defines how it works with SPM but I'm also quite new to it.
-[spm](spm.md#Bundling)
+[spm bundling](spm.md#Bundling)
 
 ## Access Control
 
-Swift iOS Access Control options
-
-- File private
-- private
-- public
-- internal
-
+Swift iOS [Access Control options](access_control.md)
 
 ## Importing NPM
 
-Use NPM package in iOS Swift
+[Use NPM package in iOS Swift](https://medium.com/the-smyth-group/how-to-use-npm-packages-in-native-ios-apps-9af7e31d8345)
 
-https://medium.com/the-smyth-group/how-to-use-npm-packages-in-native-ios-apps-9af7e31d8345

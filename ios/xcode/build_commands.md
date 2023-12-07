@@ -54,3 +54,4 @@ xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSen
 ## Resources
 
 
+[xcode terminal commands](xcode.md)

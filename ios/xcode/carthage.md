@@ -3,19 +3,48 @@
 
 Carthage’s focus is to share dynamic frameworks. Dynamic frameworks are a superset of Swift packages.
 
-## Working
+## Installation
+
+Download the installer from [github repo](https://github.com/Carthage/Carthage)
+
+Check if Carthage is installed on your machine by running this command 
+
+```sh
+carthage version
+```
+
+
+## Getting Started
+
+- Create [cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile) as describe in the github link.
+
+- After that run carthage update command 
+```sh
+carthage update --use-xcframeworks
+```
+ Platform specific steps for getting frameworks to be build and appropriately linked is here for [iOS](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) 
+
+
+
+
+### Working
 
 Carthage leaves the linking part to end user and just generate the frameworks or libraries. It makes sure that it gets cloned and build. After that the developer can have scripts which can do copy commands to get all the dependencies to the appropriate folder in `Xcode_project_name_folder/Frameworks`
 
-## Note
-
-I do believe that the community has moved away from Carthage in general to either Cocoapods or Swift Package manager.
 
 
 ## Locations
 
 Carthage stores its checkouts and builds in the current project it is building. 
 So `ProjectName/Carthage/`
+
+Fetching will be downloaded in [Carthage/Checkouts](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#carthagecheckouts) first and then it will try to build or compile to this folder [Carthage/Build](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#carthagebuild) 
+
+## Note
+
+I do believe that the community has moved away from Carthage in general to either Cocoapods or Swift Package manager.
+
+
 
 ## Debugging
 
@@ -92,6 +121,12 @@ carthage bootstrap
 Cache issues [thread](https://github.com/Carthage/Carthage/issues/2892)
 
 
+
+### swift binary mismatch
+
+Read this article in order to make sure that the swift binary is being appropriately set before running `carthage bootstrap` command
+[Swift binary framework download compatibility](https://github.com/Carthage/Carthage#swift-binary-framework-download-compatibility)
+
 ### Dependency graph cycle
 
 ```text
@@ -108,3 +143,5 @@ Removing the dependency or contacting them to remove specific dependency is help
 [7 Carthage Terminal Commands to Bookmark](https://medium.com/remote-ios-dev/7-carthage-terminal-commands-to-bookmark-6c19b6d16379)
 
 [Carthage Tutorial: Getting Started](https://www.kodeco.com/7649117-carthage-tutorial-getting-started)
+
+[Carthage Cheatsheet](https://kapeli.com/cheat_sheets/Carthage.docset/Contents/Resources/Documents/index)
