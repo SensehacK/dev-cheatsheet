@@ -5,26 +5,37 @@ Using good package manager tools or central repository to keep track of them is 
 
 ## Tools
 
-iOS Package Managers
+### iOS Package Managers
+[**iOS Dependency manager**](https://stackoverflow.com/a/59257708)
+
+List
 	- [spm](spm.md)
 	- [carthage](carthage.md) 
 	- [cocoapods](cocoapods.md) 
 
-Web Package manager
-	- [node package manager](node.md)
-	- [ionic package](package.md#ionic)
-	- [cordova plugins](package.md#Cordova)
 
-Python
+
+### Web Package manager
+
+List
+- [node package manager](node.md)
+- [ionic package](package.md#ionic)
+- [cordova plugins](package.md#Cordova)
+
+### Python
+List
 	- [pip](backend/python/installation.md#PIP)
 	- [poetry](backend/python/installation.md#Poetry)
 
 
-MacOS
+### MacOS
+List
 	- [homebrew](homebrew.md)
 
-Linux
+### Linux
+List
 	- [installation](os/linux/installation.md)
 
-Multi Platform
+### Multi Platform
+List
 - [docker_hub](docker_hub.md)

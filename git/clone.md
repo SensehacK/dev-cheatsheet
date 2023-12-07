@@ -14,8 +14,13 @@ bug/TV-00000-Offline-&-Sync-crash --fallback release/asfka
 zsh: command not found: -Sync-crash
 ```
 
+## Syntax
 
+```sh
+git clone repoURL/repoProject.git
+```
 
+[git scm book cloning](https://git-scm.com/book/en/v2/Git-Basics-Getting-a-Git-Repository)
 ## Error
 ### Fetch Error
 
@@ -49,3 +54,63 @@ fatal: unable to access 'https://github.com/<github-username>/<repository-name>.
 
 Turning off VPN or antivirus/firewall to add the github.com domain to allow list helped me get past this error.
 https://stackoverflow.com/questions/59911649/fatal-unable-to-access-link-getaddrinfo-thread-failed-to-start
+
+### Host key verification failed
+
+Error when cloning the repository.
+```log
+Failed to connect to repository : Command "git Is-remote -h -- git@github.com:company_name/repo_name.git
+
+HEAD" returned status code 128:
+
+stdout:
+
+@ WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! @
+
+IT IS POSSIBLE THAT SOMEONE IS DOING SOMETHING NASTY!
+
+Someone could be eavesdropping on you right now (man-in-the-middle attack)!
+
+it is also possible that a host key has just been changed.
+
+The fingerprint for the RSA key sent by the remote host is
+
+SHA256:asfgagaw.
+
+Please contact your system administrator.
+
+Add correct host key in /Users/jenkins/.ssh/known_hosts to get rid of this message.
+
+Offending RSA key in /Users/jenkins/.ssh/known_hosts:9
+
+Host key for [ssh.github.com]:443 has changed and you have requested strict checking.
+
+Host key verification failed.
+
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+
+and the repository exists.
+```
+
+This happens when you have the same credentials setup on your machine which has `old_remote_git` and `new_remote_git` endpoints access. But since the git config has been setup with `strict checking` which is good for enterprise IMO. It makes a warning and early exit of making sure there's some user intervention to avoid man in middle attack (eavesdropping) of some kind when cloning rogue repository without making sure the public / private RSA keys have been authenticated with the known hosts.
+
+This can happen when the remote url has been migrated to a new instance or change in remote URL endpoints. The hash checksum (md5/sha1) changes which makes the cloning fail because the host identification in general has changed. You can check the `/user/.ssh/known_host` config file and update the new endpoint's host key in order to appropriately add this endpoint in allowlist/whitelist `known_host` list.
+
+
+```sh
+ssh-keygen -R github.com
+```
+This also creates a backup of old config of ssh agent.
+Which is basically running the command explicitly
+
+```sh
+cp ~/.ssh/known_hosts ~/.ssh/known_hosts.bak
+**```
+
+[ssh-keygen man](https://linux.die.net/man/1/ssh-keygen)
+
+[Stack overflow post](https://serverfault.com/questions/321167/add-correct-host-key-in-known-hosts-multiple-ssh-host-keys-per-hostname)
+
+[Dealing with SSH Host Key Changes](https://cat.pdx.edu/platforms/linux/remote-access/dealing-with-ssh-host-key-changes/)

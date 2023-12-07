@@ -6,7 +6,7 @@ The Quickest Way to Show/Hide Hidden Files Since the release of macOS Sierra, wh
 
 Enable hidden files on Mac OS
 
-```bash
+```sh
 defaults write com.apple.finder AppleShowAllFiles YES
 ```
 
