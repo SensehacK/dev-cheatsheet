@@ -8,6 +8,11 @@ You can check tags via
 git tag
 ```
 
+### Note
+Sometimes this command makes the terminal go into input mode. Was reproducible on default macOS terminal on my CI build machine running M2 Ultra & macOS Ventura 13.6.
+Same git version
+git version 2.39.3 (Apple Git-145)
+
 ## Creating Tags
 
 Lightweight Tags

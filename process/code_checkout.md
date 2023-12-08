@@ -192,3 +192,12 @@ ProjectDependency_v7.3.0 vs
 ```log
 github "https://github.com/company-name/ProjectDependency.git" "ProjectDependency_8.0.0_GHC"
 ```
+
+### error: pathspec '' did not match any file(s) known to git
+
+```log
+A shell task (/usr/bin/env git checkout --quiet --force v2.0.0 (launched in /Users/builder/Library/Caches/org.carthage.CarthageKit/dependencies/dependencyName)) failed with exit code 1:
+error: pathspec 'v2.0.0' did not match any file(s) known to git
+```
+
+This was due to I cloned a repository in its new destination, but the tags are present locally not remotely. So mostly I have to push new tags or existing tags to the remote git repo.

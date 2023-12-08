@@ -62,3 +62,10 @@ SO https://stackoverflow.com/questions/23661097/change-the-location-of-screen-sh
 
 - arm64
 - x86_64
+
+
+## find simulator Identifier
+
+Go in Xcode status bar -> Window -> Organizer and Simulators
+Check the simulator and copy the ID.
+

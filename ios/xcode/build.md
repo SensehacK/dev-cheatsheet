@@ -84,13 +84,17 @@ Comment copied from [apple dev forums](https://developer.apple.com/forums/thread
 I've seen quite a bit of weird behavior with frameworks, I think due to changes to the simulators to support Apple silicon. My temporary workaround is, in my app/extension targets, to add "arm64" to the Excluded Architectures build setting when building for the simulator (as your preview appears to be trying to do), and setting "Build Active Architecture Only" to No for all schemes. Might be worth a try.
 
 
+## Mind Map
+[xcode build commands](build_commands.md)
+
+[xcode terminal commands](xcode.md)
+
 ## Resources
 
 [Excellent StackOverflow post about xcode build process related to architecture and linking](https://stackoverflow.com/a/75454378/5177704)
 
-https://en.wikipedia.org/wiki/Instruction_set_architecture
+[Instruction set architecture](https://en.wikipedia.org/wiki/Instruction_set_architecture)
 
+[use-xcodebuild-command-line](https://www.waldo.com/blog/use-xcodebuild-command-line)
 
-https://www.waldo.com/blog/use-xcodebuild-command-line
-
-https://tarikdahic.com/posts/build-ios-apps-from-the-command-line-using-xcodebuild/
+[build-ios-apps-from-the-command-line-using-xcodebuild](https://tarikdahic.com/posts/build-ios-apps-from-the-command-line-using-xcodebuild/)

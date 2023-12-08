@@ -44,6 +44,8 @@ All my favorite apps listed here used in SDLC.
 
 - JSON typicode structure model https://app.quicktype.io/
 - json validation
+- [Date time timezone convertors](https://time.lol/#2001-09-11T12:14:00-00:00) 
+- [unix timestamp to date convertor](https://www.timestamp-converter.com/)
 
 ## Design
 
@@ -62,3 +64,9 @@ Apple Freeform
 ## IDE
 - Xcode
 - VS Code - Open Source fork
+
+## Collaboration
+
+- [linkde shared scratchpad pastebin](https://linkode.org) 
+- [pastebin](https://pastebin.com/) 
+- 

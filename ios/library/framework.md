@@ -204,11 +204,13 @@ AArch64 is another name for ARM64, so it is an ARM architecture.
 The AMD64 architecture is what is also known as x86_64, x64 or even Intel 64-bit architecture. This is what you would typically see in slightly older Macs introduced before Apple Silicon.
 
 You can check the architecture of your own computer by opening the Terminal application, and running the following command:
-On the M1 chip it will display: `arm64`
+On the M1, Mx chip it will display: `arm64`
+Intel chip will display: i386
 
 ```sh
 arch
 ```
+Note - if you have checked `Open in Rosetta` for your terminal settings then even on `Mx` arm64 chips it will show `i386`
 [Source SO](https://apple.stackexchange.com/a/451240)
 
 ### x86 Intel / amd64 AMD CPUs
