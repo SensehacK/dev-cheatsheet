@@ -1,4 +1,17 @@
+
 # HomeBrew
+
+## Intro
+
+
+## Commands
+
+Gives you the home brew version installed on your machine.
+
+```sh
+brew -v
+```
+
 ## Packages
 
 ### Tree package
@@ -12,7 +25,7 @@ Great for just sharing project structures online.
 
 ### path update
 
-https://stackoverflow.com/questions/36657321/after-installing-homebrew-i-get-zsh-command-not-found-brew
+[SO zsh command not found brew](https://stackoverflow.com/questions/36657321/after-installing-homebrew-i-get-zsh-command-not-found-brew)
 
 ## Rosetta ARM
 
@@ -22,4 +35,4 @@ Conflicting package arm architecture issues when installing a package. You can r
 arch -arm64 brew install package_name
 ```
 
-https://stackoverflow.com/questions/74310340/error-cannot-install-under-rosetta-2-in-arm-default-prefix-opt-homebrew
+[SO error cannot install under rosetta 2](https://stackoverflow.com/questions/74310340/error-cannot-install-under-rosetta-2-in-arm-default-prefix-opt-homebrew)

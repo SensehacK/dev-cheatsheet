@@ -62,26 +62,18 @@ __It is Bold text__
 </span>
 ```
 
-https://www.w3schools.io/file/markdown-styles/
+[markdown styles](https://www.w3schools.io/file/markdown-styles/)
 
+## Mind Map
+
+Read about [yaml](yaml.md)
 
 ## Tools
 
-https://logseq.com/downloads
+## [Writer Apps](apps.md#Writer)
 
-https://obsidian.md/
 
-https://docs.netbox.dev/en/stable/
 
-https://www.reddit.com/r/selfhosted/comments/160pxx1/what_do_you_use_for_documentation_or_notes/
-
-https://www.bookstackapp.com/
-
-https://moinmo.in/
-
-PDF to paperless conversion
-scan, index and archive all your physical documents
-https://github.com/paperless-ngx/paperless-ngx
 
 ## Reference
 

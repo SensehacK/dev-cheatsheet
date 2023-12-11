@@ -75,7 +75,7 @@ git push --delete origin v0.1
 
 Tags are available on Local repo and remote repo url. To publish most of the changes or sync with each other, we would need an extra command to be ran in order to update both places.
 
-By default, the git push command doesn’t transfer tags to remote servers. [Source](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
+By default, the git push command doesn’t transfer tags to remote servers. [git basics tagging](https://git-scm.com/book/en/v2/Git-Basics-Tagging)
 
 We need to push tags from local to remote repo, where “v1.5” is tag name.
 
@@ -86,6 +86,7 @@ git push origin v1.5
 
 ## Resources
 
-[SO](https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository)
+[SO create a tag](https://stackoverflow.com/questions/18216991/create-a-tag-in-a-github-repository)
 
-https://devconnected.com/how-to-checkout-git-tags/
+[how to checkout git tags](https://devconnected.com/how-to-checkout-git-tags/)
+

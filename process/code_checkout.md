@@ -195,9 +195,12 @@ github "https://github.com/company-name/ProjectDependency.git" "ProjectDependenc
 
 ### error: pathspec '' did not match any file(s) known to git
 
-```log
+```sh
 A shell task (/usr/bin/env git checkout --quiet --force v2.0.0 (launched in /Users/builder/Library/Caches/org.carthage.CarthageKit/dependencies/dependencyName)) failed with exit code 1:
 error: pathspec 'v2.0.0' did not match any file(s) known to git
 ```
 
 This was due to I cloned a repository in its new destination, but the tags are present locally not remotely. So mostly I have to push new tags or existing tags to the remote git repo.
+
+Also sometimes you need to do `git fetch` first before checking out according to this [Stack Overflow post](https://stackoverflow.com/questions/5989592/git-cannot-checkout-branch-error-pathspec-did-not-match-any-files-kn)
+

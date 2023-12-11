@@ -4,15 +4,16 @@
 
 ## Description
 
-Turns out I couldn't use & in the branch name of a git checkout for pulling information.
-That's what I was getting an error about it when I tried to use our internal git  support tool which checks out branches on different layers.
+We are at this step of Software Development hell. Git checkout configurations. Some say the hardest thing in development is naming the variables meaningful and configuring your workstation with appropriate fine grain authorization.
+If the project has been configured appropriately by a senior engineer or a security team, it should be as a fool proof as possible to not have any destruction by anyone who knows nothing about code versioning.
 
 
-```sh
-bug/TV-00000-Offline-&-Sync-crash --fallback release/asfka 
-[1] 26872
-zsh: command not found: -Sync-crash
-```
+## Getting Started
+
+First task would be setting up your workstation with appropriate credentials using `https` or `ssh` based approach in order for you to clone the code.
+
+I recommend `ssh` approach and you can refer to my [guide here](../os/linux/ssh.md#Generate%20Key)
+After that you can add that key to your [git cloud provider here](../os/linux/ssh.md#Adding%20Key) 
 
 ## Syntax
 
@@ -31,6 +32,17 @@ fatal: bad object refs/heads/master (DESKTOP-0PQ7OJL's conflicted copy 2023-04-1
 This is happening because I used dropbox as the background service directory to quickly sync everything as much as possible and also push those changes to `github` repo `dev-cheatsheet`.
 
 
+
+### Branch checkout pull Issues
+
+Turns out I couldn't use & in the branch name of a git checkout for pulling information.
+That's what I was getting an error about it when I tried to use our internal git  support tool which checks out branches on different layers.
+
+```sh
+bug/TV-00000-Offline-&-Sync-crash --fallback release/asfka 
+[1] 26872
+zsh: command not found: -Sync-crash
+```
 ### Terminal Prompt Disabled
 
 Just clone the repository on a CLI. When running scripts on CI server the terminal prompts are disabled by default.
@@ -58,7 +70,8 @@ https://stackoverflow.com/questions/59911649/fatal-unable-to-access-link-getaddr
 ### Host key verification failed
 
 Error when cloning the repository.
-```log
+
+```sh
 Failed to connect to repository : Command "git Is-remote -h -- git@github.com:company_name/repo_name.git
 
 HEAD" returned status code 128:
@@ -107,7 +120,7 @@ Which is basically running the command explicitly
 
 ```sh
 cp ~/.ssh/known_hosts ~/.ssh/known_hosts.bak
-**```
+```
 
 [ssh-keygen man](https://linux.die.net/man/1/ssh-keygen)
 

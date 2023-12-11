@@ -328,7 +328,7 @@ To import just use the following syntax as long as the library builds correctly 
 ```swift]
 import DummyUnit
 ```
-For more information on Frameworks refer my other [docs](ios/library/framework.md)
+For more information on Frameworks refer my [mind map docs](ios/library/framework.md)
 
 
 
@@ -399,13 +399,13 @@ So [carthage](carthage.md) and [cocoapods](cocoapods.md) were used in lot of pro
 ## Resources
 
 
-[Basics](https://medium.com/server-side-swift-and-more/swift-package-manager-basics-c653de716e13)
+[SPM Basics](https://medium.com/server-side-swift-and-more/swift-package-manager-basics-c653de716e13)
 
 
 https://www.youtube.com/watch?v=QmBZ9wJguS4
 
-Caching and Purge caching
-https://blog.eidinger.info/swift-package-purge-cache
+[Caching and Purge caching](https://blog.eidinger.info/swift-package-purge-cache)
+
 
 [SwiftPM: Same sources, multiple targets](https://forums.swift.org/t/swiftpm-same-sources-multiple-targets/48810)
 

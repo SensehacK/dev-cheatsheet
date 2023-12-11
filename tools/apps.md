@@ -11,6 +11,18 @@ All my favorite apps listed here used in SDLC.
 ## Writer
 - [Obsidian](https://obsidian.md/)
 - iA Writer
+- [logseq](https://logseq.com/downloads)
+- [netbox](https://docs.netbox.dev/en/stable/)
+- [bookstackapp](https://www.bookstackapp.com/)
+- [moinmo](https://moinmo.in/) 
+
+Other notes
+
+[reddit thread documentation](https://www.reddit.com/r/selfhosted/comments/160pxx1/what_do_you_use_for_documentation_or_notes/)
+
+If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paperless-ngx) to scan, index and archive all your physical documents
+
+
 
 ## Version Management
 - Git

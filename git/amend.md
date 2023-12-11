@@ -19,13 +19,22 @@ If you want to change the author details of the commit message, you can do it us
 
 
 This only works for the last commit in the git history tree.
+
 ```bash
 git commit --amend --date=now
+
+git commit --amend --no-edit --date "2001-09-11T12:14:00-00:00"
+
 ```
 
-https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git
+[SO change-the-timestamp-of-an-old-commit](https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git)
+[Git Commit Date with alias](https://dev.to/itsmohamedyahia/how-to-change-a-git-commit-date-for-beginners-40ge)
 
-
+Going with Environment variable way to trick git into committing the date time on its amend operation
+```sh
+GIT_COMMITTER_DATE=<date> git commit --amend --no-edit --date <date>
+```
+[rebasing and amending commit date](https://sabe.io/blog/change-date-git-commit)
 
 ## Empty Commit 
 

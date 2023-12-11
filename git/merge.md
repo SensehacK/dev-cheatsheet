@@ -30,3 +30,6 @@ Creates a single commit from the merged changes.
 
 Omitting the -m parameter lets you modify a draft commit message containing every message from your squashed commits before finalizing your commit.
 
+
+
+##  [Merge Restrictions](peer_review.md#Restrictions%20PR%20MR%20Rules) 

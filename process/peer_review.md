@@ -15,3 +15,6 @@ Less change-set or git diff the better readability for the reviewer -> Which in 
 
 Good article about how to approach code reviews.
 https://mtlynch.io/human-code-reviews-1/
+
+
+## Restrictions PR MR Rules
