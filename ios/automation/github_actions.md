@@ -48,6 +48,24 @@ jobs:
 Checking what runners are available for Github Actions
 https://github.com/actions/runner-images
 
+## Workflow
+
+### Filtering
+
+Branch specific wildcards
+
+```yaml
+on:
+  pull_request:
+    # Sequence of patterns matched against refs/heads
+    branches:    
+      - main
+      - develop
+      - 'releases/**'
+```
+
+
+[github actions doc](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-branches)
 
 ## Specify Xcode Version
 

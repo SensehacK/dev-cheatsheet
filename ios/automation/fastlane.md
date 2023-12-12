@@ -8,7 +8,7 @@ Ruby bundler installation is a prerequisite. To install and run fastlane command
 ## Commands
 
 
-```bash
+```sh
 bundle exec fastlane ea
 
 bundle exec fastlane increment_build
@@ -16,6 +16,12 @@ bundle exec fastlane increment_build
 bundle exec fastlane increment_version
 ```
 
+
+
+## Setup
+
+[fastlane docs](https://docs.fastlane.tools/#)
+[github actions integration](https://docs.fastlane.tools/best-practices/continuous-integration/github/)
 
 ## Issues
 
@@ -56,7 +62,10 @@ https://www.runway.team/blog/better-fastlane-with-environments
 
 [Medium](https://medium.com/@vizllx/build-test-deliver-a-complete-guideline-for-ios-ci-cd-5fa02bffa7ce)
 
-https://www.runway.team/blog/how-to-build-the-perfect-fastlane-pipeline-for-ios
+[Another Medium article for Github Actions and fastlane](https://litoarias.medium.com/continuous-delivery-for-ios-using-fastlane-and-github-actions-edf62ee68ecc)
+
+[Runway - How to set up a CI/CD pipeline for your iOS app using fastlane and GitHub Actions](https://www.runway.team/blog/how-to-build-the-perfect-fastlane-pipeline-for-ios)
+
 
 [Gitlab and Fastlane](https://about.gitlab.com/blog/2019/03/06/ios-publishing-with-gitlab-and-fastlane/)
 

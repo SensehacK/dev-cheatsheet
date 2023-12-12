@@ -6,3 +6,5 @@
 [[iterm2]]
 
 [[markdown]]
+
+[yaml](yaml.md)

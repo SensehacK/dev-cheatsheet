@@ -55,17 +55,19 @@ Sometimes it is helpful to just open the generated Carthage log file and sift th
 
 ### shell task failed with exit code 1
 
-```bash
+```sh
 A shell task (/usr/bin/env git fetch --prune --quiet [https://github.com/ephread/Instructions.git](https://github.com/ephread/Instructions.git) refs/tags/_:refs/tags/_ +refs/heads/_:refs/heads/_ (launched in /Users/GALSIV/Library/Caches/org.carthage.CarthageKit/dependencies/Instructions)) failed with exit code 1
 ```
 
 Just clear the Carthage cache 
 
-```bash
+```sh
 rm -rf ~/Library/Caches/org.carthage.CarthageKit
 ```
 
-https://github.com/Carthage/Carthage/issues/443
+[carthage github forum](https://github.com/Carthage/Carthage/issues/443)
+
+[Reachability github forum](https://github.com/ashleymills/Reachability.swift/issues/340#issuecomment-515991724)
 
 
 ### xcodebuild timed out

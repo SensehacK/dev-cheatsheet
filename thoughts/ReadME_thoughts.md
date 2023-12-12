@@ -13,6 +13,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 ## List
 
+[ecosystem](ecosystem.md)
+
 [FOMO](FOMO.md)
 
 [Is_this_life](Is_this_life.md)
