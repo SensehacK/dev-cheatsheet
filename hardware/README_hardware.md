@@ -8,10 +8,11 @@
 
 [lg_oled_c1](lg_oled_c1.md)
 
+[macbook_pro](macbook_pro.md)
+
 [[raspberry_pi]]
 
 [xbox_controllers](xbox_controllers.md)
-
 
 ## Hardware
 

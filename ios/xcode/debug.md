@@ -58,6 +58,18 @@ If you need to clean the project derived data which can sometimes resolve previo
 > Top menu -&gt; Product -&gt; Clean Build Folder
 
 
+
+## Assign variables in runtime
+
+```llvm
+e let $data = CustomObject()
+po $data
+```
+
+print a more readable Dictionary object via lldb
+```llvm
+po print(dictionaryType)
+```
 ## Change variables in runtime
 
 You can execute commands or change variables while in debugger breakpoint mode in LLDB Xcode console command.

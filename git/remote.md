@@ -41,29 +41,28 @@ git remote -v
 Changing remote origin git urls.
 
 ```sh
+# remove origin
 git remote remove origin
+```
 
+```config
+`https://github.com/SensehacK/repo\_name`
+`repo_full_url` = https://SensehacK:github_pat_token_@github.com/SensehacK/dev-cheatsheet
+```
+Add the newly updated remote origin with personal access token (PAT)
+```sh
+git remote add origin `repo_full_url`
+```
+
+```sh
 git remote set-url origin repo_full_url
 
 git push --set-upstream origin main
 
 git remote add origin 
-``` 
-
-[https://github.com/SensehacK/repo\_name](https://github.com/SensehacK/repo_name)
+```
 
 [github remote url](https://help.github.com/en/github/using-git/changing-a-remotes-url)
-
-```config
-`repo_full_url` = https://SensehacK:github_pat_token_@github.com/SensehacK/dev-cheatsheet
-```
-
-```sh
-git remote add origin `repo_full_url`
-```
-
-
-
 ## Errors
 
 ### remote: Write access to repository not granted.

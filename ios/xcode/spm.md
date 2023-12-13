@@ -5,25 +5,21 @@
 Versatile yet out of beta package manager. Great support in built in Xcode IDE. 
 Still initial adoption pain back in 2020, 2021. I think so past two years it has matured quite a bit.
 
-
-
-
-
 ## Setup
 
 You can utilized the Xcode SPM functionality in built with version 11
 
 Great for linking different packages and frameworks to Xcode with first class support.
 
-No messy .xcodeproj / .xcworkspace file
+No messy `.xcodeproj` / `.xcworkspace` file
 
 Create 
 
 ```sh
 swift package 
 ```
+[apple docs | swift package - create a standalone package xcode](https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode)
 
-https://developer.apple.com/documentation/xcode/creating-a-standalone-swift-package-with-xcode
 
 ## Sample Package.swift
 
@@ -346,10 +342,10 @@ Local dependency path in `package.swift` url takes both local and remote paths i
 dependencies: [
 // Local Package
 	.package(url: "/Users/ksave/git/cloud/packageName", branch: "28-events")
+	.package(url: "file:///Users/ksave/git/cloud/packageName", from: "6.6.6")
 
 // Remote package
     .package(url: "git@github.com:companyName/packageName.git", branch: "21-events")
-
 ],
 ```
 
@@ -360,6 +356,12 @@ Change set in `.resolved` file
 - "location" : "git@github.com:org-name/dependency_name.git",
 + "kind" : "localSourceControl",
 + "location" : "/Users/username/git/cloud/dependency_name",
+```
+
+Sometimes it gives out an error or warning as follows if you have both local dependency and cloud dependency added as a package in Swift PM.
+
+```log
+'project-parent-package-name' dependency on 'git@github.com:source/package_name_3.git' conflicts with dependency on '/Users/userName/git/cloud/package_name_3' which has the same identity 'package_name_3'. this will be escalated to an error in future versions of SwiftPM.
 ```
 
 
@@ -385,9 +387,11 @@ Multiple commands produce `framework` libraries. Probably deleting SPM cache and
 
 Also experienced it in [Carthage build command](ios/xcode/carthage#Dependency%20graph%20cycle)
 
-https://stackoverflow.com/questions/47872419/resolve-circular-dependency-in-swift
+[SO resolve circular dependency swift PM](https://stackoverflow.com/questions/47872419/resolve-circular-dependency-in-swift)
+[swift forums circular dependency](https://forums.swift.org/t/circular-dependencies-in-swiftpm/13580)
 
-https://forums.swift.org/t/circular-dependencies-in-swiftpm/13580
+
+
 
 ## Timeline
 
