@@ -81,4 +81,5 @@ Apple Freeform
 
 - [linkde shared scratchpad pastebin](https://linkode.org) 
 - [pastebin](https://pastebin.com/) 
-- 
+
+## [Project Management](project_management.md)

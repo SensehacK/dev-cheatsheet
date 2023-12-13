@@ -2,23 +2,40 @@
 
 ## List
 
+[youtube_dl](../../tools/terminal/youtube_dl.md)
 
-[[youtube_dl]]
-[[homebrew]]
-[[c_language_compilation]]
-[[cli]]
-[[curl]]
-[[customize]]
-[[directory]]
-[[exiftool]]
-[[ffmpeg]]
-[[mobile/ionic/commands]]
-[[node]]
-[[power_menu]]
-[result_from_CLI](result_from_CLI.md)
-[[shell_alias]]
-[[shell]]
-[[vim]]
-[[xcode]]
-[youtube_dl](youtube_dl.md)
-[process](process.md)
+[homebrew](../../tools/terminal/homebrew.md)
+
+[c_language_compilation](../../tools/terminal/c_language_compilation.md)
+
+[cli](../../tools/terminal/cli.md)
+
+[curl](../../tools/terminal/curl.md)
+
+[customize](../../tools/terminal/customize.md)
+
+[directory](../../tools/terminal/directory.md)
+
+[exiftool](../../tools/terminal/exiftool.md)
+
+[ffmpeg](../../tools/terminal/ffmpeg.md)
+
+[ionic commands](../../mobile/ionic/commands.md)
+
+[node](../../tools/terminal/node.md)
+
+[power_menu](../../tools/terminal/power_menu.md)
+
+[result_from_CLI](../../tools/terminal/result_from_CLI.md)
+
+[shell_alias](../../tools/terminal/shell_alias.md)
+
+[shell](../../tools/terminal/shell.md)
+
+[vim](../../tools/terminal/vim.md)
+
+[xcode](../../tools/terminal/xcode.md)
+
+[youtube_dl](../../tools/terminal/youtube_dl.md)
+
+[process](../../tools/terminal/process.md)

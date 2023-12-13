@@ -234,6 +234,8 @@ Note - if you have checked `Open in Rosetta` for your terminal settings then eve
 
 [Xcode Build process Mind Map link](ios/xcode/build.md)
 
+[packaging](packaging.md)
+
 ## Resources
 
 [Swift code reuse made simple: packages, modules, libraries - Julia Vashchenko - Swift Heroes 2019](https://www.youtube.com/watch?v=w3QGc8wWTIg)

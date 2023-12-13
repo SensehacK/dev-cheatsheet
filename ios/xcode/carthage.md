@@ -1,4 +1,4 @@
-
+# Carthage
 ## Intro
 
 Carthage’s focus is to share dynamic frameworks. Dynamic frameworks are a superset of Swift packages.
@@ -19,19 +19,16 @@ carthage version
 - Create [cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile) as describe in the github link.
 
 - After that run carthage update command 
+
 ```sh
 carthage update --use-xcframeworks
 ```
- Platform specific steps for getting frameworks to be build and appropriately linked is here for [iOS](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) 
 
-
-
+Platform specific steps for getting frameworks to be build and appropriately linked is here for [iOS](https://github.com/Carthage/Carthage#if-youre-building-for-ios-tvos-or-watchos) 
 
 ### Working
 
 Carthage leaves the linking part to end user and just generate the frameworks or libraries. It makes sure that it gets cloned and build. After that the developer can have scripts which can do copy commands to get all the dependencies to the appropriate folder in `Xcode_project_name_folder/Frameworks`
-
-
 
 ## Locations
 
@@ -49,7 +46,6 @@ I do believe that the community has moved away from Carthage in general to eithe
 ## Debugging
 
 Sometimes it is helpful to just open the generated Carthage log file and sift through the errors of what went wrong and where. Also opening the `checkout` directory and manually opening it with Xcode with your dependency could help to isolate the build failed errors.
-
 
 ## Errors
 
@@ -72,7 +68,7 @@ rm -rf ~/Library/Caches/org.carthage.CarthageKit
 
 ### xcodebuild timed out
 
-```log
+```sh
 *** Invalid cache found for project_ios, rebuilding with all downstream dependencies
 *** Building scheme "Project" in Project.xcodeproj
 xcodebuild timed out while trying to read Project.xcodeproj 😭
@@ -101,7 +97,7 @@ This isn't Carthage specific error so you can refer my [xcode build doc -> Error
 
 ### Task failed with exit code 65
 
-```log
+```sh
 *** Building scheme "ProjectDependency_one" in ProjectDependency_one.xcodeproj
 Build Failed
 	Task failed with exit code 65:
@@ -122,8 +118,6 @@ carthage bootstrap
 
 Cache issues [thread](https://github.com/Carthage/Carthage/issues/2892)
 
-
-
 ### swift binary mismatch
 
 Read this article in order to make sure that the swift binary is being appropriately set before running `carthage bootstrap` command
@@ -131,13 +125,14 @@ Read this article in order to make sure that the swift binary is being appropria
 
 ### Dependency graph cycle
 
-```text
+```log
 The dependency graph contained a cycle:
 yajl:
 DIMHAL: FapDatabase
 PromiseKit:
 securityClient-ios-binary: PromiseKit, yajl, SMobileConfig, 
 ```
+
 Removing the dependency or contacting them to remove specific dependency is helpful in order to remove circular dependency graph cycle issues.
 
 ## Resources

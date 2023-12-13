@@ -1,4 +1,4 @@
-
+# Thoughts
 
 ## Intro
 
@@ -7,31 +7,26 @@ Please take it with a grain of Himalayan Pink Salt! ~ the best salt there is! Tr
 
 Disclaimer: To Err Is Human. Don't cancel me!
 
-
-
-
-
 ## List
 
-[ecosystem](ecosystem.md)
+[ecosystem](../thoughts/ecosystem.md)
 
-[FOMO](FOMO.md)
+[FOMO](../thoughts/FOMO.md)
 
-[Is_this_life](Is_this_life.md)
+[Is this life](../thoughts/Is_this_life.md)
 
-[media](media.md)
+[media](../thoughts/media.md)
 
-[memes](memes.md)
+[memes](../thoughts/memes.md)
 
-[nerd](nerd.md)
+[nerd](../thoughts/nerd.md)
 
-[numbers](thoughts/numbers.md)
+[numbers](../thoughts/numbers.md)
 
-[people](people.md)
+[people](../thoughts/people.md)
 
-[politics](politics.md)
+[politics](../thoughts/politics.md)
 
-[proverbs](proverbs.md)
+[proverbs](../thoughts/proverbs.md)
 
-[rants](rants.md)
-
+[rants](../thoughts/rants.md)

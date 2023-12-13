@@ -1,22 +1,21 @@
 # Tools
 
-
 ## List
 
-[[README_browsers]]
+[browsers](../tools/browsers/README_browsers.md)
 
-[[README_editors]]
+[editors](../tools/editors/README_editors.md)
 
-[README_gaming](README_gaming.md)
+[gaming](../tools/gaming/README_gaming.md)
 
-[README_server](README_server.md)
+[server](../tools/server/README_server.md)
 
-[[README_terminal]]
+[terminal](../tools/terminal/README_terminal.md)
 
-[[README_utility]]
+[utility](../tools/utility/README_utility.md)
 
-[[README_vim]]
+[vim](../tools/vim/README_vim.md)
 
-[[README_vscode]]
+[vscode](../tools/vscode/README_vscode.md)
 
 [apps](apps.md)

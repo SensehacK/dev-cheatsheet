@@ -26,11 +26,7 @@
 
 ## [Network Testing](network_testing.md)
 
-
 ## [Project Management](project_management.md)
-
-
-
 
 ## History
 
@@ -41,8 +37,6 @@
 
 
 ## [router_security](router_security.md)
-
-
 
 ## Terminologies
 
@@ -84,8 +78,6 @@ The name of the AP Identifier.
 ## RF
 
 ### 80 11
-
-
 
 ### Radio Patterns
 

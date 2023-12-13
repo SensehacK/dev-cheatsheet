@@ -1,40 +1,41 @@
+# Process
+
 ## List
 
-[best_coding_practices](best_coding_practices.md)
+[best coding practices](../process/best_coding_practices.md)
 
-[[code_checkout]]
+[[code checkout]]
 
-[code_formatting](code_formatting.md)
+[code formatting](../process/code_formatting.md)
 
-[code_naming](code_naming.md)
+[code naming](../process/code_naming.md)
 
-[code_readability](code_readability.md)
+[code readability](../process/code_readability.md)
 
-[collaboration_practices](collaboration_practices.md)
+[collaboration practices](../process/collaboration_practices.md)
 
-[copy_files_server_CLI](copy_files_server_CLI.md)
+[copy files server CLI](../process/copy_files_server_CLI.md)
 
-[greenfield_code](greenfield_code.md)
+[greenfield code](../process/greenfield_code.md)
 
-[key_shortcuts](key_shortcuts.md)
+[key shortcuts](../process/key_shortcuts.md)
 
-[new_codebase](new_codebase.md)
+[new codebase](../process/new_codebase.md)
 
-[packaging](packaging.md)
+[packaging](../process/packaging.md)
 
-[[peer_review]]
+[peer review](../process/peer_review.md)
 
-[presentation](presentation.md)
+[presentation](../process/presentation.md)
 
-[problem_solving](problem_solving.md)
+[problem solving](../process/problem_solving.md)
 
-[process_kanban](process_kanban.md)
+[process kanban](../process/process_kanban.md)
 
-[project_management](project_management.md)
+[project management](../process/project_management.md)
 
-[release](process/release.md)
+[release](../process/release.md)
 
-[[search]]
+[search](../process/search.md)
 
-[work apps](work_apps.md)
-
+[work apps](../process/work_apps.md)
