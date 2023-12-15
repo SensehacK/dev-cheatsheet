@@ -6,9 +6,11 @@
 
 If you want to change the author details of the commit message, you can do it using flag `--amend`
 
-> git commit --amend --author="Kautilya <kautilya@email.com>"
+```sh
+git commit --amend --author="Kautilya <kautilya@email.com>"
+git commit --amend --author="Kautilya <kautilya.save@product_name.com>"
+```
 
-> git commit --amend --author="Kautilya <kautilya.save@product_name.com>"
 
 [Tower author change](https://www.git-tower.com/learn/git/faq/change-author-name-email/)
 
@@ -39,7 +41,38 @@ GIT_COMMITTER_DATE=<date> git commit --amend --no-edit --date <date>
 ## Empty Commit 
 
 Sometimes we want to not commit anything and just need some change set in order to trigger a build on CI or Github Actions.
-```bash
+
+```sh
 git commit --allow-empty -m "bump for CI"
 git push 
 ```
+
+
+## Cherry Pick
+
+Cherry picking git commits
+
+```sh
+git cherry-pick `git_hash`
+git cherry-pick 03d6929
+```
+
+Sometimes if the commit is present already with its changes it will present this message.
+
+```sh
+nothing to commit, working tree clean
+The previous cherry-pick is now empty, possibly due to conflict resolution.
+If you wish to commit it anyway, use:
+
+    git commit --allow-empty
+
+Otherwise, please use 'git cherry-pick --skip'
+```
+
+## References
+
+[Git cherry pick Man page](https://git-scm.com/docs/git-cherry-pick)
+
+[Github Desktop cherry Pick guide](https://docs.github.com/en/desktop/managing-commits/cherry-picking-a-commit-in-github-desktop)
+
+[Atlassian | cherry pick](https://www.atlassian.com/git/tutorials/cherry-pick)

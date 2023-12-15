@@ -61,5 +61,4 @@ https://forums.docker.com/t/how-to-delete-cache/5753
 
 https://stackoverflow.com/questions/35134713/disable-cache-for-specific-run-commands
 
-Particular cherry picked commit docker
-https://stackoverflow.com/questions/70415746/how-to-checkout-at-particular-commit-in-dockerfile
+[Particular cherry picked commit docker](https://stackoverflow.com/questions/70415746/how-to-checkout-at-particular-commit-in-dockerfile)

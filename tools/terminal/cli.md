@@ -11,14 +11,23 @@ You could create a `.sh` file for making all of these commands and saving it in 
 
 Sometimes we need to provide some execution permissions for the script or else it would be dangerous for every other script to run just by double clicking it.
 
-> chmod x script_name
+```sh
+chmod x script_name
+```
 
 And to run the shell script on some of default shells like bash or zsh you can just type
 
-> sh script_name
-or 
+```sh
+sh script_name
+#or 
 > . script_name.sh
+```
 
+
+
+## Man Help command
+
+[explain Shell commands](https://explainshell.com/)
 
 
 

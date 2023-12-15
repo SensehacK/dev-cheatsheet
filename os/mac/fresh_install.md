@@ -8,9 +8,9 @@ Dev environment
 - dropbox
 - [xcodes app](https://github.com/XcodesOrg/XcodesApp/releases/) - multiple xcode app setup
 - [iterm](https://iterm2.com/) 
-- home brew install  (https://brew.sh/)
+- [home brew](https://brew.sh/) install
 - zsh [shell brew path](fresh_install.md#brew_path) 
-- ohmyzsh https://ohmyz.sh/#install
+- [ohmyzsh](https://ohmyz.sh/#install) 
 - rosetta install
 - bartender app
 - be focused pro - pomodoro app
@@ -21,8 +21,8 @@ Dev environment
 - fantastical app 2 (microsoft outlook personal requires app password not traditional password)
 - istats pro
 - 1password
-- Authy https://authy.com/download/
-- obsidian https://obsidian.md/download
+- [Authy](https://authy.com/download/) 
+- [obsidian](https://obsidian.md/download) 
 - screenshots directory location
 - cocoapods
 - finder enhancements ( file extensions, [hidden_files](hidden_files.md), folders on top, search current folder, disable tags, disable cloud in sidebar, default home location)
@@ -34,7 +34,7 @@ Dev environment
 - Keyboard macros (Keychron Via)
 - video conferencing tools
 - External displays same 
-- Monitor Control (https://github.com/MonitorControl/MonitorControl)
+- [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 - [dracula theme](https://draculatheme.com/) everywhere iterm, xcode, vscode
 -  macos quirks [keyboard](os/mac/keyboard.md)
 - razer synapse not supported after mac os mojave. So use a free app called [mac mouse fix](https://mousefix.org/about/)
@@ -43,10 +43,10 @@ Dev environment
 - `brew install ffmpeg`
 - install youtube-dl
 - install nvm - for node package manager
-- IINA https://iina.io/
-- proxyman - network sniffer https://proxyman.io/
-- Postman for API prototyping https://www.postman.com/downloads/
-- Rectangle https://rectangleapp.com/
+- [IINA video player](https://iina.io/) 
+- [proxyman](https://proxyman.io/) - network sniffer 
+- [Postman](https://www.postman.com/downloads/) for API prototyping 
+- [Rectangle](https://rectangleapp.com/) 
 
 
 
@@ -68,13 +68,12 @@ eval $(/opt/homebrew/bin/brew shellenv)
 
 MDM reinstall and Provisioning profile as well as disable remote management 
 
+[factory reset macbook command r](https://iboysoft.com/questions/can-i-factory-reset-company-macbook-with-command-r.html)
 
-https://iboysoft.com/questions/can-i-factory-reset-company-macbook-with-command-r.html
 
+[remote-management-when-installing-macos](https://apple.stackexchange.com/questions/311052/why-do-i-get-a-remote-management-step-when-installing-macos)
 
-https://apple.stackexchange.com/questions/311052/why-do-i-get-a-remote-management-step-when-installing-macos
-
-https://forums.macrumors.com/threads/cant-reinstall-macos-from-recovery-mode-wont-allow-me-to-select-system-disk.2294294/
+[reinstall macOS recovery mode system disk](https://forums.macrumors.com/threads/cant-reinstall-macos-from-recovery-mode-wont-allow-me-to-select-system-disk.2294294/)
 
 Stack Overflow Exchange post copied from [this link](https://apple.stackexchange.com/questions/311052/why-do-i-get-a-remote-management-step-when-installing-macos)
 
@@ -108,5 +107,4 @@ That should be all there is to it! Many thanks to all those on gist.github.com w
 
 Remove it from `Apple Business Manager` as well if you have your work laptop mac setup.
 
-
-https://discussions.apple.com/docs/DOC-1948
+[apple discussion Docs](https://discussions.apple.com/docs/DOC-1948)

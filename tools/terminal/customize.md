@@ -22,5 +22,4 @@ So explicitly sourced its shell script.
 source ~/.oh-my-zsh/custom/plugins/zsh-autocomplete/zsh-autocomplete.plugin.zsh
 ```
 
-This appeared to be a problem when working with external themes like Powerlevel10K
-https://github.com/romkatv/powerlevel10k/issues/1631
+This appeared to be a problem when working with external themes like [Powerlevel10K plugin thread issue](https://github.com/romkatv/powerlevel10k/issues/1631)
