@@ -1,5 +1,5 @@
-# Clone | Checkout
-
+# Clone | Checkout | Fetch | Pull
+ 
 
 
 ## Description
@@ -127,3 +127,15 @@ cp ~/.ssh/known_hosts ~/.ssh/known_hosts.bak
 [Stack overflow post](https://serverfault.com/questions/321167/add-correct-host-key-in-known-hosts-multiple-ssh-host-keys-per-hostname)
 
 [Dealing with SSH Host Key Changes](https://cat.pdx.edu/platforms/linux/remote-access/dealing-with-ssh-host-key-changes/)
+
+
+### getaddrinfo() thread failed
+
+```sh
+fatal: unable to access 'url.git/': getaddrinfo() thread failed to start
+```
+
+This could be because the machine which is cloning the repository or trying git fetch is on different vpn. And Github preemptively disables letting someone clone if its from different geo codes/ zone.
+Kind of a security measure. 
+So disable your whole OS tunnel vpn and fetch it again.
+Also similar [Stack Overflow post confirms the VPN usage conflicting git fetch errors](https://stackoverflow.com/a/37573183)
