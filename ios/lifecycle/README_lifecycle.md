@@ -70,4 +70,4 @@
 
 [user_notifications](ios/lifecycle/user_notifications.md)
 
-[[ios/lifecycle/view_controllers]
+[[ios/lifecycle/view_controllers]]

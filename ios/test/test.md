@@ -12,11 +12,9 @@ Every unit test follows this general pattern:
 3.  make assertions on the objects outputs
 
 
-
-
 ## Skip Tests
 
-You can append `skip` to the test_function_name in order for Xcode compiler | runtime service to skip those tests in order to be ranned and not wasted with that resources accordingly.
+You can append `skip` to the test_function_name in order for Xcode compiler | runtime service to skip those tests in order to be ran and not wasted with that resources accordingly.
 
 Really handy when you're working with `flaky` tests
 
@@ -38,6 +36,9 @@ You could embed this code in Test life cycle methods which is present for settin
 The `setUpWithError` is the right candidate for skipping tests without adding that skip_logic for every unit tests. You can just include that information in the Test_Class file.
 Clean and less verbose.
 
+[SO | skip-multi-tests-in-xcode](https://stackoverflow.com/questions/64025146/skip-multi-tests-in-xcode)
+
+[skipping-tests-in-xcode](https://www.matrixprojects.net/p/skipping-tests-in-xcode/)
 
 ## setUp
 
@@ -109,6 +110,9 @@ Note:
 - You can resort to `private(set)` for the properties to make tests which can be just read for unit testing.
 
 
+[how-to-unit-test-private-methods-in-swift](https://cocoacasts.com/how-to-unit-test-private-methods-in-swift)
+
+
 ## Assertions
 
 – `assert()`  
@@ -122,32 +126,42 @@ Note:
 assert(10 > 5, "10 is not less than 5")
 ```
 
-https://andybargh.com/swift-assertions/
+[swift assertions](https://andybargh.com/swift-assertions/)
 
+[Swift by sundell | picking-the-right-way-of-failing-in-swift](https://www.swiftbysundell.com/articles/picking-the-right-way-of-failing-in-swift/)
 
 
 ## Simulators vs emulators
 
+[testing-on-real-devices-vs-simulators-vs-emulators](https://www.testingxperts.com/blog/testing-on-real-devices-vs-simulators-vs-emulators/ca-en)
 
-https://www.testingxperts.com/blog/testing-on-real-devices-vs-simulators-vs-emulators/ca-en
+## CI / CD
+
+[fastlane | run tests](https://docs.fastlane.tools/actions/run_tests/)
+
+[speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane](https://medium.com/xcblog/speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane-a982b0060676)
 
 ## Links
 
-https://stackoverflow.com/questions/64025146/skip-multi-tests-in-xcode
+[wwdc 20 notes](https://www.wwdcnotes.com/notes/wwdc20/10164/)
 
-https://www.wwdcnotes.com/notes/wwdc20/10164/
+[apple dev | xcTest](https://developer.apple.com/documentation/xctest/3521325-xctskipif)
 
-https://developer.apple.com/documentation/xctest/3521325-xctskipif
+[apple dev | xcTest setup with error](https://developer.apple.com/documentation/xctest/xctest/3521150-setupwitherror)
 
-https://developer.apple.com/documentation/xctest/xctest/3521150-setupwitherror
+[xctest-setup-and-teardown-are-not-dead-yet](https://hackernoon.com/swift-xctest-setup-and-teardown-are-not-dead-yet)
 
-https://docs.fastlane.tools/actions/run_tests/
+## Tools
 
-https://www.matrixprojects.net/p/skipping-tests-in-xcode/
+[setup-xcode-and-appium-for-ios-automation-real-device](https://blog.emumba.com/setup-xcode-and-appium-for-ios-automation-real-device-6d6d86874ae1)
 
-https://medium.com/xcblog/speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane-a982b0060676
+[ios-testing-tools](https://www.lambdatest.com/blog/ios-testing-tools/)
 
-https://cocoacasts.com/how-to-unit-test-private-methods-in-swift
+[top-5-ios-testing-frameworks](https://saucelabs.com/resources/blog/top-5-ios-testing-frameworks)
+
+[automated testing solutions](https://www.mobot.io/blog/the-8-best-ios-automated-testing-solutions-in-2022)
+
+[ios-test-automation-challenges-and-solutions](https://sofy.ai/blog/ios-test-automation-challenges-and-solutions/)
 
 
-https://hackernoon.com/swift-xctest-setup-and-teardown-are-not-dead-yet
+

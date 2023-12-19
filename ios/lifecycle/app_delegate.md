@@ -1,18 +1,12 @@
 # App Delegate Lifecycle
 
 
-
-
-
- 
 ## Scene Delegate Migration
+
 Swift 5 brought up with some new changes to app delegate and dividing them into 2 parts to cater it better for multiple screen sizes and iPadOS counterparts.
 [Good small snippet](https://dev.to/kevinmaarek/add-a-scene-delegate-to-your-current-project-5on)
 
-
 [State Lifecycle](https://www.dummies.com/web-design-development/mobile-apps/basics-of-states-in-the-lifecycle-of-an-ios-app/)
-
-
 
 ## Crash App
 
@@ -30,24 +24,18 @@ fatalError()
 // OR
 preconditionFailure()
 ```
-
-https://stackoverflow.com/questions/32511178/easiest-way-to-force-a-crash-in-swift
-
+[SO | easiest-way-to-force-a-crash-in-swift](https://stackoverflow.com/questions/32511178/easiest-way-to-force-a-crash-in-swift)
 
 ## App lifecycle
-
-
 
 `applicationDidBecomeActive` 
 `applicationWillEnterForeground`
 
-
 `didFinishLaunchingWithOptions`
 
-https://medium.com/@ansujain/ios-application-life-cycle-d517a3c44e7e
+[IOS Application Life Cycle](https://medium.com/@ansujain/ios-application-life-cycle-d517a3c44e7e)
 
-[SO](https://stackoverflow.com/questions/10304780/applicationdidbecomeactive-getting-called-twice)
-
+[SO | applicationdidbecomeactive-getting-called-twice](https://stackoverflow.com/questions/10304780/applicationdidbecomeactive-getting-called-twice)
 
 ## Swift UI App State Reactive
 
@@ -71,8 +59,7 @@ struct ContentView: View {
 }
 ```
 
-https://www.hackingwithswift.com/books/ios-swiftui/how-to-be-notified-when-your-swiftui-app-moves-to-the-background
-
+[hacking with swift | how-to-be-notified-when-your-swiftui-app-moves-to-the-background](https://www.hackingwithswift.com/books/ios-swiftui/how-to-be-notified-when-your-swiftui-app-moves-to-the-background)
 
 ## Initial ViewController called Twice
 
@@ -81,11 +68,9 @@ So with iOS 16 my current simulator. Scene Delegate Life cycle was calling my vi
 Removing the AppDelegate `UIWindow` object initialization removed the `viewDidLoad` getting called twice.
 
 
-Maybe relevant SO I didn't find a solution from the accepted one but still including it.
-https://stackoverflow.com/questions/1081131/viewdidload-getting-called-twice-on-rootviewcontroller-at-launch
-
-https://stackoverflow.com/questions/7079602/viewdidload-is-called-twice
-
+Maybe relevant SO I didn't find a solution from the accepted one but still including it. 
+[Link1](https://stackoverflow.com/questions/1081131/viewdidload-getting-called-twice-on-rootviewcontroller-at-launch) 
+[Link2](https://stackoverflow.com/questions/7079602/viewdidload-is-called-twice) 
 
 ## SwiftUI Migration
 
@@ -116,9 +101,10 @@ struct FSApp: App {
 }
 ```
 
-https://www.fivestars.blog/articles/app-delegate-scene-delegate-swiftui/
+[app-delegate-scene-delegate-swiftui](https://www.fivestars.blog/articles/app-delegate-scene-delegate-swiftui/)
 
-Note: 
+
+### Note
 
 Open URL - Deep Links delegate won't work here. Just amazing in SwiftUI so **you** need to switch to `onOpenURL { }` [linked here](ios/config/linking#Swift%20UI%20Deep%20links)
 ```swift
@@ -126,4 +112,3 @@ func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool { }
 ```
-

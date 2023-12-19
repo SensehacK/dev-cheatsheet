@@ -4,25 +4,21 @@
 
 ## Installer 
 
-
 ```sh
 softwareupdate --fetch-full-installer --full-installer-version 13.0.1
 ```
 
 ## Companion app
 
-https://github.com/ninxsoft/Mist
+[Mist Xcode companion apps](https://github.com/ninxsoft/Mist)
 
-App to create configuration profile
-https://github.com/ProfileCreator/ProfileCreator
+[App to create configuration profile](https://github.com/ProfileCreator/ProfileCreator)
 
-Convert macOS property lists into configuration profiles
-https://github.com/timsutton/mcxToProfile
+Convert macOS [property lists into configuration profiles](https://github.com/timsutton/mcxToProfile)
 
 [Apple Configurator](https://support.apple.com/apple-configurator)
 
 [iMazing profile editor](https://imazing.com/profile-editor)
-
 
 ## Downgrading Avoiding updates
 
@@ -37,11 +33,9 @@ How to setup using [apple configurator support article](https://support.apple.co
 
 Deploying your MDM profiles using MicroMDM [quick start guide](https://github.com/micromdm/micromdm/blob/master/docs/user-guide/quickstart.md)
 
-
 ### Removing MDM Profiles
 
-
-https://www.imobie.com/iphone-unlocker/how-to-delete-an-mdm-profile-on-mac.htm
+[delete mdm profile on mac](https://www.imobie.com/iphone-unlocker/how-to-delete-an-mdm-profile-on-mac.htm)
 
 ## Internal Links
 
@@ -53,5 +47,4 @@ Internal documentation about [software_updates](software_updates.md)
 
 [apple support article around macOS updates](https://support.apple.com/en-us/102662)
 
-
-https://mrmacintosh.com/how-to-download-macos-catalina-mojave-or-high-sierra-full-installers/
+[how-to-download-macos-catalina-mojave-or-high-sierra-full-installers/](https://mrmacintosh.com/how-to-download-macos-catalina-mojave-or-high-sierra-full-installers/)

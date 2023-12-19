@@ -26,7 +26,7 @@ print(await basicTask.value)
 ```
 
 Lots of more examples of Task part of concurrency framework. WWDC 2021.  
-https://www.avanderlee.com/concurrency/tasks/
+[avanderlee | concurrency Tasks](https://www.avanderlee.com/concurrency/tasks/)
 
 
 
@@ -53,7 +53,7 @@ Btw I use `Arch` Linux.  **r/linuxMasterRace** meme
 
 ## Delay in Task
 
-https://www.swiftbysundell.com/articles/delaying-an-async-swift-task/
+Adding a [timer](../ios/lifecycle/timer.md) in Swift language doc
 
 
 ## Articles 
@@ -105,3 +105,8 @@ await fetchQuotes()
 ```
 
 
+
+
+## Mind Map
+
+[ARC in Tasks | Reference Counting](arc.md#Tasks)

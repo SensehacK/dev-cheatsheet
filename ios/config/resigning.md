@@ -125,5 +125,4 @@ https://github.com/EthanArbuckle/Apollo-CustomApiCredentials
 
 ## Mac OS iPA
 
-
-https://gist.github.com/Dids/c43fc68677e1a3cc215d88a74e26d05e
+[Installing IPAs on Apple Silicon (M1)](https://gist.github.com/Dids/c43fc68677e1a3cc215d88a74e26d05e)

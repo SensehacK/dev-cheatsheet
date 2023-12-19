@@ -1,7 +1,5 @@
 # Dark Mode
 
-
-
 ## Checking User Style
 
 ```swift
@@ -24,7 +22,8 @@ Utilize Color Set in Xcode with “Any” & “Dark” Mode. To better update th
 
 ## Dynamic colors
 
-https://www.swiftbysundell.com/articles/defining-dynamic-colors-in-swift/
+[swiftbysundell | dynamic-colors-in-swift/](https://www.swiftbysundell.com/articles/defining-dynamic-colors-in-swift/)
+
 
 
 ## Detect UI Appearance Change
@@ -40,9 +39,10 @@ override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollect
 }
 ```
 
-https://stackoverflow.com/questions/58312095/ios13-dark-mode-change-not-recognized-by-tableview-cell
+[SO | iOS 13 tableview cell dark mode](https://stackoverflow.com/questions/58312095/ios13-dark-mode-change-not-recognized-by-tableview-cell)
 
-https://stackoverflow.com/questions/58016866/how-to-detect-light-dark-mode-change-in-ios-13
+[SO | iOS 13 detect dark mode changes](https://stackoverflow.com/questions/58016866/how-to-detect-light-dark-mode-change-in-ios-13)
+
 
 
 ## Single View Override
@@ -68,9 +68,6 @@ myView.window?.overrideUserInterfaceStyle = .dark
 ```
 
 ### SwiftUI 
-
-
-
 
 Copied from [StackOverflow post](https://stackoverflow.com/questions/58476048/implement-dark-mode-switch-in-swiftui-app) 
 
@@ -119,34 +116,21 @@ struct ContentView: View {
 
 Full guide: 
 
-https://www.avanderlee.com/swift/dark-mode-support-ios/
+[avanderlee | dark mode](https://www.avanderlee.com/swift/dark-mode-support-ios/)
 
-Material Design
+[Material Design](https://m2.material.io/design/color/dark-theme.html#usage)
 
-https://m2.material.io/design/color/dark-theme.html#usage
+[Disable Dark mode](https://sarunw.com/posts/how-to-disable-dark-mode-in-ios/)
 
-Disable Dark mode
-https://sarunw.com/posts/how-to-disable-dark-mode-in-ios/
 
-Supporting dark mode
-https://medium.com/@iAkashlal/enabling-dark-mode-support-for-your-ios-applications-cd98d79033de
+[Medium | Supporting dark mode](https://medium.com/@iAkashlal/enabling-dark-mode-support-for-your-ios-applications-cd98d79033de)
 
-https://developer.apple.com/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface
+[apple doc | UI Appearance dark mode interface](https://developer.apple.com/documentation/uikit/appearance_customization/supporting_dark_mode_in_your_interface)
 
-https://www.kodeco.com/10718147-supporting-dark-mode-adapting-your-app-to-support-dark-mode
+[Kodeco | dark mode](https://www.kodeco.com/10718147-supporting-dark-mode-adapting-your-app-to-support-dark-mode)
 
-https://letcreateanapp.com/2021/08/08/adding-support-of-dark-mode-in-ios-app-in-swift/
-## Tools
+[adding dark mode ios](https://letcreateanapp.com/2021/08/08/adding-support-of-dark-mode-in-ios-app-in-swift/)
 
-https://www.uicolor.io/
+## [Image Tools](tools/apps#Image%20Tools)
 
-https://www.canva.com/colors/color-wheel/
-Use `Monochromatic` when working with Black - White Mono colors
-And use `Complementary` mode when working with RGB colors
 
-Thanks to Design team Member
-Contrast checker
-https://webaim.org/resources/contrastchecker/
-
-Figma plugin 
-https://www.figma.com/community/plugin/748533339900865323

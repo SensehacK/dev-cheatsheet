@@ -9,7 +9,8 @@ You can see how we can use state architecture in a composable way to communicate
 
 ## Resources
 
-https://jobandtalent.engineering/ios-architecture-an-state-container-based-approach-4f1a9b00b82e
+[ios-architecture-an-state-container-based-approach](https://jobandtalent.engineering/ios-architecture-an-state-container-based-approach-4f1a9b00b82e)
+
 
 https://youtu.be/xsJxCwnP08E
 

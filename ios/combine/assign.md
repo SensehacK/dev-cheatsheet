@@ -9,7 +9,7 @@ RxSwift reference
 
 ## Usage
 
-Model
+### Model
 ```swift
 struct Quotes: Decodable {
     let quotes: [Quote]
@@ -24,8 +24,8 @@ struct Constants {
     static let quotesAPIURL = "https://dummyjson.com/quotes"
 }
 ```
-### SwiftUI
-View
+### View
+
 ```swift
 struct QuotesView: View {
     @ObservedObject var viewModel = QuotesViewModel()
@@ -50,7 +50,7 @@ struct QuotesView: View {
 }
 ```
 
-ViewModel
+### ViewModel
 ```swift
 class QuotesViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
@@ -96,14 +96,40 @@ init() {
 }
 ```
    
-
-https://www.donnywals.com/updating-ui-with-assigntoon-in-combine/
-
+[updating-ui-with-assignto on-in-combine](https://www.donnywals.com/updating-ui-with-assigntoon-in-combine/)
 
 ## Async Combine Interop
 
-https://www.swiftbysundell.com/articles/calling-async-functions-within-a-combine-pipeline/
+[swift by sundell | calling-async-functions-within-a-combine-pipeline](https://www.swiftbysundell.com/articles/calling-async-functions-within-a-combine-pipeline/)
 
-https://augmentedcode.io/2023/01/09/async-await-support-for-combines-sink-and-map/
+[async-await-support-for-combines-sink-and-map](https://augmentedcode.io/2023/01/09/async-await-support-for-combines-sink-and-map/)
 
-https://peterfriese.dev/posts/combine-vs-async/
+[combine-vs-async](https://peterfriese.dev/posts/combine-vs-async/)
+
+
+
+## Binding 
+
+### State and data flow
+
+[Driving changes in your UI with state and bindings](https://developer.apple.com/tutorials/swiftui-concepts/driving-changes-in-your-ui-with-state-and-bindings)
+
+[Combine’s What Makes SwiftUI Really Shine](https://infinum.com/blog/combine-makes-swiftui-shine/)
+
+
+### onChange Event
+
+
+```swift
+struct ContentView: View {
+    @State private var name = ""
+
+    var body: some View {
+        TextField("Enter your name", text: $name)
+            .onChange(of: name) { oldValue, newValue in
+                print("Changing from \(oldValue) to \(newValue)")
+            }
+    }
+}
+```
+

@@ -20,6 +20,12 @@ Multiple audio and subtitles
 https://devstreaming-cdn.apple.com/videos/streaming/examples/adv_dv_atmos/main.m3u8
 
 
+## ## Apple Interstitials
+
+[Getting Started With HLS Interstitials - apple developer](https://developer.apple.com/streaming/GettingStartedWithHLSInterstitials.pdf)
+
+
+
 Other
 
 https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8
