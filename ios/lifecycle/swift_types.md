@@ -1,7 +1,4 @@
-
 # Swift Types
-
-
 
 ## Copy on Write (CoW)
 
@@ -33,9 +30,8 @@ While referencing another structA with StructB there is a copy made only if the 
 
 You can mutate struct  and check the address after a delay using `DispatchQueue.main.asyncAfter(deadline: .now()+5) { }`
 
-
-
 ### Examples
+
 Copy on write example.
 [Medium](https://medium.com/ne-digital/copy-on-write-in-swift-96357bd6c830)
 
@@ -49,7 +45,6 @@ Good [article](https://medium.com/@lucianoalmeida1/understanding-swift-copy-on-w
 ## Class and Struct
 
 Classes (reference types) are allocated in the heap, value types (like Struct, String, Int, Bool, etc) live in the stack. See this topic for more detailed answers: Why Choose Struct Over Class?
-
 
 ## Value and Reference types
 

@@ -1,7 +1,7 @@
 # Side Effects
 
 
-## Good practise
+## Good practice
 
 Jersh comment on
 

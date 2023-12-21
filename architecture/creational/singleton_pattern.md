@@ -4,7 +4,7 @@
 
 - Easy understanding
 - One source of truth
-- Object remains in the memory throughtout the app lifecycle.
+- Object remains in the memory throughout the app lifecycle.
 - Supports lazy initialization. 
 - Used by lot of analytics SDKs
 - iOS UIKit, CocoaTouch relies a lot on Singleton and MVC pattern.
@@ -23,7 +23,7 @@
 
 ## Code
 
-Important to privatize the initi() in order to not let invocation rights to anyone else.
+Important to privatize the init() in order to not let invocation rights to anyone else.
 
 ```swift
 class SingletonClass { 
@@ -54,14 +54,14 @@ https://theswiftdev.com/swift-singleton-design-pattern/
 
 I know Java has few differences & I haven't taken my time to research these things in iOS Swift world.
 
-https://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern?rq=1
+[SO | difference-between-static-class-and-singleton-pattern](https://stackoverflow.com/questions/519520/difference-between-static-class-and-singleton-pattern?rq=1)
 
-https://stackoverflow.com/questions/51508613/is-final-necessary-for-a-singleton-class-in-swift
+[SO | is-final-necessary-for-a-singleton-class-in-swift](https://stackoverflow.com/questions/51508613/is-final-necessary-for-a-singleton-class-in-swift)
 
+[difference-between-singleton-pattern-vs-static-class-java](https://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-vs-static-class-java.html)
 
-https://javarevisited.blogspot.com/2013/03/difference-between-singleton-pattern-vs-static-class-java.html
+[singleton-class-in-swift](https://medium.com/@nimjea/singleton-class-in-swift-17eef2d01d88)
 
-https://medium.com/@nimjea/singleton-class-in-swift-17eef2d01d88
+[quickly-replacing-singletons-with-functions](https://www.swiftbysundell.com/tips/quickly-replacing-singletons-with-functions/)
 
-https://www.swiftbysundell.com/tips/quickly-replacing-singletons-with-functions/
 

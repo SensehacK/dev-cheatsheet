@@ -1,19 +1,19 @@
-## Observer Pattern
+# Observer Pattern
+
+## Intro
 
 1 - > N 
 
 ## Pros
+
 - Broadcasting everything at once.
 - Big state change and you need to reflect that everywhere.
 
 ## Cons
+
 - Subscribing and disposing of subscribers
 - Multiple firing of events.
 - Hot / Cold observers
-
-
-
-
 
 ## Examples
 
@@ -32,3 +32,5 @@ iOS examples of observer pattern in simple Swift way and Combine Reactive paradi
 [rxSwift subscribe](subscribe.md)
 
 [rxSwift subjects](rx_subjects.md)
+
+[closure](closure.md)

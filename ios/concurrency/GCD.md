@@ -40,4 +40,4 @@ DispatchQueue.global(qos: .background).async {
 
 https://developer.apple.com/videos/play/wwdc2015/718/
 
-https://www.kodeco.com/books/concurrency-by-tutorials/v2.0/chapters/2-gcd-vs-operations
+[Kodeco | concurrency gcd-vs-operations](https://www.kodeco.com/books/concurrency-by-tutorials/v2.0/chapters/2-gcd-vs-operations)

@@ -41,9 +41,12 @@ When to Go for GCD or NSOperation
 when you want more control over queue (all above mentioned) use NSOperation and for simple cases where you want less overhead (you just want to do some work "into the background" with very little additional work) use GCD
 
 ### References
-https://cocoacasts.com/choosing-between-nsoperation-and-grand-central-dispatch/ http://iosinfopot.blogspot.in/2015/08/nsthread-vs-gcd-vs-nsoperationqueue.html 
-http://nshipster.com/nsoperation/
 
+[choosing-between-nsoperation-and-grand-central-dispatch](https://cocoacasts.com/choosing-between-nsoperation-and-grand-central-dispatch/)
+
+[nsthread-vs-gcd-vs-nsoperationqueue](http://iosinfopot.blogspot.in/2015/08/nsthread-vs-gcd-vs-nsoperationqueue.html)
+
+[NSHipster | nsoperation](http://nshipster.com/nsoperation/)
 
 [SO](https://stackoverflow.com/questions/10373331/nsoperation-vs-grand-central-dispatch)
 

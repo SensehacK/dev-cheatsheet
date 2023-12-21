@@ -35,30 +35,13 @@ Here you can find various documentation related to iOS development which can hel
 ### [ui](README_ui.md)
 
 [visionOS](README_VisionOS.md)
-
 ### [xcode](README_xcode.md)
 
 ## Resources
 
-[swiftbysundell](https://www.swiftbysundell.com/)
+[iOS Sources](misc/resources#iOS)
 
-[stackoverflow swift](https://stackoverflow.com/questions/tagged/swift) 
-
-[raywenderlich](https://www.raywenderlich.com/ios/articles)
-
-[nshipster](https://nshipster.com/)
-
-[r/iOSProgramming](https://www.reddit.com/r/iOSProgramming/)
-
-[avanderlee](https://www.avanderlee.com/)
-
-[hackingwithswift](https://www.hackingwithswift.com/)
-
-[theswiftdev](https://theswiftdev.com/news/)
-
-[advancedswift](https://www.advancedswift.com/)
-
-Great Mentors IRL listed [here](misc/resources#Offline)
+[Great Mentors IRL](misc/resources#Offline)
 
 ## Contribution
 

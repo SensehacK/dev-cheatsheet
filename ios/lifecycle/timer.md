@@ -26,7 +26,7 @@ DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
 
 ## RxTimer
 
-Using timer to continuosly check for certain condition - that could be the access token or refresh token expiring on app launch to present the login screen or logout the user for security purposes.
+Using timer to continuously check for certain condition - that could be the access token or refresh token expiring on app launch to present the login screen or logout the user for security purposes.
 We can achieve that using a `timer` option in Rx world.
 Method Signature
 ```swift
@@ -57,7 +57,7 @@ Previous implementation had
 ```
 
 One of the main reasons to switch to timer from Interval would be start with timer option.
-As stated by my teammate in an excellent MR changeset comment
+As stated by my teammate in an excellent MR change-set comment
 
 ```text
 1.  it makes it clear that we're using a timer to drive the logic here rather than a more vague `interval`

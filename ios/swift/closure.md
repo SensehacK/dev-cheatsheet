@@ -94,3 +94,5 @@ callback example
 [open radar mirror](https://github.com/lionheart/openradar-mirror/issues/6765)
 
 [SO | store a closure as a variable](https://stackoverflow.com/questions/24603559/store-a-closure-as-a-variable-in-swift)
+
+[Closures Vs. Combine Vs. Async Await](https://medium.com/@GetInRhythm/closures-vs-combine-vs-async-await-993eb1da4d44)

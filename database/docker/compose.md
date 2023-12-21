@@ -25,3 +25,19 @@ sudo pip install jsonschema websocket
 ```
 
 [Github Issue](https://github.com/docker/compose/issues/8574#top)
+
+
+## Dependency Startup order
+
+[startup order](https://docs.docker.com/compose/startup-order/)
+
+[depends_on](https://docs.docker.com/compose/compose-file/05-services/#depends_on)
+
+
+```bash
+[Service]
+ExecStartPre=/bin/sleep 30
+```
+
+[Delayed starting of Docker service until expected mounts are available](https://davejansen.com/systemctl-delay-start-docker-service-until-mounts-available/)
+

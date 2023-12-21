@@ -52,6 +52,7 @@ Also I'm loving the Windows Terminal which I'll make the default shell of Linux 
 File manager GUI with root privileges use this command.
 
 Open the Terminal
+
 ```sh
 sudo pcmanfm
 ```

@@ -5,7 +5,7 @@
 Serial Queue but async execution if `async` is being used. Usually the prefered option.
 Usually needed for the system to switch threads 
 eg. Network call -> Background thread
--> Jump/Transit to Main thread for UI updation tasks.
+-> Jump/Transit to Main thread for UI updating tasks.
 
 
 ### Warnings
@@ -18,6 +18,7 @@ Settings could be found in  Xcode Product scheme -> Run -> Diagnostics ->
 Publishing changes from background threads is not allowed; make sure to publish values from the main thread (via operators like receive(on:)) on model updates.
 
 ## UIKit
+
 ```swift
 DispatchQueue.main.async  {
 	self.tableView.reloadData()
@@ -27,19 +28,25 @@ DispatchQueue.main.async  {
 
 ## Combine
 
+Read more about [combine thread](receive_on.md)
+
 ### Publishers
 Sending values from Publishers
+
 ```swift
 .subscribe(on: DispatchQueue.global())
 ```
 
 ### Subscriber
+
 Sink receive values when we are subscriber / observer
+
 ```swift
 .receive(on: Runloop.main) 
 
 .receive(on: DispatchQueue.main)
 ```
+
 
 Runloop.main - User interaction | UI gestures will pause changes | execution of code 
 
@@ -52,13 +59,17 @@ DispatchQueue.main - User interaction won't pause the execution.
 
 ## RxSwift
 
+RxSwift equivalents [[Observe]]
+
 ### Observe Publisher
+
 ```swift
 .subscribe(on: MainScheduler.instance)
 .subscribe(on: MainScheduler.asyncInstance)
 ```
 
 ### Subscriber / Observer
+
 ```swift
 .observe(on: MainScheduler.asyncInstance)
 .observe(on: MainScheduler.instance)
@@ -90,16 +101,11 @@ class CustomClass: ObservableObject {
 
 ## Actor & MainActor
 
-Refer this doc for more information [actors](actors.md)
- [main actor](actors.md##MainActor)
-
+Refer this doc for more information
+[actors](actors.md)
+[main actor](actors.md##MainActor)
 
 ## References
+[HWS | back-to-the-main-thread-dispatch queue main](https://www.hackingwithswift.com/read/9/4/back-to-the-main-thread-dispatchqueuemain)
 
-https://www.hackingwithswift.com/read/9/4/back-to-the-main-thread-dispatchqueuemain
-
-https://holyswift.app/swift-and-combine-which-thread-runs-my-sink-closure/
-
-https://www.avanderlee.com/combine/runloop-main-vs-dispatchqueue-main/
-
-https://www.hackingwithswift.com/quick-start/concurrency/how-to-use-mainactor-to-run-code-on-the-main-queue
+[Avanderlee | runloop-main-vs-dispatchqueue-main](https://www.avanderlee.com/combine/runloop-main-vs-dispatchqueue-main/)

@@ -10,7 +10,11 @@
 
 [get_started_guides](get_started_guides.md)
 
+[merge](ios/combine/merge.md)
+
 [publisher](publisher.md)
+
+[receive_on](receive_on.md)
 
 [sink](sink.md)
 

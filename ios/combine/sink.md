@@ -1,10 +1,12 @@
+# Sink
 
 ## Intro
 
 Sink is the equivalent of `subscribe` of RxSwift with Swift Combine.
 
-RxSwift reference
-[subscribe](subscribe.md)
+## Mind Map
+
+RxSwift reference [subscribe](subscribe.md)
 
 ## Usage
 

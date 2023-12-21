@@ -19,5 +19,8 @@ TODO: I need to confirm how did he verify the background thread or main thread p
 Or do we have a helper method to identify which thread is the subscription being called upon.
 
 
-Github similar issue (https://github.com/ReactiveX/RxSwift/issues/1778)
+[Github similar issue](https://github.com/ReactiveX/RxSwift/issues/1778)
 
+## Mind Map
+
+Combine equivalent [receive_on](receive_on.md)

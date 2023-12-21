@@ -8,18 +8,6 @@ So you place a facade in that callsite and just assume work or certain tasks / p
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ### Tangent
 
 I usually use this to describe human beings, since they are nicer when things are good ( putting up a facade ) but internally they are who they are.

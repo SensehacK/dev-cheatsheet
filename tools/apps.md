@@ -106,3 +106,14 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - [kdenlive](https://kdenlive.org/en/features/) 
 - [ffmpeg](https://ffmpeg.org/)
 - [m4vgear](https://www.m4vgear.com/m4vgear-for-windows.html)
+- cli download utility [aria2](https://aria2.github.io/)
+- fav project [youtube_dl](youtube_dl.md)
+- [ffmpeg](ffmpeg.md) video conversion cli
+- handbrake - video encoder decoder GUI
+- decryption AES streams [github project pycryptodome](https://github.com/Legrandin/pycryptodome) 
+- geo verification proxy - VPN and browser session - decryption and encryption
+- youtube [community sourced sponsor sharing](https://sponsor.ajay.app/) like Waze reporting tool.
+
+## Security
+
+- [SSL test website](https://www.ssllabs.com/ssltest)

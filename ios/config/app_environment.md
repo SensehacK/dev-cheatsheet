@@ -28,7 +28,7 @@ Use Swift Compiler - Custom flags option in Xcode Target build settings in order
 #endif
 ```
 
-https://www.swiftbysundell.com/articles/feature-flags-in-swift/
+[swiftbysundell |feature-flags-in-swift](https://www.swiftbysundell.com/articles/feature-flags-in-swift/)
 
 [environment_variables](environment_variables.md)
 

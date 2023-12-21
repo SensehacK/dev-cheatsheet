@@ -1,7 +1,6 @@
 # Any Cancellable
 
-
-## RxSwift Equivalent
+## Mind Map
 
 RxSwift equivalent of [disposeBag](disposeBag.md)
 
@@ -9,10 +8,11 @@ RxSwift equivalent of [disposeBag](disposeBag.md)
 class Name {
 	var cancellable = Set<AnyCancellable>()
 	func something() {
-		publisher.sink { val in
-	            self.mainLabel.text = val
-	        }
-	        .store(in: &cancellable)
+		publisher
+			.sink { val in
+				self.mainLabel.text = val
+		     }
+		     .store(in: &cancellable)
 	}
 }
 ```
@@ -20,9 +20,10 @@ class Name {
 vs 
 You can't use this code even though you're storing the value of `sink` return type `AnyCancellable`
 ```swift
-let anycancel = publisher.sink { val in
+let anycancel = publisher
+	.sink { val in
 		self.mainLabel.text = val
-}
+	}
 ```
 
 Since the closure is a function which is of type reference.
@@ -32,8 +33,8 @@ Even though we didn't use [weak self] and opted for strong reference it won't su
 
 This could be also attributed to Hot vs Cold observable phenomenon in RxSwift
 
-Weak, unowned and self in combine
-https://trycombine.com/posts/self-weak-unowned/
+[Weak, unowned and self in combine](https://trycombine.com/posts/self-weak-unowned/)
+
 
 
 ##  Subscription lifecycle
@@ -54,9 +55,7 @@ if a classA -> Instantiates classB, where classB has `Cancellables` references b
 
 ```swift
 class classA {
-
 	var classB: ClassB?
-
 	// This will hold the subscriptions lifecycle
 	normalInstantiate() {
 		classB = ClassB()
@@ -66,13 +65,10 @@ class classA {
 	func assignedInstantiate() {
 		let _ = ClassB()
 	}
-
 }
-
 
 class classB {
 	private var cancellables = Set<AnyCancellable>()
-
 	private let publisher: PassthroughSubject<EventRepresentable, Never>
 
 	func subscriptions() {
@@ -92,16 +88,17 @@ class classB {
             .store(in: &cancellables)
 	}
 }
-
 ```
 
 [Managing self and cancellable references when using Combine](https://www.swiftbysundell.com/articles/combine-self-cancellable-memory-management/)
 
-https://www.donnywals.com/what-exactly-is-a-combine-anycancellable/
+[what-exactly-is-a-combine-anycancellable](https://www.donnywals.com/what-exactly-is-a-combine-anycancellable/)
+
 
 ## Links
 
-https://www.avanderlee.com/swift/combine/
+[avanderlee | swift combine](https://www.avanderlee.com/swift/combine/)
 
-https://tanaschita.com/20220912-memory-management-in-combine/
+[memory-management-in-combine](https://tanaschita.com/20220912-memory-management-in-combine/)
+
 

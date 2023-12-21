@@ -55,14 +55,15 @@ Higher Order functions [short_hands](ios/swift/short_hands.md)
 
 [Point Series](https://www.pointfree.co)
 
-https://refactoring.guru/design-patterns/catalog
+[design-patterns](https://refactoring.guru/design-patterns/catalog)
 
-https://stackoverflow.com/questions/4243187/whats-the-difference-between-design-patterns-and-architectural-patterns
+[SO | whats-the-difference-between-design-patterns-and-architectural-patterns](https://stackoverflow.com/questions/4243187/whats-the-difference-between-design-patterns-and-architectural-patterns)
 
-https://en.wikipedia.org/wiki/Software_design_pattern
+[Wiki | Software_design_pattern](https://en.wikipedia.org/wiki/Software_design_pattern)
 
-https://en.wikipedia.org/wiki/Architectural_pattern
+[Wiki | architectural pattern](https://en.wikipedia.org/wiki/Architectural_pattern)
 
-https://en.wikipedia.org/wiki/Design_pattern
+[Wiki | Design_pattern](https://en.wikipedia.org/wiki/Design_pattern)
 
-https://singhdivesh.medium.com/according-to-wikipedia-b1afa6de08c
+[Medium | iOS pattern](https://singhdivesh.medium.com/according-to-wikipedia-b1afa6de08c) 
+

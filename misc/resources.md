@@ -3,7 +3,7 @@
 
 Resources used by me for learning about technology.
 
-## Online
+## General
 
 * Reddit
 * StackOverflow
@@ -15,6 +15,23 @@ Resources used by me for learning about technology.
 * r/webdev
 * r/selfhosted
 * r/developer
+* r/docker
+
+
+## iOS
+
+- [swiftbysundell](https://www.swiftbysundell.com/)
+- [stackoverflow swift](https://stackoverflow.com/questions/tagged/swift) 
+- [raywenderlich](https://www.raywenderlich.com/ios/articles)
+- [nshipster](https://nshipster.com/)
+- [r/iOSProgramming](https://www.reddit.com/r/iOSProgramming/)
+- [avanderlee](https://www.avanderlee.com/)
+- [hackingwithswift](https://www.hackingwithswift.com/)
+- [theswiftdev](https://theswiftdev.com/news/)
+- [advancedswift](https://www.advancedswift.com/)
+
+
+
 
 ## Offline
 

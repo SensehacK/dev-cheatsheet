@@ -5,7 +5,9 @@
 
 This is where the default openvpn gets initialized automatically.
 
-> sudo nano /etc/default/openvpn
+```sh
+sudo nano /etc/default/openvpn
+```
 
 
 ## Commands

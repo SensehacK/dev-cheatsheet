@@ -43,7 +43,6 @@ This could be mapped as `Final` since we are not initializing it more than once 
 
 ## Initiate Listeners
 
-
 ```swift
 func initiateConductor {
 	AnalyticsLogger.configure()

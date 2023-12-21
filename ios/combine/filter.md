@@ -1,7 +1,8 @@
 # Filter
 
+## Mind Map
 
-
+RxSwift equivalent [distinct](distinct.md)
 
 ## Remove Duplicates
 
@@ -18,7 +19,6 @@ struct CustomModel: Codable, Equatable {
 
 [apple doc | removeDuplicates](https://developer.apple.com/documentation/combine/publisher/removeduplicates()) 
 
-
 ## Distinct Until
 
 DistinctUntil changed equivalent of RxSwift ?
@@ -26,8 +26,3 @@ DistinctUntil changed equivalent of RxSwift ?
 [apple doc | compact map](https://developer.apple.com/documentation/combine/empty/compactmap(_:))
 
 [when to use combine filter and compact map](https://cocoacasts.com/combine-essentials-when-to-use-combine-filter-and-compactmap-operators)
-
-
-## Mind Map
-
-[rxSwift distinct](distinct.md)

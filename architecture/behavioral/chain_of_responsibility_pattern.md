@@ -8,8 +8,6 @@
 [app_delegate](app_delegate.md)
 
 
-
-
 ## Links
 
-https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern
+[Wiki | Chain-of-responsibility_pattern](https://en.wikipedia.org/wiki/Chain-of-responsibility_pattern)

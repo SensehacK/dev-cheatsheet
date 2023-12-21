@@ -10,6 +10,7 @@ sudo apt install ffmpeg
 
 [LinuxHint](https://linuxhint.com/install_ffmpeg_ubuntu_20-04/)
 
+[ffmpeg org](https://www.ffmpeg.org/)
 ## Reduce Video size
 
 CLI tool to quickly compress or rescale the video using ffmpeg tool.

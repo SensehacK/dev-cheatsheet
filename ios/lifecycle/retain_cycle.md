@@ -13,7 +13,7 @@ Multiple objects can be present but the important concept is it is cyclic depend
 
 Only classes and closures are reference types in Swift.
 Everything else is mostly value type.
-Now `actors` are the exeption which was recently introduced.
+Now `actors` are the exception which was recently introduced.
 
 As long as you reference a reference object in a closure body by default it captures strong so to avoid that you can capture them in the closure block syntax
 

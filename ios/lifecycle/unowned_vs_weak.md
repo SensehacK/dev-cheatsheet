@@ -22,7 +22,8 @@ That's where unowned comes in. It comes in two flavours - unowned(safe) and unow
 
 ## Self 
 
-https://stackoverflow.com/questions/39433221/why-do-closures-require-an-explicit-self-when-theyre-all-non-escaping-by-defa
+[why-do-closures-require-an-explicit-self-when-theyre-all-non-escaping-by-defa](https://stackoverflow.com/questions/39433221/why-do-closures-require-an-explicit-self-when-theyre-all-non-escaping-by-defa)
+
 
 
 ## Weak
@@ -51,11 +52,3 @@ When you're not sure whether certain instance would be present at that time in a
 - Harder understanding
 - Always `Optional` self so the code looks ugly `self?.doSomething()`
 
-
-
-
-## References
-
-https://www.swiftbysundell.com/articles/swifts-closure-capturing-mechanics/
-
-https://medium.com/@almalehdev/you-dont-always-need-weak-self-a778bec505ef

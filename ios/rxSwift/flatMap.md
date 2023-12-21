@@ -1,8 +1,6 @@
 # FlatMap
 
-
 Think of it as an 2D array flat mapping into a 1D array
-
 
 # Traditional
 Flat Map 2D => 1D Array of Int values
@@ -15,8 +13,6 @@ Flat Map 2D => 1D Array of Int values
 ]  ====> [1,2,3,4,5,6,7,8,9] 
 
 ```
-
-
 
 ## Reactive
 
@@ -52,17 +48,14 @@ It will wait for all 3 observables to complete their observable chain.
 Flat maps are easier to discern if we one offs observable.of() or observable.just() which only processes one element and sends .onNext(value) => .onComplete(_) event to end its observable chain.
 
 
+[rxswift-deep-inside-flatmap](https://betterprogramming.pub/rxswift-deep-inside-flatmap-1ca150c41b18?gi=5416d91e4282)
 
-https://betterprogramming.pub/rxswift-deep-inside-flatmap-1ca150c41b18?gi=5416d91e4282
-
-
-https://stackoverflow.com/questions/49361386/rxswift-wait-for-observable-to-complete
-
-
+[rxswift-wait-for-observable-to-complete](https://stackoverflow.com/questions/49361386/rxswift-wait-for-observable-to-complete)
 
 ## Error Observable < T.success, T.failure >
 
 Error
+
 ```text
  Declared closure result 'Observable<Result<User, Error>>' is incompatible with contextual type 'Result<T, Error>'
  Generic parameter 'T' could not be inferred

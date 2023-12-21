@@ -8,21 +8,19 @@ By utilizing property wrapper we can just decorate any variable with `@Pubished`
 @Published var someVariable: String = ""
 ```
 
-UserDefault custom propery wrapper example [codable](codable.md)
+UserDefault custom property wrapper example [codable](codable.md)
 
 Note:
 Well suited for SwiftUI + Combine.
 `willSet` internally it calls so that SwiftUI can make optimizations towards what should be refreshed on the UI when compared directly to `CurrentValueSubject` [subjects](subjects.md)
 
 ## Create custom Publisher
+[apple doc | publisher](https://developer.apple.com/documentation/combine/publisher)
 
-https://developer.apple.com/documentation/combine/publisher
+[building-custom-combine-publishers-in-swift](https://www.swiftbysundell.com/articles/building-custom-combine-publishers-in-swift/)
 
+[lets-build-a-custom-publisher-in-combine](https://thoughtbot.com/blog/lets-build-a-custom-publisher-in-combine)
 
-
-https://www.swiftbysundell.com/articles/building-custom-combine-publishers-in-swift/
-
-https://thoughtbot.com/blog/lets-build-a-custom-publisher-in-combine
 
 ## Migrating to @Observable
 
@@ -56,8 +54,7 @@ struct SettingsView: View {
 }
 ```
 
-
-https://useyourloaf.com/blog/migrating-to-observable/
+[migrating-to-observable](https://useyourloaf.com/blog/migrating-to-observable/)
 
 ## Type Erasure 
 
@@ -73,7 +70,7 @@ When an observable is being initialized (it can be hot / cold) without going to 
 ```swift
 let eventPublisher: AnyPublisher<EngineEvent, Never>
 init() {
-        eventPublisher = eventSubject.eraseToAnyPublisher()
+    eventPublisher = eventSubject.eraseToAnyPublisher()
 }
 ```
 
@@ -94,7 +91,6 @@ But author also has an extension with function to add explicit setters via a pro
 
 PS: Sorry for the long winded comment but I had a tough time wrapping my head around with Reactive programming when I was starting out. So adding this comment for others who are reviewing if that makes even 5% sense is helpful.
 
-
 ## Did Set
 
 When you want to debug the Published properties, you can use `didSet` to get some more insights about the lifecycle of these combine properties.
@@ -107,20 +103,16 @@ When you want to debug the Published properties, you can use `didSet` to get som
 }
 ```
  
-
 ## Reference
 
 Great article about how reactive paradigm works in a way. Touches how we can support pre iOS 13 deployment targets and make use of custom property wrappers to have a temporary migration solution for older devices. Or we can use community adopted RxSwift reactive framework to work with it. Either way this article sheds a light on approaching a problem with 3 different ways which I always prefer when making those architectural decisions.
-https://www.swiftbysundell.com/articles/published-properties-in-swift/ 
+
+[published-properties-in-swift](https://www.swiftbysundell.com/articles/published-properties-in-swift/)
 
 [thoughts on number 3](ReadME_thoughts.md)
 
+[Connecting and merging Combine publishers in Swift](https://www.swiftbysundell.com/articles/connecting-and-merging-combine-publishers-in-swift/)
 
-Connecting and merging Combine publishers in Swift
-https://www.swiftbysundell.com/articles/connecting-and-merging-combine-publishers-in-swift/
+[Core location example](https://brightdigit.com/tutorials/combine-corelocation-publishers-delegates/) 
 
-
-Core location example 
-https://brightdigit.com/tutorials/combine-corelocation-publishers-delegates/
-
-https://shareup.app/blog/how-to-clean-up-resources-when-a-combine-publisher-is-cancelled/
+[how-to-clean-up-resources-when-a-combine-publisher-is-cancelled](https://shareup.app/blog/how-to-clean-up-resources-when-a-combine-publisher-is-cancelled/)

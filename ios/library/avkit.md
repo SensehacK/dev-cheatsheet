@@ -7,12 +7,10 @@ AVFoundation
 AVPlayer
 
 
-
 ## SwiftUI POC
 
 SwiftUI + Video player to stream.
-https://www.createwithswift.com/hls-streaming-with-avkit-and-swiftui/
-
+[hls-streaming-with-avkit-and-swiftui](https://www.createwithswift.com/hls-streaming-with-avkit-and-swiftui/)
 
 ## [DRM](DRM.md)
 
@@ -51,18 +49,20 @@ https://developer.apple.com/documentation/avfoundation/media_playback/selecting_
 
 ## Quirks
 
-https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1
+[impossible-to-stop-avplayer](https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1)
+
 
 ### Blank Video but audio audible
 
 iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. Spent around 20 mins debugging what is wrong with my code overall.
 
-My own project POC.
-https://github.com/SensehacK/swift/tree/master/swiftUI/VideoContent
+[My own project POC](https://github.com/SensehacK/swift/tree/master/swiftUI/VideoContent)
+
 
 ## Interview Questions
 
-https://interviewprep.org/avplayer-interview-questions/
+[InterviewPrep | AVPlayer](https://interviewprep.org/avplayer-interview-questions/)
+
 
 ## Video Geeking
 
@@ -79,26 +79,20 @@ Fav TV tech - LG OLEDs C3, G3 -
 Fav Video reviewer - [HDTVTest](https://www.youtube.com/@hdtvtest)
 Fav games technical analysis - Digital Foundry
 Rting website for nitty gritty comparison of Video tech.
-https://aria2.github.io/ - cli download utility
-fav project https://github.com/yt-dlp/yt-dlp
-https://www.ffmpeg.org/ - video conversion cli
-handbrake - video encoder decoder GUI
-decryption AES streams https://github.com/Legrandin/pycryptodome
-geo verification proxy - VPN and browser session - decryption and encryption
-https://sponsor.ajay.app/ - youtube community sourced sponsor sharing like Waze reporting tool.
+[video tools - apps](apps.md#Video%20Tools)
 
 
 
 ## Reference
 
-https://developer.apple.com/documentation/avfoundation/offline_playback_and_storage/using_avfoundation_to_play_and_persist_http_live_streams
+[Awesome Video Github repo](https://github.com/krzemienski/awesome-video/)
 
+[Using AVFoundation to Play and Persist HTTP Live Streams](https://developer.apple.com/documentation/avfoundation/offline_playback_and_storage/using_avfoundation_to_play_and_persist_http_live_streams)
 
-Video article 
-https://medium.com/@burak.oguz/ios-fairplay-drm-integration-with-different-use-cases-8aff3d4248dd
+[Video article ios-fairplay-drm-integration](https://medium.com/@burak.oguz/ios-fairplay-drm-integration-with-different-use-cases-8aff3d4248dd)
 
-https://github.com/Axinom/drm-sample-player-ios
+[github project | drm-sample-player-ios](https://github.com/Axinom/drm-sample-player-ios)
 
-Video Kit UIKit delegate and public functions
-https://www.youtube.com/watch?v=IVyy-VBU-Cc
+[youtube | Video Kit UIKit delegate and public functions](https://www.youtube.com/watch?v=IVyy-VBU-Cc)
+
 

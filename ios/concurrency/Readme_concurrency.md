@@ -48,12 +48,10 @@ If you want to get a refresher of basic concurrency concepts please read through
 
 [background_tasks](background_tasks.md)
 
-
 ## References
 
+[what_went_wrong_with_the_libdispatch](https://tclementdev.com/posts/what_went_wrong_with_the_libdispatch.html)
 
-https://tclementdev.com/posts/what_went_wrong_with_the_libdispatch.html
-
-https://www.avanderlee.com/category/concurrency/
+[avanderlee | concurrency](https://www.avanderlee.com/category/concurrency/)
 
 

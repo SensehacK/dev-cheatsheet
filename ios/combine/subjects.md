@@ -77,11 +77,11 @@ $subject
 	.store(&cancellable)
 ```
 
-https://www.apeth.com/UnderstandingCombine/operators/operatorsPartitioners/operatorsprefix.html
+[operatorsPartitioners/ operatorsprefix](https://www.apeth.com/UnderstandingCombine/operators/operatorsPartitioners/operatorsprefix.html)
 
-https://developer.apple.com/documentation/combine/publisher/dropfirst(_:)
+[publisher/dropfirst](https://developer.apple.com/documentation/combine/publisher/dropfirst(_:))
 
-https://www.donnywals.com/ignore-first-number-of-elements-from-a-publisher-in-combine/
+[ignore-first-number-of-elements-from-a-publisher](https://www.donnywals.com/ignore-first-number-of-elements-from-a-publisher-in-combine/)
 
 ## PassthroughValueSubject
 
@@ -144,11 +144,10 @@ Toggle(isOn: $character.isSelected){
 ```
 ## Reference
 
-https://stackoverflow.com/a/63404168/5177704
+[SO](https://stackoverflow.com/a/63404168/5177704)
 
-https://www.avanderlee.com/combine/passthroughsubject-currentvaluesubject-explained/
+[avanderlee | passthroughsubject currentvaluesubject explained](https://www.avanderlee.com/combine/passthroughsubject-currentvaluesubject-explained/)
 
+[avanderlee | published-property-wrapper](https://www.avanderlee.com/swiftui/published-property-wrapper/)
 
-https://www.avanderlee.com/swiftui/published-property-wrapper/
-
-https://stackoverflow.com/questions/60482737/what-is-passthroughsubject-currentvaluesubject/63404168#63404168
+[SO | what-is-passthroughsubject-currentvaluesubject](https://stackoverflow.com/questions/60482737/what-is-passthroughsubject-currentvaluesubject/63404168#63404168)

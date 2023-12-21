@@ -1,4 +1,6 @@
+# Distinct
 
+## Syntax
 ```swift
 sessionState
 	.rx
@@ -32,4 +34,9 @@ User Deactivated: old(unique_id) vs new(nil) - session Coordinator purgeEntries
 
 4.
 User activated & app isn't closed
-old(nil) vs new(unique_id)			
+old(nil) vs new(unique_id)
+
+
+## Mind Map
+
+Combine equivalent [filter](filter.md)

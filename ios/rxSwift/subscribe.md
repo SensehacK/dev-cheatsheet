@@ -6,7 +6,9 @@ Subscription is the basis of any Observable being observed by its observers.
 You need to subscribe in order to tap into the stream of events the observable is passing to its subscribers. 
 
 
+## Mind Map
 
+Combine equivalent [sink](sink.md)
 
 ## Normal Subscribe
 

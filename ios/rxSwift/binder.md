@@ -9,6 +9,7 @@ public extension Session.Storage {
     func add(_ entry: Session.Entry) {
         sessionEntryStack.append(entry)
     }
+}
 ```
 
 ```swift
@@ -20,6 +21,7 @@ public extension Reactive where Base: Session.Storage {
             base.add(entry)
         }
     }
+}
 ```
 
 
@@ -30,7 +32,6 @@ ObserverVariable
 .mapToTrue()
 .bind(onNext: ViewModel.subject.onNext)
 .disposed(by: disposeBag)
-
 ```
 
 

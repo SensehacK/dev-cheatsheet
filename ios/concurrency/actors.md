@@ -90,3 +90,5 @@ The code snippet which makes sure we are on the main thread is `MainActor.run` ,
 [wwdc2021/10254](https://developer.apple.com/videos/play/wwdc2021/10254)
 
 [wwdc2021/10194](https://developer.apple.com/videos/play/wwdc2021/10194)
+
+[how-to-use-mainactor-to-run-code-on-the-main-queue](https://www.hackingwithswift.com/quick-start/concurrency/how-to-use-mainactor-to-run-code-on-the-main-queue)

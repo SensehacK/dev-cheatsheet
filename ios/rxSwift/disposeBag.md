@@ -3,10 +3,8 @@
 
 ## Initialize
 
-
 ```swift
 private var customDisposeBag = DisposeBag()
-
 ```
 
 
@@ -25,8 +23,11 @@ customObservable
 	})
 	.disposed(by: customDisposeBag)
 
-
 // Stop tracking by simply disposing the bindings
 customDisposeBag = .init()
-        
 ```
+
+
+## Mind Map
+
+Combine equivalent [anyCancellable](anyCancellable.md)
