@@ -27,3 +27,30 @@ print(person1 == person2) // true
 print(person1 == person3) // false
 ```
 
+
+## Objective C | NSObject | isEqual | ==
+
+Because your class inherits from `NSObject` you do not need to use the swift protocol `Equatable` instead you must override the `NSObject` method `isEquals`:
+
+
+Code Snippet
+```swift
+class Person: NSObject, NSCoding {
+	var name: String
+	var age: String
+	init(name: String, age: Int) {
+	    self.name = name
+	    self.age = age
+	}
+	
+	override func isEqual(_ object: Any?) -> Bool {
+	    return name == (object as? Person)?.name
+	}
+}
+```
+[SO post link](https://stackoverflow.com/questions/37085839/overridden-function-for-equatable-type-not-called-for-custom-class-that-subcl)
+
+https://stackoverflow.com/questions/37390172/redundant-conformance-of-generic-to-protocol-equatable-in-swift-2-2
+## Resources
+
+https://www.avanderlee.com/swift/equatable-comparible-conformance/

@@ -54,6 +54,15 @@ let dynamicRecordFields = arrFields.filter { $0.hasDynamicRecordId }
 print(dynamicRecordFields)
 ```
 
+Inline filter on sequence types
+
+```swift
+let characteristic = characteristics.filter { $0 == .audible }
+
+// OR
+for character in characteristics.filter({ $0 == .audible })
+```
+
 
 ## Checking conditions in Map
 
