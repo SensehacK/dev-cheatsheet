@@ -8,7 +8,7 @@ Used basic installation steps for network local DNS blocker on my local network.
 
 
 
-## [plex_media_server](plex_media_server.md)
+## [plex](plex.md)
 
 ## [jellyfin](jellyfin.md)
 

@@ -117,3 +117,15 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 ## Security
 
 - [SSL test website](https://www.ssllabs.com/ssltest)
+
+
+## Server
+
+- Plex media server
+- Jellyfin
+- Prism
+- Plex
+- Infuse
+- Plex Amp
+- LunaSea
+- nzb360

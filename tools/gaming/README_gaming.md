@@ -11,6 +11,12 @@
 
 [nintendo_wii_u](nintendo_wii_u.md)
 
+[PCMR](PCMR.md)
+
 [playnite](playnite.md)
 
+[playstation](playstation.md)
+
 [retro_pie](retro_pie.md)
+
+[xbox](xbox.md)

@@ -1,8 +1,8 @@
 # Summary
 
-## [architecture](architecture/ReadMe_architecture.md)
+## [Architecture](architecture/ReadMe_architecture.md)
 
-## [concurrency](ios/concurrency/README_concurrency.md)
+## [Concurrency](ios/concurrency/README_concurrency.md)
 
 ----------------------------------------------------
 
@@ -102,7 +102,7 @@
 
 ----------------------------------------------------
 
-## [backend](backend/README_backend)
+## [Backend](backend/README_backend)
 
 ### [node](backend/node/README_node)
 
@@ -112,7 +112,7 @@
 
 ----------------------------------------------------
 
-## [database](database/README_database)
+## [Database](database/README_database)
 
 ### [docker](database/docker/README_docker)
 
@@ -124,10 +124,10 @@
 
 ## [Network](network/README_network)
 
-## All contents
+## [Hardware](hardware/README_hardware.md)
 
-[hardware](hardware/README_hardware.md)
+----------------------------------------------------
 
-[misc](misc/README_misc)
+## [Misc](misc/README_misc)
 
 [algorithm](algorithm/README_algorithm)

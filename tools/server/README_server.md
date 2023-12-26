@@ -9,11 +9,13 @@
 
 [lidarr](lidarr.md)
 
-[plex_media_server](plex_media_server.md)
+[plex](plex.md)
 
 [prowlarr](prowlarr.md)
 
 [radarr](radarr.md)
+
+[readarr](readarr.md)
 
 [samba](samba.md)
 
@@ -22,3 +24,9 @@
 ## Other services
 
 [pi_hole](pi_hole.md)
+
+
+## References
+
+[easy panel](https://easypanel.io/)
+Next Generation - Server Control Panel

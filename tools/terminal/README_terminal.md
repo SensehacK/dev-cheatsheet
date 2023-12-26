@@ -6,7 +6,7 @@
 
 [homebrew](../../tools/terminal/homebrew.md)
 
-[c_language_compilation](../../tools/terminal/c_language_compilation.md)
+[gcc](gcc.md)
 
 [cli](../../tools/terminal/cli.md)
 

@@ -13,6 +13,7 @@ https://trash-guides.info/Radarr/
 
 If you need to read some background around ARM 32 architecture issues with Raspberry Pi, navigate to this [link](tools/server/sonarr#Background%20ARM32)
 
+## [Server Apps](apps.md#Server)
 
 ## Links
 

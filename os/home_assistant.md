@@ -2,18 +2,15 @@
 
 ## Setup
 
-
 ## Config
 
-
 ## Backup
-
 
 ## Addons
 
 RPC Shutdown
 
-```
+```yaml
 service: hassio.addon_stdin
 data: 
   addon: core_rpc_shutdown
@@ -22,9 +19,7 @@ data:
 ```
 
 LG Web OS companion
-
-Turn on 
-- Source: https://github.com/JPersson77/LGTVCompanion
+[Turn on Source](https://github.com/JPersson77/LGTVCompanion)
 
 For C1 and C2 it's All Settings->General->Devices->External Devices->TV On With Mobile->Turn on via Wi-Fi.
 Open the administrative interface of your router, and set a static DHCP lease for your WebOS devices, i.e. to ensure that the displays always have the same IP-address on your LAN.
@@ -34,14 +29,12 @@ Aprilaire support
 
 Still WIP but no avail yet. Even with Wifi model
 I just need the data and logging for pretty charts and monitor how things change for the whole day or every hour or so.
+[home assistant | forums](https://community.home-assistant.io/t/aprilaire-thermostat-8800-any-modbus-experts/341414/56)
 
-https://community.home-assistant.io/t/aprilaire-thermostat-8800-any-modbus-experts/341414/56
 
+[Need to watch this as well](https://www.youtube.com/watch?v=3sRfxc9gBgI)
 
-Need to watch this as well
-https://www.youtube.com/watch?v=3sRfxc9gBgI
-
-https://www.home-assistant.io/integrations/humidifier.mqtt/
+[humidifier](https://www.home-assistant.io/integrations/humidifier.mqtt/)
 
 Idea: Maybe tap into aprilaire stats  website or have an android be the mediator between Home Assistant and Aprilaire Thermostat.
 Also get values off the data from the app or just get a temperature sensor in the house to monitor full day temps. But that way I won't be able to control the weather from Home Assistant. Maybe have a callback to Google Assistant or Alexa towards making sure sending the weather data or changing temps.
@@ -53,7 +46,6 @@ First thing to do is to add Alexa integration.
 
 ## Tuya Smart Life
 
-
 Creating Dev API account with 1106 Login error
 
 Account ID: 
@@ -64,15 +56,14 @@ Make sure below 11 chars and no complex symbols $@#!%@
 
 Don't use Tuya IOT Api developer account credentials here.
 
+[tuya_login_error_1106_permission_deny](https://www.reddit.com/r/homeassistant/comments/q3hnlz/tuya_login_error_1106_permission_deny/)
 
-https://www.reddit.com/r/homeassistant/comments/q3hnlz/tuya_login_error_1106_permission_deny/
 
 
-Renew my API again for 6 months or restart my Home Assistant to work with Tuya integration.
-https://github.com/home-assistant/core/issues/80278
+[Renew my API again for 6 months or restart my Home Assistant to work with Tuya integration](https://github.com/home-assistant/core/issues/80278)
 
-Thread to similar problem of mine.
-https://community.home-assistant.io/t/tuya-devices-entities-gone-missing/347445/111
+[Thread to similar problem of mine](https://community.home-assistant.io/t/tuya-devices-entities-gone-missing/347445/111).
+
 Nov 1st week post by [chrisleeca](https://community.home-assistant.io/u/chrisleeca)[Chris Lee](https://community.home-assistant.io/u/chrisleeca)
 
 

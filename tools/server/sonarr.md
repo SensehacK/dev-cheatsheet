@@ -59,6 +59,6 @@ This works fine with index / trackers
 image: linuxserver/jackett:arm32v7-version-v0.20.754
 Source [dockerhub](https://hub.docker.com/r/linuxserver/jackett)
 
-
+## [Server Apps](apps.md#Server)
 
 

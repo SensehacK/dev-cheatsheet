@@ -18,6 +18,12 @@ What I did on my setup is this workaround :
 
 [Configs](https://github.com/haugene/vpn-configs-contrib/tree/main/openvpn)
 
+## Apps
+
+- LunaSea
+- nzb360
+
+
 ## Mind Map
 
 [open_vpn](open_vpn.md)
