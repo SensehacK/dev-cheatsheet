@@ -1,9 +1,7 @@
 ## List
 
-[[README_algorithm]]
+[Math](misc/math/README_math.md)
 
 [[README_regular_expressions]]
-
-[[README_logic]]
 
 [resources](misc/resources.md)

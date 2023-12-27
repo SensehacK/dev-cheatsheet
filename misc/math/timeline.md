@@ -10,7 +10,7 @@ algorithm design pattern data structures
 
 [https://www.reddit.com/r/cscareerquestions/comments/6uiod1/hackerrank\_vs\_leetcode\_vs\_codechef\_which\_one/](https://www.reddit.com/r/cscareerquestions/comments/6uiod1/hackerrank_vs_leetcode_vs_codechef_which_one/)
 
-CAP theorem
+[CAP theorem](theorems.md#CAP)
 
 SF all the way!
 

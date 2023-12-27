@@ -1,3 +1,0 @@
-# Logic
-
-[[logic_gates]]
