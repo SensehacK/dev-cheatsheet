@@ -24,3 +24,10 @@
 [[permissions]]
 
 [profiles](profiles.md)
+
+
+## References
+
+[Classic Mac OS](https://en.wikipedia.org/wiki/Classic_Mac_OS)
+
+[Mac OS X | macOS](https://en.wikipedia.org/wiki/MacOS)

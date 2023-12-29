@@ -32,7 +32,7 @@ Enjoy!
 
 [software_updates](software_updates.md)
 
-## [Terminologies](terminologies.md)
+## [Terminologies](architecture/terminologies.md)
 
 ## Advance Topics
 

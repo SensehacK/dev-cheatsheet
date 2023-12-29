@@ -12,6 +12,8 @@
 
 ## [Logic Gates](logic_gates.md)
 
+## [Terminologies](misc/math/terminologies.md)
+
 ## [Theorems](theorems.md)
 
 ## [Timeline](misc/math/timeline.md)

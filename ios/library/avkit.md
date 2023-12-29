@@ -18,6 +18,7 @@ SwiftUI + Video player to stream.
 
 ## [AVPlayer](avPlayer.md)
 
+## [AVAsset](avAsset.md)
 
 ## AVPlayerItem
 
@@ -46,6 +47,11 @@ do {
 ### Multiple Tracks 
 
 https://developer.apple.com/documentation/avfoundation/media_playback/selecting_subtitles_and_alternative_audio_tracks
+
+
+### Loading media data async
+
+[apple dev | Loading media data asynchronously](https://developer.apple.com/documentation/avfoundation/media_assets/loading_media_data_asynchronously)
 
 ## Quirks
 

@@ -2,7 +2,7 @@
 
 [API_design](API_design.md)
 
-[avkit](avkit.md)
+[avKit](avKit.md)
 
 [codable](codable.md)
 
@@ -36,7 +36,7 @@
 
 [[macaw]]
 
-[[math]]
+[[ios/library/math]]
 
 [[moya]]
 
