@@ -22,3 +22,14 @@ https://hardforum.com/threads/3080ti-unbearable-coil-whine-through-speakers.2017
 https://www.reddit.com/r/techsupport/comments/pz3mzk/new_rtx_3080_ti_weird_sound_while_gaming/
 
 #### Updates Drivers
+
+### Ge Force Experience
+
+### Error Code: 0x0003
+
+To fix this `Run as Admin` for CMD in windows
+type and press enter. Finally, restart the PC.
+```sh
+netsh Winsock reset
+```
+
