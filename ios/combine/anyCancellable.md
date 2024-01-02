@@ -4,6 +4,24 @@
 
 RxSwift equivalent of [disposeBag](disposeBag.md)
 
+
+## Initialize
+
+```swift
+private var cancellables = Set<AnyCancellable>()
+private var cancellable = AnyCancellable?
+```
+
+## Deinitialize
+
+```swift
+deinit {
+	cancellables.removeAll()
+	cancellable = nil
+}
+```
+## Syntax
+
 ```swift
 class Name {
 	var cancellable = Set<AnyCancellable>()
@@ -44,7 +62,7 @@ One thing I have observed while making my network manager code for Combine in it
 
 It is because maybe I'm accessing the combine function of a class instance in a function. Which limits its scope of class reference.
 Because if I use a singleton instance of `Network Manager` it just works fine.
-I think so after my 15 mins debugging, I believe because I create the reference of `Network Manager` in a function scope of the consumer. The Arc or `anycancellables` is deinitializing itself or subscription is ending quickly.
+I think so after my 15 mins debugging, I believe because I create the reference of `Network Manager` in a function scope of the consumer. The Arc or `anycancellables` is de-initializing itself or subscription is ending quickly.
 `.print()` operator really helped how to narrow down the publisher - subscription chain internal events. 
 
 More Learning Nov 2023

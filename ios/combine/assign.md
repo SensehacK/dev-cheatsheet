@@ -6,10 +6,10 @@ Assign is the equivalent of `bind` of RxSwift with Swift Combine.
 RxSwift reference
 [bind_vs_subscribe](bind_vs_subscribe.md)
 
-
 ## Usage
 
 ### Model
+
 ```swift
 struct Quotes: Decodable {
     let quotes: [Quote]
@@ -24,6 +24,7 @@ struct Constants {
     static let quotesAPIURL = "https://dummyjson.com/quotes"
 }
 ```
+
 ### View
 
 ```swift
@@ -51,6 +52,7 @@ struct QuotesView: View {
 ```
 
 ### ViewModel
+
 ```swift
 class QuotesViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
@@ -81,7 +83,6 @@ class QuotesViewModel: ObservableObject {
 }
 ```
 
-
 ### UIKit
 
 No need to do this way in Swift UI -> Just use `@Published` and SwiftUI is smart enough to figure out the subscriber / publisher model.
@@ -106,8 +107,6 @@ init() {
 
 [combine-vs-async](https://peterfriese.dev/posts/combine-vs-async/)
 
-
-
 ## Binding 
 
 ### State and data flow
@@ -116,9 +115,7 @@ init() {
 
 [Combine’s What Makes SwiftUI Really Shine](https://infinum.com/blog/combine-makes-swiftui-shine/)
 
-
 ### onChange Event
-
 
 ```swift
 struct ContentView: View {
@@ -133,3 +130,4 @@ struct ContentView: View {
 }
 ```
 
+[hacking with swift | run code when state changes onChange](https://www.hackingwithswift.com/quick-start/swiftui/how-to-run-some-code-when-state-changes-using-onchange)

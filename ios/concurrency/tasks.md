@@ -28,8 +28,6 @@ print(await basicTask.value)
 Lots of more examples of Task part of concurrency framework. WWDC 2021.  
 [avanderlee | concurrency Tasks](https://www.avanderlee.com/concurrency/tasks/)
 
-
-
 ## Context Switching
 
 CPU context switching happens using different time sharing / slicing algorithms and OS handles the priority of things to queue up to make sure efficient usage of limited resources at its disposal.
@@ -50,20 +48,41 @@ UI - KDE plasma, Gnome, Windows Start, MacOS Springboard / launchpad / dock.
 
 Btw I use `Arch` Linux.  **r/linuxMasterRace** meme
 
-
 ## Delay in Task
 
 Adding a [timer](../ios/lifecycle/timer.md) in Swift language doc
 
+### Async context
+
+```swift
+func foo() async {
+    try await Task.sleep(nanoseconds: UInt64(seconds * Double(NSEC_PER_SEC)))
+    // Put your code which should be executed with a delay here
+}
+```
+
+[how to create a delay in swift SO](https://stackoverflow.com/questions/27517632/how-to-create-a-delay-in-swift)
+
+[delaying-an-async-swift-task | swift by sundell](https://www.swiftbysundell.com/articles/delaying-an-async-swift-task/)
+
+### GCD
+
+```swift
+DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
+    // Put your code which should be executed with a delay here
+}
+```
+
+[Delay A Function Call and Sleep A Thread in Swift](https://www.advancedswift.com/delay-function-sleep-thread-swift/)
 
 ## Articles 
 
-Tasks vs OnAppear https://byby.dev/swiftui-task-vs-onappear
-
+[SwiftUI Tasks vs OnAppear](https://byby.dev/swiftui-task-vs-onappear) 
 
 ## Result Type
 
 Code snippet from [HWS](https://www.hackingwithswift.com/quick-start/concurrency/how-to-get-a-result-from-a-task)
+
 ```swift
 enum LoadError: Error {
     case fetchFailed, decodeFailed
@@ -103,9 +122,6 @@ func fetchQuotes() async {
 
 await fetchQuotes()
 ```
-
-
-
 
 ## Mind Map
 

@@ -80,8 +80,6 @@ imageView1.image = images["moe"]
 imageView2.image = images["larry"]
 imageView3.image = images["curly"]
 
-
-
 func downloadImages(names: [String]) async -> [UIImage] {
     await withTaskGroup(of: (String, UIImage).self) { [self] group in
         for name in names {

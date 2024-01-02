@@ -1,11 +1,9 @@
-
-
 # Architecture
 
 ## Intro
 
 I love architecture and design patterns.
-This is one of those head scratchers where I thought I would start writing things out how I'm understanding the patterns in real code examples.
+This is one of those head scratcher where I thought I would start writing things out how I'm understanding the patterns in real code examples.
 
 So it won't be fully fleshed out but nothing in this whole cheatsheet is. Everything is just a scratch pad for me to keep my brain stimulated with new things and gotchas.
 
@@ -20,7 +18,6 @@ Enjoy!
 ## [Creational Patterns](creational_patterns.md)
 
 ## [Structural Pattern](structural_pattern.md)
-
 
 ## SDLC
 
@@ -38,11 +35,13 @@ Enjoy!
 
 [Swift Concurrency](ios/concurrency/Readme_concurrency.md)
 
-Reactive Paradigm 
-[RxSwift](ios/rxSwift/README_rxSwift.md)
+### Reactive Paradigm
+
+[RxSwift](ios/rxSwift/README_rxSwift.md) 
 [Combine](ios/combine/ReadMe_combine.md)
 
-View Debugging, Memory Graph, Method Swizzling
+### View Debugging, Memory Graph, Method Swizzling
+
 [Performance](ios/xcode/performance.md)
 [ARC](ios/lifecycle/arc.md)
 [debug](ios/xcode/debug.md)
@@ -66,4 +65,3 @@ Higher Order functions [short_hands](ios/swift/short_hands.md)
 [Wiki | Design_pattern](https://en.wikipedia.org/wiki/Design_pattern)
 
 [Medium | iOS pattern](https://singhdivesh.medium.com/according-to-wikipedia-b1afa6de08c) 
-
