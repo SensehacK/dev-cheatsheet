@@ -20,7 +20,9 @@ For getting the Bundle Identifier for any mac application which could be useful 
 
 Method 1 :
 
-> osascript -e 'id of app "SomeApp"'
+```sh
+osascript -e 'id of app "SomeApp"'
+```
 
 Method 2 :
 

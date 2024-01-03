@@ -13,8 +13,7 @@ export TEST_RUNNER_QAENV=EnvironmentQA1
 ```bash
 unset variablename 
 ```
-
-https://www.cloudbooklet.com/how-to-set-list-and-remove-environment-variables-in-linux/
+[how-to-set-list-and-remove-environment-variables-in-linux](https://www.cloudbooklet.com/how-to-set-list-and-remove-environment-variables-in-linux/)
 
 
 ## Terminal

@@ -21,9 +21,7 @@ The procedure to run the .sh file shell script on Linux is as follows:
     sh script-name-here.sh
     ORbash script-name-here.sh
 
-
-[Source](https://www.cyberciti.biz/faq/run-execute-sh-shell-script/)
-
+[run-execute-sh-shell-script](https://www.cyberciti.biz/faq/run-execute-sh-shell-script/)
 
 ## Escape space characters
 
@@ -37,8 +35,8 @@ DESTINATION_PLATFORM_VALUE="generic/platform=iOS\ Simulator"
 ```
 
 
+[SO | bash-variables-with-spaces](https://stackoverflow.com/questions/5819423/bash-variables-with-spaces)
 
-https://stackoverflow.com/questions/5819423/bash-variables-with-spaces
 
 
 
@@ -46,18 +44,18 @@ https://stackoverflow.com/questions/5819423/bash-variables-with-spaces
 
 Try using this command to ensure your script is added to the boot sequence:
 
-```
+```sh
 sudo update-rc.d /etc/init.d/nameofscript.sh defaults
 ```
 
 Note that you can make a script executable using the +x option with chmod:
 
-```
+```sh
 chmod +x /etc/init.d/nameofscript.sh
 ```
-https://raspberrypi.stackexchange.com/questions/15475/run-bash-script-on-startup
+
+[run-bash-script-on-startup](https://raspberrypi.stackexchange.com/questions/15475/run-bash-script-on-startup)
 
 
-## Cron job
 
-https://opensource.com/article/22/3/scheduling-tasks-linux-cron
+

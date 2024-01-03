@@ -6,7 +6,9 @@ Sometimes macOS doesn’t detect my audio device like “AirPods Pro” or Googl
 
 We can just kill the audio service and restart it automatically using the following command.
 
-> sudo kill -9 `ps ax|grep 'coreaudio[a-z]' | awk '{print $1}'`
+```sh
+sudo kill -9 `ps ax|grep 'coreaudio[a-z]' | awk '{print $1}'`
+```
 
 Enter the password in the terminal and it is done. It should be working fine with the new audio device to switch the audio input and output. [Stack Exchange Link](https://apple.stackexchange.com/questions/16842/restarting-sound-service)
 

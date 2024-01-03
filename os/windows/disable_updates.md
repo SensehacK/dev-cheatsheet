@@ -3,10 +3,8 @@
 
 ## Disable notification
 
-
-
+disable Updates are available
 ```text
-
 To disable the "Updates are available" popup in Windows 10, do the following.
 
     Open an elevated command prompt.
@@ -45,5 +43,4 @@ icacls musnotificationux.exe /remove:g Everyone
 That's it. Credits go to jingyu9575 of superuser.
 ```
 
-
-https://winaero.com/disable-updates-available-windows-10/
+[disable-updates-available-windows-10](https://winaero.com/disable-updates-available-windows-10/)

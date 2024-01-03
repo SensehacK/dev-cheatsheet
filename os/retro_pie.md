@@ -20,8 +20,6 @@ Argon M2 SSD case Raspberry Pi 4
 
 Configuration -> Bluetooth.
 
-
-
 ### 4K Lag issue
 
 [Flag to set it to 1080P](https://retropie.org.uk/docs/Pi4/?h=config.txt#issues-using-a-4k-tv)

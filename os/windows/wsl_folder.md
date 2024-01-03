@@ -12,7 +12,9 @@ I'm on Windows 10 Home with May Update and have Ubunto 18.04 for WSL installed, 
 
 Open in your designated file path and run the command
 
-> ubuntu run
+```sh
+ubuntu run
+```
 
 Which will open the ubuntu WSL in that specific folder.
 
@@ -22,13 +24,17 @@ If you're in specific file path and you just need to view that directory or work
 
 You could utilize this command and it will directly open up the $pwd path in your file explorer.
 
-> explorer.exe .
+```sh
+explorer.exe .
+```
 
 [Source](https://www.howtogeek.com/426749/how-to-access-your-linux-wsl-files-in-windows-10/)
 
 Or if you need VS Code to open up a project.
 
-> code .
+```sh
+code .
+```
 
 ## Windows Path
 
@@ -36,7 +42,9 @@ You can set path on default shell
 
 By this I can open a specific $pwd in explorer to view it So when we enter ```open .`` it would internally convert that syntax to```explorer.exe .\`\` Pretty sweet Window to Unix support Header bridge.
 
-> open .
+```sh
+open .
+```
 
 [Stack Overflow Link](https://stackoverflow.com/questions/42516777/is-docker-running-within-wsl-or-connecting-back-to-windows/55075969#55075969)
 
@@ -48,7 +56,9 @@ How to install 'zsh' in windows 10 WSL subsystem & it also shares proper screens
 
 [GitHub Gist](https://gist.github.com/noygal/6b7b1796a92d70e24e35f94b53722219)
 
-> curl -o- [https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh](https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh) \| bash
+```sh
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.0/install.sh | bash
+```
 
 Restart your terminal after install.
 
@@ -63,13 +73,19 @@ export NVM_DIR="$HOME/.nvm"
 
 Installing the LTS version using node version manager
 
-> nvm install --lts
+```sh
+nvm install --lts
+```
 
 Using the LTS version using node version manager
 
-> nvm use --lts
+```sh
+nvm use --lts
+```
 
 You can also add this command to the end of your ZSH config file:
 
-> echo "nvm use --lts" &gt;&gt; ~/.zshrc
+```sh
+echo "nvm use --lts" &gt;&gt; ~/.zshrc
+```
 

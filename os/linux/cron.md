@@ -22,3 +22,7 @@ crontab -e
 
 ## Wiki
 [Cron Wiki](https://en.wikipedia.org/wiki/Cron)
+
+## Cron job
+
+[scheduling-tasks-linux-cron](https://opensource.com/article/22/3/scheduling-tasks-linux-cron)

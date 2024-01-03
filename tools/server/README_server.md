@@ -21,6 +21,8 @@
 
 [sonarr](sonarr.md)
 
+[transmission_open_VPN](transmission_open_VPN.md)
+
 ## Other services
 
 [pi_hole](pi_hole.md)

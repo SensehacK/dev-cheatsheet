@@ -9,4 +9,6 @@ Users in linux environment
 
 ### VCHI Initialization failed
 
-https://raspberrypi.stackexchange.com/questions/7546/munin-node-plugins-vchi-initialization-failed
+[vchi initialization failed thread](https://raspberrypi.stackexchange.com/questions/7546/munin-node-plugins-vchi-initialization-failed)
+
+

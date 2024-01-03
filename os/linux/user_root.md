@@ -28,13 +28,17 @@ That `sudo` command is what makes you a temporary root access from normal user f
 
 Just type in shell and enter
 
-> su -
+```sh
+su -
+```
 
 Enter the root credentials and if you don't have any just refer to this [link](https://vitux.com/how-to-become-root-user-in-ubuntu-command-line-using-su-and-sudo/) which explains how to reset your user credentials of any user.
 
 You can verify which user you're currently logged in via the command
 
-> whoami
+```sh
+whoami
+```
 
 which will return the user logged in.
 
@@ -56,4 +60,5 @@ Open the Terminal
 ```sh
 sudo pcmanfm
 ```
+
 [File manager with root privileges](https://forums.raspberrypi.com/viewtopic.php?t=164083)

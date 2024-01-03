@@ -1,28 +1,15 @@
+# Fresh Install
 
+## Dev environment
 
-Dev environment
-
-
-- firefox
 - google drive
 - dropbox
-- [xcodes app](https://github.com/XcodesOrg/XcodesApp/releases/) - multiple xcode app setup
 - [iterm](https://iterm2.com/) 
 - [home brew](https://brew.sh/) install
 - zsh [shell brew path](fresh_install.md#brew_path) 
 - [ohmyzsh](https://ohmyz.sh/#install) 
 - rosetta install
 - bartender app
-- be focused pro - pomodoro app
-- github desktop
-- vscode
-- 
-- Things app
-- fantastical app 2 (microsoft outlook personal requires app password not traditional password)
-- istats pro
-- 1password
-- [Authy](https://authy.com/download/) 
-- [obsidian](https://obsidian.md/download) 
 - screenshots directory location
 - cocoapods
 - finder enhancements ( file extensions, [hidden_files](hidden_files.md), folders on top, search current folder, disable tags, disable cloud in sidebar, default home location)
@@ -34,20 +21,13 @@ Dev environment
 - Keyboard macros (Keychron Via)
 - video conferencing tools
 - External displays same 
-- [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 - [dracula theme](https://draculatheme.com/) everywhere iterm, xcode, vscode
--  macos quirks [keyboard](os/mac/keyboard.md)
+- macos quirks [keyboard](os/mac/keyboard.md)
 - razer synapse not supported after mac os mojave. So use a free app called [mac mouse fix](https://mousefix.org/about/)
-- [rescue Time](https://www.rescuetime.com/download) 
 - mac os accessibility - zoom scroll mouse modifier
 - `brew install ffmpeg`
 - install youtube-dl
 - install nvm - for node package manager
-- [IINA video player](https://iina.io/) 
-- [proxyman](https://proxyman.io/) - network sniffer 
-- [Postman](https://www.postman.com/downloads/) for API prototyping 
-- [Rectangle](https://rectangleapp.com/) 
-
 
 
 ## Small Caveats
@@ -69,7 +49,6 @@ eval $(/opt/homebrew/bin/brew shellenv)
 MDM reinstall and Provisioning profile as well as disable remote management 
 
 [factory reset macbook command r](https://iboysoft.com/questions/can-i-factory-reset-company-macbook-with-command-r.html)
-
 
 [remote-management-when-installing-macos](https://apple.stackexchange.com/questions/311052/why-do-i-get-a-remote-management-step-when-installing-macos)
 

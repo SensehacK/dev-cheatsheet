@@ -4,6 +4,8 @@
 
 [browsers](../tools/browsers/README_browsers.md)
 
+[communication](../tools/communication/README_communication.md)
+
 [editors](../tools/editors/README_editors.md)
 
 [gaming](../tools/gaming/README_gaming.md)

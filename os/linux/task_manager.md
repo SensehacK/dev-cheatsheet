@@ -5,5 +5,7 @@
 
 Use a tool call 'HTOP' to display all the processes and summary of resources being used by the machine.
 
-> htop
+```sh
+htop
+```
 

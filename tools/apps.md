@@ -6,7 +6,7 @@ All my favorite apps listed here used in SDLC.
 
 ## Browsers
 
-- Firefox Nightly / Main
+- [Firefox](firefox.md) Nightly / Main 
 - Safari 
 
 ## Writer
@@ -17,6 +17,14 @@ All my favorite apps listed here used in SDLC.
 - [netbox](https://docs.netbox.dev/en/stable/)
 - [bookstackapp](https://www.bookstackapp.com/)
 - [moinmo](https://moinmo.in/) 
+- 1Writer (iOS + Dropbox Sync)
+
+## Must Have
+
+- [alfred](alfred.md) 
+- [Rectangle](https://rectangleapp.com/) 
+-  istats pro
+- [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 
 ### Other notes
 
@@ -39,11 +47,13 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 ## Task Manager
 
 - Things by Cultured Code
-
+- be focused pro - pomodoro app
 ## Scheduler
 
-- Fantastical
+- Fantastical  (microsoft outlook personal requires app password not traditional password)
 - Focused Pro
+- [rescue Time](https://www.rescuetime.com/download) 
+- 
 
 ## Documentation Reference
 
@@ -51,12 +61,12 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 ## Terminal
 
-- iTerm
+- [iTerm](iterm2.md)
 
 ## Debugging 
 
-- Proxyman
-- Postman
+- [Proxyman](https://proxyman.io/) - network sniffer 
+- [Postman](https://www.postman.com/downloads/) for API prototyping 
 - Little Snitch
 
 ## Utility
@@ -89,8 +99,9 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 ## IDE
 
-- Xcode
-- VS Code - Open Source fork
+- [Xcode](README_xcode.md)
+-  [VS Code](README_vscode.md) - Open Source fork 
+- [xcodes app](https://github.com/XcodesOrg/XcodesApp/releases/) - multiple xcode app setup
 
 ## Collaboration
 
@@ -106,6 +117,7 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - [kdenlive](https://kdenlive.org/en/features/) 
 - [ffmpeg](https://ffmpeg.org/)
 - [m4vgear](https://www.m4vgear.com/m4vgear-for-windows.html)
+- [IINA video player](https://iina.io/) 
 - cli download utility [aria2](https://aria2.github.io/)
 - fav project [youtube_dl](youtube_dl.md)
 - [ffmpeg](ffmpeg.md) video conversion cli
@@ -117,14 +129,14 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 ## Security
 
 - [SSL test website](https://www.ssllabs.com/ssltest)
-
+- [Authy](https://authy.com/download/) 
+- 1password
 
 ## Server
 
-- Plex media server
-- Jellyfin
+- [Plex](plex.md)
+- [Jellyfin](jellyfin.md)
 - Prism
-- Plex
 - Infuse
 - Plex Amp
 - LunaSea
