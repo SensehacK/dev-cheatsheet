@@ -1,9 +1,7 @@
 [
-  "obsidian-kanban",
-  "obsidian-minimal-settings",
   "url-into-selection",
-  "code-block-copy",
-  "obsidian-icon-folder",
   "obsidian-advanced-slides",
-  "obsidian-local-images-plus"
+  "obsidian-minimal-settings",
+  "obsidian-icon-folder",
+  "obsidian-kanban"
 ]

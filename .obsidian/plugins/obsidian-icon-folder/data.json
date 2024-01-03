@@ -1,16 +1,16 @@
 {
   "settings": {
-    "migrated": true,
+    "migrated": 3,
     "iconPacksPath": ".obsidian/plugins/obsidian-icon-folder/icons",
     "fontSize": 16,
     "emojiStyle": "none",
     "iconColor": null,
     "recentlyUsedIcons": [
+      "TiMessage",
       "SiVisualstudiocode",
       "TiBrandVscode",
       "SiVim",
-      "TiTool",
-      "LiTerminal"
+      "TiTool"
     ],
     "recentlyUsedIconsSize": 5,
     "rules": [],
@@ -20,7 +20,11 @@
       "bottom": 0,
       "left": 0
     },
-    "iconInTabsEnabled": false
+    "iconInTabsEnabled": false,
+    "iconInTitleEnabled": false,
+    "iconInFrontmatterEnabled": false,
+    "iconsBackgroundCheckEnabled": false,
+    "iconsInNotesEnabled": true
   },
   "ios": "IbIphone",
   "os": "FarWindowMaximize",
@@ -64,5 +68,6 @@
   "tools/terminal": "LiTerminal",
   "tools/utility": "TiTool",
   "tools/vim": "SiVim",
-  "tools/vscode": "SiVisualstudiocode"
+  "tools/vscode": "SiVisualstudiocode",
+  "tools/communication": "TiMessage"
 }
