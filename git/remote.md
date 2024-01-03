@@ -63,9 +63,3 @@ git remote add origin
 ```
 
 [github remote url](https://help.github.com/en/github/using-git/changing-a-remotes-url)
-## Errors
-
-### remote: Write access to repository not granted.
-
-fatal: unable to access 'https://github.com/': The requested URL returned error: 403
-Make sure if you select `fine grained tokens` add `Contents` permission as `Read and Write` option checked in order to properly push changes to the repo.

@@ -4,13 +4,17 @@
 
 This command will initialize the current working directory with git local repository.
 
-> git init  
+```sh
+git init
+```
 
 ## List Git Config
 
 List outs all of the git config settings for the particular user.
 
-> git config --list
+```sh
+git config --list
+```
 
 ## Email Git config
 
@@ -42,10 +46,10 @@ Confirm that you have set the email address correctly in Git:
 
 Add the email address to your GitHub account by setting your commit email address on GitHub, so that your commits are attributed to you and appear in your contributions graph.
 
-```text
-> \$ git config user.email kautilya.n.save@kns.com
-> \$ git config user.email kautilya.save@kns.com
-> \$ git config user.email kautilyasave@gmail.com
+```sh
+git config user.email kautilya.n.save@kns.com
+git config user.email kautilya.save@kns.com
+git config user.email kautilyasave@gmail.com
 ```
 
 ### Option 2: Edit config file directly
@@ -60,9 +64,13 @@ Good discussion about case insensitive O.S and how to work with renaming from fi
 
 We could just turn ON case sensitivity by running this command as global git config
 
-> git config --global core.ignorecase false
+```sh
+git config --global core.ignorecase false
+```
 
 To verify whether the settings was applied or not, we could run this command
 
-> git config --global --get core.ignorecase
+```sh
+git config --global --get core.ignorecase
+```
 

@@ -16,15 +16,21 @@ This will take all the commits from the bugfix branch, squash them into 1 commit
 
 ### Explanation:
 
-> git checkout master
+```sh
+git checkout master
+```
 
 Switches to your master branch.
 
-> git merge --squash bugfix
+```sh
+git merge --squash bugfix
+```
 
 Takes all the commits from the bugfix branch and merges it with your current branch.
 
-> git commit
+```sh
+git commit
+```
 
 Creates a single commit from the merged changes.
 
