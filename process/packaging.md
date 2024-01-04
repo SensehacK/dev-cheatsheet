@@ -6,14 +6,13 @@ Using good package manager tools or central repository to keep track of them is 
 ## Tools
 
 ### iOS Package Managers
+
 [**iOS Dependency manager**](https://stackoverflow.com/a/59257708)
 
 List
-	- [spm](spm.md)
-	- [carthage](carthage.md) 
-	- [cocoapods](cocoapods.md) 
-
-
+- [spm](spm.md)
+- [carthage](carthage.md) 
+- [cocoapods](cocoapods.md) 
 
 ### Web Package manager
 

@@ -1,6 +1,5 @@
 # Test
 
-
 ## Test Pattern
 
 ## Unit Test
@@ -11,13 +10,11 @@ Every unit test follows this general pattern:
 2.  provide the object under test some input
 3.  make assertions on the objects outputs
 
-
 ## Skip Tests
 
 You can append `skip` to the test_function_name in order for Xcode compiler | runtime service to skip those tests in order to be ran and not wasted with that resources accordingly.
 
 Really handy when you're working with `flaky` tests
-
 
 ## Conditional Skip Testing
 
@@ -50,12 +47,9 @@ class PPVSSLoaderDelegateTests: XCTestCase {
       mockVSSDelegate = MockVSSDelegate()
     }
 }
-
 ```
 
-
 ## Teardown
-
 
 ```swift
 class PPVSSLoaderDelegateTests: XCTestCase {
@@ -65,19 +59,16 @@ class PPVSSLoaderDelegateTests: XCTestCase {
       mockVSSDelegate.reset()
     }
 }
-
 ```
 ## Warnings
 
 `Errors thrown from here are not handled` - this appears when you're trying to call a function which can throw an error. Swift needs to either do a `try catch` to handle the thrown error or mark the test function with `throws`
 
 ```swift
-
 func test_whenSomething_ThenBehavior() throws {
 	let unwrappedDate = try callUnwrappingFunction() // Warning
 }
 ```
-
 
 ## Unwrapping while Testing
 
@@ -109,9 +100,7 @@ Note:
 - We still can't access private functions or variables with this.
 - You can resort to `private(set)` for the properties to make tests which can be just read for unit testing.
 
-
 [how-to-unit-test-private-methods-in-swift](https://cocoacasts.com/how-to-unit-test-private-methods-in-swift)
-
 
 ## Assertions
 
@@ -129,7 +118,6 @@ assert(10 > 5, "10 is not less than 5")
 [swift assertions](https://andybargh.com/swift-assertions/)
 
 [Swift by sundell | picking-the-right-way-of-failing-in-swift](https://www.swiftbysundell.com/articles/picking-the-right-way-of-failing-in-swift/)
-
 
 ## Simulators vs emulators
 
@@ -162,6 +150,3 @@ assert(10 > 5, "10 is not less than 5")
 [automated testing solutions](https://www.mobot.io/blog/the-8-best-ios-automated-testing-solutions-in-2022)
 
 [ios-test-automation-challenges-and-solutions](https://sofy.ai/blog/ios-test-automation-challenges-and-solutions/)
-
-
-

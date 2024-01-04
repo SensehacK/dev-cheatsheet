@@ -49,7 +49,9 @@ git remote remove origin
 `https://github.com/SensehacK/repo\_name`
 `repo_full_url` = https://SensehacK:github_pat_token_@github.com/SensehacK/dev-cheatsheet
 ```
+
 Add the newly updated remote origin with personal access token (PAT)
+
 ```sh
 git remote add origin `repo_full_url`
 ```

@@ -85,11 +85,10 @@ if result == XCTWaiter.Result.timedOut {
 
 ## References
 
-https://www.swiftbysundell.com/articles/unit-testing-asynchronous-swift-code/#expectations
+[swift by sundell | unit-testing-asynchronous-swift-code Expectations](https://www.swiftbysundell.com/articles/unit-testing-asynchronous-swift-code/#expectations)
 
-https://www.swiftbysundell.com/articles/unit-testing-code-that-uses-async-await/
+[swift by sundell | unit-testing-code-that-uses-async-await](https://www.swiftbysundell.com/articles/unit-testing-code-that-uses-async-await/)
 
-Refactoring code for testability
-https://www.swiftbysundell.com/articles/refactoring-swift-code-for-testability/
+[swift by sundell | Refactoring code for testability](https://www.swiftbysundell.com/articles/refactoring-swift-code-for-testability/)
 
-https://stackoverflow.com/questions/50247929/how-to-wait-in-a-xctest-for-t-seconds-without-timeout-error
+[SO | how-to-wait-in-a-xctest](https://stackoverflow.com/questions/50247929/how-to-wait-in-a-xctest-for-t-seconds-without-timeout-error)

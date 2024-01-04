@@ -4,7 +4,7 @@
 
 [best coding practices](../process/best_coding_practices.md)
 
-[[code checkout]]
+[code checkout](../process/code_checkout.md)
 
 [code formatting](../process/code_formatting.md)
 
@@ -15,6 +15,8 @@
 [collaboration practices](../process/collaboration_practices.md)
 
 [copy files server CLI](../process/copy_files_server_CLI.md)
+
+[github](../process/github.md)
 
 [greenfield code](../process/greenfield_code.md)
 

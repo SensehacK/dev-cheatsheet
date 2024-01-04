@@ -2,8 +2,6 @@
 
 ## State
 
-
-
 ## Stringify Extension
 
 We can extend error localized description types to string extension for appending different objects and formatting it appropriately.
@@ -50,6 +48,4 @@ extension Equatable where Self : Error {
 }
 ```
 
-
-
-https://stackoverflow.com/questions/49658919/is-there-a-better-way-to-compare-errors-in-swift
+[SO | is-there-a-better-way-to-compare-errors-in-swift](https://stackoverflow.com/questions/49658919/is-there-a-better-way-to-compare-errors-in-swift)

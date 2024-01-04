@@ -64,7 +64,7 @@
 
 ## [Process](process/README_process)
 
-### [best coding practices](process/README_best_coding_practices)
+### [best coding practices](process/best_coding_practices)
 
 ### [code readability](process/code_readability.md)
 

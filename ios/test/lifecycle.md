@@ -3,7 +3,6 @@
 # Test LifeCycle 
 
 
-
 ## Diff between `class func` vs `func`
 
 `class` gets called only once when the class is initialized.
@@ -16,12 +15,7 @@ override class func setUp() { }
 override func setUp() { }
 ````
 
-
-
-
-
 ## Sample Code
-
 
 ```swift
 import XCTest
@@ -90,13 +84,13 @@ class TestCaseLifecycleTests: XCTestCase {
 }
 ```
 
-Code snippet source http://trikalabs.com/xctestcase-lifecycle/
+[Code snippet source](http://trikalabs.com/xctestcase-lifecycle/) 
 
 ## Resources
 
+[waldo | xctest-setup](https://www.waldo.com/blog/xctest-setup)
 
-https://www.waldo.com/blog/xctest-setup
+[apple dev doc | set_up_and_tear_down_state_in_your_tests](https://developer.apple.com/documentation/xctest/xctestcase/set_up_and_tear_down_state_in_your_tests)
 
-https://developer.apple.com/documentation/xctest/xctestcase/set_up_and_tear_down_state_in_your_tests
+[qualitycoding | xctestcase-teardown](https://qualitycoding.org/xctestcase-teardown/)
 
-https://qualitycoding.org/xctestcase-teardown/

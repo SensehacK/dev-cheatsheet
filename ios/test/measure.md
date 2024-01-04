@@ -22,4 +22,4 @@ print("DURATION extension: \(interval)")
 
 Edit Scheme - Check `Gather Test Coverage` for the products.
 
-https://www.hackingwithswift.com/articles/144/how-to-measure-code-coverage-in-xcode
+[HWS | how-to-measure-code-coverage-in-xcode](https://www.hackingwithswift.com/articles/144/how-to-measure-code-coverage-in-xcode)

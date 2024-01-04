@@ -2,6 +2,7 @@
 
 ## List
 
+[applescript](applescript.md)
 
 [[automount volumes disable]]
 
@@ -20,6 +21,8 @@
 [[mac_commands]]
 
 [[mac_os_quirks]]
+
+[media_api](os/mac/media_api.md)
 
 [[permissions]]
 

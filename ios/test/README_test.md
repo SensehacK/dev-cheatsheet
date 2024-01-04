@@ -26,4 +26,6 @@
 
 [rx_tests](rx_tests.md)
 
+[ui_tests](ui_tests.md)
+
 [[XCTest]]

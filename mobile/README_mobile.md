@@ -1,10 +1,6 @@
-
-
 # Mobile
 
-
 ## List
-
 
 [[README_ionic]]
 
