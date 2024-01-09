@@ -1,15 +1,19 @@
-## Politics
+# Politics
+## Intro
 
 Every country is trying one up each other. 
 
-### GeoPolitics
-Capatilism vs Communism
-Late stage capatalism vs ??? 
-Democracy vs Authoriatism 
+## GeoPolitics
+
+Capitalism vs Communism
+Late stage Capitalism vs ??? 
+Democracy vs Authoritarianism
 Socialism vs ???
 
 
 Disclaimer: I don't support War or any country.
+
+## World Wars
 
 World War I was brutal 
 

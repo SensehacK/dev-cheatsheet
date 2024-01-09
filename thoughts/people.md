@@ -9,7 +9,7 @@ Of course everyone has their fair share of problems and get cancelled for petty 
 ## Notable Person I admire
 
 - Keanu Reeves
-- Eichira Oda
+- Eiichiro Oda
 - Bill Gates
 - Steve Wozniak
 - Linus Torvalds
@@ -26,4 +26,19 @@ Of course everyone has their fair share of problems and get cancelled for petty 
 - Linus tech tips
 - Empress
 - Warren Buffet
+
+## Good Sources
+
+- wikipedia
+- investopedia
+- reddit wikis
+- official documentations
+- 
+
+
+## Technical Reviewers
+
+- anand tech
+- digital foundry
+- rtings
 - 
