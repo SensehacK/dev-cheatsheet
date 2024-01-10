@@ -12,6 +12,13 @@ Frameworks have important purposes
 - Modularization
 
 
+
+## Mind Map
+
+[Xcode Build process Mind Map link](ios/xcode/build.md)
+
+[packaging](packaging.md)
+
 ## Process
 
 Xcode Build Process around Frameworks
@@ -130,6 +137,13 @@ Edit: We can just swap out the `Unix Executable file` binary file with our local
 
 
 
+
+### Distributing
+
+Make binaries available to other developers by creating Swift packages that include one or more XCFrameworks.
+[Distributing binary frameworks as Swift packages](https://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages)
+
+
 ## Errors
 ### Framework Arch Mismatch
 
@@ -169,8 +183,7 @@ Even if you did delete the rogue references and readded it again. You need to ma
 SPM `update to latest versions` definitely helps if there's a version change and then the previous cache gets invalidated. But its a hit or miss sometimes.
 Important thing is to find the right cache path and delete the cache in order to get a proper reference of the dynamic library linking on runtime. Or else you'll get a crash.
 
-
-https://sarunw.com/posts/how-to-fix-dyld-library-not-loaded-error/
+[sarunw | how-to-fix-dyld-library-not-loaded-error](https://sarunw.com/posts/how-to-fix-dyld-library-not-loaded-error/)
 
 ### Library duplicate Choosing one
 
@@ -180,11 +193,6 @@ We are having this issue because SPM internal dependencies dependency hasn't exp
 ```log
 objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framework/) and TestUI.app/TestUI (0x1026b3620). One of the two will be used. Which one is undefined.
 ```
-
-
-
-
-
 
 
 ## Build Output
@@ -230,11 +238,6 @@ Note - if you have checked `Open in Rosetta` for your terminal settings then eve
 	- Both Platform and all possible architectures
 
 
-## Mind Map
-
-[Xcode Build process Mind Map link](ios/xcode/build.md)
-
-[packaging](packaging.md)
 
 ## Resources
 

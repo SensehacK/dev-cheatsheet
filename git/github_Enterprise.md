@@ -1,4 +1,15 @@
 
+# Github Enterprise
+
+
+## Mind Map
+
+[github](github.md)
+
+[github_Enterprise](github_Enterprise.md)
+
+[github_actions](github_actions.md)
+
 
 ## Errors
 
@@ -23,6 +34,12 @@ git config --local url.ssh://git@github.company.com/.insteadOf https://github.co
 You can find these changes in `.git` folder with `config` file where you can remove these things.
 
 
+### Error: Resource protected by organization SAML enforcement.
+
+```sh
+Error: Resource protected by organization SAML enforcement. You must grant your Personal Access token access to an organization within this enterprise.
+```
+Probably have to give the token access to those specific organizations.
 
 ## Workflow
 
@@ -32,3 +49,24 @@ You can find these changes in `.git` folder with `config` file where you can rem
 [events triggering](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows) 
 
 [SO | run when pull requests have a specific label](https://stackoverflow.com/questions/62325286/run-github-actions-when-pull-requests-have-a-specific-label)
+
+[github project automation workflow](https://github.com/alex-page/github-project-automation-plus)
+
+
+## Tokens
+
+Creating access tokens for your account to access repositories or github related stuff can be [created here in github settings](https://github.com/settings/tokens/new?)
+
+Creating secrets like environment variables can be [read here from github official docs](https://docs.github.com/en/actions/security-guides/using-secrets-in-github-actions#creating-encrypted-secrets-for-a-repository)
+
+## Debugging
+
+### Skipped the job
+
+[Github thread](https://github.com/orgs/community/discussions/36007)
+
+### Debug logs
+
+Location can be found in `actions-runner/_diag/` in your main home directory of your custom github runner.
+[Enable debug logging on github actions workflows](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging)
+

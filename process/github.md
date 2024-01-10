@@ -82,3 +82,8 @@ Kanban automatically updated with appropriate rules and Workflows.
 ## Mind Map
 
 [Peer Review - restrictions](peer_review.md#Restrictions)
+
+[github_Enterprise](github_Enterprise.md)
+
+[github_actions](github_actions.md)
+
