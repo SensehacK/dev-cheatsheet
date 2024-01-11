@@ -19,3 +19,8 @@ xcrun -k --sdk iphoneos --show-sdk-path
 ### Multiple Xcode Developer tools
 
 If you have multiple versions of the Apple developer tools installed (an Xcode beta, for example), use `xcode-select` to change which version xcode or other build tool uses.
+
+Show which xcode path is being used in Command Line Tools.
+```sh
+xcode-select -p
+```

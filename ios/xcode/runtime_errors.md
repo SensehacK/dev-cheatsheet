@@ -1,3 +1,4 @@
+# Run time Errors
 
 
 ## EXC_BAD_ACCESS
@@ -11,7 +12,7 @@ First time restart worked but the dreaded error appeared again & being a novice 
 But even reverting my working changeset doesn't fix it and that led me to believe that this is not my code issue hopefully.
 
 Day2:
-When my teammate and I were pair programming, in that instance everything was working fine and the next commit or branch switching led to a dirty state and having commited few of changes to working branch. I was planning to revert them but my teammate checked out the branch and ran the same code which was commited by us and he wasn't able to get that error / runtime crash in his simulator.
+When my teammate and I were pair programming, in that instance everything was working fine and the next commit or branch switching led to a dirty state and having committed few of changes to working branch. I was planning to revert them but my teammate checked out the branch and ran the same code which was committed by us and he wasn't able to get that error / runtime crash in his simulator.
 
 Day 3: 
 Again with this error. This time it popped up when I was passing around objects back and forth with MVVM pattern mixed with Navigation Coordinator pattern.
@@ -43,8 +44,9 @@ tempArray[1] // 45
 // But if you access 6th value in the array when it doesn't exists
 tempArray[5] // uncaught exception 'NSRangeException' | Out of bounds
 ```
+
 This is the error message
-```error
+```sh
 *** Terminating app due to uncaught exception 'NSRangeException', reason: 'NSMutableRLEArray replaceObjectsInRange:withObject:length:: Out of bounds'
 terminating with uncaught exception of type NSException
 CoreSimulator 857.14
