@@ -38,4 +38,6 @@ Omitting the -m parameter lets you modify a draft commit message containing ever
 
 
 
-##  [Merge Restrictions](peer_review.md#Restrictions%20PR%20MR%20Rules) 
+## [Merge Restrictions](peer_review.md#Restrictions%20PR%20MR%20Rules) 
+
+## [Xcode Merge](xcode_merge.md)

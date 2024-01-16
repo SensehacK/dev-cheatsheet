@@ -1,5 +1,3 @@
-
-
 # Access Control
 
 ## Options
@@ -13,7 +11,7 @@
 
 ### Inaccessible
 
-```log
+```sh
 initializer is inaccessible due to 'internal' protection level
 ```
 

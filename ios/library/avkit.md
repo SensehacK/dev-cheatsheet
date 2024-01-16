@@ -55,8 +55,9 @@ https://developer.apple.com/documentation/avfoundation/media_playback/selecting_
 
 ## Quirks
 
-[impossible-to-stop-avplayer](https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1)
+### Impossible to stop AVPlayer
 
+[impossible-to-stop-avplayer](https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1)
 
 ### Blank Video but audio audible
 
@@ -64,30 +65,12 @@ iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. 
 
 [My own project POC](https://github.com/SensehacK/swift/tree/master/swiftUI/VideoContent)
 
-
 ## Interview Questions
 
 [InterviewPrep | AVPlayer](https://interviewprep.org/avplayer-interview-questions/)
 
 
-## Video Geeking
-
-Codec - HEVC x265 - fav
-Dolby Vision vs HDR10
-4:4:4 DCI - Color accuracy
-HLS - components sending data, easily quality switchable, streams m3u8 format
-DASH MPD
-HDMI 2.0 vs 2.1 
-40Gbps vs 48Gbps
-4K @120hz or 8K @60Hz
-Apple Macbook pro 2023 M2Pro | Max finally has HDMI 2.1
-Fav TV tech - LG OLEDs C3, G3 - 
-Fav Video reviewer - [HDTVTest](https://www.youtube.com/@hdtvtest)
-Fav games technical analysis - Digital Foundry
-Rting website for nitty gritty comparison of Video tech.
-[video tools - apps](apps.md#Video%20Tools)
-
-
+## [Video Geeking](tools/apps#Geeking)
 
 ## Reference
 
@@ -100,5 +83,3 @@ Rting website for nitty gritty comparison of Video tech.
 [github project | drm-sample-player-ios](https://github.com/Axinom/drm-sample-player-ios)
 
 [youtube | Video Kit UIKit delegate and public functions](https://www.youtube.com/watch?v=IVyy-VBU-Cc)
-
-

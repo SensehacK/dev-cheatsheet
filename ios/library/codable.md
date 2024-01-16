@@ -56,7 +56,7 @@ set {
 
 Snake case issue 
 
-```swift
+```sh
 ERROR: keyNotFound(CodingKeys(stringValue: "iso_3166_1", intValue: nil)
 ```
 Just use 
@@ -64,7 +64,7 @@ Just use
 
 ```swift
 let decoder = JSONDecoder()
-        decoder.keyDecodingStrategy = .convertFromSnakeCase
+decoder.keyDecodingStrategy = .convertFromSnakeCase
 ```
 
-https://stackoverflow.com/questions/61378814/swiftui-get-error-when-decoding-json-data-which-includes-key-name-as-iso-3166
+[SO | swiftui-get-error-when-decoding-json-data-which-includes-key-name-as-iso](https://stackoverflow.com/questions/61378814/swiftui-get-error-when-decoding-json-data-which-includes-key-name-as-iso-3166)

@@ -20,11 +20,13 @@ print("This code only runs on iOS 14 and up")
 ```swift
 @available(iOS 13.0, macOS 10.15, *)
 public class AsyncNetwork { }
-
 ```
 
 [NSH](https://nshipster.com/available/)
-https://sarunw.com/posts/how-to-handle-api-changes-with-@available/
+
+[sarunw | how-to-handle-api-changes-with-@available](https://sarunw.com/posts/how-to-handle-api-changes-with-@available/)
+
+
 
 ## Check Library support
 

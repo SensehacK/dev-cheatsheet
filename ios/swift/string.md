@@ -37,7 +37,7 @@ print(char) // K
 print(input[0] input[9]) // KS
 
 ```
-https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/
+[get-character-from-string-using-its-index-in-swift](https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/)
 
 You can also use an extension for it. [extensions Character nth element](ios/lifecycle/extensions.md)
 
@@ -66,7 +66,7 @@ print(image_("3"))
 ## Expressible Literals
 
 Good article about what they are and how they are used.
-https://www.avanderlee.com/swift/expressible-literals/
+[avanderlee | expressible-literals](https://www.avanderlee.com/swift/expressible-literals/)
 
 ## Performance
 
@@ -76,10 +76,11 @@ String concatenation `+` is faster than `\(string_variable)` in the code accordi
 let name = "Kautilya"
 let str1: String = "Hi! my name is \(name)"
 let str2: String = "Hi! my name is " + name
-
 ```
 
-https://www.globalnerdy.com/2016/02/03/concatenating-strings-in-swift-which-way-is-faster/
+
+[concatenating-strings-in-swift-which-way-is-faster](https://www.globalnerdy.com/2016/02/03/concatenating-strings-in-swift-which-way-is-faster/)
+
 
 ## Deprecations
 

@@ -69,9 +69,9 @@ for i in stride(from: 0, to: 15, by: 1) {
 
 ## 2D Array
 
+Creating 2D matrix array in Swift.
 
 ```swift
-
 // Create a constant, jagged array.
 let units: [[Int]] = [
 [100, 200, 300],
@@ -90,34 +90,26 @@ for var x in 0..<units.count {
 }
 ```
 
-
 [HWS](https://www.hackingwithswift.com/example-code/arrays/how-do-you-create-multi-dimensional-arrays)
 [2D Array](https://www.dotnetperls.com/2d-swift)
 
 ## Array to Number
 
 ```swift
-
 func plusOne(_ digits: [Int]) -> [Int] {
-        
-    var arrayD:[Int] = []
-        
+    var arrayD:[Int] = []   
     var integer = 0
     for (index,value) in digits.enumerated() {
-		    let multiplier = pow(10, digits.count-index-1)
+		let multiplier = pow(10, digits.count-index-1)
         let temp = Decimal(value) * (pow(10, digits.count-index-1))
         print(temp)
         print(type(of: temp))
         integer += Int(truncating: temp as NSNumber)
-        
     }
-    
-    
     print(integer)
     return arrayD
     }
 }
-
 ```
 
 ## Data
@@ -161,7 +153,7 @@ print(filterDynamicRecordFields)
 
 ## Compact Map
 
-// Note: We had to provide an optional return type of FieldFilter as we need to return nil -> which gets discarded by `CompactMap`
+Note: We had to provide an optional return type of FieldFilter as we need to return nil -> which gets discarded by `CompactMap`
 
 ```swift
 print("\n Using Compact Map")
@@ -170,10 +162,7 @@ let compactMapDynamicRecordFields = arrFields.compactMap { fieldFilter -> FieldF
     return fieldFilter
 }
 print(compactMapDynamicRecordFields)
-
 ```
-
-
 
 ## Repeated Elements
 
@@ -187,15 +176,13 @@ let expectedResult = [Bool](repeating: true, count: 3)\
 
 print(expectedResult) // [true, true, true]
 ```
+[HwS | how-to-create-an-array-by-repeating-an-item](https://www.hackingwithswift.com/example-code/language/how-to-create-an-array-by-repeating-an-item)
 
-https://www.hackingwithswift.com/example-code/language/how-to-create-an-array-by-repeating-an-item
+[how-to-repeat-array-of-object-in-swift](https://onmyway133.com/posts/how-to-repeat-array-of-object-in-swift/)
 
-https://onmyway133.com/posts/how-to-repeat-array-of-object-in-swift/
+[verify-arrays-approvaltests-swift](https://qualitycoding.org/verify-arrays-approvaltests-swift/)
 
-https://qualitycoding.org/verify-arrays-approvaltests-swift/
-
-https://betterprogramming.pub/13-useful-array-methods-in-swift-e169a78cba8d
-
+[13-useful-array-methods-in-swift](https://betterprogramming.pub/13-useful-array-methods-in-swift-e169a78cba8d)
 
 ## Extensions
 
@@ -213,5 +200,6 @@ extension Sequence where Element: Equatable {
 
 ## References
 
-[SO](https://stackoverflow.com/questions/24781027/how-do-you-sort-an-array-of-structs-in-swift)
-[Alphabetical Sort](https://stackoverflow.com/questions/46750243/sort-struct-in-alphabetical-order-swift4)
+[SO | Sort array](https://stackoverflow.com/questions/24781027/how-do-you-sort-an-array-of-structs-in-swift)
+
+[SO | Alphabetical Sort](https://stackoverflow.com/questions/46750243/sort-struct-in-alphabetical-order-swift4)

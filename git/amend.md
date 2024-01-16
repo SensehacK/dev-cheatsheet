@@ -14,7 +14,7 @@ git commit --amend --author="Kautilya <kautilya.save@product_name.com>"
 
 [Tower author change](https://www.git-tower.com/learn/git/faq/change-author-name-email/)
 
-[SO](https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit)
+[SO | change commit for one commit ](https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit)
 
 
 ## Change Timestamp
@@ -24,6 +24,8 @@ This only works for the last commit in the git history tree.
 
 ```bash
 git commit --amend --date=now
+
+git commit --amend --no-edit --date=now
 
 git commit --amend --no-edit --date "2001-09-11T12:14:00-00:00"
 

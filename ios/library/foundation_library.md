@@ -4,7 +4,7 @@
 ## Math
 
 
-
+### Rounding
 We can round decimal values to round them according to our requirement.
 
 ```swift
@@ -13,4 +13,4 @@ x.round()
 // x == 5.0
 ```
 
-[Apple Docs](https://developer.apple.com/documentation/swift/double/2884722-round)
+[Apple Docs | double round](https://developer.apple.com/documentation/swift/double/2884722-round)

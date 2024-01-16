@@ -19,6 +19,7 @@ All my favorite apps listed here used in SDLC.
 - [moinmo](https://moinmo.in/) 
 - 1Writer (iOS + Dropbox Sync)
 
+
 ## Must Have
 
 - [alfred](alfred.md) 
@@ -73,8 +74,15 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 - JSON typicode structure model https://app.quicktype.io/
 - json validation
+
+
+## Convertors
+
 - [Date time timezone convertors](https://time.lol/#2001-09-11T12:14:00-00:00) 
 - [unix timestamp to date convertor](https://www.timestamp-converter.com/)
+- [text convert case](https://convertcase.net/)
+
+
 
 ## Design
 
@@ -100,7 +108,7 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 ## IDE
 
 - [Xcode](README_xcode.md)
--  [VS Code](README_vscode.md) - Open Source fork 
+- [VS Code](README_vscode.md) - Open Source fork 
 - [xcodes app](https://github.com/XcodesOrg/XcodesApp/releases/) - multiple xcode app setup
 
 ## Collaboration
@@ -112,7 +120,9 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 ## [Fresh Install](../os/mac/fresh_install.md)
 
-## Video Tools
+## Video
+
+### Tools
 
 - [kdenlive](https://kdenlive.org/en/features/) 
 - [ffmpeg](https://ffmpeg.org/)
@@ -122,10 +132,29 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - fav project [youtube_dl](youtube_dl.md)
 - [ffmpeg](ffmpeg.md) video conversion cli
 - handbrake - video encoder decoder GUI
+
+### Project
+
 - decryption AES streams [github project pycryptodome](https://github.com/Legrandin/pycryptodome) 
 - geo verification proxy - VPN and browser session - decryption and encryption
 - youtube [community sourced sponsor sharing](https://sponsor.ajay.app/) like Waze reporting tool.
 
+### Geeking 
+
+Codec - HEVC x265 - fav
+Dolby Vision vs HDR10
+4:4:4 DCI - Color accuracy
+HLS - components sending data, easily quality switchable, streams m3u8 format
+DASH MPD
+HDMI 2.0 vs 2.1 
+40Gbps vs 48Gbps
+4K @120hz or 8K @60Hz
+Apple Macbook pro 2023 M2Pro | Max finally has HDMI 2.1
+Fav TV tech - LG OLEDs C3, G3 - 
+Fav Video reviewer - [HDTVTest](https://www.youtube.com/@hdtvtest)
+Fav games technical analysis - Digital Foundry
+Rting website for nitty gritty comparison of Video tech.
+[video tools - apps](apps.md#Video%20Tools)
 ## Security
 
 - [SSL test website](https://www.ssllabs.com/ssltest)

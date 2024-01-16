@@ -52,3 +52,6 @@
 [xcconfig](xcconfig.md)
 
 
+## References
+
+[12 Factor App | Config](https://12factor.net/config)
