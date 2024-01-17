@@ -11,20 +11,21 @@ Finally I got some time to dig deep into it when my employer provided 1 week of 
 
 [caveats](caveats.md)
 
+[info](ios/visionOS/info.md)
+
 [observations](observations.md)
 
-[video](video.md)
+[video](ios/visionOS/video.md)
 
 [views](views.md)
 
 ## References
 
+[vision-pro-for-devs-easy-to-start-but-ui-not-revolutionary](https://thenewstack.io/vision-pro-for-devs-easy-to-start-but-ui-not-revolutionary/)
 
-https://thenewstack.io/vision-pro-for-devs-easy-to-start-but-ui-not-revolutionary/
 
+Vision OS fundamentals - [Quick Speed run](https://www.youtube.com/watch?v=4gz62Ze15a8&t=44s) 
 
-Vision OS fundamentals - Quick Speed run https://www.youtube.com/watch?v=4gz62Ze15a8&t=44s
+[visionos-app-development](https://www.leewayhertz.com/visionos-app-development/)
 
-https://www.leewayhertz.com/visionos-app-development/
-
-Designing for visionOS https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos
+[Designing for visionOS](https://developer.apple.com/design/human-interface-guidelines/designing-for-visionos) 
