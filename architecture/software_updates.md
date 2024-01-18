@@ -3,7 +3,7 @@
 ## Intro
 
 This piece is quite opinionated from point of view. No way this is scientific or academic. So take it with a grain of salt or a glass of Whiskey talk speaking.
-But none theless enjoy my thought process around Software updates in general.
+But none the less enjoy my thought process around Software updates in general.
 
 ## Process
 
@@ -30,13 +30,10 @@ I'll share some reference links to read about it.
 
 [Official swift ABI](https://www.swift.org/blog/abi-stability-and-more/)
 
-
-
 ## Dark UX Pattern
 
 Mac OS upgrades & don't get me started on how Windows 10 handles force upgrades ever since Windows 8.
 [upgrade](ios/config/upgrade.md)
-
 
 ## OS
 
@@ -50,30 +47,21 @@ Mac OS upgrades & don't get me started on how Windows 10 handles force upgrades 
 
 ## References
 
-
-
-
-ABI Stability Manifesto Swift
-https://github.com/apple/swift/blob/main/docs/ABIStabilityManifesto.md
+[ABI Stability Manifesto Swift](https://github.com/apple/swift/blob/main/docs/ABIStabilityManifesto.md)
 
 What is ABI Stability
-https://medium.com/@deekshithbellare/what-is-abi-stability-and-why-does-it-matter-48c918554be1
+[medium | what-is-abi-stability-and-why-does-it-matter](https://medium.com/@deekshithbellare/what-is-abi-stability-and-why-does-it-matter-48c918554be1)
 
-Stack Overflow
-https://stackoverflow.com/questions/2171177/what-is-an-application-binary-interface-abi
+[Stack Overflow | what-is-an-application-binary-interface-abi](https://stackoverflow.com/questions/2171177/what-is-an-application-binary-interface-abi)
 
-Android docs
-https://source.android.com/docs/core/architecture/vndk/abi-stability
+[Android docs](https://source.android.com/docs/core/architecture/vndk/abi-stability)
 
 https://www.dpdk.org/blog/2019/10/10/why-is-abi-stability-important/
 
-
 https://faultlore.com/blah/swift-abi/
 
-https://libcxx.llvm.org/DesignDocs/ABIVersioning.html
+[llvm.org/DesignDocs/ABIVersioning.html](https://libcxx.llvm.org/DesignDocs/ABIVersioning.html)
 
-LLVM official video
-https://www.youtube.com/watch?v=MgPBetJWkmc
+[LLVM official video](https://www.youtube.com/watch?v=MgPBetJWkmc)
 
-
-https://www.donnywals.com/what-is-module-stability-in-swift-and-why-should-you-care/
+[what-is-module-stability-in-swift-and-why-should-you-care](https://www.donnywals.com/what-is-module-stability-in-swift-and-why-should-you-care/)

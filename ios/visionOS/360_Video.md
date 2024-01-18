@@ -2,7 +2,8 @@
 
 ## Code Snippet 
 
-https://developer.apple.com/forums/thread/734081
+[apple dev | thread](https://developer.apple.com/forums/thread/734081)
+
 
 Hello, It is very easy to represent a 360° Video in the Vision Pro environment.
 
@@ -55,7 +56,8 @@ I would recommend actually to use a video which was actually designed for 360° 
 
 ## 360 Photography
 
-https://www.dpreview.com/articles/0778031862/apple-vision-pro-what-it-means-for-content-and-photography
+[dp review | apple-vision-pro-what-it-means-for-content-and-photography](https://www.dpreview.com/articles/0778031862/apple-vision-pro-what-it-means-for-content-and-photography)
+
 
 
 

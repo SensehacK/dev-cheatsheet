@@ -5,6 +5,8 @@
 
 [discord](discord.md)
 
+[emulation](emulation.md)
+
 [nintendo_NES](nintendo_NES.md)
 
 [nintendo_switch](nintendo_switch.md)

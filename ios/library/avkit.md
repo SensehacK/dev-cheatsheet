@@ -6,6 +6,7 @@ AVKit
 AVFoundation
 AVPlayer
 
+## [Video Terminologies](video_terms.md)
 
 ## SwiftUI POC
 
@@ -73,8 +74,6 @@ iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. 
 ## [Video Geeking](tools/apps#Geeking)
 
 ## Reference
-
-[Awesome Video Github repo](https://github.com/krzemienski/awesome-video/)
 
 [Using AVFoundation to Play and Persist HTTP Live Streams](https://developer.apple.com/documentation/avfoundation/offline_playback_and_storage/using_avfoundation_to_play_and_persist_http_live_streams)
 

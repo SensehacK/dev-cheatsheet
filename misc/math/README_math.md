@@ -12,7 +12,7 @@
 
 ## [Logic Gates](logic_gates.md)
 
-## [Terminologies](misc/math/terminologies.md)
+## [Terminologies](architecture/terminologies/math_terms.md)
 
 ## [Theorems](theorems.md)
 

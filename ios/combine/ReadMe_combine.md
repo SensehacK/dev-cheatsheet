@@ -1,4 +1,6 @@
+# Combine
 
+## List
 
 [anyCancellable](anyCancellable.md)
 
@@ -22,27 +24,25 @@
 
 [swiftUI](swiftUI.md)
 
+## Migration
 
-## Info
+Transition Guide
 
-Migration - Transition Guide
+[CombineCommunity/rxswift-to-combine-cheatsheet](https://github.com/CombineCommunity/rxswift-to-combine-cheatsheet)
+
 RxSwift -> Combine
-https://quickbirdstudios.com/blog/rxswift-combine-transition-guide/
+[rxswift-combine-transition-guide](https://quickbirdstudios.com/blog/rxswift-combine-transition-guide/)
 
+[medium  | rxswift-to-apples-combine-cheat-sheet](https://medium.com/gett-engineering/rxswift-to-apples-combine-cheat-sheet-e9ce32b14c5b)
 
-https://medium.com/gett-engineering/rxswift-to-apples-combine-cheat-sheet-e9ce32b14c5b
+[medium | combine-from-rxswift-highlights-for-smooth-adaption](https://medium.com/swlh/combine-from-rxswift-highlights-for-smooth-adaption-e552cfbb7cd1)
 
-https://github.com/CombineCommunity/rxswift-to-combine-cheatsheet
+[migrating mvvm uikit rxswift to combine](https://benoitpasquier.com/migrating-mvvm-uikit-rxswift-to-combine/)
 
-
-https://medium.com/swlh/combine-from-rxswift-highlights-for-smooth-adaption-e552cfbb7cd1
-
-
-https://benoitpasquier.com/migrating-mvvm-uikit-rxswift-to-combine/
 
 ## Extensions
 
-https://www.swiftbysundell.com/articles/extending-combine-with-convenience-apis/
+[swift by sundell | extending-combine-with-convenience-apis/](https://www.swiftbysundell.com/articles/extending-combine-with-convenience-apis/)
 
 Open source equivalent
-https://github.com/OpenCombine/OpenCombine
+[OpenCombine | Github](https://github.com/OpenCombine/OpenCombine)

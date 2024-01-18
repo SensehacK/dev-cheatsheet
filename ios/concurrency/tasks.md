@@ -123,6 +123,38 @@ func fetchQuotes() async {
 await fetchQuotes()
 ```
 
+
+## Do try catch Errors 
+
+```swift
+func fetchUpdates() async {
+    let newsTask = Task { () -> Data in
+        let url = URL(string: "https://hws.dev/headlines.json")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        return data
+    }
+
+    let highScoreTask = Task { () -> Data in
+        let url = URL(string: "https://hws.dev/scores.json")!
+        let (data, _) = try await URLSession.shared.data(from: url)
+        return data
+    }
+
+    do {
+        let news = try await newsTask.value
+        let highScores = try await highScoreTask.value
+    } catch {
+        print("There was an error loading user data.")
+    }
+}
+
+await fetchUpdates()
+```
+
+[Hacking with Swift | Create a task](https://www.hackingwithswift.com/quick-start/concurrency/how-to-create-and-run-a-task)
+
+[SO | throwing errors in tasks](https://stackoverflow.com/questions/70314263/throwing-errors-inside-a-root-task)
+
 ## Mind Map
 
 [ARC in Tasks | Reference Counting](arc.md#Tasks)

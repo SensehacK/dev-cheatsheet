@@ -97,3 +97,4 @@ Oculus Quest 3 seems the right choice for now with budget and Mixed reality opti
 
 [Deliver video content for spatial experiences](https://developer.apple.com/videos/play/wwdc2023/10071/)
 
+[Build spatial SharePlay experiences](https://developer.apple.com/videos/play/wwdc2023/10087/)

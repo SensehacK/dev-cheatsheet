@@ -2,7 +2,8 @@
 
 ## Cemu
 
-https://cemu.info/
+[CEMU emulation on PC](https://cemu.info/)
+
 
 ## Keys
 

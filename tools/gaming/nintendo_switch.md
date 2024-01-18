@@ -3,8 +3,7 @@
 
 ## Yuzu
 
-https://yuzu-emu.org/
-
+[Yuzu Emulation on PC](https://yuzu-emu.org/)
 
 
 ## Keys
