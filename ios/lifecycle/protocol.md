@@ -110,4 +110,4 @@ https://stackoverflow.com/questions/29278624/pure-swift-set-with-protocol-object
 
 https://stackoverflow.com/questions/74067657/type-any-protocol-cannot-conform-to-hashable
 
-https://forums.swift.org/t/how-can-i-fix-type-mytype-does-not-conform-to-protocol-collection/28802/6
+https://forums.swift.org/t/how-can-i-fix-type-mytype-does-not-conform-to-protocol-collection/28802/6[swift forums | mytype-does-not-conform-to-protocol-collection](https://forums.swift.org/t/how-can-i-fix-type-mytype-does-not-conform-to-protocol-collection/28802/6)

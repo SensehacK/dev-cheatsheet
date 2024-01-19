@@ -1,4 +1,3 @@
-
 # DRM
 
 ## Lot of different options
@@ -15,6 +14,17 @@ DRM is pretty poorly documented, at least Apple's Fairplay solution.
 [this article is somewhat helpful](https://ottverse.com/apple-fairplay-streaming-drm-how-does-it-work/)
 
 [Playing Encrypted HLS content on iOS using swift](https://assist-software.net/snippets/how-play-encrypted-http-live-streams-offline-avfoundation-ios-using-swift-4)
+
+## Errors
+
+### FairPlay Streaming is not supported on simulators
+
+You need to disable fairplay streaming on simulators to run it appropriately.
+
+```sh
+*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[AVContentKeySession initWithKeySystem:storageDirectoryAtURL:legacyWebKitCompatibilityMode:] FairPlay Streaming is not supported on simulators'
+```
+
 
 ## HDCP 
 
