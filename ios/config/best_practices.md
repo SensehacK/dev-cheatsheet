@@ -23,7 +23,7 @@ Following best practices are always easier said then done. So having more contex
 ## Concurrency 
 
 Basic understanding of concurrency
-[concurrency](concurrency.md)
+[concurrency](architecture/concurrency.md)
 
 ## UI 
 

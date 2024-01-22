@@ -8,7 +8,7 @@ As sometimes, we would have limited internet access or restrictive data download
 
 ## List
 
-[access_control](access_control.md)
+[access_control](ios/swift/access_control.md)
 
 [any](any.md)
 

@@ -23,7 +23,7 @@ Enjoy!
 
 [IT Depends](it_Depends.md)
 
-[[concurrency]]
+[[architecture/concurrency]]
 
 [System Designs](system_designs.md)
 

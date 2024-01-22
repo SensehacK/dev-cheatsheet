@@ -175,7 +175,9 @@ The presentation timestamp (_PTS_) is a timestamp metadata field in an MPEG tran
 Scete tag to find the information around HLS / stream.
 Convey information 
 
-
+```ts
+#EXT-X-SCTE35:TYPE=0x41,CUE=/DB7AAAAAAAAAP/wBQb+sPKHTfsn+XAABBAACRCZCg///////
+```
 
 
 ## DVR

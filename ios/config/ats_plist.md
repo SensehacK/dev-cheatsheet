@@ -5,7 +5,7 @@ App Transport Security Plist
 ## Unsecure HTTP Network Calls
 
 
-In Xcode, Apple has enforced developers to adapt Https network calls and if you still want to rely on unsecure http protocol for your network calls.
+In Xcode, Apple has enforced developers to adapt Https network calls and if you still want to rely on insecure http protocol for your network calls.
 You would need to set a certain flag in Info plist file to allow arbitrary loads or specific domain loads.
 
 From security standpoint, the app developer should always only allow certain domain names to be accessible using http for greater security and data transmission.

@@ -10,7 +10,7 @@ Listing my snippets and easy reference methods for html usage. With few tips and
 
 [[responsive]]
 
-[[syntax]]
+[[frontend/html/syntax]]
 
 ## Tools
 

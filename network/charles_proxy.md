@@ -46,12 +46,24 @@ You need to go to Settings -> General -> About -> Certificate Trust Settings and
 
 ### Can no longer browse Internet without Charles
 
-https://www.charlesproxy.com/documentation/faqs/can-no-longer-browse-without-charles-running/
+[charles proxy FAQ steps](https://www.charlesproxy.com/documentation/faqs/can-no-longer-browse-without-charles-running/)
 
+### video playback buffering
+
+```sh
+DelioPlayer Media Failed. Description:1012.10 (Fairplay DRM):`The DRM delegate failed to acquire a license. (Delio)` Context: `(DelioPlayer) DRM Error` Delio Error Info 9004: `DelioError code:couldNotAcquireLicense.(9004)
+assetURL:[http://ccr.linear-tve-ashburn-](http://ccr.linear-tve-sa-vss.top.sa.net/v1/frag/bmff/enc/cbcs/t/.m3u8?sz=urn:scte:224:audience:Zip:21412)
+
+
+errorDescription" : "1001.2 (General Errors):`An unspecified network error occurred.` Context: `(DelioPlayer) Delio Error` Delio Error Info 4003: `DelioError code:playlistDeliveryUnableToDeliverPlaylist.
+```
+
+Turns out de-provisioning the security DRM client on the physical device solved this issue. Logging out and back works.
 
 ## Resources
 
-https://www.kodeco.com/21931256-charles-proxy-tutorial-for-ios
+[Kodeco | charles-proxy-tutorial-for-ios](https://www.kodeco.com/21931256-charles-proxy-tutorial-for-ios)
+
 
 [Charles Proxy blocking SSL traffic on Android](https://stackoverflow.com/questions/53197681/charles-proxy-blocking-ssl-traffic-on-android)
 

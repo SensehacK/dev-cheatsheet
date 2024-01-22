@@ -28,7 +28,6 @@ git commit --amend --date=now
 git commit --amend --no-edit --date=now
 
 git commit --amend --no-edit --date "2001-09-11T12:14:00-00:00"
-
 ```
 
 [SO change-the-timestamp-of-an-old-commit](https://stackoverflow.com/questions/454734/how-can-one-change-the-timestamp-of-an-old-commit-in-git)
@@ -66,7 +65,7 @@ nothing to commit, working tree clean
 The previous cherry-pick is now empty, possibly due to conflict resolution.
 If you wish to commit it anyway, use:
 
-    git commit --allow-empty
+git commit --allow-empty
 
 Otherwise, please use 'git cherry-pick --skip'
 ```
