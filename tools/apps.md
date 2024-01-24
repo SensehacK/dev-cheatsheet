@@ -24,7 +24,7 @@ All my favorite apps listed here used in SDLC.
 
 - [alfred](alfred.md) 
 - [Rectangle](https://rectangleapp.com/) 
--  istats pro
+- istats pro
 - [Monitor Control](https://github.com/MonitorControl/MonitorControl)
 
 ### Other notes
@@ -155,6 +155,7 @@ Fav Video reviewer - [HDTVTest](https://www.youtube.com/@hdtvtest)
 Fav games technical analysis - Digital Foundry
 Rting website for nitty gritty comparison of Video tech.
 [video tools - apps](apps.md#Video%20Tools)
+
 ## Security
 
 - [SSL test website](https://www.ssllabs.com/ssltest)

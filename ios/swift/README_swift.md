@@ -48,6 +48,8 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[optionals]]
 
+[prerequisite_iOS](prerequisite_iOS.md)
+
 [property](property.md)
 
 [property_wrapper](property_wrapper.md)
@@ -60,7 +62,7 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[switch]]
 
-[[enum]]
+[[ios/swift/enum]]
 
 [[type_casting]]
 
@@ -69,22 +71,18 @@ As sometimes, we would have limited internet access or restrictive data download
 [[string]]
 
 
-
-
 ## Migration or Language Equivalents
 
-Typescript vs Swift syntax equivalents
-https://medium.com/@yankuan/syntax-comparison-typescript-vs-swift-7c94dfb2f7da
-
-
-
+[medium | Typescript vs Swift syntax equivalents](https://medium.com/@yankuan/syntax-comparison-typescript-vs-swift-7c94dfb2f7da)
 
 
 ## Tools
 
-Hardware: MacBook Pro 13’ 2015 : Core i5 , 128GB SSD OS: Mac OS Mojave 10.14.6 IDE: Xcode 11.2.1 VS Code latest patch Browsers: Firefox Nightly /Dev /Main Safari /Technical Preview Microsoft Edge Dev \( Chromium \) Writer: iA Writer Version Management: Github Task Manager: Things by Cultured Code Terminal : iTerm
+### [Hardware](hardware/README_hardware.md)
 
-### Authored by : [Kautilya Save](https://sensehack.github.io/)
+### [Software](tools/apps.md)
 
-### [GitHub](https://github.com/SensehacK)
+### Credits
+#### [Kautilya Save](https://sensehack.github.io/)
+#### [GitHub SensehacK](https://github.com/SensehacK)
 

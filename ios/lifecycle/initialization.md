@@ -7,7 +7,7 @@ Including the default initialization for class, structs in Swift.
 
 
 
-## [Class](class.md)
+## [Class](ios/lifecycle/class.md)
 
 We need to specify the initializer for class.
 ```swift

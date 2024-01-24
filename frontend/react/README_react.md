@@ -13,15 +13,18 @@ React Data Passing : [React Data Passing](https://github.com/SensehacK/dev-cheat
 ## List
 
 [[state]]
-[[data_passing]]
-[[globalstyle]]
 
+[[data_passing]]
+
+[[globalstyle]]
 
 ## Tools
 
-Hardware: MacBook Pro 13’ 2015 : Core i5 , 128GB SSD OS: Mac OS Mojave 10.14.6 IDE: Xcode 11.2.1 VS Code latest patch Browsers: Firefox Nightly /Dev /Main Safari /Technical Preview Microsoft Edge Dev \( Chromium \) Writer: iA Writer Version Management: Github Task Manager: Things by Cultured Code Terminal : iTerm
+### [Hardware](hardware/README_hardware.md)
 
-### Authored by : [Kautilya Save](https://sensehack.github.io/)
+### [Software](tools/apps.md)
 
-### [GitHub](https://github.com/SensehacK)
+### Credits
+#### [Kautilya Save](https://sensehack.github.io/)
+#### [GitHub SensehacK](https://github.com/SensehacK)
 

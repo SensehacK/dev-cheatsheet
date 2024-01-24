@@ -6,14 +6,13 @@ Listing overall learnings of RxSwift do's and don'ts for writing good reactive c
 
 
 Bla Bla Car app for RxSwift + MVVM
-https://medium.com/blablacar/rxswift-mvvm-66827b8b3f10
+[Medium | article from Bla Bla car app](https://medium.com/blablacar/rxswift-mvvm-66827b8b3f10)
 
 ## Code structure
 
 ### Input & Output
 
-We use structs inside our classe
-s with explicit definition called "Input" and "Output"
+We use structs inside our classes with explicit definition called "Input" and "Output"
 
 Eg.
 ```swift

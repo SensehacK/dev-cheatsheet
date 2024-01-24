@@ -9,7 +9,7 @@
 Wired Equivalent Privacy (WEP)
 Wi-Fi Protected Access (WPA)
 WPA 2 - CCMP & AES encryption
-WPA 3 - SAE and 192 encyption optional Enterprise mode
+WPA 3 - SAE and 192 encryption optional Enterprise mode
 
 
 

@@ -72,7 +72,8 @@ let clock = ContinuousClock()
 let result = clock.measure(doSomething)
 ```
 
-https://developer.apple.com/documentation/swift/clock
+[apple dev | clock](https://developer.apple.com/documentation/swift/clock)
+
 
 ## Tips
 

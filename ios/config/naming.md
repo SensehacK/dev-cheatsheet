@@ -128,7 +128,7 @@ public class CustomClass2 {
 ```
 
 
-Ref video
-https://www.youtube.com/watch?v=1Ihb7OSXLeQ
+[Ref video youtube](https://www.youtube.com/watch?v=1Ihb7OSXLeQ)
+
 
 

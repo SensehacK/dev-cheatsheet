@@ -53,7 +53,11 @@ Mentors IRL
 
 [James Kiely](https://www.linkedin.com/in/james-kiely-aa56b46/) (Accessibility | SDLC) | WearWorks - NYC
 
-[Liron Lerman](https://www.linkedin.com/in/liron-lerman-64051212/)(Soft Skills | Management) | Glimpse Group - NYC
+[Liron Lerman](https://www.linkedin.com/in/liron-lerman-64051212/)(Soft Skills | Game Development) | Glimpse Group - NYC
+
+[Ray Migneco](https://www.linkedin.com/in/raymigneco/) (Objective-C | Frameworks) | Comcast - Philadelphia
+
+[Philip McMahom](https://www.linkedin.com/in/philip-mcmahon-4313b8/) (Management | Cross Team) | Comcast - Denver
 
 **In no order whatsoever** & everyone should have great mentors so that you can leap frog your technical and soft skills expertise.
 Also always keep learning and be curious.

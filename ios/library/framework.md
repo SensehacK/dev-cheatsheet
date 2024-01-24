@@ -11,8 +11,6 @@ Frameworks have important purposes
 - Reusability
 - Modularization
 
-
-
 ## Mind Map
 
 [Xcode Build process Mind Map link](ios/xcode/build.md)

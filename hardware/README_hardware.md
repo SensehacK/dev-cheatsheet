@@ -27,8 +27,19 @@
 
 ### Mobile Devices
 
+- iPhone 15 Pro Max
+- iPhone 14 Pro Max
+- iPhone 14
 - iPad Air 5th Gen - M1
 - One Plus 8
+- iPhone 12 mini
+- iPhone 6s
+- One Plus 3
+- Xiaomi Redmi 1s
+- iPad Mini
+- HTC Touch 2
+
+
 
 
 

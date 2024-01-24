@@ -5,27 +5,29 @@
  
 Better organization around the code in big projects. No need to initialize or privatize the init() function internally.
 
+[swiftbysundell | enums](https://www.swiftbysundell.com/basics/enums/)
 
-https://www.swiftbysundell.com/articles/powerful-ways-to-use-swift-enums/
+[swift by sundell | powerful-ways-to-use-swift-enums](https://www.swiftbysundell.com/articles/powerful-ways-to-use-swift-enums/)
 
-https://stackoverflow.com/questions/49427144/is-there-a-technical-reason-to-use-swifts-caseless-enum-instead-of-real-cases
+[SO | caseless enums](https://stackoverflow.com/questions/49427144/is-there-a-technical-reason-to-use-swifts-caseless-enum-instead-of-real-cases)
 
-
-https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html
-
-https://www.swiftbysundell.com/basics/enums/
-
+[swift docs | enumerations](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html)
 
 
 ## Indirect Enums
 
 Mostly used in Apple foundation or library frameworks in order to make references internally using enums.
+
 ```swift
 indirect Node {
 	case node(value: Node)
 	case value(String)
 }
 ```
+
+
+## [Objective C Equivalent](ios/objectiveC/enum.md)
+
 
 ## Unit test
 
