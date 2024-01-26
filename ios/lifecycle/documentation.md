@@ -20,7 +20,7 @@ You can use // MARK:
 
 There has also been discussion that liberal use of class extensions might be a better practice anyway. Since extensions can implement protocols, you can e.g. put all of your table view delegate methods in an extension and group your code at a more semantic level than #pragma mark is capable of.
 ```
-[SO](https://stackoverflow.com/questions/24017316/pragma-mark-in-swift?rq=1)
+[SO | pragma mark](https://stackoverflow.com/questions/24017316/pragma-mark-in-swift?rq=1)
 
 
 ## Auto Completion
@@ -83,7 +83,6 @@ Some nonsensical stuff here
 ```
 
 
-
 ## Adding links to Doc
 
 You can define markdown links or reference them as a link node in the documentation information.
@@ -128,37 +127,39 @@ This lets us specify code as well in the docs or when xcode `Build Documentation
 Spent approx 45 mins deciphering why my github pages wasn't showing the Swift DocC generated static site. Turns out the url for target path component is also lowercase as pointed out by this SO post.
 
 Note that my repository name was lowercase so I used `-hosting-base-path foobar`. The target path component, however, is always lowercase, Idk why.
-https://stackoverflow.com/a/71199418/5177704
-
+[SO | post](https://stackoverflow.com/a/71199418/5177704)
 
 
 Great tool to use for generating documentation for your project. As long as you document things properly.
 
-https://developer.apple.com/documentation/docc
-Xcode 13
-https://www.wwdcnotes.com/notes/wwdc21/10166/
+[apple dev | docc](https://developer.apple.com/documentation/docc)
 
-https://developer.apple.com/videos/play/wwdc2021/10236/
+[wwdc | Xcode 13](https://www.wwdcnotes.com/notes/wwdc21/10166/)
 
-https://developer.apple.com/videos/play/wwdc2022/110369/
+[wwdc | Host and automate your DocC documentation](https://developer.apple.com/videos/play/wwdc2021/10236/)
 
-Kodeco 
-https://www.kodeco.com/34919511-docc-tutorial-for-swift-getting-started
+[wwdc | Improve the discoverability of your Swift-DocC content](https://developer.apple.com/videos/play/wwdc2022/110369/)
+
+[Kodeco | docc-tutorial-for-swift-getting-started](https://www.kodeco.com/34919511-docc-tutorial-for-swift-getting-started)
+
 
 
 Publishing to Github Actions Pages via Swift DocC
-https://www.kodeco.com/40047657-docc-tutorial-for-swift-automating-publishing-with-github-actions
+
+[kodeco | docc-tutorial-for-swift-automating-publishing-with-github-actions](https://www.kodeco.com/40047657-docc-tutorial-for-swift-automating-publishing-with-github-actions)
 
 Hosting it locally using local server follow [this guide](tools/server/http-server#Quick%20run)
 
 Multi Platform DocC
-https://danielsaidi.com/blog/2022/04/27/building-multi-platform-documentation-with-docc
+[article building-multi-platform-documentation-with-docc](https://danielsaidi.com/blog/2022/04/27/building-multi-platform-documentation-with-docc)
+
 
 Custom Routing
 
 For multiple targets docC generation easy script 
-https://medium.com/kinandcartacreated/host-and-automate-your-docc-documentation-c6ac29dc0feb#53c7
-https://github.com/theappbusiness/ModularSlothCreator/blob/main/ci_site_deploy.sh
+[medium | host-and-automate-your-docc-documentation](https://medium.com/kinandcartacreated/host-and-automate-your-docc-documentation-c6ac29dc0feb#53c7)
+[github | code example](https://github.com/theappbusiness/ModularSlothCreator/blob/main/ci_site_deploy.sh)
+
 
 
 ## DocC Errors
@@ -243,16 +244,19 @@ xcodebuild docbuild \
 ## Markdown
 
 Markdown support has been added for Swift documentation in order to make the text formatting easier to write and consume.
-https://www.appcoda.com/swift-markdown/
+[appcoda | swift-markdown](https://www.appcoda.com/swift-markdown/)
+
 
 
 
 ## Reference
 
-https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref
+[apple dev | xcode markup](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref)
 
-https://cocoacasts.com/organize-your-swift-project-with-annotations-todos-and-fixmes
+[cocoacasts | organize-your-swift-project-with-annotations-todos-and-fixmes](https://cocoacasts.com/organize-your-swift-project-with-annotations-todos-and-fixmes)
 
-https://sarunw.com/posts/swift-documentation/
+[sarunw | swift-documentation](https://sarunw.com/posts/swift-documentation/)
 
-https://nshipster.com/swift-documentation/
+[NSHipster | swift-documentation](https://nshipster.com/swift-documentation/)
+
+[nooverviewavailable](https://nooverviewavailable.com/)

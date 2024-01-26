@@ -161,10 +161,9 @@ By removing that flag it was able to compile again but I can change the Swift Co
  
  Faced it in Xcode Playgrounds, turns out it was a translation issue related to Rosetta 2 emulation being checked by default. Disabling that using `Xcode.app` -> Get Info. Unchecking `Open using Rosetta`
 
-https://stackoverflow.com/questions/72796354/debugserver-is-x86-64-binary-running-in-translation-attached-failed-could-not
+[SO | debugserver-is-x86-64-binary-running-in-translation-attached-failed-could-not](https://stackoverflow.com/questions/72796354/debugserver-is-x86-64-binary-running-in-translation-attached-failed-could-not)
 
-https://sarunw.com/posts/open-using-rosetta-in-xcode-14-3/
-
+[open-using-rosetta-in-xcode-14-3](https://sarunw.com/posts/open-using-rosetta-in-xcode-14-3/)
 
 ## Platform Path
 
@@ -205,10 +204,7 @@ Enable the flag
 
 [SO | xcode-14-3-failed-to-verify-module-interface-of-project](https://stackoverflow.com/questions/75929888/xcode-14-3-failed-to-verify-module-interface-of-project)
 
-
-https://github.com/apple/swift/issues/64669
-
-
+[github | swift/issues/64669](https://github.com/apple/swift/issues/64669)
 
 ## deployment target mismatch
 

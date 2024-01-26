@@ -70,6 +70,19 @@ If your site uses multiple subdomains (such as `example.com`, `www.example.com`,
 Subdomain help
 [multiple-associated-domains](https://asbelita.medium.com/manage-universal-links-with-multiple-associated-domains-in-ios-97bda851b654)
 
+
+## Callback URL
+
+The goal of the x-callback-url specification is to provide a standardized means for iOS developers to expose and document the methods they make available to other apps via custom URL schemes.
+
+```
+targetapp://x-callback-url/updateStatus?
+   x-source=SourceApp&
+   text=[User inputted string]
+```
+
+[x-callback-url](https://x-callback-url.com/examples)
+
 ## Testing
 
 Opening links without typing it in simulator for testing can be easily achieved using Xcode CLI.
@@ -87,3 +100,4 @@ xcrun simctl openurl booted "com.trackvia://"
 ## Reference
 
 [defining-a-custom-url-scheme](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)
+

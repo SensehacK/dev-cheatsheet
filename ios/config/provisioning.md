@@ -10,6 +10,13 @@ You would need to get the UUID of your personal device from iTunes when the iOS 
 
 Copy the UUID and send it to your lead developer or manager who is managing the provisioning profile creation.
 
+macOS 10.14+
+Go to Finder -> Connected iPhone (Wired / Wireless) and press the iPhone device name to show additional info. `Copy All` which will get you like this.
+
+```text
+Serial: FW24TXE65L · UDID: 00008133-000643C13601401E · Model: iPhone16,2
+```
+
 ## Steps
 
 1. The person will log in to the Apple Developer portal. Click on “Generate a Provisioning Profile” -&gt; Select the newly generated Signing Certificate we created in “App signing” step.

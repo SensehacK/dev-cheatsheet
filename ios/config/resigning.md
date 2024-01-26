@@ -11,9 +11,25 @@ After that create a dummy xcode project and register the app identifier in order
 After that its easy peasy to just rename the `ipa` file with appropriate app identifier and install the app that way.
 You have modded youtube, infuse and many more on your iOS device without the hassle of installing other tools to refresh every 7 days.
 
+Also make sure you add your team ID to your default apps to override a unique string value for your bundle App ID.
+Bundle ID and App ID
 
-#### Errors
+```text
+com.google.ios.youtube
+com.firecore.infuse
+com.christianselig.Apollo
 
+// convert to
+com.google.ios.youtube.SN256SDGA
+com.firecore.infuse.SN256SDGA
+com.christianselig.Apollo.SN256SDGA
+```
+
+
+## Errors
+
+
+### Mismatched Application Identifier Entitlement
 ```log
 Installation failed: 0 MismatchedApplicationIdentifierEntitlement (Upgrade's application-identifier entitlement string (SN88Q889J9.com.google.ios.youtube.SN88Q889J9) does not match installed application's application-identifier string (EQHXZ8M8AV.com.google.ios.youtube); rejecting upgrade.)
 
@@ -24,13 +40,23 @@ I think we should just retry!
 
 If you're trying to install similar app with bundle identifier it would fail
 
-#### Jailbreak or Tampering detection 
+### Jailbreak or Tampering detection 
 
 If the app you want to sideload is trying to check if the phone has been jailbroken or has different signature or different bundle identifier, just enable injection tweaks on sideloadly
 
 [Open: sideloadly_sideload_spoofer.png](../../assets/2a7043566214d95f4da9e448fc3fc385_MD5.png)
 ![](../../assets/2a7043566214d95f4da9e448fc3fc385_MD5.png)
 
+Some apps like infuse won't work and show blank screens when you enable `tweak injection` to bypass detecting jailbreak.
+Don't know what's wrong with it.
+### Install failed: Guru Meditation
+
+```error
+ERROR: Guru Meditation 7c026a@447:14dd8f ('expected 1, found 0', ArrayError('expected 45, found 44', ArrayError('expected 3, found 1', SwitchError('no default case defined'))))
+Install failed: Guru Meditation 7c026a@447:14dd8f ('expected 1, found 0', ArrayError('expected 45, found 44', ArrayError('expected 3, found 1', SwitchError('no default case defined'))))
+```
+
+Just use a different iOS iPA file to install
 
 ## Automatic Resigning 7 days Free account
 
@@ -126,3 +152,12 @@ https://github.com/EthanArbuckle/Apollo-CustomApiCredentials
 ## Mac OS iPA
 
 [Installing IPAs on Apple Silicon (M1)](https://gist.github.com/Dids/c43fc68677e1a3cc215d88a74e26d05e)
+
+
+## Custom Apps
+
+[Apollo for reddit](https://github.com/Balackburn/Apollo)
+
+[Infuse Suffuse](https://github.com/Suffuse-Team/suffuse-team.github.io)
+
+[uYouPlus or Enhanced](https://github.com/arichornlover/uYouEnhanced)

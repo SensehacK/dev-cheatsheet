@@ -2,7 +2,7 @@
 
 ## Console Debug
 
-When you have specified the breakpoint and you have llb debugger in the console.
+When you have specified the breakpoint and you have lldb debugger in the console.
 
 You could use it
 
