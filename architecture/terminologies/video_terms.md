@@ -1,5 +1,9 @@
 # Video Terms
 
+## Intro
+
+So while being in high level architecture meetings around working in video streaming space, I quickly realize the exorbitant amount of acronyms used daily in those conversations. So I decided to expand upon my learnings and categorized them so that its easier for me to refer or forward my learnings to someone in need.
+
 
 ## Text
 ### Subtitles
@@ -189,9 +193,21 @@ cloud DVR
 
 [CDVR FAQs by Spectrum](https://www.spectrum.net/support/tv/cdvr-faq)
 
+
+#### CTSB
+
+Cloud time shift buffer
+
+[time shift tv explained](https://www.edgeware.tv/product/time-shift-tv/)
+
 ### Hot Recording 
 
+## Session
 
+### Heartbeat 
+
+As described by my architect.
+It's generally a periodic request sent as a 'keep alive' / I'm still here / periodic update mechanism. Like the player sending a heartbeat analytics message every 60s with info about the stream. The app also sends a periodic request to monitor that the user is still watching a stream and count towards their max concurrent streams limit.
 
 ## Upscaling 
 
