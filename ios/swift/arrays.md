@@ -125,10 +125,45 @@ let arrFields = [
 ```
 
 ## Map
+
 Makes mapping every element easier on the contiguous data structure.
 
+```swift
+let cast = ["Viv", "Darlon", "Fim", "Carl"]
+let lowercaseNames = cast.map { $0.lowercased() }
+let letterCounts = cast.map { $0.count }
+```
+
+[Apple Dev | map](<https://developer.apple.com/documentation/swift/array/map(_:)-87c4d>)
 
 ## Reduce
+
+
+```swift
+let booleans = [true, true, false, true, false]
+let result = booleans.reduce(true, { $0 && $1 })
+print(result) // false
+
+// Another variant 
+let numbers = [1, 34, 35, 64, 2]
+let result = numbers.reduce(into: 0) { $0 += $1 }
+let result2 = numbers.reduce(0, +)
+```
+
+### `reduce(into:_:_)` vs `reduce(:_:_)`
+
+```swift
+let result = numbers.reduce(into: 0) { $0 += $1 }
+// VS
+let result4 = numbers.reduce(0) { $0 + $1 }
+```
+`reduce(into:_:_)`
+One works with `+=` because those are `&inOut` variables which lets us have mutable state for avoiding Copy On Write (CoW) from Swift.
+
+`reduce(:_:_)`
+With normal `reduce(:_:_)` it creates a immutable variables to store the new result every time the loop increments.
+
+[Apple dev | reduce](<https://developer.apple.com/documentation/swift/array/reduce(into:_:)>)
 
 [Reduce function](https://medium.com/@lucianoalmeida1/a-little-bit-about-the-cool-reduce-in-swift-306edd9ceb57)
 

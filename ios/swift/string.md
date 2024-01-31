@@ -82,6 +82,17 @@ let str2: String = "Hi! my name is " + name
 [concatenating-strings-in-swift-which-way-is-faster](https://www.globalnerdy.com/2016/02/03/concatenating-strings-in-swift-which-way-is-faster/)
 
 
+## Multi Line String
+
+```swift
+var str1 = """
+This goes
+over multiple \
+lines
+"""
+```
+
+[HWS | Code snippet](https://www.hackingwithswift.com/sixty/1/3/multi-line-strings) 
 ## Deprecations
 
 [String interpolation Debug description](https://izziswift.com/how-to-solve-string-interpolation-produces-a-debug-description-for-an-optional-value-did-you-mean-to-make-this-explicit-in-xcode-8-3-beta/)
