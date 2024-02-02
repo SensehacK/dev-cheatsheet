@@ -28,9 +28,21 @@ X      Y     AND(X,Y)
 
 ## XOR
 
+X      Y     AND(X,Y)
+
+0       0           0
+0       1            1
+1        0           1
+1        1            0
+
+
+
 ## NAND
 
 /logic\_gates.png
 
 Image Source: [study.com | nand-nor-xor-logic-gates](https://study.com/academy/lesson/nand-nor-xor-logic-gates.html)
 
+## Mind Map
+
+[Math bitwise operations](bitwise.md)
