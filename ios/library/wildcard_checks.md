@@ -69,3 +69,12 @@ public extension Image { }
 
 https://forums.swift.org/t/if-vs-available-vs-if-available/40266/2
 
+
+
+## Check Simulator
+
+```swift
+#if targetEnvironment(simulator)
+// your code
+#endif
+```

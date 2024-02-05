@@ -71,10 +71,11 @@ XCFramework on the other hand is just a structured folder/ wrapper. It has disti
 
 
 
-## Frameworks
+## Frameworks Guide
 ### Creating Frameworks
 
-https://www.kodeco.com/17753301-creating-a-framework-for-ios
+[kodeco | creating-a-framework-for-ios](https://www.kodeco.com/17753301-creating-a-framework-for-ios)
+
 
 ### Extracting frameworks
 
@@ -117,9 +118,9 @@ If you have FAT binaries then you could have extra architecture bloatware depend
 
 The process usually for debugging `xcframework` is described below. As described by my team member.
 
-1. if you install a xcframework into a client application, it's generally built with  optimization, so there are no debug symbols and you can't break point that code
-2. However, if you have access to the dependency code, like `ProjectPlatform`, you can build a `framework` file locally without optimization so debug symbols (dSyms) are included in that binary/app bundle.
-3. If you copy that module information into the dependency's xcframework on the client app, you can essentially "fake" the build system because now it will run the framework code as if there are debug symbols. 
+1. if you install a `.xcframework` into a client application, it's generally built with  optimization, so there are no debug symbols and you can't break point that code
+2. However, if you have access to the dependency code, like `ProjectPlatform`, you can build a `framework` file locally without optimization so  [debug symbols (dSYM)](apple_terms.md#dSYM) are included in that binary/app bundle.
+3. If you copy that module information into the dependency's `.xcframework` on the client app, you can essentially "fake" the build system because now it will run the framework code as if there are debug symbols. 
 
 
 [Open: xcframework_internal_redacted.png](../../assets/628b71a20fd797895058280a80be476c_MD5.png)
@@ -129,17 +130,19 @@ Third point does it relates to actually opening up client dependency frameworks 
 
 Edit: We can just swap out the `Unix Executable file` binary file with our locally built binary file with no optimization and the `.xcFramework` directory would also include `dSYMs` directory for specific os architecture.
 
-
-
-
-
-
+[SO | How can I debug in a framework in Xcode?](https://stackoverflow.com/questions/15654493/how-can-i-debug-in-a-framework-in-xcode)
 
 
 ### Distributing
 
+### Binary 
+
 Make binaries available to other developers by creating Swift packages that include one or more XCFrameworks.
 [Distributing binary frameworks as Swift packages](https://developer.apple.com/documentation/xcode/distributing-binary-frameworks-as-swift-packages)
+
+### Multiple apps out of a framework? 
+
+[SO | build-multiple-ios-apps-out-of-a-framework](https://stackoverflow.com/questions/21415658/build-multiple-ios-apps-out-of-a-framework?rq=3)
 
 
 ## Errors
@@ -191,6 +194,32 @@ We are having this issue because SPM internal dependencies dependency hasn't exp
 ```log
 objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framework/) and TestUI.app/TestUI (0x1026b3620). One of the two will be used. Which one is undefined.
 ```
+
+### CFBundleIdentifier Collision
+
+```text
+"CFBundleIdentifier Collision. There is more than one bundle with the CFBundleIdentifier value com.companyname.projectName under the application ProjectName.app"
+```
+#### Cause
+
+It happens if your HostApp embeds a framework which has been also embedded in some of the frameworks which are also being embedded in HostApp. For example,
+
+1. Host `H` embeds framework `F1` and framework `F2`
+2. Framework `F1` embeds framework `F2`
+3. Thus, Framework `F2` will be duplicated in bundle after IPA generated
+
+#### Solution
+
+Only HostApp but no other frameworks should embed any dependent frameworks in their respective Build Phase. So,
+
+1. Go to Build Phase tab for `F1`
+2. Remove `F2` from `Embed Frameworks` step, or remove full step
+3. Go to General tab for `F1`
+4. Select Frameworks, Libraries and Embedded Content
+5. Select `Do Not Embed` option for `F2`
+
+Have a clean build.
+[SO | Post Answer copied](https://stackoverflow.com/a/61623753/5177704)
 
 
 ## Build Output
