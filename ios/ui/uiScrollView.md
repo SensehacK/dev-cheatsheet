@@ -38,14 +38,16 @@ UIScrollView Scrollable Content Size Ambiguity
 ## Refresh Reload
 
 
-[SO](https://stackoverflow.com/questions/9217772/best-way-to-refresh-reload-uiscrollview)
+[SO | refresh reload uiScrollview](https://stackoverflow.com/questions/9217772/best-way-to-refresh-reload-uiscrollview)
 
 
 ## Scroll to a CGPoint
 
 You can set the content offset from the scrollview to set its desired viewport.
-> scrollView.setContentOffset(CGPoint(x: 35, y: 200), animated: false)
 
+```swift
+scrollView.setContentOffset(CGPoint(x: 35, y: 200), animated: false)
+```
 ## AutoLayout Programmatically
 
 [Monkey Work Article](https://monkey.work/blog/2020-11-08-uiscrollview/)

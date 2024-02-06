@@ -30,4 +30,4 @@ func presentationControllerShouldDismiss(_ presentationController: UIPresentatio
 }
 ```
 
-[SO](https://stackoverflow.com/questions/56459329/disable-the-interactive-dismissal-of-presented-view-controller)
+[SO | disable-the-interactive-dismissal-of-presented-view-controller](https://stackoverflow.com/questions/56459329/disable-the-interactive-dismissal-of-presented-view-controller)

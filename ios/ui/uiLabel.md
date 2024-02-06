@@ -53,10 +53,10 @@ textLabel.attributedText = attributedTitle
 
 Remember that your minimumLineHeight could also come in picture with multi - line texts. It didn't help me overall but just letting this in the doc.
 
+[SO | multiple lines of text uilabel](https://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel)
 
-https://stackoverflow.com/questions/990221/multiple-lines-of-text-in-uilabel
+[HWS | formatting-strings-with-nsattributedstring](https://www.hackingwithswift.com/read/24/4/formatting-strings-with-nsattributedstring)
 
-https://www.hackingwithswift.com/read/24/4/formatting-strings-with-nsattributedstring
 
 Caveats with baseline offset being added which could be non-zero, this would prematurely make the label truncated and the number of lines = 0 not being respected for having multi line support.
 

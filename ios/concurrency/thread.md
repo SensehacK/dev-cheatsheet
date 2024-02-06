@@ -30,7 +30,9 @@ Main thread
 
 ## Race Condition
 
-[SO| What is Race Condition](https://stackoverflow.com/questions/34510/what-is-a-race-condition?rq=1)
+[SO | What is Race Condition](https://stackoverflow.com/questions/34510/what-is-a-race-condition?rq=1)
+
+[avanderlee | thread sanitizer data races](avanderlee.com/swift/thread-sanitizer-data-races/)
 
 ## Critical Section
 

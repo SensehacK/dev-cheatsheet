@@ -12,19 +12,24 @@
 [Custom Cell](https://slicode.com/how-to-create-custom-tableview-cell-in-swift/)
 ## Deprecation
 `textLabel` iOS 3.0–14.0 Deprecated
+
 ```swift
 cell.textLabel?.text = "Hello!"
 ```
 
-https://developer.apple.com/documentation/uikit/uitableviewcell/1623210-textlabel
+[apple dev | uitableviewcell textlabel](https://developer.apple.com/documentation/uikit/uitableviewcell/1623210-textlabel)
+
 should be switched to 
+
 ```swift
 var content = cell.defaultContentConfiguration()
 content.text = "Hello Kautilya"
 content.secondaryText = "SK"
 cell.contentConfiguration = content
 ```
-https://medium.com/geekculture/modern-configurations-for-cells-and-views-after-ios-14-0-33b5c82ac448
+
+[medium | modern-configurations-for-cells-and-views-after-ios-14](https://medium.com/geekculture/modern-configurations-for-cells-and-views-after-ios-14-0-33b5c82ac448)
+
 
 
 

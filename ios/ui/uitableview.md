@@ -74,14 +74,15 @@ public override func tableView(_ tableView: UITableView,
 
 `UITableViewDiffableDataSource`
 
-https://medium.com/@ali-akhtar/uitableview-diffable-datasource-part-1-13a24e8f23d8
+[medium | uitableview-diffable-datasource-part-1](https://medium.com/@ali-akhtar/uitableview-diffable-datasource-part-1-13a24e8f23d8)
+
 
 
 ## Extension
 
 Unselecting the selected tableview
 
-[SO](https://stackoverflow.com/questions/3968037/how-to-deselect-a-selected-uitableview-cell)
+[SO | how-to-deselect-a-selected-uitableview-cell](https://stackoverflow.com/questions/3968037/how-to-deselect-a-selected-uitableview-cell)
 
 ```swift
 import UIKit

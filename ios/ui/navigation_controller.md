@@ -63,7 +63,7 @@ private let navigationController: UINavigationController = {
 [Apple Dev forums](https://developer.apple.com/forums/thread/682420)
 
 `isTranslucent` property being added in iOS 13 which has different behavior with UI NavigationBar background color.
-https://sarunw.com/posts/uinavigationbar-changes-in-ios13/
+[sarunw | navigationbar changes in iOS 13](https://sarunw.com/posts/uinavigationbar-changes-in-ios13/)
 
 ## Text Attributes not updating
 
@@ -94,7 +94,7 @@ appearance.titleTextAttributes = [
 ## Theming UIBarButtons
 
 As my fellow [media fanatic mentor](README###Mentors IRL) helped me once with the UINavigationBar or whatever apple UIKit framework has renamed it to now.
-We need to set the parent Viewcontroller navigation property rather than changing the child UI ViewController class.
+We need to set the parent ViewController navigation property rather than changing the child UI ViewController class.
 It makes sense but yes the documentation or my understanding of documentation could have been better.
 
 
@@ -117,16 +117,13 @@ we're only showing the back button, but if there was a back button title, we wou
 even though `UINavigationItem` itself doesn't represent a distinct UI component, it's an abstraction that is used within the specific context of push/pop style navigation.
 ```
 
+[SO | change-color-of-back-button-in-navigation-bar](https://stackoverflow.com/questions/28733936/change-color-of-back-button-in-navigation-bar)
 
-https://stackoverflow.com/questions/28733936/change-color-of-back-button-in-navigation-bar
-
-https://www.youtube.com/watch?v=7KdRpFEOG9I
-
+[Youtube video](https://www.youtube.com/watch?v=7KdRpFEOG9I)
 
 ## Navigation Items
 
-
-[SO](https://stackoverflow.com/questions/39643169/swift-hide-navigation-title-but-show-its-title-as-back-button-in-next-view-contr)
+[SO | hide-navigation-title-but-show-its-title-as-back-button-in-next-view-contr](https://stackoverflow.com/questions/39643169/swift-hide-navigation-title-but-show-its-title-as-back-button-in-next-view-contr)
 
 Try to hide titleView label
 
@@ -143,8 +140,7 @@ Large title text navigation
 
 [navigation bar glitches](https://swiftsenpai.com/development/large-title-uinavigationbar-glitches/)
 
-https://stackoverflow.com/questions/69111478/ios-15-navigation-bar-transparent
-
+[SO | ios 15 navigation bar transparent](https://stackoverflow.com/questions/69111478/ios-15-navigation-bar-transparent)
 
 ## Swap ViewController
 
@@ -165,9 +161,10 @@ extension UINavigationController {
 
 ## Pop View Controllers
 
-https://stackoverflow.com/questions/26132658/pop-2-view-controllers-in-nav-controller-in-swift
+[SO | pop-2-view-controllers-in-nav-controller](https://stackoverflow.com/questions/26132658/pop-2-view-controllers-in-nav-controller-in-swift)
 
-https://developer.apple.com/forums/thread/134078
+[apple dev | Pop View Controllers](https://developer.apple.com/forums/thread/134078)
+
 ## References
 
-https://dmtopolog.com/navigation-bar-customization/
+[navigation-bar-customization](https://dmtopolog.com/navigation-bar-customization/)

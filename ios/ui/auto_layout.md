@@ -15,11 +15,7 @@ translatesAutoresizingMaskIntoConstraints = false
 
 ## Compression Resistance
 
-
-
-https://krakendev.io/blog/autolayout-magic-like-harry-potter-but-real
-
-
+[autolayout-magic-like-harry-potter-but-real](https://krakendev.io/blog/autolayout-magic-like-harry-potter-but-real)
 
 ## Cheatsheet
 

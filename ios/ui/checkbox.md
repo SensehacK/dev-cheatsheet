@@ -8,7 +8,6 @@ Programmatically making a button toggle between active and inactive state using 
 
 ```swift
 import UIKit
-
 class CheckMarkButton: UIButton {
 
     // MARK: - Private Properties
@@ -65,11 +64,8 @@ private extension CheckMarkButton {
 private extension CheckMarkButton {
 
     struct Constants {
-
         private init() {}
-
         static let cornerRadius: CGFloat = 12
-
     }
 
     struct Icons {
@@ -95,10 +91,8 @@ Usage of the extension with protocol delegate coordinator pattern with programma
 
 ```swift
 protocol RegisterViewDelegate: class { 
-
-        /// Informs that user wants to specify date of birth
+    /// Informs that user wants to specify date of birth
     func registerViewDidTapCheckmark(_ view: RegisterView)
-
 }
 
 class UserProfileView: UIView {
@@ -127,7 +121,7 @@ class UserProfileView: UIView {
 ```swift
 class RegisterViewController: UIViewController {
 
-        // MARK: - Properties
+    // MARK: - Properties
     var isCheckmark: Bool?
 
     // MARK: - Overridden Properties

@@ -158,11 +158,15 @@ private lazy var emailTextField: UITextField = {
 
 This behavior is valid until the custom UITextField class hasn’t been defined with its background color property.
 
-> self.backgroundColor = .clear
+```swift
+self.backgroundColor = .clear
+```
 
 Then you would have to override the custom UITextField object with the backgroundColor property accordingly
 
-> emailTextField.backgroundColor = isEnabled ? .clear : .gray
+```swift
+emailTextField.backgroundColor = isEnabled ? .clear : .gray
+```
 
 [SO](https://stackoverflow.com/questions/29791644/disabling-user-input-for-uitextfield-in-swift)
 

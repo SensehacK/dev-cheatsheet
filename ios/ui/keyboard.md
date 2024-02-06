@@ -95,26 +95,24 @@ class UserProfileView: UIView {
 
 ## Delegates
 
-> @objc func keyboardWillAppear
-> @objc func keyboardWillDisappear
+```swift
+@objc func keyboardWillAppear
+@objc func keyboardWillDisappear
+```
 
 ## Customizability
-
-
-
-
 
 [Dismiss Keyboard](https://medium.com/@KaushElsewhere/how-to-dismiss-keyboard-in-a-view-controller-of-ios-3b1bfe973ad1)
 
 Custom InputField Dismiss Keyboard
 
-[Stack Overflow](https://stackoverflow.com/questions/36001119/dismissing-keyboard-on-custom-uitextfield)
+[SO | dismiss keyboard custom text field](https://stackoverflow.com/questions/36001119/dismissing-keyboard-on-custom-uitextfield)
 
 ## Dismiss on InActive Tap
 
 [TutorialsPoint](https://www.tutorialspoint.com/how-do-you-hide-the-onscreen-keyboard-in-ios-app)
 
-https://stackoverflow.com/questions/24126678/close-ios-keyboard-by-touching-anywhere-using-swift?rq=1
+[SO | close-ios-keyboard-by-touching-anywhere-using-swift](https://stackoverflow.com/questions/24126678/close-ios-keyboard-by-touching-anywhere-using-swift?rq=1)
 
 ## Customization
 

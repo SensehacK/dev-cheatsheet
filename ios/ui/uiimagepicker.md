@@ -11,12 +11,12 @@ UIImagePickerControllerDelegate
 
 iOS 14 changes to the Photo Picker library API.
 
-https://ikyle.me/blog/2020/phpickerviewcontroller
+[phpickerviewcontroller](https://ikyle.me/blog/2020/phpickerviewcontroller)
 
-https://developer.apple.com/documentation/photokit/phpickerviewcontroller
+[apple dev | phpickerviewcontroller](https://developer.apple.com/documentation/photokit/phpickerviewcontroller)
 
-https://ohmyswift.com/blog/2020/08/29/replacing-uiimagepickercontroller-with-phpickerviewcontroller/
+[replacing-uiimagepickercontroller-with-phpickerviewcontroller/](https://ohmyswift.com/blog/2020/08/29/replacing-uiimagepickercontroller-with-phpickerviewcontroller/)
 
-https://www.appcoda.com/phpicker/
+[appcoda | phpicker](https://www.appcoda.com/phpicker/)
 
-https://mackuba.eu/2020/07/07/photo-library-changes-ios-14/
+[photo-library-changes-ios-14](https://mackuba.eu/2020/07/07/photo-library-changes-ios-14/)

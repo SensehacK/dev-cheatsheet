@@ -137,7 +137,7 @@ let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 0, width: screenWidth, heig
         self.inputView = datePicker
 ```
 
-[StackOverflow](https://stackoverflow.com/questions/10494174/minimum-and-maximum-date-in-uidatepicker)
+[SO | min max date picker](https://stackoverflow.com/questions/10494174/minimum-and-maximum-date-in-uidatepicker)
 
 
 

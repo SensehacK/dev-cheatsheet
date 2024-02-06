@@ -4,7 +4,10 @@
 ## Setup
 
 Assigning the image data value to a specific image outlet object.
-> self.UIImage_name.image = UIImage(data: data)
+
+```swift
+self.UIImage_name.image = UIImage(data: data)
+```
 
 
 ## Download Image
@@ -43,14 +46,13 @@ extension UIImageView {
 }
 ```
 
-[SO](https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift)
-[](https://cocoacasts.com/fm-3-download-an-image-from-a-url-in-swift)
+[SO| loading image url](https://stackoverflow.com/questions/24231680/loading-downloading-image-from-url-on-swift)
+[cocoacasts | download image via url](https://cocoacasts.com/fm-3-download-an-image-from-a-url-in-swift)
 
 ## Concurrent Image Load
 
 Copied from the solution: 
 ```text
-
 1.  This code isn't thread safe, because you have race condition on `numImagesLoaded`. This could, theoretically, result in `continueLoad` to be called more than once. You can achieve thread safety by synchronizing `numImagesLoaded` by dispatching updates to this (and other model objects) back to the main queue.
     
 2.  Like DashAndRest said, you have to dispatch the UI update to the main queue, as well.
@@ -122,7 +124,7 @@ func loadAllImages() {
     NSOperationQueue.mainQueue().addOperation(completionOperation)
 }
 ```
-https://stackoverflow.com/questions/37885623/using-dispatch-async-to-load-images-in-background
+[SO | dispatch images in background](https://stackoverflow.com/questions/37885623/using-dispatch-async-to-load-images-in-background)
 
 ### Async Image Global background queue
 
@@ -152,9 +154,9 @@ func downloadImages(urls: [URL]) {
 
 ## Programmatic UI Image
 
-[article](https://www.appsdeveloperblog.com/create-uiimage-and-uiimageview-programmatically/)
-[SO](https://stackoverflow.com/questions/26569371/how-do-you-create-a-uiimage-view-programmatically-swift)
-[](http://webindream.com/how-to-add-uiimageview-programmatically-in-swift/)
+[article | uiimage imageview programmatically](https://www.appsdeveloperblog.com/create-uiimage-and-uiimageview-programmatically/)
+[SO | uimage programmatically](https://stackoverflow.com/questions/26569371/how-do-you-create-a-uiimage-view-programmatically-swift)
+[uiimage programmatically](http://webindream.com/how-to-add-uiimageview-programmatically-in-swift/)
 
 
 ## Vector Image

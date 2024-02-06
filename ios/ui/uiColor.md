@@ -95,4 +95,4 @@ func inverseColor() -> UIColor {
 ## References
 
 Resolved Color -> with system trait of appearance set.
-https://developer.apple.com/documentation/uikit/uicolor/3238042-resolvedcolor
+[Apple dev | ui color resolver](https://developer.apple.com/documentation/uikit/uicolor/3238042-resolvedcolor) 
