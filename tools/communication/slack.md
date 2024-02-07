@@ -31,3 +31,14 @@ localStorage.setItem("localConfig_v2", localStorage.getItem("localConfig_v2").re
 ```
 
 - Restart slack with `command + R`
+
+## Disable Slack updates
+
+Just disable this host on your firewall to never connect to their subdomain for checking updates.
+
+```text
+https://downloads.slack-edge.com/
+
+// Actual URL of a macOS installer
+https://downloads.slack-edge.com/releases/macos/4.36.138/prod/universal/Slack-4.36.138-macOS.dmg
+```

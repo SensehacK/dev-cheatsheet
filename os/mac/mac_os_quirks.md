@@ -27,3 +27,15 @@ I have this issue with my Macbook pro 2020, 13 inch , It appears from time to ti
 2- open activity monitor and quit the `audioid` it works just fine 
 [Source](https://discussions.apple.com/thread/251203866)
 [Apple forums](https://developer.apple.com/forums/thread/132423)
+
+
+### App install update popups
+
+Slack Popup saying 
+An update is ready to install. Slack is trying to add a new helper tool.
+Enter your password to allow this.
+```sh
+sudo chown -R $USER /Applications/Slack.app
+```
+
+Or if you 

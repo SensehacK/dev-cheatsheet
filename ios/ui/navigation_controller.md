@@ -93,7 +93,7 @@ appearance.titleTextAttributes = [
 
 ## Theming UIBarButtons
 
-As my fellow [media fanatic mentor](README###Mentors IRL) helped me once with the UINavigationBar or whatever apple UIKit framework has renamed it to now.
+As my fellow [media fanatic mentor](misc/resources#Offline) helped me once with the UINavigationBar or whatever apple UIKit framework has renamed it to now.
 We need to set the parent ViewController navigation property rather than changing the child UI ViewController class.
 It makes sense but yes the documentation or my understanding of documentation could have been better.
 
