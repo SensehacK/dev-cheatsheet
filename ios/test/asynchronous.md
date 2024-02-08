@@ -83,6 +83,24 @@ if result == XCTWaiter.Result.timedOut {
 ```
 
 
+## DispatchQueue Wait + Expectation
+
+You can combine DispatchQueue async wait and use expectations for swift unit tests to wait for some time in order to get the results needed for testing.
+
+```swift
+func testWhen() {
+	let expectation = self.expectation(description: "TextTracksPresent")
+expectation.expectedFulfillmentCount = 1
+
+DispatchQueue.main.asyncAfter(deadline: .now()+3 ) {
+		print("Check after 3 secs??")
+		XCTAssertEqual(self.currentTrack.id, audioTrack.id)
+		expectation.fulfill()
+	}
+waitForExpectations(timeout: 5)
+}
+
+```
 ## References
 
 [swift by sundell | unit-testing-asynchronous-swift-code Expectations](https://www.swiftbysundell.com/articles/unit-testing-asynchronous-swift-code/#expectations)

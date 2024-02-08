@@ -16,6 +16,9 @@ You can append `skip` to the test_function_name in order for Xcode compiler | ru
 
 Really handy when you're working with `flaky` tests
 
+Also adding test repetitions for flaky tests in swift.
+[avanderlee |  Flaky tests resolving using Test Repetitions in Xcode](https://www.avanderlee.com/debugging/flaky-tests-test-repetitions/)
+
 ## Conditional Skip Testing
 
 You could utilize the various ways to skip testing if certain conditions have been met.
@@ -101,6 +104,15 @@ Note:
 - You can resort to `private(set)` for the properties to make tests which can be just read for unit testing.
 
 [how-to-unit-test-private-methods-in-swift](https://cocoacasts.com/how-to-unit-test-private-methods-in-swift)
+
+## Mirror | Reflection
+
+Reflection is a common programming language feature that enables us to inspect, and work with, the members of a type — dynamically, at runtime.
+
+[avanderlee | reflection how mirror works](https://www.avanderlee.com/swift/reflection-how-mirror-works/)
+
+[swiftbysundell | reflection](https://www.swiftbysundell.com/articles/reflection-in-swift/)
+
 
 ## Assertions
 
