@@ -26,6 +26,20 @@ NSString * myString = @"Hello World";
 NSLog(@"%@", myString);
 ```
 
+print with Boolean value
+
+```objc
+BOOL success = NO
+NSLog(@"State machine should Fire: YES OR NO - %@ ", success ? @"YES" : @"NO");
+```
+
+print with Integer or Long value
+
+```objc
+BOOL tempValue = 124125
+NSLog(@"Printing integer value: %ld ", (long)tempValue);
+```
+
 String Array
 
 ```objc
