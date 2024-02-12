@@ -16,6 +16,8 @@ po swift\_variable/ objects
 
 In UI Xcode IDE, you can specify breakpoints on the code as well group breakpoints, share them and also add specific type of breakpoints. Like having exception breakpoint, printing debug logs, conditional breakpoints.
 
+[Apple dev | Stepping through code and inspecting variables to isolate bugs](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs)
+
 ## Print Memory address
 
 Object Reference types
@@ -109,7 +111,6 @@ https://developer.apple.com/documentation/swift/customdebugstringconvertible
 
 ## View Debugging
 
-
 Xcode provides us a great way to visually debug a view being presented on the screen.
 
 But to top it off with the icing on the cake you can actually change constraints or values of the paused debugged view.
@@ -174,6 +175,11 @@ DONE
 [git gist](https://gist.github.com/maxchuquimia/3eb255b0ea2088829b460358d9f058d3)
 
 
+
+## Crash
+
+[apple dev | Diagnosing issues using crash reports and device logs](https://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs)
+
 ## Method_Swizzling
 
 
@@ -181,3 +187,39 @@ You can reverse engineer certain libraries / frameworks of apple UIKit , AppKit 
 Sometimes the library we are consuming won't expose all the options to tweak or change its behavior so method swizzling basically comes into the picture where you just hack / capture the memory and replace it with our own custom function / method. To get more custom behavior and just understand the underlying working architecture of the abstracted library.
 
 Haven't heard anyone explicit mention this most of the time but one senior engineer from Objective - C did gave me a nudge to check it out in 2020 just because I mentioned I came from Turbo-C , DosBox and C++ compilers era.
+
+
+## Custom Debug String
+
+Enforcing a struct with protocol `CustomDebugStringConvertible` and use `debugDescription` computed property to provide more information for getting customized console prints.
+
+### Definition
+
+```swift
+struct TrackCodecs: CustomDebugStringConvertible {
+    var audioCodec: [String]
+    var textCodec: [String]
+    var closedCaptionCodec: [String]
+    var subtitleCodec: [String]
+    
+    var debugDescription: String {
+        """
+          Current Media Asset Info
+          Type: Audio | Codec: \(audioCodec)
+          Type: Text | Codec: \(textCodec)
+          Type: Audio | Codec: \(closedCaptionCodec)
+          Type: Subtitle | Codec: \(subtitleCodec)
+          ------------------------
+        """
+    }
+}
+```
+
+### Usage
+
+```swift
+let codec = TrackCodecs(...)
+print(codec.debugDescription)
+```
+
+Read more by [Avanderlee | article](https://www.avanderlee.com/swift/custom-debug-descriptions/)

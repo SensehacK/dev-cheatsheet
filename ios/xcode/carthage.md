@@ -42,10 +42,42 @@ Fetching will be downloaded in [Carthage/Checkouts](https://github.com/Carthage/
 I do believe that the community has moved away from Carthage in general to either Cocoapods or Swift Package manager.
 
 
+## Syntax
+
+Setting the right branch or tag
+
+```sh
+# branch
+github "https://github.com/org/repo_name.git" "branch_develop"
+
+# tags
+github "https://github.com/org/repo_name.git" == 0.6.9
+```
 
 ## Debugging
 
 Sometimes it is helpful to just open the generated Carthage log file and sift through the errors of what went wrong and where. Also opening the `checkout` directory and manually opening it with Xcode with your dependency could help to isolate the build failed errors.
+
+
+## Updating
+
+For a Cartfile like the following
+```cartfile
+github "Alamofire/Alamofire"
+github "ReactiveX/RxSwift"
+
+# CPlatform
+github "https://github.com/company-org/cplatform_ios.git" "branchName"
+```
+
+You could choose to update one dependency
+
+```sh
+carthage update Alamofire
+carthage update cplatform_ios
+```
+
+[SO | carthage individual update](https://stackoverflow.com/a/36421394/5177704)
 
 ## Errors
 
@@ -89,6 +121,16 @@ To sort it out I did the following steps:
 Everything compiled without any errors. It seams that once the project is opened in Xcode, Xcode is automatically adding something that is missing and the project compiles then.
 
 This process has to be followed after every "Carthage update", as the update will download a fresh Xcode project.
+
+Note: Make sure your VPN is turned on since one of the few dependencies needed VPN to download it and it wasn't able to connect it within time hence we used to get this error on terminal CLI.
+
+
+[Github | realm-swift thread](https://github.com/realm/realm-swift/issues/6549)
+
+[Github | facebook-iOS-sdk thread](https://github.com/facebook/facebook-ios-sdk/issues/1251)
+
+[Github | oneSignal thread](https://github.com/OneSignal/OneSignal-iOS-SDK/issues/886)
+
 
 
 ### Deployment target mismatch

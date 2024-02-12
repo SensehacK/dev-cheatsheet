@@ -22,6 +22,8 @@ if let envV = ProcessInfo.processInfo.environment["IS_CI_SERVER"] {
 ```
 [xcode build Env variables](https://stackoverflow.com/questions/40722756/passing-arguments-to-ios-tests-with-xcodebuild)
 
+[Sarunw | setup iOS Environments develop | staging | production](https://sarunw.com/posts/how-to-set-up-ios-environments/)
+
 ### Issues
 
 While importing the environment variables, sometimes your host terminal environment variables aren't being imported properly. But if you edit the main scheme of the app and append the `Environment variables` to that scheme it would be able to properly import that value. 

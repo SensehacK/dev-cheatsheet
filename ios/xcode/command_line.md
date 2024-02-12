@@ -83,10 +83,14 @@ xcodebuild test -workspace product_name-iOS.xcworkspace -scheme product_scheme -
 ```
 
 No verbose option with xcode build command
-> xcodebuild -quiet
+```sh
+xcodebuild -quiet
+```
 
 Or use pipeline with external tool called `xcpretty`
-> | xcpretty
+```sh
+ | xcpretty
+```
 
 [Swift package Tests](https://www.jessesquires.com/blog/2021/11/03/swift-package-ios-tests/)
 
@@ -124,8 +128,10 @@ error: fatalError
 ```
 
 
+```sh
 -sdk /Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS15.2.sdk  -target arm64-apple-ios15.2
 
+```
 
 Schemes available for running
 
@@ -134,8 +140,7 @@ Information about workspace "product_name-iOS-Network":
         product_nameNetwork
         product_nameNetwork-Package
         product_nameNetworkTestKit
-        
-        
+
 
 ```bash
 xcodebuild: error: Scheme product_nameNetworkTestKit is not currently configured for the test action.

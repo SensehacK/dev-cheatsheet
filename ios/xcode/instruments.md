@@ -15,4 +15,4 @@ You can hide system calls by filtering them.
 
 ## References
 
-https://www.advancedswift.com/counters-in-instruments/
+[advanced swift | counters-in-instruments/](https://www.advancedswift.com/counters-in-instruments/)
