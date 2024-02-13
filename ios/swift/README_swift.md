@@ -20,6 +20,8 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[closure]]
 
+[command_line_arguments](command_line_arguments.md)
+
 [[completion_handlers]]
 
 [[data_structure]]
@@ -60,16 +62,17 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[short_hands]]
 
-[[switch]]
-
 [[ios/swift/enum]]
-
-[[type_casting]]
-
-[[ternary]]
 
 [[string]]
 
+[[switch]]
+
+[[ternary]]
+
+[[type_casting]]
+
+[url](url.md)
 
 ## Migration or Language Equivalents
 
