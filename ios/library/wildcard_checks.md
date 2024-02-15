@@ -12,7 +12,7 @@ guard #available(iOS 14, *) else {
 
 print("This code only runs on iOS 14 and up")
 
-
+if #available(iOS 15, *) { }
 ```
 
 [@available / available](https://www.avanderlee.com/swift/available-deprecated-renamed/)

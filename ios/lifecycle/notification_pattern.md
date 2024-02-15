@@ -1,20 +1,54 @@
 # Notification  Pattern
 
-## Default
+## Add Observer
+
+Adding the notification observer is easy and we use singleton pattern to get `default` context from Notification Center. We can specify the `name` or `class object` 
+You can specify the closure to expand right away or pass 
+in another [closure](../../ios/swift/closure.md)
 
 ```swift
 func listenObserver() {
     NotificationCenter
     .default
-    .addObserver(forName: 
-    Notification.Name(rawValue: notificationName),            
-    object: object, 
-    queue: nil, 
-    using: closure)
+    .addObserver(
+	    forName: Notification.Name(rawValue: notificationName),
+	    object: object, 
+	    queue: nil, 
+	    using: closure
+	)
 }
-
-func post
 ```
+
+Selector option with `addObserver`
+```swift
+NotificationCenter
+    .default
+    .addObserver(
+	    self,
+	    selector: #selector(post), 
+	    name: Notification.Name(rawValue: notificationName),
+	    object: nil
+	)
+
+@objc 
+func post() { }
+```
+
+## Remove Observer
+
+Normal removal of observer
+```swift
+NotificationCenter.default.removeObserver(self)
+```
+
+```swift
+NotificationCenter.default.removeObserver(Notification.Name)
+```
+When removing an observer, remove it with the most specific detail possible. For example, if you used a name and object to register the observer, use [`removeObserver(_:name:object:)`](https://developer.apple.com/documentation/foundation/notificationcenter/1407263-removeobserver) with the name and object.
+
+[apple doc](https://developer.apple.com/documentation/foundation/notificationcenter/1413994-removeobserver#discussion)
+
+
 
 ### Maintain Array of Notification Observers
 
@@ -122,14 +156,21 @@ class MyFunkyViewController: UIViewController {
     private func doSomething() {
         print("Hello foreground!")
     }
+
+	func deinit() {
+		cancelBag.removeAll()
+	}
 }
 ```
 
-https://stackoverflow.com/questions/25716012/triggering-a-specific-action-when-the-app-enters-foreground-from-a-local-notific
+[SO | triggering  action app-enters-foreground-from-a-local-notific](https://stackoverflow.com/questions/25716012/triggering-a-specific-action-when-the-app-enters-foreground-from-a-local-notific)
+
 
 ## Resources
 
-https://dmytro-anokhin.medium.com/notification-in-swift-d47f641282fa
+[Medium | Notifications in swift](https://dmytro-anokhin.medium.com/notification-in-swift-d47f641282fa)
 
-XPC Inter-process communication
-https://developer.apple.com/documentation/xpc
+
+[Apple Docs | XPC Inter-process communication](https://developer.apple.com/documentation/xpc)
+
+

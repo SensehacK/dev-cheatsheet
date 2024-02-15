@@ -95,6 +95,49 @@ It turns out that when we add `[weak self]` in the inner closure, we need to pro
 
 [fix retain cycle in nested closures swift](https://medium.com/@alexander100s124/fix-retain-cycle-in-nested-closures-in-swift-5e8152ea1690)
 
+
+### capturing method reference
+
+```swift
+class ViewModel {
+    var cancellables = Set<AnyCancellable>()
+    init() {
+        publisher
+            .sink(receiveValue: handle(value:))
+            .store(in: &cancellables)
+    }
+    func handle(value: String) {
+        // `self` can be used here
+    }
+}
+```
+
+[Bad practice: capturing a method reference](https://www.swiftwithvincent.com/blog/bad-practice-capturing-a-method-reference)
+
+This could be avoided two ways 
+
+Explicit capturing weak
+```swift
+publisher
+.sink { [weak self] value in 
+	self?.handle(value: value)
+}
+
+// `self` can be used here 
+func handle(value: String) { }
+```
+
+Closure computed property approach
+```swift
+publisher
+	.sink(receiveValue: handle(value:))
+
+
+var handle(value: String) = { value 
+	print(value)
+}
+```
+
 ## Tasks
 
 Swift Tasks implicitly capture strong self 
