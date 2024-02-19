@@ -4,7 +4,7 @@
 
 > Have you tried turning it OFF and ON again - The IT Crowd
 
-Glad I can reference that british TV show in my work - hobby - mind map knowledge base.
+Glad I can reference that British TV show in my work - hobby - mind map knowledge base.
 
 The number of times an iOS Engineer has to go back to basics things to try while having a build or runtime error from Xcode - Apple Developer Tools.
 
@@ -28,6 +28,7 @@ When Xcode build command fails on GUI or CLI. CLI is a little bit tricky and can
 ```sh
 ** BUILD FAILED **
 ** ARCHIVE FAILED **
+** TEST FAILED **
 ```
 
 You can solve this problem two ways 

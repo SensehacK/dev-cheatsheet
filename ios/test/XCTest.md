@@ -3,19 +3,18 @@
 
 Testing on Real Devices
 
-https://www.testingxperts.com/blog/testing-on-real-devices-vs-simulators-vs-emulators/ca-en
+[testing-on-real-devices-vs-simulators-vs-emulators](https://www.testingxperts.com/blog/testing-on-real-devices-vs-simulators-vs-emulators/ca-en)
 
 
 ## Expectation
 
-https://developer.apple.com/documentation/xctest/asynchronous_tests_and_expectations
+[apple dev | expectations](https://developer.apple.com/documentation/xctest/asynchronous_tests_and_expectations)
 
-https://www.hackingwithswift.com/example-code/testing/how-to-test-asynchronous-functions-using-expectation
+[HWS | asynchronous-functions-using-expectation](https://www.hackingwithswift.com/example-code/testing/how-to-test-asynchronous-functions-using-expectation)
 
-https://medium.com/blablacar/4-tips-to-master-xctestexpectation-aee2b2631d93
+[medium | 4-tips-to-master-xctestexpectation](https://medium.com/blablacar/4-tips-to-master-xctestexpectation-aee2b2631d93)
 
-
-Multiple Expectations 
+## Multiple Expectations 
 
 If the error is 
 `API violation - multiple calls made (NSInternalInconsistencyException)`
@@ -44,7 +43,9 @@ func test_whenTwoThingsAreDone_thenDoSuccessChecks() {
 ```
 
 `wait(for: [exp1, exp2], timeout: 0.5)` is easier to deal with when having multiple async checks overall.
-https://developer.apple.com/documentation/xctest/xctestcase/1500748-waitforexpectations
+
+[apple dev | wait for expectations](https://developer.apple.com/documentation/xctest/xctestcase/1500748-waitforexpectations)
+
 
 
 ## Unwrap Throws
@@ -70,13 +71,13 @@ XCTAssert(result.isEqual(expected1) || result.isEqual(expected2))
 
 Test Assertions
 
-https://www.swiftbysundell.com/articles/test-assertions-in-swift/
+[swift by sundell | test-assertions-in-swift](https://www.swiftbysundell.com/articles/test-assertions-in-swift/)
 
 ## Resources
 
-https://nshipster.com/xctestcase/
+[nshipster | xctestcase](https://nshipster.com/xctestcase/)
 
-https://www.bitrise.io/blog/post/the-ultimate-guide-to-unit-and-ui-testing-for-beginners-in-swift
+[the-ultimate-guide-to-unit-and-ui-testing-for-beginners-in-swift](https://www.bitrise.io/blog/post/the-ultimate-guide-to-unit-and-ui-testing-for-beginners-in-swift)
 
 
-https://www.toptal.com/ios/how-to-write-automated-tests-for-ios
+[how-to-write-automated-tests-for-ios](https://www.toptal.com/ios/how-to-write-automated-tests-for-ios)

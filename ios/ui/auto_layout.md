@@ -20,3 +20,5 @@ translatesAutoresizingMaskIntoConstraints = false
 ## Cheatsheet
 
 [HWS](https://www.hackingwithswift.com/articles/140/the-auto-layout-cheat-sheet)
+
+[wtfAutoLayout](https://www.wtfautolayout.com/)

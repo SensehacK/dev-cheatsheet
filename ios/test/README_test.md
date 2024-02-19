@@ -2,6 +2,8 @@
 
 [asynchronous](asynchronous.md)
 
+[CICD_tests](CICD_tests.md)
+
 [[crash]]
 
 [[test/error_handling]]
