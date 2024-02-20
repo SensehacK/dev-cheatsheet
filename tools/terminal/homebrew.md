@@ -20,12 +20,26 @@ Listing all of the folder and files in the present directory.
 
 Great for just sharing project structures online.
 
-> tree -L 3 where -L level Descend only level directories deep with integer parameter. tree —help For getting the list of commands.
+```sh
+tree -L 3
+tree —help
+```
+where -L level Descend only level directories deep with integer parameter. tree —help For getting the list of commands.
 
 
 ### path update
 
 [SO zsh command not found brew](https://stackoverflow.com/questions/36657321/after-installing-homebrew-i-get-zsh-command-not-found-brew)
+
+
+## CLI JSON Processor
+
+```sh
+brew install jq
+```
+
+[Github | jq](https://github.com/jqlang/jq)
+[Online tool to parse logic on JSON data](https://jqplay.org/)
 
 ## Rosetta ARM
 

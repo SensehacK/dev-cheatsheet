@@ -42,3 +42,9 @@ https://downloads.slack-edge.com/
 // Actual URL of a macOS installer
 https://downloads.slack-edge.com/releases/macos/4.36.138/prod/universal/Slack-4.36.138-macOS.dmg
 ```
+
+
+## Workflows 
+
+Create workflow in slack. 
+[Slack help document](https://slack.com/help/articles/360041352714-Create-workflows-that-start-with-a-webhook)
