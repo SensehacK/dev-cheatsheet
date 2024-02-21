@@ -50,6 +50,11 @@ https://github.com/actions/runner-images
 
 ## Workflow
 
+### Manual trigger
+
+Running a workflow to run manually
+[Github docs](https://docs.github.com/en/actions/using-workflows/manually-running-a-workflow)
+
 ### Filtering
 
 Branch specific wildcards
@@ -66,6 +71,11 @@ on:
 
 
 [github actions doc](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-branches)
+
+
+## Github Context
+
+You can get the current github context by referring this [doc on github website](https://docs.github.com/en/actions/learn-github-actions/contexts)
 
 ## Specify Xcode Version
 

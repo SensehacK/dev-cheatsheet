@@ -16,7 +16,9 @@ Also next git push won’t commit the deleted commit and also you will lose the 
 ## For reverting Undo the commits.
 
 Removing the last commit from the git current branch 
-> git reset --soft HEAD~1  
+```sh
+git reset --soft HEAD~1 
+``` 
 
 [SO](https://stackoverflow.com/questions/3197413/how-do-i-delete-unpushed-git-commits)
 

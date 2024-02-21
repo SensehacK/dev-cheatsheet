@@ -70,3 +70,10 @@ Creating secrets like environment variables can be [read here from github offici
 Location can be found in `actions-runner/_diag/` in your main home directory of your custom github runner.
 [Enable debug logging on github actions workflows](https://docs.github.com/en/actions/monitoring-and-troubleshooting-workflows/enabling-debug-logging)
 
+
+## Extension
+
+Had some issues with Github Pull Requests, Projects and issues popping up on my VS code left side bar. But after I signed out my own personal account it automatically asked me sign again with my work account github enterprise cloud. 
+Voila it works splendid just like VS code on web.
+Glorious
+If you're reviewing a PR you can just press `.` to simulate like a terminal bash/zsh command of `code .` in the current path to open up the PR or project branch in VS code. Pretty nice for reviewing spec or web PRs when there's no requirement of specific language intellisense for swift | xcode or other dependency.

@@ -66,3 +66,9 @@ Once you create the branch, push it to the remote repository using the command:
 ```sh
 git push -u <remote> <branch-name>
 ```
+
+## Branch Differences
+
+```sh
+git diff hotfix/9.4.2-main hotfix/9.4.2-develop --name-only
+```

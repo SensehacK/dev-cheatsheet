@@ -37,6 +37,12 @@ The -m specifies the comment or description for the tag.
 git fetch --all --tags
 ```
 
+Descending order of latest tags
+
+```sh
+git tag --sort=-creatordate
+```
+
 ## Checkout Tag
 
 Checkout specific tag 
@@ -63,7 +69,9 @@ Deleting tags is also easy, by default it deletes the local repo branch.
 
 Deleting on local origin Branch
 
-> git tag --delete v0.1
+```sh
+git tag --delete v0.1
+```
 
 Deleting on Remote origin Branch
 
