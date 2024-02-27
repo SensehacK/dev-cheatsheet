@@ -19,6 +19,20 @@ Closed captions are created to **allow people who are** **deaf or hard of hea
 [What is 608 and 708 Closed Captioning?](https://www.3playmedia.com/blog/difference-cea-608-cea-708-captions/)
 
 
+## Media 
+
+Info copied from [whatwg.org](https://html.spec.whatwg.org/multipage/media.html#media-resource)
+### Media Resource
+
+A [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) has an associated origin, which is either "`none`", "`multiple`", "`rewritten`", or an [origin](https://html.spec.whatwg.org/multipage/browsers.html#concept-origin). It is initially set to "`none`".
+
+A [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) can have multiple audio and video tracks. For the purposes of a [media element](https://html.spec.whatwg.org/multipage/media.html#media-element), the video data of the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) is only that of the currently selected track (if any) as given by the element's `[videoTracks](https://html.spec.whatwg.org/multipage/media.html#dom-media-videotracks)` attribute when the [event loop](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop) last reached [step 1](https://html.spec.whatwg.org/multipage/webappapis.html#step1), and the audio data of the [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resource) is the result of mixing all the currently enabled tracks (if any) given by the element's `[audioTracks](https://html.spec.whatwg.org/multipage/media.html#dom-media-audiotracks)` attribute when the [event loop](https://html.spec.whatwg.org/multipage/webappapis.html#event-loop) last reached [step 1](https://html.spec.whatwg.org/multipage/webappapis.html#step1).
+
+### Media Element
+
+[Media elements](https://html.spec.whatwg.org/multipage/media.html#media-element) are used to present audio data, or video and audio data, to the user. This is referred to as media data in this section, since this section applies equally to [media elements](https://html.spec.whatwg.org/multipage/media.html#media-element) for audio or for video. The term media resource is used to refer to the complete set of media data, e.g. the complete video file, or complete audio file.
+
+
 ## Video
 
 ### Main Video
@@ -171,7 +185,13 @@ The presentation timestamp (_PTS_) is a timestamp metadata field in an MPEG tran
 
 ## Decoders
 
+## Broadcasting
 
+### EAS
+
+Emergency Alert System - this is being used for broadcasting emergency video over television or network to provide shelter / tornado / war anything which takes precedence since it could be life threatening. I don't have any examples since I haven't had the chance to watch live tv too much in north america. But I'm guessing this would have been placed by broadcasting FCC or governing agency after world war II or cold war to quickly mitigate broadcast messages or sirens like the ole' days of radio broadcast interrupt as depicted in ["Tom & Jerry" show.](https://youtu.be/a3-Glb0Y3Jg?si=jA6DRhu3vQDWYRna)
+
+[FCC | fema - EAS](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/emergency-alert-system)
 
 
 ## SCTE 
@@ -193,12 +213,23 @@ cloud DVR
 
 [CDVR FAQs by Spectrum](https://www.spectrum.net/support/tv/cdvr-faq)
 
+### TSB
+
+Time shift buffer
 
 #### CTSB
 
 Cloud time shift buffer
 
 [time shift tv explained](https://www.edgeware.tv/product/time-shift-tv/)
+
+### FOG
+
+FOG - Fetches live linear manifest and fragment from TSB as if it is from cloud.
+
+Internal tooling to host a local web server using mongoose to serve video/audio content from its local or cloud recorded state. It is a proxy implementation to make sure that the SDK interface remains similar like its interacting with an actual network URL. Instead of using DASH | HLS manifest file url endpoints it proactively proxies them to redirect towards cloud | local recording assets.
+Pretty neat, I think we do this in-order to avoid some restrictions on certain DRM streams etc. Not fully known why this workaround is being put in place by certain video streaming libraries or products.
+
 
 ### Hot Recording 
 
