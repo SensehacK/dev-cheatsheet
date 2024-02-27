@@ -34,3 +34,14 @@ Good release notes could make a big difference compared to just normal bug fixes
 [Smart product updates](https://announcekit.app/blog/5-smart-ways-to-announce-product-updates/)
 
 [Rant changelog](https://piunikaweb.com/2021/06/13/opinion-hey-devs-give-us-proper-update-changelogs-release-notes/)
+
+## Semantic Versioning
+
+Apple Xcode terminologies with semver
+
+This is the `build` number like version `6.9.420` has been built `9000` times. 
+
+major.minor.bugfix|hotfix (build) = `6.9.420(9000)`
+
+Version = Marketing Version = CFBundleShortVersionString
+Build = Current Project Version = CFBundleVersion 

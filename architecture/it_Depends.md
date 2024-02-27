@@ -78,7 +78,7 @@ SSL pinning, cryptography, code signing, certificates, public - private key infr
 
 ## Design Pattern
 
-Design patterns in mobile app development usually comes is MVC, MVVM, MVP, VIPer etc. The architecture of the mobile app constitutes of networking, caching, data management, application states, caching, analytics, third party libraries etc. Design pattern just establishes how a certain module which could be UI related is communicating with its own view state, viewmodel and data model. Invoking those state and interacting with other aspects of the app is totally different.
+Design patterns in mobile app development usually comes is MVC, MVVM, MVP, VIPer etc. The architecture of the mobile app constitutes of networking, caching, data management, application states, caching, analytics, third party libraries etc. Design pattern just establishes how a certain module which could be UI related is communicating with its own view state, view-model and data model. Invoking those state and interacting with other aspects of the app is totally different.
 
 
 

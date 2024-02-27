@@ -86,6 +86,7 @@ Some nonsensical stuff here
 ## Adding links to Doc
 
 You can define markdown links or reference them as a link node in the documentation information.
+
 ```swift
 /**
   Defines the OSLog's logging levels to categorize priority and messaging.
@@ -124,7 +125,7 @@ This lets us specify code as well in the docs or when xcode `Build Documentation
 ## Swift DocC
 
 
-Spent approx 45 mins deciphering why my github pages wasn't showing the Swift DocC generated static site. Turns out the url for target path component is also lowercase as pointed out by this SO post.
+Spent approx. 45 mins deciphering why my GitHub pages wasn't showing the Swift DocC generated static site. Turns out the url for target path component is also lowercase as pointed out by this SO post.
 
 Note that my repository name was lowercase so I used `-hosting-base-path foobar`. The target path component, however, is always lowercase, Idk why.
 [SO | post](https://stackoverflow.com/a/71199418/5177704)

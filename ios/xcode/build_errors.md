@@ -432,3 +432,24 @@ Seems like you have moved bridging file to other folder and Xcode compiler can n
 
 
 
+
+
+## xcode build swiftc unable to discover
+
+```error
+error: Unable to discover `swiftc` command line tool info: Could not parse Swift versions from:  (in target 'CoreC' from project 'package-custom')
+```
+
+After countless restarts of the CI triggers using Github actions & macOS runner with github, turns out deleting the `builder/actions-runner/_work/package-custom` folder and letting it clone fresh. Solved this issue.
+Since running the same command on locally cloned repo was able to generate the build output just fine.
+
+```yml
+env:
+	scheme: ${{ 'CoreC' }}
+	platform: ${{ 'iOS Simulator' }}
+	workspace: ${{ 'package-custom.xcworkspace' }}
+run: | 
+	device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}' | sed -e "s/ Simulator$//"`
+	xcodebuild -workspace "$workspace" -scheme "$scheme" -destination "platform=$platform,name=$device" build
+```
+Shutting down the computer to go outside. Wasted 30 mins to tackle this CI issue.
