@@ -4,8 +4,8 @@ That way the user can get more information inside the view and able to also pars
 
 ```swift
 ScrollView {
-		Rectangle()
-		Circle()
-			.frame(width: 400)
+	Rectangle()
+	Circle()
+		.frame(width: 400)
 }
 ```

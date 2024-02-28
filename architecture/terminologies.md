@@ -7,6 +7,8 @@
 
 [Math](math_terms.md)
 
+[Network](network_terms.md)
+
 [Video](video_terms.md)
 
 [Software](software_terms.md)

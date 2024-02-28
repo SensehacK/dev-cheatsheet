@@ -186,9 +186,11 @@ enum NetworkError: Error {
 ## References 
 
 Passing Data between Views in SwiftUI
-https://www.createwithswift.com/tutorial-passing-data-between-views-in-swiftui-using-state-and-binding/
+[tutorial-passing-data-between-views-in-swiftui-using-state-and-binding](https://www.createwithswift.com/tutorial-passing-data-between-views-in-swiftui-using-state-and-binding/)
 
-https://www.swiftdevjournal.com/passing-data-to-swiftui-views/
+[swift dev journal | passing-data-to-swiftui-views](https://www.swiftdevjournal.com/passing-data-to-swiftui-views/)
+
 
 Pass `@StateObject` data in views.
-https://www.hackingwithswift.com/books/ios-swiftui/sharing-swiftui-state-with-stateobject
+
+[HWS | sharing-swiftui-state-with-stateobject](https://www.hackingwithswift.com/books/ios-swiftui/sharing-swiftui-state-with-stateobject)

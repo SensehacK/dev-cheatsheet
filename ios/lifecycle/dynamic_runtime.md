@@ -5,6 +5,7 @@ Keyword as `dynamic` added to give more context Swift runtime to use Objective-C
 
 
 ## @objc
+
 Very less experience in these scenarios.
 `@objc` could be also tacked on to give access for Objective-C caller.
 Method swizzling via Objective-C could be a scenario if it comes to my mind or Objective-C library dependencies - interoperability with swift.
@@ -12,9 +13,10 @@ Method swizzling via Objective-C could be a scenario if it comes to my mind or O
 
 [method swizzling](ios/xcode/debug#Method_Swizzling)
 
+Another term is called `monkey patching`
 
 ## References
 
-https://swiftunboxed.com/interop/objc-dynamic/
+[objc-dynamic](https://swiftunboxed.com/interop/objc-dynamic/)
 
-https://stackoverflow.com/questions/40795840/swift-3-dynamic-vs-objc
+[swift dynamic-vs-objc](https://stackoverflow.com/questions/40795840/swift-3-dynamic-vs-objc)

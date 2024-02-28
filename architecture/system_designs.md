@@ -83,7 +83,7 @@ Network JSON / API contract definition.
 Are we experimenting with the app for different flows>? 
 A/B Testing.
 
-Server driven UI ? ->  to quickly show different views for different types of users.
+[Server driven UI | OTA](over_the_air.md)
 
 Event driven App updates for specific time of the year.
 

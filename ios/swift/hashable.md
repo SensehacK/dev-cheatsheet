@@ -5,6 +5,7 @@
 ## Source code
 
 Kodeco
+
 ```swift
 class Person: Equatable, Hashable {
   var name: String
@@ -38,6 +39,7 @@ Objective-C Interop with Swift
 
 ## Resources
 
-https://www.kodeco.com/books/swift-cookbook/v1.0/chapters/2-conform-to-equatable-hashable-in-swift
+[Kodeco | conform-to-equatable-hashable-in-swift](https://www.kodeco.com/books/swift-cookbook/v1.0/chapters/2-conform-to-equatable-hashable-in-swift)
 
 
+[Does not conform to protocol hashable](https://stackoverflow.com/questions/68893073/does-not-conform-to-protocol-hashable)

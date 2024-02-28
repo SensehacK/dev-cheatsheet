@@ -37,6 +37,8 @@
 
 [naming](naming.md)
 
+[over_the_air](over_the_air.md)
+
 [provisioning](provisioning.md)
 
 [secret_keys](secret_keys.md)
