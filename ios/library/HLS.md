@@ -13,6 +13,7 @@ Every HLS file has these properties
 ## [HLS Playlist Types](HLS_types.md)
 
 ## De-Muxed | Muxing
+
 ## Test Streams
 
 [developer.apple.com/streaming/examples/](https://developer.apple.com/streaming/examples/)
@@ -34,13 +35,9 @@ HLS stream having :
 . 3 alternate subtitle tracks (English, English with audio description and French)
 [Link](https://sample.vodobox.com/planete_interdite/planete_interdite_alternate.m3u8)
 
-
-
-
-
 ## HLS Keys
 
-### TARGETDURATION
+### TARGET DURATION
 
 This sets the playlist or the video processor that all the components `.mp4` or `.ts` or segments of audio/video/text are of specific secs. In this example the target segments are of `10 secs` each.
 
@@ -53,26 +50,35 @@ fileSequenceA.ts
 fileSequenceB.ts
 ```
 
-## Techniques
+### CONTENT METADATA
 
+
+Protocol `HLSTagDescriptor` and `HLSTagValueIdentifier`
+
+`HLSTagDescriptor` = EXT-X-XCAL-CONTENTMETADATA  |  the tag name
+`HLSValueIdentifier` = KEYID | DRMAGNOSTIC | the attribute names in the tag
+
+```ts
+#EXT-X-XCAL-CONTENTMETADATA:KEYID="bd8e7d69-saw4-6a00-1eb9-637364ad6a4c",DRMAGNOSTIC="ZXlKNE5YUWpVekksa3r3XXzNFTnZrSFE="
+```
+
+## Techniques
 
 ### Switch Live to Event Record
 
 When I think of an EVENT style playlist in streaming world, I think of DVR | Video Recordings. If a user is scrolling the Live Grid in video stream app and they want to record an episode, that playlist will go from `LIVE` -> `EVENT`. Best way to see this is to select a live program, hit Record, wait until the UI says the recording is set. Next, hit Watch and you'll see the `Live` HLS manifest file  program is now `Event`
 
-
-
-
 ## Thumbnails
+
 ```ts
 #EXT-NOM-I-FRAME-DISTANCE
 ```
+
 ## Advertising
 
 ```ts
 #EXT-X-ADVERTISING:SYSCODE=231532523532377442
 ```
-
 
 ## DRM
 
@@ -81,7 +87,6 @@ When I think of an EVENT style playlist in streaming world, I think of DVR | Vid
 KEYID="017ee539-UUID-string",
 DRMAGNOSTIC="some_base_64_key_value"
 ```
-
 
 ## Apple Interstitials
 

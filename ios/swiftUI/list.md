@@ -39,6 +39,14 @@ VStack {
 [SO | detect taps on a List cell row in SwiftUI](https://stackoverflow.com/questions/68346592/how-to-detect-taps-on-a-list-cell-row-in-swiftui)
 
 
+Use `contentShape` to get full tappable area option and you may also need to add `Spacer()` in between List Cell `HStack | VStack` component in order to get the whole cell from left / right accessory view to be tappable.  Since by default SwiftUI isn't fully tappable on instances.
+
+```swift
+.contentShape(Rectangle())
+```
+
+[HWS | source](https://www.hackingwithswift.com/quick-start/swiftui/how-to-control-the-tappable-area-of-a-view-using-contentshape)
+
 ## References
 
 [swiftui labs | impossible-grids](https://swiftui-lab.com/impossible-grids/)

@@ -30,3 +30,8 @@
 
 [view](view.md)
 
+
+
+## References
+
+[Fucking SwiftUI](https://fuckingswiftui.com/)

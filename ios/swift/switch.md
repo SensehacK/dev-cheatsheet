@@ -59,7 +59,11 @@ if case .caseOne(let msg) = event {
 }
 ```
 
-https://useyourloaf.com/blog/swift-if-case-let/
+[use your loaf | swift-if-case-let](https://useyourloaf.com/blog/swift-if-case-let/)
+
+
+[fucking if case let syntax](https://fuckingifcaseletsyntax.com/)
+
 
 ## Reference
 
