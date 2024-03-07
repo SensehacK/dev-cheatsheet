@@ -57,3 +57,9 @@ private enum Texts: String {
 }
 ```
 
+## Third party
+
+Lokalise - translation management system for end user clients. 
+Automation around localization and QA process towards supporting various languages or regions.
+
+[dev | ios sdk](https://developers.lokalise.com/docs/ios-sdk)

@@ -15,6 +15,13 @@ My reasoning:
 This is keeping up with good approach on test-ability of this feature for unit tests and support dependency injection in future. 
 It also could be used as a TODO: marker when you have protocols with functions definition defined which needs to be implemented.
 
+> what made you make this a protocol? b/c we could easily made this a function, just your thought process around it.
+
+- Having protocol makes it easier for the implementer to not introduce more things than necessary. So you start with what is the MVP of that same class, function or properties.
+- It also kinda helps in dependency injection and creating mocks in unit tests.
+- It helps us to also easily allow us to pass protocol as a type for future generics using Protocols with associated types
+- It helps the conforming object/instance of the protocol to have default implementation via `protocol extensions`. Thus guaranteeing default behavior like an optional default nil `let unwrappedValue = optionalValue ?? defaultValue`
+
 ## Combining Protocols
 
 ```swift

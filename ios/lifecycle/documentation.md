@@ -2,7 +2,7 @@
 
 You can defined your own documentation while coding for your functions to be properly documented with the parameter types, information of what it would return with different type of conditions. I believe that in most of the projects were we already can inspect the codebase of a function to better understand, it doesn’t matter but for quick glance to get the bird eye view of the calling method is great. Also it is more future proof in terms of less work ahead if you wanted to make the whole class in a package library type of scenario.
 
-## Headers
+## Headers | Annotations
 
 // MARK:
 
@@ -11,6 +11,7 @@ You can defined your own documentation while coding for your functions to be pro
 // FIXME: 
 
 
+Good article about organizing your swift project with [this article](https://cocoacasts.com/organize-your-swift-project-with-annotations-todos-and-fixmes)
 
 ### Old Headers
 
