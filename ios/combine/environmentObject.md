@@ -45,3 +45,9 @@ struct SettingsView: View {
 
 
 
+
+## Errors
+
+### bug 
+[SwiftUI EnvironmentObject out of sync with View](https://stackoverflow.com/questions/63959121/swiftui-environmentobject-out-of-sync-with-view)
+

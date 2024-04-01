@@ -14,6 +14,8 @@
 
 [merge](ios/combine/merge.md)
 
+[observable](observable.md)
+
 [publisher](publisher.md)
 
 [receive_on](receive_on.md)

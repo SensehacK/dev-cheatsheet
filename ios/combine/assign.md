@@ -131,3 +131,13 @@ struct ContentView: View {
 ```
 
 [hacking with swift | run code when state changes onChange](https://www.hackingwithswift.com/quick-start/swiftui/how-to-run-some-code-when-state-changes-using-onchange)
+
+Troubleshooting onChange events
+
+https://www.reddit.com/r/SwiftUI/comments/10s094e/how_do_you_isolate_action_tried_to_update/
+
+https://stackoverflow.com/questions/71345489/swiftui-macos-navigationview-onchangeof-bool-action-tried-to-update-multipl
+
+[Understanding SwiftUI's onChange](https://fatbobman.com/en/posts/onchange/)
+
+

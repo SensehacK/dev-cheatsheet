@@ -102,7 +102,21 @@ When you want to debug the Published properties, you can use `didSet` to get som
 	}
 }
 ```
- 
+
+## Errors
+
+### Cannot convert value of type 'Published<>.Publisher' to expected argument type 'Binding<>'
+
+
+copied from slack overflow
+
+Not sure why the proposed solutions here are so complex, when there is a very direct fix for this.
+
+Found this answer on a [similar Reddit question](https://www.reddit.com/r/swift/comments/ixqp3m/comment/g68dkrs/?utm_source=share&utm_medium=web2x&context=3):
+
+> The problem is that you are accessing the projected value of an @Published (which is a Publisher) when you should instead be accessing the projected value of an @ObservedObject (which is a Binding), that is: you have `globalSettings.$tutorialView` where you should have `$globalSettings.tutorialView`.
+
+
 ## Reference
 
 Great article about how reactive paradigm works in a way. Touches how we can support pre iOS 13 deployment targets and make use of custom property wrappers to have a temporary migration solution for older devices. Or we can use community adopted RxSwift reactive framework to work with it. Either way this article sheds a light on approaching a problem with 3 different ways which I always prefer when making those architectural decisions.

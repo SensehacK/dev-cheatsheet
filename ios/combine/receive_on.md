@@ -5,9 +5,10 @@ RxSwift equivalents [[Observe]]
 
 [[concurrency_rxSwift]]
 
-## Syntax
+## Code
 
 added this to the sink configuration
+
 ```swift
 private let viewModel = LoginVM ()
 
