@@ -177,6 +177,13 @@ securityClient-ios-binary: PromiseKit, yajl, SMobileConfig,
 
 Removing the dependency or contacting them to remove specific dependency is helpful in order to remove circular dependency graph cycle issues.
 
+
+### Carthage: no shared framework schemes for iOS platform (for my own framework)
+
+Make sure that `.xcodeproj/xcshareddata/xcschemes` is added and pushed to github.
+
+[SO | carthage shared framework scheme](https://stackoverflow.com/questions/35054788/carthage-no-shared-framework-schemes-for-ios-platform-for-my-own-framework)
+
 ## Resources
 
 [7 Carthage Terminal Commands to Bookmark](https://medium.com/remote-ios-dev/7-carthage-terminal-commands-to-bookmark-6c19b6d16379)

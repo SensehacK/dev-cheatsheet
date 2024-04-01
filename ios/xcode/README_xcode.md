@@ -45,6 +45,8 @@
 
 [[spm]]
 
+[spm_errors](spm_errors.md)
+
 [[target_scheme]]
 
 [updates](ios/xcode/updates.md)

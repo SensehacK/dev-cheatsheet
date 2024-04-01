@@ -35,6 +35,10 @@ Health app doesn’t fully synced my data to the iOS simulator. Or maybe I was m
 Utilize the network link conditioner on Mac OS.
 [Network disable](https://www.tutorialspoint.com/how-to-disable-the-network-in-ios-simulator)
 
+Test your iOS application by simulating a bad network connection with Network Link Conditioner
+[simulate-a-bad-network](https://designcode.io/swiftui-advanced-handbook-simulate-a-bad-network)
+
+
 ## Directories
 
 [avanderlee | Xcode Simulator Directories Exploration](https://www.avanderlee.com/xcode/simulator-directories-access/)
@@ -88,3 +92,17 @@ Code: 61
 ```
 
 
+### failed to launch
+
+```log
+Failed to start launchd_sim: could not bind to session, launchd_sim may have crashed or quit responding
+Domain: com.apple.SimLaunchHostService.RequestError
+Code: 4
+```
+
+
+delete the simulator cache 
+
+```sh
+sudo rm -rf ~/Library/Developer/CoreSimulator/Caches
+```
