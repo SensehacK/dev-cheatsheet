@@ -68,3 +68,9 @@ For 360 images
 https://github.com/Ssimboss/Image360
 
 https://github.com/robbykraft/Panorama
+
+https://www.freepik.com/free-photos-vectors/panorama-360
+
+https://polyhaven.com/hdris
+
+DeoVR can open & view 360 photos.
