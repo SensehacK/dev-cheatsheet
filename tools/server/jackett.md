@@ -24,3 +24,12 @@ docker pull linuxserver/jackett:arm32v7-0.21.352
 [umask-for-running-applications](https://docs.linuxserver.io/images/docker-Jackett/#umask-for-running-applications)
 
 [docker-Jackett](https://docs.linuxserver.io/images/docker-Jackett/)
+
+
+## Integrations
+
+FlareSolverr
+
+```error
+**Exception (1337x): FlareSolverr was unable to process the request, please check FlareSolverr logs. Message: Error: Error solving the challenge. Timeout after 55.0 seconds.: FlareSolverr was unable to process the request, please check FlareSolverr logs. Message: Error: Error solving the challenge. Timeout after 55.0 seconds.**
+```

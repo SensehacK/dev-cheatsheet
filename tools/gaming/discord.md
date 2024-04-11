@@ -35,6 +35,10 @@ https://github.com/victornpb/undiscord
 
 https://github.com/victornpb/undiscord/issues/471
 
+API responded with status 403!	{"message":"Missing Permissions","code":50013
+
+Similar thread on Github as well.
+
 
 ## Auto Plex Scrobbling
 

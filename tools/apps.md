@@ -171,3 +171,10 @@ Rting website for nitty gritty comparison of Video tech.
 - Plex Amp
 - LunaSea
 - nzb360
+
+
+## Vision Pro
+
+[apps for vision pro](https://appsforapplevision.com/)
+
+[vision directory](https://vision.directory/)

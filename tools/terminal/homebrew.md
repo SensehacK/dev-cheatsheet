@@ -49,4 +49,8 @@ Conflicting package arm architecture issues when installing a package. You can r
 arch -arm64 brew install package_name
 ```
 
+```log
+Cask project_name depends on hardware architecture being one of [{:type=>:arm, :bits=>64}], but you are running {:type=>:intel, :bits=>64}.
+```
+
 [SO error cannot install under rosetta 2](https://stackoverflow.com/questions/74310340/error-cannot-install-under-rosetta-2-in-arm-default-prefix-opt-homebrew)

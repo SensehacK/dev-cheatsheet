@@ -9,6 +9,8 @@
 
 [lidarr](lidarr.md)
 
+[mac](mac.md)
+
 [plex](plex.md)
 
 [prowlarr](prowlarr.md)
@@ -22,6 +24,8 @@
 [sonarr](sonarr.md)
 
 [transmission_open_VPN](transmission_open_VPN.md)
+
+[vnc](vnc.md)
 
 ## Other services
 

@@ -48,3 +48,7 @@ https://downloads.slack-edge.com/releases/macos/4.36.138/prod/universal/Slack-4.
 
 Create workflow in slack. 
 [Slack help document](https://slack.com/help/articles/360041352714-Create-workflows-that-start-with-a-webhook)
+
+## Creating quick meetings / event
+
+[Outlook for Slack automation](https://slack.com/help/articles/360020134853-Microsoft-Outlook-Calendar-for-Slack)
