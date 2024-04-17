@@ -240,6 +240,20 @@ Pretty neat, I think we do this in-order to avoid some restrictions on certain D
 As described by my architect.
 It's generally a periodic request sent as a 'keep alive' / I'm still here / periodic update mechanism. Like the player sending a heartbeat analytics message every 60s with info about the stream. The app also sends a periodic request to monitor that the user is still watching a stream and count towards their max concurrent streams limit.
 
+## CDN 
+
+
+### Client Steering
+
+HLS Content Steering | apple specific
+[apple wwdc | Deliver reliable streams with HLS Content Steering](https://developer.apple.com/videos/play/wwdc2022/10144/)
+
+
+[Tech Papers: Implementing HLS/DASH Content Steering at Scale](https://www.ibc.org/technical-papers/ibc2023-tech-papers-implementing-hls/dash-content-steering-at-scale/10258.article)
+
+
+
+
 ## Upscaling 
 
 ### Soap Opera effect

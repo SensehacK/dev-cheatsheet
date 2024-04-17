@@ -44,3 +44,5 @@ I'm just happy that I can play these exclusive games on PC. So kudos to Playstat
 
 Anti consumer to the core, worse than Sony. Re - releasing same old NES, SNES or game cube / 64 games on Switch with $30, $60 price tag. Just emulating under the core. Hence I support open source projects of emulation like `CEMU` or `Yuzu` for [Nintendo Wii U](nintendo_wii_u.md) and [Switch](nintendo_switch.md) simulation.
 Best console which started it all [NES](nintendo_NES.md)
+
+

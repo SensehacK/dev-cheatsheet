@@ -16,3 +16,8 @@ Fresh memes to invest
 
 [r/ProgrammerHumor](https://www.reddit.com/r/ProgrammerHumor/)
 
+
+## Repos
+
+[IsPrime](https://github.com/mawerty/Is-Prime) works 95% of the time in O(1)
+

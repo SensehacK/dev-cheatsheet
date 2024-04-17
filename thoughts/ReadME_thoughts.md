@@ -15,6 +15,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 [Is this life](../thoughts/Is_this_life.md)
 
+[management](management.md)
+
 [media](../thoughts/media.md)
 
 [memes](../thoughts/memes.md)
@@ -30,3 +32,5 @@ Disclaimer: To Err Is Human. Don't cancel me!
 [proverbs](../thoughts/proverbs.md)
 
 [rants](../thoughts/rants.md)
+
+[seniority](seniority.md)
