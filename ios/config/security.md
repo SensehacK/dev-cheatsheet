@@ -41,3 +41,16 @@ You would need a jailbreak or some kind of developer account access inorder to s
 
 
 
+
+
+## Code Scanning tools
+
+
+[mend](https://www.mend.io/)
+
+[swift support from mend tool](https://docs.mend.io/bundle/mend_sast/page/swift.html#Mend-SAST-supported-Swift-frameworks)
+
+[github action support](https://github.com/whitesource/GitHubPackagesSecurityAction)
+
+[Common Weakness Enumeration (CWE)](https://cwe.mitre.org/index.html)
+

@@ -149,15 +149,34 @@ create app
 Source code
 https://github.com/EthanArbuckle/Apollo-CustomApiCredentials
 
-## Mac OS iPA
+## macOS
 
 [Installing IPAs on Apple Silicon (M1)](https://gist.github.com/Dids/c43fc68677e1a3cc215d88a74e26d05e)
 
 
-## Custom Apps
+## visionOS
 
-[Apollo for reddit](https://github.com/Balackburn/Apollo)
+### Developer Mode
 
-[Infuse Suffuse](https://github.com/Suffuse-Team/suffuse-team.github.io)
+1. Setup developer mode and connect the AVP to Xcode over Wi-Fi. Instructions for this are on the Apple developer website
+2. Create a shell project in Xcode and build the app for your AVP. Ensure that it runs properly
+3. Download IOS App Signer 2 and the .ipa file of the app you want to sideload. CustomApp can be downloaded from its Github. Using your developer team and the bundle identifier that was created from the shell project, build a signed ipa file.
+4. On the devices and simulators page in Xcode, select your AVP and drag the outputted ipa file to the installed app list
+5. Trust the profile in device management settings on the AVP
+6. Done!
 
-[uYouPlus or Enhanced](https://github.com/arichornlover/uYouEnhanced)
+
+## Keychain Access
+
+macOS quirks
+
+[SO | Xcode codesign wants to use the "Apple Development" keychain password wrong](https://stackoverflow.com/questions/71639924/xcode-codesign-wants-to-use-the-apple-development-keychain-password-wrong)
+
+Force quitting keychain access also fixed this issue for me.
+
+
+## Repos
+
+[ipa Library](https://ipalibrary.net/ipa-library-apps/)
+
+[ios ninja](https://iosninja.io/ipa-library-ios)

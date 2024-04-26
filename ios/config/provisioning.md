@@ -26,3 +26,23 @@ Serial: FW24TXE65L · UDID: 00008133-000643C13601401E · Model: iPhone16,2
 5. Select “Code Signing Identity, Make sure all of those schemes have the appropriate certificate selected with “iOS Development” for Debug and “iOS Distribution” for Release.
 6. Same with “Provisioning Profile” -&gt; for each scheme, appropriate certificates are selected. The project is all done using “manual” code signing style.
 
+
+
+## Location
+
+On mac it would be in 
+
+```sh
+cd ~/Library/MobileDevice/Provisioning\ Profiles && open .
+```
+
+
+## Opening / Viewing
+
+How to view the content of the file?
+
+```sh
+/usr/bin/security cms -D -i <file_name>.mobileprovision
+```
+
+You can find the app name, profile creation date, name of provisioning profile, etc.

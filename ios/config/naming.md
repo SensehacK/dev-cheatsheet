@@ -12,10 +12,14 @@ public enum Bool {
 ```
 
 
+## [Enum Namespacing](ios/swift/enum#namespace)
+
 ## Avoiding name collisions
+
 Swift LLVM gives precedence to local variables when referencing naming so that's one thing you can be cognizant about.
 
 ### Use type alias approach
+
 TypeAlias is great way to solve full module / class namespace problem in order to make it easier for the local class / file to easily reference where the context is coming from and even is easily readable.
 
 ```swift
@@ -33,13 +37,12 @@ class DoSomething {
 		cc2.doSomething()
 	}
 }
-
-
 ```
 
-https://appventure.me/posts/2019-5-15-the-usefulness-of-typealiases-in-swift.html
+[usefulness-of-typealiases-in-swift](https://appventure.me/posts/2019-5-15-the-usefulness-of-typealiases-in-swift.html)
 
-https://sarunw.com/posts/swift-typealias/
+[sarunw | swift-typealias](https://sarunw.com/posts/swift-typealias/)
+
 
 ### Local Reference
 
