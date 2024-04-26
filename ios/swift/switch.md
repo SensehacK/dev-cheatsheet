@@ -38,11 +38,12 @@ switch caseVar {
 }
 ```
 
-
-https://stackoverflow.com/questions/24141900/noop-for-swifts-exhaustive-switch-statements
+[SO | noop-for-swifts-exhaustive-switch-statements](https://stackoverflow.com/questions/24141900/noop-for-swifts-exhaustive-switch-statements)
 
 ### Break and Continue
-https://andybargh.com/break-and-continue/
+
+[andybargh | break-and-continue](https://andybargh.com/break-and-continue/)
+
 
 ## if case let
 
@@ -67,4 +68,4 @@ if case .caseOne(let msg) = event {
 
 ## Reference
 
-https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/
+[swift org | controlflow](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/controlflow/)

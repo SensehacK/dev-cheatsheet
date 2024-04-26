@@ -1,8 +1,9 @@
 # Enum
 
 
-## Empty namespace
- 
+## namespace
+
+Empty namespace
 Better organization around the code in big projects. No need to initialize or privatize the init() function internally.
 
 [swiftbysundell | enums](https://www.swiftbysundell.com/basics/enums/)
@@ -13,6 +14,7 @@ Better organization around the code in big projects. No need to initialize or pr
 
 [swift docs | enumerations](https://docs.swift.org/swift-book/LanguageGuide/Enumerations.html)
 
+[swift forums | enum based namespaces](https://forums.swift.org/t/an-enum-based-approach-to-namespaces/12487)
 
 ## Indirect Enums
 
@@ -62,4 +64,26 @@ final class SecurityTypeTests: XCTestCase {
 ```
 
 
+## [Random element](ios/swift/random#Enum)
 
+
+
+## Test data refactor enum
+
+Code in question
+
+```swift
+let audioTrack1: AudioTrackable = AudioTrack(id: "English (US)", language: Locale(identifier: "en-US"), type: .audio, codecs: ["soun"])
+let audioTrack2: AudioTrackable = AudioTrack(id: "English (US)", language: Locale(identifier: "en-"), type: .audio, codecs: ["soun"])
+let audioTrack3: AudioTrackable = AudioTrack(id: "Enagas  (US)", language: Locale(identifier: "en-eS"), type: .audio, codecs: ["soun"])
+let audioTrack4: AudioTrackable = AudioTrack(id: "English  x1(US)", language: Locale(identifier: "en-US"), type: .audio, codecs: ["soun"])
+```
+
+> Would it help to store these language values in some sort of enum ?
+
+My answer for Framework based team
+Since this is a test data I would think it would be overkill but I have already seen this implemented twice. So I get the refactor thing.
+But on the same end we are an API / Library / Framework team so don't know if this would add any incentive as 
+1. Its not consumer facing string or UI stakeholders
+2. No localization support needed
+3. No client data is being wrapped with these things

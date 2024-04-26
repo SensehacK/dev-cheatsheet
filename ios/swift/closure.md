@@ -83,6 +83,11 @@ class Child: Parent {
 }
 ```
 
+
+## Completion Handler
+
+[SO | Completion handler closure](https://stackoverflow.com/questions/38296910/how-to-return-value-from-a-closure-in-swift)
+
 ## Unit Tests closure
 
 callback example

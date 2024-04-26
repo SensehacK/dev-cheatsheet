@@ -16,24 +16,19 @@ let randomBool = Bool.random()
 
 
 ```swift
-
 let numbers = [1, 2, 3]
 let shuffledNumbers = (numbers as NSArray).shuffled() as! [Int]
-
 ```
 
 
 ## Random element in array
 
 ```swift
-
 var albums = ["Slim Shady LP", "GKMC", "2014 Forest Hills Drive"]
-
 
 if let random = albums.randomElement() {
     print("The random album is \(random).")
 }
-
 ```
 
 ## UUID
@@ -41,16 +36,13 @@ if let random = albums.randomElement() {
 Random UUID
 
 ```swift
-
 UUID().uuidString
 // Example Output:
 // 25A4DA38-743C-46D0-9B71-1699556C975E
-
 ```
 
 
-
-## Enum Random
+## Enum
 
 Random Enum
 
@@ -65,12 +57,11 @@ enum Assignment: CaseIterable {
     case documentation
     case refactoring
 }
-
 ```
 
 Another option is to extend an enum to conform to CaseIterable. The CaseIterable protocol has no required methods so only the extension statement is required:
 
-```
+```swift
 extension Assignment: CaseIterable {}
 Assignment.allCases.randomElement()
 // Example Output: .testing
@@ -84,3 +75,8 @@ Enums that conforms to CaseIterable gain an allCases property containing a list 
 
 
 Note: I believe most of the things here are copied & I didn't create this file documentation examples. I'm still keeping this in case I need offline access and fast search in iA Writer.
+
+
+## References
+
+[apple dev | randomnumbergenerator](https://developer.apple.com/documentation/swift/randomnumbergenerator)

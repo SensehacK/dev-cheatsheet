@@ -1,14 +1,10 @@
 # URL
 
-
-
 ## Intro
 
 All things URL related in Swift.
 
-
-## URL
-### Syntax
+## Syntax
 
 ```swift
 guard let url = URL(string: playable.uri),
@@ -17,50 +13,46 @@ guard let url = URL(string: playable.uri),
 }
 ```
 
-
-
-
 ## URL Components
 
 Constructing URLs using URL Components is much nicer and lets us have `preconditionFailure` in guard statements.
 
 ```swift
 public func createSignUpURL(matching clientID: String = "clientID") -> URL {
-	var components = URLComponents()
-	components.scheme = "https"
-	components.host = "qa1.qa.drive.com"
-	components.path = "/#/sync"
-	components.queryItems = [
-	URLQueryItem(name: "client_id", value: clientID)
-	]
-	let finalURL = components.string?.removingPercentEncoding ?? "https://qa1.qa.drive.com/#/sync?client_id=clientID"
-	
-	return URL(string: finalURL)!
+    var components = URLComponents()
+    components.scheme = "https"
+    components.host = "qa1.qa.drive.com"
+    components.path = "/#/sync"
+    components.queryItems = [
+    URLQueryItem(name: "client_id", value: clientID)
+    ]
+    let finalURL = components.string?.removingPercentEncoding ?? "https://qa1.qa.drive.com/#/sync?client_id=clientID"
+    
+    return URL(string: finalURL)!
 }
 ```
 
 Source swift by sundell
+
 ```swift
 var url: URL {
-	var components = URLComponents()
-	components.scheme = "https"
-	components.host = "api.myapp.com"
-	components.path = "/" + path
-	components.queryItems = queryItems
+    var components = URLComponents()
+    components.scheme = "https"
+    components.host = "api.myapp.com"
+    components.path = "/" + path
+    components.queryItems = queryItems
 
-	guard let url = components.url else {
-		preconditionFailure(
-			"Invalid URL components: \(components)"
-		)
-	}
+    guard let url = components.url else {
+        preconditionFailure(
+            "Invalid URL components: \(components)"
+        )
+    }
 
-	return url
+    return url
 }
 ```
 
 ## URLQueryItem
-
-
 
 ```swift
 let searchTerm = "obi wan kenobi"
@@ -80,18 +72,14 @@ print(urlComponents.url?.absoluteString)
 ```
 
 Reference code from this link
-https://www.alfianlosari.com/posts/building-safe-url-in-swift-using-urlcomponents-and-urlqueryitem/
+[building-safe-url-in-swift-using-urlcomponents-and-urlqueryitem](https://www.alfianlosari.com/posts/building-safe-url-in-swift-using-urlcomponents-and-urlqueryitem/)
 
-
-
-https://cocoacasts.com/building-urls-with-urlqueryitem-in-swift
-
-
-
+[building-urls-with-urlqueryitem-in-swift](https://cocoacasts.com/building-urls-with-urlqueryitem-in-swift)
 
 ## URL encoding
 
 Spaces -> percent encoding ` ` -> `%20`
+
 ```swift
 let urlEncoded = value.addingPercentEncoding(withAllowedCharacters: .alphanumerics)
 let url = "http://www.example.com/?name=\(urlEncoded!)"
@@ -110,11 +98,13 @@ print(blogURL.absoluteString) // Prints: https://www.avanderlee.com/swift
 ## File Path | FileManager API
 
 Path of the file on system.
+
 ```swift
 let url = URL(fileURLWithPath: path)
 ```
 
 FileManager API
+
 ```swift
 let folderURL = try FileManager.default.url(
             for: .documentDirectory,
@@ -143,7 +133,6 @@ func verifyUrl (urlString: String?) -> Bool {
 ```
 
 [SO | how-to-check-validity-of-url-in-swift](https://stackoverflow.com/questions/28079123/how-to-check-validity-of-url-in-swift)
-
 
 ```swift
 guard let url = URL(string: "http://www.google.com") else {
@@ -177,8 +166,28 @@ urlRequest.addValue("application/json", forHTTPHeaderField: "Content-Type")
 
 Probably something related to adding it incrementally ? with `addValue` it works. Is it a Trakt TV API issue ? or maybe the async await API for URLSession.shared.data(urlRequest:) recommends this way of adding them content headers values to URLRequest.
 
+## Download Task
+
+```swift
+let config = URLSessionConfiguration.background(withIdentifier: "com.example.DownloadTaskExample.background")
+
+let session = URLSession(configuration: config, delegate: self, delegateQueue: OperationQueue())
+
+let url = URL(string: "https://example.com/example.pdf")!
+let task = session.downloadTask(with: url)
+task.resume()
+```
+
+[Downloading files in background with URLSessionDownloadTask](https://www.ralfebert.com/ios-examples/networking/urlsession-background-downloads/)
 
 
+## Diff between URI URN URL
+
+> A URI can be further classified as a locator, a name, or both. The term "Uniform Resource Locator" (URL) refers to the subset of URIs that, in addition to identifying a resource, provide a means of locating the resource by describing its primary access mechanism (e.g., its network "location"). The term "Uniform Resource Name" (URN) has been used historically to refer to both URIs under the "urn" scheme [[RFC2141]](https://www.ietf.org/rfc/rfc2141.txt), which are required to remain globally unique and persistent even when the resource ceases to exist or becomes unavailable, and to any other URI with the properties of a name.
+
+So all URLs are URIs, and all URNs are URIs - but URNs and URLs are different, so you can't say that all URIs are URLs.
+
+[SO | reference ^](https://stackoverflow.com/a/176274/5177704)
 
 ## Reference
 

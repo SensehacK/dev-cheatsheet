@@ -4,6 +4,7 @@ Needed for comparing objects with internal custom properties at developer's busi
 
 
 ## Code 
+
 ```swift
 class Person {
   var name: String
@@ -51,6 +52,51 @@ class Person: NSObject, NSCoding {
 [SO post link](https://stackoverflow.com/questions/37085839/overridden-function-for-equatable-type-not-called-for-custom-class-that-subcl)
 
 https://stackoverflow.com/questions/37390172/redundant-conformance-of-generic-to-protocol-equatable-in-swift-2-2
+
+## Caveats 
+
+If your struct or class has a protocol type, it won't easily infer the equatable protocol.
+
+
+```swift
+protocol ILabel: Equatable {
+    var language: String { get }
+    var value: String { get }
+}
+
+protocol TextPreferable {
+    var id: String? { get }
+    var labels: [any ILabel]? { get }
+}
+
+struct TextPreference: TextPreferable, Equatable {
+    var id: String?
+    var labels: [any ILabel]?
+
+	static func == (lhs: TextPreference, rhs: TextPreference) -> Bool { }
+}
+```
+
+but if removed the `[any ILabel]` to a concrete type like a struct or class, you won't need to explicitly have `==` equatable protocol requirement
+Also if the protocol doesn't have `Equatable` we won't need `[any CustomProtocol]`
+
+```swift
+struct TrackLabel : ILabel {
+    var language: String
+    var value: String
+}
+
+protocol TextPreferable {
+    var id: String? { get }
+    var labels: [TrackLabel]? { get }
+}
+
+struct TextPreference: TextPreferable, Equatable {
+    var id: String?
+    var labels: [TrackLabel]?
+}
+```
+
 ## Resources
 
-https://www.avanderlee.com/swift/equatable-comparible-conformance/
+[avanderlee | equatable-comparible-conformance](https://www.avanderlee.com/swift/equatable-comparible-conformance/)

@@ -3,6 +3,6 @@
 
 ## Existential Any
 
-https://www.hackingwithswift.com/swift/5.6/existential-any
+[HWS | existential-any](https://www.hackingwithswift.com/swift/5.6/existential-any)
 
 

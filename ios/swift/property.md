@@ -16,7 +16,6 @@ print("Name: " + name + " Age: " + age)
 
 
 ```swift
-
 struct Person {
     let name: String
     let age: Int
@@ -37,4 +36,4 @@ struct PeopleViewModel {
 }
 ```
 
-https://www.avanderlee.com/swift/lazy-var-property/
+[avanderlee | lazy-var-property](https://www.avanderlee.com/swift/lazy-var-property/)

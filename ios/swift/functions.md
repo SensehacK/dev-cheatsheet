@@ -11,8 +11,7 @@
 ```
 [Hacking With Swift](https://www.hackingwithswift.com/sixty/5/10/inout-parameters)
 
-
-https://nshipster.com/method-swizzling/
+[nshipster | method-swizzling](https://nshipster.com/method-swizzling/)
 
 
 ## Result return value Discard
@@ -41,4 +40,4 @@ let _ = doSomething()
 
 **_Unrecognized Selector Sent To Instance_**
 
-https://becodable.com/unrecognized-selector-sent-to-instance/
+[unrecognized-selector](https://becodable.com/unrecognized-selector-sent-to-instance/)

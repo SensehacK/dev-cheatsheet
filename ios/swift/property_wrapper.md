@@ -10,6 +10,7 @@ Swift UI has lots of property_wrappers and you can achieve so many of those func
 ### AutoLayout 
 Property Wrapper for UIView - auto layout default setup.
 Only downside is it cannot work with `lazy` variables
+
 ```swift
 import UIKit
 
@@ -48,7 +49,6 @@ public struct Trimmed {
             value = newValue
         }
     }
-
 }
 ```
 

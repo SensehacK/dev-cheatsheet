@@ -41,6 +41,43 @@ myArr.sort { $0.deadline < $1.deadline }
 let newArr = myArr.sorted { $0.deadline < $1.deadline }
 ```
 
+
+## Multiple Sort
+
+Sorting arrays via multiple checks.
+
+Code snippet from [sarunw | sort multiple properties swift](https://sarunw.com/posts/how-to-sort-by-multiple-properties-in-swift/)
+
+```swift
+extension BlogPost {    
+	static var examples2: [BlogPost] = [
+	BlogPost(title: "Zoo", pageView: 5, sessionDuration: 2),
+	BlogPost(title: "Alice", pageView: 1, sessionDuration: 3),
+	BlogPost(title: "Peter", pageView: 1, sessionDuration: 2),  
+	BlogPost(title: "Kofi", pageView: 1, sessionDuration: 1),   
+	BlogPost(title: "Akosua", pageView: 5, sessionDuration: 2), 
+	BlogPost(title: "Abena", pageView: 4, sessionDuration: 10),  
+	BlogPost(title: "Angero", pageView: 1, sessionDuration: 2)    ]
+}
+
+typealias AreInIncreasingOrder = (BlogPost, BlogPost) -> Bool // <1>    
+
+let popularPosts = BlogPost.examples2.sorted { (lhs, rhs) in  let predicates: [AreInIncreasingOrder] = [
+	{ $0.pageView > $1.pageView }, 
+	{ $0.sessionDuration > $1.sessionDuration},
+	{ $0.title < $1.title }
+ ]      
+ for predicate in predicates { 
+	if !predicate(lhs, rhs) && !predicate(rhs, lhs) { 
+		continue  
+	}                
+	return predicate(lhs, rhs)
+ }        
+  return false
+}
+```
+
+
 ## Stride
 
 ```swift

@@ -26,8 +26,6 @@ So we can encapsulate the boolean value in string and print it.
 
 Very useful thread for getting character of string in swift, playing with its index values rather than just value of the string character.
 
-
-
 ```swift
 let input = "Kautilya Save"
 let char = input[input.index(input.startIndex, offsetBy: 0)]
@@ -35,7 +33,6 @@ print(char) // K
 
 // Extension method
 print(input[0] input[9]) // KS
-
 ```
 [get-character-from-string-using-its-index-in-swift](https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/)
 
@@ -54,6 +51,7 @@ You can also use an extension for it. [extensions Character nth element](ios/lif
 ## Computed string _ closure 
 
 Pass parametric property like behavior but Swift doesn't allow for parameters to be passed to properties. So we would use function - closure(nameless function) to achieve the same goal.
+
 ```swift
 var image_: (String) -> String {
 	{ "image-\($0)" }
