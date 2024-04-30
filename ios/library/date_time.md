@@ -1,6 +1,7 @@
 # Date and Time
 
 ## Conversion to UTC
+
 Converting from one timezone to UTC timezone.
 
 ```swift
@@ -144,6 +145,29 @@ Just adopt the [ISO 8601 format for Date Time](https://www.iso.org/iso-8601-date
 [Swift ISO date creation](https://onmyway133.com/posts/how-to-make-iso-8601-date-in-swift/)
 
 
+
+
+## CMTime
+
+Code
+
+```swift
+var videoStartTime: CMTime = CMTimeMake(value: 10, timescale: 1)
+```
+It is fractional so 10/1 = 10 secs
+These two values are a fraction. The **value** is the numerator, and **timescale** is the denominator.
+
+
+Time precision with Floats and new struct type needed
+[understanding-cmtime](https://warrenmoore.net/understanding-cmtime)
+
+[cmtime-for-human-beings](https://dcordero.me/posts/cmtime-for-human-beings.html)
+
+[coremedia cmtime-u58 documentation apple](https://developer.apple.com/documentation/coremedia/cmtime-u58)
+
+[swiftui | handbook-controls-with-avplayer](https://designcode.io/swiftui-handbook-controls-with-avplayer)
+
+
 ## References
 
 [Convert String to Date](https://izziswift.com/convert-string-to-date-in-swift/)
@@ -153,9 +177,4 @@ Just adopt the [ISO 8601 format for Date Time](https://www.iso.org/iso-8601-date
 [swift-date](https://iharishsuthar.github.io/posts/swift-date/)
 
 CMTime 
-Time precision with Floats and new struct type needed
-[understanding-cmtime](https://warrenmoore.net/understanding-cmtime)
 
-[cmtime-for-human-beings](https://dcordero.me/posts/cmtime-for-human-beings.html)
-
-[coremedia cmtime-u58 documentation apple](https://developer.apple.com/documentation/coremedia/cmtime-u58)

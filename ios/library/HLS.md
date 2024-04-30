@@ -35,6 +35,10 @@ HLS stream having :
 . 3 alternate subtitle tracks (English, English with audio description and French)
 [Link](https://sample.vodobox.com/planete_interdite/planete_interdite_alternate.m3u8)
 
+### Spatial 3D HLS
+
+[historic_planet_content 3D video](https://devstreaming-cdn.apple.com/videos/streaming/examples/historic_planet_content_2023-10-26-3d-video/DoVi_P20_34000_t2160p/prog_index.m3u8)
+
 ## HLS Keys
 
 ### TARGET DURATION
@@ -96,6 +100,8 @@ Other
 
 ## References
 
+[apple docs | HLS](https://developer.apple.com/documentation/http-live-streaming)
+
 [what-is-hls-video-streaming-and-how-does-it-work](https://api.video/blog/video-trends/what-is-hls-video-streaming-and-how-does-it-work/)
 
 [hls-http-live-streaming-how-does-it-work](https://ottverse.com/hls-http-live-streaming-how-does-it-work/)
@@ -107,3 +113,22 @@ Other
 [hls-streaming-protocol](https://www.dacast.com/blog/hls-streaming-protocol/)
 
 [apple developer | doc archive | HLS Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/UsingHTTPLiveStreaming/UsingHTTPLiveStreaming.html)
+
+[github  public test videos HLS](https://gist.github.com/jsturgis/3b19447b304616f18657)
+
+
+## Specifications
+
+[HLS content steering | apple specs](https://developer.apple.com/streaming/HLSContentSteeringSpecification.pdf)
+
+
+## Tools 
+
+
+[N_m3u8DL-CLI github](https://github.com/nilaoda/N_m3u8DL-CLI)
+
+[Stream detector](https://github.com/54ac/stream-detector)
+
+[hls downloader](https://github.com/puemos/hls-downloader)
+
+[stream recorder download](https://chromewebstore.google.com/detail/stream-recorder-download/iogidnfllpdhagebkblkgbfijkbkjdmm?pli=1)

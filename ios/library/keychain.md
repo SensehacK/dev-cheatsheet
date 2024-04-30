@@ -45,4 +45,7 @@ func checkAccessible(key: String) -> Bool {
 
 ## References
 
-https://developer.apple.com/documentation/security/keychain_services
+[dev apple | keychain_services](https://developer.apple.com/documentation/security/keychain_services)
+
+
+[apple dev forums | eskimo | post basics of SecItem | Keychain API](https://developer.apple.com/forums/thread/724023)

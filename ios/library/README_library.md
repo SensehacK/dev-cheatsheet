@@ -20,6 +20,8 @@
 
 [framework](framework.md)
 
+[framework errors](framework_errors.md)
+
 [functional_programming](functional_programming.md)
 
 [HLS](HLS.md)

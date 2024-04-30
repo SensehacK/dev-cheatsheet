@@ -31,6 +31,7 @@ public class AsyncNetwork { }
 ## Check Library support
 
 Checking if specific library is supported on the OS running the code or framework right now.
+
 ```swift
 #if canImport(UIKit)
 // iOS, tvOS, and watchOS – use UIColor
@@ -43,7 +44,23 @@ print("This code only runs if UIKit is supported on the device OS.")
 // all other platforms – use a custom color object
 #endif
 ```
+
 [canImport HWS](https://www.hackingwithswift.com/example-code/language/how-to-check-whether-a-module-is-available-using-canimport)
+
+Weak linking framework
+
+Using optional libraries requires additional code as it makes use of [weak linking](https://developer.apple.com/library/mac/documentation/MacOSX/Conceptual/BPFrameworks/Concepts/WeakLinking.html)
+```objc
+extern int MyWeakLinkedFunction() __attribute__((weak_import));
+
+-weak_framework <framework_name>
+
+if (MyWeakLinkedFunction != NULL)
+{
+    result = MyWeakLinkedFunction();
+}
+```
+
 
 
 ## Check OS Support
@@ -66,8 +83,25 @@ public extension Image { }
 #endif
 ```
 
+In SwiftUI you can use this for limiting the UI as well.
 
-https://forums.swift.org/t/if-vs-available-vs-if-available/40266/2
+```swift
+NavigationLink(value: asset) {
+	CustomView(asset: asset)
+}
+#if os(iOS)
+.listRowSeparatorTint(.black)
+#endif
+
+#if os(iOS)
+var drag: some Gesture {
+	DragGesture()
+}
+#endif
+```
+
+[swift forums | if-vs-available-vs-if-available](https://forums.swift.org/t/if-vs-available-vs-if-available/40266/2)
+
 
 
 
