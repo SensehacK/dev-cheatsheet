@@ -36,3 +36,8 @@ reddit wisdom around optimizing solutions
 
 When approaching a problem, quite often people always resort to optimizing performance first. I always say refactoring comes second, first solving the problem is important. Yeah knowing which data structure to use at first glance is important and having their pros and cons in your mind is crucial. But quite often people forget the target they need to reach as they get consumed on performance metrics. I would say this is a crucial difference between a Software Engineer and a Senior Software Engineer. KISS ( Keep it Simple Stupid ) or don't Over Engineer things when not needed. Less is more (Minimalism). Less State management. 
 Good read on [code_readability](code_readability.md) on internal doc I wrote.
+
+
+## Dogfooding
+
+Good article about [developer's guide to dogfooding](https://codesubmit.io/blog/is-dogfooding-right-for-your-team/)

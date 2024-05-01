@@ -53,9 +53,30 @@ public override func isEqual(_ object: Any?) -> Bool {
 
 [best_practices](best_practices.md)
 
+## Pyramid of Doom
+
+Avoiding pyramid of doom with if else identation.
+
+[pyramid of doom](<https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)>)
+
+
+## if else if 
+
+[dangling else ambiguity](https://www.geeksforgeeks.org/dangling-else-ambiguity/)
+
+## [Clean Code](architecture/terminologies/process_terms#Clean%20Code)
+
+
+
+
+
+
+
 ## Resources
 
 [refactoring-swift-best-practices](https://www.avanderlee.com/optimization/refactoring-swift-best-practices)
+
+
 
 ### Authored by : [Kautilya Save](https://sensehack.github.io/)
 

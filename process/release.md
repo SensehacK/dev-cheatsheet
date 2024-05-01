@@ -37,6 +37,8 @@ Good release notes could make a big difference compared to just normal bug fixes
 
 ## Semantic Versioning
 
+### Apple 
+
 Apple Xcode terminologies with semver
 
 This is the `build` number like version `6.9.420` has been built `9000` times. 
@@ -45,3 +47,9 @@ major.minor.bugfix|hotfix (build) = `6.9.420(9000)`
 
 Version = Marketing Version = CFBundleShortVersionString
 Build = Current Project Version = CFBundleVersion 
+
+### SPM 
+
+Swift Package manager still doesn't officially support direct version builds.
+
+[SO | spm package version](https://stackoverflow.com/a/62001912/5177704)
