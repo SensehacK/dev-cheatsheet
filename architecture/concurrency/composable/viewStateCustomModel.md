@@ -1,6 +1,7 @@
 ViewState Model Structs
 
 ViewSuccess
+
 ```swift
 public struct CustomState: ViewSuccess {
 	let canRequestNetwork: Bool
@@ -11,6 +12,7 @@ public struct CustomState: ViewSuccess {
 
 
 ViewError
+
 ```swift
 enum CustomErrorState: ViewErrable, Error {
     case existingAccount(email: String, message: String)

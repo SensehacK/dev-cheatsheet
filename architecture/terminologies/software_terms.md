@@ -47,3 +47,27 @@ Examples include
 
 
 
+## Diagrams
+
+
+### 4+1 Architectural View Model
+
+[Wiki](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)
+
+### UML 
+
+Unified Modeling Language
+
+### ER | ERD
+
+Entity Relation
+[entity–relationship diagrams](https://en.wikipedia.org/wiki/Entity%E2%80%93relationship_model) (ERD
+
+### Venn
+
+### Flowchart
+
+### C4
+
+
+[Wiki](https://en.wikipedia.org/wiki/C4_model)

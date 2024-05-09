@@ -9,21 +9,21 @@ Model View ViewModel
 Doesn't define how VM communicates with VC and Model layer.
 You can use Functional Reactive programming, KVO pattern, Closures, Delegate pattern
 
-Swift UI embeds this thorougly.
+Swift UI embeds this thoroughly.
 
 ## Data Flow
 
-View controler  < - > View Model < - > Model
+View controller  < - > View Model < - > Model
 
 VM -> Speaks to View Controller.
 VM -> Speaks to Model
 
 ## Pros
-- VM - Business logic is seperate
+- VM - Business logic is separate
 - Easily testable
-- Dependency Injection  | Seperation of Concerns
+- Dependency Injection  | Separation of Concerns
 -  SOLID principles
-- Promotes Reusuability accross diff platforms iOS, iPadOS, MacOS, WatchOS, Catalyst.
+- Promotes Reusability across diff platforms iOS, iPadOS, MacOS, WatchOS, Catalyst.
 - Great with Reactive paradigm
 
 ## Cons
@@ -37,5 +37,5 @@ VM -> Speaks to Model
 ## References
 
 Dependency Injection
-https://getstream.io/blog/singleton-dependency-injection-in-swift/
+[singleton-dependency-injection-in-swift](https://getstream.io/blog/singleton-dependency-injection-in-swift/)
 

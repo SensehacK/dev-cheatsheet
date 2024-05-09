@@ -1,4 +1,4 @@
-# Video Terms
+https://proxyman.io/posts/2019-11-15-Can-we-bypass-ssl-pinning# Video Terms
 
 ## Intro
 
@@ -116,6 +116,11 @@ C3 for VOD is not that valuable like Linear Live TV.
 
 C3 
 C4  - Day four
+
+
+### IVOD
+
+
 
 
 ## Linear

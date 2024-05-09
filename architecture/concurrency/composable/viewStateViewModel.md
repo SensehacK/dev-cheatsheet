@@ -33,4 +33,28 @@ extension CustomViewModel {
     }
 }
 ```
-You can find those details of `ViewState<F: ViewSuccess, E: ViewErrable, L: ViewLoadable, O: ViewEmptiable` conformance by either resorting to `Memberless structs` defined in[viewStateProtocol](viewStateProtocol.md) or you can create your own model states by conforming to these protocols. You can find custom model state conformance in file [viewStateCustomModel](viewStateCustomModel.md)
+
+You can find those details of `ViewState<F: ViewSuccess, E: ViewErrable, L: ViewLoadable, O: ViewEmptiable` conformance by either resorting to `Memberless structs` defined in [viewStateProtocol](viewStateProtocol.md) or you can create your own model states by conforming to these protocols. You can find custom model state conformance in file [viewStateCustomModel](viewStateCustomModel.md)
+
+
+```swift
+extension CustomViewModel: ViewModelType {
+    public struct Input {
+	    let loginAction: AnyObserver<Void>
+	    
+    }
+    
+    public struct Output: ViewStateDrivable {
+	    let viewState: AnyObserver<String>
+    }
+}
+
+protocol ViewModelType {
+    associatedtype Input
+    associatedtype Output
+    
+    var input: Input { get }
+    var output: Output { get }
+}
+```
+
