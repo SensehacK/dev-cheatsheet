@@ -32,22 +32,24 @@ You can save it as `.pem` Base 64 encoded certificate or
 
 ## tvOS
 
+### Prerequisites 
+
 If you want to configure for a physical tvOS apple tv 4K, you need few things to set it up.
 
 - [Apple Configurator | app store](https://apps.apple.com/us/app/apple-configurator/id1037126344)
-- Charles Proxy 5.xx Beta
+- [Charles Proxy 5.xx Beta](https://www.charlesproxy.com/beta/download.do)
 - Apple TV 4K
 - Same Wifi network with manual DHCP address reservation
-- [node package manager](tools/terminal/node#Node%20Version%20Manager)
+- [node package manager](../tools/terminal/node#Node%20Version%20Manager)
 
 ### Steps
 
-- download charles proxy  `downloadedProfile.pem` from Menu -> Help -> SSL Proxying -> Save Charles Root Certificate... ” save it as `.cer` Binary Certificate `downloadedProfile.cer`
+- create charles proxy from Menu -> Help -> SSL Proxying -> Save Charles Root Certificate... ” save it as `.cer` Binary Certificate `downloadedProfile.cer`
 - Apple configurator -> File -> New Profile -> Name the profile "customTVOS_proxy" -> Select "Wifi", click "Configure"
 - Fill your usual Wifi SSID (name: WifiName) & make sure `Proxy Setup` is selected to manual with provided `ProxyMan` Server and Port address eg. `10.0.0.22:9090`
 - select “Certificates” → Click “Configure” → upload the `downloadedProfile.cer` file that you previously downloaded & renamed.
 - save the profile `tvOSProxyProfile.mobileconfig` at accessible location & open a terminal at that `$pwd`
-- Run a temporary [http server](tools/server/http-server#Node) using node
+- Run a temporary [http server](../tools/server/http-server#Node) using node
 - Make sure appleTV is on the same Wifi network 2.4 or 5Ghz and open Settings -> General -> Privacy & Security -> Share Apple TV Analytics. Press apple tv remote physical button `Play/Pause` new window will appear.
 - Select `Add Profile`, add the mac http server ip address with port and local file complete path. eg: `http://10.0.0.22:8033/tvOSProxyProfile.mobileconfig` (easier to copy paste from mac shared clipboard to iPhone + tv remote Input prompt)
 - Select "Install", few times and then we need to trust the certificate by heading over to Settings -> General ->   About ->   Certificate Trust Settings ->   Click on Proxy Profile ->   “Continue”.
