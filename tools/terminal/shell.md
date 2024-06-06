@@ -1,4 +1,4 @@
-# Bash
+# Shell
 
 ## Terminal Key Tags
 
@@ -258,3 +258,10 @@ or you can use the shorter version of the command:
 
 [SO | how-to-load-bash-profile-when-entering-bash-from-within-zsh](https://stackoverflow.com/questions/23233603/how-to-load-bash-profile-when-entering-bash-from-within-zsh)
 
+
+
+## Arch
+
+```sh
+arch
+```

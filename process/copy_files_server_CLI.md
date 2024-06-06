@@ -1,5 +1,8 @@
 
 
+
+## SCP
+
 Use command `scp `
 
 _scp_ from remote to local using a single file .
@@ -9,8 +12,19 @@ _scp_ from remote to local using a single file .
 scp remoteuser@remoteserver:/remote/folder/remotefile.txt  localfile.txt
 ```
 
-https://www.simplified.guide/ssh/copy-file
+Copy a single file from local to remote with _scp_.
 
-https://stackoverflow.com/questions/30553428/copying-files-from-server-to-local-computer-using-ssh
+```sh
+scp myfile.txt remoteuser@remoteserver:/remote/folder/
 
-https://stackoverflow.com/questions/74311661/subsystem-request-failed-on-channel-0-scp-connection-closed-macbook
+```
+
+[ssh/copy-file](https://www.simplified.guide/ssh/copy-file)
+
+
+[SO | copying-files-from-server-to-local-computer-using-ssh](https://stackoverflow.com/questions/30553428/copying-files-from-server-to-local-computer-using-ssh)
+
+[SO | subsystem-request-failed-on-channel-0-scp-connection-closed-macbook](https://stackoverflow.com/questions/74311661/subsystem-request-failed-on-channel-0-scp-connection-closed-macbook)
+
+
+

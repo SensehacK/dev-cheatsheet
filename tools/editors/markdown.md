@@ -74,9 +74,8 @@ Read about [yaml](yaml.md)
 
 
 
-
 ## Reference
 
-https://www.w3schools.io/
+[w3schools.io](https://www.w3schools.io/)
 
-https://placeholder.com/#How_To_Use_Our_Placeholders
+[How_To_Use_Our_Placeholders](https://placeholder.com/#How_To_Use_Our_Placeholders)

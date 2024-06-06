@@ -145,3 +145,12 @@ cp ~/.ssh/known_hosts ~/.ssh/known_hosts.bak
 
 [Dealing with SSH Host Key Changes](https://cat.pdx.edu/platforms/linux/remote-access/dealing-with-ssh-host-key-changes/)
 
+
+
+### Connection reset by peer
+
+I don't know why it failed on this but after re-running the CI it worked fine again.
+
+```sh
+fatal: unable to access 'https://github.com/PromiseKit/Alamofire/': Recv failure: Connection reset by peer
+```

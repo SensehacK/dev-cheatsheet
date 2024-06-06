@@ -36,3 +36,10 @@ curl -s "http://url.something.com/filepath/filename-.m3u8?sz=asfa"
 
 man help - curl
 [Manual](https://curl.se/docs/manual.html)
+
+
+## Error 
+
+### SSL error
+
+[SO | curl-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate](https://stackoverflow.com/questions/24611640/curl-60-ssl-certificate-problem-unable-to-get-local-issuer-certificate)

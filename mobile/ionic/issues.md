@@ -38,13 +38,21 @@ For example:
 
 I was able to fix by using cocoapods:1.1.1
 
-> \# sudo gem install -n /usr/local/bin cocoapods:1.1.1 \# sudo gem uninstall -n /usr/local/bin cocoapods \# uninstall 1.2.0.beta.1 $ pod --version \# 1.1.1 $ rm -rf platforms plugins $ cordova platform add ios
+```sh
+sudo gem install -n /usr/local/bin cocoapods:1.1.1 \
+sudo gem uninstall -n /usr/local/bin cocoapods \ # uninstall 1.2.0.beta.1 
+pod --version \ # 1.1.1 
+rm -rf platforms plugins 
+cordova platform add ios
+```
 
 ### EA Access Permissions
 
 Execute command
 
-> \# sudo chown -R $\(whoami\) $\(npm config get prefix\)/{lib/node\_modules,bin,share}
+```sh
+sudo chown -R $\(whoami\) $\(npm config get prefix\)/{lib/node\_modules,bin,share}
+```
 
 It changes ownership with user\(whoami\) logged in for the default npm config location.
 
@@ -64,11 +72,15 @@ Also if still doesn't fix your issue, you could switch to Tab "Capabilities" Scr
 
 If you get blank screen at launch with ionic app. As for me I just executed the command
 
-> ionic cordova platform add ios
+```sh
+ionic cordova platform add ios
+```
 
 But forgot the build command
 
-> ionic cordova build ios
+```sh
+ionic cordova build ios
+```
 
 ```text
 ERROR: Start Page at 'www/index.html' was not found.

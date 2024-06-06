@@ -106,7 +106,22 @@ So sometimes when restarted it creates a race condition to map a folder / direct
 Sometimes 
 
 
-## Reference
 
+### deployment error - request failed with status code 500
+
+This could be because of port being bind previously and some process still has a lock.
+
+So we just restart our docker process by ssh the server.
+
+```sh
+sudo service docker stop
+sudo service docker stop
+```
+
+[SO | relevant thread](https://stackoverflow.com/a/65559403)
+
+
+
+## Reference
 
 Linux Media Server Script from this [Github](https://github.com/GreenFrogSB/LMDS) also helped a lot.

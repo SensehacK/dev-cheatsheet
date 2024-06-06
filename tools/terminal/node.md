@@ -4,11 +4,23 @@
 
 ### Installation
 
-> \# sudo npm install -g @angular/cli \# sudo npm install -g ionic@latest \# sudo npm install $ npm run ionic $ npm run ionic:serveStatic
+```sh
+sudo npm install -g @angular/cli 
+
+sudo npm install -g ionic@latest 
+
+sudo npm install
+
+npm run ionic 
+
+npm run ionic:serveStatic
+```
 
 #### Downgrade
 
-> $ npm install -g ionic@1.4.0
+```sh
+npm install -g ionic@1.4.0
+```
 
 \(version number after ionic@**\_.\_.\_**\)
 
@@ -90,4 +102,23 @@ To run locally on chrome
 ## Node Package Manager
 
 Package repository
-https://www.npmjs.com/package/package
+[npmjs packages](https://www.npmjs.com/package/package)
+
+##  Node Version Manager
+
+Node Version Manager - POSIX-compliant bash script to manage multiple active node.js versions
+[NVM github](https://github.com/nvm-sh/nvm)
+
+```sh
+# Download NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+
+# Verify Installation
+command -v nvm
+
+# Restart terminal or source your `.zhsrc` config
+source ~/.zshrc
+
+# Install Node
+nvm install node
+```

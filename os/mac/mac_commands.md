@@ -8,11 +8,16 @@ This markdown file list downs all the commands for Mac OS for setting up with so
 
 Uptime for your mac
 
-> uptime
+```sh
+uptime
+```
 
 For checking your reboots
 
-> last reboot
+```sh
+last reboot
+```
+
 
 ## Checking Mac Application Bundle ID
 
