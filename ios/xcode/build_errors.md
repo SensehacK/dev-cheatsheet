@@ -1,46 +1,5 @@
 # Build Errors
 
-## Basic Remediation
-
-> Have you tried turning it OFF and ON again - The IT Crowd
-
-Glad I can reference that British TV show in my work - hobby - mind map knowledge base.
-
-The number of times an iOS Engineer has to go back to basics things to try while having a build or runtime error from Xcode - Apple Developer Tools.
-
-- Manually clearing out Derived Data
-- Clean Build Folder
-- Deleting app on simulator
-- Closing Xcode
-- Force quitting Xcode
-- Swift Package Manager - Reset package cache
-- SPM - resolving packages
-- Restarting Mac
-
-
-
-## Finding the culprit
-
-Open the `.log` file on `console.app` and make sure to not take the last error stack trace at its face value. 
-Always back track to a point where you can see the actual error.
-When Xcode build command fails on GUI or CLI. CLI is a little bit tricky and can only provide final failure information of below logs. 
-
-```sh
-** BUILD FAILED **
-** ARCHIVE FAILED **
-** TEST FAILED **
-```
-
-You can solve this problem two ways 
-
-1. Open the file / error project target scheme product file in question on Xcode GUI. After Xcode 14 updates, lots of debug build logs are available in verbose in GUI rather than just a `.log` file.
-2. Or open the log file and search for `error` or `errors generated.` or `error generated.` in your log file. This will give you which file is failing on CLI.
-
-Usually it happens due to multiple different Xcode versions on GUI and `xcode-select` path set for CLI.
-So it comes down to a making sure that whatever tool you're using is on same versions either GUI or CLI. And sometimes `hotfixes` or `build-fixes` are merged in latest `develop` , `main` or `tag` so make sure the branch you're working on is also updated with latest merges from parent branches or protected branches.
-
-Or else you can face a classic `It Works on my machine!` or `Multiple Spiderman pointing at each other` meme IRL.
-
 ## Couldn’t find path for `xcconfig` pods
 
 * Set the configuration file setting\* "None" for the Pods related target.
@@ -87,7 +46,7 @@ You just need to git diff from the files and open in your favorite text editor t
 
 [SO Link](https://stackoverflow.com/questions/21818821/couldnt-open-xib-file-after-git-pull-invalid-element-name)
 
-## Error: Multiple commands produce
+## Multiple commands produce
 
 
 ```sh
@@ -248,6 +207,8 @@ function xcconfig_cleanup {
 }
 ```
 
+[Github Carthage Code link](https://github.com/Carthage/Carthage/issues/3019#issuecomment-665136323)
+
 ## iOS simulator vs iOS vs iOS Rosetta
 
 ```sh
@@ -337,6 +298,8 @@ Build settings from command line:
 
 [Bug thread on xcode toolchain, fastlane github](https://github.com/fastlane/fastlane/issues/21293)
 
+Imp Note: Make sure your terminal or iTerm is running via `Rosetta` mode since carthage & xcode cli had issues in past with getting the `arch` build successfully running on the mac.  [check arch on terminal](ios/library/framework#Build%20Output)
+
 ## xcode build log file empty
 
 ```sh
@@ -403,6 +366,8 @@ User Info: {
 ```sh
 Failed to prepare device 'iPhone 15' for impending launch. (Underlying Error: Unable to boot the Simulator. launchd failed to respond. (Underlying Error: Failed to start launchd_sim: could not bind to session, launchd_sim may have crashed or quit responding))
 ```
+Restarted just the test again and it seems it worked after re-running it.
+
 
 ## command SwiftCompile failed with a nonzero exit code
 
@@ -413,7 +378,7 @@ command SwiftCompile failed with a nonzero exit code
 Basically saying `The compiler is unable to type-check this expression is reasonable time`
 
 
-## error: Build input file cannot be found
+## Build input file cannot be found
 
 ```log
 error: Build input file cannot be found: '/Users/k/Library/Developer/Xcode/DerivedData/CPlatform-/Build/Products/Debug-iphoneos/CPlatformTestUI.app/PlugIns/CPlatformTests.xctest/CPlatformTests'. Did you forget to declare this file as an output of a script phase or custom build rule which produces it? (in target 'CPlatformTests' from project 'CPlatform')
@@ -426,13 +391,32 @@ Also similar issue could be what [SO user describes here](https://stackoverflow.
 Seems like you have moved bridging file to other folder and Xcode compiler can not find it. Try to move this file in the top of your files tree
 
 
+## Cannot find type '' in scope
+
+```error
+Cannot find type 'CustomNewType' in scope
+```
+
+Sometimes you need to have clean build when xcode / swift llvm compiler couldn't resolve its dependencies properly.
+This happens when you create a new file in a different namespace or package. SPM which was used for local development imported in an xcode project workspace environment had issues finding a new type defined by me.
+
+So I circumvented this build error by copying the type `struct | protocol` into the same file so that compiler can get the necessary inferences or linking headers / types to unblock myself for now.
+After 3 - 4 local builds, I finally moved the type to its own file_name which I tried to do in first place.
+No more build errors
+
 ## xcodebuild timed out while trying to read
 
 [Carthage issue CLI described here](ios/xcode/carthage#xcodebuild%20timed%20out)
 
+## Found no destinations for the scheme
 
+```error
+xcodebuild: error: Found no destinations for the scheme 'Obs tvOS Framework' and action archive.
+```
 
-
+Just make sure you have the right simulator installed for your Xcode.
+For me it happened after Xcode 15.2 -> Xcode 15.3.
+So for one of the tvOS framework xcode wasn't backwards compatible? in the UI at least and was showing get `tvOS 17.4`.
 
 ## xcode build swiftc unable to discover
 
@@ -453,3 +437,55 @@ run: |
 	xcodebuild -workspace "$workspace" -scheme "$scheme" -destination "platform=$platform,name=$device" build
 ```
 Shutting down the computer to go outside. Wasted 30 mins to tackle this CI issue.
+
+
+
+
+
+
+
+## Attaching | Installing to Device Loading
+
+
+Had to restart my device, remove my computer from the device's "trusted" settings and re-install the iOS / mac app.
+
+
+## Internal inconsistency error
+
+
+```sh 
+**Showing All Messages**
+Internal inconsistency error: never received task ended message for task ID '501' with rule info 'SwiftCompile normal x86_64 /Users/saf3/Library/Developer/Xcode/DerivedData/slayer-/SourcePackages/checkouts/hnj/Sources/sa/Utilities/saf/asf.swift'. Build again to continue.
+```
+
+
+
+## Internal inconsistency error: received multiple target
+
+```log
+Internal inconsistency error: received multiple target ended messages for target ID '8' or received target ended message but did not receive corresponding target started message, while retrieving parent activity in taskStarted message.
+```
+
+Rebuild the project with Xcode and it worked fine
+
+
+## ensure you have llvm-symbolizer
+
+```
+Stack dump without symbol names (ensure you have llvm-symbolizer in your PATH or set the environment var `LLVM_SYMBOLIZER_PATH` to point to it)"
+```
+
+[Link to Github Gist](https://gist.github.com/trevorhobenshield/6bca58f947ad6115a113a97072df1a73)
+
+
+
+## entitlement does not match
+
+```log
+This application's application-identifier entitlement does not match that of the installed application. These values must match for an upgrade to be allowed.
+```
+
+Prolly due to toggling of "Automate manage signing" for your app and deploying that app once on your physical apple device.
+And once you discard your WIP stash you revert back to default "manual signing". It kinda led to mismatch provisioning profile or signing package. Which doesn't allows you do perform an upgrade or overwrite the app package.
+
+[SO Post](https://stackoverflow.com/questions/32677133/app-installation-failed-due-to-application-identifier-entitlement)
