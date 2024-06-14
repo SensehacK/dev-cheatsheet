@@ -17,3 +17,11 @@ sudo service openvpn stop
 ```
 
 
+
+
+## Server
+
+
+TP - link server
+
+[How to Set up OpenVPN Server on TP-Link Router](https://youtu.be/1TEjwdKP6R8?si=HXPEArSMnXbQ9miW)

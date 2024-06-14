@@ -16,7 +16,28 @@ Hi, yes we were not able to proceed yesterday because we are missing the knowled
 [Reddit programmer humor post](https://www.reddit.com/r/ProgrammerHumor/comments/1bsxw3l/comment/kxiqbuf/?utm_source=share&utm_medium=web2x&context=3)
 
 
+## Indian IT Words
 
+This is not promoting any self hate or hate towards a specific group of ethnicity. It's just I find this funny as I grew up partly in India & I have heard this corporate lingo / speak from middle managers working in IT companies.
+
+Also for context this is an evolution from the British English and when they left we Indians who were a bit literate enough to read and write english came up with stop gaps to bridge our various native language dialects mixed in with english counterparts.
+Now I still find it funny but since I have the context behind the native languages of India (Marathi, Hindi .etc.,) I get why these things are the way they are. But for a normal person this just sounds absurd & I go out of my way to use them to promote some "stereotypes".
+
+"Kindly revert" - as in, 'please reply' to my email.
+
+"Discuss about" - instead of simply 'discuss'
+
+"Do one thing" - followed by a long list of multiple things to do. It's an odd Indian phrase that is grammatically wrong, and really has no meaning outside of Indian English.
+
+"Prepone" - Taking the prefix pre\post and applying it to the word 'postpone'. So, prepone would be to move something sooner.
+
+"Updation" - instead of just 'update' or instead of 'to be updated'. As well as generally adding the -tion suffix to alot of things.
+
+"Take" - Often will say they are 'taking something' rather than 'doing something'. "Take a rest". "Take a meeting". "Take a backup".
+
+In addition there are the physical mannerisms. Such as the Indian head-bob.
+
+[Reddit source | comment | thread](https://www.reddit.com/r/sysadmin/comments/2eaa0b/do_the_needful/)
 
 ## The Pareto principle
 

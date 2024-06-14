@@ -116,3 +116,9 @@ Sometimes a JSON object described below
 }
 ```
 Might need to swap the `nil` with `null` type for JSON parsing to work. Maybe because JSON doesn't have `nil` defined and it has equivalent `null` type.
+
+
+## Encryption
+
+
+[apple dev | encrypting your files](https://developer.apple.com/documentation/uikit/protecting_the_user_s_privacy/encrypting_your_app_s_files)

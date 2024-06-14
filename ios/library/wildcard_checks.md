@@ -112,3 +112,8 @@ var drag: some Gesture {
 // your code
 #endif
 ```
+
+
+## Get Device Info
+
+[device](ios/config/device.md)
