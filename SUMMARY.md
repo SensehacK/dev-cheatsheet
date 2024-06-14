@@ -2,7 +2,9 @@
 
 ## [Architecture](architecture/ReadMe_architecture.md)
 
-## [Concurrency](ios/concurrency/README_concurrency.md)
+## [Concurrency](architecture/concurrency_pattern.md)
+
+## [Terminologies](architecture/terminologies.md)
 
 ----------------------------------------------------
 
@@ -10,29 +12,39 @@
 
 ### [automation](ios/automation/README_automation.md)
 
-### [config](ios/config/README_config)
-
 ### [combine](ios/combine/README_combine.md)
+
+### [concurrency](ios/concurrency/Readme_concurrency.md)
+
+### [config](ios/config/README_config)
 
 ### [library](ios/library/README_library.md)
 
-### [rxSwift](ios/rxSwift/README_rxSwift.md)
-
 ### [lifecycle](ios/lifecycle/README_lifecycle.md)
+
+### [macOS](ios/macOS/README_macOS.md)
+
+### [objectiveC](ios/objectiveC/README_objectiveC.md)
+
+### [rxSwift](ios/rxSwift/README_rxSwift.md)
 
 ### [swift](ios/swift/README_swift.md)
 
-### [swiftUI](README_swiftUI.md)
+### [swiftUI](ios/swiftUI/README_swiftUI.md)
 
 ### [test](ios/test/README_test.md)
 
+### [tvOS](ios/tvOS/README_tvOS.md)
+
 ### [ui](ios/ui/README_ui.md)
+
+### [visionOS](ios/visionOS/README_visionOS.md)
 
 ### [xcode](ios/xcode/README_xcode.md)
 
 ----------------------------------------------------
 
-## [Tools](README_tools.md)
+## [Tools](tools/README_tools.md)
 
 ### [Git](git/README_git.md)
 
@@ -74,9 +86,7 @@
 
 ----------------------------------------------------
 
-## Mobile
-
-### [mobile](mobile/README_mobile)
+## [Mobile](mobile/README_mobile)
 
 ### [ionic](mobile/ionic/README_ionic)
 
@@ -92,13 +102,17 @@
 
 ----------------------------------------------------
 
-## [OS](README_os.md)
+## [OS](os/README_os.md)
 
 ### [linux](os/linux/README_linux)
 
 ### [mac](os/mac/README_mac)
 
 ### [windows](os/windows/README_windows)
+
+[home assistant](home_assistant.md)
+
+[retro pie](os/retro_pie.md)
 
 ----------------------------------------------------
 
@@ -116,7 +130,7 @@
 
 ### [docker](database/docker/README_docker)
 
-### [mongoDB](database/mongoDB/README_mongoDB)
+### [mongo](database/mongoREADME_mongoDB)
 
 ### [SQL](database/sql/README_sql)
 
@@ -130,4 +144,4 @@
 
 ## [Misc](misc/README_misc)
 
-## [Math](README_math.md)
+## [Math](misc/math/README_math.md)

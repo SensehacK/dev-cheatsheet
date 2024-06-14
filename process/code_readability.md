@@ -35,17 +35,46 @@ if let manifestUrl = asset?.manifestUrl,
 ### Another example of Ultra wide *code*
 
 ```swift
-NotificationCenter.default.post(name: NSNotification.Name(rawValue: CustomName), object: player, userInfo: [CustomName_SIGNAL_ID:"x",CustomName_STREAM_ID:"1"])
+NotificationCenter.default.post(name:NSNotification.Name(rawValue: CustomName), object: player, userInfo: [CustomName_SIGNAL_ID:"x",CustomName_STREAM_ID:"1"])
 ```
 
 ```swift
-NotificationCenter.default.post(name: NSNotification.Name(rawValue: CustomName),
-object: player,
-userInfo: [CustomName_SIGNAL_ID:"x",CustomName_STREAM_ID:"1"])
+NotificationCenter
+.default
+.post(name: NSNotification.Name(rawValue: CustomName), 
+	  object: player,
+	  userInfo:[
+	  CustomName_SIGNAL_ID:"x",
+	  CustomName_STREAM_ID:"1"
+	  ]
+)
 ```
 
 more readable rather than one liner and I do have ultra wide monitor but I split my code editors in x3 format so this makes it easier to read and review while on mobile, iPad, or portrait screens like a browser tabs 2/3 of space.
 
+### Reactive Paradigm Flow
+
+Stylistic nitpick: 
+Could break the part after `?.` output .... on respective lines for easier code reading.
+Its harder to keep up with more than 2 access like `= , . , { , :`  on a single line.
+
+```swift
+lifeCycleCancellable = eventOrchestrator?.output.errorEvent.sink(receiveValue: { [weak self] in
+	self?.eventOrchestrator?.input.handleError.send(($0, false))
+        })
+```
+
+```swift
+lifeCycleCancellable = eventOrchestrator?
+	.output
+	.errorEvent
+	.sink { [weak self] in
+		self?.eventOrchestrator?
+			.input
+			.handleError
+			.send(($0, false))
+    }
+```
 ## Parameters naming
 
 Code snippet in review
