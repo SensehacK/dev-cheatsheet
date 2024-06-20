@@ -4,6 +4,14 @@
 
 It can be simulated on iOS simulator for specific lat and long or some predefined physical locations.
 
+Xcode -> `Project-Scheme` -> `Edit Scheme` -> `Run(Debug)` -> `Options` 
+Core Location -> `Allow Location Simulation`
+You can provide your custom `.gpx` coordinates to emulate that specific Latitude & Longitude if needed.
+You can even simulate walking or moving coordinates. That location file format has different ways of simulating advance locations.
+
+But this all depends on how the app or service tracks your location, some only take your word for it - like GPS coordinates, some correlate that data with `IP addresses`, some have VPN known addresses in their blocklists. Some do device discovery for eg. Home Alexa + Google Android devices which all share their IP addresses or GPS coordinates to their mothership. Which averages out their data to fizzle out your `spoofed` location data for accessing their geo-location specific content. It's a cat and mouse game with `geotracking` APIs.
+
+![](xcode-location-spoofing.png)
 ## API Support
 
 ### Mail
@@ -24,7 +32,22 @@ mailto:
 
 API won’t work on simulator for opening email client with method called `-canOpenURL` with an error message thrown in console saying “error: "This app is not allowed to query for scheme mailto"
 
-### Health
+
+## Commands
+
+Erasing the simulator of iOS via xcode CLI
+
+```sh
+sudo xcrun simctl erase all
+```
+
+Shutting down simulators
+
+```sh
+xcrun simctl shutdown all
+```
+
+## Health
 
 Health data continuous workout randomized data could be accessible for testing the app.
 
