@@ -44,7 +44,7 @@ Other trials: [Playgrounds repo](https://github.com/SensehacK/playgrounds)
 Checkout Summary file for whole project structure. Would recommend using `Obsidian` for full graph correlation of every topic related to its high level subdomains.
 
 
-![](/assets/obsidian.jpg)
+![Obsidian Knowledge Graph](assets/obsidian.jpg)
 
 
 

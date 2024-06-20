@@ -11,7 +11,7 @@ You can even simulate walking or moving coordinates. That location file format h
 
 But this all depends on how the app or service tracks your location, some only take your word for it - like GPS coordinates, some correlate that data with `IP addresses`, some have VPN known addresses in their blocklists. Some do device discovery for eg. Home Alexa + Google Android devices which all share their IP addresses or GPS coordinates to their mothership. Which averages out their data to fizzle out your `spoofed` location data for accessing their geo-location specific content. It's a cat and mouse game with `geotracking` APIs.
 
-![](xcode-location-spoofing.png)
+![](../../assets/xcode-location-spoofing.png)
 ## API Support
 
 ### Mail
