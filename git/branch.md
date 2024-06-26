@@ -72,3 +72,9 @@ git push -u <remote> <branch-name>
 ```sh
 git diff hotfix/9.4.2-main hotfix/9.4.2-develop --name-only
 ```
+
+
+## Mind Map
+
+[Peer Review - Protected branch](process/peer_review#Protected branch)
+

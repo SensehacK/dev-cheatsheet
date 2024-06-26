@@ -2,6 +2,10 @@
 
 Pretty lightweight tool to quickly get network requests and responses from the server.
 
+## command builder
+
+[curl CLI request builder](https://curlbuilder.com/)
+
 ## Download file FTP
 
 ```sh

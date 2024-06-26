@@ -44,3 +44,19 @@ In addition there are the physical mannerisms. Such as the Indian head-bob.
 The Pareto principle (also known as the 80/20 rule, the law of the vital few and the principle of factor sparsity states that for many outcomes, roughly 80% of consequences come from 20% of causes (the "vital few").
 
 [wiki | Pareto principle](https://en.wikipedia.org/wiki/Pareto_principle)
+
+
+
+## Good Manager
+
+
+Identify a bad manager in an interview
+
+1) They look visibly uninterested.  
+2) They don't follow what you say properly and maintain a poker face.  
+3) Because of 2, they can derail you even if you ask the right question.  
+4) Their answers are vague/wrong if you want to clarify something.  
+5) They can get egoistic out of insecurity for no fault of your own.  
+6) Ironically, most of them start very friendly “Do you want to have water or eat something? Relax… This is a friendly two-way conversation”
+
+[source blind comment](https://www.teamblind.com/post/How-can-you-identify-badmediocre-manager-in-job-interview-1xJtiSf5)

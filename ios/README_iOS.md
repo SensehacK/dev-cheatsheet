@@ -45,6 +45,8 @@ Here you can find various documentation related to iOS development which can hel
 
 [Great Mentors IRL](misc/resources#Offline)
 
+[WWDC videos](https://github.com/insidegui/WWDC?)
+
 ## Contribution
 
 Feel free to fork this project & raise a pull request to add more relevant information regarding development tools used in iOS ecosystem.
