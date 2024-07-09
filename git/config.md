@@ -74,3 +74,14 @@ To verify whether the settings was applied or not, we could run this command
 git config --global --get core.ignorecase
 ```
 
+
+
+## Global
+
+
+```bash
+Host github.com
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/personal_customized_sub_domain
+```

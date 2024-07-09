@@ -71,7 +71,7 @@ fatal: could not read Username for '[https://github.com](https://github.com)': t
 
 Or your personal Access token is expired so you're getting this error according to [Github issue thread](https://github.com/actions/checkout/issues/664)
 
-
+If you use `xcodebuild -scmProvider xcode`, HTTPS can be used, but you would typically log in via Xcode preferences to your SCM service account.
 
 ### getaddrInfo thread
 
@@ -154,3 +154,19 @@ I don't know why it failed on this but after re-running the CI it worked fine ag
 ```sh
 fatal: unable to access 'https://github.com/PromiseKit/Alamofire/': Recv failure: Connection reset by peer
 ```
+
+
+
+## remote: Repository not found
+
+
+```
+remote: Repository not found.
+fatal: repository 'https://github.com/MyRepo/project.git/' not found
+```
+
+[SO | Git - remote: Repository not found](https://stackoverflow.com/questions/37813568/git-remote-repository-not-found)
+
+the stack overflow post didn't help, I even tried to log out from Github desktop to get the new token. Deleted the old keychain access login items for `github.com` & also for some reason my `ssh` token identity had been revoked for SSO access for my specific organization. 1 out of 5 were only allowed & I always need 3 of them.
+So I created a new branch and tried to push & now it works. 
+In the whole scenario I did force restart my Github Desktop application so maybe the SSO revoke / access thing got re-triggered ? or old cache was discarded. Anyway I was able to push it.
