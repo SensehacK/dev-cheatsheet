@@ -18,6 +18,12 @@ For checking your reboots
 last reboot
 ```
 
+## Keeping mac Alive
+
+```sh
+caffeinate
+```
+
 
 ## Checking Mac Application Bundle ID
 

@@ -39,3 +39,22 @@ sudo chown -R $USER /Applications/Slack.app
 ```
 
 Or if you 
+
+
+
+## Search with Default browser
+
+
+Add automator / workflow and set it in default browser
+[Stack Exchange | MacOS - system preferences](https://apple.stackexchange.com/questions/10999/search-in-google-always-open-safari-instead-of-default-browser) 
+
+
+Create a workflow for automator
+
+[super user | create a shortcut for search with google](https://superuser.com/questions/369934/mac-os-x-lion-chrome-shortcut-for-search-with-google) 
+
+maybe try this app but i didn't fully config it to check whether it works perfectly
+[Velja macOS app](https://apps.apple.com/ca/app/velja/id1607635845?mt=12)
+
+Location of Automator script.
+Automator Quick Actions are saved into /Users/username/Library/Services. By default, Workflows are saved in the **Workflows folder in the local library**

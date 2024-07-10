@@ -12,6 +12,8 @@
 
 [[disable_gatekeeper]]
 
+[disk_utility](disk_utility.md)
+
 [fresh_install](fresh_install.md)
 
 [[hidden_files]]
