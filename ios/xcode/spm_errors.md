@@ -39,7 +39,7 @@ Revision 37351b7ac065f11cd70c41ca7610539a82856ddf for security-spm-client-manife
 Fetching from https://github.company.com/contentsecurity/security-spm-client-manifest.git (cached)
 ```
 
-### missing required module ''
+### missing required module
 
 ```bash
 <unknown>:0: error: missing required module 'HLSObjectiveC'
@@ -129,3 +129,61 @@ Package.resolved file is corrupted or malformed; fix or delete the file to conti
 Switching back from version 3 to version 2 worked fine for me. Maybe not committing the `Package.resolved` file should be more important to avoid these kind of flaky build failures.
 Since on CI we use Xcode 15 and on my local machine I upgraded to 15.3 recently which led to upgrade of Package.resolved file with appropriate new keys like 
 `originHash` & `version upgrade` to 3.
+
+### Build input file cannot be found
+
+```error
+
+Build input file cannot be found: '/Users/ksave9wrwa57/git/cloud/saf/Sources/werw/Events and Reporting/PlaySpsaan.swift'. Did you forget to declare this file as an output of a script phase or custom build rule which produces it?
+```
+
+
+
+### Credentials were rejected
+
+```log
+Showing All Messages skipping cache due to an error: Authentication failed because the credentials were rejected
+```
+
+This may happen due to one of these few reasons.
+
+- Xcode cache is not updated. Please force quit your xcode and try again. Resolving stuff.
+
+- Was able to clone personal repos of the account but not other organization. Turns out my firefox browser session was improperly interrupted while not completing the `allow SSO` for the independent organizations mention over here.  [github token creation SSO](git/token#SSO)
+
+- Your local system macOS keychain could have conflicting secure tokens stored for your specific domain, subdomain github flavor of version. This could happen because you have multiple git credentials, multiple git clients like Github desktop, git CLI, Gitkraken, git VSCode etc.
+
+- Your git config `.dotFiles` found under your root personal account directory like `~` or `~/.ssh/` or your personalized config. check the file `config` for specific git configuration being setup on a global level. Sometimes you can have specific sub-directories rules or host rules. Specified over [git config global](git/config#Global) 
+
+
+
+- Make sure it has `.git` full repo URL.
+```bash
+https://github.com/apple/swift-argument-parser.git
+```
+
+- Update global git config from `ssh` to `https` & try again.
+
+#### Minor Rant
+
+So get this - remember the global git config rule. that was necessary for previous xcode since apple for some reason couldn't support GitHub fine grain tokens. -> all right I get it apple isn't on cutting edge of technology. I do `classic token` problem solved right?  
+No it had a problem with the `ssh` key - value pair algorithm - it can just accept the latest and greatest ED11342 xxx till last Xcode 15 beta or something 5 months back.  
+So had to revert to a 160 bit or something inferior encryption ssh method.Now fast forward to 2024 - we are all good and the project is great & it now fails before we upgraded the IOS dependency layer (SPM) which takes in latest helio and other stuff being bumped according to SEMVER. All good but now the SPM cache is invalidated. guess what we have been running on `cache` for past 3 - 4 months because well we were more hot on Nitro stuff innit & PP just had minor releases - cache worked fine.Now for some innate reason - apple | xcode can't take the latest token provided by us and dare u the old token is valid. On top of it xcode creates 3 more entries in keychain (password manager) to store the same tokens for maybe individual UUID projects (why - prolly a bug) which we cant even track since there isn't an open radarr bug tracking system provided by apple.  
+Now I thought maybe previously we had to revert on `ssh` from https. This time I'll revert back this since its `Classic -apple` yk - one day it works - other day it breaks. & Voila it freaking works again.  
+cue the meme
+
+
+I had to disable HTTPS to SSH rewriting for Git.
+`~/.gitconfig` file
+
+```config
+[url "git@github.com:"]
+    insteadOf = https://github.com/
+```
+
+yeah - somewhere along the lines, xcode does its own gymnastics when cloning repo via SPM vs normal other processes like carthage / cocoapods.  
+I reckon it hit a snag when it was not able to understand which to take when using SPM & hence previously it was just taking references from cache. Now since our old project system is intertwined with 2 build systems we have overall made it worse for xcode. But there's no documentation from apple about this behavior. This issue isn't reproducible on newer project cuz it uses SPM (first party)
+
+Xcode seems to not like ed25519 encrypted ssh keys. Try removing those, and replace with rsa keys instead - Xcode 14.x
+
+[Similar thread | SPM xcodebuild commands (resolve dependencies) run from AppCode do not use Xcode accounts](https://youtrack.jetbrains.com/issue/OC-21826)
