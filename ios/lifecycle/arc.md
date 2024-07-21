@@ -186,6 +186,23 @@ Code snippet from [swift forums](https://forums.swift.org/t/unexpected-memory-le
 [iOS 17 memory leaks with SwiftUI](https://stackoverflow.com/a/77383133/5177704)
 This gets fixed if we not use `fullscreenCover` and opt in for `push` view controller instead.
 
+
+## De init
+
+```error
+Object 0x10580ed00 deallocated with retain count 2, reference may have escaped from deinit.
+```
+You can hold a strong reference in the de-initializer of the object.
+
+```swift
+deinit {
+   DispatchQueue.main.asyncAfter(deadline: .now() + 10) { [weak self] in
+       self?.customP.destroy()
+}
+```
+
+[swift forums link](https://forums.swift.org/t/what-is-reference-may-have-escaped-from-deinit/64866) 
+
 ## References
 
 [swift docs | ARC](https://docs.swift.org/swift-book/documentation/the-swift-programming-language/automaticreferencecounting/)

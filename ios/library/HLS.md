@@ -54,6 +54,10 @@ fileSequenceA.ts
 fileSequenceB.ts
 ```
 
+So if the targetDuration is higher then the avPlayer library would take some time to buffer first 2 - 3 fragments and then resume. 
+So `10 secs * 2` so 20 secs of content. This is what I assume I understand from my conversation about this.
+
+
 ### CONTENT METADATA
 
 
@@ -122,6 +126,21 @@ Other
 [HLS content steering | apple specs](https://developer.apple.com/streaming/HLSContentSteeringSpecification.pdf)
 
 
+
+
+## Highest quality
+
+video - 0 = is the highest quality in the HLS format.
+
+
+## Playback
+
+[Improving playback on HLS](https://www.brightcove.com/de/resources/blog/improving-hls-playback/)
+
+
+[hls - optimize performance](https://www.theoplayer.com/blog/optimizing-ll-hls-4-key-factors-affecting-its-performance)
+
+
 ## Tools 
 
 
@@ -132,3 +151,10 @@ Other
 [hls downloader](https://github.com/puemos/hls-downloader)
 
 [stream recorder download](https://chromewebstore.google.com/detail/stream-recorder-download/iogidnfllpdhagebkblkgbfijkbkjdmm?pli=1)
+
+[apple HLS validator](https://developer.apple.com/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools)
+
+This gives us a debug analysis of the stream in question to validate whether its a stream issue or our player code issue.
+```sh
+mediastreamvalidator https://314.linear-ag-xcr/v1/frag/bmff/enc/wea/t/OsaK_UD_T_7381_0_7683.m3u8`
+```

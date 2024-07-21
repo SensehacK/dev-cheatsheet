@@ -83,6 +83,28 @@ The code snippet which makes sure we are on the main thread is `MainActor.run` ,
 
 [mainactor-dispatch-main-thread](https://www.avanderlee.com/swift/mainactor-dispatch-main-thread)
 
+
+## Functions automatic async
+
+If the instance class is defined as an `actor` or added a override like `@mainActor` then this applies it for async / await thread safety
+
+
+```swift
+actor CustomClass {
+	func doSomething() { }
+}
+
+class CustomClass2 {
+
+	@MainActor
+	func doSomething() { }
+}
+```
+
+`@MainActor` to annotate those functions to ensure those updates happen on the Main thread. So Swift does some magic under the hood to make that function call async, hence the `await`
+
+When your View Model conforms to `ObservableObject` you want to make sure your updates to `Published` properties happen on the main thread.
+
 ## References
 
 [wwdc2021/10133](https://developer.apple.com/videos/play/wwdc2021/10133)

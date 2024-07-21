@@ -40,7 +40,63 @@ A [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resou
 
 ### SDR
 
+Standard Dynamic Range
+
+
 ### HDR
+
+High Dynamic Range
+
+#### HDR 10
+
+#### Dolby Vision
+
+#### HDR - Extended
+
+
+### BitRate
+
+The content being encoded with given bits for every scene / every second.
+
+eg. 200 MB file of resolution 1080p (full HD) (16:9 aspect ratio) of 10 mins with x265 (HEVC) encoding has a suggested average of `3728.75` kbps according to this calculator. Of course it depends on what content is being played and the scenes in the video.
+
+check out video bitrate calculator in [tools section](tools/apps#Calculators)
+
+
+### Resolution
+
+#### HD
+
+High Definition
+
+720p - HD
+1080p - FullHD 
+2160p - UItraHD
+
+
+#### SD
+
+Standard Definition
+
+360p
+480p
+560p
+
+
+
+
+### Aspect Ratio
+
+16:9 - common Widescreen ( HDTV ) (720p, 1080p , 2160p)
+16:10 - Laptop Widescreen sometimes.
+21:9 - Ultra wide
+4:3 - CRT TV (Old TVs) Old Nintendo / console games
+
+2.39:1 - widescreen cinema
+
+### Letterboxing
+
+letterboxing (‘black bars’) in the video
 
 ## Audio
 
@@ -97,6 +153,17 @@ An ad content which has duration of time to be played with resolution and links.
 Collection | Array of Ad Breaks in a video stream file.
 
 
+
+### DAI - Dynamic Ad Insertion
+
+
+### Freewheel 
+
+Ad server which you can plug in - whose sole responsibility is to give us an array of ads "personalized" ads depending on the user being fingerprinted at the current instance.
+
+### Server Side Ads
+
+
 ## HLS 
 
 Apple's implementation of delivering video content via internet HTTP Live Streaming format specification.
@@ -120,8 +187,10 @@ C4  - Day four
 
 ### IVOD
 
-
-
+IVOD	Impulse Video on Demand
+IVOD	Internet Video on Demand
+IVOD	Interactive Video On Demand
+IVOD    Instant Video On Demand
 
 ## Linear
 
@@ -140,7 +209,11 @@ Basically just rules from USA govt. to make sure they comply with certain rules
 [what-title-6-video](https://www.nexttv.com/news/what-title-6-video-381860)
 
 
-## DAI - Dynamic Ad Insertion
+### T6 VOD Server Side Ads
+
+A special fallback protocol exists for T6 VOD assets which inserts ads from server side. It kinda manipulates manifest. Internally its codenamed as VEX.
+
+
 
 ## Time 
 
@@ -181,6 +254,15 @@ The presentation timestamp (_PTS_) is a timestamp metadata field in an MPEG tran
 
 ### HEVC
 
+It has both hvc1 and hev1 formats
+
+> hvc1 parameter sets are stored out-of-band in the sample entry (i.e. below the Sample Description Box ( stsd ) box)
+
+> hev1 parameter sets are stored out-of-band in the sample entry and/or in-band in the samples (i.e. SPS/PPS/VPS NAL units in the bitstream/ mdat box)
+
+[comment source](https://community.bitmovin.com/t/whats-the-difference-between-hvc1-and-hev1-hevc-codec-tags-for-fmp4/101)
+
+
 ### AV1
 
 
@@ -188,7 +270,16 @@ The presentation timestamp (_PTS_) is a timestamp metadata field in an MPEG tran
 
 ## Encoders
 
+[video encoding tips](https://www.dr-lex.be/info-stuff/videotips.html)
+
+### Packager 
+
+Super 8 - Internal tool to package streams via Just in time to deliver right encoded assets from different tools.
+
 ## Decoders
+
+
+
 
 ## Broadcasting
 
@@ -199,7 +290,8 @@ Emergency Alert System - this is being used for broadcasting emergency video ove
 [FCC | fema - EAS](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/emergency-alert-system)
 
 
-## SCTE 
+## Unique Tags
+### SCTE 
 
 Scete tag to find the information around HLS / stream.
 Convey information 
@@ -209,14 +301,30 @@ Convey information
 ```
 
 
-## DVR
 
+
+## Time Shifting
+
+[Wiki - time shifting](https://en.wikipedia.org/wiki/Time_shifting)
+
+In broadcasting, **time shifting** is the recording of programming to a storage medium to be viewed or listened to after the live broadcasting.
+
+
+### DVR
+
+Digital Video Recorder - [Wiki](https://en.wikipedia.org/wiki/Digital_video_recorder)
+
+### VCR 
+
+[wiki - video cassette recorder](https://en.wikipedia.org/wiki/Video_cassette_recorder) 
 
 ### CDVR
 
 cloud DVR
 
 [CDVR FAQs by Spectrum](https://www.spectrum.net/support/tv/cdvr-faq)
+
+
 
 ### TSB
 
@@ -236,7 +344,29 @@ Internal tooling to host a local web server using mongoose to serve video/audio 
 Pretty neat, I think we do this in-order to avoid some restrictions on certain DRM streams etc. Not fully known why this workaround is being put in place by certain video streaming libraries or products.
 
 
-### Hot Recording 
+### Recording
+#### Hot Recording 
+
+The timeline keeps playing while recording?
+When the recording is happening in work in progress and still Live playlist.
+The playlist "Event" style playlist (Hybrid of Linear and VOD).
+It just starts with `n` number of fragments and it keeps adding more fragments on apple HLS.
+
+#### Cold Recording
+
+When the recording is completed and then it becomes cold recording.
+The playlist will become VOD playlist.
+
+
+## Guides
+
+### EPG
+
+[electronic program guide](https://en.wikipedia.org/wiki/Electronic_program_guide) (EPG)
+
+Interactive programming guides (IPGs)
+Or TV Listings | TV guides
+
 
 ## Session
 
@@ -244,6 +374,9 @@ Pretty neat, I think we do this in-order to avoid some restrictions on certain D
 
 As described by my architect.
 It's generally a periodic request sent as a 'keep alive' / I'm still here / periodic update mechanism. Like the player sending a heartbeat analytics message every 60s with info about the stream. The app also sends a periodic request to monitor that the user is still watching a stream and count towards their max concurrent streams limit.
+
+Could be also extended towards the Analytics heartbeats.
+
 
 ## CDN 
 
@@ -256,6 +389,23 @@ HLS Content Steering | apple specific
 
 [Tech Papers: Implementing HLS/DASH Content Steering at Scale](https://www.ibc.org/technical-papers/ibc2023-tech-papers-implementing-hls/dash-content-steering-at-scale/10258.article)
 
+
+### URL Reform
+
+This is where the new URL's are generated according to different CDN and replace the regex accordingly.
+
+
+
+## URL
+
+We kinda follow a RFC for decoding the URL asset resource to hit the asset resource `n` times depending on the `retry` strategy or different CDNs.
+
+### URL Resolver
+
+### URL Parser
+
+
+See brand specific Sky implementation product name `Conviva` 
 
 
 
@@ -276,6 +426,133 @@ DSP (Digital Signal Processing)
 ### Nielson
 
 The company to catch analytics by actual hardware in live tv.
+
+### VPA
+
+Internal Platform Analytics which plugs in the data depending on the object file defined for us.
+
+
+
+
+## Previews
+
+### Thumbnail generation
+
+
+You can do it via i-frame or something in the HLS manifest file
+
+
+
+## Playback
+
+
+### Trick Play
+
+When you disable the fast forward or rewind on the player controller in the video. When you disable / enable the trick play - it gives the user an option to get full control of the scrubbing or jumping on the timeline ++ / -- .
+Seeking operations on the timeline.
+
+### Timeline
+
+Its the progress bar on the video player.
+Showcasing how much progress it has made eg. 2 mins video
+35 secs have passed 
+
+```sh
+// - for the video playback
+// = for time passed
+= = = = - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+// * for ads
+* * = = = - - - - - - - - * * * - - - - - - - - - - - * * * -
+```
+
+but its not purely for ads as you think of them, they could have a bumper for another program before or after the content with this API like for live tv programming.
+
+
+
+
+
+### Retune
+
+When the player needs to be deallocated and then retuned or restarted from scratch in order to initiate the state properly. Reset basically.
+
+
+
+
+
+
+## DRM
+
+Digital Rights Management
+
+
+### Hardware
+
+### Software
+
+### Widewine
+
+
+### Fairplay
+
+Apple's variant of DRM on audio / video. HLS and AV Foundation | AVKit libraries.
+
+
+
+## Brands
+
+### Sky
+
+Sky is an european video giant for publishing video
+
+Sky Go
+Sky EPG
+
+Tata Sky - joint venture with Tata (India) & Sky
+
+ 
+#### Coniviva | Conviva
+
+I believe this is just a product name for Sky (Europe) which does the URL parsing and resolving.
+CDN steering and analytics module for Video streaming.
+
+### Xfinity 
+
+Comcast brand for internet and entertainment brand.
+
+Peacock
+Xfinity Stream - Cable subscribers app for streaming video on their mobile devices.
+
+
+### Netflix
+
+
+### Google 
+
+Youtube
+
+Youtube TV
+Play Music
+Youtube Originals
+
+
+
+### Disney
+
+Disney Plus
+ESPN
+
+
+### Paramount
+
+Paramount Plus
+
+
+
+### Warner Bros
+
+Discovery
+
 
 
 ## Reference

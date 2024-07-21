@@ -28,6 +28,8 @@
 
 [textField](ios/swiftUI/textField.md)
 
+[videoPlayer](videoPlayer.md)
+
 [view](view.md)
 
 

@@ -1,5 +1,49 @@
 # Debugging
 
+
+## Basic Remediation
+
+> Have you tried turning it OFF and ON again - The IT Crowd
+
+Glad I can reference that British TV show in my work - hobby - mind map knowledge base.
+
+The number of times an iOS Engineer has to go back to basics things to try while having a build or runtime error from Xcode - Apple Developer Tools.
+
+- Manually clearing out Derived Data
+- Clean Build Folder
+- Deleting app on simulator
+- Closing Xcode
+- Force quitting Xcode
+- Swift Package Manager - Reset package cache
+- SPM - resolving packages
+- Restarting Mac
+
+
+
+## Finding the culprit
+
+Open the `.log` file on `console.app` and make sure to not take the last error stack trace at its face value. 
+Always back track to a point where you can see the actual error.
+When Xcode build command fails on GUI or CLI. CLI is a little bit tricky and can only provide final failure information of below logs. 
+
+```sh
+** BUILD FAILED **
+** ARCHIVE FAILED **
+** TEST FAILED **
+```
+
+You can solve this problem two ways 
+
+1. Open the file / error project target scheme product file in question on Xcode GUI. After Xcode 14 updates, lots of debug build logs are available in verbose in GUI rather than just a `.log` file.
+2. Or open the log file and search for `error` or `errors generated.` or `error generated.` in your log file. This will give you which file is failing on CLI.
+
+Usually it happens due to multiple different Xcode versions on GUI and `xcode-select` path set for CLI.
+So it comes down to a making sure that whatever tool you're using is on same versions either GUI or CLI. And sometimes `hotfixes` or `build-fixes` are merged in latest `develop` , `main` or `tag` so make sure the branch you're working on is also updated with latest merges from parent branches or protected branches.
+
+Or else you can face a classic `It Works on my machine!` or `Multiple Spiderman pointing at each other` meme IRL.
+
+
+
 ## Console Debug
 
 When you have specified the breakpoint and you have lldb debugger in the console.
@@ -182,12 +226,23 @@ DONE
 
 ## Method_Swizzling
 
-
 You can reverse engineer certain libraries / frameworks of apple UIKit , AppKit and utilize objective-C runtime methods to quickly replace our own implementation of the method we want to override.
 Sometimes the library we are consuming won't expose all the options to tweak or change its behavior so method swizzling basically comes into the picture where you just hack / capture the memory and replace it with our own custom function / method. To get more custom behavior and just understand the underlying working architecture of the abstracted library.
 
 Haven't heard anyone explicit mention this most of the time but one senior engineer from Objective - C did gave me a nudge to check it out in 2020 just because I mentioned I came from Turbo-C , DosBox and C++ compilers era.
 
+## access hidden func inits
+
+Utilizing Objective-C runtime classes to have a work around since some APIs don't allow to subclass things to create test mocks
+
+```swift
+static func loader() -> MockAssetResourceLoader { 
+	let allocated = MockAssetResourceLoader
+		.perform(NSSelectorFromString("alloc")) 
+	return allocated?
+		.takeRetainedValue() as! MockAssetResourceLoader 
+}
+```
 
 ## Custom Debug String
 
@@ -223,3 +278,37 @@ print(codec.debugDescription)
 ```
 
 Read more by [Avanderlee | article](https://www.avanderlee.com/swift/custom-debug-descriptions/)
+
+
+## Convert data to String
+
+Could be helpful for converting String data into String object with its default encoding provider.
+
+```swift
+if let accessLog: AVPlayerItemAccessLog = playerItem?.accessLog(),
+   let errorLog: AVPlayerItemErrorLog = playerItem?.errorLog() {
+	print("$$$ avFoundationFailure")
+	if let dataError = errorLog.extendedLogData() {
+		let convertedString = NSString(data: dataError, encoding: errorLog.extendedLogDataStringEncoding)
+		
+		print("ASCII string: \(convertedString ?? "Conversion failed.")")
+		print(" ------------ ")
+		print(accessLog)
+	}
+}
+```
+
+[the-ultimate-guide-to-converting-swift-data-to-string](https://www.dhiwise.com/post/the-ultimate-guide-to-converting-swift-data-to-string)
+
+
+## Framework swapping
+
+[Debugging framework post](ios/library/framework#Debugging)
+
+[SO | how-to-debug-framework-source-from-main-project](https://stackoverflow.com/questions/13836628/how-to-debug-framework-source-from-main-project)
+
+[SO | post debugger not showing variable names objc](https://stackoverflow.com/questions/31219422/swift-debugger-does-not-show-variable-values-when-importing-objc-framework)
+
+[SO | swift-debugger-does-not-show-variable-values-when-importing-objc-framework](https://stackoverflow.com/questions/31219422/swift-debugger-does-not-show-variable-values-when-importing-objc-framework)
+
+

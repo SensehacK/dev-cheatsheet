@@ -53,3 +53,6 @@ CoreSimulator 857.14
 ```
 
 But removing the app from the simulator and Xcode -> Clean Build also solved the problem if you're not able to determine why this is happening without any proper code change around indexes. Happened with me on Xcode 14.2 - iOS 16.2
+
+
+

@@ -31,3 +31,21 @@ override func observeValue(forKeyPath keyPath: String?, of object: Any?, change:
 [AVAsset](https://developer.apple.com/documentation/avfoundation/avasset)
 
 [Media playback](https://developer.apple.com/documentation/avfoundation/media_playback)
+
+
+## Muting Audio
+
+
+```
+```
+
+```swift
+if IsMuted == false {
+      IsMuted = true
+      musicPlayer.volume = 0
+    } else {
+      IsMuted = false
+      musicPlayer.volume = 1
+    }
+}
+```

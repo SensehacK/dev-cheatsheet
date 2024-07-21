@@ -4,121 +4,159 @@
     "type": "split",
     "children": [
       {
-        "id": "706685fff5da337c",
-        "type": "tabs",
-        "dimension": 44.88697524219591,
+        "id": "08ecfdedf013a316",
+        "type": "split",
+        "dimension": 75.38838920686835,
         "children": [
           {
-            "id": "e6e2eef97dbb92d4",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/config/app_environment.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+            "id": "706685fff5da337c",
+            "type": "tabs",
+            "dimension": 48.02126402835204,
+            "children": [
+              {
+                "id": "4988617f782ba7ba",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/rxSwift/map.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "pinned": true
+                }
               },
-              "pinned": true
-            }
-          },
-          {
-            "id": "475cd16cdf1ef7e6",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "process/code_readability.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "460c5b03a5a835dd",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/library/DRM.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "290f754bb1c8c93a",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/library/crossPlatform.md",
-                "mode": "source",
-                "backlinks": false,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "96de5a354700148f",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "process/problem_solving.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
-          {
-            "id": "c1e1b0546039f746",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "misc/README_misc.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
+              {
+                "id": "eab68f4f3f65402e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "process/key_shortcuts.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
               }
-            }
+            ],
+            "currentTab": 1
+          },
+          {
+            "id": "9b51689f5b598e04",
+            "type": "tabs",
+            "dimension": 51.97873597164796,
+            "children": [
+              {
+                "id": "d7d125647eb4973d",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/library/framework.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "2e3878592586a84f",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/library/avKit.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "pinned": true
+                }
+              },
+              {
+                "id": "71a1e7803f21db9c",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "git/delete.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "e83e0f93e1ad459f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/xcode/simulator.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "0afc54f4b842125f",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "mobile/android/video.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "3fa9b3b78d003b8d",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "tools/server/http-server.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  }
+                }
+              },
+              {
+                "id": "51b114e1853b8873",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/xcode/build_commands.md",
+                    "mode": "source",
+                    "backlinks": true,
+                    "source": false
+                  },
+                  "pinned": true
+                }
+              }
+            ],
+            "currentTab": 2
           }
         ],
-        "currentTab": 5
+        "direction": "vertical"
       },
       {
         "id": "fd42ace9dcd8f418",
         "type": "tabs",
-        "dimension": 55.11302475780409,
+        "dimension": 24.611610793131646,
         "children": [
-          {
-            "id": "c6b33be2f141c524",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/library/framework.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
           {
             "id": "d48bcf8bd36dfbcf",
             "type": "leaf",
@@ -141,7 +179,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/library/avkit.md",
+                "file": "ios/library/avKit.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -150,13 +188,13 @@
             }
           },
           {
-            "id": "f861677c04bad87a",
+            "id": "e5b27fd041e09c15",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/lifecycle/protocol.md",
+                "file": "ios/swift/random.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -165,12 +203,51 @@
             }
           },
           {
-            "id": "7a2deb8de4cc3006",
+            "id": "e2e04de4457eb79c",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "os/linux/ssh.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "e931334b50a8be68",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/carthage.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "c578d54cd53518ac",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/xcode/spm_errors.md",
+                "mode": "source",
+                "backlinks": true,
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "2cc9a74866a7a1e6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/swift/result.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
@@ -178,7 +255,7 @@
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 6
       }
     ],
     "direction": "vertical"
@@ -207,10 +284,10 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "Obsidian",
+                "query": "No such module",
                 "matchingCase": true,
-                "explainSearch": true,
-                "collapseAll": true,
+                "explainSearch": false,
+                "collapseAll": false,
                 "extraContext": true,
                 "sortOrder": "alphabetical"
               }
@@ -232,11 +309,12 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 335.5
+    "width": 272.5
   },
   "right": {
     "id": "13f2ec0339a31543",
@@ -252,7 +330,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "misc/README_misc.md",
+                "file": "git/delete.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -269,7 +347,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "misc/README_misc.md",
+                "file": "git/delete.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
               }
@@ -292,7 +370,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "misc/README_misc.md"
+                "file": "git/delete.md"
               }
             }
           },
@@ -302,7 +380,9 @@
             "state": {
               "type": "all-properties",
               "state": {
-                "sortOrder": "frequency"
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
               }
             }
           }
@@ -316,65 +396,65 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "vantage-obsidian:Vantage - Advanced search builder": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-advanced-slides:Show Slide Preview": false,
-      "obsidian-local-images-plus:Local Images Plus  0.15.7\r\nDownload media files": false
+      "obsidian-advanced-slides:Show Slide Preview": false
     }
   },
-  "active": "c1e1b0546039f746",
+  "active": "71a1e7803f21db9c",
   "lastOpenFiles": [
-    "README.md",
-    "misc/README_misc.md",
-    "misc/resources.md",
-    "os/README_os.md",
-    "hardware/README_hardware.md",
+    "git/amend.md",
+    "ios/swift/errors.md",
+    "process/key_shortcuts.md",
+    "architecture/terminologies/video_terms.md",
+    "os/mac/keyboard.md",
+    "ios/rxSwift/playground.md",
+    "ios/xcode/build_errors.md",
+    "ios/library/framework_errors.md",
+    "ios/library/wildcard_checks.md",
+    "ios/objectiveC/access_control.md",
+    "ios/xcode/migration.md",
     "tools/apps.md",
-    "tools/editors/iterm2.md",
-    "tools/editors/markdown.md",
-    "tools/editors/README_editors.md",
-    "tools/README_tools.md",
-    "process/presentation.md",
-    "ios/library/API_design.md",
-    "architecture/system_designs.md",
-    "hardware/raspberry_pi.md",
-    "tools/utility/README_utility.md",
-    "tools/utility/firefly_iii.md",
-    "tools/utility/alfred.md",
-    "tools/utility/qbittorrent.md",
-    "tools/server/sonarr.md",
-    "tools/server/plex_media_server.md",
-    "hardware/linux_tools.md",
-    "os/retro_pie.md",
-    "os/androidTV/ADB_devices.md",
-    "os/home_assistant.md",
-    "tools/terminal/curl.md",
-    "os/linux/system_info.md",
-    "mobile/native",
-    "mobile/android",
-    "security",
-    "architecture/architectural",
-    "architecture/concurrency",
-    "architecture/structural",
-    "architecture/behavioral",
-    "architecture/creational",
-    "architecture/SDLC",
-    "tools/gaming",
-    "Untitled.canvas",
+    "ios/lifecycle/extensions.md",
+    "ios/swift/result.md",
+    "ios/xcode/spm.md",
+    "ios/xcode/spm_errors.md",
+    "process/problem_solving.md",
+    "os/mac/disk_utility.md",
+    "ios/combine/filter.md",
+    "architecture/it_Depends.md",
+    "ios/xcode/debug.md",
+    "ios/swift/switch.md",
+    "tools/server/mac.md",
+    "ios/combine/anyCancellable.md",
+    "ios/objectiveC/method.md",
+    "ios/swift/string.md",
+    "assets/Screenshot 2024-07-01 at 9.57.12 AM.png",
+    "assets/Screenshot 2024-07-01 at 9.57.36 AM.png",
+    "assets/xcode-location-spoofing.png",
+    "assets/Pasted image 20240626110638.png",
+    "assets/Pasted image 20240626110517.png",
+    "assets/Screenshot 2024-06-17 at 14-47-04 URL resolver by rsmith129_comcast · Pull Request #60 · comcast-player_NitroPlayerDocs.png",
     "assets/2a7043566214d95f4da9e448fc3fc385_MD5.png",
-    "assets/628b71a20fd797895058280a80be476c_MD5.png",
-    "assets/7d97352a88ec99bcc2d7a56b28c8ae68_MD5.png",
-    "assets/59a0ac94867a60973e5e50c75c2b4c6d_MD5.gif",
-    "Untitled 1.canvas",
-    "assets/ad8b17a8d57aeb3e30e3eebab144f1cf_MD5.png",
-    "assets/Pasted image 20231004103727.png",
-    "assets/9016298270586fbb93524365fd6e007e_MD5.png",
-    "assets/90b21adb364e09f326e2a8c1d6c9edff_MD5.png",
-    "assets/c73ad784778bd591c2b37e95372e6f7c_MD5.png",
-    "assets/85b04c0bb815805984095c388cfbd4a9_MD5.png"
+    "assets/7b17a8d3aaecce89fea9939417bffd9b_MD5.png",
+    "assets/Screenshot 2024-05-22 at 3.02.07 PM.png",
+    "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
+    "database/mongoDB",
+    "tools/video",
+    "architecture/terminologies/Untitled",
+    "swift",
+    "architectural/behavioral",
+    "architectural",
+    "ios/objectiveC",
+    "security",
+    "architecture/terminologies",
+    "ios/library/Untitled",
+    "Untitled.canvas",
+    "Untitled 1.canvas"
   ]
 }

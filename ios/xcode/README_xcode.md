@@ -25,6 +25,8 @@
 
 [app_environment_variables](app_environment_variables.md)
 
+[install](install.md)
+
 [instruments](instruments.md)
 
 [[ipa_generation]]

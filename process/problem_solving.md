@@ -41,3 +41,10 @@ Good read on [code_readability](code_readability.md) on internal doc I wrote.
 ## Dogfooding
 
 Good article about [developer's guide to dogfooding](https://codesubmit.io/blog/is-dogfooding-right-for-your-team/)
+
+
+
+## Debug
+
+
+[crash bandicoot | hardware level bug](https://www.gamedeveloper.com/programming/my-hardest-bug-ever#close-modal)

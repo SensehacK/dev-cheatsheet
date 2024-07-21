@@ -249,9 +249,11 @@ Markdown support has been added for Swift documentation in order to make the tex
 [appcoda | swift-markdown](https://www.appcoda.com/swift-markdown/)
 
 
-
-
 ## Reference
+
+[swift org | docc](https://www.swift.org/documentation/docc/)
+
+[swift org | formatting documentation](https://www.swift.org/documentation/docc/formatting-your-documentation-content)
 
 [apple dev | xcode markup](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_markup_formatting_ref)
 

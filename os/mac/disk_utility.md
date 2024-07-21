@@ -73,6 +73,14 @@ du -h -d 1
 
 ### Clean my Mac
 
- [Clean my Mac - MacPaw](https://cleanmymac.com/)
+ [Clean my Mac - MacPaw](https://cleanmymac.com/)x
  Just make sure to disable everything else like analytics, full disk scanning, protection stuff etc & auto login. I usually use this app once in 30 days. 
- 
+
+
+## Update
+
+side observation - I updated from macOS 14.4 -> 14.5 and before the update my storage was showing free 44 Gigs and now it shows 98Gigs It seems apple macOS updater does some housekeeping to clear old cache? / or delete system files / old downloaded updates.
+
+### References
+
+[avg antivirus | Clear macOS cache](https://www.avg.com/en/signal/how-to-clear-cache-on-mac)

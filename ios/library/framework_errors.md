@@ -108,3 +108,16 @@ Compiled module was created by a different version of the compiler '5.9.0.128.10
   
 /Users/ksave957/git/cloud/XTV/X2/X2/PlayerPlatformPlayer.swift:15:8: Cannot load module 'PlayerPlatform' built with SDK 'iphoneos17.0' when using SDK 'iphoneos17.4': /Users/ksave957/Library/Developer/Xcode/DerivedData/X2-asssnibtvfhvubfewbpdxmzglydp/Build/Products/Dev-iphoneos/PlayerPlatform.framework/Modules/PlayerPlatform.swiftmodule/arm64-apple-ios.swiftmodule
 ```
+
+I kinda resolved this issue ^ by reinstalling the cask
+
+```sh
+brew reinstall package-name
+```
+
+Or have the cocoapods / carthage / SPM rebuild with newer Xcode build references
+
+Cocoapods 
+```
+Using use_frameworks! in the podfile
+```

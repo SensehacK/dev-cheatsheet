@@ -6,7 +6,7 @@
 
 [[crash]]
 
-[[test/error_handling]]
+[[check_error]]
 
 [[error_state]]
 

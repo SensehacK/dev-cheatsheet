@@ -49,8 +49,55 @@ Gitlab integration
 
 [how-to-implement-danger-in-swift](https://cctplus.dev/how-to-implement-danger-in-swift/)
 
+[medium | your-guide-to-danger-swift-on-ci](https://medium.com/kinandcartacreated/your-guide-to-danger-swift-on-ci-83e3f5136a9a)
+
+
 
 Danger plugins
 [avanderlee | danger-plugins](https://www.avanderlee.com/optimization/danger-plugins/)
+
+
+
+## local setup
+
+
+x86 vs ARM issues with Danger / xcode / terminal / homebrew
+
+To install the package.
+
+```sh
+brew install danger/tap/danger-swift
+```
+
+
+Make sure you have homebrew installed in x86 mode rather than ARM mode. You can check by running [this command](../../tools/terminal/shell#Arch)
+
+
+This command to run danger swift with base branch as `main`. My setup requires `swift-lint` installed globally or locally or else danger won't parse `swift-lint` command.
+It's complicated given how our project workspace, SPM, frameworks are organized in our project.
+
+
+```sh
+danger-swift local -b main
+```
+
+A big architecture decision would be needed to be made whether we want to decouple our plugin - checks or just have it build locally before every project gets compiled or with PR.
+
+
+
+## Commands
+
+
+Edit a workspace
+
+```sh
+danger-swift edit
+```
+
+Make a local comparison
+
+```sh 
+danger-swift local -b main
+```
 
 

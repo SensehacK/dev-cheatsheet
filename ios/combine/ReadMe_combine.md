@@ -6,6 +6,8 @@
 
 [assign](assign.md)
 
+[backpressure](backpressure.md)
+
 [environmentObject](environmentObject.md)
 
 [filter](filter.md)
@@ -25,6 +27,8 @@
 [subjects](subjects.md)
 
 [swiftUI](swiftUI.md)
+
+[transform](transform.md)
 
 ## Migration
 

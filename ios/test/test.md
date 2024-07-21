@@ -63,6 +63,8 @@ class PPVSSLoaderDelegateTests: XCTestCase {
     }
 }
 ```
+
+
 ## Warnings
 
 `Errors thrown from here are not handled` - this appears when you're trying to call a function which can throw an error. Swift needs to either do a `try catch` to handle the thrown error or mark the test function with `throws`
@@ -72,6 +74,9 @@ func test_whenSomething_ThenBehavior() throws {
 	let unwrappedDate = try callUnwrappingFunction() // Warning
 }
 ```
+
+
+
 
 ## Unwrapping while Testing
 
@@ -140,6 +145,27 @@ assert(10 > 5, "10 is not less than 5")
 [fastlane | run tests](https://docs.fastlane.tools/actions/run_tests/)
 
 [speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane](https://medium.com/xcblog/speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane-a982b0060676)
+
+
+## Errors
+
+
+###  XCUITest Failed to terminate app
+
+[SO | xcuitest-class-teardown-isnt-deleting-the-app-but-works-if-its-instance-teardow](https://stackoverflow.com/questions/73759977/xcuitest-randomly-failing-during-teardown-failed-to-terminate-com-bundle-id?noredirect=1&lq=1)
+
+### XCUITest doesn't delete app
+
+```swift
+override func tearDown() {
+    XCUIApplication().terminate()
+    super.tearDown()
+}
+```
+
+
+[SO | XCUITest Class teardown isnt deleting the app. But works if its instance teardown. What am I doing wrong?](https://stackoverflow.com/questions/53181823/xcuitest-class-teardown-isnt-deleting-the-app-but-works-if-its-instance-teardow)
+
 
 ## Links
 

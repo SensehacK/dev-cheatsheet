@@ -26,4 +26,5 @@ StackOverflow Threads worth reading
 - [Form Validation](https://betterprogramming.pub/form-validation-in-ios-apps-made-easy-with-rxswift-266123042bb6)
 - [Design Patterns](https://medium.datadriveninvestor.com/design-patterns-a-quick-guide-to-observer-pattern-d0622145d6c2)
 
-http://adamborek.com/rxswift-materials-list/
+[rxswift-materials-list](http://adamborek.com/rxswift-materials-list/)
+

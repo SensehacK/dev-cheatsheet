@@ -101,3 +101,53 @@ CLI
 
 [SE | is-there-a-command-to-install-a-dmg](https://apple.stackexchange.com/questions/73926/is-there-a-command-to-install-a-dmg)
 
+
+
+## Force quit
+
+Press these three keys together: Option (or Alt), Command, Esc (Escape). Or **choose Force Quit from the Apple menu  in the corner of your screen**. The Finder is always open, but if it stops responding, you can force it to quit and then open again: Select Finder in the Force Quit window, then click Relaunch
+
+## Disable iBoss Proxy
+
+
+```sh
+cd /Applications/Utilities/iboss.app/gen4agent/
+# disable
+./reconfigure.sh unload
+
+# enable
+./reconfigure.sh load
+```
+
+
+## Retrieve Serial number
+
+```sh
+system_profiler SPHardwareDataType | awk '/Serial/ {print $4}'
+```
+[Stack exchange post](https://apple.stackexchange.com/a/40244)
+
+
+## disable sleep
+
+X would be the seconds
+
+```sh
+caffeinate -t X 
+
+# Does it infinitly
+caffeinate -d
+```
+
+Also could set the power management to disable sleep using Command Line
+
+Use 0 to reenable sleep.
+
+```sh
+sudo pmset disablesleep 1
+```
+
+Read more about [utilities wrapper around sleeping mac](tools/apps#dev%20utility)
+
+Additionally, if you have an application full screen - the system should never sleep the display or go to screensaver. Have to test this out though!
+Or you could plug in `hdmi dummy` to keep the GPU or mac alive | consumes more power though.

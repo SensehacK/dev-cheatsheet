@@ -34,9 +34,11 @@ class QuotesViewModel: ObservableObject {
 ## Two Parameters
 
 This thing could be tied down with RxSwift `subscribe` block returning `Event<Type` of `.Complete`, `.Error` & `Next<Value>`
-Reference of RxSwift completion [completion](completion.md)
+
 ### Completion
 
+`.Complete`
+Reference of RxSwift completion [completion](completion.md)
 
 ### Receive Value
 

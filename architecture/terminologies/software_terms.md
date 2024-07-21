@@ -71,3 +71,19 @@ Entity Relation
 
 
 [Wiki](https://en.wikipedia.org/wiki/C4_model)
+
+
+## I/O Input Output
+
+
+Flat files
+In its broadest sense, flat file may refer to **any text file that has minimal or no formatting besides the use of the ASCII character set**.
+
+
+## Operating Systems
+
+
+POSIX
+**Portable Operating System Interface**
+POSIX is a family of standards specified by the IEEE Computer Society for maintaining compatibility between operating systems.
+[Wiki](https://en.wikipedia.org/wiki/POSIX)

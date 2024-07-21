@@ -26,4 +26,4 @@ ScrollView(.horizontal) {
 
 ## References
 
-https://www.hackingwithswift.com/books/ios-swiftui/how-to-lay-out-views-in-a-scrolling-grid
+[HWS | how-to-lay-out-views-in-a-scrolling-grid](https://www.hackingwithswift.com/books/ios-swiftui/how-to-lay-out-views-in-a-scrolling-grid)

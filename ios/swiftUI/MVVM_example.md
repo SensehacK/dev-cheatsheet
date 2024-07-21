@@ -32,8 +32,9 @@ struct InternalView: View {
 ```
 
 ## ViewModel
+
 You can inject any implementation as long as it conforms to protocol.
-Great for dependency injection and adding a facade pattern to the init. Now the view controller or View won't have to change everytime we change our internal API dependencies to get the concrete type of data. We can always be sure that the interface protocol method signature will stay the same irrespective of internal implementation changes. Abstraction at its best and easily able to loosely coupled the ViewModel , View and Service + Network implementation. 
+Great for dependency injection and adding a facade pattern to the init. Now the view controller or View won't have to change every time we change our internal API dependencies to get the concrete type of data. We can always be sure that the interface protocol method signature will stay the same irrespective of internal implementation changes. Abstraction at its best and easily able to loosely coupled the ViewModel , View and Service + Network implementation. 
 This could be also testable with Mocking CustomViewServiceable.
 
 ```swift
@@ -51,6 +52,8 @@ class CustomViewModel: ObservableObject {
     }
 }
 ```
+
+read more about [observable](observable.md)
 
 
 ## Modular - Loosely Coupled
@@ -127,6 +130,7 @@ class CustomViewService: CustomViewServiceable {
 ```
 
 ## Generic Network Async / Await
+
 ```swift
 public func fetchData<T: Decodable>(url: String, id: Int? = nil, type: T.Type) async throws -> T {
         guard let url = URL(string: url) else {
@@ -148,7 +152,7 @@ public func fetchData<T: Decodable>(url: String, id: Int? = nil, type: T.Type) a
 ## Modular Views
 
 Passing StateObject to Extracted View
-Utilize @ObservedObject for passing ViewModel ref in extracted views.
+Utilize `@ObservedObject` for passing ViewModel ref in extracted views.
 
 ```swift
 struct ContentView: View {

@@ -2,13 +2,12 @@
 
 ## List
 
-[youtube_dl](../../tools/terminal/youtube_dl.md)
 
-[homebrew](../../tools/terminal/homebrew.md)
 
-[gcc](gcc.md)
 
 [cli](../../tools/terminal/cli.md)
+
+[config](tools/terminal/config.md)
 
 [curl](../../tools/terminal/curl.md)
 
@@ -20,11 +19,17 @@
 
 [ffmpeg](../../tools/terminal/ffmpeg.md)
 
+[gcc](gcc.md)
+
+[homebrew](../../tools/terminal/homebrew.md)
+
 [ionic commands](../../mobile/ionic/commands.md)
 
 [node](../../tools/terminal/node.md)
 
 [power_menu](../../tools/terminal/power_menu.md)
+
+[process](../../tools/terminal/process.md)
 
 [result_from_CLI](../../tools/terminal/result_from_CLI.md)
 
@@ -38,4 +43,3 @@
 
 [youtube_dl](../../tools/terminal/youtube_dl.md)
 
-[process](../../tools/terminal/process.md)

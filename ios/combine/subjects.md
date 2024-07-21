@@ -142,6 +142,32 @@ If there is a requirement of binding variable to be provided not the actual valu
 ```swift
 Toggle(isOn: $character.isSelected){
 ```
+
+
+## Input | Output 
+
+```swift
+extension CustomViewModel: ViewModelType {
+    struct Input {
+	    var startSession: PassthroughSubject<Void, Never>
+        var spanEnded: PassthroughSubject<String, Never>
+        var sessionEnded: PassthroughSubject<String, Never>
+    }
+    
+    struct Output: ViewStateDrivable {
+	    let viewState: AnyPublisher<String, Never>
+    }
+}
+
+protocol ViewModelType {
+    associatedtype Input
+    associatedtype Output
+    
+    var input: Input { get }
+    var output: Output { get }
+}
+```
+
 ## Reference
 
 [SO](https://stackoverflow.com/a/63404168/5177704)

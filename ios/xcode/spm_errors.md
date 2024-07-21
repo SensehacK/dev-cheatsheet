@@ -1,12 +1,12 @@
-## Errors
+# SPM Errors
 
-### Module Cache Path 
+## Module Cache Path 
 When you changed the whole package name & folder. Xcode clean build doesn't work sometimes when you run `swift run package_name` on Command Line.
 So delete the `.build` directory.
 [PCH was compiled with module cache path error](https://stackoverflow.com/questions/57080473/pch-was-compiled-with-module-cache-path-error)
 
 
-### Packages Not downloaded
+## Packages Not downloaded
 
 ```log
 Not able to download packages properly.
@@ -108,13 +108,65 @@ This was due to using branch name where tag semantic version was needed. Build e
 ### reference 'refs/remotes/origin/' not found (-1)
 
 skipping cache due to an error
-```log
+```sh
 git@github.com:repoName/project.git: An unknown error occurred. reference 'refs/remotes/origin/develop' not found (-1)
 ```
+
+You can have this error sometimes if you're having Xcode local package name conflicting with similar remote package name. So one way to get past this error is to do `Xcode` -> `File` -> `Packages` ->  `Reset Package Cache`
 
 This could be resolved by deleting the project `Packaged.resolved` files and removing the resolved package references and if that doesn't work deleting the SPM manifest cache libraries. 
 And if it still doesn't work might as well `Reset Package Cache` in Xcode menu bar and then `Resolve Package Versions`. If this fails might as well update your dependencies to see if something changed on the server with old tagged versions by using `Update to Latest versions` should do the trick. If all fails restart mac and refer to the `Notes` section of this document.
 
+& all of it doesn't work or you want selective cache deletion navigate to [[#skipping cache]]
+
+## skipping cache
+
+```sh
+skipping cache due to an error: git@github.com:org/proj-name.git: An unknown error occurred. reference 'refs/remotes/origin/develop' not found (-1)
+```
+
+This happens due to multiple caches and some issues with `ssh:` dependencies
+
+> I think I may have found the issue here! After a ton of digging it seems Xcode and Swift PM has a bug with repos using git@ rather than https://
+> Using ssh we are getting a hanging ref to remote/origin/main in our caches and derived data
+
+[Good SO | Post](https://stackoverflow.com/a/74130700/5177704)
+
+```sh
+# Create the file & give appropriate permissions
+chmod +x fix-spm-cache.sh
+
+# In your project directory
+./fix-spm-cache.sh project-name
+```
+`fix-spm-cache.sh` contents copied from the post
+
+```sh
+#!/bin/bash
+if [[ $# -eq 0 ]] ; then
+    echo 'Please call the script with the name of your project as it appears in the derived data directory. Case-insensitive.'
+    echo 'For example: ./fix-spm-cache.sh myproject'
+    exit 0
+fi
+
+# Delete all directories named "remotes" from the global Swift Package Manager cache.
+cd ~/Library/Caches/org.swift.swiftpm/repositories
+for i in $(find . -name "remotes" -type d); do
+    echo "Deleting in SPM Cache: $i"
+    rm -rf $i
+done
+
+# Find derived data directories for all projects matching the script argument, and
+# delete all directories named "remotes" from source package repositories cache for those projects. 
+
+cd ~/Library/Developer/Xcode/DerivedData/
+for project in $(find . -iname "$1*" -type d -maxdepth 1); do
+    for i in $(find "$project/SourcePackages/repositories" -name "remotes" -type d); do
+        echo "Deleting in DerivedData: $i"
+        rm -rf $i
+    done
+done
+```
 
 ### Package.resolved file is corrupted or malformed
 
@@ -187,3 +239,15 @@ I reckon it hit a snag when it was not able to understand which to take when usi
 Xcode seems to not like ed25519 encrypted ssh keys. Try removing those, and replace with rsa keys instead - Xcode 14.x
 
 [Similar thread | SPM xcodebuild commands (resolve dependencies) run from AppCode do not use Xcode accounts](https://youtrack.jetbrains.com/issue/OC-21826)
+
+
+
+### 
+
+```sh
+Package manifest at '/Package.swift' cannot be accessed (/Package.swift doesn't exist in file system)
+```
+
+this was happening while attempting to checkout a SPM dependency at a version that didn't yet have a Package.swift
+
+[Package manifest | SO](https://stackoverflow.com/questions/75473774/package-manifest-at-package-swift-cannot-be-accessed-package-swift-doesnt)

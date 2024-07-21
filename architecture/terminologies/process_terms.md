@@ -37,6 +37,8 @@ Four pillars of OOPs, **abstraction, encapsulation, inheritance, and polymorphis
 
 FP is based on the principles of immutability, referential transparency, higher-order functions, and recursion.
 
+[swift - example of functional_programming](functional_programming.md)
+
 ## Reactive Programming
 
 Reactive programming **creates software that responds to events rather than solicits inputs from users**

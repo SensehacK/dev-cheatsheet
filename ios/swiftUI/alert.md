@@ -14,8 +14,8 @@ struct ContentView: View {
 }
 ```
 
+[HWS | how-to-show-an-alert](https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-an-alert)
 
-https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-an-alert
 
 
 ## Destructive Alert
@@ -34,4 +34,4 @@ Button("Show Alert with Destruction") {
 ```
 
 
-https://sarunw.com/posts/how-to-present-alert-in-swiftui-ios15/
+[sarunw | how-to-present-alert-in-swiftui-ios15](https://sarunw.com/posts/how-to-present-alert-in-swiftui-ios15/)

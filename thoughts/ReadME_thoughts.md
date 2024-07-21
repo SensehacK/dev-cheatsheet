@@ -9,6 +9,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 ## List
 
+[decision_making](decision_making.md)
+
 [ecosystem](../thoughts/ecosystem.md)
 
 [FOMO](../thoughts/FOMO.md)

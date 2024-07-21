@@ -24,4 +24,4 @@ But can also bind data to pass the argument above to the observer's next event.
 
 ## Completion to Observable
 
-https://stackoverflow.com/questions/50753875/rxswift-chain-completable-to-observable?rq=1
+[SO | rxswift-chain-completable-to-observable](https://stackoverflow.com/questions/50753875/rxswift-chain-completable-to-observable?rq=1)

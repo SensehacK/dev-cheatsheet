@@ -27,4 +27,3 @@ let button = closeButtonItem
             })
             .disposed(by: disposeBag)
 ```
-            

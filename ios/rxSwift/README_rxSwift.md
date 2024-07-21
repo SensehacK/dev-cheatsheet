@@ -85,9 +85,13 @@
 [subscription_chain_not_firing](subscription_chain_not_firing.md)
 
 
+## Mind Map
+
+[Reactive Programming Term](architecture/terminologies/process_terms#Reactive%20Programming)
+
 
 ## References
 
+[reactive principles.org](https://www.reactiveprinciples.org/)
 
-https://www.reactiveprinciples.org/
 

@@ -87,7 +87,7 @@ fetchData()
 
 ## Quirks
 
-### Opening paranthesis Matters
+### Opening parenthesis Matters
 
 Just noticed this small quirk in playground that if my `(` is on the next line it won't compile properly for subscribe block
 
@@ -99,6 +99,7 @@ observable
 	onNext: { }
 )
 ```
+
 Works
 ```swift
 observable

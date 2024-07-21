@@ -4,6 +4,10 @@
 
 [avKit](avKit.md)
 
+[avPlayer](avPlayer.md)
+
+[avPlayerItem](avPlayerItem.md)
+
 [codable](codable.md)
 
 [crossPlatform](crossPlatform.md)

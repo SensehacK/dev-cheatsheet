@@ -101,3 +101,18 @@ So I'm guessing is the frame needs to provide min / max Width or Height. Having 
 Closing tabs worked for me but it seems I mixed up iPad & VisionOS which has realityPro Kit package which is only available for VisionOS. So it was a bit harder to remove that dependency to build it for iPadOS
 
 [SO | swiftui-canvas-content-view-previews-not-found-in-any-targets](https://stackoverflow.com/questions/65384298/xcode-swiftui-canvas-content-view-previews-not-found-in-any-targets)
+
+
+## print in swiftUI
+
+You can use print statements inside views like this:
+
+```swift
+VStack(alignment: .leading) {
+    if workoutManager.averageHeartRate < roundedKarvonenValue {
+        let _ = print(itemX.randomElement()!)
+    } else {
+        let _ = print(itemY.randomElement()!)
+    }
+}
+```

@@ -155,6 +155,19 @@ await fetchUpdates()
 
 [SO | throwing errors in tasks](https://stackoverflow.com/questions/70314263/throwing-errors-inside-a-root-task)
 
+
+## Yield | Suspend
+
+
+```swift
+await Task.yield()
+```
+
+[HWS | voluntarily suspend a task](https://www.hackingwithswift.com/quick-start/concurrency/how-to-voluntarily-suspend-a-task)
+
+
+
+
 ## Mind Map
 
 [ARC in Tasks | Reference Counting](arc.md#Tasks)

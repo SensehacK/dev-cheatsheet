@@ -6,9 +6,16 @@
 
 "Command + Space" - Spotlight
 
+### Window
+
 "Command + Shift + T" - Reopen close Tab.
 
+"Command-W" - close the current window
+
+"Command-Q" - Quit the app / window
+
 ### Power Options
+
 "Command + Option + Control + Eject / Power" - Shut Down Mac
 
 "Command + Option + Eject / Power" - Sleep

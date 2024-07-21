@@ -15,14 +15,14 @@ print("This code only runs on iOS 14 and up")
 if #available(iOS 15, *) { }
 ```
 
-[@available / available](https://www.avanderlee.com/swift/available-deprecated-renamed/)
+[avanderlee | @available / available](https://www.avanderlee.com/swift/available-deprecated-renamed/)
 
 ```swift
 @available(iOS 13.0, macOS 10.15, *)
 public class AsyncNetwork { }
 ```
 
-[NSH](https://nshipster.com/available/)
+[NSH | available](https://nshipster.com/available/)
 
 [sarunw | how-to-handle-api-changes-with-@available](https://sarunw.com/posts/how-to-handle-api-changes-with-@available/)
 
@@ -114,6 +114,68 @@ var drag: some Gesture {
 ```
 
 
+## check Xcode
+
+```swift
+#if __clang_major__ >= 16
+extension mamba.HLSPlaylist: @unchecked @retroactive Sendable { }
+#or
+extension mamba.HLSPlaylist: Sendable { }
+#endif
+
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 140000  __MAC_OS_X_VERSION_MAX_ALLOWED >= 101500
+...
+#endif
+
+```
+
+## check Swift
+
+
+```swift
+#if swift(>=6.0)
+    @objc
+    var identifier: Any? {
+        "sa.drm.key"
+    }
+#endif
+
+
+
+#if swift(>=6.0)
+override var identifier: (any Sendable)? {
+	urlIdentifier
+}
+#else
+override var identifier: Any? {
+	urlIdentifier
+}
+#endif
+
+```
+
+
+## check compiler
+
+I found that `#if compiler(>=5.5)` works here. Note, this is different than `if swift(>=5.5)`, which will not necessarily work depending on the swift version you have set in your project.
+
+```swift
+#if compiler(>=6.0)
+    override var identifier: (any Sendable)? {
+        urlIdentifier
+    }
+#else
+    override var identifier: Any? {
+        urlIdentifier
+    }
+#endif
+```
+
+I was able to determine the different Xcode, Swift & Clang version differences via the app `Xcodes` [mentioned here](tools/apps#IDE)
+
 ## Get Device Info
 
 [device](ios/config/device.md)
+
+
+[apple doc official](https://developer.apple.com/documentation/xcode/running-code-on-a-specific-version/)

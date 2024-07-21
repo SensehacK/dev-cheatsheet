@@ -29,6 +29,10 @@ class SystemMemory {
 ## Firebase
 [firebase](firebase.md)
 
+### app measurements
+
+[SO | firebase app measurement](https://stackoverflow.com/questions/54461349/how-to-decrypt-firebase-requests-to-app-measurement-com/54463682#54463682)
+
 ## Dynamic Symbols
 
 [dSYM](dSYM.md)

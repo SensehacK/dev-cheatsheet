@@ -104,6 +104,20 @@ for i in stride(from: 0, to: 15, by: 1) {
 }
 ```
 
+This changes in `forEach` variant.
+
+## forEach vs For in
+
+forEach -> Functional programming.
+
+for in -> Imperative programming.
+Syntactic sugar and internally it uses `for in`
+
+
+[great SO - post about differences](https://stackoverflow.com/a/45334483/5177704)
+
+[swift by sundell | picking between two](https://www.swiftbysundell.com/tips/picking-between-for-and-for-each/)
+
 ## 2D Array
 
 Creating 2D matrix array in Swift.

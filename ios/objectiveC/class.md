@@ -22,6 +22,49 @@ class anotherClass {
 ```
 
 
+## Init
+
+```objc
+/// ICustomPlatform.h
+@protocol ICustomPlatform <NSObject>
+
+-(instancetype)initWithDelegate:(nullable id<CustomDelegate>)cDelegate
+authDelegate:(nullable id<CCAuthDelegate>)authDelegate;
+
+@end
+
+
+
+/// CustomPlatformAPI.h
+@interface CustomAPI : ICustomPlatform>
+@end
+
+/// CustomPlatformAPI.m
+
+/// Protocol
+@interface CustomAPI () <ICustomPlatform>
+
+@property (nonatomic, weak, nullable) id<CustomDelegate> cDelegate;
+@property (nonatomic, weak, nullable) id<CCAuthDelegate> authDelegate;
+
+@end
+
+
+/// Implementation
+@implementation CustomAPI
+
+- (instancetype)initWithDelegate:(id<CustomDelegate>)delegate
+authDelegate:(id<CCAuthDelegate>)authDelegate;
+{
+    return [self init];
+}
+
+@end
+```
+
+
+Returns the class `CustomAPI()` instance back with the initializer signature of `(instancetype)`
+
 ## Errors
 
 Code snippet where this error appears

@@ -16,6 +16,8 @@
 
 [utility](../tools/utility/README_utility.md)
 
+[editing](editing.md)
+
 [vim](../tools/vim/README_vim.md)
 
 [vscode](../tools/vscode/README_vscode.md)

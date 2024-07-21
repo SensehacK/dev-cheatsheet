@@ -489,3 +489,16 @@ Prolly due to toggling of "Automate manage signing" for your app and deploying t
 And once you discard your WIP stash you revert back to default "manual signing". It kinda led to mismatch provisioning profile or signing package. Which doesn't allows you do perform an upgrade or overwrite the app package.
 
 [SO Post](https://stackoverflow.com/questions/32677133/app-installation-failed-due-to-application-identifier-entitlement)
+
+
+## Error: missing required module
+
+For me:
+This happened due to wrong case in my SPM project target and product.
+After I change my typo, I had to delete my old `automatic` generated project scheme and again make sure change the `import module_name` everywhere.
+
+After that it should compile properly? 
+
+[SPM_build_error](ios/xcode/spm_errors#missing%20required%20module)
+
+[forum - swift discussion](https://forums.swift.org/t/error-missing-required-module-numericsshims/58235)

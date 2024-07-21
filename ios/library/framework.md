@@ -113,7 +113,7 @@ If you have FAT binaries then you could have extra architecture bloatware depend
 
 
 
-### Debugging Frameworks 
+### Debugging 
 
 The process usually for debugging `xcframework` is described below. As described by my team member.
 

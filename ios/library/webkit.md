@@ -15,7 +15,8 @@ func webView(_ webView: WKWebView, didFinish navigation: WKNavigation!) {
 }
 ```
 
-https://stackoverflow.com/questions/45448443/swift-3-check-if-wkwebview-has-loaded-page
+[SO | check-if-wkwebview-has-loaded-page](https://stackoverflow.com/questions/45448443/swift-3-check-if-wkwebview-has-loaded-page)
+
 
 
 
@@ -35,13 +36,11 @@ WKWebsiteDataStore
 
 [Documentation URL](https://developer.apple.com/documentation/webkit/wkwebsitedatastore/1532938-removedata)
 
-https://stackoverflow.com/questions/27105094/how-to-remove-cache-in-wkwebview
+[SO | how-to-remove-cache-in-wkwebview](https://stackoverflow.com/questions/27105094/how-to-remove-cache-in-wkwebview)
 
 ## WKWebView Tips
 
-
-https://github.com/ShingoFukuyama/WKWebViewTips
-
+[github | WKWebViewTips](https://github.com/ShingoFukuyama/WKWebViewTips)
 
 
 ## SwiftUI 
@@ -67,25 +66,28 @@ extension UIApplication {
 ```
 
 
+[sarunw | sfsafariviewcontroller-in-swiftui](https://sarunw.com/posts/sfsafariviewcontroller-in-swiftui/)
 
-https://sarunw.com/posts/sfsafariviewcontroller-in-swiftui/
 
 Some nuances with SFSafariVC instantiation with Swift UI discussed here in the article, the suggestion is create a custom wrapper which will make it easier to manage it. Don't know if its still relevant or not since this is 4 yrs old now.
-https://david.y4ng.fr/swiftui-and-sfsafariviewcontroller/
+
+[swiftui-and-sfsafariviewcontroller](https://david.y4ng.fr/swiftui-and-sfsafariviewcontroller/)
 
 
 
 
 ## References
 
-https://www.appypie.com/wkwebview-how-to#Responding
+[wkwebview-how-to#Responding](https://www.appypie.com/wkwebview-how-to#Responding)
 
 
-https://www.hackingwithswift.com/example-code/wkwebview/how-to-control-the-sites-a-wkwebview-can-visit-using-wknavigationdelegate
+[HWS | how-to-control-the-sites-a-wkwebview-can-visit-using-wknavigationdelegate](https://www.hackingwithswift.com/example-code/wkwebview/how-to-control-the-sites-a-wkwebview-can-visit-using-wknavigationdelegate)
 
-https://www.hackingwithswift.com/articles/112/the-ultimate-guide-to-wkwebview
+[HWS | the-ultimate-guide-to-wkwebview](https://www.hackingwithswift.com/articles/112/the-ultimate-guide-to-wkwebview)
 
-https://stackoverflow.com/questions/48689702/intercept-link-clicks-in-wkwebview
+
+[SO | intercept-link-clicks-in-wkwebview](https://stackoverflow.com/questions/48689702/intercept-link-clicks-in-wkwebview)
+
 
 https://diamantidis.github.io/2020/02/02/two-way-communication-between-ios-wkwebview-and-web-page
 

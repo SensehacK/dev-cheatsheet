@@ -4,8 +4,8 @@
   "showTags": false,
   "showAttachments": false,
   "hideUnresolved": true,
-  "showOrphans": true,
-  "collapse-color-groups": true,
+  "showOrphans": false,
+  "collapse-color-groups": false,
   "colorGroups": [
     {
       "query": "frontend",
@@ -88,6 +88,6 @@
   "repelStrength": 16.0952380952381,
   "linkStrength": 1,
   "linkDistance": 97,
-  "scale": 0.5941086853535934,
+  "scale": 0.11775200002107976,
   "close": false
 }

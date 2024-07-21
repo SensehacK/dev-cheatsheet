@@ -25,16 +25,32 @@ VStack {
 .padding(20)
 ```
 
+## ZStack
+
+Z - axis of the swiftUI application. Typically used for displaying something over on background view of the application. 3D view. `Z.-1, Z.0, Z.+1`
+
+Loading indicator could be on `+1`
+UIButton could be on `0`
+VStack or UITableView or UIBackground could be on `-1`
+
+
+```swift
+ZStack { 
+	VStack { }
+}
+```
+
 ## Examples
 
 Line Wrapping stacks
 
-https://swiftui.diegolavalle.com/posts/linewrapping-stacks/
+[linewrapping-stacks](https://swiftui.diegolavalle.com/posts/linewrapping-stacks/)
 
 
 Lazy Stacks
 
-https://www.appcoda.com/swiftui-lazyvgrid-lazyhgrid/
+[appcoda | swiftui-lazyvgrid-lazyhgrid](https://www.appcoda.com/swiftui-lazyvgrid-lazyhgrid/)
+
 
 ## Error
 

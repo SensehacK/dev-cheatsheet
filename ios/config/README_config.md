@@ -33,6 +33,8 @@
 
 [[linking]]
 
+[lint process](lint%20process.md)
+
 [mdm](mdm.md)
 
 [naming](naming.md)

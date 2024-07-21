@@ -41,3 +41,26 @@ let _ = doSomething()
 **_Unrecognized Selector Sent To Instance_**
 
 [unrecognized-selector](https://becodable.com/unrecognized-selector-sent-to-instance/)
+
+
+## Variadic Parameters
+
+You can skip using `array` type in the API definition and use variadic parameters introduced in Swift 5.0
+
+```swift
+extension Canvas {
+    func add(_ shapes: Shape...) {
+        shapes.forEach(add)
+    }
+}
+
+let circle = Circle(center: CGPoint(x: 5, y: 5), radius: 5)
+let lineA = Line(start: .zero, end: CGPoint(x: 10, y: 10))
+let lineB = Line(start: CGPoint(x: 0, y: 10), end: CGPoint(x: 10, y: 0))
+
+let canvas = Canvas()
+canvas.add(circle, lineA, lineB)
+canvas.render()
+```
+
+[Code snippet by Swift by Sundell](https://www.swiftbysundell.com/tips/using-variadic-parameters/)

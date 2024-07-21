@@ -41,7 +41,13 @@ You would need a jailbreak or some kind of developer account access inorder to s
 
 
 
+## Proxy
 
+Using [charles_proxy](charles_proxy.md) or [proxyman](proxyman.md) for capturing traffic via `man in the middle` attack.
+
+SSL Pinning
+
+[Proxyman | Can we bypass SSL Pinning?](https://proxyman.io/posts/2019-11-15-Can-we-bypass-ssl-pinning)
 
 ## Code Scanning tools
 

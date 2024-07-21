@@ -14,6 +14,27 @@ let realString = String(substring)
 Type conversion to String [HWS](https://www.hackingwithswift.com/example-code/language/how-to-convert-a-substring-to-a-string)
 
 
+## Contains
+
+```swift
+let c = "C"
+let objc = "Objective-C"
+objc.contains(c)// true
+
+objc.range(of: c, options: .caseInsensitive) != nil
+objc.localizedCaseInsensitiveContains(c)
+
+```
+
+## Range
+
+
+
+
+[sarunw |  different-ways-to-check-if-string-contains-another-string](https://sarunw.com/posts/different-ways-to-check-if-string-contains-another-string-in-swift/)
+
+
+
 ## Print
 
 Printing boolean values in print statement wasn’t straight forward as I believed it was.
@@ -44,6 +65,14 @@ You can also use an extension for it. [extensions Character nth element](ios/lif
 
 
 ## Range
+
+```swift
+let c = "C"
+let objc = "Objective-C"
+
+objc.range(of: capitalC) != nil// true
+```
+
 
 [SO](https://stackoverflow.com/questions/28182441/swift-how-to-get-substring-from-start-to-last-index-of-character)
 

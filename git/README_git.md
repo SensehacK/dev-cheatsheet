@@ -54,4 +54,6 @@ The quintessential tool for version management. Helps your mind to be sane and n
 
 [[tag]]
 
+[token](token.md)
+
 [[workflow]]

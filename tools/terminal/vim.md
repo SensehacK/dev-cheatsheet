@@ -8,3 +8,11 @@ Hit the Esc key to enter "Normal mode". Then you can type : to enter "Command-li
 
 Vim has extensive help - that you can access with the :help command - where you can find answers to all your questions and a tutorial for beginners.
 
+
+
+
+## Vim Browser
+
+[vimium](https://vimium.github.io/)
+
+

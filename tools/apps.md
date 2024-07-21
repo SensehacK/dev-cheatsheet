@@ -49,12 +49,12 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 - Things by Cultured Code
 - be focused pro - pomodoro app
+
 ## Scheduler
 
 - Fantastical  (microsoft outlook personal requires app password not traditional password)
 - Focused Pro
 - [rescue Time](https://www.rescuetime.com/download) 
-- 
 
 ## Documentation Reference
 
@@ -70,6 +70,12 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - [Postman](https://www.postman.com/downloads/) for API prototyping 
 - Little Snitch
 
+
+## Network
+
+- [http request online](https://base64.guru/tools/http-request-online)
+- [curl CLI request builder](https://curlbuilder.com/)
+
 ## Utility
 
 - JSON typicode structure model https://app.quicktype.io/
@@ -81,7 +87,13 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - [Date time timezone convertors](https://time.lol/#2001-09-11T12:14:00-00:00) 
 - [unix timestamp to date convertor](https://www.timestamp-converter.com/)
 - [text convert case](https://convertcase.net/)
+- [type converts - UInt to Int 16 - 64bit](https://www.simonv.fr/TypesConvert/?integers)
 
+
+
+## Calculators
+
+- [video bitrate calculator](https://www.dr-lex.be/info-stuff/videocalc.html)
 
 
 ## Design
@@ -97,7 +109,9 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - [Contrast checker](https://webaim.org/resources/contrastchecker/) Thanks to Design team Member
 - [Figma plugin](https://www.figma.com/community/plugin/748533339900865323) 
 
-## Image Tools
+## Image
+
+###  Tools
 
 - UI Color converters HEX 
 - Quick photoshop
@@ -132,6 +146,7 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - fav project [youtube_dl](youtube_dl.md)
 - [ffmpeg](ffmpeg.md) video conversion cli
 - handbrake - video encoder decoder GUI
+- [Media Info - OOS tool](https://mediaarea.net/en/MediaInfo) to get media info in GUI.
 
 ### Project
 
@@ -171,6 +186,13 @@ Rting website for nitty gritty comparison of Video tech.
 - Plex Amp
 - LunaSea
 - nzb360
+
+## dev utility 
+
+- [amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)
+- [keepingYouAwake](https://github.com/newmarcel/KeepingYouAwake?tab=readme-ov-file)
+- ntfs support for mac - [Mounty](https://www.mounty.app/)
+
 
 
 ## Vision Pro

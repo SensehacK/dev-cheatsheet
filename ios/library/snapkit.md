@@ -19,18 +19,18 @@ This time the constraint was not available at runtime as we had commented the co
 
 ```swift
 /*
-        container.addSubview(descriptionLabel)
-        descriptionLabel.snp.makeConstraints { maker in
-            maker.leading.trailing.equalToSuperview()
-            maker.top.equalTo(titleLabel.snp.bottom).offset(Paddings.descriptionTop)
-        }
-        */
+container.addSubview(descriptionLabel)
+descriptionLabel.snp.makeConstraints { maker in
+	maker.leading.trailing.equalToSuperview()
+	maker.top.equalTo(titleLabel.snp.bottom).offset(Paddings.descriptionTop)
+}
+*/
 
-        container.addSubview(fullNameTextField)
-        fullNameTextField.snp.makeConstraints { maker in
-            maker.leading.trailing.equalToSuperview()
-            maker.top.equalTo(descriptionLabel.snp.bottom).offset(Paddings.fullNameTop)
-        }
+container.addSubview(fullNameTextField)
+fullNameTextField.snp.makeConstraints { maker in
+	maker.leading.trailing.equalToSuperview()
+	maker.top.equalTo(descriptionLabel.snp.bottom).offset(Paddings.fullNameTop)
+}
 ```
 
 Here _descriptionLabel.snp.bottom_ can’t be referenced as it is commented in the code.

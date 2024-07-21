@@ -57,7 +57,6 @@
   "network": "LiNetwork",
   "network/routers.md": "LiRouter",
   "git": "SiGit",
-  "security": "TiShieldCheckFilled",
   "mobile/react_native": "TiBrandReactNative",
   "mobile/android": "SiAndroid",
   "database/mongo": "SiMongodb",
@@ -69,5 +68,6 @@
   "tools/utility": "TiTool",
   "tools/vim": "SiVim",
   "tools/vscode": "SiVisualstudiocode",
-  "tools/communication": "TiMessage"
+  "tools/communication": "TiMessage",
+  "security": "TiShieldCheckFilled"
 }

@@ -32,6 +32,11 @@
 [pi_hole](pi_hole.md)
 
 
+## Wake On Lan
+
+wake on lan [wiki](https://en.wikipedia.org/wiki/Wake-on-LAN)
+[linux man page - etherwake](https://linux.die.net/man/8/ether-wake)
+
 ## References
 
 [easy panel](https://easypanel.io/)

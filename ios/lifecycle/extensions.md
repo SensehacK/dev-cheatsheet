@@ -149,6 +149,11 @@ extension Assert where TestValueType == Array<Any> {
 ```
 
 
+## Override
+
+[swift | how-to-override-extension-methods](https://blog.flaviocaetano.com/post/this-is-how-to-override-extension-methods/)
+
 ## Resources
 
-https://www.swiftbysundell.com/articles/the-power-of-extensions-in-swift/
+[swift by sundell | the-power-of-extensions-in-swift](https://www.swiftbysundell.com/articles/the-power-of-extensions-in-swift/)
+

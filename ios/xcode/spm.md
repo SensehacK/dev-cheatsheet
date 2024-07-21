@@ -70,6 +70,24 @@ If it's a traditional `.xcodeProj` we don't have the Package.swift / .resolved f
 .xcodeproj/project.xcworkspace/xcshareddata/swiftpm/Package.resolved
 ```
 
+
+## Options
+
+### Resolve Package Versions
+
+This tries to take latest pull - origin kind of methodology. So if `9.3.3` tag had been published before with hash ending at `352EA` and now the remote server deleted it and again push few commits and tagged it `9.3.3` it will have the latest commit with new hash like `231EB`. Usually its recommended to not do this kind of tagging or releasing & just follow SemVer but sometimes you can't choose the cross team you're working with. 
+
+Digress: I wish I could be picky enough like Linus Torvalds, only liking to work with people I respect.
+
+### Reset Package Cache
+
+This basically does a soft nuke of the cache and tries to pull it again if the package already had cache setup.
+
+### Update Package versions
+
+This command will update the package depending on the ruleset defined in SPM with Semantic Versioning `Major.Minor.Patch` 
+So `9.3.3` has minor versions allowed in update rules could update to `9.x.x`
+
 ## Cache
 
 ### SwiftPM cache
@@ -109,6 +127,8 @@ To reset the cache for a single package:
 - Navigate to ~/Library/Caches/org.swift.swiftpm/repositories and deleting the folder and lock file related to the package
 - Then, in Xcode, run File-->Swift Packages-->Reset Package Caches
 
+
+```
 ## Dependency
 
 Adding a branch as a dependency or a tag.
@@ -119,6 +139,8 @@ dependencies: [
 	 .package(url: "git@github.com:company-player/dracula.git", exact: "0.3.0"),
 ]
 ```
+
+[Similar SPM | Xcode cache issue](ios/xcode/spm_errors#skipping%20cache)
 
 ## Bundling
 
@@ -251,13 +273,12 @@ Sometimes it gives out an error or warning as follows if you have both local dep
 'project-parent-package-name' dependency on 'git@github.com:source/package_name_3.git' conflicts with dependency on '/Users/userName/git/cloud/package_name_3' which has the same identity 'package_name_3'. this will be escalated to an error in future versions of SwiftPM.
 ```
 
-### An unknown error not found (-1)
+Add `local` SPM package doesn't work in Pure `Package.swift` project opened in Xcode 16 beta 3. But I could add `local` package in `.xcworkspace` or `.xcproj` file.
 
-```sh
-git@github.com:company-repo-group/repoName.git: An unknown error occurred. reference 'refs/remotes/origin/develop' not found (-1)
-```
+Another thing 
+For some reason my local package gets added via `Package.swift` with absolute URL local path and still doesn't reflect the right change-set. But if I add it via add package -> local GUI option on a `.xcodeproj` file in Xcode GUI `Package Dependencies` It reflects the local change-set appropriately. Maybe a cache issue? Don't know and don't want to bother learning more about it.
+### [An unknown error not found (-1) issue](ios/xcode/spm_errors#skipping%20cache) 
 
-You can have this error sometimes if you're having Xcode local package name conflicting with similar remote package name. So one way to get past this error is to do `Xcode` -> `File` -> `Packages` ->  `Reset Package Cache`
 
 ## Pitfalls
 
@@ -273,6 +294,10 @@ Also experienced it in [Carthage build command](ios/xcode/carthage#Dependency%20
 
 [SO resolve circular dependency swift PM](https://stackoverflow.com/questions/47872419/resolve-circular-dependency-in-swift)
 [swift forums circular dependency](https://forums.swift.org/t/circular-dependencies-in-swiftpm/13580)
+
+[SO | resolve circular dependency](https://stackoverflow.com/questions/47872419/resolve-circular-dependency-in-swift)
+
+Best option is to refactor the code or move dependency one way rather than two ways. Or move it to third package and adopt one way dependencies on both `A` & `B` dependencies.
 
 ## Timeline
 

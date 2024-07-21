@@ -11,6 +11,8 @@ Finally I got some time to dig deep into it when my employer provided 1 week of 
 
 [caveats](caveats.md)
 
+[demo](demo.md)
+
 [info](ios/visionOS/info.md)
 
 [observations](observations.md)

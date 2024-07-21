@@ -76,7 +76,7 @@ Reference code from this link
 
 [building-urls-with-urlqueryitem-in-swift](https://cocoacasts.com/building-urls-with-urlqueryitem-in-swift)
 
-## URL encoding
+## URL Encoding
 
 Spaces -> percent encoding ` ` -> `%20`
 
@@ -92,8 +92,14 @@ let category = "swift"
 let baseURL = URL(string: "https://www.avanderlee.com")!
 let blogURL = URL(string: category, relativeTo: baseURL)!
 print(blogURL) // Prints: swift -- https://www.avanderlee.com
-print(blogURL.absoluteString) // Prints: https://www.avanderlee.com/swift
+print(blogURL.absoluteString) 
+// Prints: https://www.avanderlee.com/swift
 ```
+
+
+ASCII to URL encoding
+[eso org table](https://www.eso.org/~ndelmott/url_encode.html)
+
 
 ## File Path | FileManager API
 
@@ -188,6 +194,7 @@ task.resume()
 So all URLs are URIs, and all URNs are URIs - but URNs and URLs are different, so you can't say that all URIs are URLs.
 
 [SO | reference ^](https://stackoverflow.com/a/176274/5177704)
+
 
 ## Reference
 

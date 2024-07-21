@@ -35,3 +35,10 @@ You could also define an `.env` file to source these kind of variables and your 
 source .env
 ```
 
+
+## List Environment Variables
+
+A list of all the environment variables that are set is displayed in the Terminal or shell window.
+```sh
+printenv
+```

@@ -52,6 +52,7 @@ github "https://github.com/org/repo_name.git" "branch_develop"
 
 # tags
 github "https://github.com/org/repo_name.git" == 0.6.9
+" " ~> 3.453.
 ```
 
 ## Debugging
@@ -107,7 +108,13 @@ xcodebuild timed out while trying to read Project.xcodeproj 😭
 *** failed to bootstrap Carthage dependencies ***
 ```
 
-Fixed by opening checked out project, and waiting for successful dependency downloading.  
+Fixed by opening checked out project, and waiting for successful dependency downloading.  Or maybe open the dependency location in terminal.
+Use this command to resolve package dependencies
+
+```sh
+xcodebuild -resolvePackageDependencies
+```
+
 After that `carthage build projectName-dependency --no-use-binaries --platform iOS` works fine
 
 Or [Stack Overflow recommended post](https://stackoverflow.com/questions/46072080/carthage-xcode-9-xcodebuild-timed-out-while-trying-to-read-xcodeproj-error)

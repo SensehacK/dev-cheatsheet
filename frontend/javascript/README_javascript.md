@@ -6,9 +6,17 @@ Love it or hate it, it has standed the test of time. From javascript compiler wo
 ## List
 
 [[css_iFrame]]
+
 [[frontend/javascript/dark_mode]]
+
 [[data_checks]]
+
 [[float_design]]
+
 [[form]]
+
+[module](module.md)
+
 [[shorthand_functions]]
+
 [[frontend/javascript/string]]

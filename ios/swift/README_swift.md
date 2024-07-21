@@ -22,8 +22,6 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [command_line_arguments](command_line_arguments.md)
 
-[[completion_handlers]]
-
 [[data_structure]]
 
 [decimal](decimal.md)
@@ -33,6 +31,8 @@ As sometimes, we would have limited internet access or restrictive data download
 [DSAlgoTricks](DSAlgoTricks.md)
 
 [equatable](equatable.md)
+
+[errors](ios/swift/errors.md)
 
 [[executables]]
 
