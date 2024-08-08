@@ -2,7 +2,7 @@
 
 [documentation](backend/ruby/documentation.md)
 
-[[hello_world]]
+[[backend/ruby/hello_world]]
 
 [[backend/ruby/ternary]]
 
