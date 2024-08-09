@@ -113,7 +113,7 @@ If you have FAT binaries then you could have extra architecture bloatware depend
 
 
 
-### Debugging 
+## Debugging 
 
 The process usually for debugging `xcframework` is described below. As described by my team member.
 
@@ -122,8 +122,8 @@ The process usually for debugging `xcframework` is described below. As described
 3. If you copy that module information into the dependency's `.xcframework` on the client app, you can essentially "fake" the build system because now it will run the framework code as if there are debug symbols. 
 
 
-[Open: xcframework_internal_redacted.png](../../assets/628b71a20fd797895058280a80be476c_MD5.png)
-![](assets/628b71a20fd797895058280a80be476c_MD5.png)
+![Open: xcframework_internal_redacted.png](../../assets/628b71a20fd797895058280a80be476c_MD5.png)
+
 
 Third point does it relates to actually opening up client dependency frameworks and swapping the `object-linked` file? Will have to test this theory as well or read more about hot swapping the binary files.
 

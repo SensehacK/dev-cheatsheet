@@ -1,6 +1,6 @@
 # Build Commands
 
-## Main Command
+## *Main* Command
 
 ```sh
 # Xcode 12
