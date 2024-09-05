@@ -55,7 +55,7 @@ public override func isEqual(_ object: Any?) -> Bool {
 
 ## Pyramid of Doom
 
-Avoiding pyramid of doom with if else identation.
+Avoiding pyramid of doom with if else indentation.
 
 [pyramid of doom](<https://en.wikipedia.org/wiki/Pyramid_of_doom_(programming)>)
 

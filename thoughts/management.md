@@ -60,3 +60,11 @@ Identify a bad manager in an interview
 6) Ironically, most of them start very friendly “Do you want to have water or eat something? Relax… This is a friendly two-way conversation”
 
 [source blind comment](https://www.teamblind.com/post/How-can-you-identify-badmediocre-manager-in-job-interview-1xJtiSf5)
+
+
+## Marketing
+
+
+`All programmers need marketers to turn their bugs into features.`
+
+[Quote thread from apple](https://www.reddit.com/r/ProgrammerHumor/comments/x8cydf/its_not_a_bug_its_a_feature/)

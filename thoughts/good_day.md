@@ -41,6 +41,14 @@ Inspired by Ice Cube - Today was a good day
 - No `It works on my machine` messages
 - even the `hotfix` process went smoothly, no bad `develop` merge / sync / rogue commits
 - no disappearing of individual play button on unit tests
+- no need to toggle breakpoints
+- breakpoints worked on next major beta versions physical device
+- didn't have to increase my font (Presentation) for screen share
+- didn't even had to rubber duck
+- no huddle, teams, screen shares
+- just slack standup
+- or focus friday
+- 
 
 ## Apple Issues Mind Map
 

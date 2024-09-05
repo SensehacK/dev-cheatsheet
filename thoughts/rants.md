@@ -4,6 +4,16 @@
 
 Ranting about anything and everything
 
+## enshittification
+
+enshittification (uncountable) (neologism, Internet, vulgar) **The phenomenon of online platforms gradually degrading the quality of their services, often by promoting advertisements and sponsored content, in order to increase profits**.
+
+Why everything turns bad eventually. 
+
+
+Legendary Star Wars Quote
+> You have become the very thing you swore to destroy! 
+
 ## [Big Tech Three Ecosystem](ecosystem.md)
 
 Apple | Microsoft | Google
@@ -46,3 +56,33 @@ Anti consumer to the core, worse than Sony. Re - releasing same old NES, SNES or
 Best console which started it all [NES](nintendo_NES.md)
 
 
+
+## Reddit
+
+First the API price increase, subreddits mod rights abuse, old reddit vs new reddit, analytics - selling off data. 
+killing 3rd party reddit client apps to make more money
+bad UI and slow performance comparatively
+posts were riddled with auto play videos now
+
+Now maybe they will paywall certain subreddits for milking / squeezing more money from their own users who create, maintain and provide value to the whole product. 
+
+
+## Attention Span
+
+I already don't like how long videos are not hot anymore everyone's trying to copy tiktok short or Vine shorts again. The attention span has further dwindled to like 3 - 7 secs imho.
+
+
+## Internet Brownie Points
+
+Their should be a term for dogfooding in terms of when your consumers are your producers and consumers. Working for free is a privilege in this economy or cult driven FOMO - I'm on latest beta to post something they find new or change in the software to get some more internet brownie points or upvotes.
+
+
+## Cult Stans
+
+The fans of certain companies will go out of their daily lives to provide feedback to these large corporations. I'm not saying don't do stuff you like, I'm just alluding towards the blind following and faith people put in these corporations just never fails to astonish me.
+
+Like finding free testers to test the products and going out of the way to provide feedback and more analytics data to accurately predict insights without the company actually investing that much money in R&D.
+I don't mind providing feedback to Open source projects or when companies try to improve overall mankind but just bootlicking whatever decision the company picks and following them blindly is just the last straw. 
+
+I had a interesting conversation with a cult fan of apple defending lightning port, like its no way better than the current USB-C hardware port specification but indeed these people always have the same stereotypical / prejudice liking. 
+Free market, capitalism, conservatives, lower taxes, America is the best in everything etc. Like you can't even criticize or hold an actual debate with them.

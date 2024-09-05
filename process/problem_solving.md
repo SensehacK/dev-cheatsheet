@@ -1,4 +1,4 @@
-# Problem Solving
+# Problem *Solving*
 
 ## Intro
 
@@ -16,6 +16,8 @@ Great article to read about Wishful thinking.
 ### Rubber ducky Method
 
 This is when you're explaining the problem statement to a rubber duck when you're bathing, while explaining the intricate logic you're challenging your own senses of what is going on and how it is happening. This is tried and true method where instead of talking to a rubber duck, you talk to your peer or junior/senior and whilst explaining the problem you reach to your solution in a train track connecting / bridging way to the destination.
+
+[wiki](https://en.wikipedia.org/wiki/Rubber_duck_debugging)
 
 ### Soft Reset - State of Mind
 
@@ -41,6 +43,17 @@ Good read on [code_readability](code_readability.md) on internal doc I wrote.
 ## Dogfooding
 
 Good article about [developer's guide to dogfooding](https://codesubmit.io/blog/is-dogfooding-right-for-your-team/)
+
+
+## Time boxing
+
+You can utilize time to be boxed in for working on something, so that you can come back to it and have a different mindset and always feel like you're trying to progress further.
+Working on debugging and solving a problem, even going from error_1 to error_3 is progress, since you just demonstrated that you advanced or you changed your strategy to give you more context around your debugging shenaningans.
+
+
+You can use Pomodoro method as well to keep you accounted.
+[Link to app](tools/apps#Task%20Manager)
+
 
 
 

@@ -15,6 +15,10 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 [FOMO](../thoughts/FOMO.md)
 
+[good_day](good_day.md)
+
+[immigration](immigration.md)
+
 [Is this life](../thoughts/Is_this_life.md)
 
 [management](management.md)

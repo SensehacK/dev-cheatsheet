@@ -1,5 +1,6 @@
 
 ## Context
+
 While I was waiting for my build to work on Jenkins CI, I decided to be snarky about SDLC
 
 ## Text
@@ -16,7 +17,7 @@ Then we migrate the main repo to Github Enterprise
 
 then we migrate from Jenkins CI to Github Actions
 
-We are in the process of migration from Nexus to ARtifactory
+We are in the process of migration from Nexus to Artifactory
 
 Is Software just an elaborate plan of cycle - migration
 

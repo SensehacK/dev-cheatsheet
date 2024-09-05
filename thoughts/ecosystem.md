@@ -40,6 +40,20 @@ Killed Skype for one more shitty re-skin of `Teams` on it.
 
 ## Apple
 
+### Two factor
+
+I hate how apple just pops up with notification everywhere on our devices + its a nightmare UX with sounds, popups which needs to be addressed in between of your gaming or whatever session you're in.
+
+
+### iMessage | Facetime
+
+The same principle applies with crappy notifications stating, "This new device has been added for imessage & facetime". Yeah I get the privacy concern of being hacked or whatever but when you have like 5+ apple devices getting the same dreaded notification stating you have added a new device. It just gets cornier each time.
+
+Maybe my hate for this is unwarranted because a normal person won't have more than 5 apple devices but I have to work in this apple ecosystem development, so screw me I guess to have plethora of test devices.
+4 iphones, 2 apple tvs, 2 ipads, 3 macs, 2 airpods, 1 vision pro.
+Am I deep in apple ecosystem ? I hope not.
+
+
 ### Shared notes
 
 screw you apple ids and your walled garden ecosystem 
