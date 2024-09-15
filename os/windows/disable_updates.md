@@ -44,3 +44,18 @@ That's it. Credits go to jingyu9575 of superuser.
 ```
 
 [disable-updates-available-windows-10](https://winaero.com/disable-updates-available-windows-10/)
+
+
+Or just disable the service daemon in the background
+
+Press Windows key + R
+Type: services.msc
+
+Scroll down to Windows Update
+Click Stop on the toolbar.
+Right click it
+Click Properties
+
+Under the General tab, change its Startup type to: Disabled.
+
+Click Apply then OK 
