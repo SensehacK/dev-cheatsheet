@@ -14,6 +14,37 @@ carthage version
 ```
 
 
+## Update
+
+Use  command 
+
+```sh
+brew upgrade carthage
+```
+If the above doesn't work, that means you have not installed carthage using Homebrew.
+
+
+In my case it is _**"/usr/local/bin/carthage"**_.
+
+If you have installed through .pkg then Use these commands to delete every trace of carthage
+
+```sh
+## It will show the current path of carthage  
+which carthage
+
+## Delete packages
+rm -rf /usr/local/bin/carthage
+
+sudo rm -rf /Library/Frameworks/CarthageKit.framework
+
+## Install fresh carthage  
+brew install carthage
+```
+
+
+
+
+
 ## Getting Started
 
 - Create [cartfile](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#cartfile) as describe in the github link.
@@ -80,6 +111,12 @@ carthage update cplatform_ios
 
 [SO | carthage individual update](https://stackoverflow.com/a/36421394/5177704)
 
+
+## Checkout 
+
+I found an interesting tidbit with Carthage - thought I would share. If you don't provide a tag or a branch it takes the highest version of tag in the project. 
+Now our project for some reason has a tag named `2424.0.32`
+
 ## Errors
 
 ### shell task failed with exit code 1
@@ -124,6 +161,7 @@ To sort it out I did the following steps:
 - Open the timed out project in Xcode
 - Do not do anything
 - Run `carthage build --platform iOS`
+- You can restart macOS as well
 
 Everything compiled without any errors. It seams that once the project is opened in Xcode, Xcode is automatically adding something that is missing and the project compiles then.
 
@@ -137,6 +175,8 @@ Note: Make sure your VPN is turned on since one of the few dependencies needed V
 [Github | facebook-iOS-sdk thread](https://github.com/facebook/facebook-ios-sdk/issues/1251)
 
 [Github | oneSignal thread](https://github.com/OneSignal/OneSignal-iOS-SDK/issues/886)
+
+[Github | Carthage thread | timeout](https://github.com/Carthage/Carthage/issues/3148)
 
 
 
@@ -167,6 +207,29 @@ carthage bootstrap
 
 Cache issues [thread](https://github.com/Carthage/Carthage/issues/2892)
 
+```sh
+xcodebuild: error: Could not resolve package dependencies:
+  Failed to clone repository https://github.com/player/Support:
+    Cloning into bare repository '/Users//Library/Developer/Xcode/DerivedData/-caujyctqkqefpcbzilmfqapyzsdr/SourcePackages/repositories/-82566464'...
+    remote: Repository not found.
+    fatal: repository
+```
+
+Was able to solve this by opening the xcode -> carthage -> Checkouts directory and building the specific library manually on xcode gui. Close xcode and then try the carthage build command.
+
+Similar thread in [xcode errors](git/errors#remote_repository_not_found)
+
+
+### explicit build specific framework
+
+
+Just delete the framework `Carthage` -> `Build` folder  or else by default carthage command will just see if there's any cache build in your WIP project.
+
+
+```sh
+*** Invalid cache found for platform_ios, rebuilding with all downstream dependencies
+```
+
 ### swift binary mismatch
 
 Read this article in order to make sure that the swift binary is being appropriately set before running `carthage bootstrap` command
@@ -190,6 +253,130 @@ Removing the dependency or contacting them to remove specific dependency is help
 Make sure that `.xcodeproj/xcshareddata/xcschemes` is added and pushed to github.
 
 [SO | carthage shared framework scheme](https://stackoverflow.com/questions/35054788/carthage-no-shared-framework-schemes-for-ios-platform-for-my-own-framework)
+
+### command not found
+
+```text
+carthage: command not found
+```
+
+this is prolly due to conflict with `bash, zsh or ohmyZsh` configs.
+You need to update your `.zshrc` file and reload the config / terminal again to get it working.
+
+[Shell zsh PATH fix](tools/terminal/shell#zsh%20issues)
+
+
+
+### could not find module
+
+```sh
+<unknown>:0: error: could not find module 'OHHTTPStubs' for target 'x86_64-apple-ios-simulator'; found: arm64-apple-ios, at: /Users/kay/git/cloud/slayer/Carthage/Build/OHHTTPStubs.xcframework/ios-arm64/OHHTTPStubs.framework/Modules/OHHTTPStubs.swiftmodule
+```
+
+
+```sh
+Task failed with exit code 1
+/usr/bin/xcrun dsymutil /Users/kay/Library/Caches/org.carthage.CarthageKit/DerivedData/
+...
+Framework/BuildProductsPath/Release-appletvos/OHHTTPStubs.framework.dSYM
+
+
+This usually indicates that project itself failed to compile. Please check the xcodebuild log for more details: /var/folders/.log
+```
+
+Upgrading to new carthage solved the issue - miraculously.
+[Git diff carthage](https://github.com/Carthage/Carthage/compare/0.39.0...0.40.0) upgrade from `0.39` to `0.40`
+
+
+## Build local frameworks
+
+Update the project dependency to a `file:///`
+
+Cartfile config example
+```sh
+
+# Old
+# remote
+github "https://github.com/player/platform_.git" == 10.9.1
+
+
+# New
+# local
+git "file:///Users/k7/git/cloud/platform_.git" "branch_name_local_integration_client" 
+```
+
+Carthage build system will only take committed files to the latest git checkout ref sha code. You can see that in `Cartfile.resolved`
+
+
+```sh
+git "file:///Users/k7/git/cloud/platform_" "b149789dd3b0545e7323422124wac"
+```
+
+Note: You need to commit your WIP files, it didn't work with "UnStaged" files in git. Uncommitted changes will not be built.
+
+Please note that `file:/` is used for local files which is useful for developing/debugging dependency. Do not forget to commit changes before using git
+
+Before checking for changed code, you need to commit them.
+Delete three files
+
+```sh
+Cartfile.resolved
+Project_name in  -> Carthage/Build 
+Project_name in  -> Carthage/Checkout
+```
+
+
+[Carthage cartfile example](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#example-cartfile)
+
+
+Binary framework stuff
+
+```
+binary "https://my.domain.com/release/MyFramework.json"   // Remote Hosted
+binary "file:///some/Path/MyFramework.json"               // Locally hosted at file path
+binary "relative/path/MyFramework.json"                   // Locally hosted at relative path to CWD
+binary "/absolute/path/MyFramework.json"                  // Locally hosted at absolute path
+```
+[Carthage github doc](https://github.com/Carthage/Carthage/blob/master/Documentation/Artifacts.md#binary-only-frameworks)
+
+XCworkspace work in the project
+
+[SO | framework dev in carthage](https://stackoverflow.com/questions/38862464/debugging-owned-framework-when-using-carthage)
+
+
+### No Info plist
+
+```sh
+error: There is no Info.plist found at '/Users/git/cloud/platform_ios/Carthage/Build/PP1.xcframework/Info.plist'. (in target 'Platform' from project 'Platform')
+error: There is no Info.plist found at '/Users/git/cloud/platform_ios/Carthage/Build/PP2.xcframework/Info.plist'. (in target 'Platform' from project 'Platform')
+
+
+There is no Info.plist found at '/Users/git/cloud/platform_ios/Carthage/Build/PP1.xcframework/Info.plist'.
+
+There is no Info.plist found at '/Users/git/cloud/platform_ios/Carthage/Build/PP2.xcframework/Info.plist'.
+```
+
+This happens due to changing branches with totally different versions of the dependencies, this won't be an issue sometimes since you may have old cache.
+
+If I change to a diff branch and the cache is not there - i will have to run the dreaded command again to relink everything and build appropriately.
+
+```sh
+./carthage.sh bootstrap --use-ssh --use-xcframeworks --cache-builds --platform iOS,tvOS --new-resolver
+```
+
+## Cache 
+
+
+```sh
+Build description signature: 514999d2f91654983953dd9633cf8ed5
+Build description path: /Users/k/Library/Caches/org.carthage.CarthageKit/DerivedData/15.3_15E204a/platform_ios/3305.0.500/Build/Intermediates.noindex/ArchiveIntermediates/Platform/IntermediateBuildFilesPath/XCBuildData/514999d2f.xcbuilddata
+/Users/ksave957/git/cloud/XTV/Carthage/Checkouts/playerplatform_ios/Platform.xcodeproj: warning: The iOS deployment target 'IPHONEOS_DEPLOYMENT_TARGET' is set to 8.0, but the range of supported deployment target versions is 12.0 to 17.4.99. (in target 'Platform' from project 'Platform')
+warning: Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this warning, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'Platform' from project 'Platform')
+error: Value for SWIFT_VERSION cannot be empty. (in target 'Platform' from project 'Platform')
+** ARCHIVE FAILED **
+```
+
+
 
 ## Resources
 
