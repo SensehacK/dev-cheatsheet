@@ -17,7 +17,7 @@ Some depreciations.
 
 [[data_service]]
 
-[[deprecations]]
+[[mobile/ionic/deprecations]]
 
 [[mobile/ionic/issues]]
 
