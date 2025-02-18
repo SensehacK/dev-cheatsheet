@@ -48,7 +48,10 @@ Inspired by Ice Cube - Today was a good day
 - no huddle, teams, screen shares
 - just slack standup
 - or focus friday
-- 
+- didn't have to delete xcode cache or device support files
+- no more `not enough disk space` popups
+- didn't even `Your system has run out of application memory` popup for the day
+- even company spyware didn't hinder my mac's performance
 
 ## Apple Issues Mind Map
 

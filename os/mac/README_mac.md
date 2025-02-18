@@ -20,6 +20,8 @@
 
 [keyboard](os/mac/keyboard.md)
 
+[launchd](launchd.md)
+
 [[mac_commands]]
 
 [[mac_os_quirks]]
