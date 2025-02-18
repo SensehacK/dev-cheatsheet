@@ -12,7 +12,7 @@ public enum Bool {
 ```
 
 
-## [Enum Namespacing](ios/swift/enum#namespace)
+## [Enum Namespacing](/ios/swift/enum#namespace)
 
 ## Avoiding name collisions
 

@@ -14,7 +14,7 @@
 
 [[/ios/automation/gitlab_ci_yml]]
 
-[release](ios/automation/release.md)
+[release](/ios/automation/release.md)
 
 [[/ios/automation/testflight]]
 

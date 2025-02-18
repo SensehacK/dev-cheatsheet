@@ -73,7 +73,7 @@ API key and private keys need to be always secret, you could utilize the Github 
 ## Fastlane
 
 You can utilize `dotEnv` approach and fastlane approach to appropriately store the Keys
-Similar [information by me for fastlane](ios/automation/fastlane#Environment%20Variables)
+Similar [information by me for fastlane](/ios/automation/fastlane#Environment%20Variables)
 
 ## Guide
 

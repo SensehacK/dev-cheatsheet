@@ -8,39 +8,39 @@
 
 ----------------------------------------------------
 
-## [iOS](ios/README_iOS.md)
+## [iOS](/ios/README_iOS.md)
 
-### [automation](ios/automation/README_automation.md)
+### [automation](/ios/automation/README_automation.md)
 
-### [combine](ios/combine/README_combine.md)
+### [combine](/ios/combine/README_combine.md)
 
-### [concurrency](ios/concurrency/Readme_concurrency.md)
+### [concurrency](/ios/concurrency/Readme_concurrency.md)
 
-### [config](ios/config/README_config)
+### [config](/ios/config/README_config)
 
-### [library](ios/library/README_library.md)
+### [library](/ios/library/README_library.md)
 
-### [lifecycle](ios/lifecycle/README_lifecycle.md)
+### [lifecycle](/ios/lifecycle/README_lifecycle.md)
 
-### [macOS](ios/macOS/README_macOS.md)
+### [macOS](/ios/macOS/README_macOS.md)
 
-### [objectiveC](ios/objectiveC/README_objectiveC.md)
+### [objectiveC](/ios/objectiveC/README_objectiveC.md)
 
-### [rxSwift](ios/rxSwift/README_rxSwift.md)
+### [rxSwift](/ios/rxSwift/README_rxSwift.md)
 
-### [swift](ios/swift/README_swift.md)
+### [swift](/ios/swift/README_swift.md)
 
-### [swiftUI](ios/swiftUI/README_swiftUI.md)
+### [swiftUI](/ios/swiftUI/README_swiftUI.md)
 
-### [test](ios/test/README_test.md)
+### [test](/ios/test/README_test.md)
 
-### [tvOS](ios/tvOS/README_tvOS.md)
+### [tvOS](/ios/tvOS/README_tvOS.md)
 
-### [ui](ios/ui/README_ui.md)
+### [ui](/ios/ui/README_ui.md)
 
-### [visionOS](ios/visionOS/README_visionOS.md)
+### [visionOS](/ios/visionOS/README_visionOS.md)
 
-### [xcode](ios/xcode/README_xcode.md)
+### [xcode](/ios/xcode/README_xcode.md)
 
 ----------------------------------------------------
 

@@ -2,4 +2,4 @@
 
 ## List
 
-[updates](ios/macOS/updates.md)
+[updates](/ios/macOS/updates.md)

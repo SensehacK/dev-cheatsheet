@@ -74,9 +74,9 @@
 
 [threads](threads.md)
 
-[timeline](ios/rxSwift/timeline.md)
+[timeline](/ios/rxSwift/timeline.md)
 
-[timer](ios/rxSwift/timer.md)
+[timer](/ios/rxSwift/timer.md)
 
 ## Issues
 

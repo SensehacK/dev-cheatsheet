@@ -18,7 +18,7 @@ Following best practices are always easier said then done. So having more contex
 
 [danger](danger.md)
 
-[documentation](ios/lifecycle/documentation.md)
+[documentation](/ios/lifecycle/documentation.md)
 
 ## Concurrency 
 
@@ -35,7 +35,7 @@ Not blocking the main thread for smooth UI operations read more about apple swif
 [secret_keys](secret_keys.md)
 
 
-##  [Access Control](ios/swift/access_control.md)
+##  [Access Control](/ios/swift/access_control.md)
 
 ## Conformance
 

@@ -9,5 +9,5 @@
 
 ## Rounding
 
-[Rounding example on iOS](ios/library/foundation_library#Rounding)
+[Rounding example on iOS](/ios/library/foundation_library#Rounding)
 

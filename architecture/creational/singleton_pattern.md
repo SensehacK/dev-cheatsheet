@@ -40,7 +40,7 @@ their own right.
 
 ## Examples
 
-iOS examples of [singleton pattern](ios/lifecycle/singleton_pattern.md).
+iOS examples of [singleton pattern](/ios/lifecycle/singleton_pattern.md).
 
 
 ## Migrating away from Singleton

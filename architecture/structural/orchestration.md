@@ -9,7 +9,7 @@ This could be a Coordinator, Mission Control, Global Manager, Mastermind, Archit
 ## Singletons
 
 I know this pattern is always hated by lot of communities and its the most unrecommended for many reasons. But like everything, there is no right or wrong with any pattern. Just knowing each limitation could make you a better engineer when using certain design pattern.
-[singleton_pattern](ios/lifecycle/singleton_pattern.md)
+[singleton_pattern](/ios/lifecycle/singleton_pattern.md)
 
 I prefer Singleton pattern for long live objects of the app. This could be your analytics, databaseManager, NetworkManager, SessionManager, AppNavigation Coordinator, Global NotificationManager.
 
@@ -84,7 +84,7 @@ class CacheManager {
 }
 ```
 
-[cache](ios/lifecycle/cache.md)
+[cache](/ios/lifecycle/cache.md)
 
 ## Database Manager
 

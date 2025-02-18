@@ -11,7 +11,7 @@ When bundling you would have different call site depending on the Modules define
 
 ## Access Control
 
-Swift iOS [Access Control options](ios/swift/access_control.md)
+Swift iOS [Access Control options](/ios/swift/access_control.md)
 
 ## Importing NPM
 

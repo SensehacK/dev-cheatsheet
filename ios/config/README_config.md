@@ -21,7 +21,7 @@
 
 [[developer_account]]
 
-[device](ios/config/device.md)
+[device](/ios/config/device.md)
 
 [dSYM](dSYM.md)
 
@@ -51,7 +51,7 @@
 
 [swift_lint](swift_lint.md)
 
-[upgrade](ios/config/upgrade.md)
+[upgrade](/ios/config/upgrade.md)
 
 [xcconfig](xcconfig.md)
 

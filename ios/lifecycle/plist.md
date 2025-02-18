@@ -31,7 +31,7 @@ URL  App Transport Security Plist explicit descriptions
 
 ## No Storyboard
 
-[No main storyboard](ios/lifecycle/view_controllers#No Storyboard Xcode)
+[No main storyboard](/ios/lifecycle/view_controllers#No Storyboard Xcode)
 
 
 ## App Info 

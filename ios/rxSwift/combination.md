@@ -7,7 +7,7 @@
 
 ## Mind Map
 
-Combine equivalent [merge](ios/combine/merge.md)
+Combine equivalent [merge](/ios/combine/merge.md)
 
 ## Links
 

@@ -47,7 +47,7 @@ override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollect
 
 ## Single View Override
 
-[First retrieve color scheme of the app.](ios/swiftUI/environment#Retrieving)
+[First retrieve color scheme of the app.](/ios/swiftUI/environment#Retrieving)
 
 ### SwiftUI
 Specific single view passed with environment or 

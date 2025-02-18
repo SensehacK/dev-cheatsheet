@@ -11,9 +11,9 @@ Having a good API design or a specific rules towards concise project adhering to
 
 ## Design
 
-[os_version_availability](ios/library/wildcard_checks#Check%20OS%20version)
+[os_version_availability](/ios/library/wildcard_checks#Check%20OS%20version)
 
-[framework](ios/library/framework.md)
+[framework](/ios/library/framework.md)
 
 [Builder pattern](architecture/creational/builder_pattern.md)
 

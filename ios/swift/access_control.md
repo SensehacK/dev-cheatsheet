@@ -28,4 +28,4 @@ This kinda mimics a `getter` property on the same variable rather than exposing 
 Good design is always to mark everything local scope, final class, private variables/functions. Exposing less things to outside world is crucial in order to have a maintainable code-base as well as helps avoid mind mapping while debugging.
 
 
-## [ObjC Equivalent of access_control](ios/objectiveC/access_control.md)
+## [ObjC Equivalent of access_control](/ios/objectiveC/access_control.md)

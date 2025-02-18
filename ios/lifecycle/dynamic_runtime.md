@@ -11,7 +11,7 @@ Very less experience in these scenarios.
 Method swizzling via Objective-C could be a scenario if it comes to my mind or Objective-C library dependencies - interoperability with swift.
 `#selector` kind of thing.
 
-[method swizzling](ios/xcode/debug#Method_Swizzling)
+[method swizzling](/ios/xcode/debug#Method_Swizzling)
 
 Another term is called `monkey patching`
 

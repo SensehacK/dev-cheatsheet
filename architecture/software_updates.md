@@ -33,15 +33,15 @@ I'll share some reference links to read about it.
 ## Dark UX Pattern
 
 Mac OS upgrades & don't get me started on how Windows 10 handles force upgrades ever since Windows 8.
-[upgrade](ios/config/upgrade.md)
+[upgrade](/ios/config/upgrade.md)
 
 ## OS
 
 [windows updates](disable_updates.md)
 
-[macOS updates](ios/macOS/updates.md)
+[macOS updates](/ios/macOS/updates.md)
 
-[Xcode updates](ios/xcode/updates.md)
+[Xcode updates](/ios/xcode/updates.md)
 
 [release](process/release.md)
 

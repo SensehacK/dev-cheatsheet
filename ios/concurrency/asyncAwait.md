@@ -28,7 +28,7 @@ doRegularWork()
 
 
 Make sure when you are returning from Task and if performing any UI operation. Switch back to the main thread using either `DispatchQueue.main` or `@MainActor` or `MainActor { }`
-More information in this section [dispatch_main](ios/concurrency/dispatch_main#MainActor)  
+More information in this section [dispatch_main](/ios/concurrency/dispatch_main#MainActor)  
 
 ## Result from Task
 
