@@ -37,13 +37,13 @@ Mac OS upgrades & don't get me started on how Windows 10 handles force upgrades 
 
 ## OS
 
-[windows updates](disable_updates.md)
+[windows updates](/os/windows/disable_updates.md)
 
 [macOS updates](/ios/macOS/updates.md)
 
 [Xcode updates](/ios/xcode/updates.md)
 
-[release](process/release.md)
+[release](/process/release.md)
 
 ## References
 

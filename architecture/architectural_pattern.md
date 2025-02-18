@@ -1,9 +1,7 @@
-
-
 ## List
 
-[mvc_pattern](mvc_pattern.md)
+[mvc_pattern](architectural/mvc_pattern.md)
 
-[mvvm_c_pattern](mvvm_c_pattern.md)
+[mvvm_c_pattern](architectural/mvvm_c_pattern.md)
 
-[mvvm_pattern](mvvm_pattern.md)
+[mvvm_pattern](architectural/mvvm_pattern.md)

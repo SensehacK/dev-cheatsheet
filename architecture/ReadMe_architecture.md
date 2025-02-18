@@ -9,44 +9,45 @@ So it won't be fully fleshed out but nothing in this whole cheatsheet is. Everyt
 
 Enjoy!
 
-## [Architecture Patterns](architectural_pattern.md)
+## [Design Patterns](design_patterns.md)
+### [Architecture Patterns](architectural_pattern.md)
 
-## [Behavioral Patterns](behavioral_patterns.md)
+### [Behavioral Patterns](behavioral_patterns.md)
 
-## [Concurrency Pattern](concurrency_pattern.md)
+### [Concurrency Pattern](concurrency_pattern.md)
 
-## [Creational Patterns](creational_patterns.md)
+### [Creational Patterns](creational_patterns.md)
 
-## [Structural Pattern](structural_pattern.md)
+### [Structural Pattern](structural_pattern.md)
 
 ## SDLC
 
 [IT Depends](it_Depends.md)
 
-[[architecture/concurrency]]
+[concurrency][concurrency]
 
 [System Designs](system_designs.md)
 
 [software_updates](software_updates.md)
 
-## [Terminologies](architecture/terminologies.md)
+## [Terminologies](/architecture/terminologies.md)
 
 ## Advance Topics
 
-[Swift Concurrency](ios/concurrency/Readme_concurrency.md)
+[Swift Concurrency](/ios/concurrency/Readme_concurrency.md)
 
 ### Reactive Paradigm
 
-[RxSwift](ios/rxSwift/README_rxSwift.md) 
-[Combine](ios/combine/ReadMe_combine.md)
+[RxSwift](/ios/rxSwift/README_rxSwift.md)
+[Combine](/ios/combine/ReadMe_combine.md)
 
 ### View Debugging, Memory Graph, Method Swizzling
 
-[Performance](ios/xcode/performance.md)
-[ARC](ios/lifecycle/arc.md)
-[debug](ios/xcode/debug.md)
+[Performance](/ios/xcode/performance.md)
+[ARC](/ios/lifecycle/arc.md)
+[debug](/ios/xcode/debug.md)
 
-Higher Order functions [short_hands](ios/swift/short_hands.md)
+Higher Order functions [short_hands](/ios/swift/short_hands.md)
 
 ## Resources
 

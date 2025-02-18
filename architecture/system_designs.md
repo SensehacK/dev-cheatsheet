@@ -122,17 +122,20 @@ Different source of truth
 ### Data Overriding strategies? 
 Merge timestamp and override data ? 
 
-## [Design Tools](apps.md#Design)
+## [Design Tools](/tools/apps.md#Design)
 ## Implementation
 
-[iOS Swift equivalent WIP docs](API_design.md)
+[iOS Swift equivalent WIP docs](/ios/library/API_design.md)
 
 ## Good articles to read
 
 [Right Data Structure](https://www.swiftbysundell.com/articles/picking-the-right-data-structure-in-swift/)
 
-https://themobileinterview.com/cracking-the-mobile-system-design-interview/
+[themobileinterview | cracking-the-mobile-system-design-interview](https://themobileinterview.com/cracking-the-mobile-system-design-interview/)
 
-https://medium.com/geekculture/system-design-interview-for-mobile-engineers-ce712d6ac2c1
+[medium | system-design-interview-for-mobile-engineers](https://medium.com/geekculture/system-design-interview-for-mobile-engineers-ce712d6ac2c1)
+## Resources
 
-https://www.techinterviewhandbook.org/system-design/
+[hello interview | system design - core concepts](https://www.hellointerview.com/learn/system-design/in-a-hurry/core-concepts)
+
+[techinterview handbook | system-design](https://www.techinterviewhandbook.org/system-design/)

@@ -1,7 +1,7 @@
-##  Creational Patterns
+## Creational Patterns
 
-[builder_pattern](builder_pattern.md)
+[builder_pattern](creational/builder_pattern.md)
 
-[factory_pattern](factory_pattern.md)
+[factory_pattern](creational/factory_pattern.md)
 
-[singleton_pattern](architecture/creational/singleton_pattern.md)
+[singleton_pattern](creational/singleton_pattern.md)

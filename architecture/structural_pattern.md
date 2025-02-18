@@ -1,6 +1,6 @@
 
-[delegate_pattern](delegate_pattern.md)
+[delegate_pattern](structural/delegate_pattern.md)
 
-[facade_pattern](facade_pattern.md)
+[facade_pattern](structural/facade_pattern.md)
 
-[orchestration](orchestration.md) | [Composite](https://en.wikipedia.org/wiki/Composite_pattern)
+[orchestration](structural/orchestration.md) | [Composite](https://en.wikipedia.org/wiki/Composite_pattern)

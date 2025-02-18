@@ -10,7 +10,7 @@ Following best practices are always easier said then done. So having more contex
 
 [string_segregation](string_segregation.md)
 
-[creational_patterns](creational_patterns.md)
+[creational_patterns](/architecture/creational_patterns.md)
 
 ## Code Management
 
@@ -23,7 +23,7 @@ Following best practices are always easier said then done. So having more contex
 ## Concurrency 
 
 Basic understanding of concurrency
-[concurrency](architecture/concurrency.md)
+[concurrency](/architecture/concurrency.md)
 
 ## UI 
 
