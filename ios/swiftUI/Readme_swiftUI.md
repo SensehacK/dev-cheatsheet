@@ -14,7 +14,7 @@
 
 [layout](layout.md)
 
-[lifeCycle](ios/swiftUI/lifeCycle.md)
+[lifeCycle](//ios///swiftUI/lifeCycle.md)
 
 [list](list.md)
 
@@ -26,7 +26,7 @@
 
 [stack](stack.md)
 
-[textField](ios/swiftUI/textField.md)
+[textField](/ios/swiftUI/textField.md)
 
 [videoPlayer](videoPlayer.md)
 

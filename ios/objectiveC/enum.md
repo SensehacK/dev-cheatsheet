@@ -1,5 +1,5 @@
 
-## [Swift Equivalent](ios/swift/enum.md)
+## [Swift Equivalent](/ios/swift/enum.md)
 
 ## Syntax
 

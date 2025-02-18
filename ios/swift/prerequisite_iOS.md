@@ -1,6 +1,6 @@
 # Prerequisite
 
-## [Best practices for apple ecosystem](ios/config/best_practices.md)
+## [Best practices for apple ecosystem](/ios/config/best_practices.md)
 
 ## Xcode Configs
 
@@ -15,6 +15,6 @@
 - Use enums rather than other extra variables or configs in swift
 - use `let` instead of `var` immutability vs mutability
 - Always check whether the classes defined are finalized as it is more optimized
-- Use string concatenation instead of [String interpolation](ios/swift/string#Performance)
+- Use string concatenation instead of [String interpolation](/ios/swift/string#Performance)
 
 

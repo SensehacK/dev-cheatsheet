@@ -4,7 +4,7 @@
 ## UIScreen Not accessible
 
 This won't be accessible in `xrOS` because there are no bounds to calculate.
-You can just isolate this logic with [wildcard checks](ios/library/wildcard_checks#Check%20OS%20Support) specifically to avoid VisionOS.
+You can just isolate this logic with [wildcard checks](/ios/library/wildcard_checks#Check%20OS%20Support) specifically to avoid VisionOS.
 
 ```swift
 
@@ -41,5 +41,5 @@ Previews have different syntax for VisionOS vs iPad / iOS
 ```
 
 
-## [Migration to visionOS](ios/xcode/migration#VisionOS)
+## [Migration to visionOS](/ios/xcode/migration#VisionOS)
 

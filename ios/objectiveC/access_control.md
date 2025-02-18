@@ -17,4 +17,4 @@ NSString* const INTERNAL_PLAY_STATE_CHANGED = @"InternalPlayStateChanged";
 Both are publicly available since there’s no such thing as “internal” where it’s scoped to only the current module
 
 
-## [Swift Equivalent of access_control](ios/swift/access_control.md)
+## [Swift Equivalent of access_control](/ios/swift/access_control.md)

@@ -16,8 +16,8 @@
 
 [decimal](decimal.md)
 
-[enum](ios/swift/enum.md)
+[enum](///ios////swift/enum.md)
 
-[string](ios/swift/string.md)
+[string](//ios///swift/string.md)
 
 [numbers](numbers.md)

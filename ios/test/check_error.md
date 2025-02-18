@@ -42,4 +42,4 @@ func testFunc() {
 
 ## Mind Map
 
-[errors](ios/swift/errors.md)
+[errors](/ios/swift/errors.md)

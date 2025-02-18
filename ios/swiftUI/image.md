@@ -35,4 +35,4 @@ AsyncImage(url: meal.image) { image in
 ## AsyncImagePhase
 
 Image caching in memory is one of those nicer things to have. I recently implemented similar approach of NSCache with dictionary based caching.
-[cache](ios/lifecycle/cache.md)
+[cache](/ios/lifecycle/cache.md)

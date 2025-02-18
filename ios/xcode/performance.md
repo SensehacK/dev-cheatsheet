@@ -47,7 +47,7 @@ Static always wins because it knows where it needs to be dispatched when referer
 Know the right data structure to choose from when you're assuming how the app architecture is leaning towards modularization, concurrency heavy or just thin clients.
 It would also affect how the application communitcation pattern is being deployed internally. It is observer pattern, closure based, delegates or fully reactive.
 
-Swift internal implementation for small optimization if using non mutable value types. In this post with [Copy On Write example](ios/lifecycle/swift_types#Copy on Write (CoW))
+Swift internal implementation for small optimization if using non mutable value types. In this post with [Copy On Write example](/ios/lifecycle/swift_types#Copy on Write (CoW))
 
 
 ## Measure
