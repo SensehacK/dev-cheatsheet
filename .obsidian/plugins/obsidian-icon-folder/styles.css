@@ -1,7 +1,18 @@
+.iconize-inline-title-wrapper {
+  width: var(--line-width);
+  max-width: var(--max-width);
+  margin-inline: var(--content-margin);
+}
+
 .iconize-title-icon {
   max-width: var(--max-width);
-  width: var(--line-width);
-  margin-inline: var(--content-margin) !important;
+  margin-right: var(--size-4-2);
+}
+
+.iconize-icon-in-link {
+  transform: translateY(20%);
+  margin-right: var(--size-2-2);
+  display: inline-flex;
 }
 
 .iconize-icon {
@@ -15,10 +26,6 @@
 .nav-folder-title,
 .nav-file-title {
   align-items: center;
-}
-
-.iconize-setting .setting-item-control .dropdown {
-  margin-right: 12px;
 }
 
 .iconize-setting input[type='color'] {
@@ -65,8 +72,7 @@
   line-height: 1.3;
 }
 
-.iconize-modal.prompt-results
-  .suggestion-item.suggestion-item__center {
+.iconize-modal.prompt-results .suggestion-item.suggestion-item__center {
   justify-content: center;
 }
 
@@ -102,17 +108,13 @@
 }
 
 /* Custom rule modal. */
-.iconize-custom-rule-modal .modal-title h3 {
-  margin: 0;
-}
-
-.iconize-custom-rule-modal .modal-content {
+.iconize-custom-modal .modal-content {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.iconize-custom-rule-modal .modal-content input {
+.iconize-custom-modal .modal-content input {
   width: 100%;
   margin-right: 0.5rem;
 }
