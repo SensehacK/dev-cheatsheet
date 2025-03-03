@@ -52,6 +52,8 @@ Also I'm loving the Windows Terminal which I'll make the default shell of Linux 
 
 ## Root File Manager
 
+When you have no write access to edit `/etc/openvpn/` directory in unix, fedora flavored raspbian os on raspberry.
+
 
 File manager GUI with root privileges use this command.
 
@@ -62,3 +64,7 @@ sudo pcmanfm
 ```
 
 [File manager with root privileges](https://forums.raspberrypi.com/viewtopic.php?t=164083)
+
+
+Transfer files in VNC `vnc connect` has option to add files at the top bar. So you can seamlessly transfer config files from macOS or other device to ssh / vnc connection.
+This is mostly used for updating my `OpenVPN` config from my provider. PITA sometimes but it works for 1 year and once in a while I have to actually step in and see the logs on portainer / docker with what's wrong with the open source container image or my provider. Usually its the provider's problem. 
