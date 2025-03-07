@@ -21,16 +21,17 @@ After dSYMs
 
 `archive -> Show in Finder -> Show package contents` 
 
-https://stackoverflow.com/questions/7088771/iphone-where-the-dsym-file-is-located-in-crash-report?noredirect=1&lq=1
+[SO | iphone-where-the-dsym-file-is-located-in-crash-report](https://stackoverflow.com/questions/7088771/iphone-where-the-dsym-file-is-located-in-crash-report?noredirect=1&lq=1)
+
 
 ## Reference
 
-https://medium.com/naukri-engineering/overview-of-dsym-crashlytics-in-ios-dfd72eae8b58
+[medium | overview-of-dsym-crashlytics-in-ios](https://medium.com/naukri-engineering/overview-of-dsym-crashlytics-in-ios-dfd72eae8b58)
 
-https://stackoverflow.com/questions/3656391/whats-the-dsym-and-how-to-use-it-ios-sdk
+[SO | whats-the-dsym-and-how-to-use-it-ios-sdk](https://stackoverflow.com/questions/3656391/whats-the-dsym-and-how-to-use-it-ios-sdk)
 
-https://stackoverflow.com/questions/48296774/firebase-crashlytics-upload-missing-dsyms-to-see-crashes-from-1-versions-ios?noredirect=1&lq=1
+[SO | firebase-crashlytics-upload-missing-dsyms-to-see-crashes-from-1-versions-ios](https://stackoverflow.com/questions/48296774/firebase-crashlytics-upload-missing-dsyms-to-see-crashes-from-1-versions-ios?noredirect=1&lq=1)
 
-https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile-ios/configuration/retrieve-dsyms-bitcode-apps/
+[new-relic-mobile-ios/configuration/retrieve-dsyms-bitcode-apps/](https://docs.newrelic.com/docs/mobile-monitoring/new-relic-mobile-ios/configuration/retrieve-dsyms-bitcode-apps/)
 
-https://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs
+[apple dev | diagnosing-issues-using-crash-reports-and-device-logs](https://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs)

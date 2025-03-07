@@ -9,7 +9,8 @@
 - Perseus (Mask) Apple watch unlock.
 
 ## Privacy
-https://adblock-tester.com
+
+[adblock-tester](https://adblock-tester.com)
 
 - MyBloxx
 - No clipboard for you

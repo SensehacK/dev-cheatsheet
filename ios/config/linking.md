@@ -92,7 +92,7 @@ Use this command to launch website or URL on simulator
 ```bash
 xcrun simctl openurl booted "https://reddit.com/"
 
-xcrun simctl openurl booted "com.trackvia://"
+xcrun simctl openurl booted "com.projectApp://"
 ```
 
 [6-ways-of-launching-deeplinks-on-ios-simulator](https://isapozhnik.com/articles/6-ways-of-launching-deeplinks-on-ios-simulator/)

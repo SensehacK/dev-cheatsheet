@@ -7,7 +7,7 @@ Debug
 Staging
 Production
 
-[Article](https://sarunw.com/posts/how-to-set-up-ios-environments)
+[sarunw | how to setup ios env](https://sarunw.com/posts/how-to-set-up-ios-environments)
 
 
 ## Xcode Build
@@ -28,12 +28,12 @@ Use Swift Compiler - Custom flags option in Xcode Target build settings in order
 #endif
 ```
 
-[swiftbysundell |feature-flags-in-swift](https://www.swiftbysundell.com/articles/feature-flags-in-swift/)
+[swiftbysundell | feature-flags-in-swift](https://www.swiftbysundell.com/articles/feature-flags-in-swift/)
 
-[environment_variables](environment_variables.md)
+[environment_variables](/os/linux/environment_variables.md)
 
 Caveat in Swift Package - custom compilation flag is isn't supported in build configuration for SPM. Xcode 13. SPM only supports two build configs `.debug` and `.release` 
-You can read more about it [here](/ios/xcode/spm#Pitfalls)
+You can read more about it [here SPM pitfalls](/ios/xcode/spm#Pitfalls)
 
 ### Custom compilation conditions
 

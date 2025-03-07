@@ -36,6 +36,11 @@ On mac it would be in
 cd ~/Library/MobileDevice/Provisioning\ Profiles && open .
 ```
 
+open them in VS code and you can quickly sift through the UUID's in an array just to get a basis for it.
+Utilize `Build in Text Editor`
+Note: Editing this way won't be helpful since it would be invalid due to checksum hash checks and not being signed.
+
+
 
 ## Opening / Viewing
 
@@ -46,3 +51,5 @@ How to view the content of the file?
 ```
 
 You can find the app name, profile creation date, name of provisioning profile, etc.
+
+

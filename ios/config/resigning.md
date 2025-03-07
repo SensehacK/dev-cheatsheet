@@ -3,6 +3,9 @@
 
 You can define resigning an app package in order to install it on your physical device. This is usually for testing purposes when you don't have developer profiles setup on newer devices or newer macs. Maybe you're testing a CI/CD server where your physical iOS, iPadOS devices are connected and you want to quickly deploy a dirty build for testing purposes without the hassle of setting up provisioning and other certificate - private public key pair authentication and integrity checks done by apple for not running un-signed code / packages / applications on device.
 
+## Mind Map
+
+[Jailbreak Tools](/ios/library/jailbreak#Tools)
 
 ## Side Loading
 
@@ -24,6 +27,11 @@ com.google.ios.youtube.SN256SDGA
 com.firecore.infuse.SN256SDGA
 com.christianselig.Apollo.SN256SDGA
 ```
+
+## Signing
+
+Esign is a tool used for signing iPA apps with Apple Developer/Distribution certificates and installing them. iOS 18 - iOS 8 jailbreak FInder App
+[eSign github](https://github.com/iOS17/Esign)
 
 
 ## Errors
@@ -57,6 +65,22 @@ Install failed: Guru Meditation 7c026a@447:14dd8f ('expected 1, found 0', ArrayE
 ```
 
 Just use a different iOS iPA file to install
+
+### ApplicationVerificationFailed
+
+```
+There was an issue during installation: 3892346881: ApplicationVerificationFailed (Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.tOBasF/extracted/Payload/Apollo.app : 0xe8008001 (An unknown error has occurred.))
+```
+
+### App ID with Identifier not available
+
+
+```
+Install failed: Guru Meditation 0db732@934:3aea77 Failed: (9401) An App ID with Identifier 'com.firecore.infuse2' is not available. Please enter a different string
+```
+
+Just used different ID
+
 
 ## Automatic Resigning 7 days Free account
 
@@ -127,27 +151,6 @@ Source[iOSGods](https://iosgods.com)
 
 // End
 
-## Reddit Client Custom Third Party App
-
--  **Obtain Reddit Client-ID - API Credentials**
-```steps
-Step 1: Go to [https://reddit.com/prefs/apps](https://reddit.com/prefs/apps) and sign in
-Step 2: Click the are you a developer? create an app... button
-Step 3: Fill in the fields
-name: Use whatever
-Choose Installed App
-description: can be left blank
-about url: can be left blank
-redirect uri: `apollo://reddit-oauth`
-create app
-```
-
-- After creating the app you'll get a client identifier; it'll be a bunch of random characters. That is your API key.
-- Install Apollo (w/ApolloPatcher) iPA file on iOS / iPadOS device.
-- Enter the Client ID in the settings and tap "Set RedditClientID".
-
-Source code
-https://github.com/EthanArbuckle/Apollo-CustomApiCredentials
 
 ## macOS
 
@@ -175,8 +178,16 @@ macOS quirks
 Force quitting keychain access also fixed this issue for me.
 
 
-## Repos
 
-[ipa Library](https://ipalibrary.net/ipa-library-apps/)
 
-[ios ninja](https://iosninja.io/ipa-library-ios)
+
+### Libraries version mismatch
+
+```log
+Checking private key
+Generating keypair
+ERROR: Guru Meditation da8d42@156:ad7080 Libraries version mismatch, please reinstall Sideloadly!
+Install failed: Guru Meditation da8d42@156:ad7080 Libraries version mismatch, please reinstall Sideloadly!
+```
+
+Just a reinstall worked fine for me on Sideloadly.
