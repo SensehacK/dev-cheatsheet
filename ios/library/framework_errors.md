@@ -25,7 +25,7 @@ Could not find module '' for target 'arm64-apple-ios-simulator'; found: x86_64-a
 ## Missing package product
 
 Local Swift Packages Error for each package dependency Missing package product
-https://stackoverflow.com/questions/69281786/local-swift-packages-stopped-working-in-xcode-13/69793517#69793517
+[SO | spm xcode](https://stackoverflow.com/questions/69281786/local-swift-packages-stopped-working-in-xcode-13/69793517#69793517)
 
 ## Library not loaded dyld cache
 
@@ -65,6 +65,14 @@ This fixed the issue for me:
 The framework is once embedded in the project by one dynamic dependency and once by an static dependency. And it ends up being integrated in the bundle twice. You should be able to pin point which framework you need to make optional and the error shall disappear.
 
 For example if you are using both app center crashes and data dog crashes (just an example) in your project, you will end up both those dependencies requiring 'PLCrashReporter.framework'. this is used by 'DataDogCrashReporter' that is a dynamic library and AppCenterCrashReporter that is a static library. I made 'DataDogCrashReporter' an optional and didn't embed it any more.
+
+### Apple Bug
+
+Happens on iPhone 15 Pro and Max.
+
+[apple thread](https://forums.developer.apple.com/forums/thread/751303)
+
+
 
 
 ## CFBundleIdentifier Collision

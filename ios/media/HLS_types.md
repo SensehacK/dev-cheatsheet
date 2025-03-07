@@ -36,6 +36,9 @@ the `EXT-X-PLAYLIST-TYPE` tag with a value of `EVENT`
 
 [apple dev doc](https://developer.apple.com/documentation/http-live-streaming/event-playlist-construction)
 
+It is kinda a hybrid of Live and VOD. 
+
+
 Event playlists are typically used when you want to allow the user to seek to any point in the event, such as for a concert or sports event.
 
 It doesn't have `EXT-X-ENDLIST` in the initial HLS file.
@@ -62,6 +65,10 @@ fileSequence69.ts
 #EXT-X-ENDLIST
 ```
 
+
+Now some company uses this internally to reference it as `Hot Recording` or `iVOD` but a cold recording could be a `VOD`
+Learn more about [Recordings](architecture/terminologies/video_terms#Recording)
+ 
 ## Multi Variant
 
 [Apple dev | Multi variant doc](https://developer.apple.com/documentation/http-live-streaming/creating-a-multivariant-playlist)
@@ -73,7 +80,7 @@ It doesn't have EXT-X-PLAYLIST-TYPE in the .m3u8 ? playlist file.
 http://example.com/low/index.m3u8
 
 #EXT-X-STREAM-INF:BANDWIDTH=640000,RESOLUTION=640x360,CODECS="avc1.42e00a,mp4a.40.2"
-http://example.com/high/index.m3u8)
-
+http://example.com/high/index.m3u8
 ```
 
+Some say this is referred as `Master` playlist as well. MV playlist.

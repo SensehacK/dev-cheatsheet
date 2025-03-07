@@ -11,7 +11,8 @@ NotificationCenter
 	}
 	.store(in: &cancelBag)
 
-@objc private func responseToHeat(_ notification: Notification ) {
+@objc 
+private func responseToHeat(_ notification: Notification ) {
     let state = ProcessInfo.processInfo.thermalState
     switch state {
     case .nominal:
@@ -26,7 +27,6 @@ NotificationCenter
       DDLogInfo("THERMAL: Thermal state is UNKNOWN.")
     }
   }
-
 ```
 
 [SO | thermal state monitoring Singleton](https://stackoverflow.com/a/70139834/5177704)

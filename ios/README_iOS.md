@@ -24,6 +24,7 @@ Here you can find various documentation related to iOS development which can hel
 
 ### [macOS](README_macOS.md)
 
+### [media](/ios/media/README_media.md)
 ### [objectiveC](README_objectiveC.md)
 
 ### [swift](README_swift.md)
@@ -36,21 +37,23 @@ Here you can find various documentation related to iOS development which can hel
 
 ### [ui](README_ui.md)
 
-[visionOS](README_VisionOS.md)
+[visionOS](README_visionOS.md)
 ### [xcode](README_xcode.md)
 
 ## Resources
 
-[iOS Sources](misc/resources#iOS)
+[iOS Sources](/misc/resources#iOS)
 
-[Great Mentors IRL](misc/resources#Offline)
+[Great Mentors IRL](/misc/resources#Offline)
 
 [WWDC videos](https://github.com/insidegui/WWDC?)
+
+[WWDC Index](https://nonstrict.eu/wwdcindex)
 
 ## Contribution
 
 Feel free to fork this project & raise a pull request to add more relevant information regarding development tools used in iOS ecosystem.
 
-## Author : [Kautilya Save](https://kautilya.design/)
+## Author : [Kautilya Save](https://sensehack.github.io/)
 
 ### [GitHub](https://github.com/SensehacK)

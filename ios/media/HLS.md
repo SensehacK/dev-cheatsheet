@@ -35,9 +35,7 @@ HLS stream having :
 . 3 alternate subtitle tracks (English, English with audio description and French)
 [Link](https://sample.vodobox.com/planete_interdite/planete_interdite_alternate.m3u8)
 
-### Spatial 3D HLS
 
-[historic_planet_content 3D video](https://devstreaming-cdn.apple.com/videos/streaming/examples/historic_planet_content_2023-10-26-3d-video/DoVi_P20_34000_t2160p/prog_index.m3u8)
 
 ## HLS Keys
 
@@ -102,6 +100,12 @@ DRMAGNOSTIC="some_base_64_key_value"
 
 Other
 
+
+## Low Latency
+
+[apple | ll-hls](https://developer.apple.com/documentation/http-live-streaming/enabling-low-latency-http-live-streaming-hls)
+
+
 ## References
 
 [apple docs | HLS](https://developer.apple.com/documentation/http-live-streaming)
@@ -152,9 +156,44 @@ video - 0 = is the highest quality in the HLS format.
 
 [stream recorder download](https://chromewebstore.google.com/detail/stream-recorder-download/iogidnfllpdhagebkblkgbfijkbkjdmm?pli=1)
 
+[hls analyzer | cloud](http://hlsanalyzer.com)
+
 [apple HLS validator](https://developer.apple.com/documentation/http-live-streaming/using-apple-s-http-live-streaming-hls-tools)
 
 This gives us a debug analysis of the stream in question to validate whether its a stream issue or our player code issue.
+
 ```sh
-mediastreamvalidator https://314.linear-ag-xcr/v1/frag/bmff/enc/wea/t/OsaK_UD_T_7381_0_7683.m3u8`
+mediastreamvalidator https://314.linear-ag-xcr/v1/frag/bmff/enc/wea/t/OsaK_UD_T_7381_0_7683.m3u8
 ```
+
+After that it will create a json file which we can ingest into the hlsreport tool.
+
+```sh
+hlsreport validation_data_4K_superbowl.json
+```
+
+[wwdc | hls tools](https://developer.apple.com/videos/play/wwdc2016/510/?time=543)
+
+## streams
+
+Test streams provided for HLS testing or playback.
+### Apple
+
+[hls examples](https://developer.apple.com/streaming/examples/)
+
+### Third Party 
+
+[github | hls-test-streams](https://github.com/bengarney/list-of-streams?tab=readme-ov-file)
+
+### Spatial 3D HLS
+
+[historic_planet_content 3D video](https://devstreaming-cdn.apple.com/videos/streaming/examples/historic_planet_content_2023-10-26-3d-video/DoVi_P20_34000_t2160p/prog_index.m3u8)
+
+## Troubleshooting
+
+Use a network sniffer / firewall - man in the middle attack which snoops all your network requests.
+I recommend [these apps](tools/apps#Debugging). 
+
+
+
+[debug hls streams](https://www.fastpix.io/blog/how-to-troubleshoot-hls-live-stream-in-ios)

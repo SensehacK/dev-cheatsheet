@@ -1,12 +1,10 @@
 # Library
 
+[ads](/ios/library/ads.md)
+
 [API_design](API_design.md)
 
-[avKit](avKit.md)
-
-[avPlayer](avPlayer.md)
-
-[avPlayerItem](avPlayerItem.md)
+[available](available.md)
 
 [codable](codable.md)
 
@@ -18,7 +16,7 @@
 
 [[date_time]]
 
-[DRM](DRM.md)
+[deprecations](/ios/library/deprecations.md)
 
 [[foundation_library]]
 
@@ -28,11 +26,9 @@
 
 [functional_programming](functional_programming.md)
 
-[HLS](HLS.md)
-
 [import](import.md)
 
-[jailbreak](ios/library/jailbreak.md)
+[jailbreak](/ios/library/jailbreak.md)
 
 [jenkins](jenkins.md)
 
@@ -46,7 +42,7 @@
 
 [[moya]]
 
-[[README_objectiveC]]
+[process](ios/library/process.md)
 
 [realm](realm.md)
 

@@ -46,8 +46,7 @@ do {
 
 ### Multiple Tracks 
 
-https://developer.apple.com/documentation/avfoundation/media_playback/selecting_subtitles_and_alternative_audio_tracks
-
+[apple dev | selecting_subtitles_and_alternative_audio_tracks](https://developer.apple.com/documentation/avfoundation/media_playback/selecting_subtitles_and_alternative_audio_tracks)
 
 ### Loading media data async
 
@@ -73,6 +72,11 @@ iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. 
 
 
 ## [Video Geeking](tools/apps#Geeking)
+
+## Video Toolbox
+
+[apple docs | video toolbox](https://developer.apple.com/documentation/videotoolbox)
+
 
 ## Reference
 

@@ -8,23 +8,9 @@
 - https://developer.apple.com/streaming/fps/
 - [BrightCove SDK](https://sdks.support.brightcove.com/getting-started/native-video-playback.html)
 
-## Apple Fairplay
-
-DRM is pretty poorly documented, at least Apple's Fairplay solution.
-[this article is somewhat helpful](https://ottverse.com/apple-fairplay-streaming-drm-how-does-it-work/)
-
-[Playing Encrypted HLS content on iOS using swift](https://assist-software.net/snippets/how-play-encrypted-http-live-streams-offline-avfoundation-ios-using-swift-4)
+## [Apple Fairplay](fairplay.md)
 
 ## Errors
-
-### FairPlay Streaming is not supported on simulators
-
-You need to disable fairplay streaming on simulators to run it appropriately.
-
-```sh
-*** Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: '*** -[AVContentKeySession initWithKeySystem:storageDirectoryAtURL:legacyWebKitCompatibilityMode:] FairPlay Streaming is not supported on simulators'
-```
-
 
 ## HDCP 
 
@@ -37,7 +23,6 @@ HDCP is a form of DRM that's baked into the HDMI standard. If you're watching me
 
 [scene ripping process context amazon / netflix](https://torrentfreak.com/the-scene-pirates-ripping-content-from-amazon-netflix-190707/)
 
-[Reddit | Piracy wiki](https://www.reddit.com/r/piracy/wiki/faq/)
 
 ### DRM Stripping
 
@@ -49,6 +34,17 @@ HDCP is a form of DRM that's baked into the HDMI standard. If you're watching me
 
 [forensic-watermarking](https://help.moxion.io/article/121-forensic-watermarking)
 
+
+## Headers
+
+
+### PSSH
+
+
+[Protection System Specific Header](https://docs.axinom.com/services/drm/technical-articles/pssh/) 
+
+
+
 ## References
 
 [How DRM works video](https://www.youtube.com/watch?v=mn2POYEiJVE)
@@ -57,6 +53,4 @@ HDCP is a form of DRM that's baked into the HDMI standard. If you're watching me
 
 [playing-video-avplayer-swiftui](https://benoitpasquier.com/playing-video-avplayer-swiftui/)
 
-[Apple DRM how does it work](https://ottverse.com/apple-fairplay-streaming-drm-how-does-it-work/)
 
-[Wiki | FairPlay](https://en.wikipedia.org/wiki/FairPlay)

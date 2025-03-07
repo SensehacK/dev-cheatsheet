@@ -13,9 +13,11 @@ Frameworks have important purposes
 
 ## Mind Map
 
-[Xcode Build process Mind Map link](ios/xcode/build.md)
+[Xcode Build process](/ios/xcode/build.md)
 
-[packaging](packaging.md)
+[packaging](/process/packaging.md)
+
+[SPM | Binary framework](/ios/xcode/spm#binary_xcframework)
 
 ## Process
 
