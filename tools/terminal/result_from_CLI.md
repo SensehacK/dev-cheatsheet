@@ -24,5 +24,5 @@ git_tag_name=${git_tag_result:25}
 Access the tag variable in CLI
 
 ```sh
-swift run xvia tag ${git_tag_name} -p
+swift run projectVia tag ${git_tag_name} -p
 ```

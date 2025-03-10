@@ -42,6 +42,16 @@ man help - curl
 [Manual](https://curl.se/docs/manual.html)
 
 
+### Allowlist
+
+Check if ur whitelisted / allowlist for IP address blocked.
+
+```sh
+curl -4 -Lvs https://domain.mainDomain.us/TESTTESTTEST
+curl -6 -Lvs https://domain.mainDomain.us/TESTTESTTEST
+```
+
+
 ## Error 
 
 ### SSL error

@@ -32,3 +32,10 @@ Disable auto update on firefox nightly
 ### don't allow [website] to prompt me
 Restarting the browser should be able to reset those queries.
 https://support.mozilla.org/en-US/questions/1351901
+
+
+### Pocket
+
+Disable pocket functionality
+
+To disable the "Save to Pocket" feature in Firefox, go to "about:config" in your address bar, search for "pocket", and then toggle the "extensions.pocket.enabled" preference to "false" which will effectively disable the Save to Pocket functionality

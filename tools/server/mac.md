@@ -1,5 +1,5 @@
 
-## MindMap
+## Mind Map
 
 [vnc](vnc.md)
 

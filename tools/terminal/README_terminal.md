@@ -27,6 +27,8 @@
 
 [node](../../tools/terminal/node.md)
 
+[ohMyZsh](ohMyZsh.md)
+
 [power_menu](../../tools/terminal/power_menu.md)
 
 [process](../../tools/terminal/process.md)

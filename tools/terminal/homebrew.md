@@ -13,13 +13,21 @@ brew -v
 ```
 
 Home brew configuration dump.
+
 ```sh
 brew config
 ```
 
 Gives you the installed location of your homebrew. Helpful to determine whether its x86 or ARM arch.
+
 ```sh
 which brew
+```
+
+### Update Package
+
+```sh
+brew upgrade package_name
 ```
 
 ## Packages
@@ -112,13 +120,14 @@ best to install the x86 "version" of Homebrew, otherwise it will install arm64 v
 
 *Just be sure to run the Homebrew install command in an x86 shell*
 
-```
+```sh
 $ arch -x86_64 zsh
 $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 From here, as long as you're in this x86 zsh shell, you can use Homebrew as usual to install x86 packages:
-```
-$ brew install go
+
+```sh
+brew install go
 ```
 
 You'll know it's the right version because it will install into `/usr/local` instead of the usual `/opt`. 
@@ -126,8 +135,8 @@ This also means you can install both versions of Homebrew, and arm64 packages wi
 However, unless necessary I wouldn't recommend it because I can imagine accidentally using the wrong version 
 pretty easily. If you only have one version, you can install packages without entering x86 zsh, just prefix with `arch -x86_64`:
 
-```
-$ arch -x86_64 brew install go
+```sh
+arch -x86_64 brew install go
 ```
 
 If you install both versions, you'll also need to specify the full path to the `brew` binary as one will live under `/opt`
@@ -144,4 +153,36 @@ Although used in the examples, if you just want to work with Go, you should be a
 #### Checking Architecture
 Remember you can always use the `file` command on a binary to see what architecture its built for.
 
+
+## Architecture
+
+checks the hardware or terminal which is running for it.
+
+```sh
+uname -m
+```
+
+prints values such as `x86_64`, `i686`, `arm`, or `aarch64`.
+
+
+
+## Errors
+
+
+### Failed to link all completions
+
+```
+Permission denied @ rb_file_s_symlink - (../../../Homebrew/completions/zsh/_brew, /usr/local/share/zsh/site-functions/_brew)
+
+Failed during: /usr/local/bin/brew update --force --quiet...
+```
+
+Solution - permission error
+```
+Yes, it entirely explains the "permission denied" error you got. `sudo chown -R $(whoami) /usr/local/share/zsh/site-functions` should fix that, then run the Homebrew installer again to ensure everything is installed correctly.
+```
+
+Makes sure your firewall isn't blocking certain things on it and have your VPN turned off maybe for easier debugging.
+
+[Github | thread](https://github.com/orgs/Homebrew/discussions/3227)
 

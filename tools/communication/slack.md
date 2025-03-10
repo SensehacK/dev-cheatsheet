@@ -52,3 +52,35 @@ Create workflow in slack.
 ## Creating quick meetings / event
 
 [Outlook for Slack automation](https://slack.com/help/articles/360020134853-Microsoft-Outlook-Calendar-for-Slack)
+
+## Github App
+
+Subscribe / unsubscribing repo notifications.
+
+[Github readme](https://github.com/integrations/slack?tab=readme-ov-file#customize-your-notifications)
+
+
+```sh
+/github subscribe list
+```
+
+```sh
+/github unsubscribe owner/repo-name
+/github unsubscribe company-viper-player/nitro-player-apple
+/github subscribe repo-name
+
+/github subscribe company-viper-player/zephyr
+```
+
+You may need to run it on the channel the automation / workflow is setup. So maybe it only works on the sandbox channel.
+
+Only unsubscribe reviews and comments of the PRs
+
+```sh
+/github unsubscribe player/-ios reviews comments
+/github unsubscribe company-viper-player/nitro-player-apple reviews comments
+
+/github unsubscribe company-viper-player/zephyr reviews comments
+```
+
+[github slack automation readme](https://github.com/integrations/slack/blob/master/README.md)
