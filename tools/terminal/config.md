@@ -28,7 +28,9 @@ It seems I was not able to assign these values appropriately
 `device` environment variable = iPhone-
 
 ```sh
+{% raw %}
 device: ${{ 'xcrun xctrace list devices 2>&1 | grep -oE ''iPhone.*?[^\(]+'' | head -1 | awk ''{$1=$1;print}'' | sed -e "s/ Simulator$//" ' }}
+{% endraw %}
 ```
 
 Zsh
