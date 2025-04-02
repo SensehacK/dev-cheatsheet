@@ -12,7 +12,24 @@ What I did on my setup is this workaround :
 2. Put this file in a folder on your host machine that will be mounted in your container to `/etc/openvpn/custom` as stated in the documentation.
 3. Change docker env var `OPENVPN_PROVIDER` to `custom`
 
+docker container error for [docker tranmission open vpn](https://github.com/haugene/docker-transmission-openvpn?tab=readme-ov-file) repo
+```error
+2025-04-02 00:59:47 VERIFY ERROR: depth=2, error=self-signed certificate in certificate chain: C=US, ST=NY, L=New York, O=KeepSolid Inc., OU=KeepSolid VPN Root CA, CN=KeepSolid VPN Root CA, emailAddress=admins@keepsolid.com, serial=590830292952905902500539248317331898854520058318
+2025-04-02 00:59:47 OpenSSL: error:0A000086:SSL routines::certificate verify failed
+2025-04-02 00:59:47 TLS_ERROR: BIO read tls_read_plaintext error
+2025-04-02 00:59:47 TLS Error: TLS object -> incoming plaintext read error
+2025-04-02 00:59:47 TLS Error: TLS handshake failed
+2025-04-02 00:59:47 SIGTERM[soft,tls-error] received, process exiting
+```
 
+
+### File copy issues
+
+Either do `sudo pacman` or use ssh file copy 
+
+```sh
+sudo scp local_filePath.ovpn /etc/openvpn
+```
 
 ## Custom Config
 
