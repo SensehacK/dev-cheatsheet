@@ -16,6 +16,17 @@ What I did on my setup is this workaround :
 
 ### 2025 OVPN
 
+docker container error for [docker tranmission open vpn](https://github.com/haugene/docker-transmission-openvpn?tab=readme-ov-file) repo
+
+```error
+2025-04-02 00:59:47 VERIFY ERROR: depth=2, error=self-signed certificate in certificate chain: C=US, ST=NY, L=New York, O=KeepSolid Inc., OU=KeepSolid VPN Root CA, CN=KeepSolid VPN Root CA, emailAddress=admins@keepsolid.com, serial=590830292952905902500539248317331898854520058318
+2025-04-02 00:59:47 OpenSSL: error:0A000086:SSL routines::certificate verify failed
+2025-04-02 00:59:47 TLS_ERROR: BIO read tls_read_plaintext error
+2025-04-02 00:59:47 TLS Error: TLS object -> incoming plaintext read error
+2025-04-02 00:59:47 TLS Error: TLS handshake failed
+2025-04-02 00:59:47 SIGTERM[soft,tls-error] received, process exiting
+```
+
 ```log
 2025-03-03 22:04:00 SIGTERM[soft,tls-error] received, process exiting
 Modification: Change tls-crypt keyfile path
@@ -61,6 +72,14 @@ Created a new directory named `mar_2025` and in that copied the `.opvn` file nam
 - OPENVPN_CONFIG=mar_2025
 volumes:
 	- /etc/openvpn/mar_2025:/etc/openvpn/custom/
+```
+
+### File copy issues
+
+Either do `sudo pacman` or use ssh file copy 
+
+```sh
+sudo scp local_filePath.ovpn /etc/openvpn
 ```
 
 ## Custom Config
