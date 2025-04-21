@@ -17,6 +17,8 @@
 
 [Process](terminologies/process_terms.md)
 
+[Security](security_terms.md)
+
 [Software](terminologies/software_terms.md)
 
 [Video](terminologies/video_terms.md)

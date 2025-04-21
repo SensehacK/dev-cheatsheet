@@ -88,3 +88,9 @@ Design patterns in mobile app development usually comes is MVC, MVVM, MVP, VIPer
 ## Tech Debt
 
 When I was starting with my career as a software engineer, I always used to consider tech debt as a no brainer. Since if there is a debt in the SDLC we should address it in subsequent releases. Well it was easier said than done. Tackling tech debt requires a monumental shift in release planning and management should also be ready to invest in those decisions. Since it is a collective effort of prioritizing new features or perfecting existing functionality or addressing bugs. It is a common problem and it fits perfectly with the `333` Trifecta prioritization problem. 
+
+
+## Books
+
+Mythical Man month - book.
+[Bible of Software Engg](https://en.wikipedia.org/wiki/The_Mythical_Man-Month)

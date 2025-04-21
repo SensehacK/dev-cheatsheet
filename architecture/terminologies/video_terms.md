@@ -1,9 +1,8 @@
-https://proxyman.io/posts/2019-11-15-Can-we-bypass-ssl-pinning# Video Terms
+# Video Terms
 
 ## Intro
 
 So while being in high level architecture meetings around working in video streaming space, I quickly realize the exorbitant amount of acronyms used daily in those conversations. So I decided to expand upon my learnings and categorized them so that its easier for me to refer or forward my learnings to someone in need.
-
 
 ## Text
 ### Subtitles
@@ -12,12 +11,21 @@ The term "subtitles" is used for transcriptions of spoken text providing transla
 
 **Subtitles** are a form of captioning used to translate the audio dialogue from one language into another. Simply put, subtitles translate a video’s language into another. You’ll see subtitles used in many foreign films and programs.
 
+[beginners guide for subtitles](https://www.xl8.ai/blog/the-beginners-guide-for-subtitle-format-users)
+
 ### Closed Captions
 
 Closed captions are created to **allow people who are** **deaf or hard of hearing to experience the video**, so they also include background sounds and speaker changes. On the other hand, subtitles assume that the viewer can hear the audio and as a result do not contain the background sounds or notifications for speaker changes.
 
 [What is 608 and 708 Closed Captioning?](https://www.3playmedia.com/blog/difference-cea-608-cea-708-captions/)
 
+
+
+### Hard vs Soft
+
+"Soft" subtitles (which can be toggled on and off) are supported by the WebVTT standard in a similar fashion to captions (they've both categorized as timed metadata);
+
+if you preferred "hard" subtitles (where they are "burned" into the video), you would provide the subtitle data to your video encoder during the transcoding process.
 
 ## Media 
 
@@ -135,6 +143,12 @@ Windows has Spatial audio surround.
 Apple Airpods support spatial audio with extra meta data of input source file and use headphones accelerators hardware sensors to map it to surround sound.
 
 
+
+### Audio ducking
+
+Audio ducking is a technique where the volume of one audio signal (the "ducked" signal) is temporarily lowered when another audio signal (the "ducking" signal) is present, often used to improve clarity and intelligibility, especially when mixing music with narration or other audio.
+
+
 ## Ads
 
 ### Pre Roll | Mid Roll | Post Roll
@@ -142,6 +156,20 @@ Apple Airpods support spatial audio with extra meta data of input source file an
 Pre roll just means ads that are played before content playback begins.
 Mid Roll would be an ad being played in middle.
 Post Roll ad at the end.
+
+### Quartile
+
+First Quartile | Second (Median) | Third Quartile
+Q1 | Q2 (Mid) | Q3
+
+25% | 50% | 75%
+
+
+[quartile formula](https://www.cuemath.com/quartile-formula/)
+
+```js
+export type QuartileType = "First" | "Second" | "Third" | "Last";
+```
 
 ### Ad Break
 
@@ -154,7 +182,9 @@ Collection | Array of Ad Breaks in a video stream file.
 
 
 
-### DAI - Dynamic Ad Insertion
+### DAI
+
+Dynamic Ad Insertion
 
 
 ### Freewheel 
@@ -163,6 +193,51 @@ Ad server which you can plug in - whose sole responsibility is to give us an arr
 
 ### Server Side Ads
 
+SSAI 
+Server Side Ad Insertion
+
+### Segment
+
+I don't know what is a segment
+
+### SCTE - 35
+
+Scete tag to find the information around HLS / stream.
+Convey information 
+
+> This standard, “Digital Program Insertion Cueing Message for Cable” (SCTE 35), is the core signaling standard for advertising, Program and distribution control (e.g., blackouts) of content for content providers and content distributors. SCTE 35 is being applied to QAM/IP, Title VI/TVE (TV Everywhere), and live/time shifted (DVR, VOD, etc.) delivery. SCTE 35 signals can be used to identify advertising Breaks, advertising content, and programming content (e.g., specific Programs and Chapters within a Program).
+
+[Message cues embedded in content manifests.](https://www.scte.org/standards/library/catalog/scte-35-digital-program-insertion-cueing-message/)
+
+#### AI Overview
+
+SCTE-35 tags are used in HTTP Live Streaming (HLS) to indicate ad breaks, content transitions, and other program information: 
+
+- **Ad breaks**: SCTE-35 tags signal when ads should be inserted into the stream. 
+
+- **Content transitions**: SCTE-35 tags indicate when content should be switched within the stream. 
+
+- **Program information**: SCTE-35 tags can indicate program information such as intro/outro credits, chapters, blackouts, and extensions. 
+
+- **Blackouts**: SCTE-35 tags can signal when a piece of content should be replaced or omitted from a broadcast. 
+
+SCTE-35 tags are visible in the .m3u8 manifests of HLS. Some examples of SCTE-35 tags include: 
+
+- **#EXT-X-CUE-OUT**: Indicates the start of an ad insertion or splicing event.
+- **#EXT-X-CUE-IN**: Indicates the conclusion of an ad insertion or splice event.
+- **OATCLS-SCTE35**: Contains the base64 encoded raw bytes of the original SCTE-35 advertising available message.
+- **EXT-X-DATERANGE**: Uses UTC to rely on timing.
+
+SCTE-35 markers can be included in transport stream (TS), DASH, HLS, and CMAF outputs.
+
+
+```ts
+#EXT-X-SCTE35:TYPE=0x41,CUE=/DB7AAAAAAAAAP/wBQb+sPKHTfsn+XAABBAACRCZCg///////
+```
+
+[Ref | Bitmovin | SCTE-35 guide](https://bitmovin.com/blog/scte-35-guide/)
+
+[scte parser | online tool](https://tools.middleman.tv/scte35-parser)
 
 ## HLS 
 
@@ -174,7 +249,14 @@ This HLS file is also sometimes referred as manifest file.
 
 ## [HLS Format Examples](HLS_types.md)
 
-## VOD
+## Assets
+
+There are many different asset types in video streaming. 
+OOH - Out of Home
+**TVE**  - TV Everywhere
+m3u8 manifest on iOS and .mpd on Android. .mp4 fragments
+
+### VOD
 
 Video on demand
 
@@ -192,26 +274,46 @@ IVOD	Internet Video on Demand
 IVOD	Interactive Video On Demand
 IVOD    Instant Video On Demand
 
-## Linear
+IVOD - Instant content on demand. Usually a few seconds behind T6 Linear broadcast. 
 
-Also referred as `TVE Linear`
+
+### TVE VOD
+
+Content on demand available OOH  
+
+### Linear
+
+Also referred as `TVE Linear` or `Live TV`
 
 [what is linear tv](https://target-video.com/what-is-linear-tv/)
 
+### Live Asset
 
-## Live Asset
-
-
-## T6 Title 6 
+### T6 Title 6 
 
 Basically just rules from USA govt. to make sure they comply with certain rules
+Title 6 or Title VI – Cable television service, which is governed by Title VI of the Communications Act.
 
 [what-title-6-video](https://www.nexttv.com/news/what-title-6-video-381860)
 
+### T6 LINEAR
+
+Live content NOT available OOH  
+
+### T6 VOD
+
+Content on demand NOT available OOH  
 
 ### T6 VOD Server Side Ads
 
 A special fallback protocol exists for T6 VOD assets which inserts ads from server side. It kinda manipulates manifest. Internally its codenamed as VEX.
+
+
+
+### Other
+
+PURCHASE - These are assets that the user pays to watch.  
+RECORDING - User recorded content. Can be watched in home or non home locations
 
 
 
@@ -279,7 +381,9 @@ Super 8 - Internal tool to package streams via Just in time to deliver right enc
 ## Decoders
 
 
+### O&O
 
+Owned and Operated channels. Generally 3rd party channels with their own encoder/decoder - packaging the whole nine yards of delivering their IPs.
 
 ## Broadcasting
 
@@ -323,7 +427,7 @@ Digital Video Recorder - [Wiki](https://en.wikipedia.org/wiki/Digital_video_reco
 cloud DVR
 
 [CDVR FAQs by Spectrum](https://www.spectrum.net/support/tv/cdvr-faq)
-
+Recording (can be for TVE or T6)
 
 
 ### TSB
@@ -368,6 +472,13 @@ Interactive programming guides (IPGs)
 Or TV Listings | TV guides
 
 
+###  Channel Surfing
+
+When you watch channels quickly going back and forth with other cable channels to see if something interesting is going on.
+
+[wiki](https://en.wikipedia.org/wiki/Channel_surfing)
+
+
 ## Session
 
 ### Heartbeat 
@@ -379,7 +490,6 @@ Could be also extended towards the Analytics heartbeats.
 
 
 ## CDN 
-
 
 ### Client Steering
 
@@ -423,14 +533,20 @@ DSP (Digital Signal Processing)
 
 ## Analytics
 
-### Nielson
+### Nielsen
 
-The company to catch analytics by actual hardware in live tv.
+The company to catch audience viewing measurement analytics by actual hardware in live tv.
 
 ### VPA
 
 Internal Platform Analytics which plugs in the data depending on the object file defined for us.
 
+
+### Open Measurement
+
+Its like an ad measurement analytics service like Nielsen. But for ads - verification.
+
+[open measurement sdk](https://iabtechlab.com/standards/open-measurement-sdk/)
 
 
 
@@ -444,8 +560,6 @@ You can do it via i-frame or something in the HLS manifest file
 
 
 ## Playback
-
-
 ### Trick Play
 
 When you disable the fast forward or rewind on the player controller in the video. When you disable / enable the trick play - it gives the user an option to get full control of the scrubbing or jumping on the timeline ++ / -- .
@@ -468,24 +582,14 @@ Showcasing how much progress it has made eg. 2 mins video
 
 but its not purely for ads as you think of them, they could have a bumper for another program before or after the content with this API like for live tv programming.
 
-
-
-
-
 ### Retune
 
 When the player needs to be deallocated and then retuned or restarted from scratch in order to initiate the state properly. Reset basically.
 
-
-
-
-
-
 ## DRM
 
 Digital Rights Management
-
-
+[DRM](ios/media/DRM.md)
 ### Hardware
 
 ### Software
@@ -496,7 +600,7 @@ Digital Rights Management
 ### Fairplay
 
 Apple's variant of DRM on audio / video. HLS and AV Foundation | AVKit libraries.
-
+[fairplay](ios/media/airplay.md)
 
 
 ## Brands
@@ -511,7 +615,7 @@ Sky EPG
 Tata Sky - joint venture with Tata (India) & Sky
 
  
-#### Coniviva | Conviva
+#### Conviva
 
 I believe this is just a product name for Sky (Europe) which does the URL parsing and resolving.
 CDN steering and analytics module for Video streaming.
@@ -555,10 +659,37 @@ Discovery
 
 
 
+
+## Hardware
+
+### TV
+
+Television
+
+
+### CTV
+
+Connected TV
+
+### LG
+
+Life's Good
+
+
+## Software
+
+### webOS
+
+Palm webOS, which was bought by HP (Hewlett Packard) and then LG bought it for their CTV OS. First webOS tv, I believe in 2013 - 14. I used to love my first webOS tv from LG. Multitasking and what not.
+
+### Fusion Player
+
+Seems like something internally used at comcast for web js player.
+
+
 ## Reference
 
 [Closed Captions vs Subtitles: What's the Difference?](https://www.ai-media.tv/knowledge-hub/insights/closed-captions-vs-subtitles/)
-
 
 [vod-streaming-versus-live-streaming-versus-ott-the-modern-video-economy](https://cloudinary.com/guides/live-streaming-video/vod-streaming-versus-live-streaming-versus-ott-the-modern-video-economy)
 
