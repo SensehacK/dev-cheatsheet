@@ -9,6 +9,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 ## List
 
+[ads](thoughts/ads.md)
+
 [decision_making](decision_making.md)
 
 [ecosystem](../thoughts/ecosystem.md)
@@ -20,6 +22,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 [immigration](immigration.md)
 
 [Is this life](../thoughts/Is_this_life.md)
+
+[job_search](job_search.md)
 
 [management](management.md)
 
@@ -33,6 +37,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 [people](../thoughts/people.md)
 
+[piracy](piracy.md)
+
 [politics](../thoughts/politics.md)
 
 [proverbs](../thoughts/proverbs.md)
@@ -40,3 +46,7 @@ Disclaimer: To Err Is Human. Don't cancel me!
 [rants](../thoughts/rants.md)
 
 [seniority](seniority.md)
+
+[teamwork](teamwork.md)
+
+[techbro](techbro.md)

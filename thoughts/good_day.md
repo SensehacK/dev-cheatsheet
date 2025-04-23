@@ -52,9 +52,28 @@ Inspired by Ice Cube - Today was a good day
 - no more `not enough disk space` popups
 - didn't even `Your system has run out of application memory` popup for the day
 - even company spyware didn't hinder my mac's performance
+- no need to refresh my token or ssh keys
+- auto generated `.xctestplan` or unit test scheme worked without any intervention
+- no `path` not found errors | references for terminal commands
+- no dreaded teams / slack ringtone on my ears
+- resolved issue with just screenshot
+- cross team even acknowledged they broke something and will fix it
+- no mid day `2FA` popups
+- debug logs from xcode or other toolchain were helpful to trace it.
+- product requirements didn't change mid sprint
+- upper management didn't change quarterly targets
+- cross platform development was breezy
+- apple simulator worked the first time without timing out or erroring out
+- mac app window management - restored perfectly on multiple monitors
+- didn't even have to increase my font or change my 4k resolution when screen-sharing
+- constructive PR feedback provided by me was implemented without extra citations or proofs
+- CI/CD enhancements worked flawlessly
+- github / gitlab CI/CD logs helped without running it locally
+- no flaky tests failure
+- 
 
 ## Apple Issues Mind Map
 
-[spm errors](ios/xcode/spm#Errors)
+[spm errors](/ios/xcode/spm_errors)
 
-[xcode build errors](ios/xcode/build.md#Errors)
+[xcode build errors](/ios/xcode/build_errors)

@@ -23,3 +23,11 @@ What they can’t do but a real staff engineer can do are a long list of things 
   
 I can go on but if you didn’t get the idea by now, you have a lot to learn my sweet summer “staff” engineer.
 ```
+
+
+
+## Imposter Syndrome
+
+imposter syndrome
+
+[dunning kruger effect in programming](https://udenna.medium.com/the-dunning-kruger-effect-and-programming-c5a74071bce3)
