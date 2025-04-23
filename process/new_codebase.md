@@ -8,6 +8,11 @@ As a developer or someone new in a team who recently join, it is always a steep 
 
 ## Code Linter
 
+[markdownlint](https://github.com/markdownlint/markdownlint)
+
+[swift_lint](/ios/config/swift_lint.md)
+
+
 
 ## References
 

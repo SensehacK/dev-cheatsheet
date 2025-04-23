@@ -18,7 +18,7 @@ We can make sure to follow Semantic Versioning when it comes to releasing softwa
 
 Architecture support libraries would be different in sizes as it depends on how we are packaging them into the architecture support.
 Universal with include `x86 & amd_64` + `arm64`
-Internal doc on framework exporting in [iOS / Xcode / Apple ecosystem](ios/library/framework#Build%20Output)
+Internal doc on framework exporting in [iOS / Xcode / Apple ecosystemlibrary/framework#Build%20Output)
 
 [arm64 package 147MB](https://github.com/jgraph/drawio-desktop/releases/download/v22.1.2/draw.io-arm64-22.1.2.dmg)
 vs
@@ -34,6 +34,8 @@ Good release notes could make a big difference compared to just normal bug fixes
 [Smart product updates](https://announcekit.app/blog/5-smart-ways-to-announce-product-updates/)
 
 [Rant changelog](https://piunikaweb.com/2021/06/13/opinion-hey-devs-give-us-proper-update-changelogs-release-notes/)
+
+[John Carmac's Plan archive](https://github.com/ESWAT/john-carmack-plan-archive/tree/master)
 
 ## Semantic Versioning
 

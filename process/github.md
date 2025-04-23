@@ -83,7 +83,7 @@ Kanban automatically updated with appropriate rules and Workflows.
 
 [Peer Review - restrictions](peer_review.md#Restrictions)
 
-[github_Enterprise](github_Enterprise.md)
+[github_enterprise](github_enterprise.md)
 
 [github_actions](github_actions.md)
 

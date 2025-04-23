@@ -49,6 +49,11 @@ public override func isEqual(_ object: Any?) -> Bool {
 [code_formatting](code_formatting.md)
 [Code Linter](greenfield_code.md##Code%20Linter)
 
+[markdown lint | common mark spec](https://spec.commonmark.org/)
+
+[another spec | markdownlint](https://github.com/markdownlint/markdownlint/blob/main/example/markdown_spec.md)
+
+
 ## Swift Specific Tips
 
 [best_practices](best_practices.md)

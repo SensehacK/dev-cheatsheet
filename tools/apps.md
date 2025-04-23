@@ -8,6 +8,16 @@ All my favorite apps listed here used in SDLC.
 
 - [Firefox](firefox.md) Nightly / Main 
 - Safari 
+- Firefox on Android
+- Orion on iOS (coz ublock origin extension support)
+
+### Extensions
+
+- uBlock Origin
+- Dark Reader
+- Bypass Paywall clean
+- Video downloader helper
+- yt-dlp is not easily able to download or pick the URL from web.
 
 ## Writer
 
@@ -26,6 +36,8 @@ All my favorite apps listed here used in SDLC.
 - [Rectangle](https://rectangleapp.com/) 
 - istats pro
 - [Monitor Control](https://github.com/MonitorControl/MonitorControl)
+- [BetterDisplay](https://github.com/waydabber/BetterDisplay)
+- [mac - windows taskbar](https://lawand.io/taskbar/)
 
 ### Other notes
 
@@ -47,8 +59,8 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 ## Task Manager
 
-- Things by Cultured Code
-- be focused pro - pomodoro app
+- [Things by Cultured Code](https://culturedcode.com/things/)
+- [be focused pro](https://apps.apple.com/us/app/be-focused-pro-focus-timer/id961632517?mt=12) - pomodoro app
 
 ## Scheduler
 
@@ -60,15 +72,24 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 - Dash
 
+## Organizer
+
+- PDF Expert | Writing or searching PDFs, great for ebooks, apple ecosystem
+- [Datashare](https://datashare.icij.org/) Used for consolidating documents with links, journalists
+- Obsidian
+
 ## Terminal
 
 - [iTerm](iterm2.md)
 
 ## Debugging 
 
-- [Proxyman](https://proxyman.io/) - network sniffer 
+- [Proxyman](https://proxyman.io/) - network sniffer | [proxyman](proxyman.md)
 - [Postman](https://www.postman.com/downloads/) for API prototyping 
+- [bruno](https://www.usebruno.com/) - oos API client
 - Little Snitch
+- [Charles](https://www.charlesproxy.com/) - network sniffer |  [charles_proxy](charles_proxy.md)
+- Lulu 
 
 
 ## Network
@@ -82,6 +103,10 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - json validation
 
 
+## Telemetry
+
+- [google santa fork](https://github.com/northpolesec/santa) Tool to monitor binary authorization
+- 
 ## Convertors
 
 - [Date time timezone convertors](https://time.lol/#2001-09-11T12:14:00-00:00) 
@@ -143,10 +168,11 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - [m4vgear](https://www.m4vgear.com/m4vgear-for-windows.html)
 - [IINA video player](https://iina.io/) 
 - cli download utility [aria2](https://aria2.github.io/)
-- fav project [youtube_dl](youtube_dl.md)
+- fav project [youtube_dl](youtube_dl.md) | yt-dlp
 - [ffmpeg](ffmpeg.md) video conversion cli
 - handbrake - video encoder decoder GUI
 - [Media Info - OOS tool](https://mediaarea.net/en/MediaInfo) to get media info in GUI.
+- [mpv.net](https://github.com/mpvnet-player/mpv.net) Windows 
 
 ### Project
 
@@ -154,6 +180,10 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - geo verification proxy - VPN and browser session - decryption and encryption
 - youtube [community sourced sponsor sharing](https://sponsor.ajay.app/) like Waze reporting tool.
 
+
+### Drivers
+
+- macOS [USB Overdrive](https://www.usboverdrive.com/information/)
 ### Geeking 
 
 Codec - HEVC x265 - fav
