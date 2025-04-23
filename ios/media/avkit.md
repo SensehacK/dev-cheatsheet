@@ -20,6 +20,7 @@ SwiftUI + Video player to stream.
 ## [AVPlayer](avPlayer.md)
 
 ## [AVAsset](avAsset.md)
+
 ## [avPlayerItem](avPlayerItem.md)
 
 ## Guides
@@ -52,19 +53,6 @@ do {
 
 [apple dev | Loading media data asynchronously](https://developer.apple.com/documentation/avfoundation/media_assets/loading_media_data_asynchronously)
 
-
-
-## Quirks
-
-### Impossible to stop AVPlayer
-
-[impossible-to-stop-avplayer](https://stackoverflow.com/questions/32993896/impossible-to-stop-avplayer?noredirect=1&lq=1)
-
-### Blank Video but audio audible
-
-iOS 16.4 simulator bug for `HLS` streams. Confirmed on Apple developer website. Spent around 20 mins debugging what is wrong with my code overall.
-
-[My own project POC](https://github.com/SensehacK/swift/tree/master/swiftUI/VideoContent)
 
 ## Interview Questions
 

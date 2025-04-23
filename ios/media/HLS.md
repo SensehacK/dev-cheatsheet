@@ -68,6 +68,25 @@ Protocol `HLSTagDescriptor` and `HLSTagValueIdentifier`
 #EXT-X-XCAL-CONTENTMETADATA:KEYID="bd8e7d69-saw4-6a00-1eb9-637364ad6a4c",DRMAGNOSTIC="ZXlKNE5YUWpVekksa3r3XXzNFTnZrSFE="
 ```
 
+
+### I-FRAME
+
+```
+#EXT-X-I-FRAMES-ONLY
+```
+
+iOS supports fast forward and reverse playback. However, you don't need to produce special-purpose content to support fast forward and reverse playback. All you need to do is specify where the I-frames are. I-frames, or _intra-coded frames_, are encoded video frames whose encoding is independent of any other frame. To specify where the I-frames are, iOS 5 and later use an I-frame only playlist. The **EXT-X-I-FRAMES-ONLY** tag indicates that each media segment in the playlist describes a single I-frame.
+
+
+
+### Independent Segments
+
+
+```
+#EXT-X-INDEPENDENT-SEGMENTS
+```
+
+
 ## Techniques
 
 ### Switch Live to Event Record
@@ -106,23 +125,6 @@ Other
 [apple | ll-hls](https://developer.apple.com/documentation/http-live-streaming/enabling-low-latency-http-live-streaming-hls)
 
 
-## References
-
-[apple docs | HLS](https://developer.apple.com/documentation/http-live-streaming)
-
-[what-is-hls-video-streaming-and-how-does-it-work](https://api.video/blog/video-trends/what-is-hls-video-streaming-and-how-does-it-work/)
-
-[hls-http-live-streaming-how-does-it-work](https://ottverse.com/hls-http-live-streaming-how-does-it-work/)
-
-[what-is-hls-streaming-and-how-do-you-deploy-it](https://www.cardinalpeak.com/blog/what-is-hls-streaming-and-how-do-you-deploy-it)
-
-[http-live-streaming](https://www.dacast.com/blog/http-live-streaming/)
-
-[hls-streaming-protocol](https://www.dacast.com/blog/hls-streaming-protocol/)
-
-[apple developer | doc archive | HLS Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/UsingHTTPLiveStreaming/UsingHTTPLiveStreaming.html)
-
-[github  public test videos HLS](https://gist.github.com/jsturgis/3b19447b304616f18657)
 
 
 ## Specifications
@@ -135,7 +137,6 @@ Other
 ## Highest quality
 
 video - 0 = is the highest quality in the HLS format.
-
 
 ## Playback
 
@@ -189,11 +190,22 @@ Test streams provided for HLS testing or playback.
 
 [historic_planet_content 3D video](https://devstreaming-cdn.apple.com/videos/streaming/examples/historic_planet_content_2023-10-26-3d-video/DoVi_P20_34000_t2160p/prog_index.m3u8)
 
-## Troubleshooting
-
-Use a network sniffer / firewall - man in the middle attack which snoops all your network requests.
-I recommend [these apps](tools/apps#Debugging). 
 
 
+## References
 
-[debug hls streams](https://www.fastpix.io/blog/how-to-troubleshoot-hls-live-stream-in-ios)
+[apple docs | HLS](https://developer.apple.com/documentation/http-live-streaming)
+
+[what-is-hls-video-streaming-and-how-does-it-work](https://api.video/blog/video-trends/what-is-hls-video-streaming-and-how-does-it-work/)
+
+[hls-http-live-streaming-how-does-it-work](https://ottverse.com/hls-http-live-streaming-how-does-it-work/)
+
+[what-is-hls-streaming-and-how-do-you-deploy-it](https://www.cardinalpeak.com/blog/what-is-hls-streaming-and-how-do-you-deploy-it)
+
+[http-live-streaming](https://www.dacast.com/blog/http-live-streaming/)
+
+[hls-streaming-protocol](https://www.dacast.com/blog/hls-streaming-protocol/)
+
+[apple developer | doc archive | HLS Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/UsingHTTPLiveStreaming/UsingHTTPLiveStreaming.html)
+
+[github  public test videos HLS](https://gist.github.com/jsturgis/3b19447b304616f18657)

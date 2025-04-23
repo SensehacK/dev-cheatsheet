@@ -34,15 +34,11 @@ HDCP is a form of DRM that's baked into the HDMI standard. If you're watching me
 
 [forensic-watermarking](https://help.moxion.io/article/121-forensic-watermarking)
 
-
 ## Headers
-
 
 ### PSSH
 
-
 [Protection System Specific Header](https://docs.axinom.com/services/drm/technical-articles/pssh/) 
-
 
 
 ## References

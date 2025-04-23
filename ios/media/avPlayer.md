@@ -24,7 +24,9 @@ override func observeValue(forKeyPath keyPath: String?, of object: Any?, change:
 ### [How to detect user selection of subtitles when using AVPlayerViewController](https://stackoverflow.com/questions/49412371/how-to-detect-user-selection-of-subtitles-when-using-avplayerviewcontroller)
 
 
-## Selecting Tracks AV Media Playback
+## Tracks
+
+### Selecting Tracks AV Media Playback
 
 [Selecting Subtitles and Alternative Audio Tracks](https://developer.apple.com/documentation/avfoundation/media_playback/selecting_subtitles_and_alternative_audio_tracks)
 
@@ -33,11 +35,12 @@ override func observeValue(forKeyPath keyPath: String?, of object: Any?, change:
 [Media playback](https://developer.apple.com/documentation/avfoundation/media_playback)
 
 
+### Subtitles 
+
+[closed captioning for mobile and tv](https://www.brightcove.com/tech-talk/closed-captioning-for-web-mobile-and-tv/)
+
+
 ## Muting Audio
-
-
-```
-```
 
 ```swift
 if IsMuted == false {
@@ -51,12 +54,9 @@ if IsMuted == false {
 ```
 
 
-
 ## Optimization
 
-
 You can call `AVPlayer.play()` even when there is no AVPlayerItem in the player yet. Player records intention and when you attach playerItem, you save few milliseconds because player doesn't need to generate static image.
-
 
 ## Sound
 
@@ -74,9 +74,6 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 [SO | Make sound in vibrate DND mode](https://stackoverflow.com/questions/40089891/avplayer-does-not-sound-if-disabled-audio-vibration-on?noredirect=1&lq=1)
 
 In case you end up here, because this solution won't work on iPad, but only on iPhone: I just had that issue when setting the `AVAudioSession` category before presenting a `AVPlayerViewController`. If I set the category in the completion block of the `presentViewController` call (and before actually calling `play()`) it works fine on both device families.
-
-
-
 
 ## AVPlayerLayer
 
@@ -96,7 +93,6 @@ I don't think AVPlayer needed to do anything for PiP, too. There is audio focus 
 As long as appropriate flags are being set, we can utilize this native functionality provided by apple iOS / iPadOS.
 
 ## Reference
-
 
 [Apple Old | AVFoundation Programming Guide](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/02_Playback.html)
 

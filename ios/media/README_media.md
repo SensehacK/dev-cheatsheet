@@ -1,10 +1,15 @@
 
+# Media
+
+[Video Terms](video_terms.md)
 
 ## List
 
 [avAsset](avAsset.md)
 
 [avkit](avkit.md)
+
+[avMedia errors](avMedia_errors.md)
 
 [avPlayer](avPlayer.md)
 

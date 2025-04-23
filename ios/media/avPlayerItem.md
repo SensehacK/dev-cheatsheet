@@ -12,9 +12,21 @@ Apple has a property `.preferredpeakbitrate` which you can use to guide the syst
 
 [apple - docs | AVPlayerItem](https://developer.apple.com/documentation/avfoundation/avplayeritem/1388541-preferredpeakbitrate)
 
+`preferredMaximumResolution`
 
+The desired maximum resolution of a video that is to be downloaded
+[apple docs | max resolution](https://developer.apple.com/documentation/avfoundation/avplayeritem/preferredmaximumresolution)
+
+no framerate adjustment on video playback.
+
+
+expensive networks (mobile, lte, 4g, 5g ?)
+
+
+```swift
+var preferredPeakBitRateForExpensiveNetworks: Double { get set }
+```
 ## Monitor playback
-
 
 [media playback](https://developer.apple.com/documentation/avfoundation/media_playback/monitoring_playback_progress_in_your_app)
 
