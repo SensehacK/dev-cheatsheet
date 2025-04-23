@@ -31,8 +31,6 @@ Resources used by me for learning about technology.
 - [advancedswift](https://www.advancedswift.com/)
 
 
-
-
 ## Offline
 
 Mentors IRL
@@ -65,5 +63,3 @@ Mentors IRL
 
 **Ordered in time** & everyone should have great mentors so that you can leap frog your technical and soft skills expertise.
 Also always keep learning and be curious.
-
-
