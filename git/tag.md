@@ -47,7 +47,9 @@ git tag --sort=-creatordate
 
 Checkout specific tag 
 
+tag_name
 ```sh
+git checkout tags/tag_name -b branch_name
 git checkout tags/6.2.0-rc1-ga -b 6.2.0-branch
 ```
 

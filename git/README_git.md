@@ -28,9 +28,13 @@ The quintessential tool for version management. Helps your mind to be sane and n
 
 [[git_attributes]]
 
-[github_Enterprise](github_Enterprise.md)
+[github_deploy](github_deploy.md)
+
+[github_enterprise](github_enterprise.md)
 
 [[github_sync_fork]]
+
+[github_workflows](github_workflows.md)
 
 [[guidelines]]
 

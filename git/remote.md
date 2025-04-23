@@ -43,7 +43,23 @@ Changing remote origin git urls.
 ```sh
 # remove origin
 git remote remove origin
+
 ```
+
+## set origin
+
+fatal: The current branch master has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+```sh
+# add origin
+git remote add origin https://github.com/SensehacK/dev-cheatsheet/
+
+# set upstream origin
+git push --set-upstream origin master
+```
+
+## update origin
 
 ```config
 `https://github.com/SensehacK/repo\_name`

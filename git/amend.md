@@ -1,5 +1,5 @@
 # amend
-
+**
 
 
 ## Amend author
@@ -16,6 +16,7 @@ git commit --amend --author="Kautilya <kautilya.save@product_name.com>"
 
 [SO | change commit for one commit ](https://stackoverflow.com/questions/3042437/how-to-change-the-commit-author-for-one-specific-commit)
 
+Error if you have an index lock error refer to [errors](git/errors.md)
 
 ## Change Timestamp
 
@@ -49,6 +50,42 @@ git push
 ```
 
 
+## Specific commit amend 
+
+`~` is important 
+Please note the tilde `~` at the end of the command, because you need to reapply commits on top of the previous commit of `cec643cd` (i.e. `cec643cd~`).
+
+```sh
+git rebase --interactive cec643cd~
+```
+
+Then use `i` for insert, esc for `:`, `:w` for write, `:q` for quit.
+
+[vim modes](modes.md)
+
+so now you're on `cec643cd` commit & you can edit few things
+
+```sh
+git commit --amend
+```
+
+Check author date, commit date from logs.
+```sh
+git log --format=fuller
+```
+squash the commits and then you can remove that commit.
+Switch to soft when you want to delete the head commit but also keep the untracked files.
+
+remove last commit and put it in unchanged stage changes.
+you can use `--hard` if you don't want those changes in changeset.
+
+```sh
+git reset --soft HEAD~
+```
+
+
+[SO | modify specific commit](https://stackoverflow.com/questions/1186535/how-do-i-modify-a-specific-commit)
+
 ## Cherry Pick
 
 Cherry picking git commits
@@ -69,6 +106,9 @@ git commit --allow-empty
 
 Otherwise, please use 'git cherry-pick --skip'
 ```
+
+
+
 
 ## References
 
