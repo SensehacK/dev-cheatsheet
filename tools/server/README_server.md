@@ -5,6 +5,8 @@
 
 [jackett](jackett.md)
 
+[jekyll](jekyll.md)
+
 [jellyfin](jellyfin.md)
 
 [lidarr](lidarr.md)

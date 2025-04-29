@@ -2,6 +2,10 @@
 
 ## List
 
+[apps](apps.md)
+
+[backup](backup.md)
+
 [browsers](../tools/browsers/README_browsers.md)
 
 [communication](../tools/communication/README_communication.md)
@@ -16,10 +20,8 @@
 
 [utility](../tools/utility/README_utility.md)
 
-[editing](editing.md)
+[video editing](editing.md)
 
 [vim](../tools/vim/README_vim.md)
 
 [vscode](../tools/vscode/README_vscode.md)
-
-[apps](apps.md)

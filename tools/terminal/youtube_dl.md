@@ -75,6 +75,27 @@ Its downloading my remaining 97 videos.
 Use youtube-dlp as it's the latest fork for the updated youtube fixes.
 [Youtube-DLP](https://github.com/yt-dlp/yt-dlp/)
 
+
+PIP approach
+
+```sh
+which yt-dlp
+/usr/local/bin/yt-dlp
+pip3 install yt-dlp -U
+```
+
+homebrew upgrade 
+
+```sh
+brew upgrade yt-dlp
+```
+
+Or normal approach
+
+```sh
+yt-dlp -U
+```
+
 ## Alias
 
 You can add this as an alias
