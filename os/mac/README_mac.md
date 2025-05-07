@@ -14,6 +14,8 @@
 
 [disk_utility](disk_utility.md)
 
+[firewall](firewall.md)
+
 [fresh_install](fresh_install.md)
 
 [[hidden_files]]
@@ -28,10 +30,13 @@
 
 [media_api](os/mac/media_api.md)
 
+[path](os/mac/path.md)
+
 [[permissions]]
 
 [profiles](profiles.md)
 
+[santa](santa.md)
 
 ## References
 

@@ -33,11 +33,26 @@ Method 1 :
 
 ```sh
 osascript -e 'id of app "SomeApp"'
+
+osascript -e 'id of app "Safari"'
 ```
 
 Method 2 :
 
-> mdls -name kMDItemCFBundleIdentifier -r SomeApp.app
+```sh
+mdls -name kMDItemCFBundleIdentifier -r SomeApp.app
+```
 
 ## 
 
+
+## Hash
+
+MD5, sha1
+
+
+```sh
+openssl md5 fileName.docx
+shasum -a 256 fileName.txt
+shasum -a 256 /Applications/Things3.app/Contents/MacOS/Things3
+```
