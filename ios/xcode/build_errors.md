@@ -134,7 +134,7 @@ error: terminated(1): /usr/bin/xcrun --sdk macosx --show-sdk-platform-path outpu
 ```
 
 Just set the xcode default path 
-
+xcode switch
 ```bash
 sudo xcode-select -switch /Applications/Xcode.app
 ```
@@ -146,6 +146,8 @@ If you need to have Rosetta simulators in xcode, you can show them in Xcode sett
 Go to “**Product**” in the menu bar and select **Destination -> Destination Architectures -> Show both**
 
 [medium | run-rosetta-simulator-on-xcode-14-3](https://armen-mkrtchian.medium.com/run-rosetta-simulator-on-xcode-14-3-381d341364ee)
+
+Xcode 16.3, I see it renamed as `Show all Run destinations`
 
 ### Logic Testing on devices not supported
 
@@ -173,6 +175,9 @@ Enable the flag
 ** BUILD FAILED **
 ```
 Just open the project in Xcode and set your `Project.xcodeproj` file with `Targets` selected, `General` Tab and `Minimum Deployments` section to the range required by the project.
+
+
+Make sure you have open in Rosetta mode in terminal. So that carthage can properly link in llvm build commands and build cache appropriately.
 
 ## clang error building for iOS simulator
 
@@ -298,7 +303,7 @@ Build settings from command line:
 
 [Bug thread on xcode toolchain, fastlane github](https://github.com/fastlane/fastlane/issues/21293)
 
-Imp Note: Make sure your terminal or iTerm is running via `Rosetta` mode since carthage & xcode cli had issues in past with getting the `arch` build successfully running on the mac.  [check arch on terminal](ios/library/framework#Build%20Output)
+Imp Note: Make sure your terminal or iTerm is running via `Rosetta` mode since carthage & xcode cli had issues in past with getting the `arch` build successfully running on the mac.  [check arch on terminal](/ios/library/framework#Build%20Output)
 
 ## xcode build log file empty
 
@@ -406,7 +411,7 @@ No more build errors
 
 ## xcodebuild timed out while trying to read
 
-[Carthage issue CLI described here](ios/xcode/carthage#xcodebuild%20timed%20out)
+[Carthage issue CLI described here](/ios/xcode/carthage#xcodebuild%20timed%20out)
 
 ## Found no destinations for the scheme
 
@@ -499,6 +504,151 @@ After I change my typo, I had to delete my old `automatic` generated project sch
 
 After that it should compile properly? 
 
-[SPM_build_error](ios/xcode/spm_errors#missing%20required%20module)
+[SPM_build_error](/ios/xcode/spm_errors#missing%20required%20module)
 
 [forum - swift discussion](https://forums.swift.org/t/error-missing-required-module-numericsshims/58235)
+
+
+## Could not find or use auto-linked framework
+
+undefined symbols for architecture
+
+```log
+ld: warning: Could not find or use auto-linked framework 'CoreAudioTypes': framework 'CoreAudioTypes' not found
+Undefined symbols for architecture x86_64:
+  "(extension in CoreCommon):Swift.Comparable.clamped(to: Swift.ClosedRange<A>) -> A", referenced from:
+      CoreCommonTests.ClampedTests.testLowerLimitOfClampedFunction() -> () in ClampedTests.o
+ld: symbol(s) not found for architecture x86_64
+clang: error: linker command failed with exit code 1 (use -v to see invocation)
+```
+
+This was fixed by providing the `Target` Test or Source with a dependency in SPM manifest file
+
+```swift
+# Before
+.testTarget(name: "CoreCommonTests")
+
+# After
+.testTarget(name: "CoreCommonTests",
+            dependencies: ["CoreCommon"])
+```
+
+
+### bundle image is missing
+
+```error
+(kAMDMobileImageMounterPersonalizedBundleMissingVariantError: The bundle image is missing the requested variant for this device.)
+```
+
+This could be due to your test device being new or your OS version isn't supported yet for Xcode version installed.
+
+This happened for me on Xcode 15.3 & I had to update from Xcode 16.0 beta 6 to 16.2 beta 2.
+
+Restarting & turning off/on developer mode didn't help.
+
+
+### Internal inconsistency error
+
+```  
+Internal inconsistency error: never received target ended message for target ID '1' (in target 'CCommon' from project 'player-apple'). Build again to continue.
+```
+
+Just build again & hopefully it should work.
+
+
+## textual interface broken
+
+Don't know why I'm not able to see this error for my project compilation build. 
+Xcode 15.3
+
+```swift
+Failed to build module 'project' for importation due to the errors above; the textual interface may be broken by project issues or a compiler bug
+```
+
+
+## this SDK is not supported by the compiler
+
+```
+Failed to build module 'PlayerPlatform'; this SDK is not supported by the compiler (the SDK is built with 'Apple Swift version 5.10 (swiftlang-5.10.0.13 clang-1500.3.9.4)', while this compiler is 'Apple Swift version 6.0.3 effective-5.10 (swiftlang-6.0.3.1.4 clang-1600.0.30)'). Please select a toolchain which matches the SDK
+```
+
+
+
+## never received target ended message
+
+```log
+Internal inconsistency error: never received target ended message for target ID '53' (in target 'XTV' from project 'X2'). Build again to continue.
+```
+
+
+## scheme command not found
+
+```sh
+xcodebuild: error: The directory /Users/sensehack/git/cloud/dev/ does not contain an Xcode project.
+
+./generate_docs.sh: line 32: -scheme: command not found
+```
+
+
+
+This fixes by providing `-workspace` to xcodebuild docbuild
+
+```sh
+# invoke xcode build to create documentation
+xcodebuild docbuild \
+-workspace 'Player.xcworkspace' \
+-scheme $TARGET_SCHEME \
+-derivedDataPath $DERIVED_DATA_PATH \
+-destination 'generic/platform=iOS';
+```
+
+
+
+## module not found
+
+```log
+/Users/builder/actions-runner/_work/player-apple/player-apple/Sources/PlayerCore/Events/Models/DeviceConfig.swift:9:8: error: no such module 'PlayerAnalytics'
+import PlayerAnalytics
+```
+
+This is a package based out of android KMP -> swift package `.xcframework`
+Also `PlayerCore` doesn't have this dependency target but this builds fine on Xcode GUI for the project where its a `workspace` which house `SPM project` inside it as well as a `TestUI`
+So xcode or llvm build system does some magic on GUI to automagically link those frameworks automatically.
+
+But when we run `xcodebuild` cli, it fails for me.
+
+So the fix was explicitly adding the `.product(name: "PlayerAnalytics"` inside the `package` which is failing on terminal but when I select the scheme `PlayerCore` on xcode gui it works without any errors or compilation errors.
+
+
+```swift
+Pacakge.swift
+dependencies: [
+	.package(url: "git@github.com:viper-player/zephyr.git", exact: "0.119.0"),
+	.package(url: "git@github.com:viper-player/analytics_android", exact: "7.3.3"),
+],
+
+targets: [
+	target(
+		name: "PlayerCore",
+		dependencies: [
+		    .product(name: "Zephyr", package: "zephyr"),
+		    .product(name: "PlayerAnalytics", package: "analytics_android"),
+		],
+		path: "Sources/PlayerCore",
+        plugins: [.plugin(name: "SwiftLintBuildToolPlugin",
+					      package: "SwiftLintPlugins")]
+		)
+]
+```
+
+[SO | spm module not found](https://stackoverflow.com/questions/57165778/getting-no-such-module-error-when-importing-a-swift-package-manager-dependency)
+
+This also connects with the next xcode build error as well below `package is required using a stable-version`
+## package is required using a stable-version
+
+This started because we had to support flutter team coz they couldn't access github releases artifact `.zip` `.xcframework` deliverable. So we had to move that artifact into the repo and tag it ( i know weird stuff with flutter ) but bare with me, the branch rules work fine on our machines but for some reason their build system craps out on them with this config 
+
+```sh
+xcodebuild: error: Could not resolve package dependencies:
+  Failed to resolve dependencies Dependencies could not be resolved because package 'player-apple' is required using a stable-version but 'player-apple' depends on an unstable-version package 'analytics_android' and 'video_player_apple' depends on 'player-apple' 0.118.0.
+```
