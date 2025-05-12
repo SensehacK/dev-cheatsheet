@@ -5,7 +5,11 @@
 ### Parser Issue
 
 ```log
-Liquid Exception: Liquid syntax error (line 31): Variable '{{ 'xcrun xctrace list devices 2>&1 | grep -oE ''iPhone.*?[^\(]+'' | head -1 | awk ''{$1=$1;print}' was not properly terminated with regexp: /\}\}/ in tools/terminal/config.md
+Liquid Exception: Liquid syntax error (line 31): 
+{% raw %}
+Dont use the { } if you want to have errors.
+Variable '{{ 'xcrun xctrace list devices 2>&1 | grep -oE ''iPhone.*?[^\(]+'' | head -1 | awk ''{$1=$1;print}' was not properly terminated with regexp: /\}\}/ in tools/terminal/config.md
+{% endraw %}
 ```
 
 So for some reason it was parsing my code in escaped markdown format 

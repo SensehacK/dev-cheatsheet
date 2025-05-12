@@ -93,6 +93,7 @@ I added this LFDI to my devices in Xcel and the certificates worked a few second
 Currently have it pulling in on my Energy dashboard with:
 
 ```yaml
+{% raw %}
 sensor:
   - platform: command_line
     unique_id: xcel_meter_power
@@ -122,6 +123,7 @@ homeassistant:
     sensor.smart_electric_meter_power:
       device_class: power
       state_class: measurement
+{% endraw %}
 ```
 
 
