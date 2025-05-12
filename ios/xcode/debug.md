@@ -56,11 +56,7 @@ po swift\_variable/ objects
 
 [SO link](https://stackoverflow.com/questions/4735156/xcode-debugger-view-value-of-variable) [Apple Doc](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/debugging_tools.html) [Complete Guide](https://andela.com/insights/the-complete-guide-to-debug-swift-code-with-lldb/) [LLDB Debug](https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49) [Advanced LLDB](https://medium.com/@fadiderias/xcode-and-lldb-advanced-debugging-tutorial-part-1-31919aa149e0)
 
-## Breakpoint
-
-In UI Xcode IDE, you can specify breakpoints on the code as well group breakpoints, share them and also add specific type of breakpoints. Like having exception breakpoint, printing debug logs, conditional breakpoints.
-
-[Apple dev | Stepping through code and inspecting variables to isolate bugs](https://developer.apple.com/documentation/xcode/stepping-through-code-and-inspecting-variables-to-isolate-bugs)
+## [Breakpoint](breakpoint.md)
 
 ## Print Memory address
 
@@ -303,12 +299,56 @@ if let accessLog: AVPlayerItemAccessLog = playerItem?.accessLog(),
 
 ## Framework swapping
 
-[Debugging framework post](ios/library/framework#Debugging)
+[Debugging framework post](/ios/library/framework#Debugging)
 
 [SO | how-to-debug-framework-source-from-main-project](https://stackoverflow.com/questions/13836628/how-to-debug-framework-source-from-main-project)
 
 [SO | post debugger not showing variable names objc](https://stackoverflow.com/questions/31219422/swift-debugger-does-not-show-variable-values-when-importing-objc-framework)
 
 [SO | swift-debugger-does-not-show-variable-values-when-importing-objc-framework](https://stackoverflow.com/questions/31219422/swift-debugger-does-not-show-variable-values-when-importing-objc-framework)
+
+
+
+There is actually a way to debug the an iOS project that uses a .framework, if you have the source code. This worked for me in xcode 4.6.
+
+You can do in the following way:
+
+1. Insert breakpoints in your .framework's source code.
+2. Compile the project that uses the framework and run it on your device (iPhone, iPad, etc.). This step is just to make sure you have the most updated project installed on your device.
+3. Stop the process running on your device and go to xcode -> product -> Attach to process -> _YourApp_. In xcode 6, "Attach to Process" is under the Debug menu.
+
+If you don't see your app's name in the applications listed there, go to "By process Identifier (PID) or Name..." and enter the app's name. Now, if you'll run the application in your device, it should break in the breakpoints that are enabled.
+
+[SO source](https://stackoverflow.com/a/16812890)
+
+
+
+
+## Debug Release App
+
+
+Normally Debug builds have optimisation disabled (`-O0`) to make debugging easier, whereas Release builds have optimisation enabled (`-O3` or `-Os`), which makes the code run much faster, but also makes debugging harder (but not impossible). You can just go into the build settings in Xcode in the Debug configuration and temporarily turn up the optimisation level - this will keep all the other debug goodies (symbols etc) but hopefully also flush out the Release mode bug. (Don't forget to reset the optimisation level to `-O0` in the Debug configuration when you're done!)
+
+
+Run code in release or not
+
+
+```swift
+#if DEBUG
+    print("Debug")
+#else
+    print("Release")
+#endif
+```
+[sarunw | Run code in Release build](https://sarunw.com/posts/run-code-in-release-build-in-xcode/)
+
+[sarunw | check-if-swift-code-is-in-debug-build-configuration](https://sarunw.com/posts/how-to-check-if-swift-code-is-in-debug-build-configuration/)
+
+
+## Search Cryptic Errors
+
+[apple developer forums](https://developer.apple.com/forums/) could be the best resource when searching for cryptic error messages which aren't documented or verbose enough for the console logs.
+
+Usually people on the forum respond towards it, rather than Stack overflow.
 
 

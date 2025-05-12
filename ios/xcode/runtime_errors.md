@@ -32,6 +32,30 @@ The number of times an iOS Engineer has to go back to basics like
 - Restarting Mac
 
 
+## EXC_BAD_ACCESS
+
+```log
+Crash: xctest (63466) withThrowingTaskGroup<A, B>(of:returning:isolation:body:)
+
+
+Exception Type:  EXC_BAD_ACCESS (SIGSEGV)
+Exception Subtype: KERN_INVALID_ADDRESS at 0x0000000000000004
+Exception Codes: 0x0000000000000001, 0x0000000000000004
+VM Region Info: 0x4 is not in any region.  Bytes before following region: 4366909436
+      REGION TYPE                    START - END         [ VSIZE] PRT/MAX SHRMOD  REGION DETAIL
+      UNUSED SPACE AT START
+--->  
+      __TEXT                      10449c000-1044a0000    [   16K] r-x/r-x SM=COW  /Applications/Xcode-16.2.0-Beta.2.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/Library/Xcode/Agents/xctest
+Termination Reason: SIGNAL 11 Segmentation fault: 11
+Terminating Process: exc handler [56073]
+
+Triggered by Thread:  3
+
+Thread 0::  Dispatch queue: com.apple.main-thread
+```
+
+Odd why this only happens on my Xcode 16.2 beta local build but this doesn't fail on CI build server which runs on Xcode 16 official release.
+
 
 ## NSRangeException
 

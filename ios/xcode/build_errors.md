@@ -433,14 +433,18 @@ After countless restarts of the CI triggers using Github actions & macOS runner 
 Since running the same command on locally cloned repo was able to generate the build output just fine.
 
 ```yml
+{% raw %}
 env:
 	scheme: ${{ 'CoreC' }}
 	platform: ${{ 'iOS Simulator' }}
 	workspace: ${{ 'package-custom.xcworkspace' }}
+
 run: | 
 	device=`xcrun xctrace list devices 2>&1 | grep -oE 'iPhone.*?[^\(]+' | head -1 | awk '{$1=$1;print}' | sed -e "s/ Simulator$//"`
 	xcodebuild -workspace "$workspace" -scheme "$scheme" -destination "platform=$platform,name=$device" build
+{% endraw %}
 ```
+
 Shutting down the computer to go outside. Wasted 30 mins to tackle this CI issue.
 
 

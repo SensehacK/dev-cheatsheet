@@ -91,6 +91,10 @@ github "https://github.com/org/repo_name.git" == 0.6.9
 Sometimes it is helpful to just open the generated Carthage log file and sift through the errors of what went wrong and where. Also opening the `checkout` directory and manually opening it with Xcode with your dependency could help to isolate the build failed errors.
 
 
+```sh
+carthage update --verbose
+```
+
 ## Updating
 
 For a Cartfile like the following
@@ -182,7 +186,7 @@ Note: Make sure your VPN is turned on since one of the few dependencies needed V
 
 ### Deployment target mismatch
 
-This isn't Carthage specific error so you can refer my [xcode build doc -> Errors ](ios/xcode/build#deployment%20target%20mismatch) for solution.
+This isn't Carthage specific error so you can refer my [xcode build doc -> Errors ](/ios/xcode/build#deployment%20target%20mismatch) for solution.
 
 ### Task failed with exit code 65
 
@@ -288,6 +292,7 @@ Upgrading to new carthage solved the issue - miraculously.
 [Git diff carthage](https://github.com/Carthage/Carthage/compare/0.39.0...0.40.0) upgrade from `0.39` to `0.40`
 
 
+
 ## Build local frameworks
 
 Update the project dependency to a `file:///`
@@ -302,7 +307,7 @@ github "https://github.com/player/platform_.git" == 10.9.1
 
 # New
 # local
-git "file:///Users/k7/git/cloud/platform_.git" "branch_name_local_integration_client" 
+git "file:///Users/k7/git/cloud/platform_directory" "branch_name_local_integration_client" 
 ```
 
 Carthage build system will only take committed files to the latest git checkout ref sha code. You can see that in `Cartfile.resolved`
@@ -323,6 +328,7 @@ Delete three files
 Cartfile.resolved
 Project_name in  -> Carthage/Build 
 Project_name in  -> Carthage/Checkout
+~/Library/Caches/org.carthage.CarthageKit
 ```
 
 

@@ -61,3 +61,5 @@ xcodebuild clean build test -workspace HealthSense.xcworkspace -scheme HealthSen
 
 
 [xcode terminal commands](xcode.md)
+
+[xcodebuild destination cheatsheet](https://mokacoding.com/blog/xcodebuild-destination-options/)

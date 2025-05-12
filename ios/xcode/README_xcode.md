@@ -5,7 +5,9 @@
 
 [[auto_increment]]
 
-[build](ios/xcode/build.md)
+[breakpoint](/ios/xcode/breakpoint.md)
+
+[build](/ios/xcode/build.md)
 
 [[build_commands]]
 
@@ -19,15 +21,17 @@
 
 [command_line](command_line.md)
 
-[config](ios/xcode/config.md)
+[config](/ios/xcode/config.md)
 
 [[debug]]
 
+[editor](/ios/xcode/editor.md)
+
 [app_environment_variables](app_environment_variables.md)
 
-[install](install.md)
+[install](/ios/xcode/install.md)
 
-[instruments](instruments.md)
+[instruments](/ios/xcode/instruments.md)
 
 [[ipa_generation]]
 
@@ -51,11 +55,11 @@
 
 [[target_scheme]]
 
-[updates](ios/xcode/updates.md)
+[updates](/ios/xcode/updates.md)
 
 [[wireless_deploy]]
 
-[xcode_15_presentation](xcode_15_presentation.md)
+[xcode_15_presentation](/ios/xcode/xcode_15_presentation.md)
 
 [[xcode_merge]]
 
