@@ -1,4 +1,4 @@
-# iOS Lifecycle
+# Lifecycle
 
 ## List
 

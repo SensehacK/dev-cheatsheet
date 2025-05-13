@@ -1,10 +1,10 @@
-# Objective C 
+# Objective C
 
-## List 
+## List
 
-[access_control](//ios/objectiveC/access_control.md)
+[access_control](/ios/objectiveC/access_control.md)
 
-[asynchronous_operations](asynchronous_operations.md)
+[asynchronous_operations](/ios/objectiveC/asynchronous_operations.md)
 
 [class](/ios/objectiveC/class.md)
 
@@ -14,16 +14,14 @@
 
 [errors](/ios/objectiveC/errors.md)
 
-[interface](interface.md)
+[interface](/ios/objectiveC/interface.md)
 
-[interop](interop.md)
+[interop](/ios/objectiveC/interop.md)
 
-[method](method.md)
+[method](/ios/objectiveC/method.md)
+
+[runtime](/ios/objectiveC/runtime.md)
 
 [syntax](/ios/objectiveC/syntax.md)
 
-
-
 ## Reference
-
-

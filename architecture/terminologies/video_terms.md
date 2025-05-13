@@ -4,28 +4,6 @@
 
 So while being in high level architecture meetings around working in video streaming space, I quickly realize the exorbitant amount of acronyms used daily in those conversations. So I decided to expand upon my learnings and categorized them so that its easier for me to refer or forward my learnings to someone in need.
 
-## Text
-### Subtitles
-
-The term "subtitles" is used for transcriptions of spoken text providing translations in different languages for viewers.
-
-**Subtitles** are a form of captioning used to translate the audio dialogue from one language into another. Simply put, subtitles translate a video’s language into another. You’ll see subtitles used in many foreign films and programs.
-
-[beginners guide for subtitles](https://www.xl8.ai/blog/the-beginners-guide-for-subtitle-format-users)
-
-### Closed Captions
-
-Closed captions are created to **allow people who are** **deaf or hard of hearing to experience the video**, so they also include background sounds and speaker changes. On the other hand, subtitles assume that the viewer can hear the audio and as a result do not contain the background sounds or notifications for speaker changes.
-
-[What is 608 and 708 Closed Captioning?](https://www.3playmedia.com/blog/difference-cea-608-cea-708-captions/)
-
-
-
-### Hard vs Soft
-
-"Soft" subtitles (which can be toggled on and off) are supported by the WebVTT standard in a similar fashion to captions (they've both categorized as timed metadata);
-
-if you preferred "hard" subtitles (where they are "burned" into the video), you would provide the subtitle data to your video encoder during the transcoding process.
 
 ## Media 
 
@@ -39,6 +17,7 @@ A [media resource](https://html.spec.whatwg.org/multipage/media.html#media-resou
 ### Media Element
 
 [Media elements](https://html.spec.whatwg.org/multipage/media.html#media-element) are used to present audio data, or video and audio data, to the user. This is referred to as media data in this section, since this section applies equally to [media elements](https://html.spec.whatwg.org/multipage/media.html#media-element) for audio or for video. The term media resource is used to refer to the complete set of media data, e.g. the complete video file, or complete audio file.
+
 
 
 ## Video
@@ -105,6 +84,29 @@ Standard Definition
 ### Letterboxing
 
 letterboxing (‘black bars’) in the video
+## Text
+### Subtitles
+
+The term "subtitles" is used for transcriptions of spoken text providing translations in different languages for viewers.
+
+**Subtitles** are a form of captioning used to translate the audio dialogue from one language into another. Simply put, subtitles translate a video’s language into another. You’ll see subtitles used in many foreign films and programs.
+
+[beginners guide for subtitles](https://www.xl8.ai/blog/the-beginners-guide-for-subtitle-format-users)
+
+### Closed Captions
+
+Closed captions are created to **allow people who are** **deaf or hard of hearing to experience the video**, so they also include background sounds and speaker changes. On the other hand, subtitles assume that the viewer can hear the audio and as a result do not contain the background sounds or notifications for speaker changes.
+
+[What is 608 and 708 Closed Captioning?](https://www.3playmedia.com/blog/difference-cea-608-cea-708-captions/)
+
+
+
+### Hard vs Soft
+
+"Soft" subtitles (which can be toggled on and off) are supported by the WebVTT standard in a similar fashion to captions (they've both categorized as timed metadata);
+
+if you preferred "hard" subtitles (where they are "burned" into the video), you would provide the subtitle data to your video encoder during the transcoding process.
+
 
 ## Audio
 
@@ -394,6 +396,20 @@ Emergency Alert System - this is being used for broadcasting emergency video ove
 [FCC | fema - EAS](https://www.fema.gov/emergency-managers/practitioners/integrated-public-alert-warning-system/public/emergency-alert-system)
 
 
+## Streaming
+
+### IP Video
+
+IP Video is **a term used to describe video that is distributed on an IP network**. The “IP” in IP Video stands for Internet Protocol, which is a set of standards for communicating over computer networks. IP Video devices can include cameras, hardware or software switchers, graphic workstations, and displays.
+[Source](https://streamgeeks.us/what-is-ip-video/)
+
+### OTT
+
+Over the top
+
+OTT, short for "Over-the-Top," refers to the delivery of video and audio content over the internet, bypassing traditional broadcast or cable providers. This includes services like Netflix, Amazon Prime Video, and Hulu, where users can access content through apps or websites on various devices
+
+
 ## Unique Tags
 ### SCTE 
 
@@ -586,10 +602,10 @@ but its not purely for ads as you think of them, they could have a bumper for an
 
 When the player needs to be deallocated and then retuned or restarted from scratch in order to initiate the state properly. Reset basically.
 
-## DRM
+## [DRM](/ios/media/DRM.md)
 
 Digital Rights Management
-[DRM](ios/media/DRM.md)
+
 ### Hardware
 
 ### Software

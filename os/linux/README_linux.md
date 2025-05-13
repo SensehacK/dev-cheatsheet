@@ -13,7 +13,7 @@
 
 [installation](os/linux/installation.md)
 
-[[network]]
+[[os/linux/network]]
 
 [[open_vpn]]
 

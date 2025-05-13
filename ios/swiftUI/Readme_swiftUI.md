@@ -14,7 +14,7 @@
 
 [layout](layout.md)
 
-[lifeCycle](//ios///swiftUI/lifeCycle.md)
+[lifeCycle](/ios/swiftUI/lifeCycle.md)
 
 [list](list.md)
 

@@ -8,16 +8,16 @@
 
 ## List
 
-[dictionary](dictionary.md)
+[dictionary](/ios/swift/dictionary.md)
 
-[set](set.md)
+[set](/ios/swift/set.md)
 
-[arrays](arrays.md)
+[arrays](/ios/swift/arrays.md)
 
-[decimal](decimal.md)
+[decimal](/ios/swift/decimal.md)
 
-[enum](//ios//swift/enum.md)
+[enum](/ios/swift/enum.md)
 
 [string](/ios/swift/string.md)
 
-[numbers](numbers.md)
+[numbers](/ios/swift/numbers.md)

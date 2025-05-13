@@ -68,7 +68,7 @@ tag_release:
 		# String subscript range.
     - git_tag_name=${git_tag_result:25}
     - cd SupportTool
-    - swift run xvia tag ${git_tag_name} -p
+    - swift run projectVia tag ${git_tag_name} -p
   rules:
     - if: '$CI_COMMIT_BRANCH == "ci/TV-21163-Add-tagging-at-all-layers"'
       when: always
@@ -100,7 +100,7 @@ default:
 
 	- |
 	xcodebuild test -quiet \
-	-scheme TrackViaNetwork-Package \
+	-scheme projectNameNetwork-Package \
 	-sdk iphonesimulator15.4 -destination "OS=15.4,name=iPhone 13" \
 	-only-testing:"product_nameNetworkIntegrationTests" \
 	-skip-testing:"product_nameNetworkIntegrationTests/TableServiceQA3IntegrationTests/testCreateTable" \
