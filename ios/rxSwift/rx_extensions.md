@@ -182,32 +182,27 @@ extension Reactive: RxAccountCoordinatorProtocol where Base: AccountCoordinator 
 ## Result Tuple
 
 ```swift
-		/// Splits the observable sequence into two (2) separate observable sequences based on the condition block passed to this method.
-    /// - Parameter condition: A block that returns a Bool value that determines how the sequence should be split.
-    /// - Returns: A tuple whose first member is an observable sequence that met the condition and whose
-    ///   second member is an observable sequence that didn't meet the specified condition.
-    ///
-    /// - NOTE: This method does not make any assumptions about shared resources, that is, it does not call `.share()` on the source observable before splitting it into two separate streams. It is up to the caller to determine if a `.share()` is needed and to call it accordingly. The `.share()` can be chained directly before calling this method.
-		func split(_ condition: @escaping (Element) -> Bool) -> (wasTrue: Observable<Element>, wasFalse: Observable<Element>) {
-        let wasTrue = self.filter(condition)
-        let wasFalse = self.filter { !condition($0) }
-        return (wasTrue, wasFalse)
-    }
-
-
+/// Splits the observable sequence into two (2) separate observable sequences based on the condition block passed to this method.
+/// - Parameter condition: A block that returns a Bool value that determines how the sequence should be split.
+/// - Returns: A tuple whose first member is an observable sequence that met the condition and whose
+///   second member is an observable sequence that didn't meet the specified condition.
+///
+/// - NOTE: This method does not make any assumptions about shared resources, that is, it does not call `.share()` on the source observable before splitting it into two separate streams. It is up to the caller to determine if a `.share()` is needed and to call it accordingly. The `.share()` can be chained directly before calling this method.
+func split(_ condition: @escaping (Element) -> Bool) -> (wasTrue: Observable<Element>, wasFalse: Observable<Element>) {
+	let wasTrue = self.filter(condition)
+	let wasFalse = self.filter { !condition($0) }
+	return (wasTrue, wasFalse)
+}
 ```
 
 ## Result Tuple Boolean
 ```swift
-
-    func split() -> (wasTrue: Observable<Element>, wasFalse: Observable<Element>) where Element == Bool {
-        let wasTrue = self.filter { $0 }
-        let wasFalse = self.filter { !$0 }
-        return (wasTrue, wasFalse)
-    }
+func split() -> (wasTrue: Observable<Element>, wasFalse: Observable<Element>) where Element == Bool {
+	let wasTrue = self.filter { $0 }
+	let wasFalse = self.filter { !$0 }
+	return (wasTrue, wasFalse)
+}
 ```
-
-
 
 ## UIViewController
 
@@ -240,49 +235,32 @@ extension Reactive where Base: UIViewController {
         let source = self.sentMessage(#selector(Base.dismiss)).map { $0.first as? Bool ?? false }
         return ControlEvent(events: source)
     }
-
-
 }
-
 ```
 
 
 
 My comment on recent extension addition towards ControlEvents across iOS UI life cycle events.
 
-[Gitlab MR comment](https://gitlab.com/xvia/mobile/product_name-iOS/-/merge_requests/1129#note_938251301)
-
-
 ## Logging
 
 ```swift
 extension ObservableType {
-
     func log(_ level: RxLog, lineNumber: Int = #line, function: String = #function) -> Observable<Element> {
-
         return self.do(onNext: { _ in
-
             Logger.log(level)
-
         })
-
     }
 
     func log(_ block: @escaping (Element) -> RxLogLevel?, lineNumber: Int = #line, function: String = #function) -> Observable<Element> {
-
         return self.do(onNext: { element in
-
             guard let level = block(element) else { return }
-
             Logger.log(level)
-
         })
-
     }
-
 }
 
-public enum RxLog {
+enum RxLog {
 	case warning(String)
     case error(String)
     case verbose(String)
@@ -290,7 +268,6 @@ public enum RxLog {
     case debug(String)
     case info(String)
 }
-
 ```
 
 
@@ -305,9 +282,9 @@ extension ObservableType where Element == Void { }
 ```swift
 /// Subscribes an element handler to an observable sequence.
 func subscribeNext<Object: AnyObject>(weak obj: Object, _ onNext: @escaping (Object) -> () -> ()) -> Disposable {
-        return subscribe(onNext: { [weak obj] in
-            guard let obj = obj else { return }
-            onNext(obj)()
-        })
-    }
+	return subscribe(onNext: { [weak obj] in
+		guard let obj = obj else { return }
+		onNext(obj)()
+	})
+}
 ```

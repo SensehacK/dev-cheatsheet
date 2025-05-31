@@ -44,7 +44,7 @@ If you want to get a refresher of basic concurrency concepts please read through
 
 [tasks](tasks.md)
 
-[thread](thread.md)
+[thread](ios/concurrency/thread.md)
 
 [background_tasks](background_tasks.md)
 

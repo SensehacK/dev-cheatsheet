@@ -12,7 +12,7 @@
 
 [ats_plist](ats_plist.md)
 
-[best_practices](best_practices.md)
+[best_practices](ios/config/best_practices.md)
 
 [certificate](certificate.md)
 

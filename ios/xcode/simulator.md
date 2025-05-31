@@ -12,6 +12,9 @@ You can even simulate walking or moving coordinates. That location file format h
 But this all depends on how the app or service tracks your location, some only take your word for it - like GPS coordinates, some correlate that data with `IP addresses`, some have VPN known addresses in their blocklists. Some do device discovery for eg. Home Alexa + Google Android devices which all share their IP addresses or GPS coordinates to their mothership. Which averages out their data to fizzle out your `spoofed` location data for accessing their geo-location specific content. It's a cat and mouse game with `geotracking` APIs.
 
 ![](../../assets/xcode-location-spoofing.png)
+
+[sarunw | simulate location](https://sarunw.com/posts/how-to-simulate-location-in-xcode-and-simulator/)
+
 ## API Support
 
 ### Mail
@@ -25,9 +28,9 @@ mailto:
 ```
 ## Mind Map
 
-[deep linking](ios/config/linking.md)
+[deep linking](/ios/config/linking.md)
 
-[compiler directives wildcard_checks for iOS Simulator](ios/library/wildcard_checks#Check%20Simulator)
+[compiler directives wildcard_checks for iOS Simulator](/ios/library/wildcard_checks#Check%20Simulator)
 
 
 API won’t work on simulator for opening email client with method called `-canOpenURL` with an error message thrown in console saying “error: "This app is not allowed to query for scheme mailto"
@@ -104,6 +107,11 @@ Check the simulator and copy the ID.
 
 ## Errors
 
+### preparation error
+
+```
+Previous preparation error: The developer disk image could not be mounted on this device.. Error mounting image: 0xe800010f (kAMDMobileImageMounterPersonalizedBundleMissingVariantError: The bundle image is missing the requested variant for this device.)
+```
 
 ### loaded CoreSimulatorService is no longer valid
 

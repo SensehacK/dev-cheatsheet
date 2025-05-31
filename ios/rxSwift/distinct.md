@@ -39,4 +39,4 @@ old(nil) vs new(unique_id)
 
 ## Mind Map
 
-Combine equivalent [filter](filter.md)
+Combine equivalent [filter](/ios/combine/filter.md)

@@ -84,8 +84,6 @@ public static func dateFromUTCToUserProfileTimezone(_ date: Date,
 ## Time
 
 Mutating time object so that you can work around certain scenarios about it.
-
-
 ```swift
 // Checking for custom refreshToken override
 
@@ -107,7 +105,6 @@ if let storedExpiredToken = UserDefaults.standard.value(forKey: UserDefaults.Key
 
 Date range ... operator to define a Range(startDate...endDate)
 ```swift
-
 let easementDate = expirationDate.addingTimeInterval(Constant.easementTimeInternal)
 let easementWindow = easementDate...expirationDate
 print(easementWindow)

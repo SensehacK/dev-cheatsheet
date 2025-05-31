@@ -28,7 +28,7 @@ indirect Node {
 ```
 
 
-## [Objective C Equivalent](ios/objectiveC/enum.md)
+## [Objective C Equivalent](/ios/objectiveC/enum.md)
 
 
 ## Unit test
@@ -64,7 +64,7 @@ final class SecurityTypeTests: XCTestCase {
 ```
 
 
-## [Random element](ios/swift/random#Enum)
+## [Random element](/ios/swift/random#Enum)
 
 
 

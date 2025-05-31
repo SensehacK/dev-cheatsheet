@@ -24,7 +24,7 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [decimal](/ios/swift/decimal.md)
 
-[[dictionary]]
+[[ios/swift/dictionary]]
 
 [DSAlgoTricks](/ios/swift/DSAlgoTricks.md)
 
@@ -68,7 +68,7 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [some](/ios/swift/some.md)
 
-[[string]]
+[[ios/swift/string]]
 
 [[switch]]
 

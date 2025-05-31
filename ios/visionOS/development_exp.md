@@ -49,7 +49,7 @@ Had to do the normal provisioning of new Apple hardware using the developer acco
 ## Sideloading
 
 Refer to this page I maintain for all apple related side loading or resigning needs.
-[VisionOS sideload](ios/config/resigning#visionOS)
+[VisionOS sideload](/ios/config/resigning#visionOS)
 
 
 
@@ -60,7 +60,7 @@ Refer to this page I maintain for all apple related side loading or resigning ne
 - Sideload apps
 - PlexKit
 - Video player (https://www.hackingwithswift.com/quick-start/swiftui/how-to-play-movies-with-videoplayer)
-- 3D Movie MV-HEVC
+- [3D Movie MV-HEVC](360_Video.md#3D%20Video)
 - Play around with ornaments
 - play with immersive environment
 - connect trakt tv api

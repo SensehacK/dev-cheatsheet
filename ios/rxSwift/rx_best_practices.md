@@ -148,7 +148,3 @@ Relays are a good example as they are ran on main thread so that the UI work is 
 ## View Model
 
 I'm not 100% sure but I believe we extensively use Subjects in our ViewModel with structure of "Input" and "Output" to further differentiate who does what and its expectations.
-
-
-
-

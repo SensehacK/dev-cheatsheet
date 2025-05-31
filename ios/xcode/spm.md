@@ -115,7 +115,7 @@ This location stores the Repositories resolved meta data. You need to delete the
 
 Full Swift Package manager cache directory
 
-```swift
+```sh
 rm -rf ~/Library/Caches/org.swift.swiftpm
 rm -rf ~/Library/org.swift.swiftpm
 ```
@@ -140,7 +140,7 @@ dependencies: [
 ]
 ```
 
-[Similar SPM | Xcode cache issue](ios/xcode/spm_errors#skipping%20cache)
+[Similar SPM | Xcode cache issue](/ios/xcode/spm_errors#skipping%20cache)
 
 ## Bundling
 
@@ -151,7 +151,9 @@ Swift Package Manager world, bundling basically boils down to the following:
 -   `Bundle.module` returns the bundle relative to the call site. so if you call that in `FrameworkCore/AppInfo.swift` it will return the `FrameworkCore` bundle since that file and type are associated with that bundle. if you call it in `FrameworkCoreTestKit/Mock.swift` it will return the test kit bundle since that's where that file lives. so on and so forth
 -   if you call `Bundle.main`, that will return the "product" or the bundle containing the current executable. you generally don't want to call this anymore unless you know you want the app layer bundle
 
-## Fetching latest
+## Fetching
+
+### latest
 
 You have a dependency pointed to specific branch and you push some commits on the dependency's branch. But Xcode and SPM would always use the `cache` version of that dependency. Since we didn't go for `SemVer` approach and just a branch SPM and xcode isn't smart enough to automatically pull in latest or fetch origin. Unless you nuke the cache and SPM manifest metadata with git commits for every package dependency located in `~/Library` directory.
 
@@ -195,6 +197,50 @@ products.append(.library(name: "DangerDeps", type: .dynamic, targets: ["DangerDe
 
 [spm-ifying-yapdatabase](https://www.vanille.de/blog/2020-spmifying-yapdatabase/)
 
+[medium | Carthage to SPM](https://medium.com/swlh/migrating-project-from-carthage-to-spm-1f3423abaa78)
+
+[medium | migrating to spm](https://medium.com/justeattakeaway-tech/migrating-to-swift-package-manager-efb9d2f61ddf)
+
+
+Moved to directories `Sources` and `Tests`
+
+update the info.plist files location or build scripts. Make sure its building properly.
+
+Then initialize the repo with SPM on root of the project.
+
+```sh
+swift package init --type library
+```
+
+
+Find checksum of your framework zip binary
+
+```sh
+swift package compute-checksum framework_name.xcframework.zip
+```
+
+convert Fat framework to `Xcframework`
+
+[medium | convert to universal framework](https://medium.com/strava-engineering/convert-a-universal-fat-framework-to-an-xcframework-39e33b7bd861)
+
+
+Swift ObjectiveC Swift Mixed library
+[SO | Post](https://stackoverflow.com/questions/51540665/swift-package-manager-mixed-language-source-files)
+
+[Objc C library SPM target include header](https://forums.swift.org/t/swift-package-and-xcframework-target-for-c-library-where-to-include-the-header/51163/3)
+
+
+[Private artifactory xcode spm](https://blog.eidinger.info/xcode-133-supports-spm-binary-dependency-in-private-github-release)
+
+
+Maybe I need to set my library to type `.dynamic` in order to support linking properly. Checkout other project which can help us identify why its not working.
+
+
+## binary_xcframework
+
+
+Create binary xcframework out of Swift package project.
+[SO | create SPM package into xcframework](https://stackoverflow.com/questions/72920519/turn-package-swift-file-into-binary-xcframework)
 
 
 ## [SPM Errors](spm_errors.md)
@@ -207,6 +253,15 @@ Sometimes regenerating your SSH keys on your dev machine is helpful to isolate t
 
 This [script from a stackoverflow](https://stackoverflow.com/a/74130700) user also goes through selectively deleting cache from Derived Data and SPM cache manifest files which is more efficient than nuking the whole cache as its more time consuming and resource intensive.
 Relevant thread which is tracked on [swift forum](https://forums.swift.org/t/adding-a-swift-package-using-the-ssh-url/60888/19)
+
+
+## Package Registry
+
+
+[what is swift package registry](https://lukaspistrol.com/blog/what-is-swift-package-registry/)
+
+Currently [only jfrog is supporting](https://jfrog.com/help/r/jfrog-artifactory-documentation/swift-registry) this and Github promised to support in 2019.
+
 
 ## Exposing Library & Target
 
@@ -236,7 +291,7 @@ To import just use the following syntax as long as the library builds correctly 
 import DummyUnit
 ```
 
-For more information on Frameworks refer my [mind map docs](ios/library/framework.md)
+For more information on Frameworks refer my [mind map docs](/ios/library/framework.md)
 
 ## Local Package dependency
 
@@ -277,8 +332,11 @@ Add `local` SPM package doesn't work in Pure `Package.swift` project opened in X
 
 Another thing 
 For some reason my local package gets added via `Package.swift` with absolute URL local path and still doesn't reflect the right change-set. But if I add it via add package -> local GUI option on a `.xcodeproj` file in Xcode GUI `Package Dependencies` It reflects the local change-set appropriately. Maybe a cache issue? Don't know and don't want to bother learning more about it.
-### [An unknown error not found (-1) issue](ios/xcode/spm_errors#skipping%20cache) 
+### [An unknown error not found (-1) issue](/ios/xcode/spm_errors#skipping%20cache) 
 
+### KMP_interop
+
+android KMP - [iOS_interop](iOS_interop.md) could be used in similar fashion for linking local `.xcframework` or `.lib` / script to make development easier. I haven't tried this yet but I reckon most of the Android KMP or flutter dev folks would utilize similar approach to integrating iOS / apple ecosystem.
 
 ## Pitfalls
 
@@ -290,7 +348,7 @@ Multiple commands produce `framework` libraries. Probably deleting SPM cache and
 
 ## Circular dependency
 
-Also experienced it in [Carthage build command](ios/xcode/carthage#Dependency%20graph%20cycle)
+Also experienced it in [Carthage build command](/ios/xcode/carthage#Dependency%20graph%20cycle)
 
 [SO resolve circular dependency swift PM](https://stackoverflow.com/questions/47872419/resolve-circular-dependency-in-swift)
 [swift forums circular dependency](https://forums.swift.org/t/circular-dependencies-in-swiftpm/13580)
@@ -304,6 +362,37 @@ Best option is to refactor the code or move dependency one way rather than two w
 Supporting Binary dependencies in SPM 
 [Added in Swift 5.3](https://github.com/apple/swift-evolution/blob/main/proposals/0272-swiftpm-binary-dependencies.md)
 So [carthage](carthage.md) and [cocoapods](cocoapods.md) were used in lot of projects if your dependencies had images, data files, close source code, binaries.
+
+
+## Artifactory flavors
+
+We can customize our endpoints depending on certain build conditions which we can source via `ENV` variables.
+
+```swift
+let domain = ProcessInfo.processInfo
+.environment["PARTNERS"] != nil ? 
+"partners.artifactory.company.com" 
+: "artifactory.company.com"
+
+let package = Package(
+    name: "sdkManagerPackage",
+    platforms: [.iOS(.v15), .tvOS(.v15)],
+    products: [
+        .library(
+          name: "sdkManagerPackage",
+          targets: ["sdkmanager", "clientmanager", "configservice"]
+        )
+    ],
+    targets: [
+        .binaryTarget(
+          name: "sdkmanager",
+          url: "https://\(domain)/artifactory/dtm-libs-releases/com/company/mobile/sdk-manager-xcframework/0.7.20/sdk-manager-xcframework-0.7.20.zip",
+          checksum: "saf237sfasa57f7"
+        ),
+    ],
+)
+```
+
 
 ## Resources
 

@@ -3,7 +3,6 @@
 Utilizing Crypto Swift library to store our encryption data values in keychain for basic cryptography for the app.
 Advanced Encryption Standard (AES)
 
-
 ## Protocols 
 
 ```swift
@@ -179,5 +178,4 @@ func clear() {
 
 ## References
 
-
-https://cryptoswift.io/
+[cryptoswift.io](https://cryptoswift.io/)

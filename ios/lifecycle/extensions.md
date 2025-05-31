@@ -30,7 +30,7 @@ extension StringProtocol {
 
 ## Colors
 
-Visit this [extension link](ios/ui/uiColor#Extension)
+Visit this [extension link](/ios/ui/uiColor#Extension)
 
 
 ## UIView

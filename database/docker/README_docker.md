@@ -6,7 +6,7 @@
 
 [[database/docker/commands]]
 
-[compose](compose.md)
+[compose](database/docker/compose.md)
 
 [docker_hub](docker_hub.md)
 

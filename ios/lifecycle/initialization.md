@@ -7,7 +7,7 @@ Including the default initialization for class, structs in Swift.
 
 
 
-## [Class](ios/lifecycle/class.md)
+## [Class](/ios/lifecycle/class.md)
 
 We need to specify the initializer for class.
 ```swift
@@ -43,7 +43,7 @@ let kay = Person(name: "Kautilya", age: 28)
 ## Static Functions
 1. We can directly access the static function as if it was a class method. Like `ClassSomething.doSomething()`
 2. If we want to do something in the class before initializing other stored variables / properties we can do that using a static function. Since inherently it treats itself as its own `class doSomething()`
-3. Static dispatch more [performant](ios/xcode/performance#Static%20vs%20Dynamic%20dispatch) 
+3. Static dispatch more [performant](/ios/xcode/performance#Static%20vs%20Dynamic%20dispatch) 
 
 ```swift
 class ClassSomething {
@@ -60,7 +60,7 @@ class ClassSomething {
 }
 ```
 
-## [Singleton Pattern](ios/lifecycle/singleton_pattern.md)
+## [Singleton Pattern](/ios/lifecycle/singleton_pattern.md)
 
 
 
