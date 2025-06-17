@@ -118,14 +118,13 @@ You have few ways of getting citizenship in United States.
 
 
 - Legal Route Student (F1 ... xx) -> Work Visa (H1 ... L1 ... xx ) -> Green Card ( i140 applications ) -> Citizenship test
+- Direct h1 / L1 work visa (import foreign labor)
 - Family Sponsorship Visa
 - illegal Entry - Border crossing - Seek Asylum
+- EB(1..3) & NIW routes
 
 
 [Reddit post | immigration shortfalls for h1B holders](https://www.reddit.com/r/technology/comments/1brldds/comment/kxbpcef/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
-
-
-
 
 
 
@@ -147,3 +146,89 @@ Lately the whole world is going more conservative.
 
 Reddit comments
 > Ah yes, my daily dose of overt xenophobia
+
+
+## Indian Tech Meta jokes
+
+> Rajesh, did you finish the jira ticket I asked you to complete?
+
+> Please do the needful
+
+[thoughts/management#Indian IT Words](thoughts/management#Indian%20IT%20Words)
+
+## Frauds
+
+Most of the time, I have seen people from under developed / developing countries are notorious for scheming things and thinking the rules or law don't apply to them.
+
+As an indian myself, I vouch this and have experienced it significant amount of times where I have seen people with shady businesses and hacks get ahead of the social ladder queue. By "hook or crook", the only problem is their brains are wired to always think by the crook. Sometimes I question myself and my parents for upbringing I had growing up in mumbai, that what's the point of being genuine or truthful to yourself or others in society when the rest of the pack acts like goons or take the law in their own hands "old mafia style". But time after time, I have been deterred by my inner principles to never commit a crime or grift, con, hustle someone. One of the reasons, why I deter myself from being a managerial path. Not saying their job is to do that but I just can't manipulate or put up the "appropriate" face in order to be diplomatic with people I work or respect usually. 
+
+### Green Card Frauds
+
+### EB Frauds
+
+- Have seen lots of people utilize fake degrees, resume, scientific papers publishing their names & having citations from their own groups or consultancies. 
+- They exploit EB 1 .. 3 or get NIW exception for these so called "exceptional" candidates.
+- Only thing exceptional about these candidates are they paid x amount of money to these so called new age "Lawyer corp" or "consultancy corp" etc., 
+- which pops up every 2 - 3 years under a different named LLC,  since the last one got too greedy and was already committing crimes in the background to gain their "clients" the necessary visa for surviving in this country.
+
+
+[decent blind thread about eb1a abuse](https://www.teamblind.com/post/stop-abusing-eb1a-uscis-is-waking-up-443ie8x6)
+
+
+### L1A
+
+Now there's one more category in order to get green card quickly without extra fluff like avoiding cruical `labor test` and putting up flyers or giving a heads-up in organizations that an immigrant is taking the job and we tried to make sure we look for enough local / american / citizens for the job we are giving to the immigrant.
+The process was created with american's best interest in mind & hey why not, they are the ones who provided taxes or kept the country running for x amount of time be it their ancestors or whatever, even though they were also illegal or "legal" "slave owners" at some point. I'm not gonna debate on whether who deserves more right to something. The law is pretty clear on who's best interests it has but the companies "capitalism" will always find a sneaky way to get past ya! and pay the least amount of fines or fees or face repercussions for their acts.
+
+So these companies can get a so called `low wage` "managerial" person / position who worked with them for more than 2 years offshore eg. India, they will bring this guy / gal here and pay him the bare minimum PWD (prevailing wage determination) by USCIS, and make sure they squeeze everything out of them for next 2 - 4 years. Since who wouldn't take the golden ticket of directly landing in USA, with pay scale earning jumping from $10K USD (approx - 12 Lacs INR) per year / annum to $110-150K USD (average) without no University USA Bachelor's degree or Master's of money sink ($50K - $100K) & sinking in 2 - 6 years of education here.
+To be honest, I'll take up this offer in an instant. Will I be abused for extra work - yeah but this is miles better than the abuse or working condition in an underdeveloped / developing nepotism obsessed country.
+
+Most of the WITCH (Wipro, Infosys, TCS, Cognizant, HCL) inverse FAANG of India are notorious for abusing this program after `h1bs`. So `h1bs` for grunt workers and `l1` & `L1a`s for little bit upper grunt workers (middle management managers). 
+
+
+
+
+
+### Reasons / Craze for USA
+
+- or I must say to maintain the "social status" back in India, stating we live in USA etc., 
+- I don't know whether these people are clapped or don't have enough skills or they have literally given up on the life grind or do they get better `dowry` for their marriage?
+- Among most indians,  I have seen specific states like Telegana / Andhra Pradesh (#Telegu cartel) & Gujurat (#Gujurati cartel) really blood thirsty to obtain these visas or the american dream.
+- Maybe they are sizing themselves to their community or society that they are better than others, its always the size / quantity games with indians or maybe insecure human nature.
+- We always need to buy a car if the neighbor buys one, same with house / condo, wife, husband, kids, hobbies etc., like they are always ready to 1 up each other showcasing that hey what we have is bigger, better and bonkers than yours. "Keeping up with the jones - american indian style"
+
+
+
+## Redo Immigration with more context
+
+So if I had the option to redo or re-enter USA with immigration in mind, I would advise myself or anyone else these things
+
+- Just stay out, American dream is achievable only if you're dumb or asleep - George Carlin 
+- Keep it 100% legal
+- Work for an american client for 3 - 5 years and hope for L1 or H1b direct opportunity
+- Last resort, if you really value education -> Then only do `Masters`
+- If you have the money, do `bachelors` 4 years or do exchange student program.
+
+## Survive
+
+- h1b (60 days) grace period -> switch to b1/b2 via a lawyer or yourself. 
+- Do it on 55th day or something
+- have 6 months of expenses & be ready to be disappointed just in case.
+- nothing wrong with going back to the home country.
+- be uptodate with your corporate layoffs or track the layoffs or warn indicator
+- Visit [decision_making](decision_making.md#layoffs)
+
+
+
+## Hiring
+
+### 2025 
+
+- Right now the market is really bad for `h1b`s, since every company is deciding to layoff people & in that timeframe they won't like to hire an immigrant
+- policitics & social narrative is also crucial and given the current stance of "Making America great again", sadly immigrants could only be utilized till the job gets done.
+- internal bias and hatred towards hiring immigrants is at the all time high
+- They only prefer `green card` or `citizens` now.
+- Maybe they'll do `c2c` corp to corp contracts, where the company A providing the job won't directly hire the right candidate since they don't want to deal with immigration laws or what not, so they add a proxy company or contractor who does that leg work.
+- Most of the time these proxy companies are "fake" "desi consultancies". read linked article above `bloomberg | thousands of middlemen gaming Visa lottery system`
+- At max, they will entertain you if you have `h4` EAD which is a spousal work Visa, less restrictive and puts the burden on the `source h1B/h..` visa holder who has his `i140` process approved or completed. The precursor to getting a `green card` in the states.
+

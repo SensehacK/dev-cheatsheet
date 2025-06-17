@@ -24,7 +24,7 @@ glassdoor
 
 [6figr | India](https://6figr.com/in/salary/indian)
 
-### Layoffs
+## Layoffs
 
 Its part of life in the states, capitalism and Software or Technology industry doesn't have unions which protects our jobs.
 

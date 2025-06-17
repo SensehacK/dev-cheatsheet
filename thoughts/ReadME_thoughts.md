@@ -11,6 +11,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 [ads](thoughts/ads.md)
 
+[collaboration](collaboration.md)
+
 [decision_making](decision_making.md)
 
 [ecosystem](../thoughts/ecosystem.md)
@@ -40,6 +42,8 @@ Disclaimer: To Err Is Human. Don't cancel me!
 [piracy](piracy.md)
 
 [politics](../thoughts/politics.md)
+
+[privacy](privacy.md)
 
 [proverbs](../thoughts/proverbs.md)
 
