@@ -24,6 +24,8 @@ The quintessential tool for version management. Helps your mind to be sane and n
 
 [[git/errors]]
 
+[force](force.md)
+
 [[git_alias]]
 
 [[git_attributes]]
@@ -47,6 +49,10 @@ The quintessential tool for version management. Helps your mind to be sane and n
 [[merging_two_repos]]
 
 [[modules]]
+
+[patch](patch.md)
+
+[push](push.md)
 
 [[rebase]]
 

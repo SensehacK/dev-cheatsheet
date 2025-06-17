@@ -40,6 +40,12 @@ GIT_COMMITTER_DATE=<date> git commit --amend --no-edit --date <date>
 ```
 [rebasing and amending commit date](https://sabe.io/blog/change-date-git-commit)
 
+Or combined both
+
+```sh
+LC_ALL=C GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
+```
+
 ## Empty Commit 
 
 Sometimes we want to not commit anything and just need some change set in order to trigger a build on CI or Github Actions.
