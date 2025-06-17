@@ -59,3 +59,65 @@ chmod +x /etc/init.d/nameofscript.sh
 
 
 
+
+
+
+## Assignment
+
+Cannot have spaces around `=` sign
+
+```error
+Unexpected arguments:
+command not found
+```
+
+```bash
+built_device =`$device`
+built_device = `$device`
+built_device=`$device`
+```
+
+When you write:
+```bash
+STR = "foo"
+```
+bash tries to run a command named `STR` with 2 arguments (the strings `=` and `foo`)
+
+```bash
+STR =foo
+```
+bash tries to run a command named `STR` with 1 argument (the string `=foo`)
+
+```bash
+STR= foo
+```
+bash tries to run the command `foo` with STR set to the empty string in its environment.
+
+[copied from SO | great answer](https://stackoverflow.com/questions/2268104/command-not-found-error-in-bash-variable-assignment)
+
+
+
+
+## variables
+
+```sh
+foo="something"
+bar="foo"
+echo "${!bar}"
+
+# something
+```
+
+[SO | bash variable variables](https://stackoverflow.com/questions/10757380/bash-variable-variables)
+
+
+## eval
+
+```bash
+x="ls | wc"
+eval "$x"
+y=$(eval "$x")
+echo "$y"
+```
+
+[SO | store a command in a variable in a shell script?](https://stackoverflow.com/questions/5615717/how-can-i-store-a-command-in-a-variable-in-a-shell-script)

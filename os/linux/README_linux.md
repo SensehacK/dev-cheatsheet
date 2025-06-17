@@ -13,6 +13,8 @@
 
 [installation](os/linux/installation.md)
 
+[man](man.md)
+
 [[os/linux/network]]
 
 [[open_vpn]]

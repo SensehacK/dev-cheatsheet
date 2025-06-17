@@ -132,3 +132,40 @@ curl --ciphers ECDHE-ECDSA-AES128-CCM8 --insecure -v --url https://192.168.0.80:
 
 curl --ciphers ECDHE-ECDSA-AES128-CCM8 --insecure -v --url https://192.168.0.80:8081/upt --cert /config/xcelcerts/cert.pem --key /config/xcelcerts/key.pem
 ```
+
+
+## Aladdin Garage
+
+
+If you're using `Terminal` addon for Home assistant, just directly skip to Step 3.
+
+[Thread source](https://community.home-assistant.io/t/aladdin-api-changing/676893/60)
+
+Here’s how I restored Aladdin Connect support to 2024.7.3. I’m running the full Home Assistant OS in a Proxmox VM, so the steps are probably different in other environments.
+
+1. From the Home Assistant CLI, type `login` to drop to the shell.
+2. Go to the main config directory. This is the same directory that contains `configuration.yaml`.
+```bash
+cd /mnt/data/supervisor/homeassistant
+```
+
+- Create a directory for Aladdin Connect. Check that the permissions on these directories match the permissions of other sibling directories.
+
+```bash
+mkdir -p custom_components/aladdin_connect
+cd custom_components/aladdin_connect
+```
+
+- Download the Aladdin Connect component from the 2024.6.4 release:
+
+```nginx
+curl -Ls 'https://api.github.com/repos/home-assistant/core/contents/homeassistant/components/aladdin_connect?ref=2024.6.4' | jq -r '.[].download_url' | xargs -n1 curl -O
+```
+    
+- Add a version to `manifest.json`:
+
+```bash
+jq '.version = "0.0.1"' manifest.json > manifest.tmp && mv manifest.tmp manifest.json
+```
+
+- Restart Home Assistant.

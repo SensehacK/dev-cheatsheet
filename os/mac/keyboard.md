@@ -8,11 +8,12 @@ Annoying things that mac os does to make the keyboard feel sluggish
 
 First disable the popup showing accented characters when holding down a key.
 
-```
+```sh
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
-https://apple.stackexchange.com/questions/332769/macos-disable-popup-showing-accented-characters-when-holding-down-a-key
+[stack exhange | macos-disable-popup-showing-accented-characters-when-holding-down-a-key](https://apple.stackexchange.com/questions/332769/macos-disable-popup-showing-accented-characters-when-holding-down-a-key)
+
 
 
 
@@ -28,7 +29,7 @@ Just select the fastest in this settings.
     
 3.  Drag the “Key repeat rate” slider on the right to set how fast characters repeat.
 
-Source: https://support.apple.com/guide/mac-help/set-how-quickly-a-key-repeats-mchl0311bdb4/mac
+Source [apple support](https://support.apple.com/guide/mac-help/set-how-quickly-a-key-repeats-mchl0311bdb4/mac) 
 
 
 
