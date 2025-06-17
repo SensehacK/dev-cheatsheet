@@ -37,6 +37,11 @@ Good release notes could make a big difference compared to just normal bug fixes
 
 [John Carmac's Plan archive](https://github.com/ESWAT/john-carmack-plan-archive/tree/master)
 
+## Changelog
+
+[keepachangelog](https://keepachangelog.com/en/1.0.0/)
+
+
 ## Semantic Versioning
 
 ### Apple 
