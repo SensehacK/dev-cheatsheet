@@ -1,5 +1,12 @@
 
 
+## Wizard
+
+Great wizard by jetbrains to customize the project before creating something
+
+[Kotlin Multiplatform Wizard](https://kmp.jetbrains.com/#newProject)
+
+
 ## Plugins
 
 Add Kotlin multi platform plugin from android studio settings.
