@@ -11,7 +11,11 @@
 
 [Compliance](terminologies/compliance.md)
 
+[Internet Standard](terminologies/internet_standard_terms.md)
+
 [Math](terminologies/math_terms.md)
+
+[Microsoft Ecosystem](terminologies/microsoft_terms.md)
 
 [Network](terminologies/network_terms.md)
 

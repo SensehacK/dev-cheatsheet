@@ -32,6 +32,11 @@ Enjoy!
 
 ## [Terminologies](/architecture/terminologies.md)
 
+## [Tracing](/architecture/tracing.md)
+
+## [RFC](/architecture/rfc.md)
+
+
 ## Advance Topics
 
 [Swift Concurrency](/ios/concurrency/Readme_concurrency.md)

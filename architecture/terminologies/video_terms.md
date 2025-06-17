@@ -183,6 +183,11 @@ An ad content which has duration of time to be played with resolution and links.
 Collection | Array of Ad Breaks in a video stream file.
 
 
+### Format
+
+VAST- Video Ad Serving Template
+IMA - Interactive Media Ads
+
 
 ### DAI
 
@@ -333,7 +338,7 @@ Or an offset of Secs from the initial playback stream head.
 
 
 ### Unix Epoch 
-
+pronounced: epockh
 Its a unix date time variant to describe a constant way of time format.
 
 ### Time Scale

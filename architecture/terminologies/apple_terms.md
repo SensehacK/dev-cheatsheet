@@ -16,7 +16,8 @@ Xcode Debugging Symbols(dSYM)
 
 Automatic Reference Counting - apple's swift garbage collector
 
-
+## AI
+Apple Intelligence - I know dumb.
 
 ### HIG
 
@@ -41,4 +42,4 @@ OS X 10.0 (Cheetah) - 10.15 (Catalina)
 
 ### macOS
 
- macOS after OS 11
+macOS after OS 11
