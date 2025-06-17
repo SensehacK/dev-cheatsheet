@@ -53,4 +53,14 @@ If you want to configure for a physical tvOS apple tv 4K, you need few things to
 - Select "Install", few times and then we need to trust the certificate by heading over to Settings -> General ->   About ->   Certificate Trust Settings ->   Click on Proxy Profile ->   “Continue”.
 - You may need to reenter your WiFi credentials again since for me it got disconnected once with tvOS 17.0 - apple TV 4K 2023.
 
-Now you can see the logs of Apple tv 4K on Proxy man. I believe similar steps could be performed for [Charles proxy](charles_proxy.md)
+Now you can see the logs of Apple tv 4K on Proxy man. I believe similar steps could be performed for [Charles proxy](network/charles_proxy.md)
+
+
+
+## Versions
+
+Free version is sufficient overall
+
+
+I might consider upgrading to `Premium` version just to support them.
+

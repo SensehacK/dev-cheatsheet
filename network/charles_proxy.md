@@ -57,6 +57,15 @@ If you want to configure for a physical tvOS apple tv 4K, you need few things to
 
 Now you can see the logs of Apple tv 4K on Charles Proxy. I believe similar steps could be performed for [proxyman](proxyman.md)
 
+
+## macOS
+
+You need install on root device - certificate & trust that certificate in Keychain manager.
+
+After that you need to select proxy -> enable `macOS proxy` from menu bar.
+
+[setup charles on mac](https://analystadmin.com/how-to-set-up-charles-proxy-on-macos/?utm_source=medium&utm_medium=social&utm_campaign=postdup)
+
 ##  Troubleshooting
 
 ### My internet connection doesn't work
@@ -94,6 +103,15 @@ errorDescription" : "1001.2 (General Errors):`An unspecified network error occur
 ```
 
 Turns out de-provisioning the security DRM client on the physical device solved this issue. Logging out and back works.
+
+### Other issues
+
+Copied from another article 
+
+|                                                                                 |                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Charles shows garbled text in HTTPS request content                             | – Check that **Enable SSL Proxying** is checked in SSL Proxying Settings  <br>– Check that your host list contains the host that you are looking to decrypt  <br>– Check that the **Charles SSL Certificate** is installed on your Mac or external device (whichever device sends out the data needs to have the certificate installed)                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| Charles doesn’t show any requests or Charles shows fewer requests than expected | – Check that you have no active VPN connections. Charles often times doesn’t work well over VPN  <br>– Check that you have started recording (the red/black button on the main Charles toolbar)  <br>– Try removing your request filter  <br>– Uncheck **“Focused”** to make sure there are no filters under Focused Hosts  <br>– If browser testing, disable all add blocker and cross-check with another browser  <br>– If you are attempting to proxy an external device, make sure that you are on the same network.  <br>– Offices sometimes have strict firewalls and router settings that may block proxying in general or specifically block port 8888, which Charles listens on. Check with IT or try proxying with a more advanced hotspot Charles method. |
 
 ## Resources
 
