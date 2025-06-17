@@ -113,4 +113,43 @@ public enum URLTypeResult {
 
 
 
-## 
+## Soft Unwrap guard conditions
+
+Previous code 
+
+```swift
+subscription = bus.errors
+	.filter { $0.type == .playerItemStatusChanged }
+	.sink { event in
+		// filtering out for desired event type here
+		guard let error = event.data?.error as? NSError,
+			  let itemError = self.playerItem.error as? NSError else { return }
+		XCTAssertEqual(event.data?.playerItemStatus, .failed)
+		XCTAssertEqual(error.domain, itemError.domain)
+		XCTAssertEqual(error.code, itemError.code)
+		expectation.fulfill()
+	}
+```
+
+Newer code
+```swift
+subscription = bus.errors
+	.filter { $0.type == .playerItemStatusChanged }
+	.compactMap { engineErr -> (AVPlayerItem.Status, NSError, NSError)? in
+		guard let engineD = engineErr.data,
+			  let error = engineD.error as? NSError,
+			  let itemError = self.playerItem.error as? NSError,
+			  let engItemStatus = engineD.playerItemStatus else { return nil }
+		return (engItemStatus, error, itemError)
+	}
+	.sink { (engineD, nsError, itemErr) in
+		XCTAssertEqual(engineD, .failed)
+		XCTAssertEqual(nsError.domain, itemErr.domain)
+		XCTAssertEqual(nsError.code, itemErr.code)
+		expectation.fulfill()
+```
+
+
+## References
+
+[Parse dont validate](https://lexi-lambda.github.io/blog/2019/11/05/parse-don-t-validate/)

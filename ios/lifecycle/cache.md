@@ -61,3 +61,15 @@ Since Swift Dictionaries or in dictionaries in general conform to `Hashable` pro
 And there is also less CPU performance hit because for the past decade or so CPU have inbuilt hardware accelerator chips to do these kind of hashing mechanism on the fly and dedicated chip modules make CPU context switching back & forth pretty inexpensive.
 
 Source my [own MR about my helper swift package](https://github.com/SensehacK/swift-sense/pull/3) for swift related projects (iOS, macOS, tvOS, watchOS) apps
+
+
+
+## References
+
+[deep dive urlrequest cache policy](https://medium.nextlevelswift.com/urlrequest-cache-policy-f7c30a96b698)
+
+[heroku | increasing performance with http cache headers](https://devcenter.heroku.com/articles/increasing-application-performance-with-http-cache-headers)
+
+[How to leverage HTTP cache in iOS](https://fabernovel.github.io/2019-01-22/how-to-leverage-http-cache-in-ios)
+
+[cache & combine in iOS](https://pyartez.github.io/networking/simple-offline-caching-in-swift-and-combine.html)

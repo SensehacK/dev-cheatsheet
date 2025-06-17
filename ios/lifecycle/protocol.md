@@ -39,6 +39,17 @@ func foo(param: NSObjectProtocol & NSCopying & NSCoding) { }
 
 Code snippet from the article [swiftbysundell | combining-protocols-in-swift](https://www.swiftbysundell.com/articles/combining-protocols-in-swift/)
 
+## Equality Protocols
+
+Amazing article around protocols needing conformance for equatable
+
+[swift-protocols-equatable-part-one](https://khawerkhaliq.com/blog/swift-protocols-equatable-part-one/)
+[swift-protocols-equatable-part-two](https://khawerkhaliq.com/blog/swift-protocols-equatable-part-two/#What_is_type_erasure)
+
+
+[SO | question protocol equatable](https://stackoverflow.com/questions/42130150/swift-equatable-on-a-protocol)
+
+
 ## Errors
 
 ### Accessible enclosing type 

@@ -165,6 +165,25 @@ Time precision with Floats and new struct type needed
 [swiftui | handbook-controls-with-avplayer](https://designcode.io/swiftui-handbook-controls-with-avplayer)
 
 
+Debug print time
+
+```objC
+NSLog(@"seconds = %f", CMTimeGetSeconds(cmTime));
+```
+
+
+
+## TimeInterval
+
+Convert timeInterval to CMTime
+
+```swift
+let timeIntvl: TimeInterval = 60
+let cmTime = CMTime(seconds: timeIntvl, preferredTimescale: 1000000)
+```
+
+[TimeInterval | apple doc](https://developer.apple.com/documentation/foundation/timeinterval)
+
 ## References
 
 [Convert String to Date](https://izziswift.com/convert-string-to-date-in-swift/)

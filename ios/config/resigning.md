@@ -34,6 +34,36 @@ Esign is a tool used for signing iPA apps with Apple Developer/Distribution cert
 [eSign github](https://github.com/iOS17/Esign)
 
 
+## Sideloadly
+
+Do stuff on tvOS
+
+Pairing with tvOS
+
+```tutorial
+Step 1. First things first, download the latest version of Xcode from Mac App Store and then install it on your Mac.
+
+Step 2. On Apple TV, navigate to Settings > Remotes and Devices > Remote App and Devices and keep your Apple TV on this screen.
+
+Step 3. On Mac, launch Xcode and then navigate to Window > Devices and Simulators from the menu bar on top.
+
+Step 4. Now if both your Mac and Apple TV are nearby, the following message should show up on Xcode’s Devices and Simulators window.
+
+Step 5. Click on “Pair with [Your Apple TV]” button.
+
+Step 6. A verification code will pop up on Apple TV display, type it in Xcode to complete the pairing process between your Mac and Apple TV.
+
+You should now have your Mac showing up on Apple TV’s Remote App and Devices screen. You should also have your Apple TV now showing up on Xcode’s Devices and Simulators window.
+
+And that’s about it.
+
+Your Apple TV should show up on the list of devices on Sideloadly :)
+```
+
+[reddit tutorial source](https://www.reddit.com/r/sideloaded/comments/13q3geq/comment/jleamun/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
+
+
+
 ## Errors
 
 

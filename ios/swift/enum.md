@@ -87,3 +87,42 @@ But on the same end we are an API / Library / Framework team so don't know if th
 1. Its not consumer facing string or UI stakeholders
 2. No localization support needed
 3. No client data is being wrapped with these things
+
+
+
+## union type
+
+### Option 1
+Associated Values
+
+```swift
+enum ErrorType {
+    case teapot(String, Int)
+    case skillet(UInt, [CGFloat])
+}
+```
+
+
+### Option 2
+Tuples! And computed properties!
+
+```swift
+enum ErrorType {
+    case teapot
+    case skillet
+
+    var info: (code: Int, description: String) {
+        switch self {
+        case .teapot:
+            return (418, "Hear me shout!")
+        case .skillet:
+            return (326, "I'm big and heavy.")
+        }
+    }
+}
+
+// Access 
+let errorCode = myErrorType.info.code
+```
+
+[SO | use enum as union type](https://stackoverflow.com/questions/27706832/can-swift-enums-have-multiple-raw-values)

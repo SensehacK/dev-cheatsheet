@@ -62,3 +62,13 @@ class UserDefaultsManager {
         defaults.set(value, forKey: key.rawValue)
     }
 ```
+
+## Limitations
+
+> First and foremost, encryption - UserDefaults does not use encryption out of the box.
+   
+> Second, on any device a user can access the files system and specifically your app container and hence the UserDefaults using iExplorer app for example and access the whole plist that represents the user defaults - change it and extract information - not protected against malicious users.
+
+> Third, third party libraries you are using in your app are able to access your ‘standard’ user defaults or guess some container name you are using to extract/ override the information.
+
+[SO | link](https://stackoverflow.com/a/68022332/5177704)

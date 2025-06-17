@@ -71,10 +71,29 @@ Or
 let colors = colorsForColorScheme.map { $0.1 }
 ```
 
+
+## Flat Map
+
+[SO | Post](https://stackoverflow.com/questions/35597850/swift-flatten-an-array-of-dictionaries-to-one-dictionary)
+
+## Bool check func
+
+```swift
+var disablePlaybackEndEvent =  [
+        AssetClass.livod: true,
+        AssetClass.vod: true,
+]
+var currentAssetClass = AssetClass.ivod
+func shouldDeferEvent() -> Bool {
+	guard let emitResult = disablePlaybackEndEvent[currentAssetClass] else { return false }
+	return emitResult
+}
+```
 ## References
 
 [SO](https://stackoverflow.com/questions/44637836/what-is-the-equivalent-of-a-java-hashmapstring-integer-in-swift)
 
 [Tutorials Point](https://www.tutorialspoint.com/swift/swift_dictionaries.htm)
 
-https://stackoverflow.com/questions/26988167/swift-dictionary-get-values-as-array
+[SO | swift-dictionary-get-values-as-array](https://stackoverflow.com/questions/26988167/swift-dictionary-get-values-as-array)
+

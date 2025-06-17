@@ -78,6 +78,16 @@ let popularPosts = BlogPost.examples2.sorted { (lhs, rhs) in  let predicates: [A
 ```
 
 
+### Sort Comparator
+
+```swift
+struct BoolComparator: SortComparator {
+  var order: SortOrder = .forward
+  func compare(_ lhs: Bool, _ rhs: Bool) -> ComparisonResult {}
+}
+```
+[use you loaf | sort Comparator](https://useyourloaf.com/blog/custom-sort-comparators/)
+
 ## Stride
 
 ```swift
@@ -219,23 +229,7 @@ With normal `reduce(:_:_)` it creates a immutable variables to store the new res
 [Reduce function](https://medium.com/@lucianoalmeida1/a-little-bit-about-the-cool-reduce-in-swift-306edd9ceb57)
 
 
-## Filter
-
-```swift
-// Even Odd example
-let arr = [1, 2, 3, 4]
-let evens = arr.filter { $0 % 2 == 0 }
-print(evens)
-```
-
-
-```swift
-print("\n Using Filter")
-let filterDynamicRecordFields = arrFields.filter { $0.hasDynamicRecordId }
-print(filterDynamicRecordFields)
-
-```
-
+## [Filter](/ios/swift/filter#Array)
 
 ## Compact Map
 

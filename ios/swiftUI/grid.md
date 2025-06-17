@@ -27,3 +27,6 @@ ScrollView(.horizontal) {
 ## References
 
 [HWS | how-to-lay-out-views-in-a-scrolling-grid](https://www.hackingwithswift.com/books/ios-swiftui/how-to-lay-out-views-in-a-scrolling-grid)
+
+
+[Github | iCarousel](https://github.com/nicklockwood/iCarousel)

@@ -97,6 +97,13 @@ xcrun simctl openurl booted "com.projectApp://"
 
 [6-ways-of-launching-deeplinks-on-ios-simulator](https://isapozhnik.com/articles/6-ways-of-launching-deeplinks-on-ios-simulator/)
 
+
+## HAL
+
+> HAL is a simple format that gives a consistent and easy way to hyperlink between resources in your API.
+[HAL spec](https://stateless.co/hal_specification.html)
+
+
 ## Reference
 
 [defining-a-custom-url-scheme](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app)

@@ -43,7 +43,7 @@ You would need a jailbreak or some kind of developer account access inorder to s
 
 ## Proxy
 
-Using [charles_proxy](charles_proxy.md) or [proxyman](proxyman.md) for capturing traffic via `man in the middle` attack.
+Using [charles_proxy](network/charles_proxy.md) or [proxyman](proxyman.md) for capturing traffic via `man in the middle` attack.
 
 SSL Pinning
 

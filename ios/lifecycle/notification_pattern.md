@@ -166,6 +166,37 @@ class MyFunkyViewController: UIViewController {
 [SO | triggering  action app-enters-foreground-from-a-local-notific](https://stackoverflow.com/questions/25716012/triggering-a-specific-action-when-the-app-enters-foreground-from-a-local-notific)
 
 
+## Behavior
+
+### Twice notifications firing
+
+> I don't know wether the solution is correct or not but if 'obj' is a @State variable and there is a value change for @State variable it may execute the same line again i.e., NotificationCenter.default.post(name: .helloStack, object: obj)
+
+For me it was having two emits `.sink` block when I was updating the AVPlayer.currentItem twice
+
+```swift
+let lplayerItem = MockAVPlayerItem(url: testUrl)
+let lplayer = MockAVPlayer()
+
+// This statement was making my sink block fire twice
+lplayer.replaceCurrentItem(with: lplayerItem)
+
+lbus.events
+	.print("Hello playerITEM ####")
+	.filter { $0.type == .playerItemTimeJumped }
+	.sink { event in
+		print("$$$")
+		XCTAssertEqual(event.description, "AVPlayer Item Time Jumped")
+		expectation.fulfill()
+	}
+
+NotificationCenter.default
+	.post(name: AVPlayerItem.timeJumpedNotification, 
+	object: lplayer.currentItem)
+```
+
+[SO | Notification subscribe combine](https://stackoverflow.com/questions/69400510/swift-notificationcenter-publisher-subscriber-called-more-than-once)
+
 ## Resources
 
 [Medium | Notifications in swift](https://dmytro-anokhin.medium.com/notification-in-swift-d47f641282fa)

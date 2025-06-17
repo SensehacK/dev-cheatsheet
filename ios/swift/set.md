@@ -26,3 +26,10 @@ print("Array: ", numbers)
 let rSet = Set(numbers)
 print("Set:", rSet)
 ```
+
+
+## OptionSet
+
+Similar to `enum` in some context.
+
+[avanderlee | article explained](https://www.avanderlee.com/swift/optionset-swift/)

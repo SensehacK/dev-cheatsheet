@@ -6,6 +6,13 @@ So delete the `.build` directory.
 [PCH was compiled with module cache path error](https://stackoverflow.com/questions/57080473/pch-was-compiled-with-module-cache-path-error)
 
 
+## Verbose 
+
+```sh
+swift package resolve --verbose
+```
+This should help provide us better logs around what is going on and where it fails.
+
 ## Packages Not downloaded
 
 ```log
@@ -105,9 +112,9 @@ This was due to using branch name where tag semantic version was needed. Build e
 .package(url: "git@github.com:repoName/project.git", branch: "develop"),
 ```
 
-### reference 'refs/remotes/origin/' not found (-1)
+### origin not found 
 
-skipping cache due to an error
+skipping cache due to an error origin not found (-1)
 ```sh
 git@github.com:repoName/project.git: An unknown error occurred. reference 'refs/remotes/origin/develop' not found (-1)
 ```
@@ -118,6 +125,14 @@ This could be resolved by deleting the project `Packaged.resolved` files and rem
 And if it still doesn't work might as well `Reset Package Cache` in Xcode menu bar and then `Resolve Package Versions`. If this fails might as well update your dependencies to see if something changed on the server with old tagged versions by using `Update to Latest versions` should do the trick. If all fails restart mac and refer to the `Notes` section of this document.
 
 & all of it doesn't work or you want selective cache deletion navigate to [[#skipping cache]]
+
+### github release artifact
+
+It works using release artifacts but only if keychain access has an entry point in `api.github.com` login item
+
+[source - spm forums](https://forums.swift.org/t/spm-support-basic-auth-for-non-git-binary-dependency-hosts/37878/97)
+
+
 
 ## skipping cache
 
@@ -168,7 +183,7 @@ for project in $(find . -iname "$1*" -type d -maxdepth 1); do
 done
 ```
 
-### Package.resolved file is corrupted or malformed
+## Package.resolved file is corrupted or malformed
 
 [SO | package resolved file is corrupted](https://stackoverflow.com/questions/67185817/package-resolved-file-is-corrupted-or-malformed)
 
@@ -182,7 +197,7 @@ Switching back from version 3 to version 2 worked fine for me. Maybe not committ
 Since on CI we use Xcode 15 and on my local machine I upgraded to 15.3 recently which led to upgrade of Package.resolved file with appropriate new keys like 
 `originHash` & `version upgrade` to 3.
 
-### Build input file cannot be found
+## Build input file cannot be found
 
 ```error
 
@@ -191,7 +206,7 @@ Build input file cannot be found: '/Users/ksave9wrwa57/git/cloud/saf/Sources/wer
 
 
 
-### Credentials were rejected
+## Credentials were rejected
 
 ```log
 Showing All Messages skipping cache due to an error: Authentication failed because the credentials were rejected
@@ -251,3 +266,59 @@ Package manifest at '/Package.swift' cannot be accessed (/Package.swift doesn't 
 this was happening while attempting to checkout a SPM dependency at a version that didn't yet have a Package.swift
 
 [Package manifest | SO](https://stackoverflow.com/questions/75473774/package-manifest-at-package-swift-cannot-be-accessed-package-swift-doesnt)
+
+
+## No XC Framework file
+
+
+```
+There is no XCFramework found at '/Users/
+```
+
+`File > Packages > Reset Package Caches`
+this worked followed by cleaning derived data
+
+In my case, it happened with the upgrade from Xcode 15 to 16.
+
+
+## Skipping cache due to an error
+
+
+```log
+skipping cache due to an error: https://github.com/company-viper-player/project_ios_errorcodes.git: The repository could not be found. Make sure a valid repository exists at the specified location and try again.
+```
+
+Reset Package cache
+
+
+## repository could not be found
+
+```log
+git@github.com:company-player/wafer: The repository could not be found. Make sure a valid repository exists at the specified location and try again.
+```
+
+```swift
+// package.swift
+.package(url: "git@github.com:company-player/wafer", branch: "custom-branch"),
+
+// should be `.git`
+.package(url: "git@github.com:company-player/wafer.git", branch: "custom-branch"),
+```
+
+
+## terminated code: 128
+
+```log
+GitShellError(result: <AsyncProcessResult: exit: terminated(code: 128), output:
+```
+
+This can occur when the remote URL for the dependency has been unavailable or disabled.
+
+Github internal repo link error message
+```log
+### This repository has been disabled.
+
+Access to this repository has been disabled by your site administrator. Please contact [github_admin@.com](mailto:github_admin@.com) to restore access to this repository.
+```
+
+So make sure your URLs are valid.

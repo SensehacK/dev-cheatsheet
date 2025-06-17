@@ -32,6 +32,12 @@ So if we did macOS compliance check.
 Mac company Registration -> Did the Intune `company Endpoint Management`
 Microsoft Company Portal
 
+## Disable MDM
+
+[macOS - bypass-mdm](https://github.com/assafdori/bypass-mdm)
+
+
+
 ## Intune
 
 iOS error codes

@@ -80,3 +80,37 @@ Or just use
 ```
 
 By switching to assign, I believe apple takes care of retaining that subscription till the time the main class is kept  in memory and someone is holding that reference of the class.
+
+
+## debug
+
+Create the source publisher / subscription
+
+this is a kinda `side effect` compared to `pure` function in reactive programming paradigm
+
+
+```swift
+let request = URLSession(configuration: .default).dataTaskPublisher(for: url)  
+    .map { $0.data }  
+    .handleEvents(receiveSubscription: { _ in  
+        print("Received subscription")  
+    }, receiveOutput: { _ in  
+        print("Received output")  
+    }, receiveCompletion: { _ in  
+        print("Received completion")  
+    }, receiveCancel: {  
+        print("Received cancel")  
+    })
+```
+
+Subscribe the publisher using sink and store it in anyCancellable
+
+```swift
+let subscription = request.sink(receiveCompletion: { _ in  
+    print("Finished")  
+}, receiveValue: { data in  
+    print("Data: \(data)")  
+})
+```
+
+[apple docs | handle events](<https://developer.apple.com/documentation/combine/publisher/handleevents(receivesubscription:receiveoutput:receivecompletion:receivecancel:receiverequest:)>)

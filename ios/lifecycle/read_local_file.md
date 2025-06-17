@@ -34,6 +34,34 @@ func loadJson(fileName: String) -> Person? {
 [Apple Working with JSON](https://developer.apple.com/swift/blog/?id=37)
 
 
+## UTI 
+
+Uniform Type Identifier
+
+The [Uniform Type Identifiers](https://developer.apple.com/documentation/uniformtypeidentifiers) framework provides a collection of common types that map to MIME and file types. Use these types in your project to describe the file types in your app.
+
+
+[apple docs | Uniform Type Identifier](https://developer.apple.com/documentation/uniformtypeidentifiers)
+
+[system declared UTIs](https://developer.apple.com/documentation/uniformtypeidentifiers/system-declared-uniform-type-identifiers/)
+
+## File Extension
+
+
+```swift
+import MobileCoreServices
+
+static func fileExtension(for dataUTI: String) -> String? {
+    guard let fileExtension = UTTypeCopyPreferredTagWithClass(dataUTI as CFString, kUTTagClassFilenameExtension) else {
+        return nil
+    }
+
+    return String(fileExtension.takeRetainedValue())
+}
+
+```
+
+
 ## JSON Codable helper
 
 Small Extension helper with Codable

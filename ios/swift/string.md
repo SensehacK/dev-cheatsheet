@@ -57,7 +57,7 @@ print(input[0] input[9]) // KS
 ```
 [get-character-from-string-using-its-index-in-swift](https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/)
 
-You can also use an extension for it. [extensions Character nth element](ios/lifecycle/extensions.md)
+You can also use an extension for it. [extensions Character nth element](/ios/lifecycle/extensions.md)
 
 [SO](https://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language)
 
@@ -120,6 +120,66 @@ lines
 ```
 
 [HWS | Code snippet](https://www.hackingwithswift.com/sixty/1/3/multi-line-strings) 
+
+## CFString
+
+```swift
+// %@    Objective-C object, printed as the string returned by descriptionWithLocale: if available, or description otherwise.
+String(format: "%@", ["Hello", "world"])
+```
+
+
+```swift
+// %%    '%' character.
+String(format: "100%% %@", true.description)
+```
+
+```swift
+// %d, %i    Signed 32-bit integer (int).
+String(format: "from %d to %d", Int32.min, Int32.max)
+```
+
+
+```swift
+//  %u, %U, %D    Unsigned 32-bit integer (unsigned int).
+String(format: "from %u to %u", UInt32.min, UInt32.max)
+```
+
+> 
+
+```swift
+// %x    Unsigned 32-bit integer (unsigned int), printed in hexadecimal using the digits 0–9 and lowercase a–f.
+String(format: "from %x to %x", UInt32.min, UInt32.max)
+```
+
+
+```swift
+// %X    Unsigned 32-bit integer (unsigned int), printed in hexadecimal using the digits 0–9 and uppercase A–F.
+
+String(format: "from %X to %X", UInt32.min, UInt32.max)
+```
+
+
+```swift
+// %o, %O    Unsigned 32-bit integer (unsigned int), printed in octal.
+String(format: "from %o to %o", UInt32.min, UInt32.max)
+```
+
+
+```swift
+// %f    64-bit floating-point number (double), printed in decimal notation. Produces "inf", "infinity", or "nan".
+
+String(format: "from %f to %f", Double.leastNonzeroMagnitude, Double.greatestFiniteMagnitude)
+```
+
+
+
+
+[Apple archive | Format specifiers](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html)
+
+Copied from [SO | Swift string format specifiers](https://stackoverflow.com/questions/52332747/what-are-the-supported-swift-string-format-specifiers)
+
+
 ## Deprecations
 
 [String interpolation Debug description](https://izziswift.com/how-to-solve-string-interpolation-produces-a-debug-description-for-an-optional-value-did-you-mean-to-make-this-explicit-in-xcode-8-3-beta/)

@@ -79,6 +79,16 @@ DispatchQueue.main.asyncAfter(deadline: .now() + seconds) {
 
 [SwiftUI Tasks vs OnAppear](https://byby.dev/swiftui-task-vs-onappear) 
 
+
+## Reference
+
+It would be good to maintain a reference to the task so it could be cancelled at any time.
+
+1. Ensures there aren't multiple tasks happening at the same time
+2. gives you something to kill on dealloc
+
+
+
 ## Result Type
 
 Code snippet from [HWS](https://www.hackingwithswift.com/quick-start/concurrency/how-to-get-a-result-from-a-task)

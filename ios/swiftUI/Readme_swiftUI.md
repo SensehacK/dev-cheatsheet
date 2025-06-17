@@ -16,7 +16,7 @@
 
 [lifeCycle](/ios/swiftUI/lifeCycle.md)
 
-[list](list.md)
+[list](ios/swiftUI/list.md)
 
 [MVVM_example](MVVM_example.md)
 

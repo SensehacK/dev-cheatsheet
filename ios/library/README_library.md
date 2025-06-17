@@ -18,6 +18,8 @@
 
 [deprecations](/ios/library/deprecations.md)
 
+[encryption](encryption.md)
+
 [[foundation_library]]
 
 [framework](framework.md)
@@ -45,6 +47,10 @@
 [process](ios/library/process.md)
 
 [realm](realm.md)
+
+[regex](regex.md)
+
+[reverse_engineer](reverse_engineer.md)
 
 [[sirikit]]
 

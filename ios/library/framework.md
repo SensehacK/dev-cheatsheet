@@ -114,8 +114,14 @@ If you have FAT binaries then you could have extra architecture bloatware depend
 
 
 
+###
+
+
 
 ## Debugging 
+
+### Hot Swap
+
 
 The process usually for debugging `xcframework` is described below. As described by my team member.
 
@@ -132,6 +138,26 @@ Third point does it relates to actually opening up client dependency frameworks 
 Edit: We can just swap out the `Unix Executable file` binary file with our locally built binary file with no optimization and the `.xcFramework` directory would also include `dSYMs` directory for specific os architecture.
 
 [SO | How can I debug in a framework in Xcode?](https://stackoverflow.com/questions/15654493/how-can-i-debug-in-a-framework-in-xcode)
+Attach to Process
+
+```
+dyld[4131]: Symbol not found: _$s5helio17AdOpportunityDataVMn
+
+  Referenced from: <026D7DBB-9D03-3D23-8381-0D530AC868D4> /private/var/containers/Bundle/Application/CE9E5F55-2FC7-492E-9279-AA4F3AA68CAF/ Stream.app/Frameworks/XPlatform.framework/XPlatform
+
+  Expected in:     <B8006F40-6B2E-333B-97EE-22E2D60B69E8> /private/var/containers/Bundle/Application/CE9E5F55-2FC7-492E-9279-AA4F3AA68CAF/ Stream.app/Frameworks/iOSDependencySupport.framework/iOSDependencySupport
+```
+
+
+### Multiplatform
+
+You can achieve similar results of hotswapping libraries or SDKs depending on your tooling. 
+for eg. Multiple `hybrid` app development products utilize this methodology.
+
+[ionic](README_ionic.md)
+flutter
+android KMP - [iOS_interop](iOS_interop.md) works around this manual process on the fly or creates a script which makes it possible to quickly build, compile, link and execute the run time dynamic / static libraries on the fly.
+
 
 
 ### Distributing
@@ -148,6 +174,45 @@ Make binaries available to other developers by creating Swift packages that incl
 ## Modularization
 
 [How to prepare your iOS project to support modular architecture](https://sarunw.com/posts/how-to-prepare-ios-project-for-modular-architecture/)
+
+
+## Removing Simulators
+
+(Dynamic Framework Only)
+
+Simulator slices are needed to let clients build and debug their app on the simulators, but they should be removed before sending the app to the AppStore. Here is an example Shell script that could be added as a Run Script phase in the application.
+
+  
+```sh
+APP_PATH="${TARGET_BUILD_DIR}/${WRAPPER_NAME}"
+
+# This script loops through the frameworks embedded in the application and
+# removes unused architectures.
+find "$APP_PATH" -name '*.framework' -type d | while read -r FRAMEWORK
+do
+FRAMEWORK_EXECUTABLE_NAME=$(defaults read "$FRAMEWORK/Info.plist" CFBundleExecutable)
+FRAMEWORK_EXECUTABLE_PATH="$FRAMEWORK/$FRAMEWORK_EXECUTABLE_NAME"
+echo "Executable is $FRAMEWORK_EXECUTABLE_PATH"
+
+EXTRACTED_ARCHS=()
+
+for ARCH in $ARCHS
+do
+echo "Extracting $ARCH from $FRAMEWORK_EXECUTABLE_NAME"
+lipo -extract "$ARCH" "$FRAMEWORK_EXECUTABLE_PATH" -o "$FRAMEWORK_EXECUTABLE_PATH-$ARCH"
+EXTRACTED_ARCHS+=("$FRAMEWORK_EXECUTABLE_PATH-$ARCH")
+done
+
+echo "Merging extracted architectures: ${ARCHS}"
+lipo -o "$FRAMEWORK_EXECUTABLE_PATH-merged" -create "${EXTRACTED_ARCHS[@]}"
+rm "${EXTRACTED_ARCHS[@]}"
+
+echo "Replacing original executable with thinned version"
+rm "$FRAMEWORK_EXECUTABLE_PATH"
+mv "$FRAMEWORK_EXECUTABLE_PATH-merged" "$FRAMEWORK_EXECUTABLE_PATH"
+
+done
+```
 
 ## [Errors](framework_errors.md)
 ## Build Output
@@ -193,6 +258,22 @@ Note - if you have checked `Open in Rosetta` for your terminal settings then eve
 	- Both Platform and all possible architectures
 
 
+## Link project only in debug scheme
+
+[linking a swift package only in debug builds](https://augmentedcode.io/2022/05/02/linking-a-swift-package-only-in-debug-builds/)
+
+Define swift package with debug flag
+
+```swift
+.target(
+  name: "DebugFeatures",
+  swiftSettings: [
+    .define("DEBUG", .when(configuration: .debug))
+  ]
+)
+```
+
+we’ll open build settings and look for “Excluded Source File Names. Add the framework for Release scheme to be excluded.
 
 ## Resources
 
@@ -209,4 +290,6 @@ Note - if you have checked `Open in Rosetta` for your terminal settings then eve
 [Multiplatform binary framework](https://developer.apple.com/documentation/Xcode/creating-a-multi-platform-binary-framework-bundle)
 
 [XcFramework examples](https://github.com/bielikb/xcframeworks)
+
+[Medium | deep dive into xcFrameworks](https://medium.com/@mihail_salari/a-deep-dive-into-xcframeworks-creation-universality-and-distribution-c3cdb08545c3)
 

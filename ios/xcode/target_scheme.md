@@ -44,4 +44,9 @@ Definitely needs to have some caveats added for migration and checks in place fo
 Having the wildcards is important sometimes to differentiate those things overall.
 
 
+## Scheme No Devices
+
+So sometimes Xcode has trouble finding the right target destination to build against for the selected scheme. Give it some time and if its SPM integrated xcode project you can refer this section [refs/remotes/origin](/ios/xcode/spm_errors#origin%20not%20found).
+Make sure 
+
 ``

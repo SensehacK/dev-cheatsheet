@@ -122,6 +122,14 @@ Consuming this API is quite easy and it also gives us an option to parse the net
 
 This lets us specify code as well in the docs or when xcode `Build Documentation` in Product Menu bar. This nicely compiles markdown format into the `Documentation` window. Or you can use `Dash` on macOS for your quick references.
 
+### Adding Note Tip
+
+```swift
+/// The language returns linguistic information for data presentation
+    /// eg language - en-US, en-UK
+    /// > Tip: language needs to be provided with [BCP-47 standard](https://www.rfc-editor.org/info/bcp47)
+    public var language: String?
+```
 
 ## Swift DocC
 

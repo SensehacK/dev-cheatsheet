@@ -101,6 +101,76 @@ ASCII to URL encoding
 [eso org table](https://www.eso.org/~ndelmott/url_encode.html)
 
 
+## URL Protocol
+
+You can use this to intercept your network traffic, as long as you register a specific protocol which gets called every time with your URL session or configuration.
+
+[Good SO post about intercepting iOS network traffic](https://stackoverflow.com/questions/42125565/ios-intercept-all-network-traffic-from-my-app)
+
+snippet copied
+
+define ur class with protocol conformance
+
+```swift
+class MyURLProtocol: URLProtocol { }
+```
+
+register ur protocol on app launch and URL session
+
+```swift
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool
+{
+    guard URLProtocol.registerClass(MyURLProtocol.self) else {
+        abort()
+    }
+    return true
+}
+```
+
+URL session register
+```swift
+func getURLSessionConfiguration() -> URLSessionConfiguration {
+    let configuration = URLSessionConfiguration.default
+    configuration.protocolClasses = [MyURLProtocol.self]
+    return configuration
+}
+
+let session = URLSession(configuration: getURLSessionConfiguration())
+```
+
+Add your delegate function calls in `startLoading` etc., 
+
+```swift
+extension MyURLProtocol: URLProtocol {
+	override func startLoading() {
+		// Manage the interception if its ok to block or error out.
+	    if !self.isOK() {
+	        let error = NSError(domain: "GuardURLProtocol", code: 10, userInfo: [NSLocalizedDescriptionKey: "Connection denied by guard"])
+	        self.client?.urlProtocol(self, didFailWithError: error)
+	    }
+	    else if let task = self.task {
+	        task.resume()
+	    }
+	}
+}
+```
+
+Make network call
+
+```swift
+var task: URLSessionDataTask?
+task = session.dataTask(with: URL(string: "ftp://www.google.com")!, completionHandler: { (data, response, error) in
+	if let error { NSLog("Error: \(error)") }
+	else { NSLog("Success") }
+})
+task?.resume()
+
+```
+[example Guard small firewall | gatekeeper](https://gist.github.com/brunophilipe/e2dcf9f7ed23d61f707380793b33e1fa)
+
+
+[apple docs | url protocol](https://developer.apple.com/documentation/foundation)
+
 ## File Path | FileManager API
 
 Path of the file on system.

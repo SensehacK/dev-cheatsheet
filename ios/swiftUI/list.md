@@ -6,7 +6,6 @@ Table equivalent of UIKit in swiftUI
 List(viewModel.pokemons, id: \.id) { pokemon in
 
 }
-
 ```
 
 
@@ -46,6 +45,13 @@ Use `contentShape` to get full tappable area option and you may also need to add
 ```
 
 [HWS | source](https://www.hackingwithswift.com/quick-start/swiftui/how-to-control-the-tappable-area-of-a-view-using-contentshape)
+
+
+
+## Performance
+
+
+[List vs lazyVstack deep dive](https://fatbobman.com/en/posts/list-or-lazyvstack)
 
 ## References
 

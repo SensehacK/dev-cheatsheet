@@ -14,6 +14,12 @@ Finally I got some time to dig deep into it when my employer provided 1 week of 
 
 [demo](demo.md)
 
+[dev_strap](dev_strap.md)
+
+[development_exp](development_exp.md)
+
+[enterprise](enterprise.md)
+
 [info](/ios/visionOS/info.md)
 
 [observations](observations.md)

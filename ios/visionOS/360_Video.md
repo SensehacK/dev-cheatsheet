@@ -74,3 +74,16 @@ https://www.freepik.com/free-photos-vectors/panorama-360
 https://polyhaven.com/hdris
 
 DeoVR can open & view 360 photos.
+
+
+## 3D Video
+
+[apple doc | Convert 3D SBS video to MVHEVC](https://developer.apple.com/documentation/avfoundation/converting-side-by-side-3d-video-to-multiview-hevc-and-spatial-video#Process-input-as-it-becomes-available)
+
+[Apple | MV-HEVC stereo video profile interop](https://developer.apple.com/av-foundation/HEVC-Stereo-Video-Profile.pdf)
+
+[HLS test streams](HLS.md#streams)
+
+> MV-HEVC video MUST NOT be used for anything other than stereo video
+
+[HLS specs rules | apple](https://developer.apple.com/documentation/http-live-streaming/hls-authoring-specification-for-apple-devices#Video)

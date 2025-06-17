@@ -10,6 +10,8 @@ Every unit test follows this general pattern:
 2.  provide the object under test some input
 3.  make assertions on the objects outputs
 
+
+
 ## Skip Tests
 
 You can append `skip` to the test_function_name in order for Xcode compiler | runtime service to skip those tests in order to be ran and not wasted with that resources accordingly.
@@ -119,6 +121,24 @@ Reflection is a common programming language feature that enables us to inspect, 
 [swiftbysundell | reflection](https://www.swiftbysundell.com/articles/reflection-in-swift/)
 
 
+
+[wiki | reflective programming](https://en.wikipedia.org/wiki/Reflective_programming#Objective-C)
+
+```objc
+// Foo class.
+@interface Foo : NSObject
+- (void)hello;
+@end
+
+// Sending "hello" to a Foo instance without reflection.
+Foo *obj = [[Foo alloc] init];
+[obj hello];
+
+// Sending "hello" to a Foo instance with reflection.
+id obj = [[NSClassFromString(@"Foo") alloc] init];
+[obj performSelector: @selector(hello)];
+```
+
 ## Assertions
 
 – `assert()`  
@@ -147,24 +167,7 @@ assert(10 > 5, "10 is not less than 5")
 [speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane](https://medium.com/xcblog/speed-up-ios-ci-using-test-without-building-xctestrun-and-fastlane-a982b0060676)
 
 
-## Errors
-
-
-###  XCUITest Failed to terminate app
-
-[SO | xcuitest-class-teardown-isnt-deleting-the-app-but-works-if-its-instance-teardow](https://stackoverflow.com/questions/73759977/xcuitest-randomly-failing-during-teardown-failed-to-terminate-com-bundle-id?noredirect=1&lq=1)
-
-### XCUITest doesn't delete app
-
-```swift
-override func tearDown() {
-    XCUIApplication().terminate()
-    super.tearDown()
-}
-```
-
-
-[SO | XCUITest Class teardown isnt deleting the app. But works if its instance teardown. What am I doing wrong?](https://stackoverflow.com/questions/53181823/xcuitest-class-teardown-isnt-deleting-the-app-but-works-if-its-instance-teardow)
+## [Errors](test_errors.md)
 
 
 ## Links

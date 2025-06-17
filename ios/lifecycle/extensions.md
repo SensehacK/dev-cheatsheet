@@ -23,6 +23,15 @@ extension StringProtocol {
 }
 ```
 
+### isNumber
+
+```swift
+extension String {
+    var isNumber: Bool {
+        !isEmpty && rangeOfCharacter(from: .decimalDigits.inverted) == nil
+    }
+}
+```
 ### Format
 
 ## Value Conversion

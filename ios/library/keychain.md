@@ -43,9 +43,29 @@ func checkAccessible(key: String) -> Bool {
 ```
 
 
+
+## Unique tracking 
+
+[apple dev | post | DTS](https://developer.apple.com/forums/thread/98398?answerId=761461022#761461022)
+Copied from this link ^ 
+
+In that case the trick is to entangle your credential with a value that’s deleted when the app is deleted. I mentioned that in the [post I referenced above](https://developer.apple.com/forums/thread/36442?answerId=281900022#281900022) but let’s explore a concrete example:
+
+Let’s say the user’s password is `opendoor`, or 6F70656E646F6F72 as UTF-8 encoded bytes. Generate a random sequence of bytes of the same length, like 1B6067C70711D099 and store that in a file in your app’s container. Now XOR the password with the random bytes and store that in the keychain. There are now four interesting cases:
+
+- In the normal case, when you go to read the password, read the value from the keychain and the random bytes from the file, XOR them, and you have the original password.
+    
+- If the user deletes your app, the file is removed and the item in the keychain becomes useless.
+    
+- If the user deletes your app and re-installs it, the keychain item will be there but the file won’t be. In that case the password is lost.
+    
+- It’s also possible that the user might have managed to migrate your app such that the file is present but the keychain item isn’t. In the case the password is lost as well.
+
 ## References
 
 [dev apple | keychain_services](https://developer.apple.com/documentation/security/keychain_services)
 
 
 [apple dev forums | eskimo | post basics of SecItem | Keychain API](https://developer.apple.com/forums/thread/724023)
+
+[SO | diff between userdefaults and keychain](https://stackoverflow.com/questions/12090136/difference-between-keychain-and-nsuserdefault)

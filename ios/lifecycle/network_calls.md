@@ -83,6 +83,39 @@ First one downloads in memory / RAM and the other one downloads the file and sto
 
 ## [URL](ios/swift/url.md)
 
+
+## Determine network
+
+
+
+cellular or wifi
+
+To check if an iOS device is connected to Wi-Fi or cellular data in Swift, use the `NWPathMonitor` class. This class provides information about the state of the network interface, including the type of connection. By checking `path.usesInterfaceType(.wifi)` and `path.usesInterfaceType(.cellular)`, you can determine the current network connection
+
+```swift
+import Network
+func checkNetworkConnection() {
+    let monitor = NWPathMonitor()
+    monitor.pathUpdateHandler = { path in
+        if path.usesInterfaceType(.wifi) {
+            print("Connected to Wi-Fi")
+        } else if path.usesInterfaceType(.cellular) {
+            print("Connected to Cellular")
+        }
+        
+        // Optional: Check for internet connectivity (not just network type)
+        if path.status == .satisfied {
+            print("Internet connection is available")
+        } else {
+            print("No internet connection")
+        }
+    }
+    monitor.start(queue: .global()) // Start the monitor on a background thread
+}
+// Call the function to start monitoring
+checkNetworkConnection()
+```
+
 ## Reference 
 
 [swift by Sundell | Generic network APIs](https://www.swiftbysundell.com/articles/creating-generic-networking-apis-in-swift/)

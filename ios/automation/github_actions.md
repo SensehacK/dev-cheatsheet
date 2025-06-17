@@ -47,6 +47,14 @@ jobs:
 Checking what runners images are available for [Github Actions](https://github.com/actions/runner-images)
 
 
+### Custom Runner
+
+
+### Multiple hosted runner
+
+[How to run multiple self-hosted runners on a single host](https://github.com/orgs/community/discussions/26258)
+
+
 ## Workflow
 
 ### Manual trigger
@@ -90,6 +98,7 @@ All these scenarios could be supported with `manual_triggers` and that's the s
 
 Branch specific wildcards
 
+any pull request
 ```yaml
 on:
   pull_request:
@@ -98,11 +107,62 @@ on:
       - main
       - develop
       - 'releases/**'
+      - 'epic-**'
 ```
 
 
 [github actions doc](https://docs.github.com/en/actions/using-workflows/workflow-syntax-for-github-actions#example-including-branches)
 
+target
+```yaml
+on:
+  pull_request_target:
+	types:
+      - opened
+    branches: [ "develop", "main"]
+	paths:
+      - '**.swift'
+```
+
+[Github actions doc | pull_request_target](https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#pull_request_target)
+
+
+### Nightly
+
+[SO | nightly schedule job](https://stackoverflow.com/questions/63014786/how-to-schedule-a-github-actions-nightly-build-but-run-it-only-when-there-where)
+
+Copied workflow.yaml file
+
+```yaml
+check_date:
+    runs-on: ubuntu-latest
+    name: Check latest commit
+    outputs:
+      should_run: ${{ steps.should_run.outputs.should_run }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: print latest_commit
+        run: echo ${{ github.sha }}
+
+      - id: should_run
+        continue-on-error: true
+        name: check latest commit is less than a day
+        if: ${{ github.event_name == 'schedule' }}
+        run: test -z $(git rev-list  --after="24 hours"  ${{ github.sha }}) && echo "::set-output name=should_run::false"
+```
+
+Utilize this reusable job in your main job. 
+where `do_something` is the main job dependent on mini job `check_date`. hence the needs clause.
+
+```yaml
+do_something:
+    needs: check_date
+    if: ${{ needs.check_date.outputs.should_run != 'false' }}
+    runs-on: windows-latest
+    name: do something.
+    steps:
+      - uses: actions/checkout@v2
+```
 
 ## Github Context
 
@@ -118,6 +178,13 @@ package 'swift-docc' is using Swift tools version 5.9.0 but the installed versio
 ```
 
 Sometimes its more important to be on specific xcode version or swift package tools
+
+
+## Sudo
+
+[github hosted runners | admin sudoless](https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners#administrative-privileges)
+
+
 
 ## Errors
 

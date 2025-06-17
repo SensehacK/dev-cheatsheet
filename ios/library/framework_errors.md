@@ -129,3 +129,39 @@ Cocoapods
 ```
 Using use_frameworks! in the podfile
 ```
+
+
+
+
+
+## Could not find auto-linked library
+
+
+```
+Undefined symbol: _OBJC_CLASS_$__TtCs12_SwiftObject
+Undefined symbol: _swift_weakDestroy  
+Undefined symbol: _swift_deallocObject
+ld: warning: Could not find auto-linked library 'swiftFoundation'
+ld: warning: Could not find auto-linked library 'swiftDarwin'
+```
+
+This probably happens due to linking issues when you have an ObjectiveC project and swift bridging header. 
+
+
+Copied from SO post
+
+1. Open ios/YourAppName.xcodeproj in Xcode
+2. Right-click on Your App Name in the Project Navigator on the left, and click New File…
+3. Create a single empty Swift file to the project (make sure that Your App Name target is selected when adding)
+4. when Xcode asks, press Create Bridging Header and do not remove Swift file then. re-run your build.
+
+This should fix the problem
+
+
+Apparently for pure objective-c projects you will need to add this `$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)` to the **library search paths** of your target. This worked for me when I was including a library written in swift to a project in objective-c
+
+What worked for me in a React Native project is to move `$(inherited)` to the bottom of the list in Build Settings -> Library Search Paths
+
+It prolly likes to link to other libraries getting resolved and then you would build the last dependency graph and build the actual code which needs to be build.
+
+[SO | linker errors static libraries](https://stackoverflow.com/questions/52536380/why-do-i-get-ios-linker-errors-with-my-static-libraries)

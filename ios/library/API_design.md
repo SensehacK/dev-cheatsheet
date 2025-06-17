@@ -19,7 +19,7 @@ Having a good API design or a specific rules towards concise project adhering to
 
 ## Coding
 
-[Best_practices for iOS](best_practices.md)
+[Best_practices for iOS](ios/config/best_practices.md)
 
 ## Reference
 

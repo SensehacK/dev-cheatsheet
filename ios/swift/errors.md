@@ -80,3 +80,22 @@ throw RuntimeError("Error message.")
 
 [SO | generate-your-own-error-code-in-swift](https://stackoverflow.com/questions/40671991/generate-your-own-error-code-in-swift-3)
 
+
+## References
+
+[apple dev | errors and exceptions](https://developer.apple.com/documentation/foundation/errors-and-exceptions)
+
+[apple archive | error handling guide](https://developer.apple.com/library/archive/documentation/Cocoa/Conceptual/ErrorHandlingCocoa/ErrorHandling/ErrorHandling.html#//apple_ref/doc/uid/TP40001806)
+
+
+
+## NS Error
+
+Information about an error condition including a domain, a domain-specific error code, and application-specific information.
+
+## Exception
+
+
+> Use [`NSException`](https://developer.apple.com/documentation/foundation/nsexception) to implement exception handling. An exception is a special condition that interrupts the normal flow of program execution. Each application can interrupt the program for different reasons. For example, one application might interpret saving a file in a directory that is write-protected as an exception. In this sense, the exception is equivalent to an error. Another application might interpret the user’s key-press (for example, Control-C) as an exception: an indication that a long-running process should abort.
+
+[apple docs](https://developer.apple.com/documentation/foundation/nsexception)

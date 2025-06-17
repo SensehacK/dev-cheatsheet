@@ -40,6 +40,8 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[generics]]
 
+[guard](guard.md)
+
 [hashable](/ios/swift/hashable.md)
 
 [[keypaths]]
@@ -73,6 +75,8 @@ As sometimes, we would have limited internet access or restrictive data download
 [[switch]]
 
 [[ternary]]
+
+[tuple](ios/swift/tuple.md)
 
 [[type_casting]]
 

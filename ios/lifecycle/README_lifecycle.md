@@ -44,6 +44,8 @@
 
 [protocol](/ios/lifecycle/protocol.md)
 
+[reactive_paradigm](reactive_paradigm.md)
+
 [read_local_file](/ios/lifecycle/read_local_file.md)
 
 [[ios/lifecycle/retain_cycle]]

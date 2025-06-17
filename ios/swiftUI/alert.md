@@ -35,3 +35,27 @@ Button("Show Alert with Destruction") {
 
 
 [sarunw | how-to-present-alert-in-swiftui-ios15](https://sarunw.com/posts/how-to-present-alert-in-swiftui-ios15/)
+
+
+## Nuances
+
+iPad (reg width screen class) confirmation dialog needs to be anchored to the view providing interaction.
+
+```swift
+// Old 
+List {
+	CatalogItemView(item: item) {
+		selectedCatalogItem = item
+		isConfirmingDownload = true
+	}
+}
+.confirmationDialog { } // UI dialogue
+.navigationTitle("Items")
+
+// New
+CatalogItemView(item: item) {
+	selectedCatalogItem = item
+	isConfirmingDownload = true
+}
+.confirmationDialog { }
+```

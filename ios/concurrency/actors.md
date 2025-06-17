@@ -105,6 +105,13 @@ class CustomClass2 {
 
 When your View Model conforms to `ObservableObject` you want to make sure your updates to `Published` properties happen on the main thread.
 
+
+
+## Errors
+
+```error
+/git/cloud/apple/Sources/.swift:250:30 Main actor-isolated property 'Track' can not be referenced from a non-isolated context; this is an error in the Swift 6 language mode
+```
 ## References
 
 [wwdc2021/10133](https://developer.apple.com/videos/play/wwdc2021/10133)

@@ -16,6 +16,8 @@ Every HLS file has these properties
 
 ## Test Streams
 
+
+
 [developer.apple.com/streaming/examples/](https://developer.apple.com/streaming/examples/)
 
 ```js
@@ -36,6 +38,12 @@ HLS stream having :
 [Link](https://sample.vodobox.com/planete_interdite/planete_interdite_alternate.m3u8)
 
 
+## android
+
+Dash
+[https://livesim2.dashif.org/vod/testpic_2s/multi_subs.mpd](https://livesim2.dashif.org/vod/testpic_2s/multi_subs.mpd)
+
+Here's another good one: [https://media.axprod.net/TestVectors/v7-Clear/Manifest_MultiPeriod.mpd](https://media.axprod.net/TestVectors/v7-Clear/Manifest_MultiPeriod.mpd)
 
 ## HLS Keys
 

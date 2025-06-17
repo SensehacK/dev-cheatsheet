@@ -35,7 +35,7 @@ let expectation = self.expectation(description: "Your custom expectation")
 
 Basic unit test  `Expectation` working with Asynchronous closure based task.
 
-```swift
+```swif
 func test_something_async() {
 	var resultData: [Model]?
 	var expectedResultData: [Model] = [333, 666, 999]
@@ -60,7 +60,33 @@ Or moving forward you can utilize
 await fulfillment(of: [expectation], timeout: 2)
 ```
 
-## Caveat  Async Await
+## Async
+
+If your test has async await syntax, you could just utilize swift's newer apis with XCTest
+
+Old way of testing
+
+```swift
+func testURLInitialization() {
+	let expectation: self.expectation(description: "Hello")
+	
+	Task {
+		doAsyncTask { expectation.fulfill() }
+	}
+	await fulfillment(of: [expectation], timeout: 2) 
+}
+```
+
+Newer or easier approach with less boilerplate code making the test `async`
+1. you won't need expectations
+2. you won't need Task
+```swift
+func testURLInitialization() async {
+	doAsyncTask { }
+}
+```
+
+### Caveat
 
 Async Await makes writing asynchronous tests a bit simpler. 
 Because now we can do synchronous ways of certain asynchronous tasks. It helps us to read through like the normal synchronous way of execution.

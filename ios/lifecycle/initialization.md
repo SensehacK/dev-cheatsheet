@@ -84,3 +84,36 @@ let temp = Temperature()
 temp.fahrenheit = 99
 print (temp.celsius)
 ```
+
+
+## Reflection
+
+Objective C chops
+
+```swift
+var className = "YourAppName.TestViewController"
+let aClass = NSClassFromString(className) as! UIViewController.Type
+let viewController = aClass()
+```
+
+Check if the class is present or instantiated in Runtime
+
+```swift
+@objc enum SDK: Int {
+	case Custom1 = 0
+	case Custom2
+
+	var isInstantiated: Bool {
+		switch self {
+		case SDK.Custom1:
+		return NSClassFromString("Custom1_Lib_Name") != nil
+		case SDK.Custom2:
+		return NSClassFromString("Custom2_Lib_Name") != nil
+		}
+	}
+}
+```
+
+[apple doc | NSClassFromString](https://developer.apple.com/documentation/foundation/1395135-nsclassfromstring?language=objc)
+
+

@@ -191,6 +191,15 @@ i don't think we need to have multiple and nearly identical JSON structures. for
 
 
 
+## Quirks
+
+### Mock business logic
+
+> unit tests are nice but when u have multiple mocks, it gets ![:pita:] to track or do a fast follow ur improved logic into those mocks. And at that point ur thinking why bother writing tests when u have to mock ur implementation as well.
+
+> tldr: breakpoints & debug prints ftw to really check wat's wrong in prod env vs testing env.
+
+This came to me when I was chasing a bug which is reproducible in production but not in the unit test mocks, since the business logic which has equality is different compared to other.
 
 ## Resources
 

@@ -4,6 +4,8 @@
 
 ## Observable
 
+It is a type of a property wrapper with syntax `@Observable`
+
 ### Code
 
 ```swift
