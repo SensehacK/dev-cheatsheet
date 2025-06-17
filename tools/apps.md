@@ -88,7 +88,7 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 - [Postman](https://www.postman.com/downloads/) for API prototyping 
 - [bruno](https://www.usebruno.com/) - oos API client
 - Little Snitch
-- [Charles](https://www.charlesproxy.com/) - network sniffer |  [charles_proxy](charles_proxy.md)
+- [Charles](https://www.charlesproxy.com/) - network sniffer |  [charles_proxy](network/charles_proxy.md)
 - Lulu 
 
 
@@ -96,6 +96,8 @@ If you need [PDF to paperless conversion](https://github.com/paperless-ngx/paper
 
 - [http request online](https://base64.guru/tools/http-request-online)
 - [curl CLI request builder](https://curlbuilder.com/)
+- [base64 encoder](https://www.base64decode.org/)
+- [url encoder | decoder](https://www.urldecoder.org/)
 
 ## Utility
 

@@ -41,6 +41,12 @@ curl -s "http://url.something.com/filepath/filename-.m3u8?sz=asfa"
 man help - curl
 [Manual](https://curl.se/docs/manual.html)
 
+```sh
+man curl
+```
+
+[SO | curl D param](https://stackoverflow.com/questions/46673210/curl-d-parameter)
+
 
 ### Allowlist
 
@@ -51,6 +57,12 @@ curl -4 -Lvs https://domain.mainDomain.us/TESTTESTTEST
 curl -6 -Lvs https://domain.mainDomain.us/TESTTESTTEST
 ```
 
+
+## Cheatsheet
+
+[quickref.me  | curl](https://quickref.me/curl.html)
+
+[devhints.io | curl](https://devhints.io/curl)
 
 ## Error 
 

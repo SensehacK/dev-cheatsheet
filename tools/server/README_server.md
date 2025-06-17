@@ -1,6 +1,8 @@
 
 ## List
 
+[ai](ai.md)
+
 [http-server](http-server.md)
 
 [jackett](jackett.md)
