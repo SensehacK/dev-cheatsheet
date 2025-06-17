@@ -4,13 +4,25 @@
 
 [alexa_echo](alexa_echo.md)
 
+[androids](androids.md)
+
 [graphic_card](graphic_card.md)
+
+[iPads](iPads.md)
+
+[iPhones](iPhones.md)
+
+[keyboards](keyboards.md)
 
 [lg_oled_c1](lg_oled_c1.md)
 
 [macbook_pro](macbook_pro.md)
 
+[mouse](mouse.md)
+
 [[raspberry_pi]]
+
+[samsung_android](samsung_android.md)
 
 [xbox_controllers](xbox_controllers.md)
 
