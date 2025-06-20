@@ -83,7 +83,6 @@ User Info: {
 ```sh
 Showing Recent Messages
 /Users/ksave/Automation/Projects/Pods/Target Support Files/Pods-API/Pods-API.debug.xcconfig: unable to open file (in target "API" in project "API")
-
 ```
 
 Maybe update the proper references and also clear the Derived Data.
@@ -135,6 +134,7 @@ error: terminated(1): /usr/bin/xcrun --sdk macosx --show-sdk-platform-path outpu
 
 Just set the xcode default path 
 xcode switch
+
 ```bash
 sudo xcode-select -switch /Applications/Xcode.app
 ```
@@ -334,7 +334,6 @@ Or make it explicit run this command
 sudo xcodebuild -runFirstLaunch
 ```
 
-
 ## does not contain expected binary artifact
 
 ```log
@@ -350,9 +349,6 @@ and if that doesn't help you can try deleting the spm cache
 rm -rf ~/Library/org.swift.swiftpm 
 rm -rf ~/Library/Caches/org.swift.swiftpm/
 ```
-
-
-
 
 ## Tool-hosted testing is unavailable
 

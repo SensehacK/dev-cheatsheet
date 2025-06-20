@@ -43,4 +43,4 @@ ssh-add --apple-use-keychain ~/.ssh/id_github
 
 ## References
 
-https://blog.appcircle.io/article/maximizing-xcode-efficiency-14-tips-for-boosting-productivity
+[maximizing-xcode-efficiency-14-tips-for-boosting-productivity](https://blog.appcircle.io/article/maximizing-xcode-efficiency-14-tips-for-boosting-productivity)

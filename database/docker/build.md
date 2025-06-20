@@ -12,7 +12,9 @@ Beginners code flow with Node JS
 
 Manual setup for Node JS. Just npm install and nodemon app.js
 
-> localhost would be listening on port 3000
+```sh
+localhost would be listening on port 3000
+```
 
 ### Docker Run
 
@@ -20,11 +22,16 @@ Manual setup for Node JS. Just npm install and nodemon app.js
 
 // MYSQL image
 
-> docker pull kautilyasave/sensehack-mysql
+```sh
+docker pull kautilyasave/sensehack-mysql
+```
+
 
 // Node js image
 
-> docker pull kautilyasave/sensehack-nodejs
+```sh
+docker pull kautilyasave/sensehack-nodejs
+```
 
 ### Build
 
@@ -41,7 +48,9 @@ docker run  -d \
 
 Save the MYSQL Image container local ip address and port for linking it to NodeJS Image while running. GREP IP address of MYSQL docker image running container
 
-> docker inspect sensehack-mysql-img \| grep IPAddress
+```sh
+docker inspect sensehack-mysql-img \| grep IPAddress
+```
 
 MYSQL\_HOST= 'Replace the IP address for giving the node js connection SQL Host address.
 
@@ -64,19 +73,27 @@ docker run  -d \
 
 ### MYSQL Image
 
-> docker build -t kautilyasave/sensehack-mysql .
+```sh
+docker build -t kautilyasave/sensehack-mysql .
+```
 
 Push the image to docker Hub
 
-> docker push kautilyasave/sensehack-mysql
+```sh
+docker push kautilyasave/sensehack-mysql
+```
 
 ### Node JS Image
 
-> docker build -t kautilyasave/sensehack-nodejs .
+```sh
+docker build -t kautilyasave/sensehack-nodejs .
+```
 
 Push the image to docker Hub
 
-> docker push kautilyasave/sensehack-nodejs
+```sh
+docker push kautilyasave/sensehack-nodejs
+```
 
 ### Usage
 
@@ -107,7 +124,9 @@ user-mysql-666
 
 user-nodejs-777
 
-> docker build -t test-mysql .
+```sh
+docker build -t test-mysql .
+```
 
 Output :
 
@@ -126,20 +145,29 @@ Output : b0144d3054130f1ea63fe58d0399709a32301902b1424c913b9491c126e37636
 
 2nd : 688eba7ddf87236e00e139c0bddf02d8f2e64ad9623ce436e425376b5ab70fac
 
-> docker stop container\_name docker rm /container\_name
+```sh
+docker stop container\_name docker rm /container\_name
+```
 
 \` Logs to check of the container
 
-> docker logs docker\_container\_name
+```sh
+docker logs docker\_container\_name
+```
 
 To check images of docker
 
-> docker images
+```sh
+docker images
+```
 
 To check process of docker containers / images
 
-> docker ps
+```sh
+docker ps
+```
 
+```sh
 docker build -t user-mysql-666 .
 
 docker run -d  --publish 3306:3306  --volume=/Users/SensehacK/Documents/GitHub/nodejs/mysql/data:/var/lib/mysql  --name=user-mysql-img-666 user-mysql-666
@@ -147,4 +175,5 @@ docker run -d  --publish 3306:3306  --volume=/Users/SensehacK/Documents/GitHub/n
 docker build -t user-nodejs-666 .
 
 docker run -d  --publish 3000:3000  -e MYSQL\_USER='root'  -e MYSQL\_PASSWORD=‘your\_password’  -e MYSQL\_DATABASE='node\_js'  -e MYSQL\_HOST='172.17.0.2'  --link test-mysql-micro:db  --name=user-nodejs-img-666 user-nodejs-666
+```
 

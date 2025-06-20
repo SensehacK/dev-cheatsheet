@@ -232,3 +232,12 @@ So if I had the option to redo or re-enter USA with immigration in mind, I would
 - Most of the time these proxy companies are "fake" "desi consultancies". read linked article above `bloomberg | thousands of middlemen gaming Visa lottery system`
 - At max, they will entertain you if you have `h4` EAD which is a spousal work Visa, less restrictive and puts the burden on the `source h1B/h..` visa holder who has his `i140` process approved or completed. The precursor to getting a `green card` in the states.
 
+
+
+
+## iykyk
+
+AI - Actual Indians (builder.ai)
+AGI - Actual Genius Indian
+AI - ~~O~~Autsourced to India
+API - Actual person in India

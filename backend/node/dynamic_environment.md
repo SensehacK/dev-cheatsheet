@@ -19,8 +19,7 @@ That could range to different cases depending on your project requirements.
 
 ## Utilization
 
-```javascript
-
+```js
 // Function for dynamically setting different perspective.
 function setupEnvironment() {
 	// Setup environment accordingly.
@@ -32,6 +31,4 @@ function setupEnvironment() {
 		return pool_aws;
 	}
 }
-
-
 ```

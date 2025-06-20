@@ -11,14 +11,14 @@
       "query": "frontend",
       "color": {
         "a": 1,
-        "rgb": 15728640
+        "rgb": 15784960
       }
     },
     {
       "query": "ios",
       "color": {
         "a": 1,
-        "rgb": 16774912
+        "rgb": 16737792
       }
     },
     {
@@ -32,21 +32,21 @@
       "query": "terminal",
       "color": {
         "a": 1,
-        "rgb": 3604735
+        "rgb": 5720411
       }
     },
     {
       "query": "swift",
       "color": {
         "a": 1,
-        "rgb": 16743168
+        "rgb": 16728064
       }
     },
     {
       "query": "git",
       "color": {
         "a": 1,
-        "rgb": 62724
+        "rgb": 11796725
       }
     },
     {
@@ -76,18 +76,25 @@
         "a": 1,
         "rgb": 16283455
       }
+    },
+    {
+      "query": "mobile",
+      "color": {
+        "a": 1,
+        "rgb": 64050
+      }
     }
   ],
-  "collapse-display": true,
+  "collapse-display": false,
   "showArrow": false,
   "textFadeMultiplier": -3,
-  "nodeSizeMultiplier": 1.56465657552083,
-  "lineSizeMultiplier": 1.89523111979167,
+  "nodeSizeMultiplier": 1.27909528907923,
+  "lineSizeMultiplier": 0.865952890792291,
   "collapse-forces": false,
-  "centerStrength": 0.653401692708333,
-  "repelStrength": 16.0952380952381,
-  "linkStrength": 1,
-  "linkDistance": 97,
-  "scale": 0.11775200002107976,
+  "centerStrength": 0.47296573875803,
+  "repelStrength": 20,
+  "linkStrength": 0.925945753033547,
+  "linkDistance": 30,
+  "scale": 0.08953943233415172,
   "close": false
 }

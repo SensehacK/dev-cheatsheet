@@ -321,14 +321,9 @@ If you don't see your app's name in the applications listed there, go to "By pro
 
 [SO source](https://stackoverflow.com/a/16812890)
 
-
-
-
 ## Debug Release App
 
-
 Normally Debug builds have optimisation disabled (`-O0`) to make debugging easier, whereas Release builds have optimisation enabled (`-O3` or `-Os`), which makes the code run much faster, but also makes debugging harder (but not impossible). You can just go into the build settings in Xcode in the Debug configuration and temporarily turn up the optimisation level - this will keep all the other debug goodies (symbols etc) but hopefully also flush out the Release mode bug. (Don't forget to reset the optimisation level to `-O0` in the Debug configuration when you're done!)
-
 
 Run code in release or not
 
@@ -344,11 +339,8 @@ Run code in release or not
 
 [sarunw | check-if-swift-code-is-in-debug-build-configuration](https://sarunw.com/posts/how-to-check-if-swift-code-is-in-debug-build-configuration/)
 
-
 ## Search Cryptic Errors
 
 [apple developer forums](https://developer.apple.com/forums/) could be the best resource when searching for cryptic error messages which aren't documented or verbose enough for the console logs.
 
 Usually people on the forum respond towards it, rather than Stack overflow.
-
-

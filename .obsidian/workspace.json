@@ -6,148 +6,149 @@
       {
         "id": "08ecfdedf013a316",
         "type": "split",
-        "dimension": 75.38838920686835,
+        "dimension": 81.47208121827411,
         "children": [
           {
             "id": "706685fff5da337c",
             "type": "tabs",
-            "dimension": 48.02126402835204,
+            "dimension": 44.84781811514485,
             "children": [
               {
-                "id": "4988617f782ba7ba",
+                "id": "e9b163a5a688bd50",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ios/rxSwift/map.md",
+                    "file": "mobile/kmp/README_kmp.md",
                     "mode": "source",
+                    "source": false,
                     "backlinks": true,
-                    "source": false
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
                   },
-                  "pinned": true
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "README_kmp"
                 }
               },
               {
-                "id": "eab68f4f3f65402e",
+                "id": "ee99217c608b04a1",
                 "type": "leaf",
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "process/key_shortcuts.md",
+                    "file": "git/README_git.md",
                     "mode": "source",
+                    "source": false,
                     "backlinks": true,
-                    "source": false
-                  }
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "README_git"
                 }
-              }
-            ],
-            "currentTab": 1
-          },
-          {
-            "id": "9b51689f5b598e04",
-            "type": "tabs",
-            "dimension": 51.97873597164796,
-            "children": [
+              },
               {
-                "id": "d7d125647eb4973d",
+                "id": "1931f0fe6fa34148",
                 "type": "leaf",
                 "pinned": true,
                 "state": {
                   "type": "markdown",
                   "state": {
-                    "file": "ios/library/framework.md",
+                    "file": "database/docker/build.md",
                     "mode": "source",
+                    "source": false,
                     "backlinks": true,
-                    "source": false
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
                   },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "2e3878592586a84f",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/library/avKit.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
-                }
-              },
-              {
-                "id": "71a1e7803f21db9c",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "git/delete.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "e83e0f93e1ad459f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/xcode/simulator.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "0afc54f4b842125f",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "mobile/android/video.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "3fa9b3b78d003b8d",
-                "type": "leaf",
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "tools/server/http-server.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  }
-                }
-              },
-              {
-                "id": "51b114e1853b8873",
-                "type": "leaf",
-                "pinned": true,
-                "state": {
-                  "type": "markdown",
-                  "state": {
-                    "file": "ios/xcode/build_commands.md",
-                    "mode": "source",
-                    "backlinks": true,
-                    "source": false
-                  },
-                  "pinned": true
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "build"
                 }
               }
             ],
             "currentTab": 2
+          },
+          {
+            "id": "9b51689f5b598e04",
+            "type": "tabs",
+            "dimension": 55.15218188485515,
+            "children": [
+              {
+                "id": "ffdd87b330714e58",
+                "type": "leaf",
+                "pinned": true,
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/xcode/build_errors.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "pinned": true,
+                  "icon": "lucide-file",
+                  "title": "build_errors"
+                }
+              },
+              {
+                "id": "8a5421c87391853e",
+                "type": "leaf",
+                "state": {
+                  "type": "markdown",
+                  "state": {
+                    "file": "ios/xcode/playgrounds.md",
+                    "mode": "source",
+                    "source": false,
+                    "backlinks": true,
+                    "backlinkOpts": {
+                      "collapseAll": false,
+                      "extraContext": false,
+                      "sortOrder": "alphabetical",
+                      "showSearch": false,
+                      "searchQuery": "",
+                      "backlinkCollapsed": false,
+                      "unlinkedCollapsed": true
+                    }
+                  },
+                  "icon": "lucide-file",
+                  "title": "playgrounds"
+                }
+              }
+            ],
+            "currentTab": 1
           }
         ],
         "direction": "vertical"
@@ -155,23 +156,8 @@
       {
         "id": "fd42ace9dcd8f418",
         "type": "tabs",
-        "dimension": 24.611610793131646,
+        "dimension": 18.527918781725887,
         "children": [
-          {
-            "id": "d48bcf8bd36dfbcf",
-            "type": "leaf",
-            "pinned": true,
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ios/xcode/spm.md",
-                "mode": "source",
-                "backlinks": true,
-                "source": false
-              },
-              "pinned": true
-            }
-          },
           {
             "id": "b7aaa4676769e86f",
             "type": "leaf",
@@ -184,78 +170,258 @@
                 "backlinks": true,
                 "source": false
               },
-              "pinned": true
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "avKit"
             }
           },
           {
-            "id": "e5b27fd041e09c15",
+            "id": "f0b66fd45763a5ab",
             "type": "leaf",
             "pinned": true,
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swift/random.md",
+                "file": "ios/xcode/spm.md",
                 "mode": "source",
                 "backlinks": true,
                 "source": false
               },
-              "pinned": true
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "spm"
             }
           },
           {
-            "id": "e2e04de4457eb79c",
+            "id": "6c92012cb5a5e8c2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "os/linux/ssh.md",
+                "file": "architecture/terminologies/arch_terms.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
-              }
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "arch_terms"
             }
           },
           {
-            "id": "e931334b50a8be68",
+            "id": "0fa93d60675e7c42",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/library/HLS.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "HLS"
+            }
+          },
+          {
+            "id": "98f5b61a08ebbda1",
+            "type": "leaf",
+            "pinned": true,
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/test/swift_testing.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "pinned": true,
+              "icon": "lucide-file",
+              "title": "swift_testing"
+            }
+          },
+          {
+            "id": "18df6b22d3fb50ae",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "git/amend.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "amend"
+            }
+          },
+          {
+            "id": "1b0586ff177fdb3e",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "New tab"
+            }
+          },
+          {
+            "id": "48700f48ce4ae90e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
                 "file": "ios/xcode/carthage.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
-              }
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "carthage"
             }
           },
           {
-            "id": "c578d54cd53518ac",
+            "id": "3a18928ffffcab35",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/xcode/spm_errors.md",
+                "file": "tools/server/transmission_open_VPN.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
-              }
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "transmission_open_VPN"
             }
           },
           {
-            "id": "2cc9a74866a7a1e6",
+            "id": "80e1ac740ccd3e1f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ios/swift/result.md",
+                "file": "ios/config/secret_keys.md",
                 "mode": "source",
+                "source": false,
                 "backlinks": true,
-                "source": false
-              }
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "secret_keys"
+            }
+          },
+          {
+            "id": "9d96233f2aec8250",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "database/web/json.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "json"
+            }
+          },
+          {
+            "id": "9f03da46c627d25e",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "ios/lifecycle/user_defaults.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "user_defaults"
             }
           }
         ],
-        "currentTab": 6
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -274,8 +440,11 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
-              }
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
             }
           },
           {
@@ -284,13 +453,15 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "No such module",
+                "query": "layoffs",
                 "matchingCase": true,
-                "explainSearch": false,
+                "explainSearch": true,
                 "collapseAll": false,
-                "extraContext": true,
+                "extraContext": false,
                 "sortOrder": "alphabetical"
-              }
+              },
+              "icon": "lucide-search",
+              "title": "Search"
             }
           },
           {
@@ -298,7 +469,9 @@
             "type": "leaf",
             "state": {
               "type": "starred",
-              "state": {}
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Plugin no longer active"
             }
           },
           {
@@ -306,11 +479,12 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {}
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -330,7 +504,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "git/delete.md",
+                "file": "ios/rxSwift/map.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -338,7 +512,9 @@
                 "searchQuery": "",
                 "backlinkCollapsed": true,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for map"
             }
           },
           {
@@ -347,10 +523,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "git/delete.md",
+                "file": "ios/rxSwift/map.md",
                 "linksCollapsed": true,
                 "unlinkedCollapsed": true
-              }
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from map"
             }
           },
           {
@@ -361,7 +539,9 @@
               "state": {
                 "sortOrder": "frequency",
                 "useHierarchy": false
-              }
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
             }
           },
           {
@@ -370,8 +550,10 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "git/delete.md"
-              }
+                "file": "ios/rxSwift/map.md"
+              },
+              "icon": "lucide-list",
+              "title": "Outline of map"
             }
           },
           {
@@ -383,7 +565,9 @@
                 "sortOrder": "frequency",
                 "showSearch": false,
                 "searchQuery": ""
-              }
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
             }
           }
         ],
@@ -396,65 +580,67 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "vantage-obsidian:Vantage - Advanced search builder": false,
       "switcher:Open quick switcher": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
       "command-palette:Open command palette": false,
-      "obsidian-advanced-slides:Show Slide Preview": false
+      "obsidian-advanced-slides:Show Slide Preview": false,
+      "obsidian-kanban:Create new board": false,
+      "vantage-obsidian:Vantage - Advanced search builder": false
     }
   },
-  "active": "71a1e7803f21db9c",
+  "active": "8a5421c87391853e",
   "lastOpenFiles": [
-    "git/amend.md",
-    "ios/swift/errors.md",
-    "process/key_shortcuts.md",
-    "architecture/terminologies/video_terms.md",
-    "os/mac/keyboard.md",
-    "ios/rxSwift/playground.md",
-    "ios/xcode/build_errors.md",
-    "ios/library/framework_errors.md",
-    "ios/library/wildcard_checks.md",
-    "ios/objectiveC/access_control.md",
+    "ios/xcode/resign_cli.md",
+    "ios/xcode/performance.md",
+    "ios/xcode/playgrounds.md",
     "ios/xcode/migration.md",
-    "tools/apps.md",
-    "ios/lifecycle/extensions.md",
-    "ios/swift/result.md",
-    "ios/xcode/spm.md",
-    "ios/xcode/spm_errors.md",
-    "process/problem_solving.md",
-    "os/mac/disk_utility.md",
-    "ios/combine/filter.md",
-    "architecture/it_Depends.md",
+    "ios/xcode/ipa_generation.md",
+    "ios/xcode/instruments.md",
+    "ios/xcode/install.md",
     "ios/xcode/debug.md",
-    "ios/swift/switch.md",
-    "tools/server/mac.md",
-    "ios/combine/anyCancellable.md",
-    "ios/objectiveC/method.md",
-    "ios/swift/string.md",
-    "assets/Screenshot 2024-07-01 at 9.57.12 AM.png",
-    "assets/Screenshot 2024-07-01 at 9.57.36 AM.png",
-    "assets/xcode-location-spoofing.png",
-    "assets/Pasted image 20240626110638.png",
-    "assets/Pasted image 20240626110517.png",
-    "assets/Screenshot 2024-06-17 at 14-47-04 URL resolver by rsmith129_comcast · Pull Request #60 · comcast-player_NitroPlayerDocs.png",
-    "assets/2a7043566214d95f4da9e448fc3fc385_MD5.png",
-    "assets/7b17a8d3aaecce89fea9939417bffd9b_MD5.png",
-    "assets/Screenshot 2024-05-22 at 3.02.07 PM.png",
-    "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
-    "database/mongoDB",
-    "tools/video",
-    "architecture/terminologies/Untitled",
-    "swift",
-    "architectural/behavioral",
-    "architectural",
-    "ios/objectiveC",
-    "security",
-    "architecture/terminologies",
-    "ios/library/Untitled",
+    "ios/xcode/config.md",
+    "ios/xcode/command_line.md",
+    "ios/xcode/carthage.md",
+    "ios/xcode/build_errors.md",
+    "ios/xcode/build_commands.md",
+    "ios/xcode/breakpoint.md",
+    "ios/xcode/app_environment_variables.md",
+    "ios/README_iOS.md",
+    "database/docker/build.md",
+    "ios/concurrency/thread.md",
+    "ios/concurrency/tasks.md",
+    "ios/concurrency/operations.md",
+    "ios/concurrency/Readme_concurrency.md",
+    "ios/concurrency/GCD.md",
+    "ios/concurrency/dispatch_work_item.md",
+    "ios/concurrency/dispatch_source.md",
+    "ios/concurrency/dispatch_semaphore.md",
+    "ios/concurrency/dispatch_queue.md",
+    "mobile/kmp/Untitled",
+    "mobile/kmp",
+    "database/web",
+    "ios/Canvas.canvas",
     "Untitled.canvas",
+    "terminologies",
+    "ios/media",
+    "ios/swift/collections_cheatsheet.webp",
+    "mobile/kotlin",
+    "Untitled",
+    "assets/image (5) 1.png",
+    "assets/image (5).png",
+    "assets/628b71a20fd797895058280a80be476c_MD5.png",
+    "assets/xcode-location-spoofing.png",
+    "assets/Screenshot 2023-04-13 at 5.13.02 PM.png",
+    "assets/Pasted image 20240626110638.png",
+    "assets/Screenshot 2024-05-22 at 3.02.07 PM.png",
+    "assets/Pasted image 20240626110517.png",
+    "assets/obsidian.jpg",
+    "backend/java",
+    "backend/cPlusPlus",
+    "database/mongoDB",
     "Untitled 1.canvas"
   ]
 }

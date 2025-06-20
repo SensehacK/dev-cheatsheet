@@ -45,7 +45,6 @@ macros - `Command + Q` to quickly quit macOS apps
 
 ## Razer
 
-
 ### Basilisk v3
 
 Good lightweight mice for gaming

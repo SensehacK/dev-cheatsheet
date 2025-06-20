@@ -21,17 +21,14 @@ man xcode-build
 
 Cleaning the project.
 
-
 ```bash
 xcodebuild clean
 ```
-
 
 Listing all schemes
 ```bash
 xcodebuild -list
 ```
-
 
 ### Tests
 
@@ -83,11 +80,13 @@ xcodebuild test -workspace product_name-iOS.xcworkspace -scheme product_scheme -
 ```
 
 No verbose option with xcode build command
+
 ```sh
 xcodebuild -quiet
 ```
 
 Or use pipeline with external tool called `xcpretty`
+
 ```sh
  | xcpretty
 ```
@@ -95,7 +94,6 @@ Or use pipeline with external tool called `xcpretty`
 [Swift package Tests](https://www.jessesquires.com/blog/2021/11/03/swift-package-ios-tests/)
 
 ## Arguments 
-
 
 [CLI arguments](https://rderik.com/blog/command-line-argument-parsing-using-swift-package-manager-s/)
 

@@ -10,7 +10,6 @@ ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO
 
 # Xcode 15.3
 xcodebuild -scheme "PCore" -destination "platform=iOS Simulator,OS=17.4,name=iPhone 15" build
-
 ```
 
 

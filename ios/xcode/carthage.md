@@ -13,7 +13,6 @@ Check if Carthage is installed on your machine by running this command
 carthage version
 ```
 
-
 ## Update
 
 Use  command 
@@ -40,10 +39,6 @@ sudo rm -rf /Library/Frameworks/CarthageKit.framework
 ## Install fresh carthage  
 brew install carthage
 ```
-
-
-
-
 
 ## Getting Started
 

@@ -10,7 +10,6 @@ An object that coordinates the processing of specific low-level system events, s
 
 
 ```swift
-
 let timerInterval = 3.00
 private var queue = DispatchQueue(label: "com.player.TagTimer.queue",qos: .utility)
 
@@ -18,10 +17,6 @@ private let timer: DispatchSourceTimer = DispatchSource.makeTimerSource(queue: s
 
 timer.setEventHandler { self.doSomethingAfterTimedOut()}
 timer.schedule(deadline: .now() + timerInterval, repeating: timerInterval)
-
-
-
-
 ```
 
 Starting resuming or stopping timers

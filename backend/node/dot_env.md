@@ -4,14 +4,16 @@ Dot ENV
 
 Good way to save all your keys and secrets for making sure that your specific keys won’t be committed to the public git repository.
 
-> npm install dotenv --save
+```sh
+npm install dotenv --save
+```
 
 
 ## Create file
 
 Create .env file and save all your key values in that file.
 
-```text
+```sh
 DATABASE_ENDPOINT=east-2.rds.amazonaws.com
 DATABASE_USERNAME=admin
 DATABASE_PASSWORD=ry436gdg
@@ -26,9 +28,9 @@ You can directly access the environment variables in your function or class in J
 It automatically gets invoked with the node process.
 
 Access it via
-```javascript
+
+```js
 console.log(“Your environment key” , process.env.DATABASE_ENDPOINT)
- 
 ```
 
 ### Manual Initialization
@@ -46,11 +48,11 @@ console.log(process.env.DATABASE_USERNAME);
 
 ## References
 
-Save in “.env” file
+Save in `.env` file
 Set the production username, password and other parameters which you don’t want to commit to git.
 
-[SO Link](https://stackoverflow.com/questions/22348705/best-way-to-store-db-config-in-node-js-express-app)
+[SO | best-way-to-store-db-config-in-node-js-express-app](https://stackoverflow.com/questions/22348705/best-way-to-store-db-config-in-node-js-express-app)
 
-[SO](https://stackoverflow.com/questions/44915758/node-process-env-variable-name-returning-undefined)
+[SO | node-process-env-variable-name-returning-undefined](https://stackoverflow.com/questions/44915758/node-process-env-variable-name-returning-undefined)
 
-https://github.com/bkeepers/dotenv
+[github bkeepers/dotenv](https://github.com/bkeepers/dotenv)
