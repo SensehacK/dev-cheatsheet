@@ -7,7 +7,6 @@ To set up Charles Proxy on an Android 15 device, you'll need to configure both y
 1. Configure Charles Proxy on your Computer:
 
     Enable SSL Proxying:
-    . 
 
 In Charles, go to Proxy > SSL Proxying Settings and enable the "Enable SSL Proxying" checkbox. Add the specific domains you want to proxy by clicking "Add" and entering the host name and port. 
 Save Charles Root Certificate:

@@ -10,7 +10,11 @@
 
 [charles_proxy](mobile/android/charles_proxy.md)
 
+[cleartext](cleartext.md)
+
 [compose](mobile/android/compose.md)
+
+[dash](dash.md)
 
 [data_class](data_class.md)
 

@@ -40,6 +40,25 @@ iOS
 
 ```sh
 gradle assembleXCFramework
+
+#assemble<YourLibraryName>XCFramework
+./gradlew assembleMySharedLibraryXCFramework
+
+# if the lib is inside it in a subDirectory
+./gradlew assemble:directory_name:lib_name-auth:XCFramework
+
+
+./gradlew implementation:entos-auth:assemble
+```
+
+```sh
+Task :implementation:entos-auth:assembleEntosAuthDebugXCFramework
+xcframework successfully written out to: /Users/user/entos-auth/build/XCFrameworks/debug/EntosAuth.xcframework
+```
+
+Spotless android studio linter? 
+```sh
+gradlew spotless Apply
 ```
 
 ## PATH
@@ -53,8 +72,15 @@ gradle assembleXCFramework
 
 ## Sync
 
-One thing I liked about gradle on android IDE project was it doesn't automatically tries to sync or fetch all the dependencies on app launch / IDE project open like how [SPM xcode default behavior is](ios/xcode/spm#Fetching)
+One thing I liked about gradle on android IDE project was it doesn't automatically tries to sync or fetch all the dependencies on app launch / IDE project open like how [SPM xcode default behavior is](spm.md#Fetching)
 
+## Project
+
+Lists all the projects in the current directory for android app.
+
+```sh
+./gradlew projects
+```
 
 ## [Errors](gradle_errors.md)
 
