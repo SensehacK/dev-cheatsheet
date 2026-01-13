@@ -66,6 +66,25 @@ After that you need to select proxy -> enable `macOS proxy` from menu bar.
 
 [setup charles on mac](https://analystadmin.com/how-to-set-up-charles-proxy-on-macos/?utm_source=medium&utm_medium=social&utm_campaign=postdup)
 
+
+## Simulator
+
+You need to setup the same steps like a real device.
+
+Make sure you are listening for traffic on your computer. Go to the menu Proxy > macOS Proxy.
+
+
+[how-to-set-up-charles-proxy-for-an-ios-simulator](https://www.detroitlabs.com/blog/how-to-set-up-charles-proxy-for-an-ios-simulator/)
+
+I was able to get past this error on ios simulator, webkit safari OAuth API call
+
+```error
+Safari can't open the page because the network connection was lost.
+```
+
+[charles docs | ssl certificates](https://www.charlesproxy.com/documentation/using-charles/ssl-certificates/)
+
+
 ##  Troubleshooting
 
 ### My internet connection doesn't work
@@ -112,6 +131,45 @@ Copied from another article
 | ------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Charles shows garbled text in HTTPS request content                             | – Check that **Enable SSL Proxying** is checked in SSL Proxying Settings  <br>– Check that your host list contains the host that you are looking to decrypt  <br>– Check that the **Charles SSL Certificate** is installed on your Mac or external device (whichever device sends out the data needs to have the certificate installed)                                                                                                                                                                                                                                                                                                                                                                                                                              |
 | Charles doesn’t show any requests or Charles shows fewer requests than expected | – Check that you have no active VPN connections. Charles often times doesn’t work well over VPN  <br>– Check that you have started recording (the red/black button on the main Charles toolbar)  <br>– Try removing your request filter  <br>– Uncheck **“Focused”** to make sure there are no filters under Focused Hosts  <br>– If browser testing, disable all add blocker and cross-check with another browser  <br>– If you are attempting to proxy an external device, make sure that you are on the same network.  <br>– Offices sometimes have strict firewalls and router settings that may block proxying in general or specifically block port 8888, which Charles listens on. Check with IT or try proxying with a more advanced hotspot Charles method. |
+
+
+## Rewrite 
+
+Rule in charles 
+
+Go to `Tools` -> `Rewrite`
+
+### Rewrite Dialog
+
+Enable the toggle `Enable Rewrite`
+
+Add + icon name `rewrite_rule_503_server`
+
+Make sure you enable the rule you just created eg `rewrite_rule_503_server`
+
+### Location
+
+Add location of the URLs
+Paste the whole URL and its path (absolute)
+Or you can use whildcards
+
+Enable the Location URL arrays.
+
+### Action
+
+Add Rewrite type -> Response Status
+
+Match dialog -> Value of "Input" eg. 200
+
+Replace dialog -> Value of "Output" eg. 503 / Internal server error.
+
+Press Done
+
+### Export / Import
+
+You can share ur data to your team members in order to better replicate a certain scenario.
+
+
 
 ## Resources
 
