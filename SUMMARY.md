@@ -1,5 +1,7 @@
 # Summary
 
+## [AI](ai/README_ai.md)
+
 ## [Architecture](architecture/ReadMe_architecture.md)
 
 ## [Concurrency](architecture/concurrency_pattern.md)
