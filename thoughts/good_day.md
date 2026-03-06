@@ -77,3 +77,19 @@ Inspired by Ice Cube - Today was a good day
 [spm errors](/ios/xcode/spm_errors)
 
 [xcode build errors](/ios/xcode/build_errors)
+
+
+## Google Dev
+
+
+- I didn't had to re-sync gradle fetch
+- didn't had to delete the clean build
+- gradlew commands worked on 1st try
+- xcode + gradle played nicely
+- didn't have plugin conflicts with various Android studio
+- android studio IDE didn't even asked to increase the heap size
+- got the `logcat`, warnings, debugger working on the first try in UI
+- gradle sync conflicts werent an issue
+- didnt have new warnings or errors after taking a develop / main sync
+- didnt had to push / fetch anything from `artifactory`
+- 

@@ -9,25 +9,25 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 ## List
 
-[ads](thoughts/ads.md)
+[ads](../thoughts/ads.md)
 
-[collaboration](collaboration.md)
+[collaboration](../thoughts/collaboration.md)
 
-[decision_making](decision_making.md)
+[decision_making](../thoughts/decision_making.md)
 
 [ecosystem](../thoughts/ecosystem.md)
 
 [FOMO](../thoughts/FOMO.md)
 
-[good_day](good_day.md)
+[good_day](../thoughts/good_day.md)
 
-[immigration](immigration.md)
+[immigration](../thoughts/immigration.md)
 
 [Is this life](../thoughts/Is_this_life.md)
 
-[job_search](job_search.md)
+[job_search](../thoughts/job_search.md)
 
-[management](management.md)
+[management](../thoughts/management.md)
 
 [media](../thoughts/media.md)
 
@@ -37,22 +37,24 @@ Disclaimer: To Err Is Human. Don't cancel me!
 
 [numbers](../thoughts/numbers.md)
 
+[one_commit_a_day](../thoughts/one_commit_a_day.md)
+
 [people](../thoughts/people.md)
 
-[piracy](piracy.md)
+[piracy](../thoughts/piracy.md)
 
 [politics](../thoughts/politics.md)
 
-[privacy](privacy.md)
+[privacy](thoughts/privacy.md)
 
 [proverbs](../thoughts/proverbs.md)
 
 [rants](../thoughts/rants.md)
 
-[seniority](seniority.md)
+[seniority](../thoughts/seniority.md)
 
-[teamwork](teamwork.md)
+[teamwork](../thoughts/teamwork.md)
 
-[techbro](techbro.md)
+[techbro](../thoughts/techbro.md)
 
-[vaporware](vaporware.md)
+[vaporware](../thoughts/vaporware.md)

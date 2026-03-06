@@ -241,3 +241,13 @@ AI - Actual Indians (builder.ai)
 AGI - Actual Genius Indian
 AI - ~~O~~Autsourced to India
 API - Actual person in India
+
+
+## Toxic environment
+
+Indians usually are the first to be racist, toxic and do comparison checks in everything. 
+People have the mentality where, they would just like to know how much someone makes in TC (Total Compensation) or other accolades, so that they can do mental math of why they are better than you or cope with themselves stating, oh but he doesn't have what I have. Very few indians I have met irl have actually been able to restrict themselves from prying into others lives. Privacy is non existent, forget humble bragging, societal norms what is that?!, everyone has a short cut ("Jugaad") `circumvent` `skirt` for their path to achieve something. 
+
+Scarcity mindset or maybe under developed country, they'll play the `zero-sum` game with others.
+
+> In a nutshell, most Indians become sadistic and narcissistic once they achieve an iota of power. This combined with ‘crab mentality’ leads to a toxic work environment which doesn’t promote any new ideas or solutions. We solely focus on quantitative parameters completely ignoring the qualitative factors.
