@@ -48,7 +48,7 @@ End eg.
 
 Sadly, this was my perceived workflow from AI or technology 2 / 3 years back & at that time I felt it wasn't possible especially how everything was being outputted. But in 2026, this now doesn't feel like a rx.pipe'd dream anymore. 
 This seems achievable in the next 3 - 5 years instead of decade. 
-Unless humanity decides to not pursue this ventures for the sake of keeping the ferris wheel / guinea pig with some purpose to spin the wheel, this is inevitable is what i feel like. 
+Unless humanity decides to not pursue these ventures for the sake of keeping the ferris wheel / guinea pig with some purpose to spin the wheel, this is inevitable is what i feel like. 
 The question still stays, what will the upper echelon of people want? 
 Do they want slave labor doing menial tasks like gig workers and no middle class or they want to eliminate bigger portion of resistance so that there would be equity and universal basic income coupled with good EU laws (forced socialism) eventually. 
 Or we would have a better future of resources being so efficient at making / creation that there won't be people to actually utilize them (consumption US economy). 

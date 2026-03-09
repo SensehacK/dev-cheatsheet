@@ -9,3 +9,5 @@ Don't readMe, infer me.
 [local](local.md)
 
 [manager](manager.md)
+
+[security](ai/security.md)
