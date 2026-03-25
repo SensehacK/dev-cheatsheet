@@ -41,11 +41,14 @@ eg. unit tests / xcode specific ? or platform specific
 // -- list (quick MAN page)
 ```
 
+### Remote Integration
+
+[KMP official doc for integrating with SPM package](https://kotlinlang.org/docs/multiplatform/multiplatform-spm-export.html#set-up-remote-integration)
 ## Files
 
 `build.gradle.kts` - Current library gradle build settings
 `gradle.properties` - Current project gradle properties
-`.xcodeproj` - xcode | iOS specific [build](ios/xcode/build.md) project file format 
+`.xcodeproj` - xcode | iOS specific [build](../ios/xcode/build.md) project file format 
 `Package.swift` - SPM package - swift package manager [spm](spm.md) dependency format
 
 
@@ -270,6 +273,19 @@ Doc for iOS specific.
 
 [SPM | kmp support](https://www.jetbrains.com/help/kotlin-multiplatform-dev/multiplatform-spm-export.html)
 
+## Framework optimization
+
+https://proandroiddev.com/shrink-your-kmp-build-the-power-of-internal-functions-d791bd2cacc1
+
+Use `internal` on KMP side kotlin to not bloat the swift lib / swift interface more.
+https://slack-chats.kotlinlang.org/t/2458243/are-there-any-advanced-steps-possible-to-reduce-the-size-of-
+
+> kpgalligan
+> 02/11/2021, 11:54 AM
+All of the libraries will of course add, but the kotlin compiler tries to limit what's actually included to code you're actually referencing. So, if you include ktor, but for some reason never actually call it, I don't think it would add anything. If you include stately, but only use a tiny bit, in theory it wouldn't add much.
+However, the code that is exposed externally to your ios framework needs to be included in your generated interface. That's the easiest way to reduce size. So, for example, say you include a bunch of modules and export all of them, they'll all be available to Swift, but each class/interface generates an Objc adapter, which adds a whole lot of binary weight.
+On the other hand, if you make everything you can `internal`
+, and minimize the available iOS surface, you'll save a lot.
 
 ### errors
 
@@ -303,6 +319,22 @@ export TARGET_BUILD_DIR\="../build/ios/${CONFIGURATION}-iphonesimulator"
 ```
 
 
+### header.h file was modified
+
+[similar xcode error](build_errors.md#file%20has%20been%20modified%20since%20the%20module%20file)
+
+```sh
+ <unknown>:0: error: file '/Users.framework/Headers/Class.h' has been modified since the module file 'Class.pcm' was built: size changed (was 575579, now 528195)
+ <unknown>:0: note: please rebuild precompiled file '/Class.pcm'
+```
+
+Manually removing specific pcm file
+```sh
+rm "/ModuleCache/FUW5IOHP9BIS/Class.pcm"
+```
+
+Clean Project( Cmd+Shift+K)
+
 
 ## Manual Integration
 
@@ -315,6 +347,8 @@ That setting is available inside `xcodeproj`
 `Targets -> Build Settings -> Framework Sarch Paths`
 
 [SO | linking issue with kmp iOS](https://stackoverflow.com/questions/74347353/kotlin-multiplatform-ios-integration-issue-in-linking-shared-framework-for-resp)
+
+
 
 
 ## iOS KMP resources
@@ -332,3 +366,7 @@ You will see the Debug icon enabled when iOSApp is selected, but you can only de
 
 [medium | inspect kmms kotlin code on xcode](https://medium.com/@uwaisalqadri/inspect-kmms-kotlin-code-directly-from-xcode-a5f66bb7c864)
 
+
+## Debug
+
+[native iOS debugging with kmp](https://kotlinlang.org/docs/native-debugging.html#debug-ios-applications)
