@@ -23,6 +23,8 @@ If everything is OK, the `javac` compiler creates a file called “Test.class”
 javac HelloWorld.java
 ```
 
+CPU architecture independent.
+
 ## Execute
 
 - Create the program by typing it into a text editor and saving it to a file – HelloWorld.java.

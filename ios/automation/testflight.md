@@ -23,3 +23,17 @@
 [Apple](https://testflight.apple.com/)
 
 [fastlane testflight setup](https://docs.fastlane.tools/actions/testflight/)
+
+
+## Alternatives
+
+[Firebase App distribution](https://intune.microsoft.com/)
+
+[Firebase + Fastlane distribute](https://firebase.google.com/docs/app-distribution/ios/distribute-fastlane)
+
+MS App center discontinued
+[Microsoft Intune ](https://intune.microsoft.com/)
+
+[Intune add iOS business apps guide](https://learn.microsoft.com/en-us/intune/app-management/deployment/add-lob-ios)
+
+

@@ -4,23 +4,23 @@
 
 [auto_increment](auto_increment.md)
 
-[[/ios/automation/auto_tagging]]
+[[auto_tagging]]
 
-[[/ios/automation/ci_cd]]
+[[ci_cd]]
 
-[[/ios/automation/fastlane]]
+[[fastlane]]
 
-[[/ios/automation/github_actions]]
+[[github_actions]]
 
-[[/ios/automation/gitlab_ci_yml]]
+[[gitlab_ci_yml]]
 
-[release](/ios/automation/release.md)
+[release](../ios/automation/release.md)
 
-[[/ios/automation/testflight]]
+[[testflight]]
 
-[[/ios/automation/travis_ci_timeline]]
+[[travis_ci_timeline]]
 
-[[/ios/automation/travis_ci_yml]]
+[[travis_ci_yml]]
 
 ## Mind Map
 

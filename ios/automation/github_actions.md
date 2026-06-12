@@ -184,6 +184,44 @@ Sometimes its more important to be on specific xcode version or swift package to
 
 [github hosted runners | admin sudoless](https://docs.github.com/en/actions/using-github-hosted-runners/using-github-hosted-runners/about-github-hosted-runners#administrative-privileges)
 
+## Caching
+
+Utilize restore github action task in your `.yaml` config for copying your previous runner cache into your next `unknown-CI-runner` workspace.
+
+[github cache plugin](https://github.com/actions/cache)
+
+
+```diff
++    - name: Restore .build
++        id: "restore-build"
++        uses: actions/cache/restore@v4
++        with:
++          path: .build
++          key: "swiftpm-tests-build-${{ runner.os }}-${{ github.event.pull_request.base.sha || github.event.after }}"
++          restore-keys: "swiftpm-tests-build-${{ runner.os }}-"
+
+      - name: Run unit tests
+        run: swift test --enable-code-coverage
+
++      - name: Cache .build
++        if: steps.restore-build.outputs.cache-hit != 'true'
++        uses: actions/cache/save@v4
++        with:
++          path: .build
++          key: "swiftpm-tests-build-${{ runner.os }}-${{ github.event.pull_request.base.sha || github.event.after }}"
+```
+
+[swift on server | faster github actions CI swift](https://swiftonserver.com/faster-github-actions-ci-for-swift-projects/)
+
+
+
+## Variables
+
+AI generated 
+
+- **Repository Variables:** For non-sensitive data, define variables directly in your repository settings under "Settings > Secrets and variables > Actions > Variables". These are accessible in your workflow using the `vars` context (e.g., `${{ vars.MY_VARIABLE }}`).
+- **Secrets:** For sensitive data like API keys, define secrets in your repository settings under "Settings > Secrets and variables > Actions > Secrets". These are accessible using the `secrets` context (e.g., `${{ secrets.MY_SECRET }}`).
+- **Environment Variables:** You can also define environment variables within your workflow file itself at the job or step level using the `env` keyword.
 
 
 ## Errors

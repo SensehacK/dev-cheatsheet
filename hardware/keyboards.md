@@ -19,7 +19,14 @@ Probably gonna keep it at low 1.4 - 2.2
 
 [Via portal](https://www.usevia.app/)
 
+[bluetooth disconnect intermittent issues | reddit](https://www.reddit.com/r/Keychron/comments/wghwkk/keychron_q1_intermittent_disconnect_issue/)
+started noticing intermittent keyboard focus issues on mac + keychron q1 HE
+I'm losing it sometimes copy paste doesnt work and i have to wait like 5 - 9 secs for it to regain its connection
 
+I have only changed one thing overall, that is my mac has been more `lid close` `clamshell` mode but it was working just fine before.
+I don't have multiple bluetooth devices attached tho, might have to start using `unifi` 2.4ghz adapter it comes with.
+
+[keychron input lag | reddit](https://www.reddit.com/r/Keychron/comments/1gkxgiv/keychron_q1_max_bluetooth_input_lag_and_battery/)
 
 ### Keychron Q3
 

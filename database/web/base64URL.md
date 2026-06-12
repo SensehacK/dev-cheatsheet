@@ -35,5 +35,6 @@ This class is not supposed to be inherited or instantiated by calling its constr
 
 ## Tools
 
-https://base64.guru/standards/base64url/encode
+[base64url | encode](https://base64.guru/standards/base64url/encode)
 
+[base64url | decode](https://base64.guru/standards/base64url/decode)
