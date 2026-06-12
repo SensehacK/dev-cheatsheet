@@ -80,4 +80,37 @@ I have the opinion that no matter how good the security is, hackers will still b
 Heck if [Denuvo](https://en.wikipedia.org/wiki/Denuvo) can be crack, you betcha your mediocre product would be as well. [piracy](/thoughts/piracy.md)
 
 
-[Check out Tampering detection](/ios/config/resigning#Jailbreak%20or%20Tampering%20detection)
+[Check out Tampering detection](resigning.md#Jailbreak%20or%20Tampering%20detection)
+
+
+## App Attest
+
+Apple default tools for attesting your users via the apple signing certificate
+
+[apple dev docs | app attest service](https://developer.apple.com/documentation/devicecheck/preparing-to-use-the-app-attest-service#overview)
+
+
+
+## Device Check
+
+
+Apple's device check SDK api is also nice framework which can maintain integrity checks of your app on apple ecosystem.
+
+[apple docs | device check](https://developer.apple.com/documentation/devicecheck)
+
+[apple docs | App integrity](https://developer.apple.com/documentation/devicecheck/establishing-your-app-s-integrity)
+
+
+## Auth
+
+### OAuth + PKCE 
+
+Refer to this [oAuth](oAuth.md)
+
+As well as swift specific things
+
+[swift apple code flow](https://gist.github.com/travisnewby/b030cf862862c0c55777e3db50eaccf8)
+
+[Swift oauth PKCE  code flow](https://www.mickf.net/tech/oauth-pkce-swift-secure-code-verifiers-and-code-challenges/)
+
+[kodeco | article dissecting pkce](https://www.kodeco.com/33091327-dissect-the-pkce-authorization-code-grant-flow-on-ios)

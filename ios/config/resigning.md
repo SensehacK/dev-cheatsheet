@@ -5,7 +5,7 @@ You can define resigning an app package in order to install it on your physical 
 
 ## Mind Map
 
-[Jailbreak Tools](/ios/library/jailbreak#Tools)
+[Jailbreak Tools](jailbreak.md#Tools)
 
 ## Side Loading
 
@@ -111,6 +111,53 @@ Install failed: Guru Meditation 0db732@934:3aea77 Failed: (9401) An App ID with 
 
 Just used different ID
 
+
+
+### max retries
+
+```
+Obtaining team ID
+
+Install failed: Guru Meditation 31f6e7@519:c3b6e4 HTTPSConnectionPool(host='developerservices2.apple.com', port=443): Max retries exceeded with url: /services/QH65B2/listTeams.action?clientId=XABBG36SBA (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7fe3612c5160>: Failed to establish a new connection: [Errno 9] Bad file descriptor'))
+```
+
+
+### App verification failed
+
+```
+Installation failed: 3892346903 ApplicationVerificationFailed (Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.TU6b0H/extracted/Payload/Spotify.app : 0xe8008017 (A signed resource has been added, modified, or deleted.))
+
+
+
+Installation failed: 3892346881 ApplicationVerificationFailed (Failed to verify code signature of /var/installd/Library/Caches/com.apple.mobile.installd.staging/temp.J4CU1i/extracted/Payload/Apollo.app : 0xe8008001 (An unknown error has occurred.))
+
+
+```
+
+
+## MacOS 
+
+
+```
+Solved! for someone coming to this thread even at the start of 2024.
+
+[u/ssj4gogeta2003](https://www.reddit.com/user/ssj4gogeta2003/) You saved my days! I was annoyed when I switched my Mac to MacBook Pro 2019 with the latest MacOS 14.2.1 and iOS 17.2.1. I was facing the error for 2FA because Sideloadly was not popping up and asking for a 2FA code on its latest version v0.50.1. Then I followed these steps and it worked successfully!
+
+1. Open the Music app on your Mac.
+    
+2. Go to Accounts => Authorisations => click Authorise this computer...
+    
+3. Next Log into your Apple ID (if not logged in previously), follow the steps one by one by entering your Apple ID email, password, and 2FA code sent to your phone number.
+    
+4. Open again Sideloadly app (keeping Music app open) and you will no longer face the issue. Enjoy!!!
+    
+
+If it still does not work, try a few other things which I did but not sure if they are necessary for the flow.
+
+- Open Mail app on Mac, Sign in if not already and keep Mail app open.
+    
+- Reinstall Sideloadly app.
+```
 
 ## Automatic Resigning 7 days Free account
 
@@ -221,3 +268,172 @@ Install failed: Guru Meditation da8d42@156:ad7080 Libraries version mismatch, pl
 ```
 
 Just a reinstall worked fine for me on Sideloadly.
+
+
+## iLoader
+
+
+```
+ ● Failed to log in to Apple ID
+ ├ /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/isideload-0.2.11/src/auth/apple_account.rs:106
+ │
+ ● Failed to get anisette data for login
+ ├ /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/isideload-0.2.11/src/auth/apple_account.rs:365
+ │
+ ● Failed to provision
+ ├ /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/isideload-0.2.11/src/anisette/remote_v3/mod.rs:189
+ │
+ ● Failed to connect to provisioning socket
+ ├ /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/isideload-0.2.11/src/anisette/remote_v3/mod.rs:244
+ │
+ ● IO error: invalid peer certificate: UnknownIssuer
+ ╰ /Users/runner/.cargo/registry/src/index.crates.io-1949cf8c6b5b557f/isideload-0.2.11/src/anisette/remote_v3/mod.rs:244
+```
+
+
+## ILoader Guide
+
+Copied off 
+https://gist.github.com/sinceohsix/688637ac04695d1ff38f844acc8ba7f3
+
+### ✴️ How to sideload with SideStore and LiveContainer
+Last Edited: Dec 21, 2025 @ 6:34PM PST · **Supports iOS versions 15.0 - 26.3 Beta**  
+> <sub> Make sure you are always using up-to-date guides to ensure full compatibility. The official SideStore documentation can be found [here](https://docs.sidestore.io) in case anything changes. For additional information and credits, scroll to the bottom of this page. </sub>
+
+---
+
+👋 **Hello again, r/sideloaded!**
+
+This is version 2.0 of my iOS sideloading guide. By the end of this guide, you will be able to:
+- Sideload apps using SideStore
+- Use LiveContainer to workaround the 3-app-limit
+
+This method uses **community-made tools** and **Apple-approved sideloading methods**, and only requires a computer for initial setup.
+
+**What are SideStore and LiveContainer?**  
+SideStore is an app that allows you to install `.ipa` files (iOS Applications) to your iDevice. LiveContainer is an app that allows you to *run* iOS applications without installing them. Since iOS has a limit of 3 installed apps when sideloading using a free developer account, a special version of LiveContainer that integrates the SideStore app is available.
+
+Here is what we will go over in this guide:
+1. Preparation
+2. Using iloader to install SideStore
+3. Setting up SideStore
+4. Switching to SideStore + LiveContainer
+
+**This guide assumes you don't already have SideStore or LiveContainer installed.** If you do, you may encounter issues. If you want to follow this guide, uninstall your current SideStore and/or LiveContainer apps.
+
+---
+
+### 1. Preparation
+Before sideloading, we need to prepare your device and install the required software.
+
+💻 **On Your PC/Mac**  
+- [iTunes](https://apple.co/ms) (Only required on Windows)  
+- [iloader](https://github.com/nab138/iloader/releases/tag/v1.1.5)
+
+📱 **On Your iPhone / iPad**  
+- [LocalDevVPN](https://apps.apple.com/us/app/localdevvpn/id6755608044)
+
+---
+
+### 2. Using iloader to install SideStore
+We will now install SideStore, this app allows you to sideload `.ipa` files to your iDevice. Start by launching iloader.
+
+**Step 1:** Select **Add Account +** and sign into your Apple Account.  
+
+**Step 2:** Plug your iPhone / iPad into your computer. (You may need to press **Refresh Devices**).  
+
+**Step 3:** Under the `Devices` section, select the device you want to install SideStore to.  
+
+**Step 4:** Under the `Installers` section, select **SideStore (Stable)**.  
+
+Now, just wait patiently. SideStore will be installed shortly. :)
+
+--- 
+
+### 3. Setting up SideStore
+Before you can use SideStore to install apps, you have to enable Developer Mode, allow apps from your Apple Account, and refresh SideStore.
+
+**Step 1:** Open **Settings**, then go to `General > VPN & Device Management`.
+
+**Step 2:** You should see the email of the Apple Account you used in iloader, tap on it, then trust the developer.
+
+**Step 3:** Back out to the main Settings menu, then scroll to `Privacy and Security`.
+
+**Step 4:** Scroll to `Security`, tap **Developer Mode**, then toggle it on. Follow the given directions. (Only for iOS 16.0+)
+
+**Step 5:** Once your device restarts, open **LocalDevVPN**. Tap **Connect**.  
+> ℹ️ LocalDevVPN is required for SideStore to install and refresh sideloaded apps. Make sure you're connected before trying to use SideStore!
+
+**Step 6:** Tap **Allow**, then enter your passcode.
+
+**Step 7:** Open **SideStore**, navigate to `My Apps`, then tap **7 DAYS** next to SideStore.
+
+**Step 8:** Login to the same Apple Account you used in iloader.
+
+Once SideStore refreshes, you are free to sideload any .ipa file you want! SideStore has support for AltStore sources meaning you can add sources and use SideStore as a third party app store as well. You will need to enable LocalDevVPN before installing apps. You can stop here if you only want SideStore but you will only be able to install 2 additional apps, if you want to install LiveContainer + SideStore, continue to the next section.
+
+---
+
+### 4. Switching to LiveContainer + SideStore
+Switching to SideStore + LiveContainer allows you to install `.ipa` files and run applications directly in the LiveContainer app while keeping SideStore functionality and two free app slots. We'll install the LiveContainer `.ipa` then inject our pairing file again with iloader.
+
+**Step 1:** Download the latest LiveContainer + SideStore `.ipa` on your iDevice — [Stable](https://github.com/LiveContainer/LiveContainer/releases/latest/download/LiveContainer+SideStore.ipa) / [Nightly](https://github.com/LiveContainer/LiveContainer/releases/download/nightly/LiveContainer+SideStore.ipa)
+
+> Stable is the latest **recommended** release. Nightly has cutting-edge features but may be more buggy. Nightly builds are not recommended for average users.
+
+**Step 2:** Open **SideStore**, then go to `My Apps`. Tap the **+** in the top-left corner and select the downloaded `LiveContainer+SideStore.ipa`. 
+
+**Step 3:** When you see a prompt, tap **Keep App Extensions (Use Main Profile)**. Wait for installation to finish, then open LiveContainer.
+
+**Step 4:** Tap the SideStore icon in the top-left corner. When you're asked to select your pairing file, navigate to `On My iPhone / iPad > SideStore` and select `ALTPairingFile.mobiledevicepairing`.
+
+**Step 5:** Navigate to `My Apps`, then tap **7 DAYS** next to LiveContainer.
+
+**Step 6:** Login to the same Apple Account you used in iloader. Wait for the app to refresh.
+
+**Step 7:** Delete the standalone SideStore app.
+
+**Step 8:** Close LiveContainer then open it again. Go to `Settings`, then tap **Import Certificate From SideStore**, and **OK**.
+
+**Step 9:** Tap **JIT-Less Mode Diagnose**, then **Test JIT-Less Mode**. The test should pass.
+
+You can now install as many apps as you want within LiveContainer. LiveContainer (Nightly) also has support for AltSources within the LiveContainer app itself!
+
+***Disclaimer:***
+> LiveContainer + SideStore is bundled with an outdated nightly version of SideStore; this means you will encounter issues specific to LiveContainer + SideStore.  For support, either [open an issue on the LiveContainer GitHub repository](https://github.com/LiveContainer/LiveContainer/issues) or in the [#support-forum](https://discord.com/channels/949183273383395328/1020114888720384032) channel on the [SideStore Discord server](https://dis.sidestore.io). Please do not ask for support in the regular SideStore support channels.
+
+---
+
+### ❇️ You did it!
+Setup is complete and you can now install as many apps as you want using LiveContainer! For clarification, apps installed in LiveContainer will *not* contribute to the 3-app-limit, while installing apps with SideStore (even from LiveContainer) *will* count towards your 3-app-limit. 
+
+Keep in mind that sideloaded apps must be refreshed every 7 days or they will expire and you will need to follow this guide again. This process can be **fully automated** using the Shortcuts app and automations (I'll write a separate guide for this later on).
+
+If you want a unique source of apps and games to try out, consider adding *my* source to SideStore or LiveContainer! You can find it at the link below:
+
+```
+https://sinceohsix.github.io/ipas/source.json
+```
+
+#### ℹ️ Additional Information and Credits
+The software used in this guide was made by real people using hours, days, and weeks of their time, please make sure you are respectful to them and show support when you can. 
+
+For additional information and support regarding the tools and software used, their GitHub repositories, documentation sites, Discord servers, and other sites are all linked below. If you have questions or concerns, reach out in a support channel or open an issue.
+
+**Links:**  
+
+[SideStore Documentation](https://docs.sidestore.io)  
+[LiveContainer Documentation](https://livecontainer.github.io/docs/intro)
+
+[nab138/iloader](https://github.com/nab138/iloader)  
+[LiveContainer/LiveContainer](https://github.com/LiveContainer/LiveContainer)  
+[SideStore/SideStore](https://github.com/SideStore/SideStore/)
+
+[SideStore Discord Server](https://dis.sidestore.io)  
+[idevice Discord Server](https://discord.gg/pCZEJ3u8)
+
+[SideStore Website](https://sidestore.io)
+
+**Also, special thanks to [suprstarrd](https://github.com/suprstarrd) for helping out and proof-reading this for me!**
+
+*- eli*

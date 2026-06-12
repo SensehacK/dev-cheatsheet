@@ -12,7 +12,7 @@
 
 [ats_plist](ats_plist.md)
 
-[best_practices](ios/config/best_practices.md)
+[best_practices](../ios/config/best_practices.md)
 
 [certificate](certificate.md)
 
@@ -20,7 +20,7 @@
 
 [[developer_account]]
 
-[device](/ios/config/device.md)
+[device](../ios/config/device.md)
 
 [dSYM](dSYM.md)
 
@@ -44,13 +44,15 @@
 
 [secret_keys](secret_keys.md)
 
-[security](security.md)
+[security](../ios/config/security.md)
 
 [string_segregation](string_segregation.md)
 
 [swift_lint](swift_lint.md)
 
-[upgrade](/ios/config/upgrade.md)
+[swift-format](swift-format.md)
+
+[upgrade](upgrade.md)
 
 [xcconfig](xcconfig.md)
 

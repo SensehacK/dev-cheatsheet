@@ -37,6 +37,22 @@ Microsoft Company Portal
 [macOS - bypass-mdm](https://github.com/assafdori/bypass-mdm)
 
 
+## Outset
+
+[github | outset wiki](https://github.com/macadmins/outset/wiki/FAQ)
+
+
+```log
+/usr/local/outset
+/Library/Logs/ces.log
+```
+to not have microsoft auto update | disable registerMAU.sh
+
+```
+# script
+/usr/local/outset/login-privileged-once/registerMAU.sh
+```
+
 
 ## Intune
 

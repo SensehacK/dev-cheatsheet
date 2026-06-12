@@ -1,4 +1,6 @@
 
+## What it does 
+
 Debug Symbols in Xcode & app packages.
 
 Helps decipher memory addresses as readable part with crash analytics frameworks.
@@ -19,9 +21,57 @@ After dSYMs
 
 ## Location
 
+### Xcode 
+
 `archive -> Show in Finder -> Show package contents` 
 
 [SO | iphone-where-the-dsym-file-is-located-in-crash-report](https://stackoverflow.com/questions/7088771/iphone-where-the-dsym-file-is-located-in-crash-report?noredirect=1&lq=1)
+
+
+### Finder 
+
+Absolute path
+
+```sh
+/Users/username/Library/Developer/Xcode/DerivedData/Project_Name-/Build/Products
+```
+
+format 
+
+`APP_TEAM_SR_NO.app.dSYM`
+
+### find
+
+If you have the UUID you are looking for, you can search the files with the following command:
+
+```sh
+mdfind "com_apple_xcode_dsym_uuids == <UUID>"
+```
+
+
+## Config
+
+Build Settings
+
+Debug Information Format - `DWARF with dSYM File`
+
+
+## Debug
+
+```sh
+dwarfdump CustomFramework.xcframework/ios-arm64-simulator/CustomFramework.framework/CustomFramework
+
+dwarfdump CustomFramework.xcframework/ios-arm64/CustomFramework.framework/CustomFramework > ent_os_framework_analytics.txt
+```
+
+
+## Manual Key dSyms remove
+
+
+```plist
+<key>DebugSymbolsPath</key>
+<string>dSYMs</string>
+```
 
 
 ## Reference
