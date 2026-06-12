@@ -6,9 +6,9 @@ As sometimes, we would have limited internet access or restrictive data download
 
 ## List
 
-[access_control](/ios/swift/access_control.md)
+[access_control](../ios/swift/access_control.md)
 
-[any](/ios/swift/any.md)
+[any](any.md)
 
 [[arrays]]
 
@@ -18,23 +18,23 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[closure]]
 
-[command_line_arguments](/ios/swift/command_line_arguments.md)
+[command_line_arguments](command_line_arguments.md)
 
 [[data_structure]]
 
-[decimal](/ios/swift/decimal.md)
+[decimal](decimal.md)
 
 [[ios/swift/dictionary]]
 
-[DSAlgoTricks](/ios/swift/DSAlgoTricks.md)
+[DSAlgoTricks](DSAlgoTricks.md)
 
-[equatable](/ios/swift/equatable.md)
+[equatable](equatable.md)
 
-[errors](/ios/swift/errors.md)
+[errors](../ios/swift/errors.md)
 
 [[executables]]
 
-[filter](/ios/swift/filter.md)
+[filter](../ios/swift/filter.md)
 
 [[functions]]
 
@@ -42,25 +42,25 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [guard](guard.md)
 
-[hashable](/ios/swift/hashable.md)
+[hashable](hashable.md)
 
 [[keypaths]]
 
-[[numbers]]
+[[ios/swift/numbers]]
 
 [[optimization]]
 
 [[optionals]]
 
-[prerequisite_iOS](/ios/swift/prerequisite_iOS.md)
+[prerequisite_iOS](prerequisite_iOS.md)
 
-[property](/ios/swift/property.md)
+[property](property.md)
 
-[property_wrapper](/ios/swift/property_wrapper.md)
+[property_wrapper](property_wrapper.md)
 
 [[random]]
 
-[range](/ios/swift/range.md)
+[range](range.md)
 
 [[safe_programming]]
 
@@ -68,19 +68,19 @@ As sometimes, we would have limited internet access or restrictive data download
 
 [[ios/swift/enum]]
 
-[some](/ios/swift/some.md)
+[some](some.md)
 
 [[ios/swift/string]]
 
-[[switch]]
+[[ios/swift/switch]]
 
-[[ternary]]
+[[ios/swift/ternary]]
 
-[tuple](ios/swift/tuple.md)
+[tuple](../ios/swift/tuple.md)
 
 [[type_casting]]
 
-[url](/ios/swift/url.md)
+[url](../ios/swift/url.md)
 
 ## Migration or Language Equivalents
 

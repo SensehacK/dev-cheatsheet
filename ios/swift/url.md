@@ -101,6 +101,26 @@ ASCII to URL encoding
 [eso org table](https://www.eso.org/~ndelmott/url_encode.html)
 
 
+### similar crash regarding scheme
+
+```log
+Terminating app due to uncaught exception 'NSInvalidArgumentException', reason: 'The provided scheme is not valid. A scheme should not include special characters such as ":" or "/".'
+```
+
+```swift
+let redirectScheme: String { "appName://authCallback" }
+
+let session = ASWebAuthenticationSession(
+url: authURL,
+callbackURLScheme: redirectScheme) { callbackURL, error in }
+
+// Needed to encode the scheme
+let encodedScheme = Self.redirectScheme.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed)
+```
+
+[SO | provided_scheme_is_not_valid](https://stackoverflow.com/questions/70814772/aswebauthenticationsession-azure-ad-b2c-error-the-provided-scheme-is-not-vali)
+
+
 ## URL Protocol
 
 You can use this to intercept your network traffic, as long as you register a specific protocol which gets called every time with your URL session or configuration.

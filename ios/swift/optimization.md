@@ -8,3 +8,8 @@
 Also it reads better when understanding logic.
 
 [Performance implications](https://www.swiftbysundell.com/articles/count-vs-isEmpty/)
+
+
+## App performance
+
+[apple dev docs | improve app performance](https://developer.apple.com/documentation/xcode/improving-your-app-s-performance)

@@ -57,7 +57,7 @@ print(input[0] input[9]) // KS
 ```
 [get-character-from-string-using-its-index-in-swift](https://www.simpleswiftguide.com/get-character-from-string-using-its-index-in-swift/)
 
-You can also use an extension for it. [extensions Character nth element](/ios/lifecycle/extensions.md)
+You can also use an extension for it. [extensions Character nth element](../ios/lifecycle/extensions.md)
 
 [SO](https://stackoverflow.com/questions/24092884/get-nth-character-of-a-string-in-swift-programming-language)
 
@@ -178,6 +178,22 @@ String(format: "from %f to %f", Double.leastNonzeroMagnitude, Double.greatestFin
 [Apple archive | Format specifiers](https://developer.apple.com/library/archive/documentation/CoreFoundation/Conceptual/CFStrings/formatSpecifiers.html)
 
 Copied from [SO | Swift string format specifiers](https://stackoverflow.com/questions/52332747/what-are-the-supported-swift-string-format-specifiers)
+
+
+
+## Format
+
+
+```swift
+//Formating Strings - Hexadecimal numbers
+let formatNum3: Int = 45678
+let str5 = String(format: "%2X", formatNum3)
+let str6 = String(format: "%2x", formatNum3)
+print(str5)
+print(str6)
+```
+
+[waldo | swift-string-format](https://www.waldo.com/blog/swift-string-format)
 
 
 ## Deprecations
