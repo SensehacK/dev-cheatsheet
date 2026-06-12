@@ -68,7 +68,32 @@ Traffic rate limit of fair-use exceeded.
 ```
 
 
+
+## AVError
+
+We don't have default timeout waiting time for a url stream
+
+[AVError.Code.noLongerPlayable](https://developer.apple.com/documentation/avfoundation/averror-swift.struct/code/nolongerplayable?language=objc)
+
+[wwdc | Error Handling Best Practices for HTTP Live Streaming](https://developer.apple.com/videos/play/wwdc2017/514/?time=831)
+
+ AVErrorContentIsUnavailable
+
+
+
+Error 	Code
+AVErrorContentIsUnavailable 	-11863
+AVErrorNoLongerPlayable 	-11867
+AVErrorFailedToParse 	-11853
+AVErrorContentNotUpdated 	-11866
+
+[small guide / doc | How to handle error which was detected by AVPlayer that get video content from HLS](https://qiita.com/hiroakit/items/8a91377867db18590d2c)
+
+
+
 ## Reference
 
-[good AVKit errors gist](https://gist.github.com/Ali72/cbde769d4bbf55390c8dcfb97a81f6f4)
+[good AVKit CoreMediaError errors gist](https://gist.github.com/Ali72/cbde769d4bbf55390c8dcfb97a81f6f4)
+
+[bitmooving AV MediaError](https://developer.bitmovin.com/playback/docs/system-error-codes-ios)
 

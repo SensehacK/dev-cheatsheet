@@ -137,3 +137,9 @@ this article is somewhat helpful
 [Playing Encrypted HLS content on iOS using swift](https://assist-software.net/snippets/how-play-encrypted-http-live-streams-offline-avfoundation-ios-using-swift-4)
 
 [Wiki | FairPlay](https://en.wikipedia.org/wiki/FairPlay)
+
+
+[HLS Encryption Sample | Apple developer](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/HLS_Sample_Encryption/Intro/Intro.html#//apple_ref/doc/uid/TP40012862-CH5-SW1)
+
+[Apple fairplay streaming server](https://developer.apple.com/streaming/fps/)
+

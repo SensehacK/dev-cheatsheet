@@ -81,10 +81,13 @@ Protocol `HLSTagDescriptor` and `HLSTagValueIdentifier`
 
 ```
 #EXT-X-I-FRAMES-ONLY
+
+#EXT-X-I-FRAME-STREAM-INF
 ```
 
 iOS supports fast forward and reverse playback. However, you don't need to produce special-purpose content to support fast forward and reverse playback. All you need to do is specify where the I-frames are. I-frames, or _intra-coded frames_, are encoded video frames whose encoding is independent of any other frame. To specify where the I-frames are, iOS 5 and later use an I-frame only playlist. The **EXT-X-I-FRAMES-ONLY** tag indicates that each media segment in the playlist describes a single I-frame.
 
+> In HLS (HTTP Live Streaming), an I-frame (Intra-coded frame) is a standalone video frame that can be displayed without referencing any other frames. I-frame playlists, containing only I-frames, are used to enable efficient trick-play features like fast-forward and rewind, and also for generating thumbnails. 
 
 
 ### Independent Segments
@@ -179,10 +182,21 @@ After that it will create a json file which we can ingest into the hlsreport too
 
 ```sh
 hlsreport validation_data_4K_superbowl.json
+hlsreport -o new_report.html validation_data.json
 ```
 
 [wwdc | hls tools](https://developer.apple.com/videos/play/wwdc2016/510/?time=543)
 
+
+Timeout seconds
+
+```sh
+# Generate telemetry
+mediastreamvalidator https://314.linear-ag-xcr.com/manifest.m3u8 validation_stream_results.json 
+
+# Generate report
+hlsreport -o new_report.html validation_stream_results.json
+```
 ## streams
 
 Test streams provided for HLS testing or playback.
@@ -217,3 +231,5 @@ Test streams provided for HLS testing or playback.
 [apple developer | doc archive | HLS Overview](https://developer.apple.com/library/archive/documentation/NetworkingInternet/Conceptual/StreamingMediaGuide/UsingHTTPLiveStreaming/UsingHTTPLiveStreaming.html)
 
 [github  public test videos HLS](https://gist.github.com/jsturgis/3b19447b304616f18657)
+
+[mux | hls ext tags](https://www.mux.com/articles/hls-ext-tags) 

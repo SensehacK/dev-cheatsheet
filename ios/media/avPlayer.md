@@ -92,6 +92,40 @@ Picture in Picture support
 I don't think AVPlayer needed to do anything for PiP, too. There is audio focus handling but that's separate.
 As long as appropriate flags are being set, we can utilize this native functionality provided by apple iOS / iPadOS.
 
+
+### Swift UI 
+
+[Medium Swift UI PIP](https://medium.com/@gokhanmutlu/implementing-picture-in-picture-pip-with-swiftui-ae1a0ae18939)
+
+
+Custom AV Player Layer ?
+
+
+
+## Hack
+
+###  merge audio / video layer
+
+
+```swift
+let audioPlayer = AVPlayer()
+let audioPlayerLayer = AVPlayerLayer(player: audioPlayer)
+let videoPlayer = AVPlayer()
+
+func openStreamVariant(selectedAudio: AudioOption, selectedVideo: ResolutionOption) {
+    let audioPlayerItem = AVPlayerItem(url: selectedAudio.url)
+    let videoPlayerItem = AVPlayerItem(url: selectedVideo.url)
+
+    let syncLayer = AVSynchronizedLayer(playerItem: videoPlayerItem)
+    syncLayer.addSublayer(self.audioPlayerLayer)
+
+    self.audioPlayer.replaceCurrentItem(with: audioPlayerItem)
+    self.videoPlayer.replaceCurrentItem(with: videoPlayerItem)
+}
+```
+
+[medium | hacking hls streams swift](https://medium.com/@portemantho/hacking-http-live-streaming-with-swift-f1657faa5ba6)
+
 ## Reference
 
 [Apple Old | AVFoundation Programming Guide](https://developer.apple.com/library/archive/documentation/AudioVideo/Conceptual/AVFoundationPG/Articles/02_Playback.html)
