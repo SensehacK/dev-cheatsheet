@@ -34,6 +34,8 @@ Deleting `~/Library/org.swift.swiftpm` helped for us
 
 ```sh
 rm -rf ~/Library/org.swift.swiftpm
+
+rm -rf ~/Library/Caches/org.swift.swiftpm
 ```
 
 [Apple dev thread](https://developer.apple.com/forums/thread/711597)

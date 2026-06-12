@@ -116,6 +116,17 @@ carthage update cplatform_ios
 I found an interesting tidbit with Carthage - thought I would share. If you don't provide a tag or a branch it takes the highest version of tag in the project. 
 Now our project for some reason has a tag named `2424.0.32`
 
+
+## PreCompile or JIT compile
+
+```sh
+--no-use-binaries
+
+carthage update --platform iOS,macOS --use-xcframeworks --no-use-binaries
+```
+
+
+[SO | carthage no use binary](https://stackoverflow.com/questions/41442601/whats-the-purpose-of-no-use-binaries-in-carthage)
 ## Errors
 
 ### shell task failed with exit code 1
@@ -181,7 +192,7 @@ Note: Make sure your VPN is turned on since one of the few dependencies needed V
 
 ### Deployment target mismatch
 
-This isn't Carthage specific error so you can refer my [xcode build doc -> Errors ](/ios/xcode/build#deployment%20target%20mismatch) for solution.
+This isn't Carthage specific error so you can refer my [xcode build doc -> Errors ](../ios/xcode/build.md#deployment%20target%20mismatch) for solution.
 
 ### Task failed with exit code 65
 

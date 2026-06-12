@@ -59,6 +59,49 @@ error: module name "" is not a valid identifier
 SWIFT\_ENABLE\_BATCH\_MODE 
 [SO | build-fails-with-command-failed-with-a-nonzero-exit-code](https://stackoverflow.com/questions/46690619/build-fails-with-command-failed-with-a-nonzero-exit-code)
 
+
+##  Multiple commands produce copy command
+
+```log
+Multiple commands produce
+'/Users/proj/DerivedData/projName/Build/Products/Debug-iphonesimulator/ProjectScheme.app/Frameworks/FrameworkName.framework/FrameworkName'
+
+
+	Target 'ProjectScheme' (project 'ProjectScheme') has copy command from '/Users/proj/DerivedData/ProjectScheme/SourcePackages/artifacts/project-git-repo-binary/Frameworks/FrameworkName.xcframework/ios-arm64_x86_64-simulator/FrameworkName.framework' to '/Users/proj/DerivedData/ProjectScheme/Build/Products/Debug-iphonesimulator/ProjectScheme.app/Frameworks/FrameworkName.framework'
+
+	Target 'ProjectScheme' (project 'ProjectScheme') has copy command from '/Users/proj/DerivedData/ProjectScheme/SourcePackages/artifacts/project-git-repo-binary/Frameworks/FrameworkName.xcframework/ios-arm64_x86_64-simulator/FrameworkName.framework' to '/Users/proj/DerivedData/ProjectScheme/Build/Products/Debug-iphonesimulator/ProjectScheme.app/Frameworks/FrameworkName.framework'
+```
+
+## duplicate output file task ProcessXCFramework
+
+duplicate output file `framework/FrameworkName.framework on task: : ProcessXCFramework`
+
+```
+duplicate output file on task: 
+Debug-iphonesimulator/FrameworkName.framework' on task: 
+iphonesimulator/FrameworkName.framework/FrameworkName' on task: 
+iphonesimulator/FrameworkName.framework/Headers' on task: 
+Headers/FrameworkName-Swift.h' on task: 
+FrameworkName.framework/Headers/FrameworkName.apinotes' on task: ProcessXCFramework
+```
+
+Both xcode build commands have been resolved via cleaning out Derived Data,
+also I recently have this project / xcode Derived Data to `relative path`. So instead of Derived Data going to absolute path in `~/users/ ~/cache` xcode / spm cache, it goes to the same directory the project resides.
+
+Now either due to VS code `Project.xcodeProj` or `swift` plugin and AI auto inferencing, it resolves the xcode project automatically in the background and creates another `.xcodeProj` derived data at relative path, which is totally different from the `Package.swift` and the `Project.xcworkspace`. 
+So my thesis is, somehow it messes up internally with 2 independent caches resulting into weird duplicate tasks / symbols.
+After deletion, it worked fine.
+
+Also, to note, I'm following the direct integration method for KMP + Apple ecosystem [iOS_interop](iOS_interop.md) , which could make it worse due to how `binary frameworks` are being generated with the `assemble xcframework` command recently run for making hand tailored releases for KMP packages.
+#### AI shoutout 
+
+I resonate some thoughts described here regarding my troubleshooting methods.
+
+
+
+
+
+
 ## Failed to set plugin placeholders
 
 [SO | failed to set placeholders](https://stackoverflow.com/questions/47344160/failed-to-set-plugin-placeholders-message)
@@ -303,7 +346,7 @@ Build settings from command line:
 
 [Bug thread on xcode toolchain, fastlane github](https://github.com/fastlane/fastlane/issues/21293)
 
-Imp Note: Make sure your terminal or iTerm is running via `Rosetta` mode since carthage & xcode cli had issues in past with getting the `arch` build successfully running on the mac.  [check arch on terminal](/ios/library/framework#Build%20Output)
+Imp Note: Make sure your terminal or iTerm is running via `Rosetta` mode since carthage & xcode cli had issues in past with getting the `arch` build successfully running on the mac.  [check arch on terminal](framework.md#Build%20Output)
 
 ## xcode build log file empty
 
@@ -407,7 +450,7 @@ No more build errors
 
 ## xcodebuild timed out while trying to read
 
-[Carthage issue CLI described here](/ios/xcode/carthage#xcodebuild%20timed%20out)
+[Carthage issue CLI described here](carthage.md#xcodebuild%20timed%20out)
 
 ## Found no destinations for the scheme
 
@@ -504,7 +547,7 @@ After I change my typo, I had to delete my old `automatic` generated project sch
 
 After that it should compile properly? 
 
-[SPM_build_error](/ios/xcode/spm_errors#missing%20required%20module)
+[SPM_build_error](spm_errors.md#missing%20required%20module)
 
 [forum - swift discussion](https://forums.swift.org/t/error-missing-required-module-numericsshims/58235)
 
@@ -651,4 +694,84 @@ This started because we had to support flutter team coz they couldn't access git
 ```sh
 xcodebuild: error: Could not resolve package dependencies:
   Failed to resolve dependencies Dependencies could not be resolved because package 'player-apple' is required using a stable-version but 'player-apple' depends on an unstable-version package 'analytics_android' and 'video_player_apple' depends on 'player-apple' 0.118.0.
+```
+
+
+## framework same name already exists
+
+```error
+“VCAnalytics.framework” couldn’t be copied to “Debug-iphonesimulator” because an item with the same name already exists.
+
+ProcessXCFramework /Users/Developer/Xcode/DerivedData/er-cgbuagetblswmufeouhxcnqwkvsy/SourcePackages/artifacts/tics_android/rAnalytics/Analytics.xcframework /Users/Developer/Xcode/DerivedData/er-cgbuagetblswmufeouhxcnqwkvsy/Build/Products/Debug-iphonesimulator/Analytics.framework ios simulator
+
+    cd /Users/git/cloud/nitro-player-android/nitro-player-apple
+
+    builtin-process-xcframework --xcframework /Users/Developer/Xcode/DerivedData/er-cgbuagetblswmufeouhxcnqwkvsy/SourcePackages/artifacts/s_android/Analytics/Analytics.xcframework --platform ios --environment simulator --target-path /Users/ksave957/Library/Developer/Xcode/DerivedData/r-cgbuagetblswmufeouhxcnqwkvsy/Build/Products/Debug-iphonesimulator
+```
+
+
+## the compiler is unable to type-check
+
+```error
+/Users/kay/git/cloud/player-apple/TestUI/Views/Asset List View/DownloadAssetView.swift:20:25: error: the compiler is unable to type-check this expression in reasonable time; try breaking up the expression into distinct sub-expressions
+
+    var body: some View {
+```
+
+Usually you can go to the file and make sure if you see any new code changes which xcode hasn't live compiled yet. 
+So your machine is so slow or you had back 2 back quick builds / compiles, that it messed up the link tree or source tree of the compilation mind maps / swift.modules or whatever `llvm` does to link things internally. 
+example of C/C++ compilation , linking steps [gcc](gcc.md)
+javac - `.class` (Java byte code) -> [hello_world](backend/java/hello_world.md)
+
+
+
+## file has been modified since the module file
+
+```sh
+SwiftCompile normal arm64 /Users//git/cloud/P-player-apple/Sources/ManagedPlayer/Managed\ Solution\ Types/AirPlayerApiConfig.swift (in target 'ManagedPlayer' from project 'P-player-apple')
+
+    cd /Users/kay/git/cloud/P-player-apple
+1
+<unknown>:0: error: file '/Users/kay/Library/Developer/Xcode/DerivedData/PPlayer-bkurpdiqmhhhrqeytjoecoipyrye/Build/Products/Debug-iphoneos/entertainmentAuth.framework/Headers/entertainmentAuth.h' has been modified since the module file '/Users/kay/Library/Developer/Xcode/DerivedData/PPlayer-bkurpdiqmhhhrqeytjoecoipyrye/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/entertainmentAuth-3PHRC5PLLFXCJAOK2DR87YACQ.pcm' was built: size changed (was 238660, now 230785)
+
+<unknown>:0: note: please rebuild precompiled file '/Users/kay/Library/Developer/Xcode/DerivedData/PPlayer-bkurpdiqmhhhrqeytjoecoipyrye/Build/Intermediates.noindex/SwiftExplicitPrecompiledModules/entertainmentAuth-3PHRC5PLLFXCJAOK2DR87YACQ.pcm'****
+```
+
+[SO | Xcode post](https://stackoverflow.com/questions/19391768/file-has-been-modified-since-the-precompiled-header-was-built)
+
+Try cleaning out your Derived data first
+
+```sh
+rm -rf /Users/ksave957/Library/Developer/Xcode/DerivedData/ModuleCache
+
+rm -rf /Users/builder/Library/Developer/Xcode/DerivedData/
+```
+
+Last option 
+
+```sh
+~/Library/Developer/Xcode
+```
+
+
+
+## task failed with exit code 65
+
+Sometimes it fails for diff architecture because of bad cache via carthage
+so `cd carthage_debug_build_location` & remove specific build projects from directory.
+
+```sh
+cd /Users/kay/Library/Caches/org.carthage.CarthageKit/
+
+rm - rf
+```
+
+
+```sh
+Build Failed
+	Task failed with exit code 65:
+	/usr/bin/xcrun xcodebuild -project /Users/kay/git/cloud/PlayerTVOS/Carthage/Checkouts/playerProj/CustomPlayer.xcodeproj -scheme CustomPlayerTVOS -configuration Release -derivedDataPath /Users/kay/Library/Caches/org.carthage.CarthageKit/DerivedData/26.0.1_17A400/playerProj/1cf51d815c4b30295711584280212db3775787ad -sdk appletvos ONLY_ACTIVE_ARCH=NO CODE_SIGNING_REQUIRED=NO CODE_SIGN_IDENTITY= SUPPORTS_MACCATALYST=NO CARTHAGE=YES archive VALIDATE_WORKSPACE=NO -archivePath /var/folders/2k/9fdzvdzx13nfcvq2p27r3zsc0000gp/T/playerProj SKIP_INSTALL=YES GCC_INSTRUMENT_PROGRAM_FLOW_ARCS=NO CLANG_ENABLE_CODE_COVERAGE=NO STRIP_INSTALLED_PRODUCT=NO (launched in /Users/kay/git/cloud/PlayerTVOS/Carthage/Checkouts/playerProj)
+
+This usually indicates that project itself failed to compile. Please check the xcodebuild log for more details: /var/folders/2k/9fdzvdzx13nfcvq2p27r3zsc0000gp/T/carthage-xcodebuild.8nmYGT.log
+*** failed to bootstrap Carthage dependencies ***
 ```

@@ -128,7 +128,12 @@ To reset the cache for a single package:
 - Then, in Xcode, run File-->Swift Packages-->Reset Package Caches
 
 
+### Delete Derived Data
+
+```sh
+rm -rf ~/Library/Developer/Xcode/DerivedData
 ```
+
 ## Dependency
 
 Adding a branch as a dependency or a tag.
@@ -140,7 +145,26 @@ dependencies: [
 ]
 ```
 
-[Similar SPM | Xcode cache issue](/ios/xcode/spm_errors#skipping%20cache)
+[Similar SPM | Xcode cache issue](spm_errors.md#skipping%20cache)
+### ssh vs https
+### AI gemini gen
+
+**SSH (`git@`) vs. HTTPS in Xcode/SPM** 
+
+- ** SSH (`git@`) (Recommended for Pro/CI):**
+    - **Format:** `git@github.com:username/repo.git`
+    - **Pros:** Secure, password-less (keys), ideal for automated workflows, CLI, and CI/CD pipelines.
+    - **Cons:** Higher initial setup (requires generating/adding SSH keys).
+    - **Xcode/SPM:** Excellent for private packages, allowing seamless fetching without interactive passwords.
+
+HTTPS (https://) (Recommended for Beginners/Simple Setup):
+
+    Format: https://github.com/username/repo.git
+    Pros: Easy to set up, works over port 443 (usually bypasses strict firewalls).
+    Cons: Requires Personal Access Token (PAT) instead of password for Git operations.
+    Xcode/SPM: Simple, but may prompt for credentials frequently if not cached properly. 
+
+
 
 ## Bundling
 
@@ -236,12 +260,25 @@ Swift ObjectiveC Swift Mixed library
 Maybe I need to set my library to type `.dynamic` in order to support linking properly. Checkout other project which can help us identify why its not working.
 
 
+[Migration from ObjC to Swift PM](https://engineering.monstar-lab.com/en/post/2023/03/29/Migrating-objc-module-to-spm/)
+
 ## binary_xcframework
 
 
 Create binary xcframework out of Swift package project.
 [SO | create SPM package into xcframework](https://stackoverflow.com/questions/72920519/turn-package-swift-file-into-binary-xcframework)
 
+
+
+## Module not compiled Library evolution support
+
+`BUILD_LIBRARY_FOR_DISTRIBUTION`
+
+[SO | answer library evolution](https://stackoverflow.com/questions/60162207/module-was-not-compiled-with-library-evolution-support-using-it-means-binary-co)
+
+[swift doc | underscored attributes](https://github.com/swiftlang/swift/blob/main/docs/ReferenceGuides/UnderscoredAttributes.md)
+
+[xcode apple build setting ref](https://developer.apple.com/documentation/xcode/build-settings-reference)
 
 ## [SPM Errors](spm_errors.md)
 
@@ -291,7 +328,7 @@ To import just use the following syntax as long as the library builds correctly 
 import DummyUnit
 ```
 
-For more information on Frameworks refer my [mind map docs](/ios/library/framework.md)
+For more information on Frameworks refer my [mind map docs](framework.md)
 
 ## Local Package dependency
 
@@ -306,6 +343,8 @@ dependencies: [
 // Local Package
 	.package(url: "/Users/ksave/git/cloud/packageName", branch: "28-events")
 	.package(url: "file:///Users/ksave/git/cloud/packageName", from: "6.6.6")
+	
+	package(url: "file:///Users/account/git/github_sensehack/player-apple-mp-spm", branch: "ads-logging-enabled")
 
 // Remote package
     .package(url: "git@github.com:companyName/packageName.git", branch: "21-events")
@@ -332,7 +371,7 @@ Add `local` SPM package doesn't work in Pure `Package.swift` project opened in X
 
 Another thing 
 For some reason my local package gets added via `Package.swift` with absolute URL local path and still doesn't reflect the right change-set. But if I add it via add package -> local GUI option on a `.xcodeproj` file in Xcode GUI `Package Dependencies` It reflects the local change-set appropriately. Maybe a cache issue? Don't know and don't want to bother learning more about it.
-### [An unknown error not found (-1) issue](/ios/xcode/spm_errors#skipping%20cache) 
+### [An unknown error not found (-1) issue](spm_errors.md#skipping%20cache) 
 
 ### KMP_interop
 
@@ -348,7 +387,7 @@ Multiple commands produce `framework` libraries. Probably deleting SPM cache and
 
 ## Circular dependency
 
-Also experienced it in [Carthage build command](/ios/xcode/carthage#Dependency%20graph%20cycle)
+Also experienced it in [Carthage build command](carthage.md#Dependency%20graph%20cycle)
 
 [SO resolve circular dependency swift PM](https://stackoverflow.com/questions/47872419/resolve-circular-dependency-in-swift)
 [swift forums circular dependency](https://forums.swift.org/t/circular-dependencies-in-swiftpm/13580)

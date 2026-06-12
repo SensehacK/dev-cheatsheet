@@ -43,6 +43,18 @@ So it comes down to a making sure that whatever tool you're using is on same ver
 Or else you can face a classic `It Works on my machine!` or `Multiple Spiderman pointing at each other` meme IRL.
 
 
+## log filter
+
+Usually the `.log` file would have a file path signature of the file failing
+
+
+**Locate the File Path**: Scroll through the filtered logs to find the specific error message. It will typically be formatted like 
+
+```sh
+<filepath>:<row#>:<col#>: error: <error message>
+```
+
+[medium | read xcode error](https://levelup.gitconnected.com/how-to-properly-read-xcode-error-7b979692333d) 
 
 ## Console Debug
 
@@ -55,6 +67,12 @@ po swift\_variable/ objects
 ```
 
 [SO link](https://stackoverflow.com/questions/4735156/xcode-debugger-view-value-of-variable) [Apple Doc](https://developer.apple.com/library/archive/documentation/DeveloperTools/Conceptual/debugging_with_xcode/chapters/debugging_tools.html) [Complete Guide](https://andela.com/insights/the-complete-guide-to-debug-swift-code-with-lldb/) [LLDB Debug](https://medium.com/flawless-app-stories/debugging-swift-code-with-lldb-b30c5cf2fd49) [Advanced LLDB](https://medium.com/@fadiderias/xcode-and-lldb-advanced-debugging-tutorial-part-1-31919aa149e0)
+
+setting variables or extracting them from dictionary while live debugging on console.
+
+```lldb
+po let errorURL = error.context["NSURL"] as? URL; let resultFailover = errorURL?.absoluteString == locator; print("Error REsult : \(resultFailover), Error URL explicit:\(errorURL) ")
+```
 
 ## [Breakpoint](breakpoint.md)
 
@@ -128,6 +146,28 @@ Variables alteration
 e isValid = false
 ```
 https://stackoverflow.com/questions/9907387/how-to-change-variables-value-while-debugging-with-lldb-in-xcode
+
+
+
+## LLDB config
+
+
+
+
+`~/.lldbinit` is the file where it stores all the lldb configs which gets loaded at launch
+
+`--local-lldbinit`
+
+Allow the debugger to parse the .lldbinit files in the current working directory, unless –no-lldbinit is passed.
+
+```lldb
+settings set target.source-map /Users/ksave/git/project/ ~/projects/debug/
+```
+
+[official docs | man page for lldb llvm](https://lldb.llvm.org/man/lldb.html#configuration-files)
+
+[lldb remap source files pathname](https://lldb.llvm.org/use/map.html#remap-source-file-pathnames-for-the-debug-session)
+
 
 
 ## Debug  Prints
@@ -220,12 +260,35 @@ DONE
 
 [apple dev | Diagnosing issues using crash reports and device logs](https://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs)
 
+[apple dev | memory jetsam | Identifying high-memory use with jetsam event reports](https://developer.apple.com/documentation/xcode/identifying-high-memory-use-with-jetsam-event-reports)
+
+[dSYM](dSYM.md)
+
+[apple dev | acquire crash reports](developer.apple.com/documentation/xcode/acquiring-crash-reports-and-diagnostic-logs)
+
+[apple dev | root causes of a crash](https://developer.apple.com/documentation/xcode/identifying-the-cause-of-common-crashes)
+
+[apple dev | analyzing a crash report](https://developer.apple.com/documentation/xcode/analyzing-a-crash-report)
+
+
+
 ## Method_Swizzling
 
 You can reverse engineer certain libraries / frameworks of apple UIKit , AppKit and utilize objective-C runtime methods to quickly replace our own implementation of the method we want to override.
 Sometimes the library we are consuming won't expose all the options to tweak or change its behavior so method swizzling basically comes into the picture where you just hack / capture the memory and replace it with our own custom function / method. To get more custom behavior and just understand the underlying working architecture of the abstracted library.
 
 Haven't heard anyone explicit mention this most of the time but one senior engineer from Objective - C did gave me a nudge to check it out in 2020 just because I mentioned I came from Turbo-C , DosBox and C++ compilers era.
+
+## Framework swizzle
+
+[swizzle UIKit](https://bryce.co/swizzle-all-uikit/)
+
+
+[github | bryce | swizzle UI kit](https://github.com/brycebostwick/Swizzle-All-UIKit-Demo)
+
+
+[github | bryce | swizzle everything](https://github.com/brycebostwick/SwizzleEverything/)
+
 
 ## access hidden func inits
 
@@ -296,10 +359,11 @@ if let accessLog: AVPlayerItemAccessLog = playerItem?.accessLog(),
 
 [the-ultimate-guide-to-converting-swift-data-to-string](https://www.dhiwise.com/post/the-ultimate-guide-to-converting-swift-data-to-string)
 
+## [framework_errors](framework_errors.md)
 
 ## Framework swapping
 
-[Debugging framework post](/ios/library/framework#Debugging)
+[Debugging framework post](framework.md#Debugging)
 
 [SO | how-to-debug-framework-source-from-main-project](https://stackoverflow.com/questions/13836628/how-to-debug-framework-source-from-main-project)
 
@@ -344,3 +408,49 @@ Run code in release or not
 [apple developer forums](https://developer.apple.com/forums/) could be the best resource when searching for cryptic error messages which aren't documented or verbose enough for the console logs.
 
 Usually people on the forum respond towards it, rather than Stack overflow.
+
+
+## Thread, crash memory
+
+[apple doc | diagnosing memory, crash & thread issues](https://developer.apple.com/documentation/xcode/diagnosing-memory-thread-and-crash-issues-early)
+
+
+## Inspector
+
+Webview or Simulator data 
+[apple doc | swift developer tools | inspecting iOS](https://developer.apple.com/documentation/safari-developer-tools/inspecting-ios)
+
+Utilize decrypted Backup from physical device and extract the app data storage.
+[iMazing app has a guide](https://imazing.com/guides/how-to-export-backup-and-transfer-ios-apps-data-and-settings) for `iOS Apps Data`
+
+
+`lsusb` homebrew
+
+
+After some quick research, _iExplore_ is built on top of `osxfuse` and uses common protocols to exchange file information from the device. If you want to see your device, I'd recommend installing `lsusb` to discover the 40-digit uuid (aka serial).
+
+To get `lsusb` working on OSX:
+
+
+```sh
+brew install lsusb
+brew install ideviceinstaller
+brew install --cask macfuse
+brew install gromgit/fuse/ifuse-mac
+( cd "$(brew --prefix)/opt/libplist/lib/" && ln -s libplist-2.0.4.dylib libplist-2.0.3.dylib )
+```
+[gist | IFuse on MacOS](https://gist.github.com/cbatson/01a20a44c5c1a70ed3218c32d643e65d)
+
+
+
+## de-Symbolizer
+
+https://ronyfadel.github.io/swiftdemangler/
+
+
+
+## Resources
+
+[OSS status](https://www.osstatus.com/)
+
+[apple dev | crash reports | device logs](https://developer.apple.com/documentation/xcode/diagnosing-issues-using-crash-reports-and-device-logs)

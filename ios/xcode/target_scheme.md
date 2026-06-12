@@ -46,7 +46,7 @@ Having the wildcards is important sometimes to differentiate those things overal
 
 ## Scheme No Devices
 
-So sometimes Xcode has trouble finding the right target destination to build against for the selected scheme. Give it some time and if its SPM integrated xcode project you can refer this section [refs/remotes/origin](/ios/xcode/spm_errors#origin%20not%20found).
+So sometimes Xcode has trouble finding the right target destination to build against for the selected scheme. Give it some time and if its SPM integrated xcode project you can refer this section [refs/remotes/origin](spm_errors.md#origin%20not%20found).
 Make sure 
 
 ``

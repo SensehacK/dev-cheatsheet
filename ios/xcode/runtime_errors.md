@@ -80,3 +80,27 @@ But removing the app from the simulator and Xcode -> Clean Build also solved the
 
 
 
+
+
+
+## malloc: Heap corruption detected
+
+```error
+Lab5(11417,0x100094600) malloc: Heap corruption detected, free list is damaged at 0x600000008050
+*** Incorrect guard value: 209650238619649
+Lab5(11417,0x100094600) malloc: *** set a breakpoint in malloc_error_break to debug
+Lab5(11417,0x100094600) malloc: Heap corruption detected, free list is damaged at 0x600000008050
+*** Incorrect guard value: 209650238619649
+```
+
+```
+Something previously in your program is writing off the end of an array so the heap is damaged, detected at a future time when something calls tries to allocate or free memory.
+
+In Xcode's scheme editor, in the Run section, in the Diagnostics pane, you can try turning on some of the options like **Malloc Guard Edges** or **Malloc Scribble** . You probably have to try them one at a time.
+
+You are trying to get the program to throw an exception right at the point where it is writing out of bounds.
+
+In the Breakpoint editor, at the bottom, click the '+' and turn on break on exceptions so you can see that state of the program before it throws the exception.
+
+Note that a Debugger doesn't actually de-bug. You are going to have to remove the bug yourself by understanding the problem and fixing it. Explore. Think. Good luck!
+```

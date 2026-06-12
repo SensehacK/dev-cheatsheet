@@ -10,7 +10,12 @@ You can hide system calls by filtering them.
 
 
 
+## Privacy Profiling 
 
+
+Apps network - third party SDK / calls, to make sure you update your `App Tracking Transparency`
+
+[apple dev | detecting app contacts domains profiling](https://developer.apple.com/documentation/xcode/detecting-when-your-app-contacts-domains-that-may-be-profiling-users)
 
 
 ## References

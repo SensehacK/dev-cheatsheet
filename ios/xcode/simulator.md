@@ -28,9 +28,9 @@ mailto:
 ```
 ## Mind Map
 
-[deep linking](/ios/config/linking.md)
+[deep linking](linking.md)
 
-[compiler directives wildcard_checks for iOS Simulator](/ios/library/wildcard_checks#Check%20Simulator)
+[compiler directives wildcard_checks for iOS Simulator](wildcard_checks.md#Check%20Simulator)
 
 
 API won’t work on simulator for opening email client with method called `-canOpenURL` with an error message thrown in console saying “error: "This app is not allowed to query for scheme mailto"
@@ -103,7 +103,9 @@ Go in Xcode status bar -> Window -> Organizer and Simulators
 Check the simulator and copy the ID.
 
 
+## Testing Hardware
 
+[Apple dev | testing complex hardware scenarios using simulator](https://developer.apple.com/documentation/xcode/testing-complex-hardware-device-scenarios-in-simulator)
 
 ## Errors
 

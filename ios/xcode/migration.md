@@ -69,7 +69,7 @@ Maybe we can squeeze in an `.xconfig` file which overrides it but I have exhaust
 Better option is just to adopt Xcode 16 and update the `// swift-tools-version: 5.8` to `6.0` and work on that migration than this PITA apple does with `beta` versions. Or maybe they'll fix it somehow in the gold master release.
 
 #### Update
-I was able to solve this via `compiler` [wildcard check](/ios/library/wildcard_checks#check%20compiler) 
+I was able to solve this via `compiler` [wildcard check](wildcard_checks.md#check%20compiler) 
 
 Apparently I was able to solve this via wildcard check / compiler directive.
 But swift, iOS, xcode those things don't work. For me the `#compiler` worked.
