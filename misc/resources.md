@@ -29,6 +29,7 @@ Resources used by me for learning about technology.
 - [hackingwithswift](https://www.hackingwithswift.com/)
 - [theswiftdev](https://theswiftdev.com/news/)
 - [advancedswift](https://www.advancedswift.com/)
+- [awesome iOS Books](https://github.com/bystritskiy/awesome-ios-books)
 
 
 ## Offline
