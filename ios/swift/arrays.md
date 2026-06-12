@@ -229,7 +229,7 @@ With normal `reduce(:_:_)` it creates a immutable variables to store the new res
 [Reduce function](https://medium.com/@lucianoalmeida1/a-little-bit-about-the-cool-reduce-in-swift-306edd9ceb57)
 
 
-## [Filter](/ios/swift/filter#Array)
+## [Filter](../ios/swift/filter.md#Array)
 
 ## Compact Map
 

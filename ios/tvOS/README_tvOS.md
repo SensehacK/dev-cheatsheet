@@ -5,6 +5,8 @@
 
 [pair_local](pair_local.md)
 
+[privacy](../ios/tvOS/privacy.md)
+
 [ultraHD](ultraHD.md)
 
 ## References
