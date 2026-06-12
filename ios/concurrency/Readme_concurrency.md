@@ -12,9 +12,13 @@ If you want to get a refresher of basic concurrency concepts please read through
 
 [operations](operations.md)
 
+[bugs](bugs.md)
+
 ## Swift Concurrency Manifesto
 
 [actors](actors.md)
+
+[mainActor](mainActor.md)
 
 [asyncAwait](asyncAwait.md)
 
@@ -23,6 +27,8 @@ If you want to get a refresher of basic concurrency concepts please read through
 [asyncStream](asyncStream.md)
 
 [asyncTaskGroup](asyncTaskGroup.md)
+
+[continuation](continuation.md)
 
 ## Dispatch Queues
 
@@ -46,9 +52,11 @@ If you want to get a refresher of basic concurrency concepts please read through
 
 [tasks](tasks.md)
 
-[thread](ios/concurrency/thread.md)
+[thread](../ios/concurrency/thread.md)
 
 [background_tasks](background_tasks.md)
+
+[raceConditions](raceConditions.md)
 
 ## References
 

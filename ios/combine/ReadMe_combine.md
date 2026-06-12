@@ -10,13 +10,17 @@
 
 [environmentObject](environmentObject.md)
 
-[filter](/ios/combine/filter.md)
+[filter](../ios/combine/filter.md)
+
+[future](future.md)
 
 [get_started_guides](get_started_guides.md)
 
-[merge](/ios/combine/merge.md)
+[merge](../ios/combine/merge.md)
 
 [observable](observable.md)
+
+[promises](promises.md)
 
 [publisher](publisher.md)
 

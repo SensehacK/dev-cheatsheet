@@ -59,7 +59,7 @@ DispatchQueue.main - User interaction won't pause the execution.
 
 ## RxSwift
 
-RxSwift equivalents [[Observe]]
+RxSwift equivalents [[observe]]
 
 ### Observe Publisher
 

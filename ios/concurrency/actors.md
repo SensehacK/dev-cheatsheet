@@ -59,30 +59,11 @@ _ = Foo.shared
 [how-do-i-initialize-a-global-variable-with-mainactor](https://stackoverflow.com/questions/69263941/how-do-i-initialize-a-global-variable-with-mainactor)
 
 
-## MainActor
 
-You can always define your class as an actor which would gurantee the reference type object to be in its own context with its dedicated thread.
-It is Swift's newer APIs available for users to make it more thread safe and the general guidelines are to use `actor` if possible to avoid extra overhead of dealing with critical section or putting barrier or signals when writing shared / mutable data / resource.
-
-When using `Task { }` to perform any asynchronous task and utilizing the result of the async task to make some changes on UI, we need to again jump back to main thread. In order to do that sometimes SwiftUI is smart if the class is conforming to `:ObservableObject` and has `@mainActor` being marked it will do the thread switching in the background without explicit developer's input. But if using tasks and sending results back with completion handlers with closures. You need to be sure to preemptively switch threads to the main thread for doing UI work.
-
-```swift
-Task {
-do {
-    let data = try await AsyncNetwork.shared.fetchData(url: url, type: User.self)
-    await MainActor.run {
-        completion(.success(data))
-    }
-} catch { print("error") }
-}
-```
-
-The code snippet which makes sure we are on the main thread is `MainActor.run` , we can also use `DispatchQueue.main.async` block. But if we are already supporting async/await and using task might as well utilize the improved API.
-
+## [MainActor](mainActor.md)
 ## Actor vs MainActor
 
 [mainactor-dispatch-main-thread](https://www.avanderlee.com/swift/mainactor-dispatch-main-thread)
-
 
 ## Functions automatic async
 
@@ -109,9 +90,15 @@ When your View Model conforms to `ObservableObject` you want to make sure your u
 
 ## Errors
 
+### nonisolated main actor references
+
 ```error
 /git/cloud/apple/Sources/.swift:250:30 Main actor-isolated property 'Track' can not be referenced from a non-isolated context; this is an error in the Swift 6 language mode
 ```
+
+You can solve this using [here](mainActor.md#nonisolated%20func%20main%20actor)
+
+
 ## References
 
 [wwdc2021/10133](https://developer.apple.com/videos/play/wwdc2021/10133)
@@ -121,3 +108,6 @@ When your View Model conforms to `ObservableObject` you want to make sure your u
 [wwdc2021/10194](https://developer.apple.com/videos/play/wwdc2021/10194)
 
 [how-to-use-mainactor-to-run-code-on-the-main-queue](https://www.hackingwithswift.com/quick-start/concurrency/how-to-use-mainactor-to-run-code-on-the-main-queue)
+
+
+[advanced-swift-actors-re-entrancy](https://blog.jacobstechtavern.com/p/advanced-swift-actors-re-entrancy?open=false#%C2%A7re-entrancy)

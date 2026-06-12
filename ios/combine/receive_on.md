@@ -1,7 +1,7 @@
 
 ## Mind Map
 
-RxSwift equivalents [[Observe]]
+RxSwift equivalents [[observe]]
 
 [[concurrency_rxSwift]]
 
