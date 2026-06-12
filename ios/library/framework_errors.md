@@ -47,7 +47,7 @@ Important thing is to find the right cache path and delete the cache in order to
 ## Library duplicate Choosing one
 
 So somethings there are two frameworks being added in Xcode dynamic library but it leads to linking error. 
-We are having this issue because SPM internal dependencies dependency hasn't exposed it appropriately as a framework. So hence the frameworks are being added twice since the framework team didn't expose the PromiseKit properly so we had to explicitly add the `framework` in order to get the right xcframework.
+We are having this issue because SPM internal dependencies dependency hasn't exposed it appropriately as a framework. So hence the frameworks are being added twice since the framework team didn't expose the PromiseKit properly so we had to explicitly add the `framework` in order to get the right `xcframework`.
 
 ```log
 objc[17097]: Class _ is implemented in both TestUI.app/Frameworks/other.framework/) and TestUI.app/TestUI (0x1026b3620). One of the two will be used. Which one is undefined.
@@ -73,6 +73,25 @@ Happens on iPhone 15 Pro and Max.
 [apple thread](https://forums.developer.apple.com/forums/thread/751303)
 
 
+### Diamond Static libs
+
+`DISABLE_DIAMOND_PROBLEM_DIAGNOSTIC`
+
+[swift forums](https://forums.swift.org/t/adding-a-package-to-two-targets-in-one-projects-results-in-an-error/35007)
+
+### create dynamic library package
+
+ If you want to create a framework library, you need to force it to be one in the `Package.swift` like so:
+
+```swift
+.library(name: "MDFToolbox", type: .dynamic, targets: ["MDFToolbox"])
+```
+
+### SPM dynamic library problem
+
+Just a note on this, Xcode doesn't yet support linking to a SPM dynamic library without embedding it, so if you have multiple targets that use the same library, you'll get duplicate symbols. You'll either need to use a different dependency manager, remove the duplicated embedded libraries from the archive, or use an umbrella framework to contain all SPM dependencies.
+
+[SO comment](https://stackoverflow.com/questions/58090099/swift-package-manager-dynamic-library)
 
 
 ## CFBundleIdentifier Collision

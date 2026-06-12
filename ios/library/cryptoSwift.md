@@ -176,6 +176,31 @@ func clear() {
 ```
 
 
+## Hashing
+
+### SHA 256
+
+```swift
+import CryptoKit
+
+extension UnsignedInteger where Self: CVarArg {
+    var hexa: String { .init(format: "%ll*0x", bitWidth / 4, self) }
+}
+
+
+extension DataProtocol {
+    var sha256Digest: SHA256Digest { SHA256.hash(data: self) }
+    var sha256Data: Data { .init(sha256Digest) }
+    var sha256Hexa: String { sha256Digest.map(\.hexa).joined() }
+}
+
+```
+
+
+[SO | get hash from SHA256_data](https://stackoverflow.com/questions/65258027/get-just-the-hash-from-sha256-hashdata)
+
+
+
 ## References
 
 [cryptoswift.io](https://cryptoswift.io/)

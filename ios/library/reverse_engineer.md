@@ -11,6 +11,11 @@ A library that enables dynamically rebinding symbols in Mach-O binaries running 
 `ApolloPatcher.dylib` [normal github repo to checkout](https://github.com/ichitaso/ApolloPatcher)
 
 
+You can insert `dylib` files in mach - O binary using this tool
+
+[tyilo | insert dylib](https://github.com/tyilo/insert_dylib)
+
+
 ## Mind Map
 
 [resigning](resigning.md)

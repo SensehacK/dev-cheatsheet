@@ -1,6 +1,6 @@
 # Library
 
-[ads](/ios/library/ads.md)
+[ads](../ios/library/ads.md)
 
 [API_design](API_design.md)
 
@@ -16,7 +16,7 @@
 
 [[date_time]]
 
-[deprecations](/ios/library/deprecations.md)
+[deprecations](../ios/library/deprecations.md)
 
 [encryption](encryption.md)
 
@@ -30,7 +30,7 @@
 
 [import](import.md)
 
-[jailbreak](/ios/library/jailbreak.md)
+[jailbreak](jailbreak.md)
 
 [jenkins](jenkins.md)
 
@@ -40,11 +40,11 @@
 
 [[macaw]]
 
-[[ios/library/math]]
+[[math]]
 
 [[moya]]
 
-[process](ios/library/process.md)
+[process](../ios/library/process.md)
 
 [realm](realm.md)
 

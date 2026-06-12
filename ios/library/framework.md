@@ -13,11 +13,11 @@ Frameworks have important purposes
 
 ## Mind Map
 
-[Xcode Build process](/ios/xcode/build.md)
+[Xcode Build process](../ios/xcode/build.md)
 
 [packaging](/process/packaging.md)
 
-[SPM | Binary framework](/ios/xcode/spm#binary_xcframework)
+[SPM | Binary framework](spm.md#binary_xcframework)
 
 ## Process
 
@@ -215,6 +215,7 @@ done
 ```
 
 ## [Errors](framework_errors.md)
+
 ## Build Output
 
 - If you're building a **debug** config, then it will only build for the CPU architecture of the destination's platform. Meaning:

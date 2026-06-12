@@ -19,6 +19,10 @@ apt-get update
 ## Side Loading
 
 You can read more about it in [resigning](resigning.md) and my favorite [third party apps](third_party_apps.md)
+## Decrypt IPA
+
+[github frida ios dump](https://github.com/AloneMonkey/frida-ios-dump)
+
 
 ## Patched SDK
 
@@ -30,14 +34,32 @@ You can read more about it in [resigning](resigning.md) and my favorite [third p
 GUI tool to inject dynamic libraries into IPA files
 [iPatch github](https://github.com/EamonTracey/iPatch)
 
+[run time dynamic library injection](https://reversethat.app/posts/mobilehackinglab-iOS-Runtime-dynamic-library-injection-challenge-writeup/)
+
+
+## Run OSX on iPhone
+
+Booting macOS's WindowServer on your jailbroken iDevice for real
+[github | jailbreak_run_macOS_window_server](https://github.com/khanhduytran0/MacWSBootingGuide)
+
+
+## Sandbox 
+
+[LiveContainer](https://github.com/LiveContainer/LiveContainer) is an app launcher (not emulator or hypervisor) that allows you to run iOS apps inside it.
 
 ## Tools
+
+[livecontainer](https://github.com/LiveContainer/LiveContainer)
 
 [sideloadly | app signer tool](https://sideloadly.io/)
 
 [github | ios-app-signer](https://dantheman827.github.io/ios-app-signer/)
 
 [altstore](https://faq.altstore.io/)
+
+[sideStore](https://github.com/SideStore/SideStore/)
+[FAQ - development orgs support](https://sidestore.io/#get-started)
+
 
 [trollstore](https://trollstore.app/)(for iOS 15 signing exploit)
 

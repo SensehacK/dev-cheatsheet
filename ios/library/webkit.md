@@ -76,6 +76,30 @@ Some nuances with SFSafariVC instantiation with Swift UI discussed here in the a
 
 
 
+
+
+## Inspect WebViews
+
+1. Open the **Settings** app.
+    
+2. Go to **Apps** > **Safari**.
+    
+3. Scroll down to **Advanced**.
+    
+4. Enable the **Web Inspector** toggle.
+
+[Safari Inspector](https://developer.apple.com/documentation/safari-developer-tools/inspecting-ios#Enabling-inspecting-your-device-from-a-connected-Mac)
+
+
+
+
+
+
+
+## Privacy
+
+[webkit | tracking prevention](https://webkit.org/tracking-prevention/)
+
 ## References
 
 [wkwebview-how-to#Responding](https://www.appypie.com/wkwebview-how-to#Responding)

@@ -97,3 +97,33 @@ do {
     print(String(describing: error)) // <- ✅ Use this for debuging!
 }
 ```
+
+
+
+### Enums with Raw value
+
+[json decoder | dictionary coding as array](https://oleb.net/blog/2017/12/dictionary-codable-array/)
+
+
+Swift only decodes a JSON **object** `{}` into a `Dictionary` if the key is exactly `String` or `Int`. 
+
+For any other key type—even an enum that is `String`-backed—the decoder expects an **unkeyed container** (a JSON **Array** `[]`) with alternating keys and values. 
+
+- **Expectation:** `["sky-uk-dev", { ... }, "comcast", { ... }]`
+- **Reality:** Your JSON is `{ "sky-uk-dev": { ... } }` 
+
+Since your JSON uses `{ }`, the decoder sees a dictionary and throws the `typeMismatch` error because it was looking for that alternating array. 
+
+The Fix: `CodingKeyRepresentable`
+
+If you are on **Swift 5.6+**, you can fix this by adding `CodingKeyRepresentable` to your enum. This tells Swift to treat the enum as a valid dictionary key. 
+
+swift
+
+```
+public enum PartnerID: String, Codable, CodingKeyRepresentable {
+    case skyDev = "sky-uk-dev"
+    case sky = "sky-uk"
+    // ... rest of cases
+}
+```

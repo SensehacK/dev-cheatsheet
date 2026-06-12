@@ -8,9 +8,9 @@ Wildcard checks allows the consumer of the API to cope with breaking changes.
 
 [available](available.md)
 
-[deprecations](/ios/library/deprecations.md)
+[deprecations](../ios/library/deprecations.md)
 
-[Get Device Info](/ios/config/device.md)
+[Get Device Info](../ios/config/device.md)
 
 ## check Library
 
