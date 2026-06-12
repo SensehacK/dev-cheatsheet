@@ -246,15 +246,61 @@ SCTE-35 markers can be included in transport stream (TS), DASH, HLS, and CMAF ou
 
 [scte parser | online tool](https://tools.middleman.tv/scte35-parser)
 
+
+## ISO BMFF
+
+An ISO Base Media File Format (ISO BMFF) manifest is not a single file type but a concept in adaptive streaming where a playlist or manifest file describes how to access segmented media files that are contained in the ISO BMFF format
+
+[Wiki](https://en.wikipedia.org/wiki/ISO_base_media_file_format)
+
+. While the ISO BMFF file format stores the video, audio, and metadata, the manifest provides the roadmap for a player to locate and play the individual media segments. 
+
+The main adaptive streaming protocols that use ISO BMFF containers for their media segments are Dynamic Adaptive Streaming over HTTP (DASH) and HTTP Live Streaming (HLS), particularly with the Common Media Application Format (CMAF). 
+
+ISO BMFF and manifests in adaptive streaming
+
+- **Adaptive streaming**: Adaptive streaming protocols work by dividing a video into small segments, with multiple versions of the segments encoded at different bitrates and resolutions. This allows the player to switch between versions to adjust to changing network conditions.
+- **Media segments**: For DASH and HLS, the actual audio and video data is contained within the ISO BMFF file format. These files are a sequence of "boxes" that contain the media data and metadata. The most common format is a fragmented MP4 (fMP4).
+- **Manifests**: The manifest file does not contain the media itself, but rather provides the list of available segments, their bitrates, and their locations (URLs). The manifest guides the player on which segments to download next.
+- **Metadata**: An ISO BMFF initialization segment contains the track metadata (e.g., codecs), and is referenced by the manifest.
+
+
+## CMAF
+
+AI GEMINI
+CMAF (Common Media Application Format) is a container format that unifies different streaming protocols like HLS and DASH, reducing the need for separate content packaging and lowering costs. It is based on the ISO Base Media File Format (fMP4) and allows for the use of a single file for multiple delivery methods. By enabling the delivery of video in smaller, fragmented chunks, CMAF can significantly lower latency for streaming applications.
+
+
+Technical specifications
+
+    Container format: ISO/IEC 14496-12 (fMP4)
+    Video codecs: AVC (H.264), HEVC (H.265), VP9
+    Audio codecs: AAC-LC, HE-AAC, xHE-AAC, and others
+    Subtitles: IMSC-1 and WebVTT
+    Closed captions: CC608 and CC 708
+
+[apple dev | HLS CMAF](https://developer.apple.com/documentation/http-live-streaming/about-the-common-media-application-format-with-http-live-streaming-hls)
+
+
+
 ## HLS 
 
+HTTP Live Streaming (HLS)
 Apple's implementation of delivering video content via internet HTTP Live Streaming format specification.
 Android / Roku and other platforms use DASH instead of HLS.
 This HLS file is also sometimes referred as manifest file.
 
 `.m3u8` file format in Text readable format.
 
+[apple HLS](HLS.md)
 ## [HLS Format Examples](HLS_types.md)
+
+
+## DASH
+
+ Dynamic Adaptive Streaming over HTTP (DASH)
+
+[android dash](dash.md)
 
 ## Assets
 
@@ -340,6 +386,17 @@ Or an offset of Secs from the initial playback stream head.
 ### Unix Epoch 
 pronounced: epockh
 Its a unix date time variant to describe a constant way of time format.
+Also known as Unix time, POSIX time, or Unix timestamp
+[Wiki](https://en.wikipedia.org/wiki/Unix_time)
+
+reference point started from January 1, 1970, at 00:00:00 UTC
+
+easier to calculate since they are just referenced as a whole number
+eg. `783011700` epoch timestamp would mean Oct 1994 since that many secs have passed from Jan 1970 (reference starting point).
+[epoch unix converter](https://www.epochconverter.com/)
+
+32 bit Signed Int limitation till 2038, so newer systems use 64 bit.
+
 
 ### Time Scale
 
@@ -381,6 +438,9 @@ It has both hvc1 and hev1 formats
 
 [video encoding tips](https://www.dr-lex.be/info-stuff/videotips.html)
 
+[bento4](https://www.bento4.com/)
+A fast, modern, open source C++ toolkit for all your MP4 and DASH/HLS/CMAF media format needs.
+
 ### Packager 
 
 Super 8 - Internal tool to package streams via Just in time to deliver right encoded assets from different tools.
@@ -391,6 +451,16 @@ Super 8 - Internal tool to package streams via Just in time to deliver right enc
 ### O&O
 
 Owned and Operated channels. Generally 3rd party channels with their own encoder/decoder - packaging the whole nine yards of delivering their IPs.
+
+
+### I-frame
+
+
+
+
+In video encoding, I-frames are full-frame images, unlike other frame types (P- and B-frames) which rely on differences from other frames for their representation. This means an I-frame can be decoded and displayed independently. 
+
+
 
 ## Broadcasting
 
@@ -607,7 +677,7 @@ but its not purely for ads as you think of them, they could have a bumper for an
 
 When the player needs to be deallocated and then retuned or restarted from scratch in order to initiate the state properly. Reset basically.
 
-## [DRM](/ios/media/DRM.md)
+## [DRM](DRM.md)
 
 Digital Rights Management
 
@@ -621,7 +691,7 @@ Digital Rights Management
 ### Fairplay
 
 Apple's variant of DRM on audio / video. HLS and AV Foundation | AVKit libraries.
-[fairplay](ios/media/airplay.md)
+[fairplay](../ios/media/airplay.md)
 
 
 ## Brands
@@ -707,6 +777,15 @@ Palm webOS, which was bought by HP (Hewlett Packard) and then LG bought it for t
 
 Seems like something internally used at comcast for web js player.
 
+
+
+## Test
+
+### SMPTE | Rainbow color bars
+
+SMPTE color bars are a television test pattern used where the NTSC video standard is utilized, including countries in North America. The Society of Motion Picture and Television Engineers (SMPTE) refers to the pattern as Engineering Guideline (EG) 1-1990
+
+[wiki | smpte color bars](https://en.wikipedia.org/wiki/SMPTE_color_bars)
 
 ## Reference
 

@@ -39,9 +39,9 @@ Mac OS upgrades & don't get me started on how Windows 10 handles force upgrades 
 
 [windows updates](/os/windows/disable_updates.md)
 
-[macOS updates](/ios/macOS/updates.md)
+[macOS updates](../ios/macOS/updates.md)
 
-[Xcode updates](/ios/xcode/updates.md)
+[Xcode updates](../ios/xcode/updates.md)
 
 [release](/process/release.md)
 

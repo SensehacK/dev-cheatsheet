@@ -18,7 +18,7 @@ So below is in non sorted order is my brain dump of why I believe it would depen
 Know the right data structure to choose from when you're assuming how the app architecture is leaning towards modularization, concurrency heavy or just thin clients.
 The right data structure also comes into picture when you're deciding whether to allocate chunks of memory and just link it using linked list or doubly linked list. Arrays and list always are directly accessible by the nth element.
 Dictionary has a O(1) access time but there is a cost towards that constant time. Everytime there is a new value added to the dictionary, the internal mechanism goes through creating a unique enough key to uniquely identify the address in the table it needs to jump in and then access the value which points to the memory address or storage address where it stored the data blob. 
-Would add more info in [swift data structure post](data_structure)
+Would add more info in [swift data structure post](data_structure.md)
 
 
 ## Hardware acceleration

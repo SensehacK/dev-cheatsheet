@@ -32,7 +32,9 @@ Enjoy!
 
 ## [Terminologies](/architecture/terminologies.md)
 
-## [Tracing](/architecture/tracing.md)
+## [observability](observability.md)
+
+## [tracing](/architecture/tracing.md)
 
 ## [RFC](/architecture/rfc.md)
 
