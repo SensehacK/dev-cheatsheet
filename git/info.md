@@ -65,6 +65,29 @@ git checkout branch_name
 ```
 
 
+## Get Hash
+
+This command directly outputs the full SHA-1 hash of the commit pointed to by HEAD.
+```sh
+git rev-parse HEAD
+```
+
+
+## History
+
+Displays the git logs overall
+```sh
+git log
+```
+
+This command uses `git log` to display commit history, but with specific options: 
+
+- `-n 1`: Limits the output to only the most recent commit.
+- `--pretty=format:%H`: Formats the output to show only the full commit hash (`%H`).
+```sh
+git log -n 1 --pretty=format:%H
+```
+
 ### Hash lookup
 
 Get full commit hash from short hash

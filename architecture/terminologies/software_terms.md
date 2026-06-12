@@ -15,6 +15,7 @@ Being in high level software architecture meetings, I decided to sketch these ac
 ### LLVM
 
 [Xcode CLI | llvm tool](../ios/xcode/build.md#Commands)
+[Xcode lldb](debug.md#Debugging)
 
 ### Garbage collector
 

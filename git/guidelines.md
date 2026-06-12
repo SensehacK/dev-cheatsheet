@@ -51,6 +51,8 @@ You can use one of these commit message format.
   - build: Build related changes
 
 [Git commitzen](https://github.com/commitizen/cz-cli) 
+[conventional commits](https://www.conventionalcommits.org/en/v1.0.0/)
+
 
 ## PR Merge
 

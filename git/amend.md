@@ -20,7 +20,6 @@ Error if you have an index lock error refer to [errors](git/errors.md)
 
 ## Change Timestamp
 
-
 This only works for the last commit in the git history tree.
 
 ```bash
@@ -44,6 +43,38 @@ Or combined both
 
 ```sh
 LC_ALL=C GIT_COMMITTER_DATE="$(date)" git commit --amend --no-edit --date "$(date)"
+```
+
+## Rebase Timeline
+
+Eg. You have 4 commits in git history, not pushed to server.
+You want to either do a cherry pick of 2 commits for one PR and 2 for other config PR. 
+You don't want to have more than 500 LOC in one PR for a reviewer.
+
+```sh
+// Go to commits back from head
+git rebase -i HEAD~2
+```
+depending on ur editor `Vim` or `neoVim` or `nano` to get into ur insert mode
+
+```sh
+pick 27a387e8 feat(AD): VOD DAI #420
+pick 6e866579 test(AD): unit test refactor
+
+# Rebase 2fe73117..6e866579 onto 2fe73117 (2 commands)
+```
+
+edit the `pick` to `edit`
+
+Do your magic of adding more files or removing or thinning.
+Heck you can also change times on your commits, just make sure you change all the `3 associated commits` since its been only 4 years I learnt that git logs have 3 diff commit date/time values.
+
+[Work_git_padding](thoughts/one_commit_a_day#Work%20padding)
+
+```sh
+git add <files>
+git commit --amend
+git rebase --continue
 ```
 
 ## Empty Commit 

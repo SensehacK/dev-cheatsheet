@@ -72,8 +72,16 @@ Add the newly updated remote origin with personal access token (PAT)
 git remote add origin `repo_full_url`
 ```
 
+If you get this error
+```
+error: remote origin already exists.
+```
+
+update the set origin url
+
 ```sh
 git remote set-url origin repo_full_url
+
 
 git push --set-upstream origin main
 

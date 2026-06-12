@@ -35,7 +35,28 @@ and
 ```
 git diff 7c6b236 8f937c6
 ```
+[SO | how-do-i-revert-a-merge-commit-that-has-already-been-pushed-to-remote](https://stackoverflow.com/questions/7099833/how-do-i-revert-a-merge-commit-that-has-already-been-pushed-to-remote)
 
-https://stackoverflow.com/questions/7099833/how-do-i-revert-a-merge-commit-that-has-already-been-pushed-to-remote
+## Revert merge commit
 
+If the commit hasn't been pushed to remote
+
+if no conflict and merge completed then:
+```sh
+git reset --hard HEAD~1
+```
+
+if while doing a merge got conflict then abort will take you out of the recent merge changes:
+
+```
+git merge --abort
+```
+
+or if you want to revert back to a specific commit id .
+
+```
+git reset --hard <commit-id>
+```
+
+[SO | undo git merge](https://stackoverflow.com/questions/2389361/undo-a-git-merge-that-hasnt-been-pushed-yet)
 

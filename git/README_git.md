@@ -60,7 +60,11 @@ The quintessential tool for version management. Helps your mind to be sane and n
 
 [revert](revert.md)
 
+[size](size.md)
+
 [[stash]]
+
+[svn](svn.md)
 
 [[tag]]
 

@@ -5,7 +5,7 @@ You may need to disable pre commit hooks git hooks sometimes in order quickly pu
 
 
 ```sh
-	git push origin --no-verify
+git push origin --no-verify
 ```
 
 --no-verify works, but in my case, I didn't want to put the parameter all the time on the terminal. So I opted for something a little more aggressive.
