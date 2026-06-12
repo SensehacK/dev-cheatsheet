@@ -27,7 +27,7 @@
 
 [[distinct]]
 
-[[rxSwift/documentation]]
+[[ios/rxSwift/documentation]]
 
 [[doubts]]
 
@@ -53,7 +53,7 @@
 
 [[side_effects]]
 
-[[rxSwift/timeline]]
+[[ios/rxSwift/timeline]]
 
 [[subscription_chain_not_firing]]
 
@@ -61,7 +61,7 @@
 
 [rx_extensions](rx_extensions.md)
 
-[[rxSwift/error_handling]]
+[[error_handling]]
 
 [rx_subjects](rx_subjects.md)
 
@@ -73,9 +73,9 @@
 
 [threads](threads.md)
 
-[timeline](/ios/rxSwift/timeline.md)
+[timeline](../ios/rxSwift/timeline.md)
 
-[timer](/ios/rxSwift/timer.md)
+[timer](../ios/rxSwift/timer.md)
 
 ## Issues
 

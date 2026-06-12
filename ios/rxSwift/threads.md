@@ -35,5 +35,5 @@ Code snippet from the article linked below about `ObserveOn` vs `subscribeOn`
 
 [[concurrency_rxSwift]]
 
-[[Observe]]
+[[observe]]
 
