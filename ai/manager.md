@@ -9,8 +9,8 @@ It also opens a job security issues for so called `scrum master` `project integr
 If the new AI agents are able to communicate within themselves, with a specific API / contract between each other. 
 eg. Speak only in these terms, unicode formats, architecture diagram, mermaid, git PRs, issues, timezones (funny! no more indian EOD emails or Please do the needful) 
 
-[ref indian managers communication skillz](thoughts/immigration)
-[thoughts/management#Indian IT Words](thoughts/management#Indian%20IT%20Words)
+[ref indian managers communication skillz](/thoughts/immigration)
+[thoughts/management#Indian IT Words](/thoughts/management#Indian%20IT%20Words)
 
 
 This would be the classic, no need to pay health insurance, servicing fees, less lawsuits, hot deploy / invoke / deinit flow.
