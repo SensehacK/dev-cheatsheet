@@ -2,26 +2,26 @@
 
 ## List
 
-[access_control](/ios/objectiveC/access_control.md)
+[access_control](../ios/objectiveC/access_control.md)
 
-[asynchronous_operations](/ios/objectiveC/asynchronous_operations.md)
+[asynchronous_operations](asynchronous_operations.md)
 
-[class](/ios/objectiveC/class.md)
+[class](../ios/objectiveC/class.md)
 
-[concurrency](/ios/objectiveC/concurrency.md)
+[concurrency](../ios/objectiveC/concurrency.md)
 
-[enum](/ios/objectiveC/enum.md)
+[enum](../ios/objectiveC/enum.md)
 
-[errors](/ios/objectiveC/errors.md)
+[errors](../ios/objectiveC/errors.md)
 
-[interface](/ios/objectiveC/interface.md)
+[interface](../ios/objectiveC/interface.md)
 
-[interop](/ios/objectiveC/interop.md)
+[interop](interop.md)
 
-[method](/ios/objectiveC/method.md)
+[method](method.md)
 
-[runtime](/ios/objectiveC/runtime.md)
+[runtime](runtime.md)
 
-[syntax](/ios/objectiveC/syntax.md)
+[syntax](../ios/objectiveC/syntax.md)
 
 ## Reference

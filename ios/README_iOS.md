@@ -12,11 +12,11 @@ Here you can find various documentation related to iOS development which can hel
 
 ### [automation](README_automation.md)
 
-### [config](README_config)
+### [config](README_config.md)
 
-### [combine](README_combine.md)
+### [combine](ReadMe_combine.md)
 
-### [concurrency](README_concurrency.md)
+### [concurrency](Readme_concurrency.md)
 
 ### [library](README_library.md)
 
@@ -26,12 +26,12 @@ Here you can find various documentation related to iOS development which can hel
 
 ### [macOS](README_macOS.md)
 
-### [media](/ios/media/README_media.md)
+### [media](README_media.md)
 ### [objectiveC](README_objectiveC.md)
 
 ### [swift](README_swift.md)
 
-### [swiftUI](README_swiftUI.md)
+### [swiftUI](Readme_swiftUI.md)
 
 [tvOS](README_tvOS.md)
 
@@ -51,6 +51,8 @@ Here you can find various documentation related to iOS development which can hel
 [WWDC videos](https://github.com/insidegui/WWDC?)
 
 [WWDC Index](https://nonstrict.eu/wwdcindex)
+
+[wwdc notes](https://github.com/WWDCNotes/WWDCNotes)
 
 ## Contribution
 
