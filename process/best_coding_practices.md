@@ -43,7 +43,7 @@ public override func isEqual(_ object: Any?) -> Bool {
  && strSignal == vssO.strSignal
 }
 ```
-[swift | guard](/ios/swift/guard.md)
+[swift | guard](guard.md)
 
 
 ## Formatting
@@ -58,7 +58,7 @@ public override func isEqual(_ object: Any?) -> Bool {
 
 ## Swift Specific Tips
 
-[best_practices](ios/config/best_practices.md)
+[best_practices](../ios/config/best_practices.md)
 
 ## Pyramid of Doom
 

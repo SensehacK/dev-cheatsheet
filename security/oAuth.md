@@ -1,8 +1,8 @@
 
 ## Intro
 
-OAuth 2.0 is an authorization framework that enables users to safely share their data between different applications.
-
+	OAuth 2.0 is an authorization framework that enables users to safely share their data between different applications.`
+`
 
 [postman | what-is-oauth-2](https://blog.postman.com/what-is-oauth-2-0/)
 
@@ -11,7 +11,7 @@ OAuth 2.0 is an authorization framework that enables users to safely share their
 
 [what-is-pkce](https://blog.postman.com/what-is-pkce/)
 
-
+You can use Message Digest method = SHA256, since that's more secure & some tools mentioned in [hashes](hashes.md)
 
 ## Videos
 

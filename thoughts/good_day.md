@@ -74,9 +74,9 @@ Inspired by Ice Cube - Today was a good day
 
 ## Apple Issues Mind Map
 
-[spm errors](/ios/xcode/spm_errors)
+[spm errors](spm_errors.md)
 
-[xcode build errors](/ios/xcode/build_errors)
+[xcode build errors](build_errors.md)
 
 
 ## Google Dev

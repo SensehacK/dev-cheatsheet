@@ -10,7 +10,7 @@ As a developer or someone new in a team who recently join, it is always a steep 
 
 [markdownlint](https://github.com/markdownlint/markdownlint)
 
-[swift_lint](/ios/config/swift_lint.md)
+[swift_lint](swift_lint.md)
 
 
 

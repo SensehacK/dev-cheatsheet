@@ -8,6 +8,8 @@
 
 [code_injection](code_injection.md)
 
+[hashes](hashes.md)
+
 [jwt](security/jwt.md)
 
 [oAuth](oAuth.md)

@@ -26,7 +26,7 @@ I still would prefer `out of the box` apple experience compared to other OEM ven
 
 
 
-[Instruments Profiling](ios/xcode/instruments#Privacy%20Profiling)
+[Instruments Profiling](instruments.md#Privacy%20Profiling)
 
 [Apple user privacy](https://developer.apple.com/app-store/user-privacy-and-data-use/)
 P.S: I don't drink the apple cult koolaid but I have seen good initiatives from User Experience and being on the fore front to minimize making money off its users directly.

@@ -18,7 +18,7 @@ We can make sure to follow Semantic Versioning when it comes to releasing softwa
 
 Architecture support libraries would be different in sizes as it depends on how we are packaging them into the architecture support.
 Universal with include `x86 & amd_64` + `arm64`
-Internal doc on framework exporting in [iOS / Xcode / Apple ecosystemlibrary/framework#Build%20Output)
+Internal doc on framework exporting in [Xcode Apple ecosystem framework build iOS](framework.md#Build%20Output) 
 
 [arm64 package 147MB](https://github.com/jgraph/drawio-desktop/releases/download/v22.1.2/draw.io-arm64-22.1.2.dmg)
 vs
