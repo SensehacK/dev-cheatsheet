@@ -49,7 +49,7 @@ Had to do the normal provisioning of new Apple hardware using the developer acco
 ## Sideloading
 
 Refer to this page I maintain for all apple related side loading or resigning needs.
-[VisionOS sideload](/ios/config/resigning#visionOS)
+[VisionOS sideload](resigning.md#visionOS)
 
 
 

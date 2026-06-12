@@ -20,11 +20,11 @@ Finally I got some time to dig deep into it when my employer provided 1 week of 
 
 [enterprise](enterprise.md)
 
-[info](/ios/visionOS/info.md)
+[info](../ios/visionOS/info.md)
 
 [observations](observations.md)
 
-[video](/ios/visionOS/video.md)
+[video](../ios/visionOS/video.md)
 
 [views](views.md)
 
