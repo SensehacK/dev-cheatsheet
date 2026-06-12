@@ -30,4 +30,4 @@ println("Name: $name, Age: $age, City: $city")
 
 ## Mind Map
 
-[iOS | tuple](ios/swift/tuple.md)
+[iOS | tuple](../ios/swift/tuple.md)

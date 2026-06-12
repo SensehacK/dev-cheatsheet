@@ -36,7 +36,7 @@ class Group<T>(val name: String) {
 
 ## Mind Map
 
-[iOS | documentation](ios/lifecycle/documentation.md)
+[iOS | documentation](../ios/lifecycle/documentation.md)
 
 
 

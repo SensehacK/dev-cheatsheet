@@ -25,4 +25,4 @@ val authState: Flow<AuthState>
 ## Deeplink
 
 
-[swift | access_control](ios/swift/access_control.md)
+[swift | access_control](../ios/swift/access_control.md)

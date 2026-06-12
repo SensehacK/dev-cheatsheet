@@ -54,7 +54,7 @@ fun processNullableString(text: String?) {
 ### if let 
 
 If let equivalent in kotlin `?. let { } ?: run { }`
-[swift counterpart](ios/swift/optionals#If%20Let)
+[swift counterpart](optionals.md#If%20Let)
 
 ```kotlin
 fun process(text: String?) {
@@ -84,7 +84,7 @@ println(assignedName)
 
 ## Mind Map
 
-Swift counterpart [Optionals](/ios/swift/optionals.md)
+Swift counterpart [Optionals](optionals.md)
 
 ## If let optional
 
@@ -150,7 +150,7 @@ val e = email.text?.let { it } ?: return
 
 ## if let 
 
-[swift equivalent](ios/swift/optionals#If%20Let)
+[swift equivalent](optionals.md#If%20Let)
 
 ```kotlin
 val a = b?.let {  

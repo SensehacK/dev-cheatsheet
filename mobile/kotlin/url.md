@@ -7,7 +7,7 @@
 
 [network](/mobile/kotlin/network.md)
 
-[url](/ios/swift/url.md)
+[url](../ios/swift/url.md)
 
 ## Library
 

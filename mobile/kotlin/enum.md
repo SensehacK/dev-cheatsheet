@@ -83,4 +83,4 @@ fun handleProvisioning(result: AuthState) {
 
 ## Mind Map
 
-[swift | enum](ios/swift/enum.md)
+[swift | enum](../ios/swift/enum.md)

@@ -294,8 +294,13 @@ If the build isn't succeeding in android studio locally on the IDE, you can try 
 Disable JS builds in `gradle.properties` by setting `build.browser=false`
 
 ```sh 
-- Run `./gradlew common:assemble`
-- Run `./gradlew common:publishToMavenLocal`
+./gradlew common:assemble
+```
+
+This publishes to maven local
+
+```sh
+./gradlew common:publishToMavenLocal`
 ```
 
 
@@ -336,6 +341,21 @@ rm "/ModuleCache/FUW5IOHP9BIS/Class.pcm"
 Clean Project( Cmd+Shift+K)
 
 
+
+### JDK linking
+
+I deleted the file `CACHEDIR.TAG` in the `~.gradle/wrapper/dists`, when running the assemble command with `--stacktrace` & `--info` | `--debug`
+
+```log
+FAILURE: Build failed with an exception.
+
+* What went wrong:
+25.0.2
+* Exception is:
+java.lang.IllegalArgumentException: 25.0.2
+        at org.jetbrains.kotlin.com.intellij.util.lang.JavaVersion.parse(JavaVersion.java:307)
+        at org.jetbrains.kotlin.com.intellij.util.lang.JavaVersion.current(JavaVersion.java:176)
+```
 ## Manual Integration
 
 

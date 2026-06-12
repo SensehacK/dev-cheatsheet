@@ -48,7 +48,7 @@ gradle assembleXCFramework
 ./gradlew assemble:directory_name:lib_name-auth:XCFramework
 
 
-./gradlew implementation:entos-auth:assemble
+./gradlew implementation:org_name-lib_name:assemble
 ```
 
 ```sh
