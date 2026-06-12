@@ -11,7 +11,7 @@ Good Guides for following  `lidarr`
 docker pull linuxserver/lidarr:arm32v7-1.1.4
 ```
 
-## [Server Apps](apps.md#Server)
+## [Server Apps](tools/apps.md#Server)
 
 ## Links
 

@@ -2,13 +2,15 @@
 
 ## List
 
-[apps](apps.md)
+[apps](tools/apps.md)
 
 [backup](backup.md)
 
 [browsers](../tools/browsers/README_browsers.md)
 
 [communication](../tools/communication/README_communication.md)
+
+[design](README_design.md)
 
 [editors](../tools/editors/README_editors.md)
 

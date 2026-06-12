@@ -271,49 +271,12 @@ arch
 
 ## Errors
 
-
-### zsh issues
-
-
-ohmysh or Zsh issues coming from bash environment
-
-`command not found`
-
-
-for poetry - zsh
-I did a fresh install with `zsh` and `prezto` installed. Below is the same case with me. Poetry installs to `.local`  even though I haven't had any `.local`  directory before...
-
-
-```shell
-# User specific environment
-if ! [[ "$PATH" =~ "$HOME/.local/bin:$HOME/bin:" ]]
-then
-    PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-fi
-export PATH
-```
-
-Added this to `.zhsrc` 
-Freaking hate command line environment setups just to run a small script
-
-
-[SO | Post homebrew permissions](https://stackoverflow.com/questions/16432071/how-to-fix-homebrew-permissions/46844441#46844441)
-
-Basically it could stem from bad install script and using `sudo` where it wasn't needed which leads to all this permission errors.
-[Github | homebrew permission denied thread](https://github.com/Homebrew/legacy-homebrew/issues/19670)
-
-
-
-New command for users on macOS High Sierra as it is not possible to `chown` on `/usr/local`:
-
-`bash/zsh`:
+Debug using 
 
 ```sh
-sudo chown -R $(whoami) $(brew --prefix)/*
+cat ~/.zprofile
+
+cat ~/.zshrc
 ```
 
-`fish`:
-
-```sh
-sudo chown -R (whoami) (brew --prefix)/*
-```
+## [zsh](tools/terminal/ohMyZsh#Errors)

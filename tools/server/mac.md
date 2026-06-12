@@ -151,3 +151,25 @@ Read more about [utilities wrapper around sleeping mac](tools/apps#dev%20utility
 
 Additionally, if you have an application full screen - the system should never sleep the display or go to screensaver. Have to test this out though!
 Or you could plug in `hdmi dummy` to keep the GPU or mac alive | consumes more power though.
+
+
+This command will output all the triggers which is keeping the mac awake
+
+```sh
+pmset -g assertions
+```
+
+good code for using MAC OS IO library 
+[caffeine cli mac make](https://github.com/clintmoyer/caffeine)
+
+Utilize this [apple doc kIOPMAssertionTypeNoDisplaySleep](https://developer.apple.com/documentation/iokit/kiopmassertiontypenodisplaysleep)
+
+Keeping you awake has closed lid limitation
+>  Does it work on a MacBook with a closed lid?
+ No. Because of _(sensible)_ macOS limitations and out of thermal considerations, KeepingYouAwake will only prevent sleep on desktop Macs and portable Macs with an open lid.
+
+
+
+Other projects 
+
+https://github.com/InvincibleZeal/jiggler

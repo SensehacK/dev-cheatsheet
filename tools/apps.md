@@ -201,7 +201,7 @@ Fav TV tech - LG OLEDs C3, G3 -
 Fav Video reviewer - [HDTVTest](https://www.youtube.com/@hdtvtest)
 Fav games technical analysis - Digital Foundry
 Rting website for nitty gritty comparison of Video tech.
-[video tools - apps](apps.md#Video%20Tools)
+[video tools - apps](tools/apps.md#Video%20Tools)
 
 ## Security
 
@@ -223,7 +223,9 @@ Rting website for nitty gritty comparison of Video tech.
 
 - [amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)
 - [keepingYouAwake](https://github.com/newmarcel/KeepingYouAwake?tab=readme-ov-file)
+- [caffeine](https://github.com/clintmoyer/caffeine)
 - ntfs support for mac - [Mounty](https://www.mounty.app/)
+- [onyx](https://www.titanium-software.fr/en/onyx.html)
 
 
 
@@ -232,3 +234,10 @@ Rting website for nitty gritty comparison of Video tech.
 [apps for vision pro](https://appsforapplevision.com/)
 
 [vision directory](https://vision.directory/)
+
+
+## Other Lists
+
+[github open source iOS apps](https://github.com/dkhamsing/open-source-ios-apps)
+
+https://fmhy.net/mobile#ios-ipas

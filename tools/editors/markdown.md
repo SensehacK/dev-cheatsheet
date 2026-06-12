@@ -70,7 +70,7 @@ Read about [yaml](yaml.md)
 
 ## Tools
 
-## [Writer Apps](apps.md#Writer)
+## [Writer Apps](tools/apps.md#Writer)
 
 Microsoft CLI opensource github tool [markitdown](https://github.com/microsoft/markitdown)
 
