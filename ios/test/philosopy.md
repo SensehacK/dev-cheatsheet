@@ -23,4 +23,4 @@ If you ever had a very complex string for a label, then just put that in a funct
 
 ## Snapshot testing 
 
-[screenshot_test](/ios/test/screenshot_test#Approach)
+[screenshot_test](screenshot_test.md#Approach)

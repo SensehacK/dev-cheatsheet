@@ -201,6 +201,11 @@ i don't think we need to have multiple and nearly identical JSON structures. for
 
 This came to me when I was chasing a bug which is reproducible in production but not in the unit test mocks, since the business logic which has equality is different compared to other.
 
+
+## Http server
+
+Could checkout this library for hosting a tiny [http server in swift](tools/server/http-server#Swift)
+
 ## Resources
 
 [iosunittesting](http://iosunittesting.com/)
