@@ -4,6 +4,8 @@
 
 [applescript](applescript.md)
 
+[apps](os/mac/apps.md)
+
 [[automount volumes disable]]
 
 [[codesign_app]]
@@ -24,6 +26,8 @@
 
 [launchd](launchd.md)
 
+[logs](logs.md)
+
 [[mac_commands]]
 
 [[mac_os_quirks]]
@@ -37,6 +41,8 @@
 [profiles](profiles.md)
 
 [santa](santa.md)
+
+[troubleshooting](troubleshooting.md)
 
 ## References
 

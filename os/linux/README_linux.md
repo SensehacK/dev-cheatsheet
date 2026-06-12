@@ -5,6 +5,8 @@
 
 [cron](cron.md)
 
+[dig](dig.md)
+
 [[disk]]
 
 [environment_variables](environment_variables.md)

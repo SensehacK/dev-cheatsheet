@@ -6,6 +6,10 @@ Services to be turned on for Accessibility options
 
 On Mac OS
 
+## GUI 
+
+[ADB Link](https://www.jocala.com/)
+
 ## Manually (just the platform tools)
 
 This is the easiest way to get a manual installation of ADB and Fastboot.

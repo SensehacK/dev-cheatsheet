@@ -84,3 +84,12 @@ side observation - I updated from macOS 14.4 -> 14.5 and before the update my st
 ### References
 
 [avg antivirus | Clear macOS cache](https://www.avg.com/en/signal/how-to-clear-cache-on-mac)
+
+## System Files
+
+AssetsV2 folder taking up nearly 50Gb of space 
+> The reason you can't delete that folder is because it contains components that are part of the MacOS operating system. No matter what changes you make to your permissions, it will not allow you to delete that folder. The MacOS software secures that folder so it can't be deleted, since doing so would cause the computer to no longer work properly.
+
+
+AssetsV2 folder are system files for easy macOS recovery, remember that option when u do safe boot, where it allows the mac to wipe its clean slate and fresh installation unlike windows Vista / 7 recovery disks circa 2006 - 08'ish.
+At the expense of some default backup / recovery storage on MacOSX, we get this perk of ever doing a fresh install. Neat for normal consumers, no wonder even grandpa's can fix their mac from home instead of driving their Buick to the nearest BestBuy Geek squad appointment to fix this stuff. 
