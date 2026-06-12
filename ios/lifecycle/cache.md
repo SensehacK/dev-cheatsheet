@@ -63,6 +63,9 @@ And there is also less CPU performance hit because for the past decade or so CPU
 Source my [own MR about my helper swift package](https://github.com/SensehacK/swift-sense/pull/3) for swift related projects (iOS, macOS, tvOS, watchOS) apps
 
 
+## Cache Key
+
+The cache key is the unique identifier for an object in the cache. Each object in the cache has a unique cache key. A cache hit occurs when a viewer request generates the same cache key as a prior request, and the object for that cache key is in the edge location's cache and valid.
 
 ## References
 

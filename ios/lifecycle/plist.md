@@ -26,7 +26,7 @@ Anything related to privacy, apple asks us to explicitly ask for permission to t
 
 URL  App Transport Security Plist explicit descriptions
 [ats_plist](ats_plist.md)
-[security](security.md)
+[security](../ios/config/security.md)
 
 
 ## No Storyboard

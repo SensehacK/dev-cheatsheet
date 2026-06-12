@@ -58,7 +58,7 @@ https://stackoverflow.com/questions/24036393/fatal-error-use-of-unimplemented-in
 
 ## Container Child View
 
-[uiview](uiview.md)
+[uiView](uiView.md)
 
 https://cocoacasts.com/managing-view-controllers-with-container-view-controllers/
 

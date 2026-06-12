@@ -2,74 +2,74 @@
 
 ## List
 
-[[ios/lifecycle/app_delegate]]
+[[app_delegate]]
 
-[[ios/lifecycle/arc]]
+[[arc]]
 
 [[ios/lifecycle/class]]
 
-[cache](/ios/lifecycle/cache.md)
+[cache](../ios/lifecycle/cache.md)
 
 [[ios/lifecycle/dark_mode]]
 
-[database](/ios/lifecycle/database.md)
+[database](database.md)
 
-[delegation_pattern](/ios/lifecycle/delegation_pattern.md)
+[delegation_pattern](delegation_pattern.md)
 
-[[ios/lifecycle/dimensions]]
+[[dimensions]]
 
 [[ios/lifecycle/documentation]]
 
-[dynamic_runtime](/ios/lifecycle/dynamic_runtime.md)
+[dynamic_runtime](dynamic_runtime.md)
 
 [[ios/lifecycle/extensions]]
 
-[inheritance](/ios/lifecycle/inheritance.md)
+[inheritance](inheritance.md)
 
-[initialization](/ios/lifecycle/initialization.md)
+[initialization](initialization.md)
 
-[KVO_pattern](/ios/lifecycle/KVO_pattern.md)
+[KVO_pattern](KVO_pattern.md)
 
-[[ios/lifecycle/localization]]
+[[localization]]
 
-[logging](/ios/lifecycle/logging.md)
+[logging](logging.md)
 
-[notification_pattern](/ios/lifecycle/notification_pattern.md)
+[notification_pattern](notification_pattern.md)
 
-[[ios/lifecycle/network_calls]]
+[[network_calls]]
 
-[[ios/lifecycle/orientation]]
+[[orientation]]
 
-[plist](/ios/lifecycle/plist.md)
+[plist](plist.md)
 
-[protocol](/ios/lifecycle/protocol.md)
+[protocol](protocol.md)
 
 [reactive_paradigm](reactive_paradigm.md)
 
-[read_local_file](/ios/lifecycle/read_local_file.md)
+[read_local_file](read_local_file.md)
 
-[[ios/lifecycle/retain_cycle]]
+[[retain_cycle]]
 
-[[ios/lifecycle/rtl_alignment_support]]
+[[rtl_alignment_support]]
 
-[[ios/lifecycle/segues]]
+[[segues]]
 
-[singleton_pattern](/ios/lifecycle/singleton_pattern.md)
+[singleton_pattern](../ios/lifecycle/singleton_pattern.md)
 
-[[ios/lifecycle/storyboard_refactor]]
+[[storyboard_refactor]]
 
-[[ios/lifecycle/struct]]
+[[struct]]
 
-[[ios/lifecycle/swift_types]]
+[[swift_types]]
 
-[timer](/ios/lifecycle/timer.md)
+[timer](../ios/lifecycle/timer.md)
 
-[[ios/lifecycle/unowned_vs_weak]]
+[[unowned_vs_weak]]
 
-[[ios/lifecycle/state_architecture]]
+[[state_architecture]]
 
-[user_defaults](/ios/lifecycle/user_defaults.md)
+[user_defaults](user_defaults.md)
 
-[user_notifications](/ios/lifecycle/user_notifications.md)
+[user_notifications](user_notifications.md)
 
-[[ios/lifecycle/view_controllers]]
+[[view_controllers]]

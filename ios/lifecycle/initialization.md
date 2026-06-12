@@ -7,7 +7,7 @@ Including the default initialization for class, structs in Swift.
 
 
 
-## [Class](/ios/lifecycle/class.md)
+## [Class](../ios/lifecycle/class.md)
 
 We need to specify the initializer for class.
 ```swift
@@ -60,7 +60,7 @@ class ClassSomething {
 }
 ```
 
-## [Singleton Pattern](/ios/lifecycle/singleton_pattern.md)
+## [Singleton Pattern](../ios/lifecycle/singleton_pattern.md)
 
 
 

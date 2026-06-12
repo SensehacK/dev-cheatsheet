@@ -106,9 +106,21 @@ struct FSApp: App {
 
 ### Note
 
-Open URL - Deep Links delegate won't work here. Just amazing in SwiftUI so **you** need to switch to `onOpenURL { }` [linked here](/ios/config/linking#Swift%20UI%20Deep%20links)
+Open URL - Deep Links delegate won't work here. Just amazing in SwiftUI so **you** need to switch to `onOpenURL { }` [linked here](linking.md#Swift%20UI%20Deep%20links)
 ```swift
 func application(_ app: UIApplication,
                      open url: URL,
                      options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool { }
+```
+
+
+
+
+## Migration iOS 26
+
+  
+```
+Info.plist contained no configuration named "" for UIWindowSceneSessionRoleApplication. Falling back to first defined description for UIWindowSceneSessionRoleApplication
+
+Info.plist contained no configuration named "" for UIWindowSceneSessionRoleApplication. Falling back to first defined description for UIWindowSceneSessionRoleApplication
 ```

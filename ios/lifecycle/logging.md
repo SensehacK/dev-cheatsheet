@@ -130,8 +130,31 @@ Truncate os_log
 Split string extension to overcome this os limitation.
 [SO | string extension](https://stackoverflow.com/a/76776120)
 
+
+## NSLog 
+
+[Adopt os_log api | SO](https://stackoverflow.com/questions/45022233/adopting-os-log-apis-while-keeping-backward-compatibility)
+
+[Migrate to os_log from NS_log](https://github.com/abbeycode/UnzipKit/commit/8cf48b84d4b674467e774f3d1844e4008fedc7ad#diff-3aead1e2b4809a2259d52eaf7ecf937081bd5d5b97269716102c99f1cc01280d)
+
+
+## macOS Catalina Private / Public
+
+[making os log public | macOS catalina](https://saagarjha.com/blog/2019/09/29/making-os-log-public-on-macos-catalina/)
+
+
+## Apple Diagnostics sysdiagnose
+
+This could be helpful when working with apple engineers to collect their internal system logs and provide the necessary info `logger.fault / error` level internal persisted logs to the ticket on radarr. 
+
+I reckon they have their own `dSyms` to check the crash reports or whatever to understand it better from the internal software perspective.
+
+[apple support run | sysdiagnose](https://support.apple.com/en-ca/guide/platform-support/supd3f43814e/web)
+
 ## References
 
 [swift dev | logging for beginners](https://theswiftdev.com/logging-for-beginners-in-swift/)
 
 [Filtering logs in OS Console app](https://support.apple.com/lv-lv/guide/console/cnslbf30b61a/mac)
+
+
